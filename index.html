@@ -1034,6 +1034,63 @@ document.addEventListener('click', e => {
   $('#feedSearch').value = c.dataset.q;
   renderChips(); renderFeed();
 });
+/* ── 자료가 0건일 때 원인을 짚어 주기 ─────────
+   검색어·지역·기간이 걸려 있거나, 찾는 자료가 다른 유형에 있을 때
+   사용자가 스스로 알아채기 어려워서 원인과 해결 버튼을 같이 보여 줍니다. */
+function matchWords(q){
+  return q.toLowerCase().split('|').map(w => w.trim()).filter(Boolean);
+}
+function countIn(kind, words, cut){
+  return FEED.items.concat(S.myItems || []).filter(it =>
+    (it.kind || 'outbreak') === kind && it.date >= cut &&
+    (!words.length || words.some(w =>
+      (it.title + ' ' + (it.excerpt || '') + ' ' + (it.origin || '')).toLowerCase().includes(w)))
+  ).length;
+}
+function emptyFeedMsg(){
+  const q = ($('#feedSearch').value || '').trim();
+  const region = $('#regionSel').value;
+  const cut = new Date(Date.now() - S.days * 864e5).toISOString().slice(0, 10);
+  const words = q ? matchWords(q) : [];
+  const fix = [];
+  if (q)      fix.push(`<button class="btn sm" data-fix="search">검색어 「${esc(q)}」 지우기</button>`);
+  if (region) fix.push(`<button class="btn sm" data-fix="region">지역 「${esc(region)}」 해제</button>`);
+  if (S.days < 45) fix.push(`<button class="btn sm" data-fix="days">기간을 45일로 늘리기</button>`);
+  if (Object.values(S.sel).some(Boolean))
+    fix.push(`<button class="btn sm" data-fix="sel">소스 선택 모두 풀기</button>`);
+
+  let cross = '';
+  if (q){
+    Object.keys(KINDS).filter(k => k !== S.kind).forEach(k => {
+      const n = countIn(k, words, cut);
+      if (n) cross += `<button class="btn sm pri" data-kind="${k}">「${KIND_LABEL[k]}」에서 ${n}건 보기</button>`;
+    });
+  }
+  return `<div class="empty" style="text-align:left">
+    <p style="margin:0 0 10px"><b>조건에 맞는 기사가 없습니다.</b></p>
+    ${cross ? `<p style="margin:0 0 8px">찾으시는 자료가 <b>다른 유형</b>에 있습니다.
+       유형을 옮기면 지금 검색어 그대로 보실 수 있습니다.</p>
+       <div class="row" style="gap:6px;margin-bottom:14px">${cross}</div>` : ''}
+    ${fix.length ? `<p style="margin:0 0 8px">지금 걸려 있는 조건입니다. 눌러서 풀어 보세요.</p>
+       <div class="row" style="gap:6px">${fix}</div>` : '<p style="margin:0">1단계에서 소스를 골라 주세요.</p>'}
+  </div>`;
+}
+document.addEventListener('click', e => {
+  const f = e.target.closest('[data-fix]'), k = e.target.closest('[data-kind]');
+  if (f){
+    const w = f.dataset.fix;
+    if (w === 'search'){ $('#feedSearch').value = ''; }
+    if (w === 'region'){ $('#regionSel').value = ''; }
+    if (w === 'days')  { S.days = 45; $('#days').value = 45; }
+    if (w === 'sel')   { S.sel = {}; renderSources(); }
+    save(); renderFeed();
+  }
+  if (k){
+    const rk = $(`input[name=kind][value="${k.dataset.kind}"]`);
+    if (rk){ rk.checked = true; rk.dispatchEvent(new Event('change', { bubbles: true })); }
+  }
+});
+
 /* ── 지역 목록 ───────────────────────────────
    지역 드롭다운은 두 곳(소스 직접 추가 / 2단계 필터)에 쓰입니다.
    목록이 어긋나지 않도록 여기 한 곳에서만 정의해 둡니다. */
@@ -1075,7 +1132,7 @@ function renderFeed(){
         <div class="m"><span class="badge">${esc(it.sourceName)}</span>${it.origin ? `<span>${esc(it.origin)}</span>` : ''}${domainOf(it.link) ? `<span>${esc(domainOf(it.link))}</span>` : ''}<span>${esc(it.date)}</span></div>
         ${it.excerpt ? `<div class="x">${esc(it.excerpt)}</div>` : ''}
       </div></div>`;
-  }).join('') : '<p class="empty">조건에 맞는 기사가 없습니다. 기간을 늘리거나 소스를 더 골라 보세요.</p>';
+  }).join('') : emptyFeedMsg();
   renderPicked();
 }
 $('#feedBox').addEventListener('click', e => {
@@ -1646,7 +1703,15 @@ $('#repGo').onclick = async () => {
     })
     .sort((a, b) => (b.date || '').localeCompare(a.date || ''))
     .slice(0, 40);
-  if (!hits.length){ $('#repLog').textContent = '해당 키워드 자료를 찾지 못했습니다. 다른 말로 바꾸거나 기간을 늘려 보세요.'; return; }
+  if (!hits.length){
+    const other = Object.keys(KINDS).filter(k => k !== S.kind)
+      .map(k => [k, countIn(k, words, cut)]).filter(([, n]) => n);
+    $('#repLog').innerHTML = other.length
+      ? `지금 유형(<b>${esc(KIND_LABEL[S.kind])}</b>)에는 없습니다. ` +
+        other.map(([k, n]) => `<button class="btn sm pri" data-kind="${k}">「${KIND_LABEL[k]}」에 ${n}건 — 그쪽에서 보기</button>`).join(' ')
+      : '해당 키워드 자료를 찾지 못했습니다. 다른 말로 바꾸거나 기간을 늘려 보세요.';
+    return;
+  }
 
   S.picked = hits.map(it => {
     const g = guessTopic(it.title + ' ' + (it.excerpt || ''));
