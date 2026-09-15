@@ -3,7 +3,7 @@
 """
 감염병 뉴스레터용 소스 자동 수집 → data/feed.json
 
-- data/newsletter/sources.json 에 적힌 기관 RSS와 뉴스 검색어를 훑어
+- data/sources.json 에 적힌 기관 RSS와 뉴스 검색어를 훑어
   '제목 + 출처 + 원문링크 + 날짜 + 짧은 발췌'만 저장합니다(원문 미저장, 저작권 안전).
 - 키가 필요 없습니다. 실패한 소스는 건너뛰고 나머지는 그대로 저장합니다.
 
@@ -148,6 +148,7 @@ def items_from(root):
         for ch in it:
             if ch.tag.split("}")[-1] == "source": src_el = ch
         origin = (src_el.text or "").strip() if src_el is not None and src_el.text else ""
+        title = strip_tags(title, 300)
         if title and link:
             out.append({"title": title, "link": link, "date": date,
                         "excerpt": strip_tags(desc), "origin": origin})
@@ -170,6 +171,7 @@ def main():
                 got, via = europepmc(s["epmc"]), "논문 검색"
             if not got and s.get("rss"):
                 got, via = items_from(fetch_xml(s["rss"])), "기관 RSS"
+                got = [g2 for g2 in got if not g2["date"] or g2["date"] >= cutoff]   # 오래된 글만 남은 RSS는 빈 것으로 봄
             if not got and s.get("query"):          # RSS가 막히거나 비면 뉴스검색으로 대체
                 got = items_from(fetch_xml(google_news_rss(s["query"], s.get("lang", "en"))))
                 via = "뉴스검색"
@@ -179,6 +181,10 @@ def main():
             if keys:   # 주제와 먼 글을 걸러낸다 (프리프린트처럼 분야가 넓은 소스용)
                 got = [g2 for g2 in got
                        if any(k in (g2["title"] + " " + g2["excerpt"]).lower() for k in keys)]
+            musts = [k.lower() for k in s.get("must", [])]
+            if musts and via == "뉴스검색":   # 기관 이름을 단 소스인데 검색 결과가 그 기관 글이 아니면 버린다
+                got = [g2 for g2 in got
+                       if any(k in (g2["title"] + " " + g2["excerpt"] + " " + g2["origin"]).lower() for k in musts)]
             kept = 0
             for it in got:
                 title = re.sub(r"\s-\s[^-]+$", "", it["title"]).strip() if via == "뉴스검색" else it["title"]
@@ -198,6 +204,8 @@ def main():
                     "origin": it["origin"],
                     "link": it["link"],
                     "date": it["date"] or today.strftime("%Y-%m-%d"),
+                    "dateGuessed": not it["date"],          # 발행일을 못 읽어 수집일을 넣은 경우
+                    "via": via,                              # WHO 공식 / 기관 RSS / 뉴스검색 / 논문 검색
                     "excerpt": it["excerpt"],
                 })
                 kept += 1

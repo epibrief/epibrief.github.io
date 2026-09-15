@@ -35,7 +35,11 @@
      "site": "https://www.who.int/europe",
      "lang": "en",
      "desc": "WHO 유럽지역사무처 발표. 유럽 내 권고와 경보",
-     "via": "뉴스 검색"
+     "via": "뉴스 검색",
+     "must": [
+      "WHO",
+      "World Health Organization"
+     ]
     }
    ],
    "kind": "outbreak"
@@ -62,7 +66,11 @@
      "lang": "en",
      "query": "CDC MMWR report",
      "desc": "CDC 주간 이환·사망 보고(MMWR). 역학조사 결과가 논문 형태로 실림",
-     "via": "뉴스 검색"
+     "via": "뉴스 검색",
+     "must": [
+      "MMWR",
+      "Morbidity and Mortality"
+     ]
     },
     {
      "id": "cdc-han",
@@ -83,7 +91,11 @@
      "site": "https://wwwnc.cdc.gov/travel/notices",
      "lang": "en",
      "desc": "CDC 여행 건강 경보. 해외유입 위험 판단에 씀",
-     "via": "뉴스 검색"
+     "via": "뉴스 검색",
+     "must": [
+      "CDC",
+      "Centers for Disease"
+     ]
     }
    ],
    "kind": "outbreak"
@@ -100,7 +112,11 @@
      "lang": "en",
      "query": "ECDC outbreak threat assessment",
      "desc": "유럽 CDC 뉴스·주간 위협보고(CDTR). 유럽 발생 집계의 기준",
-     "via": "뉴스 검색"
+     "via": "뉴스 검색",
+     "must": [
+      "ECDC",
+      "European Centre for Disease"
+     ]
     },
     {
      "id": "ecdc-cdtr",
@@ -548,17 +564,40 @@
      "query": "PAHO epidemiological alert outbreak",
      "site": "",
      "via": "뉴스 검색",
-     "lang": "en"
+     "lang": "en",
+     "must": [
+      "PAHO",
+      "Pan American"
+     ]
     },
     {
      "id": "africacdc",
      "name": "아프리카 질병통제센터(Africa CDC)",
-     "region": "국제",
+     "region": "아프리카",
      "desc": "아프리카 대륙 유행 브리핑. 에볼라·마버그·엠폭스 대응 발표",
      "query": "Africa CDC outbreak briefing",
-     "site": "",
+     "site": "https://africacdc.org/",
      "via": "뉴스 검색",
-     "lang": "en"
+     "lang": "en",
+     "must": [
+      "Africa CDC",
+      "Africa Centres",
+      "africacdc"
+     ]
+    },
+    {
+     "id": "who-afro",
+     "name": "WHO 아프리카지역사무처(AFRO)",
+     "region": "아프리카",
+     "desc": "아프리카 주간 발생·비상 보고(OEW)",
+     "query": "WHO Africa outbreak emergency weekly bulletin",
+     "site": "https://www.afro.who.int/",
+     "via": "뉴스 검색",
+     "lang": "en",
+     "must": [
+      "WHO",
+      "World Health Organization"
+     ]
     },
     {
      "id": "who-wpro",
@@ -568,7 +607,11 @@
      "query": "WHO Western Pacific outbreak health emergency",
      "site": "",
      "via": "뉴스 검색",
-     "lang": "en"
+     "lang": "en",
+     "must": [
+      "WHO",
+      "World Health Organization"
+     ]
     },
     {
      "id": "who-searo",
@@ -578,27 +621,58 @@
      "query": "WHO South-East Asia outbreak disease",
      "site": "",
      "via": "뉴스 검색",
-     "lang": "en"
+     "lang": "en",
+     "must": [
+      "WHO",
+      "World Health Organization"
+     ]
+    },
+    {
+     "id": "who-emro",
+     "name": "WHO 동지중해지역사무처(EMRO)",
+     "region": "중동",
+     "desc": "중동·북아프리카 발생 동향(MERS·콜레라·폴리오)",
+     "query": "WHO Eastern Mediterranean outbreak EMRO",
+     "site": "https://www.emro.who.int/",
+     "via": "뉴스 검색",
+     "lang": "en",
+     "must": [
+      "WHO",
+      "World Health Organization"
+     ]
     },
     {
      "id": "japan-niid",
-     "name": "일본 국립감염증연구소·후생노동성",
+     "name": "일본 국립건강위기관리연구기구(JIHS)·후생노동성",
      "region": "아시아",
      "desc": "일본 감염병 발생과 대응. 인접국 유행 조기 신호",
-     "query": "Japan infectious disease outbreak NIID ministry health",
-     "site": "",
+     "query": "Japan JIHS infectious disease outbreak",
+     "site": "https://www.jihs.go.jp/",
      "via": "뉴스 검색",
-     "lang": "en"
+     "lang": "en",
+     "must": [
+      "Japan",
+      "Japanese",
+      "JIHS",
+      "NIID"
+     ]
     },
     {
      "id": "china-cdc",
-     "name": "중국 질병예방통제센터(China CDC)",
+     "name": "중국 질병예방통제센터 (China CDC Weekly)",
      "region": "아시아",
      "desc": "중국 내 발생 동향과 주간 보고",
      "query": "China CDC infectious disease weekly report outbreak",
-     "site": "",
-     "via": "뉴스 검색",
-     "lang": "en"
+     "site": "https://weekly.chinacdc.cn/",
+     "via": "기관 RSS",
+     "lang": "en",
+     "rss": "https://weekly.chinacdc.cn/rss/current.xml",
+     "must": [
+      "China",
+      "Chinese",
+      "中国",
+      "chinacdc"
+     ]
     },
     {
      "id": "taiwan-cdc",
@@ -608,7 +682,10 @@
      "query": "Taiwan CDC outbreak alert disease",
      "site": "",
      "via": "뉴스 검색",
-     "lang": "en"
+     "lang": "en",
+     "must": [
+      "Taiwan"
+     ]
     },
     {
      "id": "singapore-moh",
@@ -618,28 +695,25 @@
      "query": "Singapore MOH infectious disease outbreak dengue",
      "site": "",
      "via": "뉴스 검색",
-     "lang": "en"
+     "lang": "en",
+     "must": [
+      "Singapore"
+     ]
     },
     {
      "id": "aus-health",
      "name": "호주 보건부·NNDSS",
-     "region": "국제",
+     "region": "오세아니아",
      "desc": "남반구 절기 호흡기감염병 동향(우리 절기 예측에 참고)",
      "query": "Australia influenza surveillance report health department",
-     "site": "",
+     "site": "https://www.health.gov.au/",
      "via": "뉴스 검색",
-     "lang": "en"
-    },
-    {
-     "id": "ukhsa-id",
-     "name": "영국 UKHSA 감염병 발표",
-     "region": "유럽",
-     "desc": "영국 발생·경보와 근거검토",
-     "rss": "https://www.gov.uk/search/news-and-communications.atom?organisations%5B%5D=uk-health-security-agency",
-     "query": "UKHSA outbreak infection",
-     "site": "",
-     "via": "기관 RSS",
-     "lang": "en"
+     "lang": "en",
+     "must": [
+      "Australia",
+      "Australian",
+      "NNDSS"
+     ]
     }
    ]
   },

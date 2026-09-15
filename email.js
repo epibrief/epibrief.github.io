@@ -137,8 +137,11 @@
    </td></tr>
    <tr><td style="padding:16px 34px 26px 34px;border-top:1px solid #dde2e9">
      <div style="font:400 12px/1.6 ${FONT};color:#6d7885">
-       본 뉴스레터는 각 기관의 공개 자료와 학술 문헌을 정리한 것으로, 원문의 내용이 우선합니다.<br>
-       ${esc(m.org || '')}${m.editor ? ' · ' + esc(m.editor) : ''}</div>
+       ${m.asOf || m.period ? `자료 기준 ${m.asOf ? esc(m.asOf) : ''}${m.asOf && m.period ? ' · ' : ''}${m.period ? '수집 ' + esc(m.period) : ''}<br>` : ''}
+       본 뉴스레터는 각 기관의 공개 자료와 학술 문헌을 정리한 것으로, 원문의 내용이 우선합니다.
+       언론 보도로 표시된 항목은 1차 자료 확인 전 참고용입니다.<br>
+       ${esc(m.org || '')}${m.editor ? ' · ' + esc(m.editor) : ''}${m.contact ? ' · 문의 ' + esc(m.contact) : ''}
+       ${m.prevUrl && /^https?:\/\//i.test(m.prevUrl) ? ` · <a href="${esc(m.prevUrl)}" style="color:#6d7885">이전 호</a>` : ''}</div>
    </td></tr>
   </table>
  </td></tr>
