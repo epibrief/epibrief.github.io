@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>지역 보건소식지 — 에피브리프</title>
+<meta name="description" content="보건소·지자체가 자기 소식과 접종 일정을 넣고, 우리 지역 감염병 소식을 자동으로 붙여 소식지를 만드는 화면.">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700;800&display=swap">
+<link rel="stylesheet" href="../paper.css">
+<style>
+:root{ --ink:#191f28; --muted:#5d6875; --line:#dde2e9; --navy:#1b3fb0; --card:#fff; --bg:#f4f6f9; --radius:14px; --shadow:0 1px 2px rgba(20,30,50,.05); }
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Pretendard Variable","Pretendard","Noto Sans KR","Apple SD Gothic Neo",system-ui,sans-serif;font-size:16.5px;line-height:1.6;word-break:keep-all}
+.wrap{max-width:1360px;margin:0 auto;padding:0 18px}
+.top{background:var(--navy);color:#fff;padding:14px 0}
+.top h1{margin:0;font-family:"Nanum Myeongjo",serif;font-size:clamp(1.15rem,3.4vw,1.4rem);font-weight:800}
+.top .sub{font-size:.9rem;color:rgba(255,255,255,.82);margin-top:4px}
+.demo{background:#fff7e8;border-bottom:1px solid #f1d9a8;color:#6b4a00;font-size:.92rem;padding:10px 0}
+.demo .wrap{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.demo b{color:#8a5a00}
+.two{display:grid;grid-template-columns:480px 1fr;gap:18px;align-items:start;padding:18px 0 40px}
+.two>*{min-width:0}
+@media(max-width:1000px){.two{grid-template-columns:1fr}.previewbox{position:static}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;margin-bottom:14px;box-shadow:var(--shadow)}
+.card h2{margin:0 0 4px;font-size:1.08rem;color:var(--navy);font-weight:800}
+.card .hint{font-size:.9rem;color:var(--muted);margin:0 0 12px}
+details.card>summary{cursor:pointer;font-weight:800;color:var(--navy);font-size:1.08rem;list-style:none;display:flex;justify-content:space-between;align-items:center}
+details.card>summary::-webkit-details-marker{display:none}
+details.card>summary::after{content:"펼치기 ▾";font-size:.84rem;color:var(--muted);font-weight:600}
+details.card[open]>summary::after{content:"접기 ▴"}
+details.card>summary .n{font-size:.84rem;color:var(--muted);font-weight:600;margin-left:8px}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.grow{flex:1 1 200px;min-width:0}
+label.f{display:block;font-size:.88rem;font-weight:700;color:var(--muted);margin:8px 0 4px}
+label.f .req{color:#bf560c;font-weight:800;margin-left:4px}
+input[type=text],input[type=date],input[type=url],select,textarea{width:100%;padding:9px 11px;border:1px solid var(--line);border-radius:10px;font-size:.95rem;font-family:inherit;background:#fff;color:var(--ink)}
+textarea{min-height:76px;resize:vertical}
+.btn{border:1px solid var(--line);background:#fff;color:var(--navy);font-weight:700;font-size:.95rem;padding:10px 16px;border-radius:10px;cursor:pointer}
+.btn.pri{background:var(--navy);border-color:var(--navy);color:#fff}
+.btn.sm{padding:7px 12px;font-size:.88rem;border-radius:8px}
+.btn.warn{color:#9a3412}
+.note{font-size:.88rem;color:var(--muted)}
+.item{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin-top:8px;background:#fbfcfe}
+.item .row.head{justify-content:space-between}
+.item .row.head b{font-size:.95rem}
+.swatches{display:flex;gap:8px;flex-wrap:wrap}
+.sw{width:38px;height:38px;border-radius:10px;border:3px solid transparent;cursor:pointer}
+.sw.on{border-color:#191f28}
+.fitem{display:flex;gap:10px;padding:9px 0;border-bottom:1px solid #eef2f6;align-items:flex-start}
+.fitem:last-child{border-bottom:0}
+.fitem input{margin-top:5px}
+.fitem .t{font-weight:700;font-size:.95rem;line-height:1.4}
+.fitem .m{font-size:.84rem;color:var(--muted)}
+.acts{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.exgroup{display:flex;gap:6px;align-items:center;flex-wrap:wrap;padding:8px 12px;border:1px solid var(--line);border-radius:10px;background:#fff}
+.exgroup .exlabel{font-size:.86rem;font-weight:800;color:var(--muted);margin-right:2px}
+.previewbox{position:sticky;top:12px}
+#paper{margin:0 auto}
+#paper .tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:6px 0 4px}
+#paper table.sched{width:100%;min-width:420px;border-collapse:collapse;font-size:.95rem}
+#paper table.sched th,#paper table.sched td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}
+#paper table.sched th{font-size:.84rem;color:var(--brand);background:var(--accent-soft)}
+#paper .news-item{margin:0 0 14px}
+#paper .news-item h4{margin:0 0 4px;font-size:1.05rem}
+#paper .news-item p{margin:0 0 4px}
+#paper .news-item .when{font-size:.88rem;color:var(--accent);font-weight:700}
+#paper .empty{color:#5d6875;text-align:center;padding:30px 10px}
+@media print{ body{background:#fff} .top,.demo,.editor,.acts,.noprint{display:none!important} .two{display:block;padding:0} #paper{box-shadow:none;border:0} }
+</style>
+</head>
+<body>
+
+<div class="top"><div class="wrap">
+  <h1 id="brandTitle">지역 보건소식지</h1>
+  <div class="sub">보건소·지자체가 <b>우리 소식과 접종 일정</b>을 넣고, <b>우리 지역 감염병 소식</b>을 자동으로 붙여 한 장짜리 소식지를 만듭니다. 에피브리프가 매일 모으는 자료를 그대로 씁니다.</div>
+</div></div>
+
+<div class="demo noprint"><div class="wrap">
+  <span><b>데모 화면</b> — 기관 이름·색·소식을 바꿔 보세요. 저장은 이 브라우저에만 됩니다.</span>
+  <span class="row" style="gap:6px">
+    <button class="btn sm" data-preset="suwon">수원시 보건소 예시</button>
+    <button class="btn sm" data-preset="gangneung">강릉시 보건소 예시</button>
+    <button class="btn sm" data-preset="blank">새 기관으로 시작</button>
+  </span>
+</div></div>
+
+<div class="wrap two">
+<div class="editor">
+
+  <details class="card" open>
+    <summary>① 우리 기관 <span class="n" id="n1"></span></summary>
+    <div class="row">
+      <div class="grow"><label class="f">기관 이름<span class="req">*필수</span></label><input type="text" data-k="org" placeholder="예: ○○시 보건소"></div>
+      <div class="grow"><label class="f">소식지 이름<span class="req">*필수</span></label><input type="text" data-k="title" placeholder="예: ○○ 건강소식"></div>
+    </div>
+    <div class="row">
+      <div class="grow"><label class="f">호수</label><input type="text" data-k="issue" placeholder="예: 2026년 9월호"></div>
+      <div style="flex:0 0 170px"><label class="f">발행일</label><input type="date" data-k="date"></div>
+      <div class="grow"><label class="f">담당 부서·연락처</label><input type="text" data-k="contact" placeholder="예: 감염병관리과 031-000-0000"></div>
+    </div>
+    <label class="f">이달의 한마디 <span class="note">— 표지 맨 위에 크게 들어갑니다</span></label>
+    <textarea data-k="tagline" placeholder="예: 독감 유행주의보가 예년보다 일찍 내려졌습니다. 어르신 무료접종이 시작됩니다."></textarea>
+    <div class="row">
+      <div class="grow"><label class="f">대표 색</label>
+        <div class="swatches" id="swatches"></div></div>
+      <div class="grow"><label class="f">우리 지역 키워드 <span class="note">— 쉼표로 여러 개</span></label>
+        <input type="text" data-k="keywordsText" placeholder="예: 수원, 경기"></div>
+    </div>
+    <div class="row">
+      <div class="grow"><label class="f">구독·신청 링크 <span class="note">— 넣으면 QR이 생깁니다</span></label><input type="text" data-k="subUrl" placeholder="https://..."></div>
+      <div class="grow"><label class="f">구독 안내 문구</label><input type="text" data-k="subLabel" placeholder="예: 건강소식 받아보기"></div>
+    </div>
+  </details>
+
+  <details class="card" open>
+    <summary>② 우리 보건소 소식 <span class="n" id="n2"></span></summary>
+    <p class="hint">이번 호에 알릴 것을 적습니다. 위에 있는 것이 먼저 나옵니다.</p>
+    <div id="newsList"></div>
+    <button class="btn sm" id="addNews" style="margin-top:10px">+ 소식 추가</button>
+  </details>
+
+  <details class="card">
+    <summary>③ 접종·검진 일정 <span class="n" id="n3"></span></summary>
+    <p class="hint">표로 들어갑니다. 날짜 · 대상 · 내용 · 장소 · 비고.</p>
+    <div id="schedList"></div>
+    <button class="btn sm" id="addSched" style="margin-top:10px">+ 일정 추가</button>
+  </details>
+
+  <details class="card" open>
+    <summary>④ 우리 지역 감염병 소식 (자동) <span class="n" id="n4"></span></summary>
+    <p class="hint" id="feedHint">에피브리프가 모은 국내 자료 중 우리 지역 키워드가 들어간 것을 보여 드립니다. 체크한 것만 소식지에 들어갑니다.</p>
+    <div id="feedBox"></div>
+    <p class="note" style="margin-top:8px">전국 동향은 에피브리프 최신 발간호 한 줄이 자동으로 붙습니다.</p>
+  </details>
+
+  <details class="card">
+    <summary>⑤ 안내 문구</summary>
+    <label class="f">꼬리말 안내</label>
+    <textarea data-k="notice" placeholder="예: 일정은 사정에 따라 바뀔 수 있습니다. 방문 전 전화로 확인해 주세요."></textarea>
+  </details>
+
+  <div class="card">
+    <h2>내보내기</h2>
+    <div class="acts">
+      <div class="exgroup"><span class="exlabel">인쇄</span><button class="btn pri" id="exPrint">인쇄 · PDF로 저장</button></div>
+      <div class="exgroup"><span class="exlabel">메일</span><button class="btn" id="exMail">본문 복사해서 붙여넣기</button></div>
+      <div class="exgroup"><span class="exlabel">파일</span><button class="btn" id="exHtml">웹페이지(.html)</button><button class="btn" id="exJson">기관 설정 파일</button></div>
+      <button class="btn warn" id="reset">처음으로 되돌리기</button>
+    </div>
+    <p class="note">기관 설정 파일은 다른 컴퓨터로 옮기거나, 여러 보건소에 같은 틀을 나눠 줄 때 씁니다. 이 화면 주소 뒤에 <code>?org=suwon</code>처럼 기관 코드를 붙이면 그 기관 설정으로 바로 열립니다.</p>
+  </div>
+</div>
+
+<div class="previewbox">
+  <div id="paper" class="t-official"></div>
+</div>
+</div>
+
+<script src="../email.js"></script>
+<script src="../vendor/qrcode.min.js"></script>
+<script>
+/* ─────────────────────────────────────────────
+   지역 보건소식지 — 에피브리프의 자료·서식을 그대로 쓰되,
+   지자체가 "직접 쓰는 소식"이 중심이 되도록 흐름을 따로 만든 화면입니다.
+   - 저장: 이 브라우저(localStorage)에 기관(slug)별로 저장
+   - 프리셋: presets/<slug>.json (?org=slug 로 열기)
+   ───────────────────────────────────────────── */
+const $  = (s, r) => (r || document).querySelector(s);
+const $$ = (s, r) => Array.from((r || document).querySelectorAll(s));
+const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const ymd = d => (d || '').replace(/-/g, '.') + ((d || '').length === 10 ? '.' : '');
+const safeUrl = u => /^https?:\/\//i.test(u || '') ? u : '';
+const KEY = 'epibrief-local-v1';
+
+/* 대표 색 — 발간본과 같은 팔레트를 씁니다(메일 서식과 색이 맞도록 kind 이름을 같이 둡니다) */
+const COLORS = {
+  blue:  { brand:'#1b3fb0', kind:'outbreak', label:'파랑' },
+  teal:  { brand:'#0d6e6d', kind:'phsm',     label:'청록' },
+  green: { brand:'#146c3a', kind:'chronic',  label:'초록' },
+  ocean: { brand:'#0d5c8c', kind:'climate',  label:'바다' }
+};
+const BLANK = () => ({ slug:'new', org:'', orgShort:'', title:'', issue:'', date:new Date().toISOString().slice(0,10),
+  contact:'', subUrl:'', subLabel:'건강소식 받아보기', color:'green', keywords:[], keywordsText:'', tagline:'',
+  news:[], schedule:[], notice:'일정은 사정에 따라 바뀔 수 있습니다. 방문 전 전화로 확인해 주세요.', picked:[] });
+
+let L = BLANK();
+let FEED = { items: [], updated: '' }, LATEST = null;
+
+/* ── 저장/복원 ── */
+function allSaved(){ try { return JSON.parse(localStorage.getItem(KEY) || '{}'); } catch(e){ return {}; } }
+function save(){ try { const all = allSaved(); all[L.slug] = L; all.__last = L.slug; localStorage.setItem(KEY, JSON.stringify(all)); } catch(e){} }
+function sanitize(o){
+  const b = BLANK(); o = Object.assign(b, o || {});
+  ['news','schedule','picked','keywords'].forEach(k => { if (!Array.isArray(o[k])) o[k] = []; });
+  if (!COLORS[o.color]) o.color = 'green';
+  if (!o.keywordsText) o.keywordsText = o.keywords.join(', ');
+  return o;
+}
+async function loadPreset(slug){
+  if (slug === 'blank'){ L = BLANK(); L.slug = 'new-' + Date.now().toString(36); save(); return; }
+  const saved = allSaved()[slug];
+  if (saved){ L = sanitize(saved); return; }
+  try {
+    const r = await fetch('presets/' + slug + '.json'); if (!r.ok) throw 0;
+    L = sanitize(await r.json()); L.picked = []; save();
+  } catch(e){ L = BLANK(); L.slug = slug; }
+}
+
+/* ── 폼 ↔ 상태 ── */
+function syncForm(){
+  $$('[data-k]').forEach(el => { el.value = L[el.dataset.k] || ''; });
+  $('#swatches').innerHTML = Object.entries(COLORS).map(([k, c]) =>
+    `<span class="sw ${L.color === k ? 'on' : ''}" data-color="${k}" title="${c.label}" style="background:${c.brand}"></span>`).join('');
+  renderNews(); renderSched(); renderFeed(); renderPaper();
+}
+$$('[data-k]').forEach(el => el.addEventListener('input', () => {
+  L[el.dataset.k] = el.value;
+  if (el.dataset.k === 'keywordsText'){ L.keywords = el.value.split(/[,、\s]+/).map(s => s.trim()).filter(Boolean); renderFeed(); }
+  save(); renderPaper();
+}));
+$('#swatches').addEventListener('click', e => {
+  const s = e.target.closest('[data-color]'); if (!s) return;
+  L.color = s.dataset.color; save(); syncForm();
+});
+
+/* ── ② 소식 ── */
+function renderNews(){
+  $('#n2').textContent = L.news.length ? `${L.news.length}건` : '';
+  $('#newsList').innerHTML = L.news.map((n, i) => `
+    <div class="item" data-i="${i}">
+      <div class="row head"><b>소식 ${i + 1}</b>
+        <span><button class="btn sm" data-up="${i}">↑</button> <button class="btn sm" data-del="${i}">지우기</button></span></div>
+      <label class="f">제목</label><input type="text" data-nk="title" value="${esc(n.title)}" placeholder="예: 어르신 인플루엔자 무료접종 시작">
+      <label class="f">내용 <span class="note">— 두세 문장, 쉬운 말로</span></label><textarea data-nk="body" placeholder="누가 · 언제 · 어디서 · 무엇을 챙겨야 하는지">${esc(n.body)}</textarea>
+      <div class="row">
+        <div class="grow"><label class="f">일시·장소</label><input type="text" data-nk="when" value="${esc(n.when)}" placeholder="예: 9.21.(월)부터 · 보건소"></div>
+        <div class="grow"><label class="f">자세히 보기 링크(선택)</label><input type="text" data-nk="link" value="${esc(n.link || '')}" placeholder="https://..."></div>
+      </div>
+    </div>`).join('') || '<p class="note">아직 소식이 없습니다. 아래 [+ 소식 추가]를 눌러 주세요.</p>';
+}
+$('#addNews').onclick = () => { L.news.push({ title:'', body:'', when:'', link:'' }); save(); renderNews(); renderPaper();
+  const last = $$('#newsList .item').pop(); if (last) last.querySelector('input').focus(); };
+$('#newsList').addEventListener('input', e => {
+  const it = e.target.closest('.item'); const k = e.target.dataset.nk; if (!it || !k) return;
+  L.news[+it.dataset.i][k] = e.target.value; save(); renderPaper();
+});
+$('#newsList').addEventListener('click', e => {
+  const up = e.target.closest('[data-up]'), del = e.target.closest('[data-del]');
+  if (up){ const i = +up.dataset.up; if (i > 0) L.news.splice(i - 1, 0, L.news.splice(i, 1)[0]); }
+  if (del){ if (!confirm('이 소식을 지울까요?')) return; L.news.splice(+del.dataset.del, 1); }
+  if (up || del){ save(); renderNews(); renderPaper(); }
+});
+
+/* ── ③ 일정 ── */
+function renderSched(){
+  $('#n3').textContent = L.schedule.length ? `${L.schedule.length}건` : '';
+  $('#schedList').innerHTML = L.schedule.map((s, i) => `
+    <div class="item" data-i="${i}">
+      <div class="row head"><b>일정 ${i + 1}</b><button class="btn sm" data-del="${i}">지우기</button></div>
+      <div class="row">
+        <div style="flex:0 0 120px"><label class="f">날짜</label><input type="text" data-sk="date" value="${esc(s.date)}" placeholder="9.21.(월)~"></div>
+        <div class="grow"><label class="f">대상</label><input type="text" data-sk="who" value="${esc(s.who)}" placeholder="75세 이상"></div>
+        <div class="grow"><label class="f">내용</label><input type="text" data-sk="what" value="${esc(s.what)}" placeholder="인플루엔자 무료접종"></div>
+      </div>
+      <div class="row">
+        <div class="grow"><label class="f">장소</label><input type="text" data-sk="where" value="${esc(s.where)}" placeholder="보건소·위탁의료기관"></div>
+        <div class="grow"><label class="f">비고</label><input type="text" data-sk="note" value="${esc(s.note || '')}" placeholder="신분증 지참"></div>
+      </div>
+    </div>`).join('') || '<p class="note">아직 일정이 없습니다.</p>';
+}
+$('#addSched').onclick = () => { L.schedule.push({ date:'', who:'', what:'', where:'', note:'' }); save(); renderSched(); renderPaper(); };
+$('#schedList').addEventListener('input', e => {
+  const it = e.target.closest('.item'); const k = e.target.dataset.sk; if (!it || !k) return;
+  L.schedule[+it.dataset.i][k] = e.target.value; save(); renderPaper();
+});
+$('#schedList').addEventListener('click', e => {
+  const del = e.target.closest('[data-del]'); if (!del) return;
+  if (!confirm('이 일정을 지울까요?')) return;
+  L.schedule.splice(+del.dataset.del, 1); save(); renderSched(); renderPaper();
+});
+
+/* ── ④ 우리 지역 감염병 (자동) ── */
+const viaOf = it => /논문/.test(it.via || '') ? '게재' : /뉴스/.test(it.via || '') ? '보도' : it.via ? '발표' : '보도';
+function regionItems(){
+  const kr = FEED.items.filter(it => it.region === '국내' && (it.kind || 'outbreak') === 'outbreak');
+  const kw = L.keywords.filter(Boolean);
+  const local = kw.length ? kr.filter(it => kw.some(k => (it.title + ' ' + (it.excerpt || '')).includes(k))) : [];
+  return { local: local.slice(0, 15), national: kr.slice(0, 10) };
+}
+function renderFeed(){
+  const { local, national } = regionItems();
+  const list = local.length ? local : national;
+  $('#feedHint').textContent = local.length
+    ? `우리 지역(${L.keywords.join('·')}) 언급 자료 ${local.length}건입니다. 체크한 것만 소식지에 들어갑니다.`
+    : (L.keywords.length ? `최근 자료 중 우리 지역(${L.keywords.join('·')}) 언급이 없어 전국 소식을 보여 드립니다.` : '①에서 지역 키워드를 넣으면 우리 지역 자료만 골라 드립니다. 지금은 전국 소식입니다.');
+  $('#n4').textContent = L.picked.length ? `${L.picked.length}건 담음` : '';
+  $('#feedBox').innerHTML = list.length ? list.map(it => {
+    const on = L.picked.some(p => p.link === it.link);
+    return `<label class="fitem"><input type="checkbox" data-pick="${esc(it.link)}" ${on ? 'checked' : ''}>
+      <span><span class="t">${esc(it.title)}</span><br>
+      <span class="m">${esc(viaOf(it) === '보도' ? (it.origin || '언론') : it.sourceName)} · ${esc(it.date)} ${esc(viaOf(it))}</span></span></label>`;
+  }).join('') : '<p class="note">자료를 불러오지 못했습니다.</p>';
+}
+$('#feedBox').addEventListener('change', e => {
+  const cb = e.target.closest('[data-pick]'); if (!cb) return;
+  const link = cb.dataset.pick;
+  if (cb.checked){
+    const it = FEED.items.find(x => x.link === link); if (!it) return;
+    L.picked.push({ title: it.title, link: it.link, date: it.date, who: viaOf(it) === '보도' ? (it.origin || '언론') : it.sourceName, via: viaOf(it) });
+  } else L.picked = L.picked.filter(p => p.link !== link);
+  save(); renderFeed(); renderPaper();
+});
+
+/* ── 미리보기 ── */
+function renderPaper(){
+  const p = $('#paper'); const c = COLORS[L.color] || COLORS.green;
+  p.className = 't-official k-' + c.kind;
+  $('#brandTitle').textContent = L.title ? `${L.title} — 지역 보건소식지` : '지역 보건소식지';
+  $('#n1').textContent = L.org || '';
+  document.title = (L.title ? L.title + ' — ' : '') + '지역 보건소식지';
+  const dateTxt = ymd(L.date);
+  const news = L.news.filter(n => n.title || n.body);
+  const sched = L.schedule.filter(s => s.what);
+  if (!L.org && !news.length){
+    p.innerHTML = '<p class="empty">왼쪽에서 기관 이름과 소식을 적으면 여기에 소식지가 그려집니다.<br>위의 <b>수원시 보건소 예시</b>를 눌러 보셔도 됩니다.</p>'; return;
+  }
+  const stats = `<div class="stats">
+      <div class="stat"><div class="v">${news.length}건</div><div class="l">우리 보건소 소식</div></div>
+      <div class="stat"><div class="v">${sched.length}건</div><div class="l">접종·검진 일정</div></div>
+      <div class="stat"><div class="v">${L.picked.length}건</div><div class="l">우리 지역 감염병 소식</div></div>
+      <div class="stat"><div class="v">${esc(FEED.updated ? FEED.updated.slice(5, 10).replace('-', '.') + '.' : '-')}</div><div class="l">자료 기준일</div></div>
+    </div>`;
+  const toc = `<ul class="issues">
+      ${news.map((n, i) => `<li><a href="#n${i + 1}"><span class="no">${i + 1}</span><span class="it">${esc(n.title || '(제목 없음)')}</span></a></li>`).join('')}
+      ${sched.length ? `<li><a href="#sched"><span class="no">${news.length + 1}</span><span class="it">접종·검진 일정</span></a></li>` : ''}
+      ${L.picked.length || LATEST ? `<li><a href="#region"><span class="no">${news.length + (sched.length ? 2 : 1)}</span><span class="it">우리 지역·전국 감염병 소식</span></a></li>` : ''}
+    </ul>`;
+  const newsHtml = news.length ? `<section class="topic">
+      <div class="topic-head"><span class="topic-no">1</span><h2>우리 보건소 소식</h2></div>
+      ${news.map((n, i) => `<div class="news-item" id="n${i + 1}">
+        <h4>${esc(n.title)}</h4>
+        ${n.when ? `<div class="when">${esc(n.when)}</div>` : ''}
+        <p>${esc(n.body)}</p>
+        ${safeUrl(n.link) ? `<a href="${esc(n.link)}" target="_blank" rel="noopener">자세히 보기</a>` : ''}
+      </div>`).join('')}
+    </section>` : '';
+  const schedHtml = sched.length ? `<section class="topic" id="sched">
+      <div class="topic-head"><span class="topic-no">2</span><h2>접종·검진 일정</h2></div>
+      <div class="tablewrap"><table class="sched"><thead><tr><th>날짜</th><th>대상</th><th>내용</th><th>장소</th><th>비고</th></tr></thead>
+      <tbody>${sched.map(s => `<tr><td>${esc(s.date)}</td><td>${esc(s.who)}</td><td><b>${esc(s.what)}</b></td><td>${esc(s.where)}</td><td>${esc(s.note || '')}</td></tr>`).join('')}</tbody></table></div>
+    </section>` : '';
+  const regionHtml = (L.picked.length || LATEST) ? `<section class="topic" id="region">
+      <div class="topic-head"><span class="topic-no">${sched.length ? 3 : 2}</span><h2>우리 지역·전국 감염병 소식</h2></div>
+      ${L.picked.length ? `<div class="sec"><h4>우리 지역 (${esc(L.keywords.join('·') || '국내')})</h4><ul>
+        ${L.picked.map(x => `<li>「${esc(x.title)}」 (${esc(x.who)}, ${esc(ymd(x.date))} ${esc(x.via)})${safeUrl(x.link) ? ` <a href="${esc(x.link)}" target="_blank" rel="noopener">원문</a>` : ''}</li>`).join('')}
+      </ul></div>` : ''}
+      ${LATEST ? `<div class="sec"><h4>전국·세계 동향 한 줄</h4><ul>
+        <li>${esc(LATEST.tagline || LATEST.title)} <a href="../issues/${esc(LATEST.file)}" target="_blank" rel="noopener">에피브리프 ${esc(LATEST.issue)} 보기</a></li>
+      </ul></div>` : ''}
+    </section>` : '';
+  const sub = safeUrl(L.subUrl) ? `<aside class="subscribe">
+      <div id="qrBox"></div>
+      <div class="sub-text"><div class="sub-title">${esc(L.subLabel || '건강소식 받아보기')}</div>
+      <div class="sub-note">휴대폰 카메라로 찍으면 신청 화면으로 이어집니다.</div>
+      <a href="${esc(L.subUrl)}" target="_blank" rel="noopener">${esc(L.subUrl)}</a></div>
+    </aside>` : '';
+  p.innerHTML = `
+  <header class="nl-head">
+    <div class="nl-topline"><span>지역 보건소식지</span><span class="issue">${esc(L.issue)}${L.issue && dateTxt ? ' · ' : ''}${esc(dateTxt)}</span></div>
+    <div class="nl-kicker">${esc(L.org || '(기관 이름을 적어 주세요)')}</div>
+    <h1 class="nl-title">${esc(L.title || '건강소식')}</h1>
+    ${L.tagline ? `<p class="nl-lead">${esc(L.tagline)}</p>` : ''}
+  </header>
+  <div class="nl-bar"><span>발행 ${esc(L.org)}</span>${L.contact ? `<span>문의 ${esc(L.contact)}</span>` : ''}</div>
+  <div class="brief"><div class="brief-label">이번 호에는</div>${stats}${toc}</div>
+  ${newsHtml}${schedHtml}${regionHtml}${sub}
+  <footer class="foot-note">
+    ${L.notice ? esc(L.notice) + '<br>' : ''}
+    감염병 소식은 에피브리프(epibrief.github.io)가 모은 공개 자료를 정리한 것으로, 원문의 내용이 우선합니다. 언론 보도로 표시된 항목은 참고용입니다.
+    <br>${esc(L.org)}${L.contact ? ' · ' + esc(L.contact) : ''}
+  </footer>`;
+  if (safeUrl(L.subUrl)) drawQR(L.subUrl);
+}
+function drawQR(url){
+  const box = $('#qrBox'); if (!box || typeof QRCode === 'undefined') return;
+  box.innerHTML = '';
+  const brand = (COLORS[L.color] || COLORS.green).brand;
+  new QRCode(box, { text: url, width: 112, height: 112, colorDark: brand, colorLight: '#ffffff', correctLevel: QRCode.CorrectLevel.M });
+  setTimeout(() => { const cv = box.querySelector('canvas');
+    if (cv){ const img = new Image(); img.src = cv.toDataURL('image/png'); img.alt = 'QR'; box.innerHTML = ''; box.appendChild(img); } }, 60);
+}
+
+/* ── 내보내기 ── */
+function needContent(){
+  if (!L.org || !L.title){ alert('①에서 기관 이름과 소식지 이름을 먼저 적어 주세요.'); return true; }
+  if (!L.news.filter(n => n.title || n.body).length && !L.picked.length){ alert('②에서 소식을 하나 이상 적거나, ④에서 지역 소식을 담아 주세요.'); return true; }
+  return false;
+}
+function paperDoc(){
+  const css = Array.from(document.styleSheets).map(sh => { try { return Array.from(sh.cssRules).map(r => r.cssText).join('\n'); } catch(e){ return ''; } }).join('\n');
+  return `<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><title>${esc(L.title)} ${esc(L.issue)}</title>
+<style>${css}\nbody{background:#fff}#paper{box-shadow:none;margin:0 auto;max-width:860px}</style></head>
+<body><div id="paper" class="${esc($('#paper').className)}">${$('#paper').innerHTML}</div></body></html>`;
+}
+function download(name, mime, text){
+  const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([text], { type: mime }));
+  a.download = name; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1500);
+}
+const fname = ext => (L.title || '건강소식').replace(/\s+/g, '') + '_' + (L.issue || L.date).replace(/[^\w가-힣]+/g, '') + '.' + ext;
+$('#exPrint').onclick = () => { if (needContent()) return; window.print(); };
+$('#exHtml').onclick  = () => { if (needContent()) return; download(fname('html'), 'text/html;charset=utf-8', paperDoc()); };
+$('#exJson').onclick  = () => {
+  const out = Object.assign({}, L); delete out.picked; delete out.keywordsText;
+  download((L.slug || 'org') + '.json', 'application/json', JSON.stringify(out, null, 1));
+};
+$('#exMail').onclick = async () => {
+  if (needContent()) return;
+  const c = COLORS[L.color] || COLORS.green, F = "'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif";
+  const news = L.news.filter(n => n.title || n.body), sched = L.schedule.filter(s => s.what);
+  const sec = (t, inner) => `<tr><td style="padding:16px 0 4px 0;font:800 13px/1.4 ${F};letter-spacing:.06em;color:${c.brand}">${esc(t)}</td></tr>${inner}`;
+  const html = `<table role="presentation" width="640" cellpadding="0" cellspacing="0" style="max-width:100%;background:#fff;border:1px solid #dde2e9;border-top:6px solid ${c.brand};font-family:${F}">
+  <tr><td style="padding:26px 30px 8px 30px">
+    <div style="font:700 12px/1.4 ${F};letter-spacing:.08em;color:#bf560c">${esc(L.org)}</div>
+    <div style="font:800 26px/1.25 ${F};color:${c.brand};padding:8px 0 6px 0">${esc(L.title)}</div>
+    <div style="font:400 12px/1.5 ${F};color:#6d7885">${esc(L.issue)}${L.issue ? ' · ' : ''}${esc(ymd(L.date))}</div>
+    ${L.tagline ? `<div style="font:500 16px/1.6 ${F};color:#3d4753;padding-top:12px">${esc(L.tagline)}</div>` : ''}
+  </td></tr>
+  <tr><td style="padding:0 30px 20px 30px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+    ${news.length ? sec('우리 보건소 소식', news.map(n => `<tr><td style="padding:6px 0 10px 0;font:400 15px/1.7 ${F};color:#3d4753"><b>${esc(n.title)}</b>${n.when ? `<br><span style="color:#bf560c;font-weight:700;font-size:13px">${esc(n.when)}</span>` : ''}<br>${esc(n.body)}</td></tr>`).join('')) : ''}
+    ${sched.length ? sec('접종·검진 일정', sched.map(s => `<tr><td style="padding:4px 0;font:400 14px/1.6 ${F};color:#3d4753">· <b>${esc(s.date)}</b> ${esc(s.who)} — ${esc(s.what)} (${esc(s.where)}${s.note ? ', ' + esc(s.note) : ''})</td></tr>`).join('')) : ''}
+    ${L.picked.length ? sec('우리 지역 감염병 소식', L.picked.map(x => `<tr><td style="padding:4px 0;font:400 14px/1.6 ${F};color:#3d4753">· 「${esc(x.title)}」 (${esc(x.who)}, ${esc(ymd(x.date))} ${esc(x.via)})${safeUrl(x.link) ? ` <a href="${esc(x.link)}" style="color:#bf560c">원문</a>` : ''}</td></tr>`).join('')) : ''}
+    ${LATEST ? sec('전국·세계 동향 한 줄', `<tr><td style="padding:4px 0;font:400 14px/1.6 ${F};color:#3d4753">· ${esc(LATEST.tagline || LATEST.title)} <a href="${location.origin}/issues/${esc(LATEST.file)}" style="color:#bf560c">에피브리프 ${esc(LATEST.issue)} 보기</a></td></tr>`) : ''}
+    ${safeUrl(L.subUrl) ? `<tr><td style="padding:16px 0 0 0"><a href="${esc(L.subUrl)}" style="display:inline-block;background:${c.brand};color:#fff;font:700 14px/1 ${F};padding:11px 16px;border-radius:8px;text-decoration:none">${esc(L.subLabel || '건강소식 받아보기')}</a></td></tr>` : ''}
+  </table></td></tr>
+  <tr><td style="padding:14px 30px 22px 30px;border-top:1px solid #dde2e9;font:400 12px/1.6 ${F};color:#6d7885">${esc(L.notice)}<br>${esc(L.org)}${L.contact ? ' · ' + esc(L.contact) : ''}</td></tr>
+  </table>`;
+  const text = [`${L.title} ${L.issue}`.trim(), L.org, '', L.tagline, '',
+    ...news.map(n => `■ ${n.title}\n${n.when ? n.when + '\n' : ''}${n.body}\n`),
+    sched.length ? '■ 접종·검진 일정\n' + sched.map(s => `- ${s.date} ${s.who} ${s.what} (${s.where})`).join('\n') : '',
+    L.picked.length ? '\n■ 우리 지역 감염병 소식\n' + L.picked.map(x => `- ${x.title} (${x.who}, ${x.date}) ${x.link}`).join('\n') : ''
+  ].filter(x => x != null).join('\n');
+  try {
+    if (navigator.clipboard && window.ClipboardItem){
+      await navigator.clipboard.write([new ClipboardItem({ 'text/html': new Blob([html], { type: 'text/html' }), 'text/plain': new Blob([text], { type: 'text/plain' }) })]);
+    } else await navigator.clipboard.writeText(text);
+    alert('메일 본문을 복사했습니다. 메일 쓰기 화면에 붙여넣으세요(Ctrl+V / Mac은 Cmd+V).');
+  } catch(e){ alert('복사하지 못했습니다. 인쇄·PDF나 웹페이지 저장을 이용해 주세요.'); }
+};
+$('#reset').onclick = () => {
+  if (!confirm('이 기관의 소식·일정·설정을 모두 지우고 처음 상태로 되돌릴까요?')) return;
+  const all = allSaved(); delete all[L.slug]; localStorage.setItem(KEY, JSON.stringify(all));
+  loadPreset(L.slug).then(syncForm);
+};
+document.addEventListener('click', e => {
+  const b = e.target.closest('button[data-preset]'); if (!b) return;
+  loadPreset(b.dataset.preset).then(() => { history.replaceState(null, '', '?org=' + encodeURIComponent(L.slug)); syncForm(); });
+});
+
+/* ── 시작 ── */
+(async function init(){
+  try { FEED = await (await fetch('../data/feed.json')).json(); } catch(e){}
+  try { const m = await (await fetch('../issues/manifest.json')).json();
+        LATEST = (m.issues || []).filter(x => x.kind === 'outbreak').sort((a, b) => (b.date || '').localeCompare(a.date || ''))[0] || null; } catch(e){}
+  const q = new URLSearchParams(location.search).get('org');
+  const slug = q || allSaved().__last || 'suwon';
+  await loadPreset(slug);
+  syncForm();
+})();
+</script>
+</body>
+</html>
