@@ -1063,7 +1063,7 @@ function emptyFeedMsg(){
   if (q){
     Object.keys(KINDS).filter(k => k !== S.kind).forEach(k => {
       const n = countIn(k, words, cut);
-      if (n) cross += `<button class="btn sm pri" data-kind="${k}">「${KIND_LABEL[k]}」에서 ${n}건 보기</button>`;
+      if (n) cross += `<button class="btn sm pri" data-tokind="${k}">「${KIND_LABEL[k]}」에서 ${n}건 보기</button>`;
     });
   }
   return `<div class="empty" style="text-align:left">
@@ -1076,7 +1076,7 @@ function emptyFeedMsg(){
   </div>`;
 }
 document.addEventListener('click', e => {
-  const f = e.target.closest('[data-fix]'), k = e.target.closest('[data-kind]');
+  const f = e.target.closest('button[data-fix]'), k = e.target.closest('button[data-tokind]');
   if (f){
     const w = f.dataset.fix;
     if (w === 'search'){ $('#feedSearch').value = ''; }
@@ -1086,7 +1086,7 @@ document.addEventListener('click', e => {
     save(); renderFeed();
   }
   if (k){
-    const rk = $(`input[name=kind][value="${k.dataset.kind}"]`);
+    const rk = $(`input[name=kind][value="${k.dataset.tokind}"]`);
     if (rk){ rk.checked = true; rk.dispatchEvent(new Event('change', { bubbles: true })); }
   }
 });
@@ -1708,7 +1708,7 @@ $('#repGo').onclick = async () => {
       .map(k => [k, countIn(k, words, cut)]).filter(([, n]) => n);
     $('#repLog').innerHTML = other.length
       ? `지금 유형(<b>${esc(KIND_LABEL[S.kind])}</b>)에는 없습니다. ` +
-        other.map(([k, n]) => `<button class="btn sm pri" data-kind="${k}">「${KIND_LABEL[k]}」에 ${n}건 — 그쪽에서 보기</button>`).join(' ')
+        other.map(([k, n]) => `<button class="btn sm pri" data-tokind="${k}">「${KIND_LABEL[k]}」에 ${n}건 — 그쪽에서 보기</button>`).join(' ')
       : '해당 키워드 자료를 찾지 못했습니다. 다른 말로 바꾸거나 기간을 늘려 보세요.';
     return;
   }
