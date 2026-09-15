@@ -340,7 +340,7 @@ textarea{min-height:90px;resize:vertical}
       </div>
       <div class="card" style="margin-bottom:12px">
         <div class="row">
-          <div class="grow"><label class="f">제목·내용 검색</label><input type="text" id="feedSearch" placeholder="예: 뎅기, measles, West Nile"></div>
+          <div class="grow"><label class="f">제목·내용 검색</label><input type="text" id="feedSearch" placeholder="예: 뎅기, measles, West Nile (쉼표로 여러 개)"></div>
           <div style="flex:0 0 170px"><label class="f">지역</label>
             <select id="regionSel"></select>
           </div>
@@ -457,7 +457,8 @@ textarea{min-height:90px;resize:vertical}
 <section class="panel" id="p4"><div class="wrap">
   <div class="card noprint">
     <h2>다듬고 내보내기</h2>
-    <p class="hint">아래 미리보기에서 <b>글자를 직접 고칠 수 있습니다</b>. 고친 내용 그대로 내보내집니다.</p>
+    <p class="hint">아래 미리보기에서 <b>글자를 직접 고칠 수 있습니다</b>. 고친 내용은 <b>인쇄·PDF, HTML, 워드 저장</b>에 반영됩니다.
+      메일 본문과 공유 링크는 ③ 단계에서 만든 초안 기준으로 나갑니다.</p>
     <div class="row">
       <button class="btn" id="exPrint">인쇄 · PDF로 저장</button>
       <button class="btn" id="exHtml">HTML 파일로 저장</button>
@@ -489,11 +490,19 @@ const domainOf = u => { try { const h = new URL(u).hostname.replace(/^www\./, ''
     return h === 'news.google.com' ? '' : h; } catch(e){ return ''; } };
 const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
+const DEFAULT_META = { org:'', title:'전 세계 감염병 발생 동향', issue:'', date:'', editor:'', subUrl:'', subLabel:'뉴스레터 구독·지난 호 보기' };
 const S = {
   kind: 'outbreak', sel: {}, days: 14, picked: [], mySources: [], myItems: [],
-  meta: { org:'', title:'전 세계 감염병 발생 동향', issue:'', date:'', editor:'', subUrl:'', subLabel:'뉴스레터 구독·지난 호 보기' },
+  meta: Object.assign({}, DEFAULT_META),
   tpl: 'official', tone: 'official', model: 'claude-opus-5',
   draft: null
+};
+/* 유형별 처음 골라 두는 소스 — 첫 방문 때와 유형을 바꿀 때 씁니다. */
+const DEFAULT_SEL = {
+  outbreak: ['who-don','cdc-news','ecdc-news','kdca'],
+  phsm: ['who-phsm','ukhsa','epmc-phsm','epmc-npi','epmc-rcce'],
+  chronic: ['who-ncd','kdca-ncd','epmc-ncd','epmc-cvd','epmc-dm'],
+  climate: ['who-climate','wmo-heat','cdc-heat','kr-heat','epmc-heat-mort','epmc-hhws']
 };
 let SOURCES = { groups: [] }, FEED = { items: [], updated: '' };
 
@@ -613,8 +622,21 @@ function save(){
 function restore(){
   try {
     const raw = localStorage.getItem(KEY); if (!raw) return;
-    Object.assign(S, JSON.parse(raw));
+    const p = JSON.parse(raw);
+    if (p && typeof p === 'object') Object.assign(S, p);
   } catch(e){}
+  sanitize();
+}
+/* 저장된 상태가 예전 형식이거나 깨져 있어도 앱이 멈추지 않도록 모양을 맞춥니다. */
+function sanitize(){
+  if (!KINDS[S.kind]) S.kind = 'outbreak';
+  if (!S.sel || typeof S.sel !== 'object') S.sel = {};
+  S.meta = Object.assign({}, DEFAULT_META, (S.meta && typeof S.meta === 'object') ? S.meta : {});
+  ['picked', 'mySources', 'myItems'].forEach(k => { if (!Array.isArray(S[k])) S[k] = []; });
+  if (S.draft && !Array.isArray(S.draft.topics)) S.draft = null;
+  if (![7, 14, 30, 45].includes(+S.days)) S.days = 14;
+  if (!['official', 'brief', 'card'].includes(S.tpl)) S.tpl = 'official';
+  if (!['official', 'plain'].includes(S.tone)) S.tone = 'official';
 }
 
 /* ── 메뉴 이동 ───────────────────────────── */
@@ -706,8 +728,10 @@ document.addEventListener('click', async e => {
   const cp = e.target.closest('[data-copyissue]');
   if (cp){
     const r = ISSUES[+cp.dataset.copyissue]; if (!r) return;
+    if (!confirmReplace('이 발간본')) return;
     const data = await (await fetch('samples/' + r.file.replace('.html', '.json'))).json();
-    S.kind = data.kind; S.tpl = data.tpl; S.meta = Object.assign({}, S.meta, data.meta); S.draft = data.draft;
+    S.tpl = data.tpl; S.meta = Object.assign({}, S.meta, data.meta); S.draft = data.draft;
+    setKind(data.kind, { keepTitle: true });
     save(); nav('make'); syncForm(); go(4);
   }
 });
@@ -843,8 +867,10 @@ function bindRevActions(){
     putMine(list); renderMine(); alert('저장했습니다. 아래 [저장한 정리본]에서 다시 볼 수 있습니다.');
   };
   $('#revLetter').onclick = () => {
+    if (!confirmReplace('이 정리본')) return;
     const d = revToData();
-    S.kind = d.kind; S.tpl = d.tpl; S.meta = Object.assign({}, S.meta, d.meta); S.draft = d.draft;
+    S.tpl = d.tpl; S.meta = Object.assign({}, S.meta, d.meta); S.draft = d.draft;
+    setKind(d.kind, { keepTitle: true });
     save(); saveMine(); nav('make'); syncForm(); go(4);
   };
   $('#revAI').onclick = async () => {
@@ -905,9 +931,9 @@ function renderMine(){
     const [c, a] = KIND_COLOR[x.kind] || KIND_COLOR.outbreak;
     return `<div class="issue-card" style="--ic:${c};--ia:${a}">
       <div class="ik">${esc((KINDS[x.kind] || {}).title || '')}</div>
-      <div class="it">${esc(x.meta.title || '제목 없음')}</div>
-      <div class="imeta">${esc(x.meta.issue || '')} · 저장 ${esc(x.savedAt)} · 주제 ${x.draft.topics.length}개</div>
-      <p class="il">${esc(x.draft.tagline || '')}</p>
+      <div class="it">${esc((x.meta || {}).title || '제목 없음')}</div>
+      <div class="imeta">${esc((x.meta || {}).issue || '')} · 저장 ${esc(x.savedAt)} · 주제 ${((x.draft || {}).topics || []).length}개</div>
+      <p class="il">${esc((x.draft || {}).tagline || '')}</p>
       <div class="acts">
         <button class="btn sm pri" data-mineopen="${i}">열어서 고치기</button>
         <button class="btn sm" data-minemail="${i}">메일 본문 복사</button>
@@ -922,7 +948,10 @@ document.addEventListener('click', async e => {
   const op = e.target.closest('[data-mineopen]'), ml = e.target.closest('[data-minemail]'),
         mf = e.target.closest('[data-minefile]'), dl = e.target.closest('[data-minedel]');
   if (op){ const x = list[+op.dataset.mineopen];
-    S.kind = x.kind; S.tpl = x.tpl; S.meta = x.meta; S.draft = x.draft; save(); nav('make'); syncForm(); go(4); }
+    if (!confirmReplace('저장해 둔 이 뉴스레터')) return;
+    S.tpl = x.tpl; S.meta = Object.assign({}, DEFAULT_META, x.meta || {}); S.draft = x.draft;
+    setKind(x.kind, { keepTitle: true });
+    save(); nav('make'); syncForm(); go(4); }
   if (ml){ const x = list[+ml.dataset.minemail];
     alert(await NLEmail.copy({ kind: x.kind, tpl: x.tpl, meta: x.meta, draft: x.draft })); }
   if (mf){ const x = list[+mf.dataset.minefile];
@@ -977,7 +1006,8 @@ function renderSources(){
         </label>`; }).join('')}</div></div>`;
   }).join('') || '<p class="empty">찾는 소스가 없습니다.</p>';
   $('#secHint').textContent = KINDS[S.kind].secs.join(' · ');
-  $('#srcCount').textContent = '선택한 소스 ' + Object.values(S.sel).filter(Boolean).length + '곳';
+  const nSel = Object.values(S.sel).filter(Boolean).length;
+  $('#srcCount').textContent = nSel ? `선택한 소스 ${nSel}곳` : '선택한 소스 0곳 — 이 유형의 전체 기관에서 가져옵니다';
 }
 $('#srcBox').addEventListener('change', e => {
   const cb = e.target.closest('[data-src]'); if (!cb) return;
@@ -986,19 +1016,47 @@ $('#srcBox').addEventListener('change', e => {
 $('#srcBox').addEventListener('click', e => {
   const b = e.target.closest('[data-grp]'); if (!b) return;
   const g = SOURCES.groups.find(x => x.id === b.dataset.grp);
-  const all = g.sources.every(s => S.sel[s.id]);
-  g.sources.forEach(s => S.sel[s.id] = !all);
+  const q = ($('#srcSearch').value || '').trim().toLowerCase();
+  const shown = g.sources.filter(s => !q || (g.name + s.name + (s.region || '')).toLowerCase().includes(q));
+  const all = shown.every(s => S.sel[s.id]);
+  shown.forEach(s => S.sel[s.id] = !all);
   save(); renderSources();
 });
 $('#srcSearch').addEventListener('input', renderSources);
-$$('input[name=kind]').forEach(r => r.addEventListener('change', () => {
-  S.kind = $('input[name=kind]:checked').value;
-  S.sel = {};                                   // 유형이 바뀌면 소스 선택을 새로 시작
-  if (!S.picked.length) S.meta.title = KINDS[S.kind].title;
+/* 유형(kind)을 바꾸는 유일한 통로.
+   라디오를 눌러도, 발간본을 열어도, 공유 링크로 와도 전부 여기를 지나야
+   소스 목록·선택·검색어·테마색이 같이 따라옵니다. */
+function setKind(kind, opts){
+  opts = opts || {};
+  if (!KINDS[kind]) kind = 'outbreak';
+  const changed = kind !== S.kind;
+  S.kind = kind;
+  if (changed){
+    S.sel = {};
+    (DEFAULT_SEL[kind] || []).forEach(id => S.sel[id] = true);
+    if (!opts.keepSearch) $('#feedSearch').value = '';
+  }
+  document.body.dataset.kind = S.kind;
+  const rk = $(`input[name=kind][value="${S.kind}"]`); if (rk) rk.checked = true;
+  if (!opts.keepTitle && !S.picked.length) S.meta.title = KINDS[S.kind].title;
   $('#mTitle').value = S.meta.title;
   save(); renderMy(); renderSources(); renderFeed();
-}));
-$('#selAll').onclick  = () => { SOURCES.groups.forEach(g => g.sources.forEach(s => S.sel[s.id] = true)); save(); renderSources(); };
+}
+$$('input[name=kind]').forEach(r => r.addEventListener('change', () =>
+  setKind($('input[name=kind]:checked').value)));
+/* 담아 둔 기사나 초안이 사라지는 동작 앞에서 한 번 묻습니다. */
+function confirmReplace(what){
+  if (!S.picked.length && !S.draft) return true;
+  const parts = [];
+  if (S.picked.length) parts.push(`담아 둔 기사 ${S.picked.length}건`);
+  if (S.draft) parts.push('지금 초안');
+  return confirm(`${parts.join('과 ')}이(가) ${what}(으)로 바뀝니다.\n계속할까요?`);
+}
+$('#selAll').onclick  = () => {
+  SOURCES.groups.filter(g => (g.kind || 'outbreak') === S.kind)
+    .forEach(g => g.sources.forEach(s => S.sel[s.id] = true));
+  save(); renderSources();
+};
 $('#selNone').onclick = () => { S.sel = {}; save(); renderSources(); };
 $('#days').addEventListener('change', e => { S.days = +e.target.value; save(); });
 
@@ -1037,8 +1095,9 @@ document.addEventListener('click', e => {
 /* ── 자료가 0건일 때 원인을 짚어 주기 ─────────
    검색어·지역·기간이 걸려 있거나, 찾는 자료가 다른 유형에 있을 때
    사용자가 스스로 알아채기 어려워서 원인과 해결 버튼을 같이 보여 줍니다. */
+/* 검색어 나누기 — 쉼표나 |로 여러 개를 넣으면 그중 하나만 맞아도 찾습니다. 띄어쓰기는 구절로 봅니다. */
 function matchWords(q){
-  return q.toLowerCase().split('|').map(w => w.trim()).filter(Boolean);
+  return (q || '').toLowerCase().split(/[,|]+/).map(w => w.trim()).filter(Boolean);
 }
 function countIn(kind, words, cut){
   return FEED.items.concat(S.myItems || []).filter(it =>
@@ -1086,8 +1145,7 @@ document.addEventListener('click', e => {
     save(); renderFeed();
   }
   if (k){
-    const rk = $(`input[name=kind][value="${k.dataset.tokind}"]`);
-    if (rk){ rk.checked = true; rk.dispatchEvent(new Event('change', { bubbles: true })); }
+    setKind(k.dataset.tokind, { keepSearch: true });
   }
 });
 
@@ -1106,7 +1164,7 @@ function fillRegions(){
 }
 
 function feedItems(){
-  const q = ($('#feedSearch').value || '').trim().toLowerCase();
+  const words = matchWords($('#feedSearch').value);
   const region = $('#regionSel').value;
   const cut = new Date(Date.now() - S.days * 864e5).toISOString().slice(0, 10);
   const anySel = Object.values(S.sel).some(Boolean);
@@ -1115,8 +1173,8 @@ function feedItems(){
     (!anySel || S.sel[it.sourceId]) &&
     (!region || it.region === region) &&
     (it.date >= cut) &&
-    (!q || q.split('|').some(w => (it.title + ' ' + (it.excerpt || '') + ' ' + (it.origin || ''))
-                                    .toLowerCase().includes(w.trim())))
+    (!words.length || words.some(w => (it.title + ' ' + (it.excerpt || '') + ' ' + (it.origin || ''))
+                                    .toLowerCase().includes(w)))
   );
 }
 function renderFeed(){
@@ -1217,7 +1275,8 @@ $('#myList').addEventListener('click', e => {
   e.preventDefault();
   S.mySources = S.mySources.filter(m => m.id !== b.dataset.delmy);
   S.myItems = (S.myItems || []).filter(x => x.sourceId !== b.dataset.delmy);
-  save(); renderMy(); renderFeed();
+  delete S.sel[b.dataset.delmy];
+  save(); renderMy(); renderSources(); renderFeed();
 });
 $('#nsAdd').onclick = () => {
   const name = $('#nsName').value.trim(), value = $('#nsValue').value.trim();
@@ -1358,6 +1417,9 @@ Object.entries(META_FIELDS).forEach(([id, key]) => {
   $('#' + id).addEventListener('input', () => { S.meta[key] = $('#' + id).value; save(); });
 });
 $$('input[name=tpl]').forEach(r => r.addEventListener('change', () => {
+  if (paperEdited() && !confirm('미리보기에서 직접 고친 내용이 지워집니다. 서식을 바꿀까요?')){
+    const back = $(`input[name=tpl][value="${S.tpl}"]`); if (back) back.checked = true; return;
+  }
   S.tpl = $('input[name=tpl]:checked').value; save(); renderPaper();
 }));
 $('#tone').addEventListener('change', e => { S.tone = e.target.value; save(); });
@@ -1409,10 +1471,10 @@ function basicDraft(){
         `${where.length ? where.join('·') + ' 등 ' : ''}${g.items.length}건의 자료에서 ${g.name} 관련 동향이 확인됨`,
         g.items[0] ? `대표 자료: ${g.items[0].title}` : ''
       ].filter(Boolean),
-      situation: g.items.map(i => `(${i.origin || i.source}, ${ymd(i.date)}) ${i.title}${i.excerpt ? ' — ' + i.excerpt.slice(0, 200) : ''}`),
+      situation: g.items.map(i => `(${i.origin || i.source || '출처 미상'}, ${ymd(i.date)}) ${i.title || ''}${i.excerpt ? ' — ' + i.excerpt.slice(0, 200) : ''}`),
       assess: [`※ ${K.secs[1]}을(를) 여기에 적어 주세요.`],
       korea:  [`※ ${K.secs[2]}을(를) 여기에 적어 주세요.`],
-      refs: g.items.map(i => `${i.origin ? i.origin + ' | ' : ''}${i.source} (${ymd(i.date)} 발표) ${i.title} — ${i.link}`)
+      refs: g.items.map(i => `${i.origin ? i.origin + ' | ' : ''}${i.source || ''} (${ymd(i.date)} 발표) ${i.title || ''} — ${i.link || ''}`)
     };
   });
   const srcCount = new Set(S.picked.map(p => p.origin || p.source)).size;
@@ -1491,9 +1553,13 @@ async function generate(useAI){
   const key = $('#apiKey').value.trim();
   const log = $('#genLog');
   if (!useAI || !key){
-    S.draft = basicDraft(); save(); saveMine(); log.textContent = '기본 초안을 만들었습니다. My Newsletter에 저장했습니다.';
+    S.draft = basicDraft(); save(); saveMine();
+    log.textContent = (useAI && !key)
+      ? 'AI 키가 비어 있어 AI 없이 기본 초안을 만들었습니다. My Newsletter에 저장했습니다.'
+      : '기본 초안을 만들었습니다. My Newsletter에 저장했습니다.';
     go(4); return;
   }
+  let failed = 0, lastErr = '';
   const groups = groupTopics();
   const topics = [];
   $('#genBtn').disabled = true;
@@ -1502,24 +1568,31 @@ async function generate(useAI){
     try { topics.push(await aiTopic(groups[i], key)); }
     catch(err){
       console.error(err);
-      log.textContent = '오류: ' + err.message;
+      failed++; lastErr = err.message;
       const fb = basicDraft().topics.find(t => t.name === groups[i].name);
       if (fb) topics.push(fb);
     }
   }
   $('#genBtn').disabled = false;
   const srcN = new Set(S.picked.map(p => p.origin || p.source)).size;
-  S.draft = { topics, generatedBy: 'Claude ' + S.model,
+  const allFailed = failed === groups.length;
+  S.draft = { topics, generatedBy: allFailed ? '기본 초안(AI 연결 실패)' : failed ? `Claude ${S.model} (일부 기본 초안)` : 'Claude ' + S.model,
     tagline: (topics[0] && topics[0].headline) || '',
     stats: [{ v: `${S.picked.length}건`, l: '이번 호가 다룬 자료' },
             { v: `${srcN}곳`, l: '출처 기관 · 학술지' },
             { v: `${S.days}일`, l: '자료 수집 기간' },
             { v: `${topics.length}개`, l: '주제' }] };
-  save(); saveMine(); log.textContent = '초안이 준비됐습니다. My Newsletter에 저장했습니다.';
+  save(); saveMine();
+  log.textContent = allFailed
+    ? `AI 연결에 실패해 AI 없이 기본 초안을 만들었습니다. (사유: ${lastErr}) 키를 확인하거나, 이대로 다듬어 쓰셔도 됩니다.`
+    : failed
+      ? `초안이 준비됐습니다. 다만 ${failed}개 주제는 AI 연결이 안 돼 기본 초안으로 채웠습니다. (사유: ${lastErr})`
+      : '초안이 준비됐습니다. My Newsletter에 저장했습니다.';
   go(4);
 }
 const SAMPLE_FILE = { outbreak: 'outbreak-2026-37', phsm: 'phsm-2026-01', chronic: 'chronic-2026-01', climate: 'climate-2026-01' };
 $('#loadSample').onclick = async () => {
+  if (!confirmReplace('예시 호')) return;
   try {
     const r = await fetch('samples/' + SAMPLE_FILE[S.kind] + '.json');
     const j = await r.json();
@@ -1561,14 +1634,22 @@ function mark(text){
   return t;
 }
 const ul = arr => '<ul>' + (arr || []).map(x => `<li>${mark(x)}</li>`).join('') + '</ul>';
+/* 출처 문자열 "머리말 — 링크" 나누기. 제목 안에도 ' — '가 있을 수 있어 마지막 것을 기준으로 삼습니다. */
+function splitRef(r){
+  const i = String(r || '').lastIndexOf(' — ');
+  return i < 0 ? [r, ''] : [r.slice(0, i), r.slice(i + 3).trim()];
+}
+const safeUrl = u => /^https?:\/\//i.test(u || '') ? u : '';
 const refsBlock = refs => {
   const items = (refs || []).map(r => {
-    const [head, link] = r.split(' — ');
+    const [head, link0] = splitRef(r); const link = safeUrl(link0);
     return `<li>${esc(head)}${link ? ` <a href="${esc(link)}" target="_blank" rel="noopener">원문</a>` : ''}</li>`;
   });
   return `<details class="refs"><summary>출처 ${items.length}건</summary><ol>${items.join('')}</ol></details>`;
 };
 
+let PAPER_SNAP = '';                       // 미리보기를 그린 직후 모습 — 직접 고쳤는지 비교용
+const paperEdited = () => !!S.draft && $('#paper').innerHTML !== PAPER_SNAP;
 function renderPaper(){
   const p = $('#paper');
   document.body.dataset.kind = S.kind;
@@ -1672,6 +1753,7 @@ function renderPaper(){
   </footer>`;
 
   if (m.subUrl) drawQR(m.subUrl);
+  PAPER_SNAP = $('#paper').innerHTML;       // 이 시점 이후 바뀌면 사용자가 직접 고친 것
 }
 
 /* 구독 QR — 화면·인쇄·저장 파일 어디서나 보이도록 그림으로 바꿔 둡니다 */
@@ -1693,7 +1775,7 @@ function drawQR(url){
 $('#repGo').onclick = async () => {
   const q = $('#repQ').value.trim();
   if (!q) return alert('키워드를 넣어 주세요.');
-  const words = q.split(/[\s,|]+/).filter(Boolean).map(w => w.toLowerCase());
+  const words = matchWords(q);
   const cut = new Date(Date.now() - Math.max(S.days, 30) * 864e5).toISOString().slice(0, 10);
   const hits = FEED.items.concat(S.myItems || [])
     .filter(it => (it.kind || 'outbreak') === S.kind && it.date >= cut)
@@ -1713,6 +1795,7 @@ $('#repGo').onclick = async () => {
     return;
   }
 
+  if (!confirmReplace(`「${q}」 키워드 보고서`)) return;
   S.picked = hits.map(it => {
     const g = guessTopic(it.title + ' ' + (it.excerpt || ''));
     return { title: it.title, link: it.link, date: it.date, source: it.sourceName, origin: it.origin || '',
@@ -1772,7 +1855,7 @@ function paperDoc(){
 <title>${esc(S.meta.title || '감염병 동향')} ${esc(S.meta.issue || '')}</title>
 <style>${css}
 body{background:#fff}#paper{box-shadow:none;margin:0 auto;max-width:860px}</style></head>
-<body><div id="paper" class="${'t-' + S.tpl}">${$('#paper').innerHTML}</div></body></html>`;
+<body><div id="paper" class="t-${S.tpl} k-${S.kind}">${$('#paper').innerHTML.replace(/ contenteditable="true"/g, '')}</div></body></html>`;
 }
 function download(name, mime, text){
   const a = document.createElement('a');
@@ -1812,20 +1895,17 @@ $('#exMailApp').onclick = () => {
   if (shared){
     try {
       const r = await unpackReport(decodeURIComponent(shared[1]));
+      if (S.draft) saveMine();                     // 공유본이 내 초안을 덮기 전에 보관
       S.kind = r.kind || S.kind; S.tpl = r.tpl || S.tpl;
       S.meta = Object.assign({}, S.meta, r.meta); S.draft = r.draft;
+      sanitize();
       history.replaceState(null, '', location.pathname);
     } catch(e){ console.warn('공유 링크를 읽지 못했습니다', e); }
   }
   try { SOURCES = await (await fetch('data/sources.json')).json();
         SOURCE_COUNT = SOURCES.groups.reduce((n, g) => n + g.sources.length, 0); } catch(e){}
   try { FEED    = await (await fetch('data/feed.json')).json(); } catch(e){}
-  if (!Object.keys(S.sel).length) ({
-    outbreak: ['who-don','cdc-news','ecdc-news','kdca'],
-    phsm: ['who-phsm','ukhsa','epmc-phsm','epmc-npi','epmc-rcce'],
-    chronic: ['who-ncd','kdca-ncd','epmc-ncd','epmc-cvd','epmc-dm'],
-    climate: ['who-climate','wmo-heat','cdc-heat','kr-heat','epmc-heat-mort','epmc-hhws']
-  }[S.kind] || []).forEach(id => S.sel[id] = true);
+  if (!Object.keys(S.sel).length) (DEFAULT_SEL[S.kind] || []).forEach(id => S.sel[id] = true);
   if (!S.meta.date) S.meta.date = new Date().toISOString().slice(0, 10);
   $('#days').value = S.days; $('#tone').value = S.tone; $('#model').value = S.model;
   Object.entries(META_FIELDS).forEach(([id, key]) => $('#' + id).value = S.meta[key] || '');

@@ -83,9 +83,12 @@
       <tr><td style="padding:8px 0 20px 0">
         <div style="font:700 12px/1.5 ${FONT};color:#6d7885;padding-bottom:4px">출처</div>
         ${(t.refs || []).map((r, n) => {
-          const [head, link] = r.split(' — ');
+          const cut = String(r || '').lastIndexOf(' — ');           // 제목 안의 ' — '를 피해 마지막 것으로 나눔
+          const head = cut < 0 ? r : r.slice(0, cut);
+          const link0 = cut < 0 ? '' : r.slice(cut + 3).trim();
+          const link = /^https?:\/\//i.test(link0) ? link0 : '';
           return `<div style="font:400 12px/1.6 ${FONT};color:#6d7885;padding-bottom:3px">${n + 1}. ${esc(head)}
-            ${link ? `<a href="${esc(link)}" style="color:${c.accent}">원문</a>` : ''}</div>`;
+            ${link ? `<a href="${esc(link)}" target="_blank" rel="noopener" style="color:${c.accent}">원문</a>` : ''}</div>`;
         }).join('')}
       </td></tr>`).join('');
 
