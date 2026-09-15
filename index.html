@@ -466,7 +466,7 @@ textarea{min-height:90px;resize:vertical}
       <button class="btn" id="exMailFile">메일용 HTML 저장</button>
       <button class="btn" id="exDoc">워드 파일로 저장</button>
       <button class="btn" id="exShare">공유 링크 만들기</button>
-      <button class="btn" id="reBuild">초안 다시 만들기</button>
+      <button class="btn" id="reBuild">③ 단계에서 초안 다시 만들기 →</button>
     </div>
   </div>
   <div class="paperwrap"><div id="paper" class="t-official"></div></div>
@@ -1754,7 +1754,7 @@ async function unpackReport(code){
   return JSON.parse(json);
 }
 $('#exShare').onclick = async () => {
-  if (!S.draft) return alert('먼저 초안을 만들어 주세요.');
+  if (needDraft()) return;
   try {
     const url = location.origin + location.pathname + '#r=' + await packReport();
     if (url.length > 60000) return alert('내용이 많아 링크로 담기 어렵습니다. HTML 파일로 저장해 전달해 주세요.');
@@ -1780,22 +1780,28 @@ function download(name, mime, text){
   a.download = name; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1500);
 }
 const fname = ext => (S.meta.title || '감염병동향').replace(/\s+/g, '') + '_' + (S.meta.issue || new Date().toISOString().slice(0,10)).replace(/[^\w가-힣]+/g, '') + '.' + ext;
-$('#exPrint').onclick = () => window.print();
-$('#exHtml').onclick  = () => download(fname('html'), 'text/html;charset=utf-8', paperDoc());
-$('#exDoc').onclick   = () => download(fname('doc'), 'application/msword', paperDoc());
+/* 초안이 없으면 빈 문서가 저장되므로 내보내기 전에 모두 확인합니다. */
+function needDraft(){
+  if (S.draft) return false;
+  alert('아직 초안이 없습니다.\n③ 단계에서 「초안 만들기」를 먼저 눌러 주세요.');
+  return true;
+}
+$('#exPrint').onclick = () => { if (needDraft()) return; window.print(); };
+$('#exHtml').onclick  = () => { if (needDraft()) return; download(fname('html'), 'text/html;charset=utf-8', paperDoc()); };
+$('#exDoc').onclick   = () => { if (needDraft()) return; download(fname('doc'), 'application/msword', paperDoc()); };
 const mailData = () => ({ kind: S.kind, tpl: S.tpl, draft: S.draft, meta: S.meta,
   subscribe: S.meta.subUrl ? { url: S.meta.subUrl, label: S.meta.subLabel,
                                note: '휴대폰 카메라로 찍으면 구독·지난 호 안내로 이어집니다.' } : null });
 $('#exMail').onclick = async () => {
-  if (!S.draft) return alert('먼저 초안을 만들어 주세요.');
+  if (needDraft()) return;
   alert(await NLEmail.copy(mailData()));
 };
 $('#exMailFile').onclick = () => {
-  if (!S.draft) return alert('먼저 초안을 만들어 주세요.');
+  if (needDraft()) return;
   NLEmail.download(mailData());
 };
 $('#exMailApp').onclick = () => {
-  if (!S.draft) return alert('먼저 초안을 만들어 주세요.');
+  if (needDraft()) return;
   location.href = NLEmail.mailto(mailData());
 };
 
