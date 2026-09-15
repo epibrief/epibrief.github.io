@@ -35,8 +35,7 @@ button{font-family:inherit}
 .top h1{margin:0;font-family:"Nanum Myeongjo",serif;font-size:clamp(1.18rem,3.6vw,1.42rem);
   font-weight:800;letter-spacing:-.02em;word-break:keep-all}
 .top .sub{font-size:clamp(.82rem,2.4vw,.9rem);color:rgba(255,255,255,.82);margin-top:5px;word-break:keep-all}
-.steps{display:flex;gap:4px;margin-top:14px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
-.steps::-webkit-scrollbar{display:none}
+.steps{display:flex;gap:4px;margin-top:14px;flex-wrap:wrap}
 .steps button{flex:0 0 auto;background:transparent;border:0;border-bottom:3px solid transparent;
   color:rgba(255,255,255,.75);font-size:.98rem;font-weight:700;padding:10px 13px;cursor:pointer;
   border-radius:8px 8px 0 0;white-space:nowrap}
@@ -59,9 +58,9 @@ button{font-family:inherit}
 .issue-list{display:flex;flex-direction:column;gap:12px}
 .issue-card{border:1px solid var(--line);border-top:5px solid var(--ic,var(--navy));border-radius:10px;
   padding:18px 20px;background:#fff}
-.issue-card .ik{font-size:.82rem;font-weight:800;letter-spacing:0;color:var(--ia,var(--teal))}
+.issue-card .ik{font-size:.86rem;font-weight:800;letter-spacing:0;color:var(--ia,var(--teal))}
 .issue-card .it{font-family:"Nanum Myeongjo",serif;font-size:1.28rem;font-weight:800;color:var(--ic,var(--navy));margin:5px 0 3px}
-.issue-card .imeta{font-size:.84rem;color:var(--muted);white-space:normal;line-height:1.5}
+.issue-card .imeta{font-size:.88rem;color:var(--muted);white-space:normal;line-height:1.5}
 .issue-card .il{font-size:.96rem;color:#3d4753;margin:10px 0 0;line-height:1.6}
 .issue-card .acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
 .rev-head{background:var(--navy);color:#fff;border-radius:14px 14px 0 0;padding:22px 24px}
@@ -102,7 +101,8 @@ button{font-family:inherit}
 .card .hint{font-size:.92rem;color:var(--muted);margin:0 0 14px}
 .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 .grow{flex:1 1 220px;min-width:0}
-label.f{display:block;font-size:.8rem;font-weight:700;color:var(--muted);margin-bottom:4px}
+label.f{display:block;font-size:.88rem;font-weight:700;color:var(--muted);margin-bottom:4px}
+label.f .req{color:#bf560c;font-weight:800;margin-left:4px}
 input[type=text],input[type=date],input[type=password],select,textarea{
   width:100%;padding:9px 11px;border:1px solid var(--line);border-radius:10px;font-size:.92rem;
   font-family:inherit;background:#fff;color:var(--ink)}
@@ -112,11 +112,11 @@ textarea{min-height:90px;resize:vertical}
 .btn:hover{border-color:#b9cbe2}
 .btn.pri{background:var(--navy);border-color:var(--navy);color:#fff}
 .btn.pri:hover{background:var(--navy-d)}
-.btn.sm{padding:5px 10px;font-size:.82rem;border-radius:8px}
+.btn.sm{padding:8px 13px;font-size:.88rem;border-radius:8px}
 .btn:disabled{opacity:.5;cursor:not-allowed}
 .badge{display:inline-block;background:#eef3f8;border:1px solid var(--line);border-radius:999px;
-  padding:2px 10px;font-size:.78rem;font-weight:700;color:#42505f;letter-spacing:0}
-.note{font-size:.82rem;color:var(--muted)}
+  padding:3px 10px;font-size:.86rem;font-weight:700;color:#42505f;letter-spacing:0}
+.note{font-size:.88rem;color:var(--muted)}
 .bar{position:sticky;bottom:0;background:rgba(244,246,249,.95);backdrop-filter:blur(4px);
   border-top:1px solid var(--line);padding:12px 0;margin-top:10px;z-index:5}
 
@@ -130,23 +130,29 @@ textarea{min-height:90px;resize:vertical}
 .srcitem .badge{margin-right:4px}
 .srcitem input{margin-top:3px}
 .srcitem .nm{display:block;font-weight:700;font-size:1rem}
-.srcitem .mt{display:block;font-size:.84rem;color:var(--muted);margin-top:3px;line-height:1.5}
+.srcitem .mt{display:block;font-size:.9rem;color:var(--muted);margin-top:3px;line-height:1.5}
 
 /* ── 2단계 수집함 ── */
 .two{display:grid;grid-template-columns:1fr 380px;gap:16px;align-items:start}
 @media(max-width:900px){.two{grid-template-columns:1fr}}
 .feed{max-height:62vh;overflow:auto;border:1px solid var(--line);border-radius:12px}
+@media(max-width:900px){.feed{max-height:none;overflow:visible}}
+.row.tight{flex-wrap:nowrap;gap:8px}
+.row.tight input[type=text]{flex:1 1 200px;min-width:0}
+@media(max-width:560px){.row.tight{flex-wrap:wrap}.row.tight input[type=text]{flex:1 1 100%}}
+.exgroup{display:flex;gap:6px;align-items:center;flex-wrap:wrap;padding:8px 12px;border:1px solid var(--line);border-radius:10px;background:#fff}
+.exgroup .exlabel{font-size:.88rem;font-weight:800;color:var(--muted);margin-right:4px}
 .fitem{display:flex;gap:10px;padding:12px 14px;border-bottom:1px solid #eef2f6}
 .fitem:last-child{border-bottom:0}
 .fitem.on{background:#f2fbfb}
 .fitem .t{font-weight:700;font-size:1rem;line-height:1.45;color:var(--ink);text-decoration:none;display:block}
 .fitem .t:hover{text-decoration:underline}
-.fitem .m{font-size:.82rem;color:var(--muted);margin-top:4px;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.fitem .m{font-size:.88rem;color:var(--muted);margin-top:4px;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
 .fitem .x{font-size:.9rem;color:#5a6675;margin-top:5px;max-height:3.2em;overflow:hidden}
 .picked{border:1px solid var(--line);border-radius:12px;padding:12px;background:#fff;position:sticky;top:12px}
 .pitem{border:1px solid var(--line);border-radius:10px;padding:9px 10px;margin-bottom:8px;background:#fbfdff}
-.pitem .pt{font-size:.85rem;font-weight:700;line-height:1.4}
-.pitem .pm{font-size:.74rem;color:var(--muted);margin:3px 0 6px}
+.pitem .pt{font-size:.92rem;font-weight:700;line-height:1.4}
+.pitem .pm{font-size:.84rem;color:var(--muted);margin:3px 0 6px}
 .pitem .prow{display:flex;gap:6px;align-items:center}
 .pitem input[type=text]{padding:5px 8px;font-size:.8rem}
 .chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
@@ -163,12 +169,12 @@ textarea{min-height:90px;resize:vertical}
 <div class="top">
   <div class="wrap">
     <h1>에피브리프</h1>
-    <div class="sub">감염병 발생동향 · 사회 대응(PHSM) · 만성질환 · 기후·건강 — 공식 소스를 고르면 서식에 맞춰 뉴스레터를 만들어 드립니다. <span id="saveTag" class="badge" style="background:#1d4a80;border-color:#2a5c99;color:#cfe3ff">자동 저장</span></div>
+    <div class="sub">감염병 발생동향 · 사회 대응(PHSM: 거리두기 같은 사회적 조치) · 만성질환 · 기후·건강 — 공식 소스를 고르면 서식에 맞춰 뉴스레터를 만들어 드립니다. <span id="saveTag" class="badge" title="작업 내용은 이 컴퓨터의 브라우저에만 저장됩니다. 다른 컴퓨터에서는 보이지 않습니다." style="background:#1d4a80;border-color:#2a5c99;color:#cfe3ff;cursor:help">자동 저장 ⓘ</span></div>
     <nav class="steps" id="mainNav">
       <button data-nav="home" class="on">홈</button>
-      <button data-nav="issues">최신 뉴스레터</button>
+      <button data-nav="issues">발간한 뉴스레터</button>
       <button data-nav="make">맞춤형 제작</button>
-      <button data-nav="mine">My Newsletter</button>
+      <button data-nav="mine">내 보관함</button>
     </nav>
   </div>
 </div>
@@ -185,17 +191,17 @@ textarea{min-height:90px;resize:vertical}
       <div class="ht"><span class="n">1</span><b>소스 고르기</b><span>분야(감염병·사회대응·만성질환·기후)를 고르고 기관을 선택합니다. 102곳이 이미 들어 있습니다.</span></div>
       <div class="ht"><span class="n">2</span><b>자료 담기</b><span>주제 칩이나 키워드로 걸러 필요한 자료만 담습니다. 키워드 하나로 보고서를 만들 수도 있습니다.</span></div>
       <div class="ht"><span class="n">3</span><b>서식 고르고 만들기</b><span>서식 3종 중 하나를 고르면 요약·평가·시사점 초안까지 만들어집니다.</span></div>
-      <div class="ht"><span class="n">4</span><b>발행하기</b><span>인쇄·PDF, 메일 본문, 메일용 HTML, 워드, 공유 링크. 구독 QR도 함께 넣습니다.</span></div>
+      <div class="ht"><span class="n">4</span><b>발행하기</b><span>인쇄·PDF, 메일, 워드 파일, 공유 링크. 구독 QR도 함께 넣습니다.</span></div>
     </div>
     <div class="row" style="margin-top:20px">
       <button class="btn pri" data-nav="make" style="font-size:1.04rem">맞춤형 뉴스레터 만들기 →</button>
-      <button class="btn" data-nav="issues">최신 뉴스레터 보기</button>
-      <a class="btn" href="subscribe.html" style="text-decoration:none">구독 신청 화면 보기</a>
+      <button class="btn" data-nav="issues">발간한 뉴스레터 보기</button>
+      <a class="note" href="subscribe.html" style="align-self:center">구독 신청 화면 미리보기 →</a>
     </div>
   </div>
 
   <div class="card">
-    <h2>최신 뉴스레터</h2>
+    <h2>발간한 뉴스레터</h2>
     <p class="hint">바로 읽고, 그대로 발행할 수 있습니다. 서식과 구성을 가져다 새 호를 만들 수도 있습니다.</p>
     <div id="homeIssues" class="issue-list"></div>
   </div>
@@ -213,11 +219,11 @@ textarea{min-height:90px;resize:vertical}
 <!-- ───────────── My Newsletter ───────────── -->
 <section class="navpanel" id="nav-mine"><div class="wrap">
   <div class="card" style="border-left:5px solid var(--teal)">
-    <h2>My Newsletter — 키워드로 연구·정책 동향 정리</h2>
+    <h2>내 보관함 — 키워드로 연구·정책 동향 정리</h2>
     <p class="hint">관심 주제를 넣으면 기본 소스 전체(기관 발표 · 논문 · 리뷰)에서 관련 자료를 찾아
       <b>문헌고찰처럼 출처와 요약을 정리</b>해 드립니다. 예: “좌식 생활”, “sedentary behaviour”, “폭염 초과사망”.</p>
-    <div class="row" style="flex-wrap:nowrap;gap:8px">
-      <input type="text" id="revQ" placeholder="관심 주제나 키워드 (여러 개면 띄어쓰기 또는 | 로 구분)" style="flex:1">
+    <div class="row tight">
+      <input type="text" id="revQ" placeholder="관심 주제나 키워드 (여러 개면 쉼표로 구분)">
       <button class="btn pri" id="revGo" style="flex:0 0 auto">동향 정리하기</button>
     </div>
     <div class="row" style="margin-top:10px">
@@ -293,14 +299,14 @@ textarea{min-height:90px;resize:vertical}
   <div class="card">
     <details id="addSrcBox">
     <summary style="cursor:pointer;font-weight:800;color:var(--navy);font-size:1.02rem">소스 직접 추가 <span class="note" style="font-weight:400">— 목록에 없는 기관을 넣고 싶을 때만 펼치세요</span></summary>
-    <p class="hint" style="margin-top:10px">기관의 RSS 주소, 뉴스 검색어, 논문 검색식 중 하나를 넣으면 내 소스가 됩니다.</p>
+    <p class="hint" style="margin-top:10px">기관 소식 주소(RSS — 기관이 새 글을 자동으로 보내 주는 주소), 뉴스 검색어, 논문 검색어 중 하나를 넣으면 내 소스가 됩니다.</p>
     <div class="row">
       <div class="grow"><label class="f">소스 이름</label><input type="text" id="nsName" placeholder="예: 일본 후생노동성 감염병 정보"></div>
       <div style="flex:0 0 210px"><label class="f">가져오는 방법</label>
         <select id="nsType">
-          <option value="rss">기관 RSS 주소</option>
+          <option value="rss">기관 소식 주소(RSS)</option>
           <option value="news">뉴스 검색어</option>
-          <option value="epmc">논문 검색어 (Europe PMC)</option>
+          <option value="epmc">논문 검색어 (유럽 의학논문 DB)</option>
         </select></div>
       <div style="flex:0 0 130px"><label class="f">지역</label>
         <select id="nsRegion"></select></div>
@@ -316,7 +322,7 @@ textarea{min-height:90px;resize:vertical}
     </div>
     <div id="myList" style="margin-top:14px"></div>
     <p class="note" style="margin-top:10px">내 소스는 이 브라우저에 저장됩니다. 매일 자동 수집 목록에도 넣으려면
-      <b>소스 설정 파일</b>을 내려받아 전달해 주세요(저장소의 <code>data/newsletter/sources.json</code> 에 반영).</p>
+      <b>소스 설정 파일</b>을 내려받아 사이트 관리자에게 보내 주세요. (관리자는 <code>data/sources.json</code>에 붙여 넣습니다)</p>
     </details>
   </div>
   <div class="bar"><div class="wrap row" style="justify-content:space-between">
@@ -332,8 +338,8 @@ textarea{min-height:90px;resize:vertical}
       <div class="card" style="margin-bottom:12px;border-left:4px solid var(--teal)">
         <h2>키워드로 내 보고서 만들기</h2>
         <p class="hint">키워드를 넣으면 기본 소스 전체에서 관련 자료를 모아 보고서 초안까지 한 번에 만듭니다.</p>
-        <div class="row" style="flex-wrap:nowrap;gap:8px">
-          <input type="text" id="repQ" placeholder="예: 폭염 온열질환 / dengue climate / 백신 수용성" style="flex:1">
+        <div class="row tight">
+          <input type="text" id="repQ" placeholder="예: 폭염 온열질환 / dengue climate / 백신 수용성">
           <button class="btn pri" id="repGo" style="flex:0 0 auto">자료 모아 보고서 만들기</button>
         </div>
         <p class="note" id="repLog" style="margin:8px 0 0"></p>
@@ -376,7 +382,7 @@ textarea{min-height:90px;resize:vertical}
             <label class="f" style="margin-top:8px">핵심 내용(붙여넣기)</label>
             <textarea id="addText" placeholder="원문에서 필요한 대목을 붙여넣으세요."></textarea>
             <button class="btn sm pri" id="addBtn" style="margin-top:8px">담기</button>
-            <p class="note" style="margin-top:6px">불러오기는 무료 읽기 도우미(r.jina.ai)를 씁니다. 막히면 내용을 직접 붙여넣으세요.</p>
+            <p class="note" style="margin-top:6px">불러오기는 원문을 대신 읽어 오는 무료 도우미(r.jina.ai)를 씁니다. 안 되면 원문에서 내용을 복사해 붙여넣으세요.</p>
           </div>
         </details>
       </div>
@@ -384,6 +390,7 @@ textarea{min-height:90px;resize:vertical}
   </div>
   <div class="bar"><div class="wrap row" style="justify-content:space-between">
     <button class="btn" data-go="1">← 소스 다시 고르기</button>
+    <a class="note" id="pickJump" href="#pickBox" style="font-weight:700;color:var(--navy)">담은 기사 <b>0</b>건 보기 ↓</a>
     <button class="btn pri" data-go="3">초안 만들러 가기 →</button>
   </div></div>
 </div></section>
@@ -394,11 +401,11 @@ textarea{min-height:90px;resize:vertical}
     <h2>발행 정보</h2>
     <p class="hint">표지에 들어가는 내용입니다.</p>
     <div class="row">
-      <div class="grow"><label class="f">발행 기관</label><input type="text" id="mOrg" placeholder="예: 질병관리청 감염병위기대응국"></div>
-      <div class="grow"><label class="f">뉴스레터 이름</label><input type="text" id="mTitle" placeholder="예: 전 세계 감염병 발생 동향"></div>
+      <div class="grow"><label class="f">발행 기관<span class="req">*필수</span></label><input type="text" id="mOrg" placeholder="예: 질병관리청 감염병위기대응국"></div>
+      <div class="grow"><label class="f">뉴스레터 이름<span class="req">*필수</span></label><input type="text" id="mTitle" placeholder="예: 전 세계 감염병 발생 동향"></div>
     </div>
     <div class="row" style="margin-top:10px">
-      <div class="grow"><label class="f">호수</label><input type="text" id="mIssue" placeholder="예: 2026년 제31호"></div>
+      <div class="grow"><label class="f">호수<span class="req">*필수</span></label><input type="text" id="mIssue" placeholder="예: 2026년 제31호"></div>
       <div style="flex:0 0 170px"><label class="f">발행일</label><input type="date" id="mDate"></div>
       <div class="grow"><label class="f">담당자(선택)</label><input type="text" id="mEditor" placeholder="예: 감염병위기대응국 ○○○"></div>
     </div>
@@ -447,10 +454,10 @@ textarea{min-height:90px;resize:vertical}
     <div class="row">
       <div style="flex:0 0 200px"><label class="f">문체</label>
         <select id="tone"><option value="official">공문서체 (보고용)</option><option value="plain">쉬운 말 (일반 대상)</option></select></div>
-      <div style="flex:0 0 220px"><label class="f">AI 모델</label>
-        <select id="model"><option value="claude-opus-5">Claude Opus 5 (권장)</option><option value="claude-sonnet-5">Claude Sonnet 5 (빠름)</option></select></div>
-      <div class="grow"><label class="f">Claude API 키 <span class="note">— 이 브라우저에만 저장됩니다</span></label>
-        <input type="password" id="apiKey" placeholder="sk-ant-... (없으면 AI 없이 기본 초안을 만듭니다)"></div>
+      <div class="grow"><label class="f">AI 이용 키 <span class="note">(선택) — 기관에서 받은 Claude API 키가 있을 때만 넣으세요. 없으면 비워 두면 됩니다.</span></label>
+        <input type="password" id="apiKey" placeholder="비워 두면 AI 없이 기본 초안을 만듭니다"></div>
+      <div style="flex:0 0 220px"><label class="f">AI 모델 <span class="note">(키가 있을 때만)</span></label>
+        <select id="model"><option value="claude-opus-5">Claude Opus 5</option><option value="claude-sonnet-5">Claude Sonnet 5 (빠름)</option></select></div>
     </div>
     <div class="row" style="margin-top:14px">
       <button class="btn pri" id="genBtn">초안 만들기</button>
@@ -471,14 +478,18 @@ textarea{min-height:90px;resize:vertical}
     <h2>다듬고 내보내기</h2>
     <p class="hint">아래 미리보기에서 <b>글자를 직접 고칠 수 있습니다</b>. 고친 내용은 <b>인쇄·PDF, HTML, 워드 저장</b>에 반영됩니다.
       메일 본문과 공유 링크는 ③ 단계에서 만든 초안 기준으로 나갑니다.</p>
-    <div class="row">
-      <button class="btn" id="exPrint">인쇄 · PDF로 저장</button>
-      <button class="btn" id="exHtml">HTML 파일로 저장</button>
-      <button class="btn" id="exMail">메일 본문 복사</button>
-      <button class="btn" id="exMailApp">메일 프로그램 열기</button>
-      <button class="btn" id="exMailFile">메일용 HTML 저장</button>
-      <button class="btn" id="exDoc">워드 파일로 저장</button>
-      <button class="btn" id="exShare">공유 링크 만들기</button>
+    <div class="row" style="gap:8px">
+      <div class="exgroup"><span class="exlabel">인쇄</span>
+        <button class="btn pri" id="exPrint">인쇄 · PDF로 저장</button></div>
+      <div class="exgroup"><span class="exlabel">메일로 보내기</span>
+        <button class="btn" id="exMail">본문 복사해서 붙여넣기</button>
+        <button class="btn" id="exMailApp">메일 프로그램 열기</button>
+        <button class="btn" id="exMailFile">메일용 파일 저장</button></div>
+      <div class="exgroup"><span class="exlabel">파일로 저장</span>
+        <button class="btn" id="exDoc">워드(.doc)</button>
+        <button class="btn" id="exHtml">웹페이지(.html)</button></div>
+      <div class="exgroup"><span class="exlabel">공유</span>
+        <button class="btn" id="exShare">링크 복사</button></div>
       <button class="btn" id="reBuild">③ 단계에서 초안 다시 만들기 →</button>
     </div>
   </div>
@@ -491,7 +502,7 @@ textarea{min-height:90px;resize:vertical}
 <script>
 /* ─────────────────────────────────────────────
    에피브리프
-   - 자료: data/newsletter/sources.json, feed.json (GitHub Actions가 자동 갱신)
+   - 자료: data/sources.json, data/feed.json (GitHub Actions가 자동 갱신)
    - 저장: 이 브라우저(localStorage)에만 저장됩니다.
    ───────────────────────────────────────────── */
 const $  = (s, r) => (r || document).querySelector(s);
@@ -1226,7 +1237,7 @@ function renderFeed(){
   $('#feedBox').innerHTML = items.length ? items.map(it => {
     const on = S.picked.some(p => p.link === it.link);
     return `<div class="fitem ${on ? 'on' : ''}">
-      <div style="flex:0 0 auto;padding-top:2px"><button class="btn sm ${on ? '' : 'pri'}" data-pick="${esc(it.link)}">${on ? '뺀다' : '담기'}</button></div>
+      <div style="flex:0 0 auto;padding-top:2px"><button class="btn sm ${on ? '' : 'pri'}" data-pick="${esc(it.link)}">${on ? '빼기' : '담기'}</button></div>
       <div style="min-width:0">
         <a class="t" href="${esc(it.link)}" target="_blank" rel="noopener">${esc(it.title)}</a>
         <div class="m">${viaOf(it) === '보도'
@@ -1257,6 +1268,7 @@ $('#regionSel').addEventListener('change', renderFeed);
 
 function renderPicked(){
   $('#pickCount').textContent = S.picked.length;
+  const pj = $('#pickJump b'); if (pj) pj.textContent = S.picked.length;
   $('#pickBox').innerHTML = S.picked.length ? S.picked.map((p, i) => `
     <div class="pitem">
       <div class="pt">${esc(p.title)}</div>
@@ -1291,9 +1303,9 @@ $('#autoTopic').onclick = () => {
 
 /* ── 내 소스: 추가·수집·내보내기 ───────────────────────────────── */
 const NS_HELP = {
-  rss:  '기관 페이지에서 RSS 주소를 복사해 넣으세요. 예: https://www.cidrap.umn.edu/rss.xml',
+  rss:  '기관 홈페이지의 RSS(소식 자동 배달) 주소를 복사해 넣으세요. 보통 주소가 .xml 로 끝납니다. 예: https://www.cidrap.umn.edu/rss.xml',
   news: '뉴스에서 찾을 검색어를 넣으세요. 예: 일본 홍역 유행 / Japan measles outbreak',
-  epmc: '논문 검색식을 넣으세요. 예: ("school closure" OR "mask mandate") AND (SRC:MED OR SRC:PPR)'
+  epmc: '논문에서 찾을 검색어를 넣으세요. 여러 단어는 OR 로 잇습니다. 예: "school closure" OR "mask mandate"'
 };
 function nsHelp(){ $('#nsHelp').textContent = NS_HELP[$('#nsType').value]; }
 $('#nsType').addEventListener('change', nsHelp);
@@ -1307,7 +1319,7 @@ function renderMy(){
       <span><span class="nm">${esc(m.name)}</span>
       <span class="mt"><span class="badge">${m.type === 'epmc' ? '논문 검색' : m.type === 'rss' ? '기관 RSS' : '뉴스 검색'}</span>
         ${got ? `가져온 글 ${got}건` : '아직 안 가져옴'} · ${esc(m.region)}</span>
-      <span class="mt" style="word-break:break-all;color:#8592a3">${esc(m.value)}</span></span>
+      <span class="mt" style="word-break:break-all">${esc(m.value)}</span></span>
       <button class="btn sm" data-delmy="${esc(m.id)}" style="margin-left:auto">✕</button>
     </label>`; }).join('')}</div>` : '<p class="note">아직 추가한 소스가 없습니다.</p>';
 }
@@ -1325,7 +1337,8 @@ $('#myList').addEventListener('click', e => {
 });
 $('#nsAdd').onclick = () => {
   const name = $('#nsName').value.trim(), value = $('#nsValue').value.trim();
-  if (!name || !value) return alert('이름과 주소(검색어)를 모두 적어 주세요.');
+  if (!name)  return alert('「소스 이름」 칸이 비어 있습니다. 이름을 적어 주세요.');
+  if (!value) return alert('「주소 또는 검색어」 칸이 비어 있습니다.');
   const id = 'my-' + Date.now().toString(36);
   S.mySources.push({ id, name, type: $('#nsType').value, value, region: $('#nsRegion').value, kind: S.kind });
   S.sel[id] = true;
@@ -1392,7 +1405,7 @@ async function fetchMySource(m){
 }
 $('#nsFetch').onclick = async () => {
   const mine = (S.mySources || []).filter(m => m.kind === S.kind);
-  if (!mine.length) return alert('먼저 소스를 추가해 주세요.');
+  if (!mine.length) return alert('아직 추가한 소스가 없습니다.\n위 칸에 이름과 주소를 적고 [내 소스에 추가]를 먼저 눌러 주세요.');
   const btn = $('#nsFetch'); btn.disabled = true;
   for (const m of mine){
     $('#nsLog').textContent = `${m.name} 가져오는 중…`;
@@ -1406,7 +1419,7 @@ $('#nsFetch').onclick = async () => {
       }));
       $('#nsLog').textContent = `${m.name}: ${rows.length}건 가져왔습니다.`;
     } catch(err){
-      $('#nsLog').textContent = `${m.name}: ${err.message} — 주소를 확인하거나, 저장소 설정에 넣어 매일 자동 수집으로 돌려 보세요.`;
+      $('#nsLog').textContent = `${m.name}: 불러오지 못했습니다. 주소를 다시 확인해 주세요. 기관이 외부 접근을 막은 경우라면 소스 설정 파일로 관리자에게 보내 자동 수집에 넣을 수 있습니다.`;
     }
   }
   btn.disabled = false; save(); renderMy(); renderFeed();
@@ -1423,7 +1436,7 @@ $('#nsExport').onclick = () => {
   }));
   if (!groups.length) return alert('추가한 소스가 없습니다.');
   download('sources-추가분.json', 'application/json', JSON.stringify({ groups }, null, 1));
-  alert('내려받은 파일의 groups 내용을 data/newsletter/sources.json 의 groups 에 넣으면 매일 자동으로 수집됩니다.');
+  alert('파일을 내려받았습니다.\n사이트 관리자에게 보내 주세요. 관리자가 data/sources.json 에 붙여 넣으면 매일 자동으로 수집됩니다.');
 };
 
 /* 직접 넣기 */
@@ -1604,13 +1617,15 @@ tag 는 자료 성격으로 경보·정책·연구·통계 중 하나만 고르�
 
 async function generate(useAI){
   if (!S.picked.length) return alert('담은 기사가 없습니다. ② 단계에서 기사를 먼저 담아 주세요.');
+  const missing = [['org','발행 기관'], ['title','뉴스레터 이름'], ['issue','호수']].filter(([k]) => !(S.meta[k] || '').trim()).map(([, l]) => l);
+  if (missing.length && !confirm(`필수 항목이 비어 있습니다: ${missing.join(', ')}\n비운 채로 초안을 만들까요? (나중에 채워도 됩니다)`)) return;
   const key = $('#apiKey').value.trim();
   const log = $('#genLog');
   if (!useAI || !key){
     S.draft = basicDraft(); save(); saveMine();
     log.textContent = (useAI && !key)
-      ? 'AI 키가 비어 있어 AI 없이 기본 초안을 만들었습니다. My Newsletter에 저장했습니다.'
-      : '기본 초안을 만들었습니다. My Newsletter에 저장했습니다.';
+      ? 'AI 키가 비어 있어 AI 없이 기본 초안을 만들었습니다. 내 보관함에 저장했습니다.'
+      : '기본 초안을 만들었습니다. 내 보관함에 저장했습니다.';
     go(4); return;
   }
   let failed = 0, lastErr = '';
@@ -1641,7 +1656,7 @@ async function generate(useAI){
     ? `AI 연결에 실패해 AI 없이 기본 초안을 만들었습니다. (사유: ${lastErr}) 키를 확인하거나, 이대로 다듬어 쓰셔도 됩니다.`
     : failed
       ? `초안이 준비됐습니다. 다만 ${failed}개 주제는 AI 연결이 안 돼 기본 초안으로 채웠습니다. (사유: ${lastErr})`
-      : '초안이 준비됐습니다. My Newsletter에 저장했습니다.';
+      : '초안이 준비됐습니다. 내 보관함에 저장했습니다.';
   go(4);
 }
 const SAMPLE_FILE = { outbreak: 'outbreak-2026-37', phsm: 'phsm-2026-01', chronic: 'chronic-2026-01', climate: 'climate-2026-01' };
@@ -1717,7 +1732,7 @@ function renderPaper(){
   document.body.dataset.kind = S.kind;
   p.className = 't-' + S.tpl + ' k-' + S.kind;
   if (!S.draft){
-    p.innerHTML = '<p class="empty" style="text-align:center;color:#6d7885;padding:40px 10px">아직 초안이 없습니다. ③ 단계에서 <b>초안 만들기</b>를 눌러 주세요.</p>';
+    p.innerHTML = '<p class="empty" style="text-align:center;color:#5d6875;padding:40px 10px">아직 초안이 없습니다.<br><br><button class="btn pri" data-go="3">③ 단계로 가서 초안 만들기</button></p>';
     return;
   }
   const m = S.meta, d = S.draft, K = KINDS[S.kind] || KINDS.outbreak;
@@ -1773,7 +1788,7 @@ function renderPaper(){
       <span>${esc((KINDS[S.kind] || {}).title || '')}</span>
       <span class="issue">${esc(m.issue || '')}${m.issue && dateTxt ? ' · ' : ''}${esc(dateTxt)}</span>
     </div>
-    <div class="nl-kicker" contenteditable="true">${esc(m.org || '발행 기관')}</div>
+    <div class="nl-kicker" contenteditable="true">${esc(m.org || '(③ 단계에서 발행 기관을 적어 주세요)')}</div>
     ${m.orgEn ? `<div class="nl-org-en">${esc(m.orgEn)}</div>` : ''}
     <h1 class="nl-title" contenteditable="true">${esc(m.title || '뉴스레터')}</h1>
     ${m.titleEn ? `<div class="nl-title-en">${esc(m.titleEn)}</div>` : ''}

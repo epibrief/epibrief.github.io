@@ -101,7 +101,7 @@
     <div class="ok" id="ok"></div>
 
     <details>
-      <summary>담당자 설정 — 신청을 어디로 받을지 정합니다</summary>
+      <summary>담당자만 — 신청을 어디로 받을지 설정 (구독자는 열지 않아도 됩니다)</summary>
       <div class="admin">
         <label for="admMail">신청 접수 이메일</label>
         <input type="email" id="admMail" placeholder="예: newsletter@korea.kr">
@@ -116,8 +116,9 @@
           <button type="button" class="btn ghost" id="admFile">설정 파일 내려받기</button>
         </div>
         <p class="note" style="margin-top:8px">
-          내려받은 <code>subscribe-config.json</code>을 저장소의 <code>newsletter/</code> 폴더에 넣으면
-          모든 방문자에게 같은 설정이 적용됩니다.
+          「이 브라우저에 저장」은 지금 이 컴퓨터에서만 적용됩니다. 모든 방문자에게 적용하려면
+          <b>설정 파일 내려받기</b>로 받은 <code>subscribe-config.json</code>을 사이트 관리자에게 보내 주세요
+          (관리자는 <code>index.html</code>과 같은 폴더에 넣습니다).
         </p>
       </div>
     </details>

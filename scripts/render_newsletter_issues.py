@@ -512,7 +512,7 @@ def index_page(rows):
       el.hidden = !keep; if (keep) shown++;
     }});
     document.getElementById('listTitle').textContent = NAMES[series];
-    document.getElementById('listSub').textContent = shown + '개 호가 발간되었습니다. 구독을 원하시면 발행 기관으로 문의해 주세요.';
+    document.getElementById('listSub').textContent = shown + '개 호가 발간되었습니다. 받아보시려면 위의 [구독 신청]을 눌러 주세요.';
     document.getElementById('allLink').hidden = false;
     document.getElementById('subLink').href = '../subscribe.html?series=' + series;
     document.getElementById('listEmpty').hidden = shown > 1;

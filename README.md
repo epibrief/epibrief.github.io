@@ -3,8 +3,8 @@
 공식 소스를 고르면 → 자료를 담고 → 서식에 맞춰 뉴스레터를 만들어 주는 도구입니다.
 서버가 필요 없습니다. GitHub Pages에 그대로 올라갑니다.
 
-- 화면: `newsletter/index.html`
-- 소스 목록: `data/newsletter/sources.json`
+- 화면: `index.html`
+- 소스 목록: `data/sources.json`
 - 자동 수집분: `data/feed.json` (GitHub Actions가 매일 KST 05:00 갱신)
 - 수집 스크립트: `scripts/build_outbreak_feed.py`
 - 자동화: `.github/workflows/newsletter.yml`
@@ -18,7 +18,7 @@
 | 만성질환 동향 창간호 | 카드형 | `issues/chronic-2026-01.html` |
 | 기후·건강 위기 동향 창간호 | 간결 브리프형 | `issues/climate-2026-01.html` |
 
-원본은 `newsletter/samples/*.json` 이며, 도구의 ③단계에서 `예시 호 불러오기`를 누르면
+원본은 `samples/*.json` 이며, 도구의 ③단계에서 `예시 호 불러오기`를 누르면
 그대로 불러와 고쳐 쓸 수 있습니다. 내용을 바꾼 뒤 발간본을 다시 만들려면:
 
 ```
@@ -46,10 +46,10 @@ python3 scripts/render_newsletter_issues.py
 
 ## 구독 신청
 
-`newsletter/subscribe.html` — 뉴스레터 하단의 **구독 QR과 '이 뉴스레터 받아보기'** 가 이 화면으로 이어집니다.
+`subscribe.html` — 뉴스레터 하단의 **구독 QR과 '이 뉴스레터 받아보기'** 가 이 화면으로 이어집니다.
 `?series=phsm` 처럼 열면 해당 뉴스레터가 미리 선택됩니다.
 
-접수 방법은 `newsletter/subscribe-config.json` 으로 정합니다.
+접수 방법은 `subscribe-config.json` 으로 정합니다.
 
 ```jsonc
 { "email": "newsletter@korea.kr",   // 신청 메일을 받을 주소 (서버 없이 동작)
@@ -90,7 +90,7 @@ python3 scripts/render_newsletter_issues.py
 |---|---|---|
 | 수집 실행 | `python scripts\build_outbreak_feed.py` | `python3 scripts/build_outbreak_feed.py` |
 | 미리보기 서버 | `python -m http.server 8000` | `python3 -m http.server 8000` |
-| 브라우저 주소 | `http://localhost:8000/newsletter/` | `http://localhost:8000/newsletter/` |
+| 브라우저 주소 | `http://localhost:8000/` | `http://localhost:8000/` |
 
 > 파일을 두 번 눌러 여는 방식(`file://`)으로는 소스 목록을 읽지 못합니다.
 > 위처럼 간단한 서버를 띄우거나, GitHub Pages에 올린 주소로 여세요.
@@ -103,7 +103,7 @@ python3 scripts/render_newsletter_issues.py
 - **액자 테두리**와 큰 본문(17px), 숫자 굵게·근거번호 위첨자
 - **발간본 상단 네비**: 에피브리프 / 발간 목록 / 다른 호 이동 / 인쇄 / 이메일
 - **이메일로 바로 보내기**: 메일 본문 복사(서식 유지) · 메일 프로그램 열기 · 메일용 HTML 저장
-  (`newsletter/email.js` — 표 구조 + 인라인 서식으로 다시 그립니다)
+  (`email.js` — 표 구조 + 인라인 서식으로 다시 그립니다)
 - **구독 QR**: 발행 시 구독 링크를 QR 그림으로 만들어 종이·메일에 함께 넣습니다
 - **키워드 보고서**: ②단계에서 키워드를 넣으면 기본 소스 전체에서 관련 자료를 모아 초안까지 생성
 - **공유 링크**: 보고서를 주소 한 줄에 담아 전달(받는 사람은 링크만 열면 같은 보고서를 봅니다)
@@ -135,7 +135,7 @@ python3 scripts/render_newsletter_issues.py
 
 ### 저장소 설정에 넣기
 
-`data/newsletter/sources.json` 의 `groups` 에 추가합니다.
+`data/sources.json` 의 `groups` 에 추가합니다.
 
 ```jsonc
 { "id": "새소스id", "name": "화면에 보일 이름", "region": "유럽",
