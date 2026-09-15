@@ -78,7 +78,7 @@ textarea{min-height:76px;resize:vertical}
 </div></div>
 
 <div class="demo noprint"><div class="wrap">
-  <span><b>데모 화면</b> — 기관 이름·색·소식을 바꿔 보세요. 저장은 이 브라우저에만 됩니다.</span>
+  <span><b>데모 화면</b> — 기관 이름·색·소식을 바꿔 보세요. 아래 <b>공동 저장</b>에 기관을 등록하면 담당자끼리 같은 소식지를 이어서 만들 수 있습니다.</span>
   <span class="row" style="gap:6px">
     <button class="btn sm" data-preset="suwon">수원시 보건소 예시</button>
     <button class="btn sm" data-preset="gangneung">강릉시 보건소 예시</button>
@@ -141,6 +141,26 @@ textarea{min-height:76px;resize:vertical}
     <textarea data-k="notice" placeholder="예: 일정은 사정에 따라 바뀔 수 있습니다. 방문 전 전화로 확인해 주세요."></textarea>
   </details>
 
+  <div class="card" id="cloudCard">
+    <h2>공동 저장 <span class="note" style="font-weight:600">— 같은 기관 담당자끼리 이어서 작업</span></h2>
+    <p class="hint">기관 코드와 비밀번호만 알면 어느 컴퓨터에서든 같은 소식지를 불러와 고칠 수 있습니다. 처음이면 <b>새 기관 등록</b>부터 하세요.</p>
+    <div class="row">
+      <div class="grow"><label class="f">기관 코드 <span class="note">— 영문 소문자·숫자·하이픈, 예: suwon-bogun</span></label>
+        <input type="text" id="cSlug" placeholder="예: suwon-bogun" autocomplete="off"></div>
+      <div class="grow"><label class="f">비밀번호 <span class="note">— 4자 이상, 담당자끼리 공유</span></label>
+        <input type="password" id="cKey" placeholder="기관 공용 비밀번호" autocomplete="off"></div>
+      <div class="grow"><label class="f">내 이름 <span class="note">— 누가 저장했는지 표시</span></label>
+        <input type="text" id="cBy" placeholder="예: 홍길동"></div>
+    </div>
+    <div class="row" style="margin-top:10px">
+      <button class="btn pri" id="cSave">저장하기</button>
+      <button class="btn" id="cLoad">불러오기</button>
+      <button class="btn" id="cReg">새 기관 등록</button>
+      <label class="note" style="display:flex;gap:6px;align-items:center;margin-left:auto"><input type="checkbox" id="cRemember" checked> 이 컴퓨터에 기억</label>
+    </div>
+    <p class="note" id="cStatus" style="margin:8px 0 0">아직 공동 저장에 연결되지 않았습니다. 지금은 이 브라우저에만 저장됩니다.</p>
+  </div>
+
   <div class="card">
     <h2>내보내기</h2>
     <div class="acts">
@@ -190,7 +210,9 @@ let FEED = { items: [], updated: '' }, LATEST = null;
 
 /* ── 저장/복원 ── */
 function allSaved(){ try { return JSON.parse(localStorage.getItem(KEY) || '{}'); } catch(e){ return {}; } }
-function save(){ try { const all = allSaved(); all[L.slug] = L; all.__last = L.slug; localStorage.setItem(KEY, JSON.stringify(all)); } catch(e){} }
+function save(){ try { const all = allSaved(); all[L.slug] = L; all.__last = L.slug; localStorage.setItem(KEY, JSON.stringify(all)); } catch(e){}
+  if (typeof cloudDirty === 'function' && !SAVING_FROM_CLOUD) cloudDirty(); }
+let SAVING_FROM_CLOUD = false;
 function sanitize(o){
   const b = BLANK(); o = Object.assign(b, o || {});
   ['news','schedule','picked','keywords'].forEach(k => { if (!Array.isArray(o[k])) o[k] = []; });
@@ -458,6 +480,112 @@ document.addEventListener('click', e => {
   loadPreset(b.dataset.preset).then(() => { history.replaceState(null, '', '?org=' + encodeURIComponent(L.slug)); syncForm(); });
 });
 
+/* ── 공동 저장 (Supabase) ──────────────────────
+   표는 서버 안 별도 스키마에 있고, 브라우저는 함수 3개(등록·불러오기·저장)만 부릅니다.
+   기관 코드 + 비밀번호로 확인하며, 비밀번호는 서버에 해시로만 남습니다. */
+const SB = { url: 'https://dxhmprqfgigljgbstqrg.supabase.co', key: 'sb_publishable__FXGut04uxuz44s2443_8g_AByEuL-n' };
+const CKEY = 'epibrief-local-cloud';
+const ERR = { NO_OFFICE:'그 기관 코드는 등록돼 있지 않습니다. 코드를 확인하거나 [새 기관 등록]을 눌러 주세요.',
+  BAD_KEY:'비밀번호가 맞지 않습니다.', SLUG_TAKEN:'이미 쓰는 기관 코드입니다. 다른 코드를 정해 주세요.',
+  KEY_TOO_SHORT:'비밀번호는 4자 이상이어야 합니다.', NAME_REQUIRED:'①에서 기관 이름을 먼저 적어 주세요.',
+  TOO_LARGE:'내용이 너무 큽니다. 소식을 줄여 주세요.' };
+let CLOUD = { slug:'', version:null, dirty:false, connected:false };
+async function rpc(fn, params){
+  const r = await fetch(`${SB.url}/rest/v1/rpc/${fn}`, { method:'POST',
+    headers:{ 'apikey': SB.key, 'Authorization': 'Bearer ' + SB.key, 'Content-Type': 'application/json' },
+    body: JSON.stringify(params) });
+  const j = await r.json().catch(() => ({}));
+  if (!r.ok){
+    const m = String(j.message || j.hint || r.status);
+    const conflict = m.match(/^CONFLICT:(\d+)/);
+    if (conflict) throw Object.assign(new Error('CONFLICT'), { version: +conflict[1] });
+    throw new Error(ERR[m] || ('서버 연결에 실패했습니다. (' + m + ')'));
+  }
+  return j;
+}
+function cloudMem(){ try { return JSON.parse(localStorage.getItem(CKEY) || '{}'); } catch(e){ return {}; } }
+function cloudRemember(){
+  const mem = cloudMem(); const slug = $('#cSlug').value.trim().toLowerCase();
+  if (!slug) return;
+  mem.__last = slug;
+  mem[slug] = { by: $('#cBy').value.trim(), key: $('#cRemember').checked ? $('#cKey').value : '' };
+  try { localStorage.setItem(CKEY, JSON.stringify(mem)); } catch(e){}
+}
+function cloudStatus(msg, ok){
+  const el = $('#cStatus'); el.textContent = msg; el.style.color = ok === false ? '#9a3412' : ok ? '#146c3a' : '';
+}
+function cloudDirty(){
+  if (!CLOUD.connected) return;
+  CLOUD.dirty = true;
+  cloudStatus(`고친 내용이 아직 공동 저장되지 않았습니다. [저장하기]를 눌러 주세요. (서버 v${CLOUD.version || '-'})`);
+}
+function cloudCreds(){
+  const slug = $('#cSlug').value.trim().toLowerCase(), key = $('#cKey').value;
+  if (!slug){ alert('기관 코드를 적어 주세요.'); return null; }
+  if (!/^[a-z0-9-]{2,40}$/.test(slug)){ alert('기관 코드는 영문 소문자·숫자·하이픈 2~40자입니다. 예: suwon-bogun'); return null; }
+  if (!key){ alert('비밀번호를 적어 주세요.'); return null; }
+  return { slug, key };
+}
+function applyCloud(res){
+  SAVING_FROM_CLOUD = true;
+  try { applyCloud2(res); } finally { SAVING_FROM_CLOUD = false; }
+}
+function applyCloud2(res){
+  CLOUD = { slug: res.slug, version: res.version || null, dirty: false, connected: true };
+  if (res.data){ L = sanitize(res.data); L.slug = res.slug; save(); syncForm(); }
+  else { L.slug = res.slug; if (!L.org) L.org = res.name || L.org; save(); syncForm(); }
+  const when = res.updated_at ? new Date(res.updated_at).toLocaleString('ko-KR', { dateStyle:'short', timeStyle:'short' }) : '';
+  cloudStatus(res.data
+    ? `공동 저장에서 불러왔습니다 — 마지막 저장 ${when}${res.updated_by ? ' · ' + res.updated_by : ''} (v${res.version})`
+    : `「${res.name || res.slug}」 연결됨 — 아직 저장된 소식지가 없습니다. 작성 후 [저장하기]를 눌러 주세요.`, true);
+}
+$('#cReg').onclick = async () => {
+  const c = cloudCreds(); if (!c) return;
+  if (!L.org){ alert('①에서 기관 이름을 먼저 적어 주세요. 그 이름으로 등록됩니다.'); return; }
+  if (!confirm(`기관 코드 「${c.slug}」로 「${L.org}」을(를) 등록할까요?\n비밀번호는 담당자끼리만 공유해 주세요.`)) return;
+  try {
+    const res = await rpc('epibrief_register', { p_slug: c.slug, p_name: L.org, p_key: c.key });
+    cloudRemember(); applyCloud(res);
+    history.replaceState(null, '', '?org=' + encodeURIComponent(c.slug));
+    alert('등록했습니다. 이제 [저장하기]를 누르면 다른 담당자도 같은 소식지를 불러올 수 있습니다.');
+  } catch(e){ cloudStatus(e.message, false); alert(e.message); }
+};
+$('#cLoad').onclick = async () => {
+  const c = cloudCreds(); if (!c) return;
+  if (CLOUD.dirty && !confirm('고친 내용이 아직 저장되지 않았습니다. 불러오면 지금 화면이 서버 내용으로 바뀝니다. 계속할까요?')) return;
+  try {
+    const res = await rpc('epibrief_load', { p_slug: c.slug, p_key: c.key });
+    cloudRemember(); applyCloud(res);
+    history.replaceState(null, '', '?org=' + encodeURIComponent(c.slug));
+  } catch(e){ cloudStatus(e.message, false); alert(e.message); }
+};
+$('#cSave').onclick = async () => {
+  const c = cloudCreds(); if (!c) return;
+  const by = $('#cBy').value.trim();
+  if (!by){ alert('내 이름을 적어 주세요. 누가 저장했는지 다른 담당자에게 보입니다.'); return; }
+  const data = Object.assign({}, L); delete data.keywordsText;
+  try {
+    const res = await rpc('epibrief_save', { p_slug: c.slug, p_key: c.key, p_data: data, p_by: by,
+      p_version: CLOUD.slug === c.slug ? CLOUD.version : null });
+    cloudRemember(); L.slug = c.slug; save();
+    CLOUD = { slug: c.slug, version: res.version, dirty: false, connected: true };
+    history.replaceState(null, '', '?org=' + encodeURIComponent(c.slug));
+    cloudStatus(`공동 저장 완료 — ${new Date().toLocaleString('ko-KR', { dateStyle:'short', timeStyle:'short' })} · ${by} (v${res.version})`, true);
+  } catch(e){
+    if (e.message === 'CONFLICT'){
+      cloudStatus(`다른 담당자가 그 사이 저장했습니다 (서버 v${e.version}). [불러오기]로 최신 내용을 받은 뒤 다시 고쳐 주세요.`, false);
+      alert('다른 담당자가 그 사이 저장했습니다.\n[불러오기]로 최신 내용을 먼저 받아 주세요. 지금 화면의 내용은 이 브라우저에 그대로 남아 있습니다.');
+    } else { cloudStatus(e.message, false); alert(e.message); }
+  }
+};
+async function cloudAutoLoad(slug){
+  const mem = cloudMem(); const m = mem[slug]; if (!m) return false;
+  $('#cSlug').value = slug; $('#cBy').value = m.by || ''; $('#cKey').value = m.key || ''; $('#cRemember').checked = !!m.key;
+  if (!m.key) return false;
+  try { applyCloud(await rpc('epibrief_load', { p_slug: slug, p_key: m.key })); return true; }
+  catch(e){ cloudStatus('공동 저장 연결 실패: ' + e.message, false); return false; }
+}
+
 /* ── 시작 ── */
 (async function init(){
   try { FEED = await (await fetch('../data/feed.json')).json(); } catch(e){}
@@ -467,6 +595,7 @@ document.addEventListener('click', e => {
   const slug = q || allSaved().__last || 'suwon';
   await loadPreset(slug);
   syncForm();
+  if (!(await cloudAutoLoad(slug)) && cloudMem().__last && !q) await cloudAutoLoad(cloudMem().__last);
 })();
 </script>
 </body>
