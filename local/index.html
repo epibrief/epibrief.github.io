@@ -35,7 +35,7 @@ details.card>summary .n{font-size:.84rem;color:var(--muted);font-weight:600;marg
 .grow{flex:1 1 200px;min-width:0}
 label.f{display:block;font-size:.88rem;font-weight:700;color:var(--muted);margin:8px 0 4px}
 label.f .req{color:#bf560c;font-weight:800;margin-left:4px}
-input[type=text],input[type=date],input[type=url],select,textarea{width:100%;padding:9px 11px;border:1px solid var(--line);border-radius:10px;font-size:.95rem;font-family:inherit;background:#fff;color:var(--ink)}
+input[type=text],input[type=date],input[type=url],input[type=password],select,textarea{width:100%;padding:9px 11px;border:1px solid var(--line);border-radius:10px;font-size:.95rem;font-family:inherit;background:#fff;color:var(--ink)}
 textarea{min-height:76px;resize:vertical}
 .btn{border:1px solid var(--line);background:#fff;color:var(--navy);font-weight:700;font-size:.95rem;padding:10px 16px;border-radius:10px;cursor:pointer}
 .btn.pri{background:var(--navy);border-color:var(--navy);color:#fff}
@@ -68,6 +68,11 @@ textarea{min-height:76px;resize:vertical}
 #paper .news-item .when{font-size:.88rem;color:var(--accent);font-weight:700}
 #paper .empty{color:#5d6875;text-align:center;padding:30px 10px}
 #paper .nl-logo{display:block;height:52px;max-width:220px;object-fit:contain;object-position:left;margin:0 0 10px}
+#logoBox:not([hidden]){display:flex}
+.samplebadge{display:inline-block;background:#fff3cd;color:#7a5200;border:1px solid #f1d9a8;border-radius:999px;padding:3px 10px;font-size:.86rem;font-weight:700;margin-bottom:8px}
+.fitem .noteline{display:block;margin-top:6px}
+.fitem .noteline input{font-size:.9rem;padding:6px 9px}
+#paper .stat.zero{display:none}
 @media print{ body{background:#fff} .top,.demo,.editor,.acts,.noprint{display:none!important} .two{display:block;padding:0} #paper{box-shadow:none;border:0} }
 </style>
 </head>
@@ -104,7 +109,7 @@ textarea{min-height:76px;resize:vertical}
     <div class="row" style="align-items:flex-end">
       <div class="grow"><label class="f">기관 로고 <span class="note">— 선택. 그림 파일(PNG·JPG)을 고르면 표지 맨 위에 들어갑니다</span></label>
         <input type="file" id="logoFile" accept="image/*" style="font-size:.9rem"></div>
-      <div id="logoBox" style="flex:0 0 auto;display:flex;gap:8px;align-items:center" hidden>
+      <div id="logoBox" style="flex:0 0 auto;gap:8px;align-items:center" hidden>
         <img id="logoPrev" alt="로고" style="height:44px;max-width:160px;object-fit:contain;border:1px solid var(--line);border-radius:8px;padding:4px;background:#fff">
         <button class="btn sm" id="logoDel">로고 지우기</button></div>
     </div>
@@ -117,7 +122,7 @@ textarea{min-height:76px;resize:vertical}
         <input type="text" data-k="keywordsText" placeholder="예: 수원, 경기"></div>
     </div>
     <div class="row">
-      <div class="grow"><label class="f">구독·신청 링크 <span class="note">— 넣으면 QR이 생깁니다</span></label><input type="text" data-k="subUrl" placeholder="https://..."></div>
+      <div class="grow"><label class="f">구독·신청 링크 <span class="note">— 우리 보건소의 신청 양식(구글폼·문자 신청 등) 주소. 넣으면 QR이 생깁니다</span></label><input type="text" data-k="subUrl" placeholder="예: https://forms.gle/..."></div>
       <div class="grow"><label class="f">구독 안내 문구</label><input type="text" data-k="subLabel" placeholder="예: 건강소식 받아보기"></div>
     </div>
   </details>
@@ -140,7 +145,10 @@ textarea{min-height:76px;resize:vertical}
     <summary>④ 우리 지역 감염병 소식 (자동) <span class="n" id="n4"></span></summary>
     <p class="hint" id="feedHint">에피브리프가 모은 국내 자료 중 우리 지역 키워드가 들어간 것을 보여 드립니다. 체크한 것만 소식지에 들어갑니다.</p>
     <div id="feedBox"></div>
-    <p class="note" style="margin-top:8px">전국 동향은 에피브리프 최신 발간호 한 줄이 자동으로 붙습니다.</p>
+    <p class="note" style="margin-top:8px">체크한 기사마다 <b>주민께 알릴 한 줄</b>을 고쳐 쓰세요. 언론 제목을 그대로 싣지 않도록 기본값은 제목이지만, 출처와 날짜는 자동으로 붙습니다.</p>
+    <label class="note" style="display:flex;gap:6px;align-items:flex-start;margin-top:10px"><input type="checkbox" id="natOn" style="margin-top:4px">
+      <span>전국 동향 한 줄 넣기 <span class="note">(에피브리프 최신 발간호 요약. 주민용이면 문장을 쉽게 고쳐 주세요)</span></span></label>
+    <input type="text" id="natText" placeholder="예: 전국적으로 독감이 평년보다 일찍 유행하고 있습니다." style="margin-top:6px">
   </details>
 
   <details class="card">
@@ -155,7 +163,7 @@ textarea{min-height:76px;resize:vertical}
     <div class="row">
       <div class="grow"><label class="f">기관 코드 <span class="note">— 영문 소문자·숫자·하이픈, 예: suwon-bogun</span></label>
         <input type="text" id="cSlug" placeholder="예: suwon-bogun" autocomplete="off"></div>
-      <div class="grow"><label class="f">비밀번호 <span class="note">— 4자 이상, 담당자끼리 공유</span></label>
+      <div class="grow"><label class="f">비밀번호 <span class="note">— 8자 이상(예: 처인2026가을), 담당자끼리 공유</span></label>
         <input type="password" id="cKey" placeholder="기관 공용 비밀번호" autocomplete="off"></div>
       <div class="grow"><label class="f">내 이름 <span class="note">— 누가 저장했는지 표시</span></label>
         <input type="text" id="cBy" placeholder="예: 홍길동"></div>
@@ -164,17 +172,18 @@ textarea{min-height:76px;resize:vertical}
       <button class="btn pri" id="cSave">저장하기</button>
       <button class="btn" id="cLoad">불러오기</button>
       <button class="btn" id="cReg">새 기관 등록</button>
-      <label class="note" style="display:flex;gap:6px;align-items:center;margin-left:auto"><input type="checkbox" id="cRemember" checked> 이 컴퓨터에 기억</label>
+      <label class="note" style="display:flex;gap:6px;align-items:center;margin-left:auto"><input type="checkbox" id="cRemember"> 이 컴퓨터에 기억 <span class="note">(공용 PC에서는 끄세요)</span></label>
     </div>
     <p class="note" id="cStatus" style="margin:8px 0 0">아직 공동 저장에 연결되지 않았습니다. 지금은 이 브라우저에만 저장됩니다.</p>
+    <p class="note" id="cBackup" style="margin:6px 0 0" hidden><button class="btn sm" id="cRestore">직전 작업본 되살리기</button> <span id="cBackupInfo"></span></p>
     <details style="margin-top:10px">
       <summary class="note" style="cursor:pointer;font-weight:700">비밀번호 바꾸기 <span style="font-weight:400">— 담당자가 바뀌었을 때</span></summary>
       <div class="row" style="margin-top:8px">
-        <div class="grow"><label class="f">새 비밀번호 <span class="note">— 4자 이상</span></label><input type="password" id="cNew1" autocomplete="new-password"></div>
+        <div class="grow"><label class="f">새 비밀번호 <span class="note">— 8자 이상</span></label><input type="password" id="cNew1" autocomplete="new-password"></div>
         <div class="grow"><label class="f">새 비밀번호 확인</label><input type="password" id="cNew2" autocomplete="new-password"></div>
         <div style="flex:0 0 auto;padding-top:26px"><button class="btn sm" id="cChange">바꾸기</button></div>
       </div>
-      <p class="note" style="margin-top:6px">위 칸의 <b>현재 비밀번호</b>가 맞아야 바뀝니다. 잊어버렸으면 사이트 관리자에게 재설정을 요청하세요.</p>
+      <p class="note" style="margin-top:6px">위 칸의 <b>현재 비밀번호</b>가 맞아야 바뀝니다. 잊어버렸으면 에피브리프 관리자에게 기관 코드를 알려 재설정을 요청하세요.</p>
     </details>
   </div>
 
@@ -221,7 +230,11 @@ const COLORS = {
 };
 const BLANK = () => ({ slug:'new', org:'', orgShort:'', title:'', issue:'', date:new Date().toISOString().slice(0,10),
   contact:'', subUrl:'', subLabel:'건강소식 받아보기', color:'green', keywords:[], keywordsText:'', tagline:'',
-  news:[], schedule:[], notice:'일정은 사정에 따라 바뀔 수 있습니다. 방문 전 전화로 확인해 주세요.', picked:[], logo:'' });
+  news:[], schedule:[], notice:'일정은 사정에 따라 바뀔 수 있습니다. 방문 전 전화로 확인해 주세요.', picked:[], logo:'',
+  national:{ on:false, text:'' }, sample:null });
+/* 로고는 우리가 만든 data URL 형식만 허용 — 다른 문자열은 화면에 넣지 않습니다. */
+const LOGO_RE = /^data:image\/(png|jpe?g|gif|webp);base64,[A-Za-z0-9+/=]+$/;
+const PRESETS = ['suwon', 'gangneung'];
 
 let L = BLANK();
 let FEED = { items: [], updated: '' }, LATEST = null;
@@ -235,23 +248,46 @@ function sanitize(o){
   const b = BLANK(); o = Object.assign(b, o || {});
   ['news','schedule','picked','keywords'].forEach(k => { if (!Array.isArray(o[k])) o[k] = []; });
   if (!COLORS[o.color]) o.color = 'green';
+  if (!LOGO_RE.test(o.logo || '') || o.logo.length > 200000) o.logo = '';
+  if (!o.national || typeof o.national !== 'object') o.national = { on:false, text:'' };
+  o.picked = o.picked.filter(x => x && x.link).map(x => Object.assign({ note: x.title || '' }, x));
+  if (o.sample && typeof o.sample !== 'object') o.sample = null;
   if (!o.keywordsText) o.keywordsText = o.keywords.join(', ');
   return o;
 }
 async function loadPreset(slug){
+  if (CLOUD.connected && CLOUD.slug !== slug){                 // 다른 기관으로 바꾸면 연결을 끊어 엉뚱한 곳에 저장되지 않게
+    CLOUD = { slug:'', version:null, dirty:false, connected:false };
+    cloudStatus(`공동 저장 연결을 끊었습니다. 「${slug}」 내용을 기관에 저장하려면 그 기관 코드로 먼저 [불러오기]를 하세요.`);
+  }
   if (slug === 'blank'){ L = BLANK(); L.slug = 'new-' + Date.now().toString(36); save(); return; }
   const saved = allSaved()[slug];
   if (saved){ L = sanitize(saved); return; }
+  if (!PRESETS.includes(slug)){ L = BLANK(); L.slug = slug; return; }
   try {
     const r = await fetch('presets/' + slug + '.json'); if (!r.ok) throw 0;
-    L = sanitize(await r.json()); L.picked = []; save();
+    const j = await r.json();
+    L = sanitize(j); L.picked = [];
+    L.sample = { contact: j.contact || '', tagline: j.tagline || '', news: (j.news || []).map(n => n.title), where: (j.schedule || []).map(x => x.where) };
+    save();
   } catch(e){ L = BLANK(); L.slug = slug; }
+}
+/* 예시(프리셋) 문구가 아직 남아 있으면 목록으로 돌려줍니다 — 다른 시 전화번호가 그대로 인쇄되는 사고를 막기 위해 */
+function sampleLeftovers(){
+  const sp = L.sample; if (!sp) return [];
+  const out = [];
+  if (sp.contact && L.contact === sp.contact) out.push('문의 ' + sp.contact);
+  if (sp.tagline && L.tagline === sp.tagline) out.push('이달의 한마디');
+  L.news.forEach(n => { if (sp.news.includes(n.title)) out.push('소식 「' + n.title + '」'); });
+  L.schedule.forEach(x => { if (x.where && sp.where.includes(x.where)) out.push('일정 장소 「' + x.where + '」'); });
+  return out;
 }
 
 /* ── 폼 ↔ 상태 ── */
 function syncForm(){
   $$('[data-k]').forEach(el => { el.value = L[el.dataset.k] || ''; });
   $('#logoBox').hidden = !L.logo; if (L.logo) $('#logoPrev').src = L.logo; $('#logoFile').value = '';
+  $('#natOn').checked = !!L.national.on; $('#natText').value = L.national.text || (LATEST ? (LATEST.tagline || '') : '');
   $('#swatches').innerHTML = Object.entries(COLORS).map(([k, c]) =>
     `<span class="sw ${L.color === k ? 'on' : ''}" data-color="${k}" title="${c.label}" style="background:${c.brand}"></span>`).join('');
   renderNews(); renderSched(); renderFeed(); renderPaper();
@@ -266,16 +302,22 @@ $('#logoFile').addEventListener('change', e => {
   if (!/^image\//.test(f.type)){ alert('그림 파일(PNG, JPG)만 넣을 수 있습니다.'); return; }
   const img = new Image();
   img.onload = () => {
-    const W = Math.min(240, img.width), H = Math.round(img.height * W / img.width);
+    const scale = Math.min(1, 240 / img.width, 120 / img.height);          // 가로 240·세로 120 안에 들어오게
+    const W = Math.max(1, Math.round(img.width * scale)), H = Math.max(1, Math.round(img.height * scale));
     const cv = document.createElement('canvas'); cv.width = W; cv.height = H;
     cv.getContext('2d').drawImage(img, 0, 0, W, H);
-    L.logo = cv.toDataURL(f.type === 'image/png' ? 'image/png' : 'image/jpeg', 0.85);
-    URL.revokeObjectURL(img.src); save(); syncForm();
+    let out = cv.toDataURL(f.type === 'image/png' ? 'image/png' : 'image/jpeg', 0.85);
+    if (out.length > 120000) out = cv.toDataURL('image/jpeg', 0.7);
+    URL.revokeObjectURL(img.src);
+    if (!LOGO_RE.test(out) || out.length > 200000){ alert('로고 그림이 너무 큽니다. 더 단순한 그림(PNG·JPG)으로 다시 골라 주세요.'); return; }
+    L.logo = out; save(); syncForm();
   };
   img.onerror = () => alert('그림을 읽지 못했습니다. 다른 파일을 골라 주세요.');
   img.src = URL.createObjectURL(f);
 });
 $('#logoDel').onclick = () => { L.logo = ''; save(); syncForm(); };
+$('#natOn').addEventListener('change', () => { L.national.on = $('#natOn').checked; if (L.national.on && !L.national.text) L.national.text = $('#natText').value; save(); renderPaper(); });
+$('#natText').addEventListener('input', () => { L.national.text = $('#natText').value; save(); renderPaper(); });
 $('#swatches').addEventListener('click', e => {
   const s = e.target.closest('[data-color]'); if (!s) return;
   L.color = s.dataset.color; save(); syncForm();
@@ -342,29 +384,39 @@ const viaOf = it => /논문/.test(it.via || '') ? '게재' : /뉴스/.test(it.vi
 function regionItems(){
   const kr = FEED.items.filter(it => it.region === '국내' && (it.kind || 'outbreak') === 'outbreak');
   const kw = L.keywords.filter(Boolean);
-  const local = kw.length ? kr.filter(it => kw.some(k => (it.title + ' ' + (it.excerpt || '')).includes(k))) : [];
-  return { local: local.slice(0, 15), national: kr.slice(0, 10) };
+  // '경기' 가 '경기대회' 에 걸리지 않도록: 키워드 뒤에 도·시·군·구 정도만 허용하고 그 뒤는 글자가 아니어야 함
+  const res = kw.map(k => new RegExp(k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '(?:도|시|군|구|권)?(?![가-힣A-Za-z0-9])'));
+  const local = kw.length ? kr.filter(it => res.some(re => re.test(it.title + ' ' + (it.excerpt || '')))) : [];
+  return { local: local.slice(0, 15), national: kr.filter(it => !local.includes(it)).slice(0, 5) };
 }
+const pickRow = it => {
+  const p = L.picked.find(x => x.link === it.link);
+  return `<label class="fitem"><input type="checkbox" data-pick="${esc(it.link)}" ${p ? 'checked' : ''}>
+      <span style="flex:1"><span class="t">${esc(it.title)}</span><br>
+      <span class="m">${esc(viaOf(it) === '보도' ? (it.origin || '언론') : it.sourceName)} · ${esc(it.date)} ${esc(viaOf(it))}</span>
+      ${p ? `<span class="noteline"><input type="text" data-note="${esc(it.link)}" value="${esc(p.note || it.title)}" placeholder="주민께 알릴 한 줄"></span>` : ''}</span></label>`;
+};
 function renderFeed(){
   const { local, national } = regionItems();
-  const list = local.length ? local : national;
   $('#feedHint').textContent = local.length
-    ? `우리 지역(${L.keywords.join('·')}) 언급 자료 ${local.length}건입니다. 체크한 것만 소식지에 들어갑니다.`
-    : (L.keywords.length ? `최근 자료 중 우리 지역(${L.keywords.join('·')}) 언급이 없어 전국 소식을 보여 드립니다.` : '①에서 지역 키워드를 넣으면 우리 지역 자료만 골라 드립니다. 지금은 전국 소식입니다.');
+    ? `제목에 우리 지역(${L.keywords.join('·')})이 들어간 자료 ${local.length}건을 기계적으로 골랐습니다. 꼭 읽고 체크하세요. 체크한 것만 소식지에 들어갑니다.`
+    : (L.keywords.length ? `최근 자료 중 우리 지역(${L.keywords.join('·')}) 언급이 없습니다. 아래 전국 소식에서 고르세요.` : '①에서 지역 키워드를 넣으면 우리 지역 자료를 먼저 보여 드립니다.');
   $('#n4').textContent = L.picked.length ? `${L.picked.length}건 담음` : '';
-  $('#feedBox').innerHTML = list.length ? list.map(it => {
-    const on = L.picked.some(p => p.link === it.link);
-    return `<label class="fitem"><input type="checkbox" data-pick="${esc(it.link)}" ${on ? 'checked' : ''}>
-      <span><span class="t">${esc(it.title)}</span><br>
-      <span class="m">${esc(viaOf(it) === '보도' ? (it.origin || '언론') : it.sourceName)} · ${esc(it.date)} ${esc(viaOf(it))}</span></span></label>`;
-  }).join('') : '<p class="note">자료를 불러오지 못했습니다.</p>';
+  const h = (t, arr) => arr.length ? `<p class="note" style="margin:10px 0 2px;font-weight:700">${t}</p>` + arr.map(pickRow).join('') : '';
+  $('#feedBox').innerHTML = (local.length || national.length)
+    ? h(`우리 지역 ${local.length}건`, local) + h('전국 소식 (최근)', national)
+    : '<p class="note">자료를 불러오지 못했습니다.</p>';
 }
+$('#feedBox').addEventListener('input', e => {
+  const t = e.target.closest('[data-note]'); if (!t) return;
+  const p = L.picked.find(x => x.link === t.dataset.note); if (p){ p.note = t.value; save(); renderPaper(); }
+});
 $('#feedBox').addEventListener('change', e => {
   const cb = e.target.closest('[data-pick]'); if (!cb) return;
   const link = cb.dataset.pick;
   if (cb.checked){
     const it = FEED.items.find(x => x.link === link); if (!it) return;
-    L.picked.push({ title: it.title, link: it.link, date: it.date, who: viaOf(it) === '보도' ? (it.origin || '언론') : it.sourceName, via: viaOf(it) });
+    L.picked.push({ title: it.title, note: it.title, link: it.link, date: it.date, who: viaOf(it) === '보도' ? (it.origin || '언론') : it.sourceName, via: viaOf(it) });
   } else L.picked = L.picked.filter(p => p.link !== link);
   save(); renderFeed(); renderPaper();
 });
@@ -382,19 +434,22 @@ function renderPaper(){
   if (!L.org && !news.length){
     p.innerHTML = '<p class="empty">왼쪽에서 기관 이름과 소식을 적으면 여기에 소식지가 그려집니다.<br>위의 <b>수원시 보건소 예시</b>를 눌러 보셔도 됩니다.</p>'; return;
   }
+  const showRegion = !!(L.picked.length || (L.national.on && L.national.text));
+  const secNo = { news: 0, sched: 0, region: 0 }; let no = 0;
+  if (news.length) secNo.news = ++no; if (sched.length) secNo.sched = ++no; if (showRegion) secNo.region = ++no;
   const stats = `<div class="stats">
-      <div class="stat"><div class="v">${news.length}건</div><div class="l">우리 보건소 소식</div></div>
-      <div class="stat"><div class="v">${sched.length}건</div><div class="l">접종·검진 일정</div></div>
-      <div class="stat"><div class="v">${L.picked.length}건</div><div class="l">우리 지역 감염병 소식</div></div>
-      <div class="stat"><div class="v">${esc(FEED.updated ? FEED.updated.slice(5, 10).replace('-', '.') + '.' : '-')}</div><div class="l">자료 기준일</div></div>
+      <div class="stat ${news.length ? '' : 'zero'}"><div class="v">${news.length}건</div><div class="l">우리 보건소 소식</div></div>
+      <div class="stat ${sched.length ? '' : 'zero'}"><div class="v">${sched.length}건</div><div class="l">접종·검진 일정</div></div>
+      <div class="stat ${L.picked.length ? '' : 'zero'}"><div class="v">${L.picked.length}건</div><div class="l">우리 지역 감염병 소식</div></div>
     </div>`;
+  const leftovers = sampleLeftovers();
   const toc = `<ul class="issues">
-      ${news.map((n, i) => `<li><a href="#n${i + 1}"><span class="no">${i + 1}</span><span class="it">${esc(n.title || '(제목 없음)')}</span></a></li>`).join('')}
-      ${sched.length ? `<li><a href="#sched"><span class="no">${news.length + 1}</span><span class="it">접종·검진 일정</span></a></li>` : ''}
-      ${L.picked.length || LATEST ? `<li><a href="#region"><span class="no">${news.length + (sched.length ? 2 : 1)}</span><span class="it">우리 지역·전국 감염병 소식</span></a></li>` : ''}
+      ${news.map((n, i) => `<li><a href="#n${i + 1}"><span class="no">${secNo.news}${news.length > 1 ? '-' + (i + 1) : ''}</span><span class="it">${esc(n.title || '(제목 없음)')}</span></a></li>`).join('')}
+      ${sched.length ? `<li><a href="#sched"><span class="no">${secNo.sched}</span><span class="it">접종·검진 일정</span></a></li>` : ''}
+      ${showRegion ? `<li><a href="#region"><span class="no">${secNo.region}</span><span class="it">우리 지역·전국 감염병 소식</span></a></li>` : ''}
     </ul>`;
   const newsHtml = news.length ? `<section class="topic">
-      <div class="topic-head"><span class="topic-no">1</span><h2>우리 보건소 소식</h2></div>
+      <div class="topic-head"><span class="topic-no">${secNo.news}</span><h2>우리 보건소 소식</h2></div>
       ${news.map((n, i) => `<div class="news-item" id="n${i + 1}">
         <h4>${esc(n.title)}</h4>
         ${n.when ? `<div class="when">${esc(n.when)}</div>` : ''}
@@ -403,18 +458,16 @@ function renderPaper(){
       </div>`).join('')}
     </section>` : '';
   const schedHtml = sched.length ? `<section class="topic" id="sched">
-      <div class="topic-head"><span class="topic-no">2</span><h2>접종·검진 일정</h2></div>
+      <div class="topic-head"><span class="topic-no">${secNo.sched}</span><h2>접종·검진 일정</h2></div>
       <div class="tablewrap"><table class="sched"><thead><tr><th>날짜</th><th>대상</th><th>내용</th><th>장소</th><th>비고</th></tr></thead>
       <tbody>${sched.map(s => `<tr><td>${esc(s.date)}</td><td>${esc(s.who)}</td><td><b>${esc(s.what)}</b></td><td>${esc(s.where)}</td><td>${esc(s.note || '')}</td></tr>`).join('')}</tbody></table></div>
     </section>` : '';
-  const regionHtml = (L.picked.length || LATEST) ? `<section class="topic" id="region">
-      <div class="topic-head"><span class="topic-no">${sched.length ? 3 : 2}</span><h2>우리 지역·전국 감염병 소식</h2></div>
+  const regionHtml = showRegion ? `<section class="topic" id="region">
+      <div class="topic-head"><span class="topic-no">${secNo.region}</span><h2>우리 지역·전국 감염병 소식</h2></div>
       ${L.picked.length ? `<div class="sec"><h4>우리 지역 (${esc(L.keywords.join('·') || '국내')})</h4><ul>
-        ${L.picked.map(x => `<li>「${esc(x.title)}」 (${esc(x.who)}, ${esc(ymd(x.date))} ${esc(x.via)})${safeUrl(x.link) ? ` <a href="${esc(x.link)}" target="_blank" rel="noopener">원문</a>` : ''}</li>`).join('')}
+        ${L.picked.map(x => `<li>${esc(x.note || x.title)} <span style="color:var(--muted)">(출처: ${esc(x.who)}, ${esc(ymd(x.date))})</span>${safeUrl(x.link) ? ` <a href="${esc(x.link)}" target="_blank" rel="noopener">원문</a>` : ''}</li>`).join('')}
       </ul></div>` : ''}
-      ${LATEST ? `<div class="sec"><h4>전국·세계 동향 한 줄</h4><ul>
-        <li>${esc(LATEST.tagline || LATEST.title)} <a href="../issues/${esc(LATEST.file)}" target="_blank" rel="noopener">에피브리프 ${esc(LATEST.issue)} 보기</a></li>
-      </ul></div>` : ''}
+      ${L.national.on && L.national.text ? `<div class="sec"><h4>전국 동향</h4><ul><li>${esc(L.national.text)}</li></ul></div>` : ''}
     </section>` : '';
   const sub = safeUrl(L.subUrl) ? `<aside class="subscribe">
       <div id="qrBox"></div>
@@ -423,9 +476,10 @@ function renderPaper(){
       <a href="${esc(L.subUrl)}" target="_blank" rel="noopener">${esc(L.subUrl)}</a></div>
     </aside>` : '';
   p.innerHTML = `
+  ${leftovers.length ? `<div class="samplebadge noprint">예시 내용이 남아 있습니다: ${esc(leftovers.slice(0, 3).join(', '))}${leftovers.length > 3 ? ' 외 ' + (leftovers.length - 3) + '곳' : ''}</div>` : ''}
   <header class="nl-head">
     <div class="nl-topline"><span>지역 보건소식지</span><span class="issue">${esc(L.issue)}${L.issue && dateTxt ? ' · ' : ''}${esc(dateTxt)}</span></div>
-    ${/^data:image\//.test(L.logo || '') ? `<img class="nl-logo" src="${L.logo}" alt="${esc(L.org)} 로고">` : ''}
+    ${LOGO_RE.test(L.logo || '') ? `<img class="nl-logo" src="${esc(L.logo)}" alt="${esc(L.org)} 로고">` : ''}
     <div class="nl-kicker">${esc(L.org || '(기관 이름을 적어 주세요)')}</div>
     <h1 class="nl-title">${esc(L.title || '건강소식')}</h1>
     ${L.tagline ? `<p class="nl-lead">${esc(L.tagline)}</p>` : ''}
@@ -453,6 +507,8 @@ function drawQR(url){
 function needContent(){
   if (!L.org || !L.title){ alert('①에서 기관 이름과 소식지 이름을 먼저 적어 주세요.'); return true; }
   if (!L.news.filter(n => n.title || n.body).length && !L.picked.length){ alert('②에서 소식을 하나 이상 적거나, ④에서 지역 소식을 담아 주세요.'); return true; }
+  const lo = sampleLeftovers();
+  if (lo.length && !confirm(`예시 문구가 아직 남아 있습니다:\n- ${lo.join('\n- ')}\n\n그대로 내보낼까요? (예시 전화번호·장소가 인쇄됩니다)`)) return true;
   return false;
 }
 function paperDoc(){
@@ -478,7 +534,7 @@ function buildMail(){
   const sec = (t, inner) => `<tr><td style="padding:16px 0 4px 0;font:800 13px/1.4 ${F};letter-spacing:.06em;color:${c.brand}">${esc(t)}</td></tr>${inner}`;
   const html = `<table role="presentation" width="640" cellpadding="0" cellspacing="0" style="max-width:100%;background:#fff;border:1px solid #dde2e9;border-top:6px solid ${c.brand};font-family:${F}">
   <tr><td style="padding:26px 30px 8px 30px">
-    ${/^data:image\//.test(L.logo || '') ? `<img src="${L.logo}" alt="" style="display:block;height:44px;max-width:200px;margin-bottom:8px">` : ''}
+    ${LOGO_RE.test(L.logo || '') ? `<img src="${esc(L.logo)}" alt="" style="display:block;height:44px;max-width:200px;margin-bottom:8px">` : ''}
     <div style="font:700 12px/1.4 ${F};letter-spacing:.08em;color:#bf560c">${esc(L.org)}</div>
     <div style="font:800 26px/1.25 ${F};color:${c.brand};padding:8px 0 6px 0">${esc(L.title)}</div>
     <div style="font:400 12px/1.5 ${F};color:#6d7885">${esc(L.issue)}${L.issue ? ' · ' : ''}${esc(ymd(L.date))}</div>
@@ -487,8 +543,8 @@ function buildMail(){
   <tr><td style="padding:0 30px 20px 30px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0">
     ${news.length ? sec('우리 보건소 소식', news.map(n => `<tr><td style="padding:6px 0 10px 0;font:400 15px/1.7 ${F};color:#3d4753"><b>${esc(n.title)}</b>${n.when ? `<br><span style="color:#bf560c;font-weight:700;font-size:13px">${esc(n.when)}</span>` : ''}<br>${esc(n.body)}</td></tr>`).join('')) : ''}
     ${sched.length ? sec('접종·검진 일정', sched.map(s => `<tr><td style="padding:4px 0;font:400 14px/1.6 ${F};color:#3d4753">· <b>${esc(s.date)}</b> ${esc(s.who)} — ${esc(s.what)} (${esc(s.where)}${s.note ? ', ' + esc(s.note) : ''})</td></tr>`).join('')) : ''}
-    ${L.picked.length ? sec('우리 지역 감염병 소식', L.picked.map(x => `<tr><td style="padding:4px 0;font:400 14px/1.6 ${F};color:#3d4753">· 「${esc(x.title)}」 (${esc(x.who)}, ${esc(ymd(x.date))} ${esc(x.via)})${safeUrl(x.link) ? ` <a href="${esc(x.link)}" style="color:#bf560c">원문</a>` : ''}</td></tr>`).join('')) : ''}
-    ${LATEST ? sec('전국·세계 동향 한 줄', `<tr><td style="padding:4px 0;font:400 14px/1.6 ${F};color:#3d4753">· ${esc(LATEST.tagline || LATEST.title)} <a href="${location.origin}/issues/${esc(LATEST.file)}" style="color:#bf560c">에피브리프 ${esc(LATEST.issue)} 보기</a></td></tr>`) : ''}
+    ${L.picked.length ? sec('우리 지역 감염병 소식', L.picked.map(x => `<tr><td style="padding:4px 0;font:400 14px/1.6 ${F};color:#3d4753">· ${esc(x.note || x.title)} <span style="color:#6d7885">(출처: ${esc(x.who)}, ${esc(ymd(x.date))})</span>${safeUrl(x.link) ? ` <a href="${esc(x.link)}" style="color:#bf560c">원문</a>` : ''}</td></tr>`).join('')) : ''}
+    ${L.national.on && L.national.text ? sec('전국 동향', `<tr><td style="padding:4px 0;font:400 14px/1.6 ${F};color:#3d4753">· ${esc(L.national.text)}</td></tr>`) : ''}
     ${safeUrl(L.subUrl) ? `<tr><td style="padding:16px 0 0 0"><a href="${esc(L.subUrl)}" style="display:inline-block;background:${c.brand};color:#fff;font:700 14px/1 ${F};padding:11px 16px;border-radius:8px;text-decoration:none">${esc(L.subLabel || '건강소식 받아보기')}</a></td></tr>` : ''}
   </table></td></tr>
   <tr><td style="padding:14px 30px 22px 30px;border-top:1px solid #dde2e9;font:400 12px/1.6 ${F};color:#6d7885">${esc(L.notice)}<br>${esc(L.org)}${L.contact ? ' · ' + esc(L.contact) : ''}</td></tr>
@@ -496,7 +552,9 @@ function buildMail(){
   const text = [`${L.title} ${L.issue}`.trim(), L.org, '', L.tagline, '',
     ...news.map(n => `■ ${n.title}\n${n.when ? n.when + '\n' : ''}${n.body}\n`),
     sched.length ? '■ 접종·검진 일정\n' + sched.map(s => `- ${s.date} ${s.who} ${s.what} (${s.where})`).join('\n') : '',
-    L.picked.length ? '\n■ 우리 지역 감염병 소식\n' + L.picked.map(x => `- ${x.title} (${x.who}, ${x.date}) ${x.link}`).join('\n') : ''
+    L.picked.length ? '\n■ 우리 지역 감염병 소식\n' + L.picked.map(x => `- ${x.note || x.title} (출처: ${x.who}, ${x.date}) ${x.link}`).join('\n') : '',
+    L.national.on && L.national.text ? '\n■ 전국 동향\n- ' + L.national.text : '',
+    '', L.notice || '', `${L.org}${L.contact ? ' · ' + L.contact : ''}`
   ].filter(x => x != null).join('\n');
   return { html, text };
 }
@@ -512,13 +570,15 @@ $('#exMail').onclick = async () => {
 };
 $('#exStibee').onclick = async () => {
   if (needContent()) return;
-  try { await navigator.clipboard.writeText(buildMail().html); alert('스티비용 HTML을 복사했습니다.\\n\\n스티비에서: 이메일 만들기 → 콘텐츠 → [HTML 가져오기] → 붙여넣기(Ctrl+V / Mac은 Cmd+V)\\n※ HTML 가져오기는 스티비 스탠다드 이상에서 열립니다. 무료 플랜이면 [본문 복사해서 붙여넣기]를 쓰세요.'); }
+  try { await navigator.clipboard.writeText(buildMail().html); alert('스티비용 HTML을 복사했습니다.\n\n스티비 → 이메일 만들기 → 콘텐츠 → [HTML 가져오기]에 붙여넣기\n※ HTML 가져오기는 스탠다드 요금제 이상에서만 열립니다. 무료 요금제면 [본문 복사해서 붙여넣기]를 쓰세요.'); }
   catch(e){ alert('복사하지 못했습니다. [웹페이지(.html)]로 저장한 파일을 열어 내용을 복사해 주세요.'); }
 };
 $('#reset').onclick = () => {
   if (!confirm('이 기관의 소식·일정·설정을 모두 지우고 처음 상태로 되돌릴까요?')) return;
   const all = allSaved(); delete all[L.slug]; localStorage.setItem(KEY, JSON.stringify(all));
-  loadPreset(L.slug).then(syncForm);
+  const was = CLOUD.connected;
+  CLOUD = { slug:'', version:null, dirty:false, connected:false };
+  loadPreset(L.slug).then(() => { syncForm(); if (was) cloudStatus('처음 상태로 되돌렸습니다. 공동 저장 연결은 끊었습니다 — 다시 [불러오기]를 하거나 [저장하기]로 덮어쓰세요.'); });
 };
 document.addEventListener('click', e => {
   const b = e.target.closest('button[data-preset]'); if (!b) return;
@@ -531,20 +591,47 @@ document.addEventListener('click', e => {
 const SB = { url: 'https://dxhmprqfgigljgbstqrg.supabase.co', key: 'sb_publishable__FXGut04uxuz44s2443_8g_AByEuL-n' };
 const CKEY = 'epibrief-local-cloud';
 const ERR = { NO_OFFICE:'그 기관 코드는 등록돼 있지 않습니다. 코드를 확인하거나 [새 기관 등록]을 눌러 주세요.',
-  BAD_KEY:'비밀번호가 맞지 않습니다.', SLUG_TAKEN:'이미 쓰는 기관 코드입니다. 다른 코드를 정해 주세요.',
-  KEY_TOO_SHORT:'비밀번호는 4자 이상이어야 합니다.', NAME_REQUIRED:'①에서 기관 이름을 먼저 적어 주세요.',
-  TOO_LARGE:'내용이 너무 큽니다. 소식을 줄여 주세요.' };
+  BAD_KEY:'비밀번호가 맞지 않습니다. 8번 연속 틀리면 잠시 잠깁니다.', SLUG_TAKEN:'이미 쓰는 기관 코드입니다. 다른 코드를 정해 주세요.',
+  SLUG_INVALID:'기관 코드는 영문 소문자·숫자·하이픈 2~40자입니다. 예: suwon-bogun',
+  KEY_TOO_SHORT:'비밀번호는 8자 이상이어야 합니다. 예: 처인2026가을', NAME_REQUIRED:'①에서 기관 이름을 먼저 적어 주세요.',
+  TOO_LARGE:'내용이 너무 큽니다. 로고 그림을 지우거나 소식을 줄여 주세요.',
+  NEED_LOAD:'이 기관에는 이미 저장된 소식지가 있습니다. 덮어쓰지 않도록 먼저 [불러오기]를 해 주세요.',
+  REGISTRY_FULL:'등록할 수 있는 기관 수가 찼습니다. 에피브리프 관리자에게 연락해 주세요.',
+  TOO_MANY_REGISTRATIONS:'짧은 시간에 등록이 너무 많습니다. 잠시 뒤 다시 해 주세요.' };
+const errText = m => {
+  const lock = String(m).match(/^LOCKED:(\d+)/);
+  if (lock) return `비밀번호를 여러 번 틀려 잠겼습니다. 약 ${lock[1]}분 뒤 다시 해 주세요.`;
+  return ERR[m] || ('서버 연결에 실패했습니다. (' + m + ')');
+};
+const BKEY = 'epibrief-local-backups';
+function backups(){ try { return JSON.parse(localStorage.getItem(BKEY) || '[]'); } catch(e){ return []; } }
+function keepBackup(reason){                       // 서버 내용으로 바꾸기 전에 지금 작업본을 따로 보관
+  const list = backups().filter(b => b.slug !== L.slug);
+  list.unshift({ slug: L.slug, at: new Date().toISOString(), reason, data: JSON.parse(JSON.stringify(L)) });
+  try { localStorage.setItem(BKEY, JSON.stringify(list.slice(0, 5))); } catch(e){}
+  showBackup();
+}
+function showBackup(){
+  const b = backups().find(x => x.slug === L.slug);
+  $('#cBackup').hidden = !b;
+  if (b) $('#cBackupInfo').textContent = `${new Date(b.at).toLocaleString('ko-KR', { dateStyle:'short', timeStyle:'short' })}에 보관한 내 작업본이 있습니다 (${b.reason}).`;
+}
+$('#cRestore').onclick = () => {
+  const b = backups().find(x => x.slug === L.slug); if (!b) return;
+  if (!confirm('보관해 둔 내 작업본으로 화면을 되돌릴까요? (서버에는 아직 저장되지 않습니다)')) return;
+  L = sanitize(b.data); save(); syncForm(); cloudStatus('보관했던 작업본을 되살렸습니다. 확인 후 [저장하기]를 눌러 주세요.');
+};
 let CLOUD = { slug:'', version:null, dirty:false, connected:false };
 async function rpc(fn, params){
   const r = await fetch(`${SB.url}/rest/v1/rpc/${fn}`, { method:'POST',
     headers:{ 'apikey': SB.key, 'Authorization': 'Bearer ' + SB.key, 'Content-Type': 'application/json' },
     body: JSON.stringify(params) });
   const j = await r.json().catch(() => ({}));
-  if (!r.ok){
-    const m = String(j.message || j.hint || r.status);
+  const m = !r.ok ? String(j.message || j.hint || r.status) : (j && j.ok === false ? String(j.error || '') : '');
+  if (m){
     const conflict = m.match(/^CONFLICT:(\d+)/);
     if (conflict) throw Object.assign(new Error('CONFLICT'), { version: +conflict[1] });
-    throw new Error(ERR[m] || ('서버 연결에 실패했습니다. (' + m + ')'));
+    throw new Error(errText(m));
   }
   return j;
 }
@@ -562,7 +649,7 @@ function cloudStatus(msg, ok){
 function cloudDirty(){
   if (!CLOUD.connected) return;
   CLOUD.dirty = true;
-  cloudStatus(`고친 내용이 아직 공동 저장되지 않았습니다. [저장하기]를 눌러 주세요. (서버 v${CLOUD.version || '-'})`);
+  cloudStatus('고친 내용이 아직 공동 저장되지 않았습니다. 다른 담당자가 보려면 [저장하기]를 눌러 주세요.');
 }
 function cloudCreds(){
   const slug = $('#cSlug').value.trim().toLowerCase(), key = $('#cKey').value;
@@ -571,6 +658,7 @@ function cloudCreds(){
   if (!key){ alert('비밀번호를 적어 주세요.'); return null; }
   return { slug, key };
 }
+let SAVING = false;
 function applyCloud(res){
   SAVING_FROM_CLOUD = true;
   try { applyCloud2(res); } finally { SAVING_FROM_CLOUD = false; }
@@ -581,13 +669,15 @@ function applyCloud2(res){
   else { L.slug = res.slug; if (!L.org) L.org = res.name || L.org; save(); syncForm(); }
   const when = res.updated_at ? new Date(res.updated_at).toLocaleString('ko-KR', { dateStyle:'short', timeStyle:'short' }) : '';
   cloudStatus(res.data
-    ? `공동 저장에서 불러왔습니다 — 마지막 저장 ${when}${res.updated_by ? ' · ' + res.updated_by : ''} (v${res.version})`
+    ? `공동 저장에서 불러왔습니다 — 마지막 저장 ${when}${res.updated_by ? ' · ' + res.updated_by : ''}`
     : `「${res.name || res.slug}」 연결됨 — 아직 저장된 소식지가 없습니다. 작성 후 [저장하기]를 눌러 주세요.`, true);
+  showBackup();
 }
 $('#cReg').onclick = async () => {
   const c = cloudCreds(); if (!c) return;
   if (!L.org){ alert('①에서 기관 이름을 먼저 적어 주세요. 그 이름으로 등록됩니다.'); return; }
-  if (!confirm(`기관 코드 「${c.slug}」로 「${L.org}」을(를) 등록할까요?\n비밀번호는 담당자끼리만 공유해 주세요.`)) return;
+  if (c.key.length < 8){ alert(ERR.KEY_TOO_SHORT); return; }
+  if (!confirm(`기관 코드 「${c.slug}」로 「${L.org}」을(를) 등록할까요?\n비밀번호는 담당자끼리만 공유하고, 잊으면 에피브리프 관리자에게 재설정을 요청해야 합니다.`)) return;
   try {
     const res = await rpc('epibrief_register', { p_slug: c.slug, p_name: L.org, p_key: c.key });
     cloudRemember(); applyCloud(res);
@@ -597,8 +687,9 @@ $('#cReg').onclick = async () => {
 };
 $('#cLoad').onclick = async () => {
   const c = cloudCreds(); if (!c) return;
-  if (CLOUD.dirty && !confirm('고친 내용이 아직 저장되지 않았습니다. 불러오면 지금 화면이 서버 내용으로 바뀝니다. 계속할까요?')) return;
+  if (CLOUD.dirty && !confirm('고친 내용이 아직 저장되지 않았습니다. 불러오면 화면이 서버 내용으로 바뀌고, 지금 내용은 「직전 작업본」으로 따로 보관됩니다. 계속할까요?')) return;
   try {
+    if (CLOUD.dirty || (!CLOUD.connected && (L.news.length || L.picked.length))) keepBackup('불러오기 전');
     const res = await rpc('epibrief_load', { p_slug: c.slug, p_key: c.key });
     cloudRemember(); applyCloud(res);
     history.replaceState(null, '', '?org=' + encodeURIComponent(c.slug));
@@ -608,6 +699,11 @@ $('#cSave').onclick = async () => {
   const c = cloudCreds(); if (!c) return;
   const by = $('#cBy').value.trim();
   if (!by){ alert('내 이름을 적어 주세요. 누가 저장했는지 다른 담당자에게 보입니다.'); return; }
+  if (CLOUD.connected && CLOUD.slug !== c.slug){
+    alert(`지금 화면은 「${CLOUD.slug}」에 연결돼 있는데 기관 코드가 「${c.slug}」입니다.\n다른 기관을 덮어쓰지 않도록, 그 기관은 먼저 [불러오기]를 해 주세요.`); return;
+  }
+  if (SAVING) return;
+  SAVING = true; const btn = $('#cSave'); btn.disabled = true;
   const data = Object.assign({}, L); delete data.keywordsText;
   try {
     const res = await rpc('epibrief_save', { p_slug: c.slug, p_key: c.key, p_data: data, p_by: by,
@@ -615,18 +711,19 @@ $('#cSave').onclick = async () => {
     cloudRemember(); L.slug = c.slug; save();
     CLOUD = { slug: c.slug, version: res.version, dirty: false, connected: true };
     history.replaceState(null, '', '?org=' + encodeURIComponent(c.slug));
-    cloudStatus(`공동 저장 완료 — ${new Date().toLocaleString('ko-KR', { dateStyle:'short', timeStyle:'short' })} · ${by} (v${res.version})`, true);
+    cloudStatus(`공동 저장 완료 — ${new Date().toLocaleString('ko-KR', { dateStyle:'short', timeStyle:'short' })} · ${by}`, true);
   } catch(e){
     if (e.message === 'CONFLICT'){
-      cloudStatus(`다른 담당자가 그 사이 저장했습니다 (서버 v${e.version}). [불러오기]로 최신 내용을 받은 뒤 다시 고쳐 주세요.`, false);
-      alert('다른 담당자가 그 사이 저장했습니다.\n[불러오기]로 최신 내용을 먼저 받아 주세요. 지금 화면의 내용은 이 브라우저에 그대로 남아 있습니다.');
+      keepBackup('저장 충돌');
+      cloudStatus('다른 담당자가 그 사이 저장했습니다. [불러오기]로 최신 내용을 받으세요. 지금 내용은 「직전 작업본」으로 보관했습니다.', false);
+      alert('다른 담당자가 그 사이 저장했습니다.\n\n① [불러오기]로 최신 내용을 받고\n② 필요하면 [직전 작업본 되살리기]로 내 내용을 확인해 옮겨 적은 뒤\n③ 다시 [저장하기]를 눌러 주세요.');
     } else { cloudStatus(e.message, false); alert(e.message); }
-  }
+  } finally { SAVING = false; btn.disabled = false; }
 };
 $('#cChange').onclick = async () => {
   const c = cloudCreds(); if (!c) return;
   const n1 = $('#cNew1').value, n2 = $('#cNew2').value;
-  if (n1.length < 4){ alert('새 비밀번호는 4자 이상이어야 합니다.'); return; }
+  if (n1.length < 8){ alert('새 비밀번호는 8자 이상이어야 합니다. 예: 처인2026가을'); return; }
   if (n1 !== n2){ alert('새 비밀번호 두 칸이 서로 다릅니다.'); return; }
   if (!confirm(`「${c.slug}」의 비밀번호를 바꿀까요?\n다른 담당자에게도 새 비밀번호를 알려 주셔야 합니다.`)) return;
   try {
@@ -650,10 +747,15 @@ async function cloudAutoLoad(slug){
   try { const m = await (await fetch('../issues/manifest.json')).json();
         LATEST = (m.issues || []).filter(x => x.kind === 'outbreak').sort((a, b) => (b.date || '').localeCompare(a.date || ''))[0] || null; } catch(e){}
   const q = new URLSearchParams(location.search).get('org');
-  const slug = q || allSaved().__last || 'suwon';
+  const remembered = cloudMem().__last;
+  const slug = q || remembered || allSaved().__last || 'suwon';
   await loadPreset(slug);
   syncForm();
-  if (!(await cloudAutoLoad(slug)) && cloudMem().__last && !q) await cloudAutoLoad(cloudMem().__last);
+  if (q && !PRESETS.includes(q)) $('#cSlug').value = q;
+  const got = await cloudAutoLoad(slug);
+  if (!got && !q && remembered && remembered !== slug) await cloudAutoLoad(remembered);
+  if (got) history.replaceState(null, '', '?org=' + encodeURIComponent(slug));
+  showBackup();
 })();
 </script>
 </body>

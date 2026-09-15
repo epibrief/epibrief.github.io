@@ -90,6 +90,7 @@ async function list(){
   if (!key()){ alert('관리자 키를 넣어 주세요.'); return; }
   try {
     const rows = await rpc('epibrief_admin_list', { p_admin_key: key() });
+    if (!Array.isArray(rows)) throw new Error('목록 형식이 올바르지 않습니다.');
     try { sessionStorage.setItem('epibrief-admin', key()); } catch(e){}
     $('#listCard').hidden = false; $('#keyCard').hidden = false;
     $('#cnt').textContent = `${rows.length}곳`;
@@ -97,7 +98,7 @@ async function list(){
       <td><code>${esc(r.slug)}</code><br><a class="m" href="./?org=${encodeURIComponent(r.slug)}" target="_blank" rel="noopener">열기 ↗</a></td>
       <td>${esc(r.name)}</td>
       <td>${r.title ? esc(r.title) + '<br><span class="m">' + esc(r.issue || '') + (r.version ? ' · v' + r.version : '') + '</span>' : '<span class="m">아직 저장 없음</span>'}</td>
-      <td>${esc(when(r.updated_at))}${r.updated_by ? '<br><span class="m">' + esc(r.updated_by) + '</span>' : ''}</td>
+      <td>${esc(when(r.updated_at))}${r.updated_by ? '<br><span class="m">' + esc(r.updated_by) + '</span>' : ''}${r.locked_until && new Date(r.locked_until) > new Date() ? '<br><span class="m err">비밀번호 오류로 잠김</span>' : ''}</td>
       <td>${esc(when(r.created_at)).split(' ')[0]}</td>
       <td class="m">${r.size ? Math.round(r.size / 1024) + ' KB' : '-'}</td>
       <td style="white-space:nowrap"><button class="btn sm" data-reset="${esc(r.slug)}">비밀번호 재설정</button>
@@ -112,7 +113,7 @@ $('#rows').addEventListener('click', async e => {
   const rs = e.target.closest('[data-reset]'), dl = e.target.closest('[data-del]');
   if (rs){
     const slug = rs.dataset.reset;
-    const nk = prompt(`「${slug}」의 새 비밀번호를 정해 주세요 (4자 이상).\n정한 뒤 담당자에게 직접 알려 주세요.`);
+    const nk = prompt(`「${slug}」의 새 비밀번호를 정해 주세요 (8자 이상).\n정한 뒤 담당자에게 직접 알려 주세요.`);
     if (nk == null) return;
     try { await rpc('epibrief_admin_reset_key', { p_admin_key: key(), p_slug: slug, p_new_key: nk }); stat(`「${slug}」 비밀번호를 재설정했습니다.`, 'ok'); }
     catch(err){ stat(err.message, 'err'); alert(err.message); }
@@ -120,7 +121,7 @@ $('#rows').addEventListener('click', async e => {
   if (dl){
     const slug = dl.dataset.del;
     if (prompt(`「${slug}」 기관과 저장된 소식지를 완전히 지웁니다. 되돌릴 수 없습니다.\n지우려면 기관 코드를 그대로 입력하세요.`) !== slug) return;
-    try { await rpc('epibrief_admin_delete', { p_admin_key: key(), p_slug: slug }); stat(`「${slug}」을(를) 지웠습니다.`, 'ok'); list(); }
+    try { await rpc('epibrief_admin_delete', { p_admin_key: key(), p_slug: slug }); await list(); stat(`「${slug}」을(를) 지웠습니다.`, 'ok'); }
     catch(err){ stat(err.message, 'err'); alert(err.message); }
   }
 });
