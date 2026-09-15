@@ -67,6 +67,7 @@ textarea{min-height:76px;resize:vertical}
 #paper .news-item p{margin:0 0 4px}
 #paper .news-item .when{font-size:.88rem;color:var(--accent);font-weight:700}
 #paper .empty{color:#5d6875;text-align:center;padding:30px 10px}
+#paper .nl-logo{display:block;height:52px;max-width:220px;object-fit:contain;object-position:left;margin:0 0 10px}
 @media print{ body{background:#fff} .top,.demo,.editor,.acts,.noprint{display:none!important} .two{display:block;padding:0} #paper{box-shadow:none;border:0} }
 </style>
 </head>
@@ -99,6 +100,13 @@ textarea{min-height:76px;resize:vertical}
       <div class="grow"><label class="f">호수</label><input type="text" data-k="issue" placeholder="예: 2026년 9월호"></div>
       <div style="flex:0 0 170px"><label class="f">발행일</label><input type="date" data-k="date"></div>
       <div class="grow"><label class="f">담당 부서·연락처</label><input type="text" data-k="contact" placeholder="예: 감염병관리과 031-000-0000"></div>
+    </div>
+    <div class="row" style="align-items:flex-end">
+      <div class="grow"><label class="f">기관 로고 <span class="note">— 선택. 그림 파일(PNG·JPG)을 고르면 표지 맨 위에 들어갑니다</span></label>
+        <input type="file" id="logoFile" accept="image/*" style="font-size:.9rem"></div>
+      <div id="logoBox" style="flex:0 0 auto;display:flex;gap:8px;align-items:center" hidden>
+        <img id="logoPrev" alt="로고" style="height:44px;max-width:160px;object-fit:contain;border:1px solid var(--line);border-radius:8px;padding:4px;background:#fff">
+        <button class="btn sm" id="logoDel">로고 지우기</button></div>
     </div>
     <label class="f">이달의 한마디 <span class="note">— 표지 맨 위에 크게 들어갑니다</span></label>
     <textarea data-k="tagline" placeholder="예: 독감 유행주의보가 예년보다 일찍 내려졌습니다. 어르신 무료접종이 시작됩니다."></textarea>
@@ -159,6 +167,15 @@ textarea{min-height:76px;resize:vertical}
       <label class="note" style="display:flex;gap:6px;align-items:center;margin-left:auto"><input type="checkbox" id="cRemember" checked> 이 컴퓨터에 기억</label>
     </div>
     <p class="note" id="cStatus" style="margin:8px 0 0">아직 공동 저장에 연결되지 않았습니다. 지금은 이 브라우저에만 저장됩니다.</p>
+    <details style="margin-top:10px">
+      <summary class="note" style="cursor:pointer;font-weight:700">비밀번호 바꾸기 <span style="font-weight:400">— 담당자가 바뀌었을 때</span></summary>
+      <div class="row" style="margin-top:8px">
+        <div class="grow"><label class="f">새 비밀번호 <span class="note">— 4자 이상</span></label><input type="password" id="cNew1" autocomplete="new-password"></div>
+        <div class="grow"><label class="f">새 비밀번호 확인</label><input type="password" id="cNew2" autocomplete="new-password"></div>
+        <div style="flex:0 0 auto;padding-top:26px"><button class="btn sm" id="cChange">바꾸기</button></div>
+      </div>
+      <p class="note" style="margin-top:6px">위 칸의 <b>현재 비밀번호</b>가 맞아야 바뀝니다. 잊어버렸으면 사이트 관리자에게 재설정을 요청하세요.</p>
+    </details>
   </div>
 
   <div class="card">
@@ -203,7 +220,7 @@ const COLORS = {
 };
 const BLANK = () => ({ slug:'new', org:'', orgShort:'', title:'', issue:'', date:new Date().toISOString().slice(0,10),
   contact:'', subUrl:'', subLabel:'건강소식 받아보기', color:'green', keywords:[], keywordsText:'', tagline:'',
-  news:[], schedule:[], notice:'일정은 사정에 따라 바뀔 수 있습니다. 방문 전 전화로 확인해 주세요.', picked:[] });
+  news:[], schedule:[], notice:'일정은 사정에 따라 바뀔 수 있습니다. 방문 전 전화로 확인해 주세요.', picked:[], logo:'' });
 
 let L = BLANK();
 let FEED = { items: [], updated: '' }, LATEST = null;
@@ -233,6 +250,7 @@ async function loadPreset(slug){
 /* ── 폼 ↔ 상태 ── */
 function syncForm(){
   $$('[data-k]').forEach(el => { el.value = L[el.dataset.k] || ''; });
+  $('#logoBox').hidden = !L.logo; if (L.logo) $('#logoPrev').src = L.logo; $('#logoFile').value = '';
   $('#swatches').innerHTML = Object.entries(COLORS).map(([k, c]) =>
     `<span class="sw ${L.color === k ? 'on' : ''}" data-color="${k}" title="${c.label}" style="background:${c.brand}"></span>`).join('');
   renderNews(); renderSched(); renderFeed(); renderPaper();
@@ -242,6 +260,21 @@ $$('[data-k]').forEach(el => el.addEventListener('input', () => {
   if (el.dataset.k === 'keywordsText'){ L.keywords = el.value.split(/[,、\s]+/).map(s => s.trim()).filter(Boolean); renderFeed(); }
   save(); renderPaper();
 }));
+$('#logoFile').addEventListener('change', e => {
+  const f = e.target.files && e.target.files[0]; if (!f) return;
+  if (!/^image\//.test(f.type)){ alert('그림 파일(PNG, JPG)만 넣을 수 있습니다.'); return; }
+  const img = new Image();
+  img.onload = () => {
+    const W = Math.min(240, img.width), H = Math.round(img.height * W / img.width);
+    const cv = document.createElement('canvas'); cv.width = W; cv.height = H;
+    cv.getContext('2d').drawImage(img, 0, 0, W, H);
+    L.logo = cv.toDataURL(f.type === 'image/png' ? 'image/png' : 'image/jpeg', 0.85);
+    URL.revokeObjectURL(img.src); save(); syncForm();
+  };
+  img.onerror = () => alert('그림을 읽지 못했습니다. 다른 파일을 골라 주세요.');
+  img.src = URL.createObjectURL(f);
+});
+$('#logoDel').onclick = () => { L.logo = ''; save(); syncForm(); };
 $('#swatches').addEventListener('click', e => {
   const s = e.target.closest('[data-color]'); if (!s) return;
   L.color = s.dataset.color; save(); syncForm();
@@ -391,6 +424,7 @@ function renderPaper(){
   p.innerHTML = `
   <header class="nl-head">
     <div class="nl-topline"><span>지역 보건소식지</span><span class="issue">${esc(L.issue)}${L.issue && dateTxt ? ' · ' : ''}${esc(dateTxt)}</span></div>
+    ${/^data:image\//.test(L.logo || '') ? `<img class="nl-logo" src="${L.logo}" alt="${esc(L.org)} 로고">` : ''}
     <div class="nl-kicker">${esc(L.org || '(기관 이름을 적어 주세요)')}</div>
     <h1 class="nl-title">${esc(L.title || '건강소식')}</h1>
     ${L.tagline ? `<p class="nl-lead">${esc(L.tagline)}</p>` : ''}
@@ -444,6 +478,7 @@ $('#exMail').onclick = async () => {
   const sec = (t, inner) => `<tr><td style="padding:16px 0 4px 0;font:800 13px/1.4 ${F};letter-spacing:.06em;color:${c.brand}">${esc(t)}</td></tr>${inner}`;
   const html = `<table role="presentation" width="640" cellpadding="0" cellspacing="0" style="max-width:100%;background:#fff;border:1px solid #dde2e9;border-top:6px solid ${c.brand};font-family:${F}">
   <tr><td style="padding:26px 30px 8px 30px">
+    ${/^data:image\//.test(L.logo || '') ? `<img src="${L.logo}" alt="" style="display:block;height:44px;max-width:200px;margin-bottom:8px">` : ''}
     <div style="font:700 12px/1.4 ${F};letter-spacing:.08em;color:#bf560c">${esc(L.org)}</div>
     <div style="font:800 26px/1.25 ${F};color:${c.brand};padding:8px 0 6px 0">${esc(L.title)}</div>
     <div style="font:400 12px/1.5 ${F};color:#6d7885">${esc(L.issue)}${L.issue ? ' · ' : ''}${esc(ymd(L.date))}</div>
@@ -577,6 +612,19 @@ $('#cSave').onclick = async () => {
       alert('다른 담당자가 그 사이 저장했습니다.\n[불러오기]로 최신 내용을 먼저 받아 주세요. 지금 화면의 내용은 이 브라우저에 그대로 남아 있습니다.');
     } else { cloudStatus(e.message, false); alert(e.message); }
   }
+};
+$('#cChange').onclick = async () => {
+  const c = cloudCreds(); if (!c) return;
+  const n1 = $('#cNew1').value, n2 = $('#cNew2').value;
+  if (n1.length < 4){ alert('새 비밀번호는 4자 이상이어야 합니다.'); return; }
+  if (n1 !== n2){ alert('새 비밀번호 두 칸이 서로 다릅니다.'); return; }
+  if (!confirm(`「${c.slug}」의 비밀번호를 바꿀까요?\n다른 담당자에게도 새 비밀번호를 알려 주셔야 합니다.`)) return;
+  try {
+    await rpc('epibrief_change_key', { p_slug: c.slug, p_old_key: c.key, p_new_key: n1 });
+    $('#cKey').value = n1; $('#cNew1').value = ''; $('#cNew2').value = ''; cloudRemember();
+    cloudStatus('비밀번호를 바꿨습니다. 다른 담당자에게 새 비밀번호를 알려 주세요.', true);
+    alert('비밀번호를 바꿨습니다.');
+  } catch(e){ cloudStatus(e.message, false); alert(e.message); }
 };
 async function cloudAutoLoad(slug){
   const mem = cloudMem(); const m = mem[slug]; if (!m) return false;

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>지역 소식지 관리자 — 에피브리프</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css">
+<style>
+:root{ --ink:#191f28; --muted:#5d6875; --line:#dde2e9; --navy:#1b3fb0; --bg:#f4f6f9; }
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Pretendard Variable","Pretendard","Noto Sans KR","Apple SD Gothic Neo",system-ui,sans-serif;font-size:16px;line-height:1.6;word-break:keep-all}
+.wrap{max-width:1100px;margin:0 auto;padding:0 18px}
+.top{background:var(--navy);color:#fff;padding:14px 0}
+.top h1{margin:0;font-size:1.3rem;font-weight:800}
+.top .sub{font-size:.9rem;color:rgba(255,255,255,.82);margin-top:4px}
+.top a{color:#cfe3ff}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;margin:16px 0}
+.card h2{margin:0 0 6px;font-size:1.08rem;color:var(--navy)}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.grow{flex:1 1 220px;min-width:0}
+label.f{display:block;font-size:.88rem;font-weight:700;color:var(--muted);margin:6px 0 4px}
+input[type=text],input[type=password]{width:100%;padding:9px 11px;border:1px solid var(--line);border-radius:10px;font-size:.95rem;font-family:inherit}
+.btn{border:1px solid var(--line);background:#fff;color:var(--navy);font-weight:700;font-size:.95rem;padding:9px 14px;border-radius:10px;cursor:pointer}
+.btn.pri{background:var(--navy);border-color:var(--navy);color:#fff}
+.btn.sm{padding:6px 10px;font-size:.86rem;border-radius:8px}
+.btn.warn{color:#9a3412}
+.note{font-size:.88rem;color:var(--muted)}
+.tablewrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.93rem;min-width:760px}
+th,td{border-bottom:1px solid var(--line);padding:9px 8px;text-align:left;vertical-align:top}
+th{font-size:.84rem;color:var(--muted);background:#f7fafc}
+td .m{font-size:.84rem;color:var(--muted)}
+.ok{color:#146c3a}.err{color:#9a3412}
+#stat{margin:8px 0 0}
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap">
+  <h1>지역 소식지 관리자</h1>
+  <div class="sub">등록된 기관과 마지막 저장 상태를 보고, 비밀번호를 잊은 기관을 도와줍니다. <a href="./?org=suwon">← 소식지 화면</a></div>
+</div></div>
+
+<div class="wrap">
+  <div class="card">
+    <h2>관리자 확인</h2>
+    <div class="row">
+      <div class="grow"><label class="f">관리자 키</label><input type="password" id="aKey" autocomplete="off" placeholder="관리자 키를 넣고 [기관 목록 보기]"></div>
+      <div style="flex:0 0 auto;padding-top:26px"><button class="btn pri" id="aList">기관 목록 보기</button></div>
+    </div>
+    <p class="note" id="stat">관리자 키는 이 창을 닫으면 지워집니다. 다른 사람과 공유하지 마세요.</p>
+  </div>
+
+  <div class="card" id="listCard" hidden>
+    <h2>등록된 기관 <span class="note" id="cnt"></span></h2>
+    <div class="tablewrap"><table>
+      <thead><tr><th>기관 코드</th><th>기관 이름</th><th>소식지</th><th>마지막 저장</th><th>등록일</th><th>용량</th><th></th></tr></thead>
+      <tbody id="rows"></tbody>
+    </table></div>
+    <p class="note" style="margin-top:8px">「비밀번호 재설정」은 담당자가 비밀번호를 잊었을 때 새 비밀번호를 정해 주는 기능입니다. 정한 뒤 담당자에게 직접 알려 주세요.</p>
+  </div>
+
+  <div class="card" id="keyCard" hidden>
+    <h2>관리자 키 바꾸기</h2>
+    <div class="row">
+      <div class="grow"><label class="f">새 관리자 키 <span class="note">— 8자 이상</span></label><input type="password" id="aNew1" autocomplete="new-password"></div>
+      <div class="grow"><label class="f">새 관리자 키 확인</label><input type="password" id="aNew2" autocomplete="new-password"></div>
+      <div style="flex:0 0 auto;padding-top:26px"><button class="btn sm" id="aChange">바꾸기</button></div>
+    </div>
+  </div>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const SB = { url: 'https://dxhmprqfgigljgbstqrg.supabase.co', key: 'sb_publishable__FXGut04uxuz44s2443_8g_AByEuL-n' };
+const ERR = { NO_ADMIN:'관리자 키가 아직 설정되지 않았습니다.', BAD_ADMIN:'관리자 키가 맞지 않습니다.',
+  NO_OFFICE:'그 기관 코드가 없습니다.', KEY_TOO_SHORT:'비밀번호가 너무 짧습니다.' };
+async function rpc(fn, params){
+  const r = await fetch(`${SB.url}/rest/v1/rpc/${fn}`, { method:'POST',
+    headers:{ 'apikey': SB.key, 'Authorization': 'Bearer ' + SB.key, 'Content-Type': 'application/json' }, body: JSON.stringify(params) });
+  const j = await r.json().catch(() => ({}));
+  if (!r.ok){ const m = String(j.message || r.status); throw new Error(ERR[m] || ('서버 오류: ' + m)); }
+  return j;
+}
+const stat = (m, cls) => { const el = $('#stat'); el.textContent = m; el.className = 'note ' + (cls || ''); };
+const key = () => $('#aKey').value;
+const when = t => t ? new Date(t).toLocaleString('ko-KR', { dateStyle:'short', timeStyle:'short' }) : '-';
+async function list(){
+  if (!key()){ alert('관리자 키를 넣어 주세요.'); return; }
+  try {
+    const rows = await rpc('epibrief_admin_list', { p_admin_key: key() });
+    try { sessionStorage.setItem('epibrief-admin', key()); } catch(e){}
+    $('#listCard').hidden = false; $('#keyCard').hidden = false;
+    $('#cnt').textContent = `${rows.length}곳`;
+    $('#rows').innerHTML = rows.map(r => `<tr>
+      <td><code>${esc(r.slug)}</code><br><a class="m" href="./?org=${encodeURIComponent(r.slug)}" target="_blank" rel="noopener">열기 ↗</a></td>
+      <td>${esc(r.name)}</td>
+      <td>${r.title ? esc(r.title) + '<br><span class="m">' + esc(r.issue || '') + (r.version ? ' · v' + r.version : '') + '</span>' : '<span class="m">아직 저장 없음</span>'}</td>
+      <td>${esc(when(r.updated_at))}${r.updated_by ? '<br><span class="m">' + esc(r.updated_by) + '</span>' : ''}</td>
+      <td>${esc(when(r.created_at)).split(' ')[0]}</td>
+      <td class="m">${r.size ? Math.round(r.size / 1024) + ' KB' : '-'}</td>
+      <td style="white-space:nowrap"><button class="btn sm" data-reset="${esc(r.slug)}">비밀번호 재설정</button>
+          <button class="btn sm warn" data-del="${esc(r.slug)}">삭제</button></td>
+    </tr>`).join('') || '<tr><td colspan="7" class="m">등록된 기관이 없습니다.</td></tr>';
+    stat(`${rows.length}곳을 불러왔습니다. (${when(new Date())})`, 'ok');
+  } catch(e){ stat(e.message, 'err'); }
+}
+$('#aList').onclick = list;
+$('#aKey').addEventListener('keydown', e => { if (e.key === 'Enter') list(); });
+$('#rows').addEventListener('click', async e => {
+  const rs = e.target.closest('[data-reset]'), dl = e.target.closest('[data-del]');
+  if (rs){
+    const slug = rs.dataset.reset;
+    const nk = prompt(`「${slug}」의 새 비밀번호를 정해 주세요 (4자 이상).\n정한 뒤 담당자에게 직접 알려 주세요.`);
+    if (nk == null) return;
+    try { await rpc('epibrief_admin_reset_key', { p_admin_key: key(), p_slug: slug, p_new_key: nk }); stat(`「${slug}」 비밀번호를 재설정했습니다.`, 'ok'); }
+    catch(err){ stat(err.message, 'err'); alert(err.message); }
+  }
+  if (dl){
+    const slug = dl.dataset.del;
+    if (prompt(`「${slug}」 기관과 저장된 소식지를 완전히 지웁니다. 되돌릴 수 없습니다.\n지우려면 기관 코드를 그대로 입력하세요.`) !== slug) return;
+    try { await rpc('epibrief_admin_delete', { p_admin_key: key(), p_slug: slug }); stat(`「${slug}」을(를) 지웠습니다.`, 'ok'); list(); }
+    catch(err){ stat(err.message, 'err'); alert(err.message); }
+  }
+});
+$('#aChange').onclick = async () => {
+  const n1 = $('#aNew1').value, n2 = $('#aNew2').value;
+  if (n1.length < 8){ alert('새 관리자 키는 8자 이상이어야 합니다.'); return; }
+  if (n1 !== n2){ alert('두 칸이 서로 다릅니다.'); return; }
+  if (!confirm('관리자 키를 바꿀까요? 새 키를 잃어버리면 복구할 방법이 없습니다.')) return;
+  try { await rpc('epibrief_admin_change_key', { p_admin_key: key(), p_new_key: n1 });
+    $('#aKey').value = n1; $('#aNew1').value = ''; $('#aNew2').value = ''; sessionStorage.setItem('epibrief-admin', n1);
+    stat('관리자 키를 바꿨습니다. 안전한 곳에 적어 두세요.', 'ok'); }
+  catch(err){ stat(err.message, 'err'); alert(err.message); }
+};
+try { const k = sessionStorage.getItem('epibrief-admin'); if (k){ $('#aKey').value = k; list(); } } catch(e){}
+</script>
+</body>
+</html>
