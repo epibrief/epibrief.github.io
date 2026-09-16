@@ -64,7 +64,7 @@ details td:first-child{white-space:nowrap;font-family:ui-monospace,Menlo,monospa
  <section id="edit">
   <div class="tabs"><button id="tabE" class="pri" type="button">원고</button><button id="tabV" type="button">미리보기</button></div>
   <div class="row">
-   <div><label for="ti">책 제목</label><input id="ti" type="text" placeholder="예: 엑셀 자동화 첫걸음"></div>
+   <div><label for="ti">책 제목</label><input id="ti" type="text" placeholder="예: 엑셀 자동화 첫걸음 (표지 줄바꿈은 | )"></div>
    <div><label for="au">글쓴이</label><input id="au" type="text" placeholder="이름 · 채널명"></div>
   </div>
   <div><label for="su">부제 (한 줄)</label><input id="su" type="text" placeholder="표지에 작게 들어가는 한 줄"></div>
@@ -200,9 +200,9 @@ details td:first-child{white-space:nowrap;font-family:ui-monospace,Menlo,monospa
  }
  function pageHtml(cls,inner,footL,footR){return '<section class="s'+(cls?' '+cls:'')+'">\n <div class="paper"><div class="pin">\n'+inner+'\n </div><div class="foot"><span>'+esc(footL)+'</span><span>'+esc(footR)+'</span></div></div>\n</section>\n';}
  function build(){
-  var title=ti.value.trim()||'제목 없는 책', sub=su.value.trim(), author=au.value.trim();
+  var rawTitle=ti.value.trim()||'제목 없는 책', title=rawTitle.replace(/\s*\|\s*/g,' '), sub=su.value.trim(), author=au.value.trim();
   var chapters=parse(md.value), pages=[], n=0;
-  pages.push(pageHtml('cover','  <span class="eyebrow">'+esc(author||'Web Book')+'</span>\n  <h1>'+inline(title).replace(/\n/g,'<br>')+'</h1>\n'+(sub?'  <p class="kick">'+inline(sub)+'</p>\n':'')+'  <div class="by">'+esc(author)+(author?' · ':'')+new Date().getFullYear()+'</div>',title,'표지'));
+  pages.push(pageHtml('cover','  <span class="eyebrow">'+esc(author||'Web Book')+'</span>\n  <h1>'+inline(rawTitle).replace(/\s*\|\s*/g,'<br>')+'</h1>\n'+(sub?'  <p class="kick">'+inline(sub)+'</p>\n':'')+'  <div class="by">'+esc(author)+(author?' · ':'')+new Date().getFullYear()+'</div>',title,'표지'));
   var tocIdx=pages.length; pages.push(''); // 차례 자리
   var toc=[];
   chapters.forEach(function(ch,ci){
