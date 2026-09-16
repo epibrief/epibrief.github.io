@@ -921,7 +921,7 @@ function revToData(){
     headline: g.summary || `관련 자료 ${g.items.length}건 수집 — 요약은 편집자가 작성해 주세요`,
     sources: Array.from(new Set(g.items.map(i => (i.origin || i.sourceName).split('·')[0].trim()))).slice(0, 4),
     summary: [g.summary || `${g.items.length}건`],
-    situation: g.items.map(i => `(${i.origin || i.sourceName}, ${ymd(i.date)}) ${i.title}${i.excerpt ? ' — ' + i.excerpt.slice(0, 180) : ''}`),
+    situation: g.items.map(i => { const q = quoteOf(i.excerpt, i.title, i.origin); return `(${i.origin || i.sourceName}, ${ymd(i.date)}) ${i.title}${q ? ' — ' + q : ''}`; }),
     assess: g.assess || [], korea: g.korea || [],
     refs: g.items.map(i => `${i.origin ? i.origin + ' | ' : ''}${i.sourceName} (${ymd(i.date)} 발표) ${i.title} — ${i.link}`)
   }));
@@ -1541,6 +1541,17 @@ const countries = t => {
 };
 
 /* AI 없이 만드는 기본 초안 — 담은 기사에서 바로 뼈대를 세웁니다 */
+/* 발췌문은 첫 문장 한 줄만 따옴표 안에 넣어 '인용'으로 표시한다 (저작권법 제28조 — 출처 명시·정당한 범위). 본문 복사가 아님을 형식으로 드러낸다. */
+function quoteOf(excerpt, title, origin){
+  let t = String(excerpt || '').replace(/\s+/g, ' ').trim();
+  if (!t || t === (title || '').trim()) return '';
+  if (title && t.startsWith(title.trim())) t = t.slice(title.trim().length).replace(/^[\s\-—:·|]+/, '');
+  if (!t || t.length < 12 || t === String(origin || '').trim()) return '';   // 뉴스검색 발췌는 "제목 + 매체명"뿐인 경우가 많다
+  const m = t.match(/^.{20,}?(?:다\.|[.!?])(?=\s|$)/);
+  let one = m ? m[0] : t;
+  if (one.length > 120) one = one.slice(0, 118).replace(/\s+\S*$/, '') + '…';
+  return one ? `“${one}”` : '';
+}
 function basicDraft(){
   const K = KINDS[S.kind];
   const srcNames = items => {
@@ -1568,8 +1579,8 @@ function basicDraft(){
       ].filter(Boolean),
       situation: g.items.map(i => {
         const v = viaOf(i), who = v === '보도' ? (i.origin || '언론') : (i.origin || i.source || '출처 미상');
-        const ex = (i.excerpt || '').slice(0, 200);
-        return `「${i.title || ''}」 (${who}, ${ymd(i.date)} ${v})${ex && ex !== i.title ? ' — ' + ex : ''}`;
+        const q = quoteOf(i.excerpt, i.title, i.origin);
+        return `「${i.title || ''}」 (${who}, ${ymd(i.date)} ${v})${q ? ' — ' + q : ''}`;
       }),
       assess: [`※ ${K.secs[1]}을(를) 여기에 적어 주세요.`],
       korea:  [`※ ${K.secs[2]}을(를) 여기에 적어 주세요.`],

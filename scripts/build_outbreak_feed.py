@@ -247,7 +247,7 @@ def main():
                     "date": it["date"] or today.strftime("%Y-%m-%d"),
                     "dateGuessed": not it["date"],          # 발행일을 못 읽어 수집일을 넣은 경우
                     "via": via,                              # WHO 공식 / 기관 RSS / 뉴스검색 / 논문 검색
-                    "excerpt": it["excerpt"] or (s.get("desc", "") if via == "기관 페이지" else ""),
+                    "excerpt": it["excerpt"],
                 })
                 kept += 1
             status.append({"id": s["id"], "name": s["name"], "count": kept, "via": via})
