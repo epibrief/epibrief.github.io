@@ -92,25 +92,52 @@ figcaption{font-size:11px;color:var(--dim);margin-top:6px;text-align:center}
 #bar button{width:40px;height:34px;border:1px solid var(--line2);background:var(--paper);font-size:20px;line-height:1;cursor:pointer;color:var(--ink);border-radius:2px}
 #bar button:hover{background:#fff}
 #jump{height:34px;max-width:52vw;border:1px solid var(--line2);background:var(--paper);color:var(--ink);font-size:12.5px;padding:0 8px;border-radius:2px}
-#dl{position:fixed;top:12px;right:14px;z-index:60;font:800 11px 'Pretendard',sans-serif;letter-spacing:.8px;
- color:var(--muted);text-decoration:none;border:1px solid var(--line2);padding:6px 10px;background:var(--paper);border-radius:2px}
-#dl:hover{color:var(--ink)}
+/* ── 오른쪽 위 메뉴 (PDF·링크) ─────────────────────── */
+#menu{position:fixed;top:12px;right:14px;z-index:60;font-family:'Pretendard',sans-serif}
+#mbtn{font:800 11px 'Pretendard',sans-serif;letter-spacing:.8px;color:var(--muted);cursor:pointer;
+ border:1px solid var(--line2);padding:6px 10px;background:var(--paper);border-radius:2px}
+#mbtn:hover{color:var(--ink)}
+#mlist{display:none;position:absolute;right:0;top:34px;min-width:190px;background:var(--paper);border:1px solid var(--line2);
+ box-shadow:0 6px 24px rgba(0,0,0,.12);border-radius:2px;padding:6px 0}
+#menu.on #mlist{display:block}
+#mlist a,#mlist button{display:block;width:100%;text-align:left;background:none;border:0;cursor:pointer;
+ padding:9px 14px;font:500 13px 'Pretendard',sans-serif;color:var(--ink);text-decoration:none}
+#mlist a:hover,#mlist button:hover{background:var(--wash)}
+#mlist small{display:block;font-size:10.5px;color:var(--dim);margin-top:2px}
+#toast{position:fixed;left:50%;bottom:64px;transform:translateX(-50%);background:var(--ink);color:#fff;
+ font:500 12.5px 'Pretendard',sans-serif;padding:8px 14px;border-radius:999px;opacity:0;transition:opacity .2s;pointer-events:none;z-index:80}
+#toast.on{opacity:1}
 
 /* ── 인쇄(PDF 저장) ──────────────────────────────────── */
+@page{size:A4;margin:0}
 @media print{
- body{overflow:visible;background:#fff}
- #prog,#bar,#dl{display:none!important}
- #deck{width:auto;height:auto}
- .s{position:static;display:flex!important;padding:0;page-break-after:always;animation:none}
- .paper{width:100%;height:auto;min-height:100vh;box-shadow:none;border:0}
- .pin{overflow:visible}
+ html,body{height:auto;overflow:visible;background:#fff}
+ #prog,#bar,#menu,#toast{display:none!important}
+ #deck{width:210mm;height:auto}
+ .s{position:static;display:flex!important;width:210mm;height:297mm;padding:0;animation:none;
+    break-after:page;page-break-after:always;overflow:hidden}
+ .s:last-child{break-after:auto;page-break-after:auto}
+ .s .paper{width:100%;height:100%;max-height:none;box-shadow:none;border:0}
+ .pin{overflow:hidden;padding:18mm 16mm 6mm}
+ .foot{padding:4mm 16mm 8mm}
+ .prose p{font-size:11.5pt;line-height:1.9}
+ h1{font-size:30pt}h2{font-size:22pt}h3{font-size:17pt}.chnum{font-size:60pt}
  .vwrap{display:none}
+ a{color:inherit;text-decoration:none}
 }
 </style>
 </head>
 <body>
 <div id="prog"></div>
-<a id="dl" href="#" title="브라우저 인쇄로 PDF 저장">PDF</a>
+<div id="menu">
+ <button id="mbtn" type="button" aria-haspopup="true" aria-expanded="false">PDF ▾</button>
+ <div id="mlist" role="menu">
+  <a id="mpdf" href="#" download>PDF 내려받기<small>같은 이름의 .pdf 파일</small></a>
+  <button id="mprint" type="button">인쇄로 PDF 저장<small>Mac ⌘P · Windows Ctrl+P</small></button>
+  <button id="mlink" type="button">이 쪽 링크 복사<small>지금 보는 쪽 주소</small></button>
+ </div>
+</div>
+<div id="toast"></div>
 
 <!-- ════════════════════════════════════════════════════════
      본문. 페이지 1장 = <section class="s"> 1개.
@@ -233,7 +260,7 @@ figcaption{font-size:11px;color:var(--dim);margin-top:6px;text-align:center}
   <h3>서버 없이 올리기</h3>
   <div class="prose">
    <p>파일 하나이므로 깃허브 페이지, 넷리파이, 버셀 어디든 그대로 올라갑니다. 이 저장소라면 <code>ebook/</code> 폴더에 두고 커밋하면 <code>사이트주소/ebook/파일명.html</code>로 열립니다.</p>
-   <p><b>PDF</b>는 오른쪽 위 PDF 단추를 누르면 브라우저 인쇄 창이 뜹니다. 대상을 "PDF로 저장"으로 고르면 쪽마다 한 장씩 나옵니다.</p>
+   <p><b>PDF</b>는 오른쪽 위 메뉴에서 받습니다. 저장소에 올리면 깃허브 액션이 같은 이름의 PDF를 자동으로 만들어 두고, 로컬에서는 "인쇄로 PDF 저장"을 쓰면 됩니다.</p>
   </div>
   <table>
    <tr><th>구분</th><th>Mac</th><th>Windows</th></tr>
@@ -330,8 +357,30 @@ figcaption{font-size:11px;color:var(--dim);margin-top:6px;text-align:center}
   };
  });
 
- // PDF: 브라우저 인쇄
- document.getElementById('dl').onclick=function(e){e.preventDefault();window.print();};
+ // 메뉴: PDF 내려받기 / 인쇄 / 링크 복사
+ var menu=document.getElementById('menu'), mbtn=document.getElementById('mbtn'), toast=document.getElementById('toast');
+ function say(t){toast.textContent=t;toast.classList.add('on');clearTimeout(say.t);say.t=setTimeout(function(){toast.classList.remove('on');},1800);}
+ function closeMenu(){menu.classList.remove('on');mbtn.setAttribute('aria-expanded','false');}
+ mbtn.onclick=function(e){e.stopPropagation();menu.classList.toggle('on');mbtn.setAttribute('aria-expanded',menu.classList.contains('on'));};
+ addEventListener('click',function(e){if(!menu.contains(e.target))closeMenu();});
+ addEventListener('keydown',function(e){if(e.key==='Escape')closeMenu();});
+ // 같은 폴더의 같은 이름 .pdf (scripts/build_ebook_pdf.mjs 또는 깃허브 액션이 만든다)
+ var pdfHref=location.pathname.replace(/\.html?$/,'')+'.pdf', mpdf=document.getElementById('mpdf');
+ mpdf.href=pdfHref; mpdf.download=(document.title.split(' — ')[0]||'ebook')+'.pdf';
+ mpdf.onclick=function(e){
+  closeMenu();
+  if(location.protocol==='file:') return;       // 로컬 파일은 그냥 연다
+  e.preventDefault();
+  fetch(pdfHref,{method:'HEAD'}).then(function(r){
+   if(r.ok){ var a=document.createElement('a');a.href=pdfHref;a.download=mpdf.download;document.body.appendChild(a);a.click();a.remove(); }
+   else { say('아직 PDF 파일이 없어요. 인쇄로 저장을 눌러 주세요.'); }
+  }).catch(function(){ say('아직 PDF 파일이 없어요. 인쇄로 저장을 눌러 주세요.'); });
+ };
+ document.getElementById('mprint').onclick=function(){closeMenu();window.print();};
+ document.getElementById('mlink').onclick=function(){
+  closeMenu(); var u=location.origin+location.pathname+'#p'+(i+1);
+  (navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(function(){say('링크를 복사했어요');},function(){prompt('링크',u);});
+ };
 
  // 시작 쪽: 주소의 #p숫자 > 기억한 쪽 > 표지
  var m=location.hash.match(/^#p(\d+)$/), saved=null;
