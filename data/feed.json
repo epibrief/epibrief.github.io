@@ -1,6 +1,6 @@
 {
  "updated": "2026-09-15 22:31",
- "count": 1063,
+ "count": 1065,
  "status": [
   {
    "id": "who-don",
@@ -823,9 +823,47 @@
    "name": "지침·권고 문헌",
    "count": 17,
    "via": "논문 검색"
+  },
+  {
+   "id": "kdca-safe-society",
+   "name": "질병관리청 「손상예방과 건강한 사회」 (계간)",
+   "count": 2,
+   "via": "기관 페이지"
   }
  ],
  "items": [
+  {
+   "id": "kdca-safe-society-0",
+   "sourceId": "kdca-safe-society",
+   "sourceName": "질병관리청 「손상예방과 건강한 사회」 (계간)",
+   "groupId": "injury-kr",
+   "kind": "injury",
+   "region": "국내",
+   "lang": "ko",
+   "title": "「손상예방과 건강한 사회」 2026년 2호 발간",
+   "origin": "질병관리청",
+   "link": "https://www.kdca.go.kr/injury/disemg/2026/06/index.html",
+   "date": "2026-09-16",
+   "dateGuessed": true,
+   "via": "기관 페이지",
+   "excerpt": "손상조사감시 계간 소식지 — 손상 통계·예방 정책·현장 사례. 2017년 창간, 연 4회. 전자책과 PDF로 내려받을 수 있음"
+  },
+  {
+   "id": "kdca-safe-society-1",
+   "sourceId": "kdca-safe-society",
+   "sourceName": "질병관리청 「손상예방과 건강한 사회」 (계간)",
+   "groupId": "injury-kr",
+   "kind": "injury",
+   "region": "국내",
+   "lang": "ko",
+   "title": "「손상예방과 건강한 사회」 2026년 1호 발간",
+   "origin": "질병관리청",
+   "link": "https://kdca.go.kr/injury/disemg/2026/03/index.html",
+   "date": "2026-09-16",
+   "dateGuessed": true,
+   "via": "기관 페이지",
+   "excerpt": "손상조사감시 계간 소식지 — 손상 통계·예방 정책·현장 사례. 2017년 창간, 연 4회. 전자책과 PDF로 내려받을 수 있음"
+  },
   {
    "id": "nfa-119-10",
    "sourceId": "nfa-119",

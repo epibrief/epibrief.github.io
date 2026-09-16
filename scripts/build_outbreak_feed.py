@@ -101,6 +101,37 @@ def europepmc(query, limit=PER_SOURCE):
         })
     return out
 
+def fetch_text(url, tries=3):
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "text/html, */*"})
+    for i in range(tries):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return r.read().decode("utf-8", "replace")
+        except Exception as e:
+            if i < tries - 1:
+                time.sleep(2 * (i + 1))
+            else:
+                print(f"  ! 실패: {url} ({e})")
+    return ""
+
+def page_items(url, item_re, title_fmt="{title}", limit=PER_SOURCE):
+    """RSS가 없는 기관 웹페이지에서 글 목록을 뽑는다 (계간지·간행물 목록 등).
+    item_re 는 이름 붙인 그룹 (?P<title>…) (?P<link>…) 을 가진 정규식. (?P<link2>…) 는 대체 링크, (?P<date>…) 는 있으면 쓴다.
+    limit 은 소스별 "limit" 값 — 간행물 목록처럼 옛 호가 한꺼번에 잡히는 페이지는 2~3으로 두는 것이 좋다.
+    발행일을 못 읽으면 비워 두고, main()이 처음 발견한 날을 기억해 둔다."""
+    raw = fetch_text(url)
+    out = []
+    for m in re.finditer(item_re, raw, re.S):
+        g = m.groupdict()
+        title = strip_tags(g.get("title") or "", 300)
+        link  = html.unescape(g.get("link") or g.get("link2") or "").strip()   # link2: 대체 링크(내려받기 등)
+        if not title or not link: continue
+        out.append({"title": title_fmt.format(title=title), "link": urllib.parse.urljoin(url, link),
+                    "date": parse_date(g.get("date") or ""), "excerpt": strip_tags(g.get("excerpt") or "", 420),
+                    "origin": ""})
+        if len(out) >= limit: break
+    return out
+
 DATE_FORMATS = (
     "%a, %d %b %Y %H:%M:%S %z", "%a, %d %b %Y %H:%M:%S %Z",
     "%a, %d %b %Y %H:%M:%S GMT", "%a, %d %b %Y %H:%M %z",
@@ -160,6 +191,13 @@ def main():
     today = datetime.date.today()
     cutoff = (today - datetime.timedelta(days=KEEP_DAYS)).strftime("%Y-%m-%d")
 
+    first_seen = {}      # 발행일이 없는 글은 처음 발견한 날을 발행일로 삼고, 다음 실행에도 그 날을 유지한다
+    try:
+        for it in json.load(open(OUT, encoding="utf-8")).get("items", []):
+            if it.get("dateGuessed") and it.get("link"): first_seen[it["link"]] = it["date"]
+    except Exception:
+        pass
+
     items, seen, status = [], set(), []
     for g in groups:
         for s in g["sources"]:
@@ -169,6 +207,8 @@ def main():
                 got, via = who_don(), "WHO 공식"
             if not got and s.get("epmc"):
                 got, via = europepmc(s["epmc"]), "논문 검색"
+            if not got and s.get("page"):
+                got, via = page_items(s["page"], s["page_re"], s.get("title_fmt", "{title}"), int(s.get("limit", PER_SOURCE))), "기관 페이지"
             if not got and s.get("rss"):
                 got, via = items_from(fetch_xml(s["rss"])), "기관 RSS"
                 got = [g2 for g2 in got if not g2["date"] or g2["date"] >= cutoff]   # 오래된 글만 남은 RSS는 빈 것으로 봄
@@ -190,6 +230,7 @@ def main():
                 title = re.sub(r"\s-\s[^-]+$", "", it["title"]).strip() if via == "뉴스검색" else it["title"]
                 key = re.sub(r"\W+", "", title.lower())[:60]
                 if not title or key in seen: continue
+                if not it["date"]: it["date"] = first_seen.get(it["link"], "")
                 if it["date"] and it["date"] < cutoff: continue
                 seen.add(key)
                 items.append({
@@ -206,7 +247,7 @@ def main():
                     "date": it["date"] or today.strftime("%Y-%m-%d"),
                     "dateGuessed": not it["date"],          # 발행일을 못 읽어 수집일을 넣은 경우
                     "via": via,                              # WHO 공식 / 기관 RSS / 뉴스검색 / 논문 검색
-                    "excerpt": it["excerpt"],
+                    "excerpt": it["excerpt"] or (s.get("desc", "") if via == "기관 페이지" else ""),
                 })
                 kept += 1
             status.append({"id": s["id"], "name": s["name"], "count": kept, "via": via})

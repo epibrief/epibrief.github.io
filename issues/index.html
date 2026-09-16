@@ -10,9 +10,9 @@
  :root{ --ink:#191f28; --muted:#6d7885; --line:#dde2e9; }
  body{ margin:0; background:#eef1f5; color:var(--ink);
    font-family:"Pretendard Variable","Pretendard","Noto Sans KR","Apple SD Gothic Neo",system-ui,sans-serif; font-size:17px; }
- .bar{ background:#1b3fb0; color:#fff; padding:12px 16px; display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+ .bar{ background:#1b3fb0; color:#fff; padding:12px 16px; display:flex; gap:10px; align-items:center; }
  .bar a{ color:#fff; text-decoration:none; font-weight:700; background:rgba(255,255,255,.14);
-   padding:7px 12px; border-radius:8px; font-size:.92rem; white-space:nowrap; word-break:keep-all; }
+   padding:7px 12px; border-radius:8px; font-size:.92rem; }
  .wrap{ max-width:880px; margin:0 auto; padding:30px 16px 70px; }
  h1{ font-family:"Nanum Myeongjo",serif; font-size:2rem; margin:0 0 6px; }
  .sub{ color:var(--muted); font-size:.95rem; margin:0 0 26px; }
@@ -41,6 +41,13 @@
   <h1 id="listTitle">발간한 뉴스레터</h1>
   <p class="sub" id="listSub">에피브리프로 만든 호입니다. 서식과 구성을 그대로 가져다 새 호를 만들 수 있습니다.</p>
   
+    <a class="issue k-injury" data-kind="injury" href="injury-2026-01.html">
+      <div class="kind">손상·안전</div>
+      <div class="t">손상·안전 동향</div>
+      <div class="m">2026년 제1호(창간호) · 2026-09-16 · 질병관리청 손상예방관리과</div>
+      <p class="lead">질병청과 국립중앙의료원이 손상·응급의료 데이터를 잇습니다. 감시가 촘촘해질수록 예방은 빨라집니다.</p>
+      <div class="topics"><span>감시체계 — 손상·응급의료 데이터 연계</span><span>고령자 손상 — 낙상과 고령 운전자 사고</span><span>자해·자살 — 예방의 균형을 다시 잡다</span><span>개인형 이동장치 — 전동킥보드·전기자전거 손상</span></div>
+    </a>
     <a class="issue k-chronic" data-kind="chronic" href="chronic-2026-01.html">
       <div class="kind">만성질환</div>
       <div class="t">만성질환 동향 뉴스레터</div>

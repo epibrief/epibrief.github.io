@@ -1457,6 +1457,19 @@
      ]
     },
     {
+     "id": "kdca-safe-society",
+     "name": "질병관리청 「손상예방과 건강한 사회」 (계간)",
+     "region": "국내",
+     "desc": "손상조사감시 계간 소식지 — 손상 통계·예방 정책·현장 사례. 2017년 창간, 연 4회. 전자책과 PDF로 내려받을 수 있음",
+     "site": "https://www.kdca.go.kr/kdca/2871/subview.do",
+     "page": "https://www.kdca.go.kr/kdca/2871/subview.do",
+     "page_re": "<li>\\s*(?:<a href=\"(?P<link>[^\"]+)\"[^>]*>)?\\s*<img[^>]*>\\s*(?:</a>)?\\s*<p>(?P<title>\\d{4}년\\s*\\d호)</p>\\s*<a href=\"(?P<link2>[^\"]+)\"",
+     "title_fmt": "「손상예방과 건강한 사회」 {title} 발간",
+     "lang": "ko",
+     "via": "기관 페이지",
+     "limit": 2
+    },
+    {
      "id": "nfa-119",
      "name": "소방청 119구급·구조 통계",
      "region": "국내",
