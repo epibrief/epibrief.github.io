@@ -1422,6 +1422,468 @@
      "via": "논문 검색"
     }
    ]
+  },
+  {
+   "id": "injury-kr",
+   "name": "국내 손상 기관·통계",
+   "kind": "injury",
+   "sources": [
+    {
+     "id": "kdca-injury",
+     "name": "질병관리청 손상조사감시 (응급실손상환자심층조사·손상통계)",
+     "region": "국내",
+     "desc": "국가손상정보포털 — 응급실 손상환자 심층조사, 퇴원손상조사, 중증외상조사, 손상통계집",
+     "site": "https://www.kdca.go.kr/injury/",
+     "query": "질병관리청 손상",
+     "lang": "ko",
+     "via": "뉴스 검색",
+     "must": [
+      "질병관리청",
+      "질병청"
+     ]
+    },
+    {
+     "id": "kdca-ohca",
+     "name": "질병관리청 급성심장정지조사",
+     "region": "국내",
+     "desc": "급성심장정지 발생·생존 통계와 심폐소생술 시행률",
+     "site": "https://www.kdca.go.kr/injury/",
+     "query": "급성심장정지 질병관리청",
+     "lang": "ko",
+     "via": "뉴스 검색",
+     "must": [
+      "질병관리청",
+      "질병청"
+     ]
+    },
+    {
+     "id": "nfa-119",
+     "name": "소방청 119구급·구조 통계",
+     "region": "국내",
+     "desc": "119구급서비스 통계연보, 구급·구조 출동 현황, 사고 유형별 이송",
+     "site": "https://www.nfa.go.kr/nfa/releaseinformation/statisticalinformation/main/",
+     "query": "소방청 구급 통계",
+     "lang": "ko",
+     "via": "뉴스 검색",
+     "must": [
+      "소방청",
+      "소방"
+     ]
+    },
+    {
+     "id": "nemc-nedis",
+     "name": "중앙응급의료센터 응급의료 통계 (NEDIS·e-MEDIS)",
+     "region": "국내",
+     "desc": "국가응급진료정보망 통계연보, 응급실 내원 사유, 4대 중증응급질환(중증외상) 이용 현황",
+     "site": "https://e-medis.nemc.or.kr/",
+     "query": "중앙응급의료센터 응급실",
+     "lang": "ko",
+     "via": "뉴스 검색",
+     "must": [
+      "중앙응급의료센터",
+      "응급의료"
+     ]
+    },
+    {
+     "id": "koroad-taas",
+     "name": "도로교통공단 교통사고 통계 (TAAS)·경찰청",
+     "region": "국내",
+     "desc": "교통사고 발생·사망·부상 통계, 보행자·고령자·이륜차·개인형이동장치 사고",
+     "site": "https://taas.koroad.or.kr/",
+     "query": "교통사고 사망자 통계",
+     "lang": "ko",
+     "via": "뉴스 검색",
+     "must": [
+      "도로교통공단",
+      "경찰청"
+     ]
+    },
+    {
+     "id": "ciss",
+     "name": "한국소비자원 위해정보 (CISS)",
+     "region": "국내",
+     "desc": "소비자 위해감시시스템 — 어린이 안전사고, 생활용품·놀이시설 사고",
+     "site": "https://www.ciss.go.kr/",
+     "query": "소비자원 안전사고",
+     "lang": "ko",
+     "via": "뉴스 검색",
+     "must": [
+      "소비자원"
+     ]
+    },
+    {
+     "id": "kosha-injury",
+     "name": "산업재해 사고사망 통계 (고용노동부·안전보건공단)",
+     "region": "국내",
+     "desc": "산업재해 현황, 사고사망만인율, 중대재해 발생 동향",
+     "site": "https://www.kosha.or.kr/",
+     "query": "산업재해 사고사망",
+     "lang": "ko",
+     "via": "뉴스 검색",
+     "must": [
+      "고용노동부",
+      "안전보건공단",
+      "노동부"
+     ]
+    },
+    {
+     "id": "kr-suicide",
+     "name": "자살·자해 예방 통계 (보건복지부·한국생명존중희망재단)",
+     "region": "국내",
+     "desc": "자살 사망 통계, 응급실 자해·자살시도 감시, 예방정책. 보도 시 자살보도 권고기준 준수",
+     "site": "https://www.kfsp.or.kr/",
+     "query": "자살 통계 복지부",
+     "lang": "ko",
+     "via": "뉴스 검색",
+     "must": [
+      "보건복지부",
+      "생명존중",
+      "자살예방",
+      "복지부"
+     ]
+    },
+    {
+     "id": "kr-water-safety",
+     "name": "물놀이·익수 안전 (해양경찰청·행정안전부)",
+     "region": "국내",
+     "desc": "익수 사고, 물놀이 안전, 연안 사고 통계와 대책",
+     "site": "https://www.kcg.go.kr/",
+     "query": "익수 사고 물놀이",
+     "lang": "ko",
+     "via": "뉴스 검색",
+     "must": [
+      "해양경찰",
+      "행정안전부",
+      "소방청",
+      "행안부"
+     ]
+    },
+    {
+     "id": "kr-child-elder-safety",
+     "name": "어린이·고령자 안전사고 대책 (행정안전부·지자체)",
+     "region": "국내",
+     "desc": "어린이 보호구역, 노인 낙상 예방, 생활안전 대책",
+     "site": "https://www.mois.go.kr/",
+     "query": "노인 낙상 예방",
+     "lang": "ko",
+     "via": "뉴스 검색",
+     "must": [
+      "행정안전부",
+      "행안부",
+      "보건소",
+      "지자체",
+      "시청",
+      "도청",
+      "구청"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "injury-intl",
+   "name": "국제 손상 기관",
+   "kind": "injury",
+   "sources": [
+    {
+     "id": "who-injury",
+     "name": "WHO 손상·폭력 예방",
+     "region": "국제",
+     "desc": "세계 도로안전 현황 보고서, 익수·추락·폭력 예방 지침",
+     "site": "https://www.who.int/health-topics/injuries",
+     "query": "WHO road safety injuries",
+     "lang": "en",
+     "via": "뉴스 검색",
+     "must": [
+      "WHO",
+      "World Health Organization"
+     ]
+    },
+    {
+     "id": "cdc-injury",
+     "name": "美CDC 손상센터 (NCIPC·WISQARS)",
+     "region": "미주",
+     "desc": "추락·익수·약물 과다·교통사고 손상 통계와 예방 프로그램",
+     "site": "https://www.cdc.gov/injury/",
+     "query": "CDC injury prevention",
+     "lang": "en",
+     "via": "뉴스 검색",
+     "must": [
+      "CDC",
+      "Centers for Disease Control"
+     ]
+    },
+    {
+     "id": "safekids",
+     "name": "Safe Kids Worldwide (어린이 안전)",
+     "region": "미주",
+     "desc": "어린이 손상 예방 연구·캠페인 (기관 RSS)",
+     "site": "https://www.safekids.org/",
+     "rss": "https://www.safekids.org/rss.xml",
+     "query": "Safe Kids Worldwide child injury",
+     "lang": "en",
+     "via": "기관 RSS"
+    },
+    {
+     "id": "eurosafe",
+     "name": "EuroSafe·유럽 손상 데이터베이스 (IDB)",
+     "region": "유럽",
+     "desc": "유럽 손상 감시(EU-IDB) 보고와 예방 정책",
+     "site": "https://www.eurosafe.eu.com/",
+     "query": "EuroSafe injury Europe",
+     "lang": "en",
+     "via": "뉴스 검색",
+     "must": [
+      "EuroSafe",
+      "European",
+      "Europe"
+     ]
+    },
+    {
+     "id": "aihw-injury",
+     "name": "호주 AIHW 손상 통계",
+     "region": "오세아니아",
+     "desc": "손상 입원·사망 통계, 낙상·교통·자해 보고서",
+     "site": "https://www.aihw.gov.au/reports-data/health-conditions-disability-deaths/injury/overview",
+     "query": "AIHW injury Australia",
+     "lang": "en",
+     "via": "뉴스 검색",
+     "must": [
+      "AIHW",
+      "Australian Institute of Health"
+     ]
+    },
+    {
+     "id": "pho-ukhsa-injury",
+     "name": "영국 손상·안전 (UKHSA·RoSPA)",
+     "region": "유럽",
+     "desc": "영국 사고예방(RoSPA) 및 보건당국 손상 통계",
+     "site": "https://www.rospa.com/",
+     "query": "RoSPA accident prevention",
+     "lang": "en",
+     "via": "뉴스 검색",
+     "must": [
+      "RoSPA",
+      "UKHSA",
+      "NHS"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "injury-research",
+   "name": "손상 연구 논문 (Europe PMC)",
+   "kind": "injury",
+   "sources": [
+    {
+     "id": "epmc-inj-korea",
+     "name": "논문: 국내 손상 역학·감시",
+     "region": "연구",
+     "desc": "한국 자료(응급실·NEDIS·건보) 기반 손상 연구",
+     "site": "",
+     "epmc": "(TITLE:injur* OR TITLE:trauma OR TITLE:falls OR TITLE:drowning OR TITLE:burn* OR TITLE:poisoning OR TITLE:\"road traffic\" OR TITLE:\"self-harm\" OR TITLE:fracture) AND (ABSTRACT:Korea OR ABSTRACT:Korean OR AFF:Korea) AND (SRC:MED OR SRC:PPR) AND {RECENT}",
+     "via": "논문 검색",
+     "lang": "en"
+    },
+    {
+     "id": "epmc-falls",
+     "name": "논문: 노인 낙상·추락",
+     "region": "연구",
+     "desc": "고령자 낙상 위험요인, 예방 중재, 골절 부담",
+     "site": "",
+     "epmc": "(TITLE:fall OR TITLE:falls OR TITLE:\"fall-related\") AND (TITLE:\"older adults\" OR TITLE:older OR TITLE:elderly OR TITLE:geriatric OR TITLE:\"hip fracture\") AND (SRC:MED OR SRC:PPR) AND {RECENT}",
+     "via": "논문 검색",
+     "lang": "en"
+    },
+    {
+     "id": "epmc-child-injury",
+     "name": "논문: 어린이 손상 (익수·화상·중독)",
+     "region": "연구",
+     "desc": "소아 손상 역학과 예방",
+     "site": "",
+     "epmc": "(TITLE:drowning OR TITLE:burn OR TITLE:burns OR TITLE:scald* OR TITLE:poisoning OR TITLE:\"child injur*\" OR TITLE:\"pediatric injur*\" OR TITLE:\"paediatric injur*\" OR TITLE:\"pediatric trauma\") AND (SRC:MED OR SRC:PPR) AND {RECENT}",
+     "via": "논문 검색",
+     "lang": "en"
+    },
+    {
+     "id": "epmc-road",
+     "name": "논문: 교통사고 손상",
+     "region": "연구",
+     "desc": "보행자·이륜차·개인형이동장치 사고, 도로안전 정책 효과",
+     "site": "",
+     "epmc": "(TITLE:\"road traffic\" OR TITLE:\"motor vehicle\" OR TITLE:pedestrian OR TITLE:cyclist OR TITLE:\"e-scooter\" OR TITLE:motorcycl*) AND (TITLE:injur* OR TITLE:crash* OR TITLE:fatalit* OR TITLE:collision*) AND (SRC:MED OR SRC:PPR) AND {RECENT}",
+     "via": "논문 검색",
+     "lang": "en"
+    },
+    {
+     "id": "epmc-selfharm",
+     "name": "논문: 자해·자살 감시",
+     "region": "연구",
+     "desc": "응급실 자해 감시, 추세, 예방 중재 (보도 시 권고기준 준수)",
+     "site": "",
+     "epmc": "(TITLE:\"self-harm\" OR TITLE:\"self harm\" OR TITLE:suicide OR TITLE:suicidal) AND (TITLE:surveillance OR TITLE:\"emergency department\" OR TITLE:trend* OR TITLE:prevention) AND (SRC:MED OR SRC:PPR) AND {RECENT}",
+     "via": "논문 검색",
+     "lang": "en"
+    },
+    {
+     "id": "epmc-occupational",
+     "name": "논문: 산업재해·직업 손상",
+     "region": "연구",
+     "desc": "작업장 손상, 사고사망, 예방 프로그램",
+     "site": "",
+     "epmc": "(TITLE:occupational OR TITLE:workplace OR TITLE:\"work-related\") AND (TITLE:injur* OR TITLE:fatalit* OR TITLE:accident*) AND (SRC:MED OR SRC:PPR) AND {RECENT}",
+     "via": "논문 검색",
+     "lang": "en"
+    },
+    {
+     "id": "epmc-trauma-ems",
+     "name": "논문: 중증외상·응급의료체계",
+     "region": "연구",
+     "desc": "외상체계, 병원전 처치, 심장정지 생존",
+     "site": "",
+     "epmc": "(TITLE:\"trauma system\" OR TITLE:\"trauma center\" OR TITLE:prehospital OR TITLE:\"emergency medical services\" OR TITLE:\"cardiac arrest\") AND (TITLE:outcome* OR TITLE:survival OR TITLE:mortality OR TITLE:system) AND (SRC:MED OR SRC:PPR) AND {RECENT}",
+     "via": "논문 검색",
+     "lang": "en"
+    },
+    {
+     "id": "epmc-injprev",
+     "name": "학술지: Injury Prevention (BMJ)",
+     "region": "연구",
+     "desc": "손상 예방 대표 학술지 최신 논문",
+     "site": "https://injuryprevention.bmj.com/",
+     "epmc": "JOURNAL:\"Inj Prev\" AND {RECENT}",
+     "via": "논문 검색",
+     "lang": "en"
+    },
+    {
+     "id": "epmc-injepi",
+     "name": "학술지: Injury Epidemiology",
+     "region": "연구",
+     "desc": "손상 역학 전문 학술지",
+     "site": "https://injepijournal.biomedcentral.com/",
+     "epmc": "JOURNAL:\"Inj Epidemiol\" AND {RECENT}",
+     "via": "논문 검색",
+     "lang": "en"
+    },
+    {
+     "id": "epmc-jti",
+     "name": "학술지: Journal of Trauma and Injury (대한외상학회)",
+     "region": "연구",
+     "desc": "국내 외상학회 영문 학술지",
+     "site": "https://www.jtraumainj.org/",
+     "epmc": "JOURNAL:\"J Trauma Inj\" AND {RECENT}",
+     "via": "논문 검색",
+     "lang": "en"
+    },
+    {
+     "id": "epmc-ceem",
+     "name": "학술지: Clinical and Experimental Emergency Medicine (대한응급의학회)",
+     "region": "연구",
+     "desc": "국내 응급의학회 영문 학술지 중 손상 관련 논문",
+     "site": "https://www.ceemjournal.org/",
+     "epmc": "JOURNAL:\"Clin Exp Emerg Med\" AND {RECENT}",
+     "via": "논문 검색",
+     "lang": "en",
+     "filter": [
+      "injur",
+      "trauma",
+      "fall",
+      "drown",
+      "burn",
+      "poison",
+      "fracture",
+      "crash",
+      "suicide",
+      "self-harm",
+      "overdose",
+      "cardiac arrest",
+      "intoxication"
+     ]
+    },
+    {
+     "id": "epmc-mmwr-injury",
+     "name": "美CDC MMWR 손상 보고",
+     "region": "연구",
+     "desc": "CDC 주간 이환·사망 보고 중 손상 주제",
+     "site": "https://www.cdc.gov/mmwr/",
+     "epmc": "JOURNAL:\"MMWR Morb Mortal Wkly Rep\" AND (TITLE:injur* OR TITLE:overdose OR TITLE:drowning OR TITLE:falls OR TITLE:firearm OR TITLE:\"motor vehicle\" OR TITLE:suicide) AND {RECENT}",
+     "via": "논문 검색",
+     "lang": "en"
+    }
+   ]
+  },
+  {
+   "id": "review-injury",
+   "name": "논문 리뷰·트렌드 (손상·안전)",
+   "kind": "injury",
+   "sources": [
+    {
+     "id": "cochrane-injury",
+     "name": "코크란 리뷰 (신규 발표)",
+     "region": "연구",
+     "desc": "코크란 체계적 문헌고찰 최신호. 근거 수준이 가장 높은 종합 결론",
+     "site": "https://www.cochranelibrary.com/",
+     "lang": "en",
+     "epmc": "JOURNAL:\"Cochrane Database Syst Rev\" AND (TITLE:injur* OR TITLE:trauma OR TITLE:falls OR TITLE:drowning OR TITLE:burn* OR TITLE:poisoning OR TITLE:\"road traffic\" OR TITLE:\"self-harm\" OR TITLE:fracture) AND {RECENT}",
+     "via": "논문 검색"
+    },
+    {
+     "id": "cochrane-protocol-injury",
+     "name": "진행 중인 체계적 문헌고찰 (프로토콜)",
+     "region": "연구",
+     "desc": "아직 결과가 나오지 않은 리뷰 계획서. 어느 주제로 근거가 모이는지 미리 보여 줌",
+     "site": "https://www.cochranelibrary.com/",
+     "lang": "en",
+     "epmc": "((TITLE:\"systematic review protocol\" OR (TITLE:protocol AND TITLE:\"systematic review\") OR TITLE:\"scoping review protocol\")) AND (TITLE:injur* OR TITLE:trauma OR TITLE:falls OR TITLE:drowning OR TITLE:burn* OR TITLE:poisoning OR TITLE:\"road traffic\" OR TITLE:\"self-harm\" OR TITLE:fracture) AND {RECENT}",
+     "via": "논문 검색"
+    },
+    {
+     "id": "review-injury",
+     "name": "리뷰 논문 (분야 종합)",
+     "region": "연구",
+     "desc": "학술지 리뷰 논문. 개별 연구보다 흐름을 읽기 좋음",
+     "site": "https://europepmc.org/",
+     "lang": "en",
+     "epmc": "PUB_TYPE:\"Review\" AND (TITLE:injur* OR TITLE:trauma OR TITLE:falls OR TITLE:drowning OR TITLE:burn* OR TITLE:poisoning OR TITLE:\"road traffic\" OR TITLE:\"self-harm\" OR TITLE:fracture) AND SRC:MED AND {RECENT}",
+     "via": "논문 검색"
+    }
+   ]
+  },
+  {
+   "id": "quick-injury",
+   "name": "신속검토·중국 연구 (손상·안전)",
+   "kind": "injury",
+   "sources": [
+    {
+     "id": "rapid-injury",
+     "name": "신속검토(Rapid review)·근거요약",
+     "region": "연구",
+     "desc": "위기 때 짧은 기간에 근거를 모아 정리한 문헌. 급할 때 먼저 보는 자료",
+     "epmc": "(TITLE:\"rapid review\" OR TITLE:\"rapid evidence\" OR TITLE:\"evidence summary\" OR TITLE:\"umbrella review\") AND (TITLE:injur* OR TITLE:trauma OR TITLE:falls OR TITLE:drowning OR TITLE:burn* OR TITLE:poisoning OR TITLE:\"road traffic\" OR TITLE:\"self-harm\" OR TITLE:fracture) AND {RECENT}",
+     "site": "https://europepmc.org/",
+     "lang": "en",
+     "via": "논문 검색"
+    },
+    {
+     "id": "china-injury",
+     "name": "중국 연구 동향",
+     "region": "연구",
+     "desc": "중국 소속 연구진의 손상 역학·감시 연구. 최근 발표량이 많아 흐름을 보기 좋음",
+     "epmc": "AFF:\"China\" AND (TITLE:epidemiolog* OR TITLE:surveillance OR TITLE:burden OR TITLE:trends OR TITLE:\"public health\") AND (TITLE:injur* OR TITLE:trauma OR TITLE:falls OR TITLE:drowning OR TITLE:burn* OR TITLE:poisoning OR TITLE:\"road traffic\" OR TITLE:\"self-harm\" OR TITLE:fracture) AND SRC:MED AND {RECENT}",
+     "site": "https://europepmc.org/",
+     "lang": "en",
+     "via": "논문 검색"
+    },
+    {
+     "id": "guideline-injury",
+     "name": "지침·권고 문헌",
+     "region": "연구",
+     "desc": "학회·기관 지침과 권고 개정 문헌",
+     "epmc": "(TITLE:guideline* OR TITLE:recommendation* OR TITLE:\"consensus statement\") AND (TITLE:injur* OR TITLE:trauma OR TITLE:falls OR TITLE:drowning OR TITLE:burn* OR TITLE:poisoning OR TITLE:\"road traffic\" OR TITLE:\"self-harm\" OR TITLE:fracture) AND SRC:MED AND {RECENT}",
+     "site": "https://europepmc.org/",
+     "lang": "en",
+     "via": "논문 검색"
+    }
+   ]
   }
  ]
 }

@@ -6,13 +6,15 @@
     outbreak: { brand: '#1b3fb0', accent: '#bf560c', soft: '#fdf1e3' },
     phsm:     { brand: '#0d6e6d', accent: '#bf560c', soft: '#fdf1e3' },
     chronic:  { brand: '#146c3a', accent: '#bf560c', soft: '#fdf1e3' },
-    climate:  { brand: '#0d5c8c', accent: '#bf560c', soft: '#fdf1e3' }
+    climate:  { brand: '#0d5c8c', accent: '#bf560c', soft: '#fdf1e3' },
+    injury:   { brand: '#7b1e3c', accent: '#bf560c', soft: '#fdf1e3' }
   };
   const SECS = {
     outbreak: ['발생 상황', '상황 평가', '국내 관련성 · 권고'],
     phsm:     ['연구 · 정책 동향', '핵심 쟁점과 근거', '분과위 시사점 · 토론거리'],
     chronic:  ['주요 동향', '근거 해석', '국내 적용 시사점'],
-    climate:  ['기후 · 건강 동향', '감시체계와 근거', '국내 대응 시사점']
+    climate:  ['기후 · 건강 동향', '감시체계와 근거', '국내 대응 시사점'],
+    injury:   ['손상 발생 동향', '감시자료 해석과 근거', '국내 예방·대응 시사점']
   };
   const esc = s => String(s == null ? '' : s)
     .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');

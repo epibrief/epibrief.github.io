@@ -24,6 +24,7 @@
 .k-phsm    { --brand:#0d6e6d; --accent:#bf560c; --accent-bright:#ef7c1a; --accent-soft:#fdf1e3; } /* 딥틸 + 오렌지 */
 .k-chronic { --brand:#146c3a; --accent:#bf560c; --accent-bright:#ef7c1a; --accent-soft:#fdf1e3; } /* 딥그린 + 오렌지 */
 .k-climate { --brand:#0d5c8c; --accent:#bf560c; --accent-bright:#ef7c1a; --accent-soft:#fdf1e3; } /* 오션블루 + 오렌지 */
+.k-injury  { --brand:#7b1e3c; --accent:#bf560c; --accent-bright:#ef7c1a; --accent-soft:#fdf1e3; } /* 버건디 + 오렌지 */
 
 #paper{
   position:relative; background:var(--paper); color:var(--ink);

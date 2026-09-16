@@ -21,6 +21,7 @@ body[data-kind="outbreak"]{ --navy:#1b3fb0; --navy-d:#142f85; --teal:#bf560c; --
 body[data-kind="phsm"]    { --navy:#0d6e6d; --navy-d:#095251; --teal:#bf560c; --tint:#fdf1e3; }
 body[data-kind="chronic"] { --navy:#146c3a; --navy-d:#0e5029; --teal:#bf560c; --tint:#fdf1e3; }
 body[data-kind="climate"] { --navy:#0d5c8c; --navy-d:#09456a; --teal:#bf560c; --tint:#fdf1e3; }
+body[data-kind="injury"]  { --navy:#7b1e3c; --navy-d:#5c152d; --teal:#bf560c; --tint:#fdf1e3; }
 *{box-sizing:border-box}
 html,body{max-width:100%;overflow-x:hidden}
 body{margin:0;background:var(--bg);color:var(--ink);
@@ -235,6 +236,7 @@ textarea{min-height:90px;resize:vertical}
           <option value="phsm">감염병 사회 대응</option>
           <option value="chronic">만성질환</option>
           <option value="climate">기후·건강</option>
+          <option value="injury">손상·안전</option>
         </select></div>
       <div style="flex:0 0 170px"><label class="f">기간</label>
         <select id="revDays"><option value="30">최근 30일</option><option value="60" selected>최근 60일</option>
@@ -278,6 +280,8 @@ textarea{min-height:90px;resize:vertical}
         <span><span class="nm">감염병 사회 대응(PHSM) 분과위원회</span><span class="mt">거리두기·위험소통 등 사회적 조치의 최신 연구·정책 동향 · <a href="issues/phsm-2026-01.html" target="_blank" rel="noopener">발간 예시 보기</a></span></span></label>
       <label class="srcitem grow" style="cursor:pointer"><input type="radio" name="kind" value="chronic">
         <span><span class="nm">만성질환 동향</span><span class="mt">심뇌혈관·당뇨·암·건강행태 통계와 연구 동향 · <a href="issues/chronic-2026-01.html" target="_blank" rel="noopener">발간 예시 보기</a></span></span></label>
+      <label class="srcitem grow" style="cursor:pointer"><input type="radio" name="kind" value="injury">
+        <span><span class="nm">손상·안전 동향</span><span class="mt">추락·교통사고·익수·중독·자해 등 손상 감시 통계(질병관리청·소방청·응급의료센터)와 예방 연구</span></span></label>
       <label class="srcitem grow" style="cursor:pointer"><input type="radio" name="kind" value="climate">
         <span><span class="nm">기후·건강 (폭염 등)</span><span class="mt">폭염 감시체계, 매개체 확산, 대기질 등 기후가 건강에 미치는 영향 · <a href="issues/climate-2026-01.html" target="_blank" rel="noopener">발간 예시 보기</a></span></span></label>
     </div>
@@ -528,7 +532,8 @@ const DEFAULT_SEL = {
   outbreak: ['who-don','cdc-news','ecdc-news','kdca'],
   phsm: ['who-phsm','ukhsa','epmc-phsm','epmc-npi','epmc-rcce'],
   chronic: ['who-ncd','kdca-ncd','epmc-ncd','epmc-cvd','epmc-dm'],
-  climate: ['who-climate','wmo-heat','cdc-heat','kr-heat','epmc-heat-mort','epmc-hhws']
+  climate: ['who-climate','wmo-heat','cdc-heat','kr-heat','epmc-heat-mort','epmc-hhws'],
+  injury: ['kdca-injury','nfa-119','nemc-nedis','koroad-taas','who-injury','epmc-inj-korea','epmc-falls']
 };
 let SOURCES = { groups: [] }, FEED = { items: [], updated: '' };
 
@@ -547,6 +552,13 @@ const KINDS = {
     secs: ['연구 · 정책 동향', '핵심 쟁점과 근거', '분과위 시사점 · 토론거리'],
     role: '감염병 사회 대응(공중보건·사회적 조치, PHSM) 분과위원회의 간사',
     guide: 'situation=연구·지침의 설계와 결과를 수치와 함께, assess=근거의 강도·한계·상충되는 결과, korea=국내 대응 매뉴얼에 주는 시사점과 분과위에서 논의할 질문'
+  },
+  injury: {
+    title: '손상·안전 동향',
+    sumTitle: '이번 호 요약',
+    secs: ['손상 발생 동향', '감시자료 해석과 근거', '국내 예방·대응 시사점'],
+    role: '질병관리청 손상조사감시 담당자로서 손상 예방 소식지를 작성하는 사람',
+    guide: 'situation=손상 유형(추락·교통사고·익수·중독·화상·자해 등)별 발생 규모·대상·장소를 수치와 함께, assess=감시체계(응급실손상환자심층조사·119구급·NEDIS·TAAS) 자료의 해석과 한계, korea=국내 예방사업·안전정책(취약계층·어린이·고령자)에 주는 시사점'
   },
   climate: {
     title: '기후·건강 위기 동향',
@@ -650,11 +662,28 @@ const TOPICS_CLIMATE = [
   ['기후 적응·보건체계','Adaptation & resilience',['adaptation','resilience','vulnerability','적응','회복력','취약성']],
   ['취약계층 보호','Vulnerable populations',['older adults','outdoor workers','vulnerable','취약계층','고령','야외작업']]
 ];
+const TOPICS_INJURY = [
+  ['추락·낙상','Falls',['fall','falls','fall-related','추락','낙상','넘어짐']],
+  ['교통사고','Road traffic injury',['road traffic','motor vehicle','pedestrian','cyclist','e-scooter','crash','교통사고','보행자','자전거','전동킥보드','킥보드']],
+  ['익수·수상안전','Drowning',['drowning','water safety','익수','물놀이','수상안전']],
+  ['중독·약물','Poisoning & overdose',['poisoning','overdose','intoxication','중독','약물 과다','일산화탄소']],
+  ['화상·화재','Burns & fire',['burn','burns','scald','fire-related','화상','화재','열상']],
+  ['자해·자살','Self-harm & suicide',['self-harm','self harm','suicide','suicidal','자해','자살','극단적 선택']],
+  ['폭력·학대','Violence & abuse',['violence','assault','abuse','maltreatment','폭력','학대','폭행']],
+  ['어린이 안전','Child injury',['child injur','pediatric injur','paediatric injur','children','어린이 안전','아동 손상','영유아']],
+  ['노인 안전','Older adult injury',['older adult','elderly','geriatric trauma','고령','노인 손상','어르신']],
+  ['산업재해','Occupational injury',['occupational','workplace','work-related','산업재해','산재','사고사망']],
+  ['중증외상·응급의료','Trauma care & EMS',['trauma system','trauma center','ems','emergency medical','prehospital','중증외상','외상센터','구급','응급의료','119']],
+  ['심장정지','Cardiac arrest',['cardiac arrest','ohca','bystander cpr','심장정지','심정지','심폐소생']],
+  ['스포츠·여가 손상','Sports & leisure injury',['sports injur','recreational','스포츠 손상','레저']],
+  ['손상 감시체계','Injury surveillance',['injury surveillance','surveillance system','in-depth','손상감시','심층조사','손상통계']]
+];
 function guessTopic(text){
   const t = (text || '').toLowerCase();
   const books = S.kind === 'phsm'    ? [TOPICS_PHSM, DISEASES]
               : S.kind === 'chronic' ? [TOPICS_NCD, DISEASES]
               : S.kind === 'climate' ? [TOPICS_CLIMATE, DISEASES]
+              : S.kind === 'injury'  ? [TOPICS_INJURY, DISEASES]
               :                        [DISEASES, TOPICS_PHSM];
   for (const book of books)
     for (const [ko, en, keys] of book) if (keys.some(k => hasWord(t, k))) return { name: ko, en };
@@ -694,7 +723,7 @@ function sanitize(){
 
 /* ── 메뉴 이동 ───────────────────────────── */
 const KIND_COLOR = { outbreak:['#1b3fb0','#bf560c'], phsm:['#0d6e6d','#bf560c'],
-                     chronic:['#146c3a','#bf560c'], climate:['#0d5c8c','#bf560c'] };
+                     chronic:['#146c3a','#bf560c'], climate:['#0d5c8c','#bf560c'], injury:['#7b1e3c','#bf560c'] };
 let ISSUES = [];                         // 발간한 뉴스레터 목록
 let SOURCE_COUNT = 0;                    // 기본 소스 개수(자동 수집 대상)
 function nav(name){
@@ -791,7 +820,7 @@ document.addEventListener('click', async e => {
 
 /* ── My Newsletter: 키워드 동향 정리(문헌고찰) ───────────────── */
 let REVIEW = null;
-const KIND_LABEL = { outbreak:'감염병 발생동향', phsm:'감염병 사회 대응', chronic:'만성질환', climate:'기후·건강' };
+const KIND_LABEL = { outbreak:'감염병 발생동향', phsm:'감염병 사회 대응', chronic:'만성질환', climate:'기후·건강', injury:'손상·안전' };
 
 function revSearch(){
   const q = $('#revQ').value.trim();
@@ -1133,7 +1162,12 @@ const CHIPS = {
   climate:  [['폭염·온열질환','heatwave|heat-related|extreme heat|폭염|온열'],['조기경보체계','early warning|action plan|경보'],
              ['한파','cold|한파|한랭'],['대기질·산불','air pollution|wildfire|particulate|대기질|미세먼지|산불'],
              ['매개체 확산','vector|mosquito|tick|dengue|매개체|모기|진드기'],['수해·수인성','flood|waterborne|홍수|수해'],
-             ['취약계층','vulnerable|older adults|outdoor worker|취약']]
+             ['취약계층','vulnerable|older adults|outdoor worker|취약']],
+  injury:   [['추락·낙상','falls|fall-related|추락|낙상'],['교통사고','road traffic|motor vehicle|pedestrian|crash|교통사고|보행자|킥보드'],
+             ['익수','drowning|익수|물놀이'],['중독·약물','poisoning|overdose|중독'],['화상·화재','burns|scald|화상|화재'],
+             ['자해·자살','self-harm|suicide|자해|자살'],['어린이','child injur|pediatric|paediatric|어린이|아동'],
+             ['노인','older adult|elderly|고령|노인'],['산업재해','occupational|workplace|산업재해|산재'],
+             ['응급의료·외상','trauma|ems|prehospital|중증외상|구급|응급의료'],['심장정지','cardiac arrest|ohca|심장정지|심정지']],
 };
 function renderChips(){
   const list = CHIPS[S.kind] || [];
@@ -1661,8 +1695,9 @@ async function generate(useAI){
       : '초안이 준비됐습니다. 내 보관함에 저장했습니다.';
   go(4);
 }
-const SAMPLE_FILE = { outbreak: 'outbreak-2026-37', phsm: 'phsm-2026-01', chronic: 'chronic-2026-01', climate: 'climate-2026-01' };
+const SAMPLE_FILE = { outbreak: 'outbreak-2026-37', phsm: 'phsm-2026-01', chronic: 'chronic-2026-01', climate: 'climate-2026-01', injury: null };
 $('#loadSample').onclick = async () => {
+  if (!SAMPLE_FILE[S.kind]){ alert('이 유형은 아직 예시 호가 없습니다. 기사를 담고 [초안 만들기]로 첫 호를 만들어 주세요.'); return; }
   if (!confirmReplace('예시 호')) return;
   try {
     const r = await fetch('samples/' + SAMPLE_FILE[S.kind] + '.json');

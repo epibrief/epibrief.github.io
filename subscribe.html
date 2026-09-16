@@ -13,6 +13,7 @@
  [data-series="phsm"]{ --brand:#0d6e6d; }
  [data-series="chronic"]{ --brand:#146c3a; }
  [data-series="climate"]{ --brand:#0d5c8c; }
+ [data-series="injury"]{ --brand:#7b1e3c; }
  *{box-sizing:border-box}
  body{margin:0;background:#eef1f5;color:var(--ink);font-size:17px;line-height:1.7;
    font-family:"Pretendard Variable","Pretendard","Noto Sans KR","Apple SD Gothic Neo",system-ui,sans-serif}
@@ -72,6 +73,8 @@
           <span>만성질환 동향<span class="d">월 1회 · 통계와 예방·관리 연구</span></span></label>
         <label><input type="checkbox" name="s" value="기후·건강 위기 동향" data-k="climate">
           <span>기후·건강 위기 동향<span class="d">월 1회 · 폭염·대기질·매개체</span></span></label>
+        <label><input type="checkbox" name="s" value="손상·안전 동향" data-k="injury">
+          <span>손상·안전 동향<span class="d">월 1회 · 추락·교통사고·익수·중독 감시와 예방</span></span></label>
       </div>
 
       <label for="name">이름 <span style="color:var(--accent)">*</span></label>
@@ -128,7 +131,7 @@
 <script>
 const $ = s => document.querySelector(s);
 const NAMES = { outbreak:'전 세계 감염병 발생 동향', phsm:'감염병 사회 대응(PHSM) 분과위원회',
-                chronic:'만성질환 동향', climate:'기후·건강 위기 동향' };
+                chronic:'만성질환 동향', climate:'기후·건강 위기 동향', injury:'손상·안전 동향' };
 let CONF = { email:'', formUrl:'', org:'질병관리청', note:'' };
 
 /* QR이나 뉴스레터에서 ?series=phsm 으로 들어오면 그 뉴스레터를 미리 체크해 둔다 */

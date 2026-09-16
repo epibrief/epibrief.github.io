@@ -32,6 +32,8 @@ KINDS = {
                  "secs": ["주요 동향", "근거 해석", "국내 적용 시사점"], "brand": "#146c3a", "accent": "#bf560c"},
     "climate":  {"name": "기후·건강", "sumTitle": "목차",
                  "secs": ["기후 · 건강 동향", "감시체계와 근거", "국내 대응 시사점"], "brand": "#0d5c8c", "accent": "#bf560c"},
+    "injury":   {"name": "손상·안전", "sumTitle": "목차",
+                 "secs": ["손상 발생 동향", "감시자료 해석과 근거", "국내 예방·대응 시사점"], "brand": "#7b1e3c", "accent": "#bf560c"},
 }
 FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">'
          '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
@@ -482,6 +484,7 @@ def index_page(rows):
  .k-phsm{{ --b:#0d6e6d; --a:#bf560c; }}
  .k-chronic{{ --b:#146c3a; --a:#bf560c; }}
  .k-climate{{ --b:#0d5c8c; --a:#bf560c; }}
+ .k-injury{{ --b:#7b1e3c; --a:#bf560c; }}
  .kind{{ font-size:.78rem; font-weight:800; letter-spacing:.08em; color:var(--a); }}
  .t{{ font-family:"Nanum Myeongjo",serif; font-size:1.45rem; font-weight:800; color:var(--b); margin:6px 0 4px; }}
  .m{{ font-size:.84rem; color:var(--muted); font-variant-numeric:tabular-nums; }}
@@ -503,7 +506,7 @@ def index_page(rows):
 <script>
   /* ?series=phsm 처럼 열면 그 뉴스레터만 보여 줍니다 (QR로 들어온 경우) */
   var NAMES = {{ outbreak:'전 세계 감염병 발생 동향', phsm:'감염병 사회 대응(PHSM) 분과위원회',
-                chronic:'만성질환 동향', climate:'기후·건강 위기 동향' }};
+                chronic:'만성질환 동향', climate:'기후·건강 위기 동향', injury:'손상·안전 동향' }};
   var series = new URLSearchParams(location.search).get('series');
   if (series && NAMES[series]) {{
     var shown = 0;
