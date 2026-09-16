@@ -43,3 +43,21 @@ node scripts/build_ebook_pdf.mjs book1.html # 하나만
 | PDF 직접 | `https://epibrief.github.io/ebook/book1.pdf` |
 
 카톡·유튜브 설명란에 주소만 붙이면 됩니다. 미리보기 그림을 넣으려면 `<head>`에 `og:image` 를 추가하세요.
+
+## 잠그기 (코드 입력해야 열리는 책)
+서버 없이, 본문과 PDF를 코드로 암호화해서 올립니다. 코드 없이는 소스 보기로도 못 읽습니다.
+
+```
+# 1. 원고는 ebook/drafts/ 에 둡니다 (깃에 안 올라감)
+cp ebook/template.html ebook/drafts/book1.html   # Windows: copy ebook\template.html ebook\drafts\book1.html
+# 2. PDF 만들기 (선택)
+node scripts/build_ebook_pdf.mjs ebook/drafts/book1.html
+# 3. 잠그기
+node scripts/lock_ebook.mjs ebook/drafts/book1.html "코드"
+# → ebook/book1.html, ebook/book1.pdf.enc 생성. 이 둘만 커밋
+```
+
+- 코드를 바꾸려면 3번을 다시 실행
+- 한 번 코드를 넣은 브라우저는 다시 묻지 않음
+- 예시: `sample-locked.html` (코드 `1234`)
+- 한계: 코드를 아는 사람이 남에게 알려주는 건 못 막습니다. 사람별 계정·결제 확인이 필요하면 서버리스 함수 방식으로
