@@ -19,6 +19,15 @@
 
 제작기는 같은 폴더의 `template.html`을 읽어 책을 만들므로, 두 파일을 함께 올려야 합니다.
 
+### 발행 (깃허브 없이 주소 만들기)
+제작기의 **발행하기**에 발행 코드를 넣으면 주소가 나옵니다. 독자는 깃허브를 볼 일이 없습니다.
+
+- 주소 형태: `https://epibrief.github.io/ebook/b/?book-xxxx`
+- 책 파일은 수파베이스 저장소(`korea-now` 프로젝트, 버킷 `webbook`)에 올라가고, `ebook/b/index.html`이 받아서 보여줍니다
+- 같은 브라우저에서 다시 발행하면 같은 주소가 새 내용으로 바뀝니다 (수정 토큰은 브라우저에만 저장)
+- 발행 코드 관리: 수파베이스 → Table Editor → `webbook_codes` (`active`를 끄면 그 코드로는 못 올림)
+- 서버 함수: `supabase/functions/webbook-publish/`
+
 ## 쓰는 법
 1. `template.html`을 복사해 새 이름으로 저장 (예: `book1.html`)
 2. `<div id="deck">` 안의 `<section class="s">` 블록을 쪽 단위로 고치기

@@ -327,7 +327,9 @@ figcaption{font-size:11px;color:var(--dim);margin-top:6px;text-align:center}
  var deck=document.getElementById('deck'), prog=document.getElementById('prog'), jump=document.getElementById('jump');
  var menu=document.getElementById('menu'), mbtn=document.getElementById('mbtn'), toast=document.getElementById('toast');
  var gate=document.getElementById('gate'), cipher=document.getElementById('cipher');
- var KEY=location.pathname+'_page', KEYC=location.pathname+'_code';
+ // 발행된 책은 읽기 페이지(/ebook/b/)가 EBOOK_BASE 를 넣어 준다. 그 값으로 PDF 위치와 저장 키를 정한다.
+ var BASE=(window.EBOOK_BASE)||location.pathname.replace(/\.html?$/,'');
+ var KEY=BASE+'_page', KEYC=BASE+'_code';
  var S=[], N=0, i=0, code='';
 
  function say(t){toast.textContent=t;toast.classList.add('on');clearTimeout(say.t);say.t=setTimeout(function(){toast.classList.remove('on');},1800);}
@@ -417,7 +419,7 @@ figcaption{font-size:11px;color:var(--dim);margin-top:6px;text-align:center}
  mbtn.onclick=function(e){e.stopPropagation();menu.classList.toggle('on');mbtn.setAttribute('aria-expanded',menu.classList.contains('on'));};
  addEventListener('click',function(e){if(!menu.contains(e.target))closeMenu();});
  addEventListener('keydown',function(e){if(e.key==='Escape')closeMenu();});
- var base=location.pathname.replace(/\.html?$/,''), mpdf=document.getElementById('mpdf');
+ var base=BASE, mpdf=document.getElementById('mpdf');
  var pdfName=(document.title.split(' — ')[0]||'ebook')+'.pdf';
  // 잠긴 책은 같은 이름의 .pdf.enc 를 받아 코드로 풀어서 내려준다
  var pdfHref=cipher?base+'.pdf.enc':base+'.pdf';
@@ -436,7 +438,7 @@ figcaption{font-size:11px;color:var(--dim);margin-top:6px;text-align:center}
  };
  document.getElementById('mprint').onclick=function(){closeMenu();window.print();};
  document.getElementById('mlink').onclick=function(){
-  closeMenu(); var u=location.origin+location.pathname+'#p'+(i+1);
+  closeMenu(); var u=location.origin+location.pathname+location.search+'#p'+(i+1);
   (navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(function(){say('링크를 복사했어요');},function(){prompt('링크',u);});
  };
 
