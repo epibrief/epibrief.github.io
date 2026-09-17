@@ -97,6 +97,15 @@ details td:first-child{white-space:nowrap;font-family:ui-monospace,Menlo,monospa
     <tr><td>youtube: 영상ID</td><td>유튜브 (누르면 재생). 주소 전체를 붙여도 됨</td></tr>
     <tr><td>::: 메모</td><td>회색 메모 상자 (한 줄)</td></tr>
    </table>
+   <p class="hint" style="margin:10px 0 4px"><b>세미나·강연 정리용</b></p>
+   <table>
+    <tr><td>발표자: 이름 | 소속 | 시간</td><td>발표자 정보칸 (| 로 구분, 뒤는 생략 가능)</td></tr>
+    <tr><td>핵심: 한 줄</td><td>눈에 띄는 결론 상자</td></tr>
+    <tr><td>Q: 질문<br>A: 답변</td><td>질의응답 카드. 끝에 <code>-- 이름</code> 을 붙이면 말한 사람 표시</td></tr>
+    <tr><td>12:30 내용</td><td>시간 목차. 누르면 영상이 그 지점부터 재생</td></tr>
+    <tr><td>문장 속 (37:20)</td><td>글 안에서도 시간을 누르면 그 지점으로</td></tr>
+   </table>
+   <p class="hint" style="margin-top:8px">시간을 쓰려면 그 쪽(또는 앞쪽)에 <code>youtube:</code> 로 영상이 하나 있어야 합니다.</p>
    <p class="hint" style="margin-top:8px">긴 쪽은 자동으로 나뉩니다. 클로드·챗GPT에 "마크다운으로 써 줘" 하고 그대로 붙여넣으면 됩니다.</p>
   </details>
   <div class="lock">
@@ -179,9 +188,17 @@ details td:first-child{white-space:nowrap;font-family:ui-monospace,Menlo,monospa
   s=s.replace(/`([^`]+)`/g,'<code>$1</code>');
   s=s.replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>');
   s=s.replace(/\[([^\]]+)\]\((https?:[^)\s]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>');
+  // 문장 속 (12:30) 또는 (1:02:30) → 그 시점으로 가는 시간 링크
+  s=s.replace(/\((\d{1,2}:\d{2}(?::\d{2})?)\)/g,function(_,t){return timeTag(t);});
   return s;
  }
  function ytid(s){var m=s.match(/(?:youtu\.be\/|v=|shorts\/|embed\/)([\w-]{11})/)||s.match(/^([\w-]{11})$/);return m?m[1]:null;}
+ // "12:30" 또는 "1:02:30" → 초
+ function toSec(t){
+  var a=t.split(':').map(Number); if(a.some(isNaN))return 0;
+  return a.length===3?a[0]*3600+a[1]*60+a[2]:(a.length===2?a[0]*60+a[1]:a[0]);
+ }
+ function timeTag(t){return '<a class="tj" href="#" data-t="'+toSec(t)+'">'+esc(t)+'</a>';}
  // 블록 하나: {html, len}
  function blocks(lines){
   var out=[],i=0;
@@ -192,6 +209,52 @@ details td:first-child{white-space:nowrap;font-family:ui-monospace,Menlo,monospa
    if(/^```/.test(L)){var c=[];i++;while(i<lines.length&&!/^```/.test(lines[i]))c.push(lines[i++]);i++;out.push({html:'<pre>'+esc(c.join('\n'))+'</pre>',len:c.join('\n').length*1.3+40});continue;}
    if(/^>\s?/.test(L)){var q=[];while(i<lines.length&&/^>\s?/.test(lines[i]))q.push(lines[i++].replace(/^>\s?/,''));out.push({html:'<blockquote>'+inline(q.join(' '))+'</blockquote>',len:q.join(' ').length+60});continue;}
    if(/^:::\s?/.test(L)){out.push({html:'<p class="note">'+inline(L.replace(/^:::\s?/,''))+'</p>',len:L.length+40});i++;continue;}
+   // 발표자:  홍길동 | 소속 | 14:00-14:40
+   if(/^(발표자|연사|speaker)\s*[::]/i.test(L)){
+    var w=L.replace(/^[^::]*[::]\s*/,'').split('|').map(function(x){return x.trim();});
+    out.push({html:'<div class="who"><span class="nm">'+inline(w[0]||'')+'</span>'
+      +(w[1]?'<span class="af">'+inline(w[1])+'</span>':'')
+      +(w[2]?'<span class="tm">'+inline(w[2])+'</span>':'')+'</div>',len:70});
+    i++;continue;
+   }
+   // 핵심: 한 줄 결론
+   if(/^(핵심|요점|결론)\s*[::]/.test(L)){
+    out.push({html:'<div class="key"><span>'+inline(L.replace(/^[^::]*[::]\s*/,''))+'</span></div>',len:L.length+70});
+    i++;continue;
+   }
+   // Q: 질문  /  A: 답변   (여러 줄 이어쓰기 가능)
+   if(/^Q\s*[::]/i.test(L)){
+    var qt=[L.replace(/^Q\s*[::]\s*/i,'')]; i++;
+    while(i<lines.length&&lines[i].trim()&&!/^(A\s*[::]|Q\s*[::]|#|##|---)/i.test(lines[i])) qt.push(lines[i++]);
+    var at=[];
+    if(i<lines.length&&/^A\s*[::]/i.test(lines[i])){
+     at.push(lines[i].replace(/^A\s*[::]\s*/i,'')); i++;
+     while(i<lines.length&&lines[i].trim()&&!/^(A\s*[::]|Q\s*[::]|#|##|---)/i.test(lines[i])) at.push(lines[i++]);
+    }
+    function speaker(arr){ // 끝에 " -- 이름" 이 있으면 말한 사람으로
+     var t=arr.join(' '), m=t.match(/\s+--\s*(.+)$/);
+     return m?{t:t.slice(0,m.index),by:m[1].trim()}:{t:t,by:''};
+    }
+    var Q=speaker(qt), A=speaker(at);
+    var h='<div class="qa"><div class="q"><span class="mk">Q</span><span>'+inline(Q.t)
+      +(Q.by?'<span class="by">'+esc(Q.by)+'</span>':'')+'</span></div>';
+    if(A.t) h+='<div class="a"><span class="mk">A</span><span>'+inline(A.t)
+      +(A.by?'<span class="by">'+esc(A.by)+'</span>':'')+'</span></div>';
+    h+='</div>';
+    out.push({html:h,len:(Q.t+A.t).length+110});
+    continue;
+   }
+   // 시간 목차:  12:30 내용   (줄 맨 앞이 시각)
+   if(/^(\d{1,2}:\d{2}(?::\d{2})?)\s+\S/.test(L)){
+    var rows=[];
+    while(i<lines.length&&/^(\d{1,2}:\d{2}(?::\d{2})?)\s+\S/.test(lines[i])){
+     var mm=lines[i].match(/^(\d{1,2}:\d{2}(?::\d{2})?)\s+(.+)$/);
+     rows.push('<div class="mrow" data-t="'+toSec(mm[1])+'"><span class="ms">'+esc(mm[1])+'</span><span class="mt">'+inline(mm[2])+'</span></div>');
+     i++;
+    }
+    out.push({html:'<div class="marks">'+rows.join('')+'</div>',len:rows.length*46+30});
+    continue;
+   }
    if(/^[-*]\s+/.test(L)){var li=[];while(i<lines.length&&/^[-*]\s+/.test(lines[i]))li.push('<li>'+inline(lines[i++].replace(/^[-*]\s+/,''))+'</li>');out.push({html:'<ul class="prose">'+li.join('')+'</ul>',len:li.join('').length});continue;}
    if(/^\d+[.)]\s+/.test(L)){var ol=[];while(i<lines.length&&/^\d+[.)]\s+/.test(lines[i]))ol.push('<li>'+inline(lines[i++].replace(/^\d+[.)]\s+/,''))+'</li>');out.push({html:'<ol class="prose">'+ol.join('')+'</ol>',len:ol.join('').length});continue;}
    if(/^\|/.test(L)){var rows=[];while(i<lines.length&&/^\|/.test(lines[i]))rows.push(lines[i++]);
@@ -202,7 +265,8 @@ details td:first-child{white-space:nowrap;font-family:ui-monospace,Menlo,monospa
    if(im){out.push({html:'<figure><img src="'+esc(im[2])+'" alt="'+esc(im[1])+'" loading="lazy">'+(im[1]?'<figcaption>'+esc(im[1])+'</figcaption>':'')+'</figure>',len:420});i++;continue;}
    var yt=/^youtube:\s*(.+)$/i.test(L)?ytid(L.replace(/^youtube:\s*/i,'').trim()):(/^https?:\/\/(www\.)?(youtube\.com|youtu\.be)\//.test(L.trim())?ytid(L.trim()):null);
    if(yt){out.push({html:'<div class="vwrap" data-v="'+yt+'"><div class="vframe" style="background-image:url(https://i.ytimg.com/vi/'+yt+'/hqdefault.jpg)"></div></div>',len:380});i++;continue;}
-   var p=[L];i++;while(i<lines.length&&lines[i].trim()&&!/^(#|##|---|>|:::|[-*]\s|\d+[.)]\s|\||!\[|```|youtube:|https?:\/\/(www\.)?(youtube\.com|youtu\.be))/.test(lines[i]))p.push(lines[i++]);
+   var STOP=/^(#|##|---|>|:::|[-*]\s|\d+[.)]\s|\||!\[|```|youtube:|Q\s*[::]|A\s*[::]|발표자\s*[::]|연사\s*[::]|speaker\s*[::]|핵심\s*[::]|요점\s*[::]|결론\s*[::]|\d{1,2}:\d{2}(?::\d{2})?\s+\S|https?:\/\/(www\.)?(youtube\.com|youtu\.be))/i;
+   var p=[L];i++;while(i<lines.length&&lines[i].trim()&&!STOP.test(lines[i]))p.push(lines[i++]);
    para(p.join(' '));
   }
   return out;
