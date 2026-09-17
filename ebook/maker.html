@@ -43,6 +43,16 @@ details td:first-child{white-space:nowrap;font-family:ui-monospace,Menlo,monospa
 #stat{position:absolute;left:12px;top:10px;font-size:11px;color:var(--muted);background:var(--paper);border:1px solid var(--line2);padding:4px 8px;border-radius:2px}
 #toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--ink);color:#fff;font-size:12.5px;padding:8px 14px;border-radius:999px;opacity:0;transition:opacity .2s;pointer-events:none;z-index:9}
 #toast.on{opacity:1}
+.pub{background:#fff;border:1px solid var(--line2);border-radius:2px;padding:12px}
+.pub h3{margin:0 0 6px;font-size:13px;font-weight:800}
+.pub .row2{display:flex;gap:8px}
+.pub .row2 input[type=text]{flex:1}
+.pub .res{display:none;margin-top:10px;padding:10px;background:var(--wash);border:1px solid var(--line);font-size:12.5px;line-height:1.7;word-break:break-all}
+.pub .res.on{display:block}
+.pub .res a{color:var(--accent);font-weight:700}
+.pub .res .u{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;background:#fff;border:1px solid var(--line);padding:6px 8px;margin:6px 0;user-select:all}
+.share{font-size:12.5px;color:var(--ink2);line-height:1.8;background:#fff;border:1px solid var(--line2);padding:10px 12px;border-radius:2px}
+.share b{color:var(--ink)}
 .tabs{display:none}
 @media (max-width:860px){
  main{grid-template-columns:1fr;grid-template-rows:auto 1fr;height:auto;min-height:calc(100% - 49px)}
@@ -64,7 +74,7 @@ details td:first-child{white-space:nowrap;font-family:ui-monospace,Menlo,monospa
  <section id="edit">
   <div class="tabs"><button id="tabE" class="pri" type="button">원고</button><button id="tabV" type="button">미리보기</button></div>
   <div class="row">
-   <div><label for="ti">책 제목</label><input id="ti" type="text" placeholder="예: 엑셀 자동화 첫걸음"></div>
+   <div><label for="ti">책 제목</label><input id="ti" type="text" placeholder="예: 엑셀 자동화 첫걸음 (표지 줄바꿈은 | )"></div>
    <div><label for="au">글쓴이</label><input id="au" type="text" placeholder="이름 · 채널명"></div>
   </div>
   <div><label for="su">부제 (한 줄)</label><input id="su" type="text" placeholder="표지에 작게 들어가는 한 줄"></div>
@@ -94,11 +104,25 @@ details td:first-child{white-space:nowrap;font-family:ui-monospace,Menlo,monospa
    <input id="lc" type="text" placeholder="코드 (예: 멤버십 글에 올릴 코드)" disabled>
   </div>
   <div class="btns">
-   <button id="dl" class="pri" type="button">책 HTML 내려받기</button>
+   <button id="dl" class="pri" type="button">책 파일 내려받기</button>
+   <button id="pdfb" type="button">PDF로 저장</button>
    <button id="open" type="button">새 창에서 보기</button>
    <button id="reset" type="button">예시 원고 다시</button>
   </div>
-  <p class="hint">내려받은 파일 하나가 책 전체입니다. 더블클릭하면 열리고, 깃허브 페이지·넷리파이·블로그 어디든 올리면 주소가 생깁니다. 원고는 이 브라우저에 자동 저장됩니다.</p>
+  <div class="pub">
+   <h3>인터넷 주소 만들기 (발행)</h3>
+   <div class="row2">
+    <input id="pc" type="text" placeholder="발행 코드" autocomplete="off">
+    <button id="pubb" class="pri" type="button">발행하기</button>
+   </div>
+   <p class="hint" style="margin-top:6px">발행 코드는 멤버십·수강생 안내글에 있습니다. 버튼 하나로 주소가 나오고, 그 주소를 카톡·유튜브 설명란에 붙이면 끝입니다.</p>
+   <div class="res" id="pres"></div>
+  </div>
+  <div class="share">
+   <b>주소 없이 나누려면</b><br>
+   내려받은 파일을 카톡·메일로 보내면 받는 사람이 열기만 하면 됩니다. 종이로 뽑거나 PDF가 편하면 "PDF로 저장"을 누르세요.<br>
+   원고는 이 브라우저에 자동 저장됩니다.
+  </div>
  </section>
  <section id="view">
   <div id="stat"></div>
@@ -111,7 +135,8 @@ details td:first-child{white-space:nowrap;font-family:ui-monospace,Menlo,monospa
 (function(){
  var $=function(id){return document.getElementById(id);};
  var ti=$('ti'),au=$('au'),su=$('su'),md=$('md'),lk=$('lk'),lc=$('lc'),pv=$('pv'),stat=$('stat'),toast=$('toast');
- var TPL=null, KEY='ebook_maker_draft';
+ var TPL=null, KEY='ebook_maker_draft', KEYP='ebook_maker_pub';
+ var PUBLISH_FN='https://dxhmprqfgigljgbstqrg.supabase.co/functions/v1/webbook-publish';
  var SAMPLE=[
   '# 시작하기 전에',
   '## 이 책은 무엇인가',
@@ -200,9 +225,9 @@ details td:first-child{white-space:nowrap;font-family:ui-monospace,Menlo,monospa
  }
  function pageHtml(cls,inner,footL,footR){return '<section class="s'+(cls?' '+cls:'')+'">\n <div class="paper"><div class="pin">\n'+inner+'\n </div><div class="foot"><span>'+esc(footL)+'</span><span>'+esc(footR)+'</span></div></div>\n</section>\n';}
  function build(){
-  var title=ti.value.trim()||'제목 없는 책', sub=su.value.trim(), author=au.value.trim();
+  var rawTitle=ti.value.trim()||'제목 없는 책', title=rawTitle.replace(/\s*\|\s*/g,' '), sub=su.value.trim(), author=au.value.trim();
   var chapters=parse(md.value), pages=[], n=0;
-  pages.push(pageHtml('cover','  <span class="eyebrow">'+esc(author||'Web Book')+'</span>\n  <h1>'+inline(title).replace(/\n/g,'<br>')+'</h1>\n'+(sub?'  <p class="kick">'+inline(sub)+'</p>\n':'')+'  <div class="by">'+esc(author)+(author?' · ':'')+new Date().getFullYear()+'</div>',title,'표지'));
+  pages.push(pageHtml('cover','  <span class="eyebrow">'+esc(author||'Web Book')+'</span>\n  <h1>'+inline(rawTitle).replace(/\s*\|\s*/g,'<br>')+'</h1>\n'+(sub?'  <p class="kick">'+inline(sub)+'</p>\n':'')+'  <div class="by">'+esc(author)+(author?' · ':'')+new Date().getFullYear()+'</div>',title,'표지'));
   var tocIdx=pages.length; pages.push(''); // 차례 자리
   var toc=[];
   chapters.forEach(function(ch,ci){
@@ -272,6 +297,42 @@ details td:first-child{white-space:nowrap;font-family:ui-monospace,Menlo,monospa
   var blob=new Blob([o.html],{type:'text/html'}),u=URL.createObjectURL(blob),a=document.createElement('a');
   a.href=u;a.download=fname(o.b.title);document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(u);},4000);
   say(o.locked?'잠긴 책을 내려받았어요. 코드는 따로 전해 주세요.':'책을 내려받았어요.');
+ };
+ $('pdfb').onclick=async function(){
+  var o=await output(); if(!o)return;
+  var w=window.open('about:blank'); if(!w){say('팝업이 막혔어요.');return;}
+  w.document.open();w.document.write(o.html);w.document.close();
+  say('새 창에서 인쇄 창이 뜨면 "PDF로 저장"을 고르세요.');
+  setTimeout(function(){try{w.focus();w.print();}catch(e){}},1200);
+ };
+ // ── 발행: 발행 코드 확인 후 서버에 올리고 주소를 받는다 ──
+ var pres=$('pres'), pubb=$('pubb'), pc=$('pc');
+ var pub=null; try{pub=JSON.parse(localStorage.getItem(KEYP)||'null');}catch(e){}
+ function showPub(){
+  if(!pub){pres.classList.remove('on');pubb.textContent='발행하기';return;}
+  pres.innerHTML='<b>발행됐어요.</b> 이 주소를 나눠 주세요.<div class="u">'+esc(pub.url)+'</div>'
+   +'<button id="cp" type="button" style="padding:6px 10px;font-size:12px">주소 복사</button> '
+   +'<a href="'+esc(pub.url)+'" target="_blank" style="margin-left:6px">열어 보기 ›</a> '
+   +'<a href="#" id="newpub" style="margin-left:10px;color:var(--muted);font-weight:500">새 주소로 발행</a>'
+   +'<div class="hint" style="margin-top:6px">원고를 고치고 다시 "발행하기"를 누르면 같은 주소가 새 내용으로 바뀝니다. 이 브라우저에서만 수정할 수 있어요.</div>';
+  pres.classList.add('on'); pubb.textContent='다시 발행 (같은 주소)';
+  $('cp').onclick=function(){(navigator.clipboard?navigator.clipboard.writeText(pub.url):Promise.reject()).then(function(){say('주소를 복사했어요');},function(){prompt('주소',pub.url);});};
+  $('newpub').onclick=function(e){e.preventDefault();if(confirm('새 주소로 발행할까요? 기존 주소는 그대로 남습니다.')){pub=null;try{localStorage.removeItem(KEYP);}catch(e2){}showPub();}};
+ }
+ showPub();
+ pubb.onclick=async function(){
+  var code=pc.value.trim(); if(!code){say('발행 코드를 넣어 주세요.');pc.focus();return;}
+  var o=await output(); if(!o)return;
+  pubb.disabled=true; var old=pubb.textContent; pubb.textContent='올리는 중…';
+  var body={code:code,title:o.b.title,html:o.html,locked:o.locked};
+  if(pub&&pub.slug&&pub.token){body.slug=pub.slug;body.token=pub.token;}
+  try{
+   var r=await fetch(PUBLISH_FN,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
+   var j=await r.json();
+   if(!r.ok||j.error){ say(j.error||'발행에 실패했어요.'); if(r.status===403&&pub&&/수정 권한/.test(j.error||'')){pub=null;try{localStorage.removeItem(KEYP);}catch(e){}showPub();} }
+   else { pub={url:j.url,slug:j.slug,token:j.token,title:o.b.title}; try{localStorage.setItem(KEYP,JSON.stringify(pub));}catch(e){} showPub(); say('발행됐어요!'); }
+  }catch(e){ say('연결이 안 됐어요. 잠시 후 다시 시도해 주세요.'); }
+  pubb.disabled=false; if(pubb.textContent==='올리는 중…')pubb.textContent=old;
  };
  $('open').onclick=async function(){
   var o=await output(); if(!o)return;
