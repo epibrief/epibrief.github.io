@@ -1,6 +1,6 @@
 {
  "updated": "2026-09-15 22:31",
- "count": 1071,
+ "count": 1094,
  "status": [
   {
    "id": "who-don",
@@ -847,6 +847,54 @@
    "name": "기상청 보도자료 (월별·계절 기후특성)",
    "count": 1,
    "via": "기관 페이지"
+  },
+  {
+   "id": "kdca-guideline",
+   "name": "질병관리청 지침·매뉴얼 게시판",
+   "count": 4,
+   "via": "기관 페이지"
+  },
+  {
+   "id": "kdca-guideline-phsm",
+   "name": "질병관리청 지침·매뉴얼 게시판",
+   "count": 2,
+   "via": "기관 페이지"
+  },
+  {
+   "id": "kdca-guideline-climate",
+   "name": "질병관리청 지침·매뉴얼 게시판",
+   "count": 1,
+   "via": "기관 페이지"
+  },
+  {
+   "id": "kdca-guideline-injury",
+   "name": "질병관리청 지침·매뉴얼 게시판",
+   "count": 1,
+   "via": "기관 페이지"
+  },
+  {
+   "id": "who-pub-phsm",
+   "name": "WHO 발간물: 공중보건·사회적 조치(PHSM)",
+   "count": 1,
+   "via": "WHO 공식"
+  },
+  {
+   "id": "who-pub-climate",
+   "name": "WHO 발간물: 기후·폭염·대기질",
+   "count": 1,
+   "via": "WHO 공식"
+  },
+  {
+   "id": "who-pub-injury",
+   "name": "WHO 발간물: 손상·안전",
+   "count": 8,
+   "via": "WHO 공식"
+  },
+  {
+   "id": "who-pub-ncd",
+   "name": "WHO 발간물: 만성질환",
+   "count": 5,
+   "via": "WHO 공식"
   }
  ],
  "items": [
@@ -897,6 +945,54 @@
    "dateGuessed": false,
    "via": "뉴스검색",
    "excerpt": "화순소방서 “119 비응급 신고 자제해주세요” 화순매일신문"
+  },
+  {
+   "id": "kdca-guideline-0",
+   "sourceId": "kdca-guideline",
+   "sourceName": "질병관리청 지침·매뉴얼 게시판",
+   "groupId": "kr",
+   "kind": "outbreak",
+   "region": "국내",
+   "lang": "ko",
+   "title": "응급실 온열질환 실무 진료지침(2026.9월)",
+   "origin": "질병관리청 기후보건건강위해대비과",
+   "link": "https://www.kdca.go.kr/bbs/kdca/55/312633/artclView.do",
+   "date": "2026-09-15",
+   "dateGuessed": false,
+   "via": "기관 페이지",
+   "excerpt": ""
+  },
+  {
+   "id": "kdca-guideline-climate-0",
+   "sourceId": "kdca-guideline-climate",
+   "sourceName": "질병관리청 지침·매뉴얼 게시판",
+   "groupId": "climate-org",
+   "kind": "climate",
+   "region": "국내",
+   "lang": "ko",
+   "title": "응급실 온열질환 실무 진료지침(2026.9월)",
+   "origin": "질병관리청 기후보건건강위해대비과",
+   "link": "https://www.kdca.go.kr/bbs/kdca/55/312633/artclView.do",
+   "date": "2026-09-15",
+   "dateGuessed": false,
+   "via": "기관 페이지",
+   "excerpt": ""
+  },
+  {
+   "id": "kdca-guideline-injury-0",
+   "sourceId": "kdca-guideline-injury",
+   "sourceName": "질병관리청 지침·매뉴얼 게시판",
+   "groupId": "injury-kr",
+   "kind": "injury",
+   "region": "국내",
+   "lang": "ko",
+   "title": "응급실 온열질환 실무 진료지침(2026.9월)",
+   "origin": "질병관리청 기후보건건강위해대비과",
+   "link": "https://www.kdca.go.kr/bbs/kdca/55/312633/artclView.do",
+   "date": "2026-09-15",
+   "dateGuessed": false,
+   "via": "기관 페이지",
+   "excerpt": ""
   },
   {
    "id": "cdc-news-25",
@@ -1313,6 +1409,22 @@
    "dateGuessed": false,
    "via": "논문 검색",
    "excerpt": "Background Over the past decade, clinical guidelines for the management of mild traumatic brain injury (mTBI) have evolved worldwide to prevent re-injury and reduce the risk of prolonged recovery. However, to date, no study has examined the knowledge and practice of these clinical guidelines in Israel. Aims To describe knowledge and implementation of up-to-date post-mTBI guidelines among physicians providing emergenc"
+  },
+  {
+   "id": "who-pub-ncd-0",
+   "sourceId": "who-pub-ncd",
+   "sourceName": "WHO 발간물: 만성질환",
+   "groupId": "ncd-org",
+   "kind": "chronic",
+   "region": "국제기구",
+   "lang": "en",
+   "title": "Closing the childhood cancer survival gap through sustainable access to essential medicines: market shaping strategy (2026–2030)",
+   "origin": "WHO 발간물",
+   "link": "https://www.who.int/publications/i/item/9789240125087",
+   "date": "2026-09-14",
+   "dateGuessed": false,
+   "via": "WHO 공식",
+   "excerpt": "Developed through the Global Platform for Access to Childhood Cancer Medicines and informed by market analysis and stakeholder consultations, this publication presents WHO’s first market shaping strategy for childhood cancer medicines."
   },
   {
    "id": "cdc-news-26",
@@ -2401,6 +2513,22 @@
    "dateGuessed": false,
    "via": "논문 검색",
    "excerpt": "The therapeutic efficacy of hyperbaric oxygen therapy for traumatic incomplete spinal cord injury remains a subject of debate. To comprehensively evaluate the impact of hyperbaric oxygen on motor function, sensory function, and activities of daily living in patients with traumatic incomplete spinal cord injury, we conducted a systematic review and meta-analysis. We performed a comprehensive search across PubMed, Emba"
+  },
+  {
+   "id": "who-pub-climate-0",
+   "sourceId": "who-pub-climate",
+   "sourceName": "WHO 발간물: 기후·폭염·대기질",
+   "groupId": "climate-org",
+   "kind": "climate",
+   "region": "국제기구",
+   "lang": "en",
+   "title": "WHO South-East Asia Region: Climate and Health Regional Profile",
+   "origin": "WHO 발간물",
+   "link": "https://www.who.int/publications/i/item/9789292800154",
+   "date": "2026-09-11",
+   "dateGuessed": false,
+   "via": "WHO 공식",
+   "excerpt": "The WHO South-East Asia Region: Climate and Health Regional Profile offers an insightful overview of how governments in the Region are progressing in managing these risks. The findings on critical climate change and health indicators are designed to help policy-makers to make well-informed decisions about implementing effective policies and strategies."
   },
   {
    "id": "who-news-2",
@@ -5539,6 +5667,22 @@
    "excerpt": "Background High levels of underreporting in non-fatal crashes limit our understanding of bicycling safety. We examined self-reported bicycle crashes and quantified their risks in a cohort of cyclists in Delhi. Methods Using on-road intercept surveys of bicyclists (n=844) at locations selected through spatially stratified sampling of the road network, we recorded self-reported bicycle crashes using both retrospective "
   },
   {
+   "id": "who-pub-ncd-1",
+   "sourceId": "who-pub-ncd",
+   "sourceName": "WHO 발간물: 만성질환",
+   "groupId": "ncd-org",
+   "kind": "chronic",
+   "region": "국제기구",
+   "lang": "en",
+   "title": "Tobacco and infertility",
+   "origin": "WHO 발간물",
+   "link": "https://www.who.int/publications/i/item/B09819",
+   "date": "2026-09-07",
+   "dateGuessed": false,
+   "via": "WHO 공식",
+   "excerpt": "This document is the twelfth in a series of Tobacco Knowledge Summaries and is prepared with the objective to summarize the current evidence on the association between tobacco use and infertility. This concise advocacy tool aims to inform and mobilize health professionals, policymakers, and advocates."
+  },
+  {
    "id": "who-news-23",
    "sourceId": "who-news",
    "sourceName": "WHO 보도자료",
@@ -7713,6 +7857,22 @@
    "dateGuessed": false,
    "via": "논문 검색",
    "excerpt": "Background: Acute kidney injury (AKI) is associated with high mortality and adverse outcomes. Fibroblast growth factor 23 (FGF23) has emerged as a potential biomarker for AKI; however, its diagnostic and prognostic utility remains inconsistent. Methods: We conducted a systematic review and meta-analysis of studies evaluating circulating intact FGF23 (iFGF23) or C-terminal FGF23 (cFGF23) (PROSPERO: CRD42022302659). Pu"
+  },
+  {
+   "id": "who-pub-phsm-0",
+   "sourceId": "who-pub-phsm",
+   "sourceName": "WHO 발간물: 공중보건·사회적 조치(PHSM)",
+   "groupId": "phsm-hub",
+   "kind": "phsm",
+   "region": "국제기구",
+   "lang": "en",
+   "title": "Regional Roadmap and Strategic Action Framework for implementing National Respiratory Pathogen Pandemic Preparedness and Response Plans (2026–2031)",
+   "origin": "WHO 발간물",
+   "link": "https://www.who.int/publications/i/item/9789292800109",
+   "date": "2026-09-02",
+   "dateGuessed": false,
+   "via": "WHO 공식",
+   "excerpt": "The WHO South-East (SE) Asia Region, home to nearly two billion people, remains highly susceptible to respiratory pathogens with epidemic and pandemic potential. Recurrent, global public health emergencies, including influenza outbreaks, severe acute respiratory syndrome (SARS), Middle East respiratory syndrome coronavirus (MERS CoV), avian influenza and, most recently, COVID 19, have demonstrated the profound health"
   },
   {
    "id": "who-news-19",
@@ -10227,6 +10387,38 @@
    "excerpt": "Background Motorcycle road racing is among the most high-risk sports, with riders exposed to speeds exceeding 300 km/h. Despite advancements in safety technology, severe injuries remain a persistent concern, particularly with the introduction of the Sprint race, which has intensified race weekends. This study provides a comprehensive epidemiological analysis of crash and injury patterns in the 2024 MotoGP™ season, ad"
   },
   {
+   "id": "kdca-guideline-1",
+   "sourceId": "kdca-guideline",
+   "sourceName": "질병관리청 지침·매뉴얼 게시판",
+   "groupId": "kr",
+   "kind": "outbreak",
+   "region": "국내",
+   "lang": "ko",
+   "title": "2026년 제1급감염병(바이러스성출혈열) 대응지침(2026.8월)",
+   "origin": "질병관리청 신종감염병대응과",
+   "link": "https://www.kdca.go.kr/bbs/kdca/55/312398/artclView.do",
+   "date": "2026-08-28",
+   "dateGuessed": false,
+   "via": "기관 페이지",
+   "excerpt": ""
+  },
+  {
+   "id": "kdca-guideline-phsm-0",
+   "sourceId": "kdca-guideline-phsm",
+   "sourceName": "질병관리청 지침·매뉴얼 게시판",
+   "groupId": "phsm-hub",
+   "kind": "phsm",
+   "region": "국내",
+   "lang": "ko",
+   "title": "2026년 제1급감염병(바이러스성출혈열) 대응지침(2026.8월)",
+   "origin": "질병관리청 신종감염병대응과",
+   "link": "https://www.kdca.go.kr/bbs/kdca/55/312398/artclView.do",
+   "date": "2026-08-28",
+   "dateGuessed": false,
+   "via": "기관 페이지",
+   "excerpt": ""
+  },
+  {
    "id": "who-news-1",
    "sourceId": "who-news",
    "sourceName": "WHO 보도자료",
@@ -10513,6 +10705,38 @@
    "dateGuessed": false,
    "via": "논문 검색",
    "excerpt": "Acute kidney injury (AKI) is a clinically significant syndrome characterized by rapid deterioration of renal function. Despite its complex and multifactorial pathogenesis, effective targeted therapies remain scarce. Mitochondrial dysfunction is increasingly recognized as a central driver of AKI progression. Mitochondrial transcription factor A (TFAM), a nucleus-encoded protein that governs mitochondrial DNA (mtDNA) m"
+  },
+  {
+   "id": "who-pub-ncd-2",
+   "sourceId": "who-pub-ncd",
+   "sourceName": "WHO 발간물: 만성질환",
+   "groupId": "ncd-org",
+   "kind": "chronic",
+   "region": "국제기구",
+   "lang": "en",
+   "title": "Status of tobacco production and trade in Africa, 2nd ed.",
+   "origin": "WHO 발간물",
+   "link": "https://www.who.int/publications/i/item/9789240125162",
+   "date": "2026-08-27",
+   "dateGuessed": false,
+   "via": "WHO 공식",
+   "excerpt": "Status of tobacco production and trade in Africa, second edition."
+  },
+  {
+   "id": "kdca-guideline-2",
+   "sourceId": "kdca-guideline",
+   "sourceName": "질병관리청 지침·매뉴얼 게시판",
+   "groupId": "kr",
+   "kind": "outbreak",
+   "region": "국내",
+   "lang": "ko",
+   "title": "2026년 코로나바이러스감염증-19 관리지침",
+   "origin": "질병관리청 감염병정책국 감염병관리과",
+   "link": "https://www.kdca.go.kr/bbs/kdca/55/312381/artclView.do",
+   "date": "2026-08-27",
+   "dateGuessed": false,
+   "via": "기관 페이지",
+   "excerpt": ""
   },
   {
    "id": "who-news-17",
@@ -11841,6 +12065,22 @@
    "dateGuessed": false,
    "via": "논문 검색",
    "excerpt": "Introduction White matter hyperintensities (WMH) are linked to cognitive decline and risk of Alzheimer's disease (AD). Objectives To test whether amyloid-β (Aβ) deposition contributes to white matter injury and whether WMH dynamics can modulate the clinical efficacy of the anti-Aβ therapy. Methods Twenty patients with early AD who are receiving lecanemab and a matched cohort of 110 untreated AD patients were followed"
+  },
+  {
+   "id": "who-pub-injury-0",
+   "sourceId": "who-pub-injury",
+   "sourceName": "WHO 발간물: 손상·안전",
+   "groupId": "injury-intl",
+   "kind": "injury",
+   "region": "국제기구",
+   "lang": "en",
+   "title": "Measuring non-partner sexual violence against women: data availability, methodological issues and recommendations for good practice",
+   "origin": "WHO 발간물",
+   "link": "https://www.who.int/publications/i/item/B09836",
+   "date": "2026-08-25",
+   "dateGuessed": false,
+   "via": "WHO 공식",
+   "excerpt": "This briefing note focuses on the measurement of sexual violence against women and girls aged 15 years and older by persons other than an intimate partner. Intended for researchers, national statistics offices and others involved in collecting data on violence against women, it aims to strengthen methodologies and national capacities for generating high-quality, robust data."
   },
   {
    "id": "who-news-14",
@@ -14547,6 +14787,38 @@
    "excerpt": "Background Cognitive impairment is a frequent and disabling consequence of traumatic brain injury (TBI). Non-invasive brain stimulation (NIBS), including repetitive transcranial magnetic stimulation (rTMS) and transcranial direct current stimulation (tDCS), has been investigated as a potential adjunctive intervention, but review-level conclusions remain inconsistent. Methods We conducted an umbrella review of publish"
   },
   {
+   "id": "kdca-guideline-3",
+   "sourceId": "kdca-guideline",
+   "sourceName": "질병관리청 지침·매뉴얼 게시판",
+   "groupId": "kr",
+   "kind": "outbreak",
+   "region": "국내",
+   "lang": "ko",
+   "title": "감염병 위기 사회대응 매뉴얼(2026)",
+   "origin": "질병관리청 위기관리총괄과",
+   "link": "https://www.kdca.go.kr/bbs/kdca/55/312241/artclView.do",
+   "date": "2026-08-18",
+   "dateGuessed": false,
+   "via": "기관 페이지",
+   "excerpt": ""
+  },
+  {
+   "id": "kdca-guideline-phsm-1",
+   "sourceId": "kdca-guideline-phsm",
+   "sourceName": "질병관리청 지침·매뉴얼 게시판",
+   "groupId": "phsm-hub",
+   "kind": "phsm",
+   "region": "국내",
+   "lang": "ko",
+   "title": "감염병 위기 사회대응 매뉴얼(2026)",
+   "origin": "질병관리청 위기관리총괄과",
+   "link": "https://www.kdca.go.kr/bbs/kdca/55/312241/artclView.do",
+   "date": "2026-08-18",
+   "dateGuessed": false,
+   "via": "기관 페이지",
+   "excerpt": ""
+  },
+  {
    "id": "eu-nations-73",
    "sourceId": "eu-nations",
    "sourceName": "유럽 각국 기관 (ISS·NPHO·SZU 등)",
@@ -15715,6 +15987,22 @@
    "excerpt": "Meniscus informatics is a growing subject of study in the healthcare industry. One of the major hindrances to the healthcare system's transformation is obtaining knowledge and meaningful information from complicated, high-dimensional and diverse sources. Modern biomedical research, for instance, has seen an increase in the use of complex, dissimilar, poorly documented, and generally unstructured electronic health rec"
   },
   {
+   "id": "who-pub-ncd-3",
+   "sourceId": "who-pub-ncd",
+   "sourceName": "WHO 발간물: 만성질환",
+   "groupId": "ncd-org",
+   "kind": "chronic",
+   "region": "국제기구",
+   "lang": "en",
+   "title": "Compendium of essential clinical terminology for hypertension-control programmes",
+   "origin": "WHO 발간물",
+   "link": "https://www.who.int/publications/i/item/9789240123854",
+   "date": "2026-08-13",
+   "dateGuessed": false,
+   "via": "WHO 공식",
+   "excerpt": "This compendium provides a standardized reference for essential clinical, operational and monitoring terminology used in hypertension-control programmes."
+  },
+  {
    "id": "ukhsa-182",
    "sourceId": "ukhsa",
    "sourceName": "영국 UKHSA 발표·근거자료",
@@ -16803,6 +17091,22 @@
    "excerpt": "BackgroundMeaningful employment is essential to recovery, self-esteem, and life satisfaction for individuals with traumatic brain injuries (TBIs), particularly those who are high-functioning. Engagement in purposeful work can foster emotional and functional gains during rehabilitation.ObjectiveThis single-case retrospective study explored how meaningful employment impacted one client with TBI and examined how transpo"
   },
   {
+   "id": "who-pub-ncd-4",
+   "sourceId": "who-pub-ncd",
+   "sourceName": "WHO 발간물: 만성질환",
+   "groupId": "ncd-org",
+   "kind": "chronic",
+   "region": "국제기구",
+   "lang": "en",
+   "title": "Evidence-informed guidance for the implementation of HPV-based cervical cancer screening programmes",
+   "origin": "WHO 발간물",
+   "link": "https://www.who.int/publications/i/item/9789240124172",
+   "date": "2026-08-07",
+   "dateGuessed": false,
+   "via": "WHO 공식",
+   "excerpt": "This guidance supports countries in implementing human papillomavirus (HPV) DNA-based cervical cancer screening programmes in line with WHO recommendations and the global strategy to eliminate cervical cancer as a public health problem."
+  },
+  {
    "id": "epmc-npi-198",
    "sourceId": "epmc-npi",
    "sourceName": "논문: 비약물적 중재(NPI)·거리두기 효과",
@@ -17265,6 +17569,118 @@
    "dateGuessed": false,
    "via": "논문 검색",
    "excerpt": "Background Augmented reality (AR)-based cognitive aids provide real-time guidance during resuscitation, but their impact on clinicians' visual attention is not well understood. This study aimed to describe visual attention distribution among clinicians using an AR-based decision support system during simulated pediatric cardiac arrest. Methods This descriptive study was a secondary analysis of data from the intervent"
+  },
+  {
+   "id": "who-pub-injury-1",
+   "sourceId": "who-pub-injury",
+   "sourceName": "WHO 발간물: 손상·안전",
+   "groupId": "injury-intl",
+   "kind": "injury",
+   "region": "국제기구",
+   "lang": "en",
+   "title": "Violence against women prevalence estimates, 2023: WHO European Region",
+   "origin": "WHO 발간물",
+   "link": "https://www.who.int/publications/i/item/B09843",
+   "date": "2026-08-04",
+   "dateGuessed": false,
+   "via": "WHO 공식",
+   "excerpt": "This regional overview presents the 2023 prevalence estimates of violence against women in the WHO European Region, comparing regional findings with global estimates."
+  },
+  {
+   "id": "who-pub-injury-2",
+   "sourceId": "who-pub-injury",
+   "sourceName": "WHO 발간물: 손상·안전",
+   "groupId": "injury-intl",
+   "kind": "injury",
+   "region": "국제기구",
+   "lang": "en",
+   "title": "Violence against women prevalence estimates, 2023: WHO Western Pacific Region",
+   "origin": "WHO 발간물",
+   "link": "https://www.who.int/publications/i/item/B09859",
+   "date": "2026-08-04",
+   "dateGuessed": false,
+   "via": "WHO 공식",
+   "excerpt": "This regional overview presents the 2023 prevalence estimates of violence against women in the WHO Western Pacific Region, comparing regional findings with global estimates."
+  },
+  {
+   "id": "who-pub-injury-3",
+   "sourceId": "who-pub-injury",
+   "sourceName": "WHO 발간물: 손상·안전",
+   "groupId": "injury-intl",
+   "kind": "injury",
+   "region": "국제기구",
+   "lang": "en",
+   "title": "Violence against women prevalence estimates, 2023: WHO South-East Asia Region",
+   "origin": "WHO 발간물",
+   "link": "https://www.who.int/publications/i/item/B09858",
+   "date": "2026-08-04",
+   "dateGuessed": false,
+   "via": "WHO 공식",
+   "excerpt": "This regional overview presents the 2023 prevalence estimates of violence against women in the WHO South-East Asia Region, comparing regional findings with global estimates."
+  },
+  {
+   "id": "who-pub-injury-4",
+   "sourceId": "who-pub-injury",
+   "sourceName": "WHO 발간물: 손상·안전",
+   "groupId": "injury-intl",
+   "kind": "injury",
+   "region": "국제기구",
+   "lang": "en",
+   "title": "Violence against women prevalence estimates, 2023: WHO Eastern Mediterranean Region",
+   "origin": "WHO 발간물",
+   "link": "https://www.who.int/publications/i/item/B09857",
+   "date": "2026-08-04",
+   "dateGuessed": false,
+   "via": "WHO 공식",
+   "excerpt": "This regional overview presents the 2023 prevalence estimates of violence against women in the WHO Eastern Mediterranean Region, comparing regional findings with global estimates."
+  },
+  {
+   "id": "who-pub-injury-5",
+   "sourceId": "who-pub-injury",
+   "sourceName": "WHO 발간물: 손상·안전",
+   "groupId": "injury-intl",
+   "kind": "injury",
+   "region": "국제기구",
+   "lang": "en",
+   "title": "Violence against women prevalence estimates, 2023: WHO Region of the Americas",
+   "origin": "WHO 발간물",
+   "link": "https://www.who.int/publications/i/item/B09842",
+   "date": "2026-08-04",
+   "dateGuessed": false,
+   "via": "WHO 공식",
+   "excerpt": "This regional overview presents the 2023 prevalence estimates of violence against women in the WHO Region of the Americas, comparing regional findings with global estimates."
+  },
+  {
+   "id": "who-pub-injury-6",
+   "sourceId": "who-pub-injury",
+   "sourceName": "WHO 발간물: 손상·안전",
+   "groupId": "injury-intl",
+   "kind": "injury",
+   "region": "국제기구",
+   "lang": "en",
+   "title": "Violence against women prevalence estimates, 2023: WHO African Region",
+   "origin": "WHO 발간물",
+   "link": "https://www.who.int/publications/i/item/B09841",
+   "date": "2026-08-04",
+   "dateGuessed": false,
+   "via": "WHO 공식",
+   "excerpt": "This regional overview presents the 2023 prevalence estimates of violence against women in the WHO African Region, comparing regional findings with global estimates."
+  },
+  {
+   "id": "who-pub-injury-7",
+   "sourceId": "who-pub-injury",
+   "sourceName": "WHO 발간물: 손상·안전",
+   "groupId": "injury-intl",
+   "kind": "injury",
+   "region": "국제기구",
+   "lang": "en",
+   "title": "Violence against women prevalence estimates, 2023: global overview",
+   "origin": "WHO 발간물",
+   "link": "https://www.who.int/publications/i/item/B09860",
+   "date": "2026-08-04",
+   "dateGuessed": false,
+   "via": "WHO 공식",
+   "excerpt": "This global overview presents the 2023 estimates of violence against women produced during the United Nations Sustainable Development Goals (SDG) era, drawing on population-based surveys conducted between 2000 and 2023 across 168 countries and areas."
   },
   {
    "id": "epmc-adherence-216",

@@ -77,6 +77,24 @@ def who_don(limit=PER_SOURCE):
         })
     return [o for o in out if o["title"]]
 
+def who_pub(terms, limit=PER_SOURCE):
+    """WHO 발간물(who.int/publications) 공식 API — 제목에 terms('|'로 구분) 중 하나가 들어간 최신 발간물."""
+    words = [t.strip().replace("'", "''") for t in terms.split("|") if t.strip()]
+    flt = " or ".join("contains(Title,'%s')" % w for w in words)
+    url = ("https://www.who.int/api/hubs/publications?sf_culture=en&%24orderby=PublicationDate%20desc"
+           "&%24top=" + str(limit) + "&%24format=json&%24filter=" + urllib.parse.quote(flt))
+    data = fetch_json(url) or {}
+    out = []
+    for x in data.get("value", []):
+        out.append({
+            "title": (x.get("Title") or "").strip(),
+            "link": "https://www.who.int/publications/i/item/" + (x.get("UrlName") or ""),
+            "date": (x.get("PublicationDate") or "")[:10],
+            "excerpt": strip_tags(x.get("Summary") or x.get("MetaDescription") or x.get("Overview") or "", 420),
+            "origin": "WHO 발간물",
+        })
+    return [o for o in out if o["title"] and o["link"].endswith("/") is False]
+
 def europepmc(query, limit=PER_SOURCE):
     """검색식의 {RECENT} 는 최근 120일 기간으로 바뀐다."""
     today = datetime.date.today()
@@ -114,10 +132,10 @@ def fetch_text(url, tries=3):
                 print(f"  ! 실패: {url} ({e})")
     return ""
 
-def page_items(url, item_re, title_fmt="{title}", limit=PER_SOURCE):
+def page_items(url, item_re, title_fmt="{title}", limit=PER_SOURCE, link_fmt=""):
     """RSS가 없는 기관 웹페이지에서 글 목록을 뽑는다 (계간지·간행물 목록 등).
     item_re 는 이름 붙인 그룹 (?P<title>…) (?P<link>…) 을 가진 정규식. (?P<link2>…) 는 대체 링크, (?P<date>…) 는 있으면 쓴다.
-    limit 은 소스별 "limit" 값 — 간행물 목록처럼 옛 호가 한꺼번에 잡히는 페이지는 2~3으로 두는 것이 좋다.
+    link_fmt 는 글 번호(?P<id>…)로 주소를 만드는 서식. limit 은 소스별 "limit" 값 — 간행물 목록처럼 옛 호가 한꺼번에 잡히는 페이지는 2~3으로 두는 것이 좋다.
     발행일을 못 읽으면 비워 두고, main()이 처음 발견한 날을 기억해 둔다."""
     raw = fetch_text(url)
     out = []
@@ -125,6 +143,7 @@ def page_items(url, item_re, title_fmt="{title}", limit=PER_SOURCE):
         g = m.groupdict()
         title = strip_tags(g.get("title") or "", 300)
         link  = html.unescape(g.get("link") or g.get("link2") or "").strip()   # link2: 대체 링크(내려받기 등)
+        if link_fmt: link = link_fmt.format(**{k: (v or "") for k, v in g.items()})   # 자바스크립트 링크뿐인 게시판: 글 번호로 주소를 만든다
         if not title or not link: continue
         dtxt = re.sub(r"(\d)(st|nd|rd|th)\b", r"\1", strip_tags(g.get("date") or "", 60))   # "10th September 2026" → "10 September 2026"
         out.append({"title": title_fmt.format(title=title), "link": urllib.parse.urljoin(url, link),
@@ -207,10 +226,12 @@ def main():
             got, via = [], ""
             if s.get("who_api"):
                 got, via = who_don(), "WHO 공식"
+            if not got and s.get("who_pub"):
+                got, via = who_pub(s["who_pub"]), "WHO 공식"
             if not got and s.get("epmc"):
                 got, via = europepmc(s["epmc"]), "논문 검색"
             if not got and s.get("page"):
-                got, via = page_items(s["page"], s["page_re"], s.get("title_fmt", "{title}"), int(s.get("limit", PER_SOURCE))), "기관 페이지"
+                got, via = page_items(s["page"], s["page_re"], s.get("title_fmt", "{title}"), int(s.get("limit", PER_SOURCE)), s.get("link_fmt", "")), "기관 페이지"
             if not got and s.get("rss"):
                 got, via = items_from(fetch_xml(s["rss"])), "기관 RSS"
                 got = [g2 for g2 in got if not g2["date"] or g2["date"] >= cutoff]   # 오래된 글만 남은 RSS는 빈 것으로 봄
