@@ -190,6 +190,9 @@ details td:first-child{white-space:nowrap;font-family:ui-monospace,Menlo,monospa
   s=s.replace(/\[([^\]]+)\]\((https?:[^)\s]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>');
   // 문장 속 (12:30) 또는 (1:02:30) → 그 시점으로 가는 시간 링크
   s=s.replace(/\((\d{1,2}:\d{2}(?::\d{2})?)\)/g,function(_,t){return timeTag(t);});
+  // 글에 섞여 들어온 간단한 꾸밈 태그는 그대로 살린다 (나머지 태그는 글자로 남는다)
+  s=s.replace(/&lt;(\/?)(b|strong|i|em|u|s|mark|small|sub|sup)&gt;/gi,'<$1$2>');
+  s=s.replace(/&lt;br\s*\/?&gt;/gi,'<br>');
   return s;
  }
  function ytid(s){var m=s.match(/(?:youtu\.be\/|v=|shorts\/|embed\/)([\w-]{11})/)||s.match(/^([\w-]{11})$/);return m?m[1]:null;}
@@ -202,7 +205,8 @@ details td:first-child{white-space:nowrap;font-family:ui-monospace,Menlo,monospa
  // 블록 하나: {html, len}
  function blocks(lines){
   var out=[],i=0;
-  function para(t){out.push({html:'<div class="prose"><p>'+inline(t)+'</p></div>',len:t.length});}
+  // 줄을 나눠 쓰면 나뉘어 보인다 (빈 줄은 문단 나눔, 한 줄 띄움은 줄바꿈)
+  function para(t){out.push({html:'<div class="prose"><p>'+inline(t).replace(/\n/g,'<br>')+'</p></div>',len:t.length});}
   while(i<lines.length){
    var L=lines[i];
    if(!L.trim()){i++;continue;}
@@ -267,7 +271,7 @@ details td:first-child{white-space:nowrap;font-family:ui-monospace,Menlo,monospa
    if(yt){out.push({html:'<div class="vwrap" data-v="'+yt+'"><div class="vframe" style="background-image:url(https://i.ytimg.com/vi/'+yt+'/hqdefault.jpg)"></div></div>',len:380});i++;continue;}
    var STOP=/^(#|##|---|>|:::|[-*]\s|\d+[.)]\s|\||!\[|```|youtube:|Q\s*[::]|A\s*[::]|발표자\s*[::]|연사\s*[::]|speaker\s*[::]|핵심\s*[::]|요점\s*[::]|결론\s*[::]|\d{1,2}:\d{2}(?::\d{2})?\s+\S|https?:\/\/(www\.)?(youtube\.com|youtu\.be))/i;
    var p=[L];i++;while(i<lines.length&&lines[i].trim()&&!STOP.test(lines[i]))p.push(lines[i++]);
-   para(p.join(' '));
+   para(p.join('\n'));
   }
   return out;
  }
