@@ -126,8 +126,9 @@ def page_items(url, item_re, title_fmt="{title}", limit=PER_SOURCE):
         title = strip_tags(g.get("title") or "", 300)
         link  = html.unescape(g.get("link") or g.get("link2") or "").strip()   # link2: 대체 링크(내려받기 등)
         if not title or not link: continue
+        dtxt = re.sub(r"(\d)(st|nd|rd|th)\b", r"\1", strip_tags(g.get("date") or "", 60))   # "10th September 2026" → "10 September 2026"
         out.append({"title": title_fmt.format(title=title), "link": urllib.parse.urljoin(url, link),
-                    "date": parse_date(g.get("date") or ""), "excerpt": strip_tags(g.get("excerpt") or "", 420),
+                    "date": parse_date(dtxt), "excerpt": strip_tags(g.get("excerpt") or "", 420),
                     "origin": ""})
         if len(out) >= limit: break
     return out
@@ -136,6 +137,7 @@ DATE_FORMATS = (
     "%a, %d %b %Y %H:%M:%S %z", "%a, %d %b %Y %H:%M:%S %Z",
     "%a, %d %b %Y %H:%M:%S GMT", "%a, %d %b %Y %H:%M %z",
     "%Y-%m-%dT%H:%M:%S%z", "%Y-%m-%dT%H:%M:%SZ", "%Y-%m-%d",
+    "%d %B %Y", "%B %d, %Y", "%Y.%m.%d", "%Y.%m.%d.", "%Y/%m/%d",
 )
 
 def parse_date(s):

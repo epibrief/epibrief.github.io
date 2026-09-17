@@ -1,6 +1,6 @@
 {
  "updated": "2026-09-15 22:31",
- "count": 1065,
+ "count": 1071,
  "status": [
   {
    "id": "who-don",
@@ -828,6 +828,24 @@
    "id": "kdca-safe-society",
    "name": "질병관리청 「손상예방과 건강한 사회」 (계간)",
    "count": 2,
+   "via": "기관 페이지"
+  },
+  {
+   "id": "c3s-press",
+   "name": "코페르니쿠스 기후변화서비스(C3S) 월간 기후 보도자료",
+   "count": 3,
+   "via": "기관 페이지"
+  },
+  {
+   "id": "ncei-global",
+   "name": "미국 해양대기청(NOAA NCEI) 월간 전 지구 기후 보고",
+   "count": 2,
+   "via": "기관 페이지"
+  },
+  {
+   "id": "kma-press",
+   "name": "기상청 보도자료 (월별·계절 기후특성)",
+   "count": 1,
    "via": "기관 페이지"
   }
  ],
@@ -3455,6 +3473,38 @@
    "dateGuessed": false,
    "via": "논문 검색",
    "excerpt": ""
+  },
+  {
+   "id": "c3s-press-0",
+   "sourceId": "c3s-press",
+   "sourceName": "코페르니쿠스 기후변화서비스(C3S) 월간 기후 보도자료",
+   "groupId": "climate-org",
+   "kind": "climate",
+   "region": "유럽",
+   "lang": "en",
+   "title": "Copernicus: August was the world’s joint hottest month on record, pushing global temperatures back above 1.5°C above pre-industrial levels",
+   "origin": "코페르니쿠스 기후변화서비스",
+   "link": "https://climate.copernicus.eu/copernicus-august-was-worlds-joint-hottest-month-record-pushing-global-temperatures-back-above",
+   "date": "2026-09-10",
+   "dateGuessed": false,
+   "via": "기관 페이지",
+   "excerpt": "August 2026 was the joint warmest month ever recorded, tied with July 2023."
+  },
+  {
+   "id": "ncei-global-0",
+   "sourceId": "ncei-global",
+   "sourceName": "미국 해양대기청(NOAA NCEI) 월간 전 지구 기후 보고",
+   "groupId": "climate-org",
+   "kind": "climate",
+   "region": "미국",
+   "lang": "en",
+   "title": "Monitoring Global Temperature and Precipitation in August 2026",
+   "origin": "미국 해양대기청",
+   "link": "https://www.ncei.noaa.gov/news/global-climate-202608",
+   "date": "2026-09-10",
+   "dateGuessed": false,
+   "via": "기관 페이지",
+   "excerpt": "The global surface temperature in August 2026 was 2.38°F (1.32°C) above the 20th-century average—the warmest August in the 1850–2026 record, eclipsing the previous tied records set in 2023 and 2024 by 0.14°F (0.08°C)."
   },
   {
    "id": "who-don-0",
@@ -6815,6 +6865,22 @@
    "dateGuessed": false,
    "via": "논문 검색",
    "excerpt": "Background Unintentional pediatric cannabis ingestion has been rising following medical and recreational legalization. In this study, we aimed to examine the epidemiology of pediatric cannabis ingestion following legalization and to assess the impact of demographic and socioeconomic factors on equity of social management. Methods A retrospective cohort study was conducted at two high-volume children's hospitals with "
+  },
+  {
+   "id": "kma-press-0",
+   "sourceId": "kma-press",
+   "sourceName": "기상청 보도자료 (월별·계절 기후특성)",
+   "groupId": "climate-org",
+   "kind": "climate",
+   "region": "국내",
+   "lang": "ko",
+   "title": "[2026년 여름철 기후특성] 여름철 평균기온 3위, 단기간에 이어진 극한기후로 복합재난 뚜렷",
+   "origin": "기상청",
+   "link": "https://www.kma.go.kr/kma/news/press_01.jsp?bid=press&mode=view&num=1194727",
+   "date": "2026-09-03",
+   "dateGuessed": false,
+   "via": "기관 페이지",
+   "excerpt": ""
   },
   {
    "id": "who-news-4",
@@ -12273,6 +12339,22 @@
    "excerpt": "Background Ventilation quality during cardiopulmonary resuscitation remains highly variable despite clear guidelines. Ventilation feedback devices have shown substantial improvements in simulated settings, but real-world implementation data remain limited.We aimed to evaluate real-world adoption and use of a ventilation feedback device during out-of-hospital cardiac arrest (OHCA) management in a French prehospital sy"
   },
   {
+   "id": "c3s-press-1",
+   "sourceId": "c3s-press",
+   "sourceName": "코페르니쿠스 기후변화서비스(C3S) 월간 기후 보도자료",
+   "groupId": "climate-org",
+   "kind": "climate",
+   "region": "유럽",
+   "lang": "en",
+   "title": "Copernicus: Daily global sea surface temperature breaks 2024 record",
+   "origin": "코페르니쿠스 기후변화서비스",
+   "link": "https://climate.copernicus.eu/copernicus-daily-global-sea-surface-temperature-breaks-2024-record",
+   "date": "2026-08-24",
+   "dateGuessed": false,
+   "via": "기관 페이지",
+   "excerpt": "The daily global average sea surface temperature (SST) has reached its highest level on record, exceeding the previous record set in March 2024. The Copernicus Climate Change Service (C3S) confirmed the record, with a temperature of 21.1°C on 22 August, exceeding the previous record of 21.09°C. The C3S ERA5 dataset extends back to 1979."
+  },
+  {
    "id": "who-news-3",
    "sourceId": "who-news",
    "sourceName": "WHO 보도자료",
@@ -16081,6 +16163,22 @@
    "excerpt": "Background Acute kidney injury (AKI) is a clinical syndrome characterised by a sudden deterioration of kidney function. It is common and usually occurs as a complication of severe illness or major surgery. Despite the high risk of complications and a decade of improvement initiatives in the UK, little is known about the quality of post-discharge AKI care. Our population-based cohort study investigated adherence to gu"
   },
   {
+   "id": "ncei-global-1",
+   "sourceId": "ncei-global",
+   "sourceName": "미국 해양대기청(NOAA NCEI) 월간 전 지구 기후 보고",
+   "groupId": "climate-org",
+   "kind": "climate",
+   "region": "미국",
+   "lang": "en",
+   "title": "Assessing the Global Temperature and Precipitation in July 2026",
+   "origin": "미국 해양대기청",
+   "link": "https://www.ncei.noaa.gov/news/global-climate-202607",
+   "date": "2026-08-11",
+   "dateGuessed": false,
+   "via": "기관 페이지",
+   "excerpt": "Global surface temperatures in July 2026 were 2.12°F (1.18°C) above the 20th-century average, tying 2024 for the warmest July on record."
+  },
+  {
    "id": "epmc-rcce-207",
    "sourceId": "epmc-rcce",
    "sourceName": "논문: 위험소통·주민참여(RCCE)",
@@ -16415,6 +16513,22 @@
    "dateGuessed": false,
    "via": "논문 검색",
    "excerpt": "Background Adolescents represent a high-risk group for road traffic injuries, particularly in rapidly motorising cities in India. This study aimed to document the travel patterns and understand the road safety knowledge, practices and safety perceptions of adolescents during their school commutes in Delhi, India. Methods A cross-sectional survey was conducted with students from four public schools. Schools were selec"
+  },
+  {
+   "id": "c3s-press-2",
+   "sourceId": "c3s-press",
+   "sourceName": "코페르니쿠스 기후변화서비스(C3S) 월간 기후 보도자료",
+   "groupId": "climate-org",
+   "kind": "climate",
+   "region": "유럽",
+   "lang": "en",
+   "title": "Copernicus: Highest July global ocean surface temperatures as exceptionally hot, dry conditions fuel wildfires in Europe",
+   "origin": "코페르니쿠스 기후변화서비스",
+   "link": "https://climate.copernicus.eu/copernicus-highest-july-global-ocean-surface-temperatures-exceptionally-hot-dry-conditions-fuel",
+   "date": "2026-08-10",
+   "dateGuessed": false,
+   "via": "기관 페이지",
+   "excerpt": "In July 2026, prolonged hot and dry conditions in western Europe led to the spread and intensification of extreme wildfires. The month also saw the highest sea surface temperature (SST) ever recorded for July across the extra-polar oceans, partly fuelled by developing El Niño conditions in the equatorial Pacific, as reported by Copernicus Climate Change Service (C3S)."
   },
   {
    "id": "epmc-rcce-203",
