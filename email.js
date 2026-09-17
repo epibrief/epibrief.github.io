@@ -194,5 +194,108 @@
     return 'mailto:?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
   }
 
-  w.NLEmail = { html, text, copy, download, mailto, PALETTE, SECS };
+  /* ── 기관 소식지(블록 구성) → 메일 본문 ─────────────────────
+     메일 프로그램은 외부 CSS를 읽지 못하므로 표 + 인라인 서식으로 다시 그립니다. */
+  const BRAND_X = { local: '#1f6f43', epi: '#1b3fb0', campus: '#4a3a99', hospital: '#0b5c7a', research: '#3f4b5b' };
+  function docColors(doc) {
+    return PALETTE[doc.kind] || { brand: BRAND_X[doc.kind] || '#1b3fb0', accent: '#bf560c', soft: '#fdf1e3' };
+  }
+  const _url = u => (/^https?:\/\//i.test(String(u || '').trim()) ? String(u).trim() : '');
+  const _has = x => !!(x && String(x).trim());
+
+  function docHtml(doc) {
+    const c = docColors(doc), org = doc.org || {};
+    const P = t => `<p style="margin:0 0 10px;font:400 15px/1.8 ${FONT};color:#3d4753">${esc(t).replace(/\n/g, '<br>')}</p>`;
+    const H = t => `<div style="font:800 17px/1.5 ${FONT};color:${c.brand};margin:22px 0 8px;
+      border-bottom:2px solid ${c.soft};padding-bottom:6px">${esc(t)}</div>`;
+    const LI = arr => `<table role="presentation" width="100%" cellpadding="0" cellspacing="0">${bullets(arr, c)}</table>`;
+    const SRC = (n, u) => (_has(n) || _url(u))
+      ? `<p style="margin:0 0 10px;font:400 13px/1.7 ${FONT};color:#6d7885">출처 · ${esc(n || '출처 미기재')}${
+          _url(u) ? ` <a href="${esc(_url(u))}" style="color:${c.accent}">${esc(_url(u))}</a>` : ''}</p>` : '';
+
+    const body = (doc.blocks || []).filter(b => !b.hidden).map(b => {
+      let h = H(b.title || '');
+      if (b.type === 'notice') { if (_has(b.body)) h += P(b.body); h += SRC(b.srcName, b.srcUrl); }
+      else if (b.type === 'question') { if (_has(b.body))
+        h += `<div style="border-left:4px solid ${c.brand};background:#f7f9fb;padding:12px 14px;margin:0 0 10px;
+          font:400 15px/1.8 ${FONT};color:#191f28">${esc(b.body).replace(/\n/g, '<br>')}</div>`; }
+      else if (b.type === 'list' || b.type === 'contact') { h += LI((b.items || []).filter(_has)); }
+      else if (b.type === 'schedule') {
+        const rows = (b.rows || []).filter(r => _has(r.what) || _has(r.when));
+        if (!rows.length) return '';
+        h += `<table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+          style="border-collapse:collapse;margin:0 0 10px">${rows.map(r => `<tr>
+          <td style="border-bottom:1px solid #eef1f5;padding:9px 10px 9px 0;font:700 15px/1.6 ${FONT};color:#191f28">${esc(r.what)}</td>
+          <td style="border-bottom:1px solid #eef1f5;padding:9px 10px 9px 0;font:400 14px/1.6 ${FONT};color:#3d4753;white-space:nowrap">${esc(r.when)}</td>
+          <td style="border-bottom:1px solid #eef1f5;padding:9px 0;font:400 14px/1.6 ${FONT};color:#3d4753">${esc([r.where, r.note].filter(_has).join(' · '))}</td>
+          </tr>`).join('')}</table>`;
+      } else if (b.type === 'evidence') {
+        h += (b.items || []).filter(s => _has(s.title)).map(s => {
+          const meta = [['대상', s.who], ['설계', s.design], ['결과', s.result], ['한계', s.limit]]
+            .filter(x => _has(x[1]))
+            .map(x => `<tr><td style="padding:0 0 4px 0;font:400 14px/1.7 ${FONT};color:#3d4753">
+              <b style="color:${c.accent}">${x[0]}</b> · ${esc(x[1])}</td></tr>`).join('');
+          return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+            style="border:1px solid #dde2e9;border-radius:8px;margin:0 0 10px">
+            <tr><td style="padding:13px 15px">
+              <div style="font:800 15px/1.5 ${FONT};color:${c.brand};margin-bottom:5px">${esc(s.title)}</div>
+              <div style="font:700 12px/1.6 ${FONT};color:#6d7885;margin-bottom:8px">${esc(s.srcType || '자료 유형 미지정')} · ${
+                s.checked ? '원문 확인함' : '원문 미확인'}</div>
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">${meta}</table>
+              ${_url(s.url) ? `<div style="font:400 13px/1.7 ${FONT};margin-top:6px">원문 · <a href="${esc(_url(s.url))}"
+                style="color:${c.accent}">${esc(_url(s.url))}</a></div>` : ''}
+            </td></tr></table>`;
+        }).join('');
+      }
+      return h;
+    }).join('');
+
+    const sub = doc.sub || {};
+    const subBox = (sub.mode === 'external' && _url(sub.url))
+      ? `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:22px 0 0;background:${c.soft};
+          border-left:4px solid ${c.accent}"><tr><td style="padding:16px 18px">
+          <div style="font:800 15px/1.5 ${FONT};color:${c.brand};margin-bottom:8px">${esc(sub.label || '이 소식지 받아보기')}</div>
+          ${_has(sub.note) ? `<div style="font:400 13px/1.7 ${FONT};color:#3d4753;margin-bottom:10px">${esc(sub.note)}</div>` : ''}
+          <a href="${esc(_url(sub.url))}" style="display:inline-block;background:${c.brand};color:#fff;text-decoration:none;
+            font:800 14px/1.4 ${FONT};padding:12px 18px;border-radius:6px">구독 신청하러 가기</a>
+          </td></tr></table>` : '';
+
+    const dateTxt = /^\d{4}-\d{2}-\d{2}$/.test(doc.date || '') ? String(doc.date).replace(/-/g, '.') + '.' : (doc.date || '');
+    return `<!DOCTYPE html><html><head><meta charset="UTF-8"></head>
+<body style="margin:0;background:#eef1f5">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#eef1f5;padding:22px 10px">
+<tr><td align="center">
+<table role="presentation" width="640" cellpadding="0" cellspacing="0" style="max-width:640px;width:100%;background:#fff;border-top:6px solid ${c.brand}">
+<tr><td style="padding:28px 28px 34px">
+  <div style="font:700 12px/1.5 ${FONT};letter-spacing:.08em;color:#6d7885;text-transform:uppercase">${esc(doc.kindName || '소식지')}</div>
+  <div style="font:800 14px/1.6 ${FONT};color:${c.accent};margin-top:10px">${esc([org.name, org.dept].filter(_has).join(' · ') || '기관 이름 미입력')}</div>
+  <h1 style="font:800 27px/1.35 ${FONT};color:#191f28;margin:4px 0 6px">${esc(doc.title || '')}</h1>
+  <div style="font:400 13px/1.6 ${FONT};color:#6d7885">${esc([doc.issue, dateTxt].filter(_has).join(' · '))}</div>
+  ${_has(doc.lead) ? `<p style="font:400 16px/1.75 ${FONT};color:#3d4753;margin:16px 0 0">${esc(doc.lead)}</p>` : ''}
+  ${body}
+  ${subBox}
+  <div style="border-top:1px solid #dde2e9;margin-top:26px;padding-top:12px;font:400 12px/1.7 ${FONT};color:#6d7885">
+    발행 · ${esc([org.name, org.dept, org.editor, org.contact].filter(_has).join(' / ') || '발행 정보 미입력')}
+    ${_has(org.credit) ? '<br>' + esc(org.credit) : ''}
+  </div>
+</td></tr></table>
+</td></tr></table>
+</body></html>`;
+  }
+
+  /* 서식 + 글자를 함께 클립보드에 올립니다 */
+  async function copyPair(h, t) {
+    try {
+      await navigator.clipboard.write([new ClipboardItem({
+        'text/html': new Blob([h], { type: 'text/html' }),
+        'text/plain': new Blob([t], { type: 'text/plain' })
+      })]);
+      return '서식 그대로 복사했습니다. 메일 쓰기 창에 붙여넣으세요.';
+    } catch (e) {
+      try { await navigator.clipboard.writeText(t); return '글자만 복사했습니다(서식 복사가 이 브라우저에서 막혀 있습니다).'; }
+      catch (e2) { return ''; }
+    }
+  }
+
+  w.NLEmail = { html, text, copy, download, mailto, PALETTE, SECS, docHtml, docColors, copyPair };
 })(window);

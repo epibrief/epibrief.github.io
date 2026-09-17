@@ -26,7 +26,14 @@
 .k-climate { --brand:#0d5c8c; --accent:#bf560c; --accent-bright:#ef7c1a; --accent-soft:#fdf1e3; } /* 오션블루 + 오렌지 */
 .k-injury  { --brand:#7b1e3c; --accent:#bf560c; --accent-bright:#ef7c1a; --accent-soft:#fdf1e3; } /* 버건디 + 오렌지 */
 
-#paper{
+/* 예시 템플릿 6종 색 배합 — 모두 흰 바탕에서 명암비 4.5:1 이상 */
+.k-local   { --brand:#1f6f43; --accent:#bf560c; --accent-bright:#ef7c1a; --accent-soft:#fdf1e3; }
+.k-epi     { --brand:#1b3fb0; --accent:#bf560c; --accent-bright:#ef7c1a; --accent-soft:#fdf1e3; }
+.k-campus  { --brand:#4a3a99; --accent:#bf560c; --accent-bright:#ef7c1a; --accent-soft:#fdf1e3; }
+.k-hospital{ --brand:#0b5c7a; --accent:#bf560c; --accent-bright:#ef7c1a; --accent-soft:#fdf1e3; }
+.k-research{ --brand:#3f4b5b; --accent:#bf560c; --accent-bright:#ef7c1a; --accent-soft:#fdf1e3; }
+
+#paper,.paper{
   position:relative; background:var(--paper); color:var(--ink);
   font-family:var(--sans); font-size:17px; line-height:1.8;
   max-width:840px; margin:0 auto; padding:54px 56px 60px;
@@ -34,22 +41,22 @@
   box-shadow:0 1px 2px rgba(22,48,90,.05), 0 14px 44px rgba(22,48,90,.12);
 }
 /* 종이 안쪽 얇은 테두리 — 액자처럼 본문을 감싼다 */
-#paper::before{
+#paper::before,.paper::before{
   content:""; position:absolute; inset:14px; border:1px solid var(--line-2);
   pointer-events:none;
 }
 /* 왼쪽 세로 띠 — 어느 분야 뉴스레터인지 펼치지 않아도 보이게 */
-#paper::after{
+#paper::after,.paper::after{
   content:""; position:absolute; left:0; top:0; bottom:0; width:7px; background:var(--accent-bright);
 }
-#paper > *{ position:relative; }
+#paper > *,.paper > *{ position:relative; }
 
-#paper *{ box-sizing:border-box; }
-#paper{ word-break:keep-all; overflow-wrap:break-word; }   /* 한글은 단어 단위로 줄바꿈 */
-#paper h1,#paper h2,#paper h3,#paper h4{ word-break:keep-all; text-wrap:balance; }
-#paper p,#paper li{ text-wrap:pretty; }
-#paper a{ color:var(--accent); }
-#paper [contenteditable]:focus{ outline:2px solid var(--accent); outline-offset:3px; border-radius:3px; }
+#paper *,.paper *{ box-sizing:border-box; }
+#paper,.paper{ word-break:keep-all; overflow-wrap:break-word; }   /* 한글은 단어 단위로 줄바꿈 */
+#paper h1,#paper h2,#paper h3,#paper h4,.paper h1,.paper h2,.paper h3,.paper h4{ word-break:keep-all; text-wrap:balance; }
+#paper p,#paper li,.paper p,.paper li{ text-wrap:pretty; }
+#paper a,.paper a{ color:var(--accent); }
+#paper [contenteditable]:focus,.paper [contenteditable]:focus{ outline:2px solid var(--accent); outline-offset:3px; border-radius:3px; }
 
 /* ── 제호 ───────────────────────────────────────────── */
 .nl-head{ border-bottom:2px solid var(--brand); padding-bottom:0; margin-bottom:0; }
@@ -374,8 +381,8 @@
 
 /* ── 좁은 화면 ──────────────────────────────────────── */
 @media (max-width:640px){
-  #paper{ padding:28px 18px 38px; font-size:16.5px; }
-  #paper::before{ display:none; }
+  #paper,.paper{ padding:28px 18px 38px; font-size:16.5px; }
+  #paper::before,.paper::before{ display:none; }
   .t-card{ padding:0; }
   .t-card .nl-head,.t-card .brief,.t-card .topic,.t-card .intro,.t-card .foot-note{ padding:22px 20px; }
   .nl-title{ line-height:1.28; }
@@ -404,12 +411,12 @@
 @media print{
   /* PDF로 저장하는 경우가 대부분이라 화면과 같은 색으로 나오게 한다 */
   *{ -webkit-print-color-adjust:exact !important; print-color-adjust:exact !important; }
-  #paper{
+  #paper,.paper{
     box-shadow:none; max-width:none; padding:0 0 0 14px; font-size:10.8pt; background:#fff;
     border:0; border-left:0;
   }
-  #paper::before{ display:none; }
-  #paper::after{ width:6px; }                 /* 왼쪽 분야 색 띠는 그대로 */
+  #paper::before,.paper::before{ display:none; }
+  #paper::after,.paper::after{ width:6px; }                 /* 왼쪽 분야 색 띠는 그대로 */
   .nl-bar{ background:var(--brand) !important; color:#fff !important; }
   .nl-bar a{ color:#fff !important; }
   .brief{ background:#f7f9fb !important; }
@@ -426,3 +433,61 @@
   .refs summary::before, .refs[open] summary::before{ content:""; }
   @page{ size:A4; margin:15mm 14mm; }
 }
+
+/* ─────────────────────────────────────────────────────────────
+   기관 소식지 블록 — 예시 템플릿과 편집기가 함께 씁니다.
+   ───────────────────────────────────────────────────────────── */
+.nl-logo{ max-height:46px; max-width:190px; width:auto; height:auto; display:block; margin:0 0 12px; }
+.blk-body{ font-size:1rem; line-height:1.82; color:var(--ink-2); white-space:pre-line; margin:0 0 12px; }
+.blk-src{ font-size:.84rem; color:var(--muted); border-top:1px dashed var(--line); padding-top:8px; }
+.blk-src a{ word-break:break-all; }
+.blk-src b{ color:var(--ink-2); font-weight:700; }
+
+/* 일정 표 — 좁은 화면에서는 줄 단위로 쌓인다 */
+.sched{ width:100%; border-collapse:collapse; font-size:.96rem; margin:2px 0 4px; }
+.sched th{ text-align:left; font-size:.78rem; letter-spacing:.06em; color:var(--accent);
+  border-bottom:1px solid var(--line); padding:6px 10px 6px 0; font-weight:800; white-space:nowrap; }
+.sched td{ border-bottom:1px solid var(--line-2); padding:10px 10px 10px 0; vertical-align:top; color:var(--ink-2); }
+.sched td:first-child{ color:var(--ink); font-weight:700; }
+.sched .when{ white-space:nowrap; }
+@media (max-width:560px){
+  .sched, .sched tbody, .sched tr, .sched td{ display:block; width:100%; }
+  .sched thead{ display:none; }
+  .sched tr{ border-bottom:1px solid var(--line); padding:10px 0; }
+  .sched td{ border:0; padding:1px 0; }
+  .sched td:first-child{ font-size:1.02rem; }
+  .sched td:empty{ display:none; }
+}
+/* 확인이 필요한 값 — 색 외에 글자 라벨을 함께 둔다 */
+.todo{ display:inline-block; font-size:.74rem; font-weight:800; color:#8a3b00;
+  background:#fdf1e3; border:1px solid #f0c9a0; border-radius:999px; padding:1px 8px; margin-left:6px; }
+
+/* 이번 호의 질문 (전문가용) */
+.qbox{ border:1px solid var(--line); border-left:4px solid var(--brand); background:#f7f9fb;
+  padding:16px 18px; margin:0 0 6px; font-size:1.02rem; line-height:1.75; color:var(--ink); white-space:pre-line; }
+
+/* 근거 카드 — 연구별 대상·설계·결과·한계·원문 */
+.evid{ border:1px solid var(--line); border-radius:10px; padding:16px 18px; margin:0 0 14px; background:#fff; }
+.evid > h5{ margin:0 0 8px; font-size:1.04rem; line-height:1.5; color:var(--brand); font-weight:800; }
+.evid dl{ margin:0; display:grid; grid-template-columns:76px minmax(0,1fr); gap:6px 12px; font-size:.95rem; }
+.evid dt{ color:var(--accent); font-weight:800; font-size:.82rem; padding-top:2px; }
+.evid dd{ margin:0; color:var(--ink-2); line-height:1.7; }
+.evid .chips{ display:flex; flex-wrap:wrap; gap:6px; margin:0 0 10px; }
+.chip{ display:inline-block; font-size:.74rem; font-weight:700; padding:2px 8px; border-radius:999px;
+  border:1px solid var(--line); color:var(--ink-2); background:#f7f9fb; }
+.chip-type{ border-color:#c8d3e2; color:#27407a; background:#eef3fb; }
+.chip-ok{ border-color:#b9d8c4; color:#14603a; background:#eef7f1; }
+.chip-no{ border-color:#e3cdb0; color:#8a3b00; background:#fdf5ec; }
+.evid .link{ margin-top:10px; font-size:.84rem; }
+.evid .link a{ word-break:break-all; }
+@media (max-width:560px){ .evid dl{ grid-template-columns:1fr; gap:2px; } .evid dt{ padding-top:8px; } }
+
+/* 예시 내용 표시 — 편집 미리보기에서만 보인다 */
+.samplemark{ display:inline-block; font-size:.72rem; font-weight:800; color:#5b4a13;
+  background:#fdf6df; border:1px solid #e6d79a; border-radius:999px; padding:1px 8px; margin-left:8px; vertical-align:middle; }
+
+/* 구독 안내 — QR 없이도 누를 수 있는 버튼을 둔다 */
+.subscribe .sub-btn{ display:inline-block; background:var(--brand); color:#fff !important; text-decoration:none;
+  font-weight:800; font-size:.92rem; padding:11px 18px; border-radius:8px; min-height:44px; line-height:22px; }
+.subscribe .sub-soon{ font-size:.9rem; color:var(--ink-2); font-weight:700; }
+.foot-note .credit{ margin-top:6px; }
