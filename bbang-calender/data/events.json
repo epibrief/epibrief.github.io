@@ -1,6 +1,6 @@
 {
  "name": "빵캘",
- "updatedAt": "2026-09-19T11:56:06.547Z",
+ "updatedAt": "2026-09-19T11:15:14.737Z",
  "counts": {
   "total": 35,
   "upcoming": 10
@@ -12,7 +12,7 @@
    "ok": true,
    "found": 52,
    "events": 0,
-   "ms": 7425
+   "ms": 6421
   },
   {
    "id": "org-mohw",
@@ -20,7 +20,15 @@
    "ok": true,
    "found": 19,
    "events": 4,
-   "ms": 15165
+   "ms": 17617
+  },
+  {
+   "id": "org-khealth",
+   "name": "한국건강증진개발원 공지",
+   "ok": true,
+   "found": 11,
+   "events": 0,
+   "ms": 4652
   },
   {
    "id": "nkis",
@@ -28,15 +36,7 @@
    "ok": true,
    "found": 20,
    "events": 0,
-   "ms": 27162
-  },
-  {
-   "id": "org-mfds",
-   "name": "식품의약품안전처 공지",
-   "ok": true,
-   "found": 16,
-   "events": 8,
-   "ms": 25411
+   "ms": 25808
   },
   {
    "id": "org-ncc",
@@ -44,14 +44,7 @@
    "ok": true,
    "found": 4,
    "events": 3,
-   "ms": 7908
-  },
-  {
-   "id": "org-khealth",
-   "name": "한국건강증진개발원 공지",
-   "ok": false,
-   "error": "fetch failed",
-   "ms": 23022
+   "ms": 8343
   },
   {
    "id": "org-nhis",
@@ -59,15 +52,15 @@
    "ok": true,
    "found": 24,
    "events": 0,
-   "ms": 6060
+   "ms": 4842
   },
   {
-   "id": "org-hira",
-   "name": "건강보험심사평가원 공지",
+   "id": "org-mfds",
+   "name": "식품의약품안전처 공지",
    "ok": true,
-   "found": 12,
-   "events": 1,
-   "ms": 7436
+   "found": 16,
+   "events": 8,
+   "ms": 25393
   },
   {
    "id": "org-kihasa",
@@ -75,29 +68,29 @@
    "ok": true,
    "found": 3,
    "events": 2,
-   "ms": 5607
+   "ms": 4930
+  },
+  {
+   "id": "org-hira",
+   "name": "건강보험심사평가원 공지",
+   "ok": true,
+   "found": 12,
+   "events": 1,
+   "ms": 6548
   },
   {
    "id": "org-neca",
    "name": "한국보건의료연구원 공지",
    "ok": false,
-   "error": "HTTP 400",
-   "ms": 7861
+   "error": "HTTP 503",
+   "ms": 7681
   },
   {
    "id": "org-khidi",
    "name": "한국보건산업진흥원 공지",
    "ok": false,
-   "error": "HTTP 404",
-   "ms": 5933
-  },
-  {
-   "id": "org-nibp",
-   "name": "국가생명윤리정책원 공지",
-   "ok": true,
-   "found": 16,
-   "events": 4,
-   "ms": 8065
+   "error": "HTTP 503",
+   "ms": 8637
   },
   {
    "id": "org-nmc",
@@ -105,7 +98,15 @@
    "ok": true,
    "found": 11,
    "events": 0,
-   "ms": 13691
+   "ms": 8742
+  },
+  {
+   "id": "org-nibp",
+   "name": "국가생명윤리정책원 공지",
+   "ok": true,
+   "found": 16,
+   "events": 4,
+   "ms": 9436
   },
   {
    "id": "org-ksepi",
@@ -113,7 +114,7 @@
    "ok": true,
    "found": 10,
    "events": 5,
-   "ms": 5684
+   "ms": 5866
   },
   {
    "id": "org-kams",
@@ -121,7 +122,7 @@
    "ok": true,
    "found": 2,
    "events": 0,
-   "ms": 2345
+   "ms": 2055
   },
   {
    "id": "org-prevmed",
@@ -129,23 +130,7 @@
    "ok": true,
    "found": 15,
    "events": 7,
-   "ms": 16776
-  },
-  {
-   "id": "org-kshep",
-   "name": "한국보건교육건강증진학회 공지",
-   "ok": true,
-   "found": 1,
-   "events": 1,
-   "ms": 4394
-  },
-  {
-   "id": "snu-health",
-   "name": "서울대 보건대학원 세미나정보",
-   "ok": true,
-   "found": 30,
-   "events": 20,
-   "ms": 70032
+   "ms": 14527
   },
   {
    "id": "org-kshpa",
@@ -153,7 +138,15 @@
    "ok": true,
    "found": 9,
    "events": 6,
-   "ms": 13279
+   "ms": 12808
+  },
+  {
+   "id": "org-kshep",
+   "name": "한국보건교육건강증진학회 공지",
+   "ok": true,
+   "found": 1,
+   "events": 1,
+   "ms": 4770
   },
   {
    "id": "org-kosqua",
@@ -161,7 +154,14 @@
    "ok": true,
    "found": 7,
    "events": 1,
-   "ms": 1998
+   "ms": 2145
+  },
+  {
+   "id": "org-kpha",
+   "name": "대한보건협회 공지",
+   "ok": false,
+   "error": "HTTP 503",
+   "ms": 7868
   },
   {
    "id": "org-cochrane",
@@ -169,21 +169,22 @@
    "ok": true,
    "found": 16,
    "events": 0,
-   "ms": 446
+   "ms": 752
   },
   {
-   "id": "org-kpha",
-   "name": "대한보건협회 공지",
-   "ok": false,
-   "error": "fetch failed",
-   "ms": 7317
+   "id": "snu-health",
+   "name": "서울대 보건대학원 세미나정보",
+   "ok": true,
+   "found": 30,
+   "events": 20,
+   "ms": 71476
   },
   {
    "id": "org-koddi",
    "name": "한국장애인개발원 공지",
    "ok": false,
    "error": "HTTP 404",
-   "ms": 5846
+   "ms": 6226
   },
   {
    "id": "org-kdca-ilje",
@@ -191,14 +192,14 @@
    "ok": true,
    "found": 32,
    "events": 0,
-   "ms": 6636
+   "ms": 6392
   },
   {
    "id": "org-kspm",
    "name": "대한공공의학회 공지",
    "ok": false,
-   "error": "fetch failed",
-   "ms": 25245
+   "error": "HTTP 503",
+   "ms": 35346
   }
  ],
  "events": [
