@@ -19,7 +19,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:d9897786e2a820f5@bbangcal.epibrief.github.io
-DTSTAMP:20260919T111630Z
+DTSTAMP:20260919T133955Z
 DTSTART;VALUE=DATE:20260904
 DTEND;VALUE=DATE:20260908
 SUMMARY:[보건복지부] 2026년 제27회 한국장애와건강포럼 
@@ -36,7 +36,7 @@ URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
 END:VEVENT
 BEGIN:VEVENT
 UID:3a0d4dbe2e132bc0@bbangcal.epibrief.github.io
-DTSTAMP:20260919T111630Z
+DTSTAMP:20260919T133955Z
 DTSTART;VALUE=DATE:20260904
 DTEND;VALUE=DATE:20260908
 SUMMARY:[보건복지부·한국건강증진개발원] 제13차 미래 
@@ -54,7 +54,7 @@ URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
 END:VEVENT
 BEGIN:VEVENT
 UID:040331ec9f9f6eca@bbangcal.epibrief.github.io
-DTSTAMP:20260919T111630Z
+DTSTAMP:20260919T133955Z
 DTSTART;TZID=Asia/Seoul:20260911T140000
 DTEND;TZID=Asia/Seoul:20260911T163000
 SUMMARY:[한국보건사회연구원·보건복지부] 상병수당 제
@@ -66,8 +66,21 @@ DESCRIPTION:주최: 한국보건사회연구원·보건복지부\n원
 URL:https://www.kihasa.re.kr/news/event/view?seq=76736
 END:VEVENT
 BEGIN:VEVENT
+UID:594de9f192adb995@bbangcal.epibrief.github.io
+DTSTAMP:20260919T133955Z
+DTSTART;TZID=Asia/Seoul:20260916T130000
+DTEND;TZID=Asia/Seoul:20260916T173000
+SUMMARY:[한국보건산업진흥원·보건복지부] 제32회 보건
+ 의료포럼 개최 안내
+LOCATION:서울대학교병원 암연구소 이건희홀
+DESCRIPTION:주최: 한국보건산업진흥원·보건복지부\n원
+ 문: https://www.khidi.or.kr/board/view?linkId=48949861&menuId=MENU0009
+ 9\n빵캘: https://epibrief.github.io/bbang-calender/
+URL:https://www.khidi.or.kr/board/view?linkId=48949861&menuId=MENU00099
+END:VEVENT
+BEGIN:VEVENT
 UID:7edfdde6847968e6@bbangcal.epibrief.github.io
-DTSTAMP:20260919T111630Z
+DTSTAMP:20260919T133955Z
 DTSTART;TZID=Asia/Seoul:20261029T133000
 DTEND;TZID=Asia/Seoul:20261029T163000
 SUMMARY:[보건복지부] 2026년도 장애인 건강보건통계 컨
