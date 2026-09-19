@@ -221,6 +221,26 @@ export function matchOrg(text, orgs, aliases = {}) {
   return null;
 }
 
+/** 글에 나오는 기관을 모두 찾습니다. 공동 주최를 놓치지 않기 위해서입니다. */
+export function matchOrgs(text, orgs, aliases = {}) {
+  const s = decode(String(text || ''));
+  const found = [];
+  const at = {};
+  for (const [alias, id] of Object.entries(aliases)) {
+    const i = s.indexOf(alias);
+    if (i < 0) continue;
+    if (at[id] === undefined || i < at[id]) at[id] = i;
+  }
+  for (const o of orgs) {
+    if (o.id === 'etc') continue;
+    const i = s.indexOf(o.name);
+    if (i >= 0 && (at[o.id] === undefined || i < at[o.id])) at[o.id] = i;
+  }
+  for (const [id, i] of Object.entries(at)) found.push([id, i]);
+  // 글에 먼저 나온 기관을 앞에 둡니다. 대개 주최 기관이 먼저 적힙니다.
+  return found.sort((a, b) => a[1] - b[1]).map((x) => x[0]);
+}
+
 export const ORG_ALIASES = {
   '보건복지부': 'mohw', '복지부': 'mohw',
   '질병관리청': 'kdca', '질병청': 'kdca', '국립보건연구원': 'kdca',
@@ -241,5 +261,9 @@ export const ORG_ALIASES = {
   '대한공공의학회': 'kspm', '공공의학회': 'kspm',
   '한국보건교육건강증진학회': 'kshep',
   '대한보건협회': 'kpha',
-  '한국의료질향상학회': 'kosqua'
+  '한국의료질향상학회': 'kosqua',
+  '한국장애인개발원': 'koddi', '장애인개발원': 'koddi',
+  '서울대학교 보건대학원': 'snuph', '서울대 보건대학원': 'snuph', '보건대학원': 'snuph',
+  '수요세미나': 'snuph', '보건정책관리학전공': 'snuph',
+  '한국코크란': 'cochrane', '코크란': 'cochrane'
 };
