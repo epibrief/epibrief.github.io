@@ -171,10 +171,9 @@
    "name": "대한공공의학회",
    "short": "공공의학",
    "category": "society",
-   "home": "https://www.kspm.kr/",
-   "board": "https://www.kspm.kr/",
-   "verified": false,
-   "note": "누리집이 응답하지 않아 수집을 꺼 두었습니다. 주소를 확인하면 다시 켜세요."
+   "home": "https://www.pubmed.or.kr/",
+   "board": "https://www.pubmed.or.kr/",
+   "verified": true
   },
   {
    "id": "kshep",
@@ -190,10 +189,9 @@
    "name": "대한보건협회",
    "short": "보건협회",
    "category": "society",
-   "home": "https://www.kpha.or.kr/",
-   "board": "https://www.kpha.or.kr/",
-   "verified": false,
-   "note": "누리집이 응답하지 않아 수집을 꺼 두었습니다. 주소를 확인하면 다시 켜세요."
+   "home": "http://www.kpha.or.kr/",
+   "board": "http://www.kpha.or.kr/",
+   "verified": false
   },
   {
    "id": "kosqua",
@@ -408,10 +406,10 @@
    "id": "org-kspm",
    "name": "대한공공의학회 공지",
    "adapter": "generic",
-   "url": "https://www.kspm.kr/",
+   "url": "https://www.pubmed.or.kr/",
    "org": "kspm",
-   "enabled": false,
-   "note": "누리집이 응답하지 않습니다. 주소를 확인하면 enabled 를 true 로 바꾸세요"
+   "enabled": true,
+   "note": "첫 화면에 여러 게시판 글이 함께 뜹니다"
   },
   {
    "id": "org-kshep",
@@ -426,10 +424,10 @@
    "id": "org-kpha",
    "name": "대한보건협회 공지",
    "adapter": "generic",
-   "url": "https://www.kpha.or.kr/",
+   "url": "http://www.kpha.or.kr/",
    "org": "kpha",
-   "enabled": false,
-   "note": "누리집이 응답하지 않습니다. 주소를 확인하면 enabled 를 true 로 바꾸세요"
+   "enabled": true,
+   "note": "https 는 응답하지 않습니다. http 로 읽습니다"
   },
   {
    "id": "org-kosqua",
