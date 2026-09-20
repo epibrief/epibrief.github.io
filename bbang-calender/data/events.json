@@ -1,24 +1,26 @@
 {
  "name": "빵캘",
- "updatedAt": "2026-09-20T13:54:21.839Z",
+ "updatedAt": "2026-09-20T23:48:06.455Z",
  "counts": {
   "total": 164,
   "upcoming": 113
  },
  "sources": [
   {
-   "id": "org-mohw",
-   "name": "보건복지부 공지",
-   "ok": false,
-   "error": "fetch failed",
-   "ms": 25216
-  },
-  {
    "id": "org-kdca",
    "name": "질병관리청 공지",
-   "ok": false,
-   "error": "fetch failed",
-   "ms": 25217
+   "ok": true,
+   "found": 52,
+   "events": 0,
+   "ms": 5821
+  },
+  {
+   "id": "org-mohw",
+   "name": "보건복지부 공지",
+   "ok": true,
+   "found": 19,
+   "events": 4,
+   "ms": 14354
   },
   {
    "id": "nkis",
@@ -26,15 +28,15 @@
    "ok": true,
    "found": 20,
    "events": 0,
-   "ms": 25480
+   "ms": 24464
   },
   {
-   "id": "org-khealth",
-   "name": "한국건강증진개발원 공지",
+   "id": "org-mfds",
+   "name": "식품의약품안전처 공지",
    "ok": true,
-   "found": 11,
-   "events": 0,
-   "ms": 3257
+   "found": 16,
+   "events": 8,
+   "ms": 23884
   },
   {
    "id": "org-ncc",
@@ -42,7 +44,15 @@
    "ok": true,
    "found": 4,
    "events": 2,
-   "ms": 6688
+   "ms": 5383
+  },
+  {
+   "id": "org-khealth",
+   "name": "한국건강증진개발원 공지",
+   "ok": true,
+   "found": 11,
+   "events": 0,
+   "ms": 17146
   },
   {
    "id": "org-nhis",
@@ -50,7 +60,7 @@
    "ok": true,
    "found": 24,
    "events": 0,
-   "ms": 5475
+   "ms": 3710
   },
   {
    "id": "org-hira",
@@ -58,21 +68,22 @@
    "ok": true,
    "found": 12,
    "events": 1,
-   "ms": 5758
+   "ms": 6101
+  },
+  {
+   "id": "org-kihasa",
+   "name": "한국보건사회연구원 공지",
+   "ok": true,
+   "found": 3,
+   "events": 2,
+   "ms": 4847
   },
   {
    "id": "org-neca",
    "name": "한국보건의료연구원 공지",
    "ok": false,
    "error": "HTTP 400",
-   "ms": 8104
-  },
-  {
-   "id": "org-mfds",
-   "name": "식품의약품안전처 공지",
-   "ok": false,
-   "error": "fetch failed",
-   "ms": 25014
+   "ms": 7312
   },
   {
    "id": "org-nmc",
@@ -80,15 +91,7 @@
    "ok": true,
    "found": 11,
    "events": 0,
-   "ms": 2756
-  },
-  {
-   "id": "org-khidi",
-   "name": "한국보건산업진흥원 공지",
-   "ok": true,
-   "found": 20,
-   "events": 3,
-   "ms": 14406
+   "ms": 6044
   },
   {
    "id": "org-nibp",
@@ -96,14 +99,15 @@
    "ok": true,
    "found": 16,
    "events": 1,
-   "ms": 7998
+   "ms": 6841
   },
   {
-   "id": "org-kihasa",
-   "name": "한국보건사회연구원 공지",
-   "ok": false,
-   "error": "fetch failed",
-   "ms": 25283
+   "id": "org-khidi",
+   "name": "한국보건산업진흥원 공지",
+   "ok": true,
+   "found": 20,
+   "events": 3,
+   "ms": 13211
   },
   {
    "id": "org-ksepi",
@@ -111,7 +115,7 @@
    "ok": true,
    "found": 10,
    "events": 5,
-   "ms": 5566
+   "ms": 5174
   },
   {
    "id": "snu-health",
@@ -119,7 +123,7 @@
    "ok": true,
    "found": 30,
    "events": 20,
-   "ms": 68683
+   "ms": 57414
   },
   {
    "id": "org-prevmed",
@@ -127,7 +131,7 @@
    "ok": true,
    "found": 15,
    "events": 2,
-   "ms": 18238
+   "ms": 13868
   },
   {
    "id": "org-kshpa",
@@ -135,7 +139,7 @@
    "ok": true,
    "found": 9,
    "events": 3,
-   "ms": 12614
+   "ms": 11193
   },
   {
    "id": "org-kshep",
@@ -143,7 +147,7 @@
    "ok": true,
    "found": 1,
    "events": 1,
-   "ms": 4148
+   "ms": 3634
   },
   {
    "id": "org-kosqua",
@@ -151,7 +155,7 @@
    "ok": true,
    "found": 7,
    "events": 1,
-   "ms": 2059
+   "ms": 1717
   },
   {
    "id": "org-kspm",
@@ -159,7 +163,14 @@
    "ok": true,
    "found": 16,
    "events": 1,
-   "ms": 12469
+   "ms": 11490
+  },
+  {
+   "id": "org-koddi",
+   "name": "한국장애인개발원 공지",
+   "ok": false,
+   "error": "HTTP 404",
+   "ms": 5522
   },
   {
    "id": "org-cochrane",
@@ -167,14 +178,7 @@
    "ok": true,
    "found": 16,
    "events": 0,
-   "ms": 333
-  },
-  {
-   "id": "org-koddi",
-   "name": "한국장애인개발원 공지",
-   "ok": false,
-   "error": "HTTP 404",
-   "ms": 5811
+   "ms": 1034
   },
   {
    "id": "org-kams",
@@ -182,21 +186,22 @@
    "ok": true,
    "found": 132,
    "events": 132,
-   "ms": 29587
+   "ms": 22604
+  },
+  {
+   "id": "org-kdca-ilje",
+   "name": "질병관리청 일정",
+   "ok": true,
+   "found": 32,
+   "events": 0,
+   "ms": 4920
   },
   {
    "id": "org-kpha",
    "name": "대한보건협회 공지",
    "ok": false,
    "error": "fetch failed",
-   "ms": 25288
-  },
-  {
-   "id": "org-kdca-ilje",
-   "name": "질병관리청 일정",
-   "ok": false,
-   "error": "fetch failed",
-   "ms": 25180
+   "ms": 24689
   }
  ],
  "events": [
@@ -244,7 +249,7 @@
    "orgLabel": null,
    "title": "2026 K-건강기능식품, 세계를 향한 혁신적 도약 전략 콘퍼런스 발표자료",
    "start": "2026-08-25",
-   "end": "2026-08-25",
+   "end": "2026-08-26",
    "startTime": "13:00",
    "endTime": "17:00",
    "allDay": false,
@@ -651,10 +656,10 @@
    "url": "https://www.kihasa.re.kr/news/event/view?seq=76736",
    "source": "org-kihasa",
    "collectedAt": "2026-09-20",
-   "city": "서울",
    "lat": 37.566485,
    "lng": 126.979505,
-   "geo": "exact"
+   "geo": "exact",
+   "city": "서울"
   },
   {
    "id": "71837e8cfdb5c2e8",
@@ -1030,10 +1035,10 @@
    "orgLabel": null,
    "title": "의료기기의 사이버보안 업무설명회(20차) 발표자료",
    "start": "2026-09-17",
-   "end": "2026-09-17",
-   "startTime": null,
-   "endTime": null,
-   "allDay": true,
+   "end": "2026-09-18",
+   "startTime": "09:00",
+   "endTime": "18:00",
+   "allDay": false,
    "place": null,
    "url": "https://www.mfds.go.kr/brd/m_220/view.do?seq=32930&srchFr=&srchTo=&srchWord=&srchTp=&itm_seq_1=0&itm_seq_2=0&multi_itm_seq=0&company_cd=&company_nm=&page=1",
    "source": "org-mfds",
@@ -1164,10 +1169,10 @@
    "source": "org-kihasa",
    "collectedAt": "2026-09-20",
    "note": "포스터에 주최가 질병관리청·한국보건사회연구원 두 곳으로 적혀 있습니다.",
-   "city": "서울",
    "lat": 37.566679,
    "lng": 126.978291,
-   "geo": "approx"
+   "geo": "approx",
+   "city": "서울"
   },
   {
    "id": "992059f00f573279",
