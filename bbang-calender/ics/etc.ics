@@ -19,20 +19,20 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:0e538847abc7d1b3@bbangcal.epibrief.github.io
-DTSTAMP:20260920T234806Z
+DTSTAMP:20260921T161023Z
 DTSTART;TZID=Asia/Seoul:20260805T090000
 DTEND;TZID=Asia/Seoul:20260805T103000
 SUMMARY:[그 밖의 기관] '건강불평등을 과정으로 보기' 
  세미나
 DESCRIPTION:주최: 그 밖의 기관\n원문: https://health.snu.ac.kr
- /%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pageid=2&u
+ /%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pageid=3&u
  id=5653\n빵캘: https://epibrief.github.io/bbang-calender/
 URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
- %B4/?mod=document&pageid=2&uid=5653
+ %B4/?mod=document&pageid=3&uid=5653
 END:VEVENT
 BEGIN:VEVENT
 UID:43b28ce89be69716@bbangcal.epibrief.github.io
-DTSTAMP:20260920T234806Z
+DTSTAMP:20260921T161023Z
 DTSTART;VALUE=DATE:20260827
 DTEND;VALUE=DATE:20260828
 SUMMARY:[그 밖의 기관] 다양한 감염병 모델 기반 통합분
@@ -46,7 +46,7 @@ URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
 END:VEVENT
 BEGIN:VEVENT
 UID:39aebf171b731f77@bbangcal.epibrief.github.io
-DTSTAMP:20260920T234806Z
+DTSTAMP:20260921T161023Z
 DTSTART;VALUE=DATE:20260915
 DTEND;VALUE=DATE:20260916
 SUMMARY:[그 밖의 기관] 서울시 중장년 정책포럼 2026
@@ -58,7 +58,7 @@ URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
 END:VEVENT
 BEGIN:VEVENT
 UID:2b86b8382de4828c@bbangcal.epibrief.github.io
-DTSTAMP:20260920T234806Z
+DTSTAMP:20260921T161023Z
 DTSTART;TZID=Asia/Seoul:20260923T160000
 DTEND;TZID=Asia/Seoul:20260923T173000
 SUMMARY:[그 밖의 기관] 9월 세미나 <보건정책학의 이해: 
@@ -70,5 +70,20 @@ DESCRIPTION:주최: 한림의대 사회의학연구소\n원문: https:/
  ender/
 URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
  d_community_notice01&uid=910&gid=886
+END:VEVENT
+BEGIN:VEVENT
+UID:8acdee48e3a12e93@bbangcal.epibrief.github.io
+DTSTAMP:20260921T161023Z
+DTSTART;TZID=Asia/Seoul:20260929T140000
+DTEND;TZID=Asia/Seoul:20260929T150000
+SUMMARY:[그 밖의 기관] 2026 통일과나눔 세미나\, 시드니
+ 대학교 연구팀 「북한의 뇌물\, 사회적 관계와 안정성
+ 」
+LOCATION:재단법인 통일과나눔 회의실
+DESCRIPTION:주최: 그 밖의 기관\n원문: https://health.snu.ac.kr
+ /%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&uid=5822\n
+ 빵캘: https://epibrief.github.io/bbang-calender/
+URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
+ %B4/?mod=document&uid=5822
 END:VEVENT
 END:VCALENDAR

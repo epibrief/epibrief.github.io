@@ -1,50 +1,32 @@
 {
  "name": "빵캘",
- "updatedAt": "2026-09-20T23:48:06.455Z",
+ "updatedAt": "2026-09-21T16:10:20.397Z",
  "counts": {
-  "total": 164,
+  "total": 165,
   "upcoming": 113
  },
  "sources": [
-  {
-   "id": "org-kdca",
-   "name": "질병관리청 공지",
-   "ok": true,
-   "found": 52,
-   "events": 0,
-   "ms": 5821
-  },
-  {
-   "id": "org-mohw",
-   "name": "보건복지부 공지",
-   "ok": true,
-   "found": 19,
-   "events": 4,
-   "ms": 14354
-  },
   {
    "id": "nkis",
    "name": "NKIS 정책세미나안내",
    "ok": true,
    "found": 20,
    "events": 0,
-   "ms": 24464
+   "ms": 24025
   },
   {
-   "id": "org-mfds",
-   "name": "식품의약품안전처 공지",
-   "ok": true,
-   "found": 16,
-   "events": 8,
-   "ms": 23884
+   "id": "org-kdca",
+   "name": "질병관리청 공지",
+   "ok": false,
+   "error": "fetch failed",
+   "ms": 25388
   },
   {
-   "id": "org-ncc",
-   "name": "국립암센터 공지",
-   "ok": true,
-   "found": 4,
-   "events": 2,
-   "ms": 5383
+   "id": "org-mohw",
+   "name": "보건복지부 공지",
+   "ok": false,
+   "error": "fetch failed",
+   "ms": 25392
   },
   {
    "id": "org-khealth",
@@ -52,7 +34,7 @@
    "ok": true,
    "found": 11,
    "events": 0,
-   "ms": 17146
+   "ms": 15192
   },
   {
    "id": "org-nhis",
@@ -60,7 +42,21 @@
    "ok": true,
    "found": 24,
    "events": 0,
-   "ms": 3710
+   "ms": 6117
+  },
+  {
+   "id": "org-mfds",
+   "name": "식품의약품안전처 공지",
+   "ok": false,
+   "error": "fetch failed",
+   "ms": 25296
+  },
+  {
+   "id": "org-ncc",
+   "name": "국립암센터 공지",
+   "ok": false,
+   "error": "fetch failed",
+   "ms": 25426
   },
   {
    "id": "org-hira",
@@ -68,7 +64,7 @@
    "ok": true,
    "found": 12,
    "events": 1,
-   "ms": 6101
+   "ms": 6804
   },
   {
    "id": "org-kihasa",
@@ -76,14 +72,22 @@
    "ok": true,
    "found": 3,
    "events": 2,
-   "ms": 4847
+   "ms": 5233
   },
   {
    "id": "org-neca",
    "name": "한국보건의료연구원 공지",
    "ok": false,
    "error": "HTTP 400",
-   "ms": 7312
+   "ms": 7309
+  },
+  {
+   "id": "org-nibp",
+   "name": "국가생명윤리정책원 공지",
+   "ok": true,
+   "found": 16,
+   "events": 0,
+   "ms": 6208
   },
   {
    "id": "org-nmc",
@@ -91,31 +95,7 @@
    "ok": true,
    "found": 11,
    "events": 0,
-   "ms": 6044
-  },
-  {
-   "id": "org-nibp",
-   "name": "국가생명윤리정책원 공지",
-   "ok": true,
-   "found": 16,
-   "events": 1,
-   "ms": 6841
-  },
-  {
-   "id": "org-khidi",
-   "name": "한국보건산업진흥원 공지",
-   "ok": true,
-   "found": 20,
-   "events": 3,
-   "ms": 13211
-  },
-  {
-   "id": "org-ksepi",
-   "name": "한국역학회 공지",
-   "ok": true,
-   "found": 10,
-   "events": 5,
-   "ms": 5174
+   "ms": 7524
   },
   {
    "id": "snu-health",
@@ -123,15 +103,23 @@
    "ok": true,
    "found": 30,
    "events": 20,
-   "ms": 57414
+   "ms": 66953
   },
   {
-   "id": "org-prevmed",
-   "name": "대한예방의학회 공지",
+   "id": "org-khidi",
+   "name": "한국보건산업진흥원 공지",
    "ok": true,
-   "found": 15,
-   "events": 2,
-   "ms": 13868
+   "found": 20,
+   "events": 3,
+   "ms": 14019
+  },
+  {
+   "id": "org-ksepi",
+   "name": "한국역학회 공지",
+   "ok": true,
+   "found": 10,
+   "events": 5,
+   "ms": 5803
   },
   {
    "id": "org-kshpa",
@@ -139,7 +127,15 @@
    "ok": true,
    "found": 9,
    "events": 3,
-   "ms": 11193
+   "ms": 10214
+  },
+  {
+   "id": "org-prevmed",
+   "name": "대한예방의학회 공지",
+   "ok": true,
+   "found": 15,
+   "events": 2,
+   "ms": 17040
   },
   {
    "id": "org-kshep",
@@ -147,15 +143,7 @@
    "ok": true,
    "found": 1,
    "events": 1,
-   "ms": 3634
-  },
-  {
-   "id": "org-kosqua",
-   "name": "한국의료질향상학회 공지",
-   "ok": true,
-   "found": 7,
-   "events": 1,
-   "ms": 1717
+   "ms": 3840
   },
   {
    "id": "org-kspm",
@@ -163,14 +151,15 @@
    "ok": true,
    "found": 16,
    "events": 1,
-   "ms": 11490
+   "ms": 11772
   },
   {
-   "id": "org-koddi",
-   "name": "한국장애인개발원 공지",
-   "ok": false,
-   "error": "HTTP 404",
-   "ms": 5522
+   "id": "org-kosqua",
+   "name": "한국의료질향상학회 공지",
+   "ok": true,
+   "found": 7,
+   "events": 1,
+   "ms": 2045
   },
   {
    "id": "org-cochrane",
@@ -178,7 +167,14 @@
    "ok": true,
    "found": 16,
    "events": 0,
-   "ms": 1034
+   "ms": 734
+  },
+  {
+   "id": "org-koddi",
+   "name": "한국장애인개발원 공지",
+   "ok": false,
+   "error": "HTTP 404",
+   "ms": 5697
   },
   {
    "id": "org-kams",
@@ -186,22 +182,21 @@
    "ok": true,
    "found": 132,
    "events": 132,
-   "ms": 22604
-  },
-  {
-   "id": "org-kdca-ilje",
-   "name": "질병관리청 일정",
-   "ok": true,
-   "found": 32,
-   "events": 0,
-   "ms": 4920
+   "ms": 25252
   },
   {
    "id": "org-kpha",
    "name": "대한보건협회 공지",
    "ok": false,
    "error": "fetch failed",
-   "ms": 24689
+   "ms": 25345
+  },
+  {
+   "id": "org-kdca-ilje",
+   "name": "질병관리청 일정",
+   "ok": false,
+   "error": "fetch failed",
+   "ms": 24995
   }
  ],
  "events": [
@@ -216,9 +211,9 @@
    "endTime": "10:30",
    "allDay": false,
    "place": null,
-   "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pageid=2&uid=5653",
+   "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pageid=3&uid=5653",
    "source": "snu-health",
-   "collectedAt": "2026-09-20"
+   "collectedAt": "2026-09-21"
   },
   {
    "id": "c5f91c89a8bf52a8",
@@ -235,9 +230,9 @@
    "endTime": "17:00",
    "allDay": false,
    "place": "대한상공회의소(서울) 의원회의실",
-   "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pageid=2&uid=5668",
+   "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pageid=3&uid=5668",
    "source": "snu-health",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.560671,
    "lng": 126.973731,
    "geo": "exact",
@@ -271,7 +266,7 @@
    "place": "서울대학교 보건대학원 221동 110호",
    "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pageid=2&uid=5722",
    "source": "snu-health",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.458115,
    "lng": 126.952161,
    "geo": "exact",
@@ -290,7 +285,7 @@
    "place": "천안 소노벨",
    "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pageid=2&uid=5707",
    "source": "snu-health",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 36.81028,
    "lng": 127.14684,
    "geo": "approx",
@@ -309,7 +304,7 @@
    "place": "온라인(zoom)",
    "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pageid=2&uid=5727",
    "source": "snu-health",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "online": true
   },
   {
@@ -325,7 +320,7 @@
    "place": null,
    "url": "https://www.hira.or.kr/bbsDummy.do?pgmid=HIRAA020002000100&brdScnBltNo=4&brdBltNo=12254&pageIndex=1&pageIndex2=1",
    "source": "org-hira",
-   "collectedAt": "2026-09-20"
+   "collectedAt": "2026-09-21"
   },
   {
    "id": "44bbaac95dbb924f",
@@ -340,7 +335,7 @@
    "place": null,
    "url": "https://www.kosqua.net/index.php?page=view&idx=4312&hCode=BOARD&bo_idx=1",
    "source": "org-kosqua",
-   "collectedAt": "2026-09-20"
+   "collectedAt": "2026-09-21"
   },
   {
    "id": "802f132236fa1cb3",
@@ -355,7 +350,7 @@
    "place": "그랜드 인터컨티넨탈 파르나스 서울",
    "url": "http://www.ksmo.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.55288,
    "lng": 126.936337,
    "geo": "exact",
@@ -378,7 +373,7 @@
    "place": "부산 웨스틴조선 2층 오키드홀",
    "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pageid=2&uid=5723",
    "source": "snu-health",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 35.179953,
    "lng": 129.075236,
    "geo": "approx",
@@ -397,7 +392,7 @@
    "place": "콘래드 서울",
    "url": "http://www.kosso.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.525389,
    "lng": 126.926633,
    "geo": "exact",
@@ -416,7 +411,7 @@
    "place": null,
    "url": "https://www.prevmed.or.kr/board_community_notice01/view.php?tn=board_community_notice01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject_s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=910&gid=886&cpage=1&spage=1",
    "source": "org-prevmed",
-   "collectedAt": "2026-09-20"
+   "collectedAt": "2026-09-21"
   },
   {
    "id": "be7226deb335717a",
@@ -431,7 +426,7 @@
    "place": "워커힐 서울",
    "url": "http://www.colon.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.554362,
    "lng": 127.111221,
    "geo": "exact",
@@ -450,7 +445,7 @@
    "place": "롯데호텔 서울",
    "url": "http://www.gie.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.565228,
    "lng": 126.980628,
    "geo": "exact",
@@ -469,7 +464,7 @@
    "place": "대전 컨벤션센터",
    "url": "http://www.ksbns.org/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 36.332246,
    "lng": 127.434648,
    "geo": "approx",
@@ -488,7 +483,7 @@
    "place": "부산 BPEX",
    "url": "http://www.ksmp.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 35.179953,
    "lng": 129.075236,
    "geo": "approx",
@@ -507,7 +502,7 @@
    "place": null,
    "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&uid=5777",
    "source": "snu-health",
-   "collectedAt": "2026-09-20"
+   "collectedAt": "2026-09-21"
   },
   {
    "id": "e5c78893aa865281",
@@ -522,7 +517,7 @@
    "place": "킨텍스, 일산",
    "url": "http://www.radiology.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.665214,
    "lng": 126.748326,
    "geo": "exact",
@@ -541,7 +536,7 @@
    "place": "부산백스코",
    "url": "http://www.koreansso.org/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 35.179953,
    "lng": 129.075236,
    "geo": "approx",
@@ -560,7 +555,7 @@
    "place": "잠실롯데호텔",
    "url": "http://www.lungca.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20"
+   "collectedAt": "2026-09-21"
   },
   {
    "id": "083337f4d0032f3b",
@@ -575,7 +570,7 @@
    "place": "그랜드 인터컨티넨탈 서울 파르나스",
    "url": "http://kshf.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.55288,
    "lng": 126.936337,
    "geo": "exact",
@@ -594,7 +589,7 @@
    "place": "롯데호텔서울(소공동)",
    "url": "http://www.ktcvs.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.565228,
    "lng": 126.980628,
    "geo": "exact",
@@ -613,7 +608,7 @@
    "place": "콘래드호텔 서울",
    "url": "http://www.lipid.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.566679,
    "lng": 126.978291,
    "geo": "approx",
@@ -632,7 +627,7 @@
    "place": "송도컨벤시아",
    "url": "http://www.theprostate.org/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.388776,
    "lng": 126.646738,
    "geo": "exact",
@@ -655,7 +650,7 @@
    "place": "프레지던트호텔 슈벨트홀",
    "url": "https://www.kihasa.re.kr/news/event/view?seq=76736",
    "source": "org-kihasa",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.566485,
    "lng": 126.979505,
    "geo": "exact",
@@ -674,7 +669,7 @@
    "place": "제주국제컨벤션센터",
    "url": "http://www.cytopathol.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 33.243475,
    "lng": 126.424896,
    "geo": "exact",
@@ -693,7 +688,7 @@
    "place": "백범김구기념관 컨벤션홀, 대회의실",
    "url": "http://www.sleep.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.544062,
    "lng": 126.959215,
    "geo": "exact",
@@ -712,7 +707,7 @@
    "place": "은평성모병원 대강당",
    "url": "http://www.ksvs.org/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.633393,
    "lng": 126.917558,
    "geo": "exact",
@@ -731,7 +726,7 @@
    "place": "백범김구기념관",
    "url": "http://www.kcnp.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.544062,
    "lng": 126.959215,
    "geo": "exact",
@@ -750,7 +745,7 @@
    "place": "웨스틴조선부산",
    "url": "http://www.kpba.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 35.179953,
    "lng": 129.075236,
    "geo": "approx",
@@ -769,7 +764,7 @@
    "place": "광주, 김대중컨벤션센터",
    "url": "http://www.ksn.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 35.143198,
    "lng": 126.841278,
    "geo": "exact",
@@ -788,7 +783,7 @@
    "place": "제주국제컨벤션센터",
    "url": "http://www.cytopathol.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 33.243475,
    "lng": 126.424896,
    "geo": "exact",
@@ -807,7 +802,7 @@
    "place": "코엑스 서울",
    "url": "http://www.lungca.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.511873,
    "lng": 127.059111,
    "geo": "exact",
@@ -826,7 +821,7 @@
    "place": "부산 벡스코",
    "url": "https://www.kahbps.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 35.168889,
    "lng": 129.138751,
    "geo": "exact",
@@ -845,7 +840,7 @@
    "place": null,
    "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pageid=2&uid=5728",
    "source": "snu-health",
-   "collectedAt": "2026-09-20"
+   "collectedAt": "2026-09-21"
   },
   {
    "id": "594de9f192adb995",
@@ -864,7 +859,7 @@
    "place": "서울대학교병원 암연구소 이건희홀",
    "url": "https://www.khidi.or.kr/board/view?linkId=48949861&menuId=MENU00099",
    "source": "org-khidi",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.579118,
    "lng": 126.998733,
    "geo": "exact",
@@ -883,7 +878,7 @@
    "place": "보건대학원 221동 113호",
    "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&uid=5783",
    "source": "snu-health",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.465022,
    "lng": 126.9547,
    "geo": "exact",
@@ -902,7 +897,7 @@
    "place": "부산 롯데호텔",
    "url": "http://www.urology.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 35.179953,
    "lng": 129.075236,
    "geo": "approx",
@@ -921,7 +916,7 @@
    "place": "부산 롯데호텔",
    "url": "https://www.kams.or.kr/bbs/index.php?code=ws&start_y=2026&start_m=09&page=2&number=7970&mode=view",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 35.179953,
    "lng": 129.075236,
    "geo": "approx",
@@ -940,7 +935,7 @@
    "place": "롯데호텔 서울",
    "url": "http://www.kgca-i.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.565228,
    "lng": 126.980628,
    "geo": "exact",
@@ -957,9 +952,9 @@
    "endTime": "15:50",
    "allDay": false,
    "place": null,
-   "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&uid=5753",
+   "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pageid=2&uid=5753",
    "source": "snu-health",
-   "collectedAt": "2026-09-20"
+   "collectedAt": "2026-09-21"
   },
   {
    "id": "bc573858125cf556",
@@ -974,7 +969,7 @@
    "place": null,
    "url": "https://ksepi.org/web/lay1/bbs/S1T298C326/A/10/view.do?article_seq=2977&cpage=1&rows=10&condition=&keyword=",
    "source": "org-ksepi",
-   "collectedAt": "2026-09-20"
+   "collectedAt": "2026-09-21"
   },
   {
    "id": "62725c281fe5ecfd",
@@ -989,7 +984,7 @@
    "place": "ST Center",
    "url": "http://www.lab-qa.org/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20"
+   "collectedAt": "2026-09-21"
   },
   {
    "id": "54a680156f01df27",
@@ -1004,7 +999,7 @@
    "place": "부산 벡스코",
    "url": "http://www.bmt.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 35.168889,
    "lng": 129.138751,
    "geo": "exact",
@@ -1023,7 +1018,7 @@
    "place": "용산 드래곤시티",
    "url": "http://neurospine.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 35.848997,
    "lng": 128.528889,
    "geo": "exact",
@@ -1057,7 +1052,7 @@
    "place": null,
    "url": "https://www.khidi.or.kr/board/view?linkId=48949928&menuId=MENU01108",
    "source": "org-khidi",
-   "collectedAt": "2026-09-20"
+   "collectedAt": "2026-09-21"
   },
   {
    "id": "5bc672f76bff1996",
@@ -1070,9 +1065,9 @@
    "endTime": "17:20",
    "allDay": false,
    "place": "LW컨벤션센터 L홀 (서울 중구 청파로 464, 3층)",
-   "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&uid=5733",
+   "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pageid=2&uid=5733",
    "source": "snu-health",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.560819,
    "lng": 126.968226,
    "geo": "exact",
@@ -1091,7 +1086,7 @@
    "place": "가톨릭대학교 옴니버스파크 컨벤션홀",
    "url": "http://www.korvac.org/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.193663,
    "lng": 126.93913,
    "geo": "exact",
@@ -1110,7 +1105,7 @@
    "place": null,
    "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pageid=2&uid=5715",
    "source": "snu-health",
-   "collectedAt": "2026-09-20"
+   "collectedAt": "2026-09-21"
   },
   {
    "id": "3ae13ac8d2dedf1e",
@@ -1125,7 +1120,7 @@
    "place": "서울백범김구기념관",
    "url": "http://www.theksad.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.566679,
    "lng": 126.978291,
    "geo": "approx",
@@ -1144,7 +1139,7 @@
    "place": "삼성서울병원 암병원 지하1층 대강당 및 세미나실",
    "url": "http://www.kates.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.488452,
    "lng": 127.085341,
    "geo": "exact",
@@ -1167,7 +1162,7 @@
    "place": "코트야드 메리어트 서울 명동",
    "url": "https://www.kihasa.re.kr/news/event/view?seq=76820",
    "source": "org-kihasa",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "note": "포스터에 주최가 질병관리청·한국보건사회연구원 두 곳으로 적혀 있습니다.",
    "lat": 37.566679,
    "lng": 126.978291,
@@ -1187,7 +1182,7 @@
    "place": null,
    "url": "https://www.khidi.or.kr/board/view?linkId=48950195&menuId=MENU00099",
    "source": "org-khidi",
-   "collectedAt": "2026-09-20"
+   "collectedAt": "2026-09-21"
   },
   {
    "org": "etc",
@@ -1206,6 +1201,25 @@
    "online": true
   },
   {
+   "id": "8acdee48e3a12e93",
+   "org": "etc",
+   "orgLabel": null,
+   "title": "2026 통일과나눔 세미나, 시드니대학교 연구팀 「북한의 뇌물, 사회적 관계와 안정성」",
+   "start": "2026-09-29",
+   "end": "2026-09-29",
+   "startTime": "14:00",
+   "endTime": "15:00",
+   "allDay": false,
+   "place": "재단법인 통일과나눔 회의실",
+   "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&uid=5822",
+   "source": "snu-health",
+   "collectedAt": "2026-09-21",
+   "lat": 35.797841,
+   "lng": 127.134247,
+   "geo": "exact",
+   "city": "전주"
+  },
+  {
    "id": "77927bb0829c4f6a",
    "org": "snuph",
    "orgLabel": null,
@@ -1218,7 +1232,7 @@
    "place": "보건대학원 221동 113호",
    "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&uid=5808",
    "source": "snu-health",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.465022,
    "lng": 126.9547,
    "geo": "exact",
@@ -1237,7 +1251,7 @@
    "place": "대한상공회의소 중회의실A (서울특별시 중구 세종대로 39)",
    "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&uid=5816",
    "source": "snu-health",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.560671,
    "lng": 126.973764,
    "geo": "exact",
@@ -1256,7 +1270,7 @@
    "place": "마곡 코엑스",
    "url": "http://www.koa.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.565908,
    "lng": 126.825665,
    "geo": "exact",
@@ -1275,7 +1289,7 @@
    "place": "부산 벡스코",
    "url": "http://www.konesonline.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 35.168889,
    "lng": 129.138751,
    "geo": "exact",
@@ -1294,7 +1308,7 @@
    "place": "창원컨벤션센터",
    "url": "http://www.korl.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 35.2392,
    "lng": 128.657476,
    "geo": "exact",
@@ -1313,7 +1327,7 @@
    "place": "서울 COEX",
    "url": "http://www.urology.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.511873,
    "lng": 127.059111,
    "geo": "exact",
@@ -1332,7 +1346,7 @@
    "place": "서울, 코엑스 마곡",
    "url": "http://www.diabetes.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.565908,
    "lng": 126.825665,
    "geo": "exact",
@@ -1351,7 +1365,7 @@
    "place": "그랜드 인터컨티넨탈 서울 파르나스",
    "url": "http://www.neurosurgery.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.55288,
    "lng": 126.936337,
    "geo": "exact",
@@ -1370,7 +1384,7 @@
    "place": "대구, 수성호텔",
    "url": "http://www.anatomy.re.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 35.8713,
    "lng": 128.6018,
    "geo": "exact",
@@ -1389,7 +1403,7 @@
    "place": "서울 워커힐 호텔",
    "url": "http://www.circulation.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.555775,
    "lng": 127.111514,
    "geo": "exact",
@@ -1408,7 +1422,7 @@
    "place": "세종대학교 광개토관 컨벤션홀",
    "url": "http://www.kscc.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.550848,
    "lng": 127.074607,
    "geo": "exact",
@@ -1427,7 +1441,7 @@
    "place": "대구 인터불고호텔",
    "url": "http://www.knpa.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 35.8713,
    "lng": 128.6018,
    "geo": "approx",
@@ -1446,7 +1460,7 @@
    "place": "스위스그랜드호텔",
    "url": "http://www.hpylori.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20"
+   "collectedAt": "2026-09-21"
   },
   {
    "id": "cb9398dc6a7c49e9",
@@ -1461,7 +1475,7 @@
    "place": "킨텍스",
    "url": "http://www.kosro.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.665214,
    "lng": 126.748326,
    "geo": "exact",
@@ -1480,7 +1494,7 @@
    "place": "웨스틴 서울 파르나스 호텔",
    "url": "http://www.derma.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.512825,
    "lng": 127.057265,
    "geo": "exact",
@@ -1499,7 +1513,7 @@
    "place": "경주화백컨벤션센터",
    "url": "http://www.prevmed.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 35.838482,
    "lng": 129.287637,
    "geo": "exact",
@@ -1518,7 +1532,7 @@
    "place": "부산 벡스코",
    "url": "http://www.k-hrs.org/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 35.168889,
    "lng": 129.138751,
    "geo": "exact",
@@ -1537,7 +1551,7 @@
    "place": "마곡 이대병원",
    "url": "http://www.ksmkorea.org/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.560249,
    "lng": 126.824746,
    "geo": "exact",
@@ -1556,7 +1570,7 @@
    "place": "그랜드 워커힐 서울",
    "url": "http://www.kslm.org/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.555327,
    "lng": 127.110153,
    "geo": "exact",
@@ -1575,7 +1589,7 @@
    "place": "코엑스 서울",
    "url": "http://www.stroke.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.511873,
    "lng": 127.059111,
    "geo": "exact",
@@ -1594,7 +1608,7 @@
    "place": "롯데호텔월드",
    "url": "http://www.pediatrics.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.511394,
    "lng": 127.099833,
    "geo": "exact",
@@ -1613,7 +1627,7 @@
    "place": "부산항국제전시컨벤션센터",
    "url": "http://www.ksrhino.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 35.179953,
    "lng": 129.075236,
    "geo": "approx",
@@ -1632,7 +1646,7 @@
    "place": "부산항국제전시컨벤션센터",
    "url": "http://www.otologicalsociety.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 35.179953,
    "lng": 129.075236,
    "geo": "approx",
@@ -1651,7 +1665,7 @@
    "place": "그랜드 하얏트 인천",
    "url": "http://www.karm.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.440625,
    "lng": 126.457494,
    "geo": "exact",
@@ -1670,7 +1684,7 @@
    "place": "여수엑스포컨벤션센타",
    "url": "http://www.kafm.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 34.753034,
    "lng": 127.748804,
    "geo": "approx",
@@ -1689,7 +1703,7 @@
    "place": "서울성모병원 옴니버스파크",
    "url": "http://www.kcsoffice.org/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.500444,
    "lng": 127.005521,
    "geo": "exact",
@@ -1708,7 +1722,7 @@
    "place": "부산 롯데",
    "url": "http://www.sgo.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 35.167615,
    "lng": 129.130999,
    "geo": "exact",
@@ -1727,7 +1741,7 @@
    "place": "세종대학교 컨벤션센터",
    "url": "http://www.microsurgery.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.550848,
    "lng": 127.074607,
    "geo": "exact",
@@ -1746,7 +1760,7 @@
    "place": "롯데호텔 월드",
    "url": "http://www.kspendo.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.565228,
    "lng": 126.980628,
    "geo": "exact",
@@ -1765,7 +1779,7 @@
    "place": "잠실롯데호텔",
    "url": "http://www.cns.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20"
+   "collectedAt": "2026-09-21"
   },
   {
    "id": "0a602432e5db8355",
@@ -1780,7 +1794,7 @@
    "place": "청담 리베라호텔",
    "url": "http://www.kspho.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.523789,
    "lng": 127.054637,
    "geo": "exact",
@@ -1799,7 +1813,7 @@
    "place": "서울 스위스그랜드호텔",
    "url": "http://www.kaim.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.566679,
    "lng": 126.978291,
    "geo": "approx",
@@ -1818,7 +1832,7 @@
    "place": "대구인터불고호텔",
    "url": "http://www.kmds.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 35.8713,
    "lng": 128.6018,
    "geo": "approx",
@@ -1837,7 +1851,7 @@
    "place": "롯데호텔월드",
    "url": "http://www.lungkorea.org/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.511394,
    "lng": 127.099833,
    "geo": "exact",
@@ -1856,7 +1870,7 @@
    "place": "코엑스 서울",
    "url": "http://www.rheum.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.511873,
    "lng": 127.059111,
    "geo": "exact",
@@ -1875,7 +1889,7 @@
    "place": "창원컨벤션센터",
    "url": "http://www.endocrinology.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 35.2392,
    "lng": 128.657476,
    "geo": "exact",
@@ -1894,7 +1908,7 @@
    "place": "국립재활원 나래관 3층 중강당(서울시 강북구 소재)",
    "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&uid=5807",
    "source": "snu-health",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.638567,
    "lng": 127.010551,
    "geo": "exact",
@@ -1913,7 +1927,7 @@
    "place": "콘래드 서울",
    "url": "http://www.hematology.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.525389,
    "lng": 126.926633,
    "geo": "exact",
@@ -1936,7 +1950,7 @@
    "place": "한국방송통신대학교 열린관 대강당 및 414호",
    "url": "https://khep.or.kr/board/notice/article/284380",
    "source": "org-kshep",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.579661,
    "lng": 127.003746,
    "geo": "exact",
@@ -1955,7 +1969,7 @@
    "place": "SKY31",
    "url": "http://www.ksgendo.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20"
+   "collectedAt": "2026-09-21"
   },
   {
    "id": "0308a25d7bd4f09a",
@@ -1970,7 +1984,7 @@
    "place": "그랜드워커힐 서울호텔",
    "url": "http://www.ophthalmology.org/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.554933,
    "lng": 127.111171,
    "geo": "exact",
@@ -1989,7 +2003,7 @@
    "place": "백범김구기념관",
    "url": "http://www.biolpsychiatry.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.544062,
    "lng": 126.959215,
    "geo": "exact",
@@ -2008,7 +2022,7 @@
    "place": "실시간 온라인 강의(zoom)",
    "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&uid=5802",
    "source": "snu-health",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "online": true
   },
   {
@@ -2024,7 +2038,7 @@
    "place": "차바이오 컴플렉스",
    "url": "http://www.handsurgery.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20"
+   "collectedAt": "2026-09-21"
   },
   {
    "id": "9fbccb5f1fb43221",
@@ -2039,7 +2053,7 @@
    "place": "후기학술대회장 로비",
    "url": "https://www.kshpa.org/bbs/notice/1535",
    "source": "org-kshpa",
-   "collectedAt": "2026-09-20"
+   "collectedAt": "2026-09-21"
   },
   {
    "id": "99a0858200cc1aea",
@@ -2054,7 +2068,7 @@
    "place": "백범김구기념관",
    "url": "http://www.kscp.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.544062,
    "lng": 126.959215,
    "geo": "exact",
@@ -2073,7 +2087,7 @@
    "place": "대구 엑스코",
    "url": "http://www.kosombe.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 35.906863,
    "lng": 128.613279,
    "geo": "exact",
@@ -2092,7 +2106,7 @@
    "place": "경주화백컨벤션센터",
    "url": "http://www.ktcvs.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 35.838482,
    "lng": 129.287637,
    "geo": "exact",
@@ -2111,7 +2125,7 @@
    "place": "서울드래곤시티",
    "url": "http://www.otologicalsociety.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.531941,
    "lng": 126.962408,
    "geo": "exact",
@@ -2130,7 +2144,7 @@
    "place": "롯데호텔 서울",
    "url": "http://www.pathology.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.565228,
    "lng": 126.980628,
    "geo": "exact",
@@ -2149,7 +2163,7 @@
    "place": "인천, 송도컨벤시아",
    "url": "http://www.koreaphysiology.org/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.38815,
    "lng": 126.644726,
    "geo": "exact",
@@ -2168,7 +2182,7 @@
    "place": "속초 델피노",
    "url": "https://www.kshpa.org/calendar/list/14",
    "source": "org-kshpa",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 38.208678,
    "lng": 128.583518,
    "geo": "approx",
@@ -2187,7 +2201,7 @@
    "place": "서울 스위스그랜드호텔",
    "url": "http://www.surgery.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.566679,
    "lng": 126.978291,
    "geo": "approx",
@@ -2206,7 +2220,7 @@
    "place": "서울, 콘래드 호텔",
    "url": "http://www.koreanhypertension.org/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.525389,
    "lng": 126.926633,
    "geo": "exact",
@@ -2225,7 +2239,7 @@
    "place": "세종대학교 컨벤션센터",
    "url": "http://www.ksnm.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.550848,
    "lng": 127.074607,
    "geo": "exact",
@@ -2244,7 +2258,7 @@
    "place": "워커힐호텔 비스타홀",
    "url": "http://www.neonatology.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.742243,
    "lng": 127.052582,
    "geo": "exact",
@@ -2263,7 +2277,7 @@
    "place": "워커힐호텔 비스타홀",
    "url": "http://www.neonatology.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.742243,
    "lng": 127.052582,
    "geo": "exact",
@@ -2282,7 +2296,7 @@
    "place": "코엑스마곡 컨벤션센터",
    "url": "http://www.kapard.org/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20"
+   "collectedAt": "2026-09-21"
   },
   {
    "id": "b6a7d9c50d8d547b",
@@ -2297,7 +2311,7 @@
    "place": "미정",
    "url": "http://www.kdys.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.561045,
    "lng": 127.095801,
    "geo": "exact",
@@ -2316,7 +2330,7 @@
    "place": "을지대병원(대전)강당",
    "url": "http://www.kses.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.748321,
    "lng": 127.044363,
    "geo": "exact",
@@ -2335,7 +2349,7 @@
    "place": "그랜드 인터컨티넨탈 서울 파르나스",
    "url": "http://www.plasticsurgery.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.55288,
    "lng": 126.936337,
    "geo": "exact",
@@ -2354,7 +2368,7 @@
    "place": "그랜드인터컨티넨탈서울파르나스",
    "url": "http://www.kcpca.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.566679,
    "lng": 126.978291,
    "geo": "approx",
@@ -2373,7 +2387,7 @@
    "place": "경주 화백컨벤션센터",
    "url": "http://www.cancer.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 35.798269,
    "lng": 129.138963,
    "geo": "approx",
@@ -2392,7 +2406,7 @@
    "place": "용산드래곤시티호텔",
    "url": "http://www.ktcvs.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20"
+   "collectedAt": "2026-09-21"
   },
   {
    "id": "e819e3ef4891e937",
@@ -2407,7 +2421,7 @@
    "place": "부산 벡스코",
    "url": "http://www.mykst.org/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 35.168889,
    "lng": 129.138751,
    "geo": "exact",
@@ -2426,7 +2440,7 @@
    "place": "송도컨벤시아",
    "url": "http://www.ksimm.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.388776,
    "lng": 126.646738,
    "geo": "exact",
@@ -2445,7 +2459,7 @@
    "place": "광주 김대중컨벤션센터",
    "url": "http://www.kosphar.org/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 35.143198,
    "lng": 126.841278,
    "geo": "exact",
@@ -2464,7 +2478,7 @@
    "place": "코엑스 마곡",
    "url": "http://www.ksog.org/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.565908,
    "lng": 126.825665,
    "geo": "exact",
@@ -2483,7 +2497,7 @@
    "place": "라한셀렉트 경주",
    "url": "http://www.allergy.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 35.850437,
    "lng": 129.27675,
    "geo": "exact",
@@ -2502,7 +2516,7 @@
    "place": "경주 코모도호텔",
    "url": "http://www.ksoem.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 35.798269,
    "lng": 129.138963,
    "geo": "approx",
@@ -2521,7 +2535,7 @@
    "place": "세종대학교 광개토관",
    "url": "http://www.ksbmr.org/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.550848,
    "lng": 127.074607,
    "geo": "exact",
@@ -2540,7 +2554,7 @@
    "place": "부산 롯데호텔",
    "url": "http://www.spine.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 35.179953,
    "lng": 129.075236,
    "geo": "approx",
@@ -2559,7 +2573,7 @@
    "place": "가톨릭대학교 옴니버스파크",
    "url": "http://neurocriticalcare.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.193663,
    "lng": 126.93913,
    "geo": "exact",
@@ -2578,7 +2592,7 @@
    "place": "서울 강남, 삼정호텔",
    "url": "http://www.headache.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.506721,
    "lng": 127.031665,
    "geo": "exact",
@@ -2597,7 +2611,7 @@
    "place": "코엑스컨벤션 센터",
    "url": "http://www.kmsts.org/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20"
+   "collectedAt": "2026-09-21"
   },
   {
    "id": "96267c02274dfb69",
@@ -2612,7 +2626,7 @@
    "place": "드래곤시티",
    "url": "http://www.kagp.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20"
+   "collectedAt": "2026-09-21"
   },
   {
    "id": "24da15ec01cf0bb1",
@@ -2627,7 +2641,7 @@
    "place": "장소미정",
    "url": "http://www.kasl.org/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20"
+   "collectedAt": "2026-09-21"
   },
   {
    "id": "4aa786640883b5a7",
@@ -2642,7 +2656,7 @@
    "place": "그랜드워커힐 서울",
    "url": "http://www.gut.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.554933,
    "lng": 127.111171,
    "geo": "exact",
@@ -2661,7 +2675,7 @@
    "place": "코엑스 마곡",
    "url": "http://www.painfree.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.565908,
    "lng": 126.825665,
    "geo": "exact",
@@ -2680,7 +2694,7 @@
    "place": "롯데호텔 서울",
    "url": "http://www.hematology.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.565228,
    "lng": 126.980628,
    "geo": "exact",
@@ -2699,7 +2713,7 @@
    "place": "고려대학교 유광사홀",
    "url": "http://www.fas.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.588038,
    "lng": 127.032393,
    "geo": "exact",
@@ -2718,7 +2732,7 @@
    "place": "국립항공박물관",
    "url": "http://www.asmak.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.556315,
    "lng": 126.807617,
    "geo": "exact",
@@ -2737,7 +2751,7 @@
    "place": "서울성모병원",
    "url": "http://www.skullbase.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.500444,
    "lng": 127.005521,
    "geo": "exact",
@@ -2756,7 +2770,7 @@
    "place": "서울아산병원 연구원 지하 대강당",
    "url": "http://www.perinatol.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.526304,
    "lng": 127.109601,
    "geo": "exact",
@@ -2775,7 +2789,7 @@
    "place": "스위스그랜드호텔",
    "url": "http://www.dementia.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20"
+   "collectedAt": "2026-09-21"
   },
   {
    "id": "98f83664f27eaa1d",
@@ -2790,7 +2804,7 @@
    "place": "송도컨벤시아",
    "url": "http://www.kosmi.org/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.388776,
    "lng": 126.646738,
    "geo": "exact",
@@ -2809,7 +2823,7 @@
    "place": "세종대학교 컨벤션센터 광개토관",
    "url": "http://www.transfusion.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.550848,
    "lng": 127.074607,
    "geo": "exact",
@@ -2828,7 +2842,7 @@
    "place": "수원컨벤션센터",
    "url": "http://www.kshno.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.285664,
    "lng": 127.059443,
    "geo": "exact",
@@ -2847,7 +2861,7 @@
    "place": "제주 부영호텔",
    "url": "http://www.kscpt.org/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 33.488774,
    "lng": 126.498708,
    "geo": "approx"
@@ -2865,7 +2879,7 @@
    "place": "서울 소공동 롯데호텔",
    "url": "http://www.neuro.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.565228,
    "lng": 126.980628,
    "geo": "exact",
@@ -2884,7 +2898,7 @@
    "place": "고려대학교 의과대학",
    "url": "http://www.legalmedicine.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.588287,
    "lng": 127.027469,
    "geo": "exact",
@@ -2903,7 +2917,7 @@
    "place": "백범김구기념관",
    "url": "http://www.ksmg.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.544062,
    "lng": 126.959215,
    "geo": "exact",
@@ -2922,7 +2936,7 @@
    "place": "라한전주",
    "url": "http://eksid.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 35.850054,
    "lng": 127.162365,
    "geo": "approx",
@@ -2941,7 +2955,7 @@
    "place": "엘리에나호텔",
    "url": "https://www.kams.or.kr/bbs/www.ksgd.org",
    "source": "org-kams",
-   "collectedAt": "2026-09-20"
+   "collectedAt": "2026-09-21"
   },
   {
    "id": "fe10bf5a178e8d1b",
@@ -2956,7 +2970,7 @@
    "place": "옴니버스파크",
    "url": "http://www.kspid.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20"
+   "collectedAt": "2026-09-21"
   },
   {
    "id": "733f392675e6120f",
@@ -2971,7 +2985,7 @@
    "place": "워커힐 그랜드홀",
    "url": "https://www.kams.or.kr/bbs/www.koreascp.or.kr",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.554362,
    "lng": 127.111221,
    "geo": "exact",
@@ -2990,7 +3004,7 @@
    "place": "청주오스코컨벤션센터",
    "url": "http://www.thrombo.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 36.647113,
    "lng": 127.392361,
    "geo": "approx",
@@ -3009,7 +3023,7 @@
    "place": "순천향대 천안병원",
    "url": "http://www.konesonline.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 36.769788,
    "lng": 126.951823,
    "geo": "exact",
@@ -3028,7 +3042,7 @@
    "place": "서울대 치과병원 8층 한화홀",
    "url": "http://www.taopsychotherapy.org/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.458115,
    "lng": 126.952161,
    "geo": "exact",
@@ -3047,7 +3061,7 @@
    "place": "서울대학교 의과대학 융합관",
    "url": "http://www.geriatrics.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.458115,
    "lng": 126.952161,
    "geo": "exact",
@@ -3066,7 +3080,7 @@
    "place": "용산 드래곤시티 한라홀 및 신라홀",
    "url": "http://www.ksfs.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 35.848997,
    "lng": 128.528889,
    "geo": "exact",
@@ -3085,7 +3099,7 @@
    "place": "미정",
    "url": "http://www.ksecho.org/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.561045,
    "lng": 127.095801,
    "geo": "exact",
@@ -3104,7 +3118,7 @@
    "place": "강북삼성병원 대강당",
    "url": "https://www.kams.or.kr/bbs/www.kslms.org",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.568193,
    "lng": 126.967899,
    "geo": "exact",
@@ -3123,7 +3137,7 @@
    "place": "서울강남 삼정호텔",
    "url": "http://www.vertigo.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.525617,
    "lng": 127.029016,
    "geo": "exact",
@@ -3142,7 +3156,7 @@
    "place": "제주국제컨벤션센터",
    "url": "http://www.kosqua.net/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 33.243475,
    "lng": 126.424896,
    "geo": "exact",
@@ -3161,7 +3175,7 @@
    "place": "서울대병원 이건희 홀",
    "url": "http://www.kmsts.org/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.579118,
    "lng": 126.998733,
    "geo": "exact",
@@ -3180,7 +3194,7 @@
    "place": null,
    "url": "https://www.prevmed.or.kr/board_community_notice01/view.php?tn=board_community_notice01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject_s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=919&gid=894&cpage=1&spage=1",
    "source": "org-prevmed",
-   "collectedAt": "2026-09-20"
+   "collectedAt": "2026-09-21"
   },
   {
    "id": "d3b47a5130124f45",
@@ -3195,7 +3209,7 @@
    "place": "코엑스 마곡",
    "url": "http://www.ksin.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.565908,
    "lng": 126.825665,
    "geo": "exact",
@@ -3214,7 +3228,7 @@
    "place": "그랜드 워커힐 서울 호텔",
    "url": "http://www.hematology.or.kr/",
    "source": "org-kams",
-   "collectedAt": "2026-09-20",
+   "collectedAt": "2026-09-21",
    "lat": 37.555327,
    "lng": 127.110153,
    "geo": "exact",
@@ -3222,9 +3236,9 @@
   }
  ],
  "map": {
-  "mapped": 132,
+  "mapped": 133,
   "online": 3,
-  "places": 116,
-  "geocodedAt": "2026-09-20"
+  "places": 117,
+  "geocodedAt": "2026-09-21"
  }
 }
