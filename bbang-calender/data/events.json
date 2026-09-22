@@ -1,9 +1,9 @@
 {
  "name": "빵캘",
- "updatedAt": "2026-09-22T00:30:46.127Z",
+ "updatedAt": "2026-09-22T14:18:58.478Z",
  "counts": {
-  "total": 164,
-  "upcoming": 112
+  "total": 167,
+  "upcoming": 113
  },
  "sources": [
   {
@@ -11,8 +11,8 @@
    "name": "질병관리청 공지",
    "ok": true,
    "found": 52,
-   "events": 0,
-   "ms": 7522
+   "events": 1,
+   "ms": 5333
   },
   {
    "id": "org-mohw",
@@ -20,7 +20,7 @@
    "ok": true,
    "found": 19,
    "events": 4,
-   "ms": 16274
+   "ms": 12807
   },
   {
    "id": "nkis",
@@ -28,7 +28,7 @@
    "ok": true,
    "found": 20,
    "events": 0,
-   "ms": 25571
+   "ms": 21446
   },
   {
    "id": "org-ncc",
@@ -36,7 +36,15 @@
    "ok": true,
    "found": 4,
    "events": 2,
-   "ms": 7098
+   "ms": 5467
+  },
+  {
+   "id": "org-khealth",
+   "name": "한국건강증진개발원 공지",
+   "ok": true,
+   "found": 11,
+   "events": 0,
+   "ms": 14372
   },
   {
    "id": "org-mfds",
@@ -44,7 +52,7 @@
    "ok": true,
    "found": 16,
    "events": 8,
-   "ms": 26096
+   "ms": 21899
   },
   {
    "id": "org-nhis",
@@ -52,45 +60,30 @@
    "ok": true,
    "found": 24,
    "events": 0,
-   "ms": 5546
+   "ms": 3503
   },
   {
    "id": "org-hira",
    "name": "건강보험심사평가원 공지",
    "ok": true,
    "found": 12,
-   "events": 1,
-   "ms": 6395
-  },
-  {
-   "id": "org-khealth",
-   "name": "한국건강증진개발원 공지",
-   "ok": false,
-   "error": "fetch failed",
-   "ms": 26696
+   "events": 2,
+   "ms": 6456
   },
   {
    "id": "org-neca",
    "name": "한국보건의료연구원 공지",
    "ok": false,
    "error": "HTTP 400",
-   "ms": 7893
+   "ms": 7097
   },
   {
-   "id": "org-nmc",
-   "name": "국립중앙의료원 공지",
+   "id": "org-kihasa",
+   "name": "한국보건사회연구원 공지",
    "ok": true,
-   "found": 11,
-   "events": 0,
-   "ms": 6513
-  },
-  {
-   "id": "org-khidi",
-   "name": "한국보건산업진흥원 공지",
-   "ok": true,
-   "found": 20,
+   "found": 3,
    "events": 2,
-   "ms": 14245
+   "ms": 4449
   },
   {
    "id": "org-nibp",
@@ -98,7 +91,23 @@
    "ok": true,
    "found": 16,
    "events": 0,
-   "ms": 6606
+   "ms": 5051
+  },
+  {
+   "id": "org-nmc",
+   "name": "국립중앙의료원 공지",
+   "ok": true,
+   "found": 11,
+   "events": 0,
+   "ms": 7494
+  },
+  {
+   "id": "org-khidi",
+   "name": "한국보건산업진흥원 공지",
+   "ok": true,
+   "found": 20,
+   "events": 3,
+   "ms": 13316
   },
   {
    "id": "org-ksepi",
@@ -106,22 +115,7 @@
    "ok": true,
    "found": 10,
    "events": 5,
-   "ms": 6043
-  },
-  {
-   "id": "org-kihasa",
-   "name": "한국보건사회연구원 공지",
-   "ok": false,
-   "error": "fetch failed",
-   "ms": 25433
-  },
-  {
-   "id": "snu-health",
-   "name": "서울대 보건대학원 세미나정보",
-   "ok": true,
-   "found": 30,
-   "events": 20,
-   "ms": 72663
+   "ms": 5379
   },
   {
    "id": "org-prevmed",
@@ -129,7 +123,7 @@
    "ok": true,
    "found": 15,
    "events": 2,
-   "ms": 18230
+   "ms": 13158
   },
   {
    "id": "org-kshpa",
@@ -137,7 +131,15 @@
    "ok": true,
    "found": 9,
    "events": 3,
-   "ms": 10730
+   "ms": 9483
+  },
+  {
+   "id": "snu-health",
+   "name": "서울대 보건대학원 세미나정보",
+   "ok": true,
+   "found": 30,
+   "events": 20,
+   "ms": 58348
   },
   {
    "id": "org-kshep",
@@ -145,7 +147,7 @@
    "ok": true,
    "found": 1,
    "events": 1,
-   "ms": 4694
+   "ms": 3735
   },
   {
    "id": "org-kosqua",
@@ -153,30 +155,7 @@
    "ok": true,
    "found": 7,
    "events": 1,
-   "ms": 1938
-  },
-  {
-   "id": "org-kpha",
-   "name": "대한보건협회 공지",
-   "ok": true,
-   "found": 15,
-   "events": 0,
-   "ms": 6608
-  },
-  {
-   "id": "org-cochrane",
-   "name": "한국코크란 공지",
-   "ok": true,
-   "found": 16,
-   "events": 0,
-   "ms": 370
-  },
-  {
-   "id": "org-koddi",
-   "name": "한국장애인개발원 공지",
-   "ok": false,
-   "error": "HTTP 404",
-   "ms": 6266
+   "ms": 1581
   },
   {
    "id": "org-kspm",
@@ -184,15 +163,22 @@
    "ok": true,
    "found": 16,
    "events": 1,
-   "ms": 17004
+   "ms": 10096
   },
   {
-   "id": "org-kdca-ilje",
-   "name": "질병관리청 일정",
+   "id": "org-cochrane",
+   "name": "한국코크란 공지",
    "ok": true,
-   "found": 32,
+   "found": 16,
    "events": 0,
-   "ms": 7083
+   "ms": 796
+  },
+  {
+   "id": "org-koddi",
+   "name": "한국장애인개발원 공지",
+   "ok": false,
+   "error": "HTTP 404",
+   "ms": 5633
   },
   {
    "id": "org-kams",
@@ -200,7 +186,22 @@
    "ok": true,
    "found": 132,
    "events": 132,
-   "ms": 32407
+   "ms": 21519
+  },
+  {
+   "id": "org-kdca-ilje",
+   "name": "질병관리청 일정",
+   "ok": true,
+   "found": 32,
+   "events": 1,
+   "ms": 4831
+  },
+  {
+   "id": "org-kpha",
+   "name": "대한보건협회 공지",
+   "ok": false,
+   "error": "fetch failed",
+   "ms": 25205
   }
  ],
  "events": [
@@ -654,11 +655,11 @@
    "place": "프레지던트호텔 슈벨트홀",
    "url": "https://www.kihasa.re.kr/news/event/view?seq=76736",
    "source": "org-kihasa",
-   "collectedAt": "2026-09-21",
-   "city": "서울",
+   "collectedAt": "2026-09-22",
    "lat": 37.566485,
    "lng": 126.979505,
-   "geo": "exact"
+   "geo": "exact",
+   "city": "서울"
   },
   {
    "id": "71837e8cfdb5c2e8",
@@ -845,6 +846,29 @@
    "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pageid=2&uid=5728",
    "source": "snu-health",
    "collectedAt": "2026-09-22"
+  },
+  {
+   "id": "594de9f192adb995",
+   "org": "khidi",
+   "orgs": [
+    "khidi",
+    "mohw"
+   ],
+   "orgLabel": null,
+   "title": "제32회 보건의료포럼 개최 안내",
+   "start": "2026-09-16",
+   "end": "2026-09-16",
+   "startTime": "13:00",
+   "endTime": "17:30",
+   "allDay": false,
+   "place": "서울대학교병원 암연구소 이건희홀",
+   "url": "https://www.khidi.or.kr/board/view?linkId=48949861&menuId=MENU00099",
+   "source": "org-khidi",
+   "collectedAt": "2026-09-22",
+   "lat": 37.579118,
+   "lng": 126.998733,
+   "geo": "exact",
+   "city": "서울"
   },
   {
    "id": "270e86def34b1060",
@@ -1143,12 +1167,51 @@
    "place": "코트야드 메리어트 서울 명동",
    "url": "https://www.kihasa.re.kr/news/event/view?seq=76820",
    "source": "org-kihasa",
-   "collectedAt": "2026-09-21",
+   "collectedAt": "2026-09-22",
    "note": "포스터에 주최가 질병관리청·한국보건사회연구원 두 곳으로 적혀 있습니다.",
-   "city": "서울",
    "lat": 37.566679,
    "lng": 126.978291,
-   "geo": "approx"
+   "geo": "approx",
+   "city": "서울"
+  },
+  {
+   "id": "ac301110f80e9ff5",
+   "org": "kdca",
+   "orgs": [
+    "kdca",
+    "kihasa"
+   ],
+   "orgLabel": null,
+   "title": "방역과 안전한 일상을 위해, 감염병 위기 사회대응 포럼 개최",
+   "start": "2026-09-21",
+   "end": "2026-09-21",
+   "startTime": null,
+   "endTime": null,
+   "allDay": true,
+   "place": "코트야드 메리어트 서울 명동",
+   "url": "https://www.kdca.go.kr/bbs/kdca/61/312730/artclView.do?layout=unknown",
+   "source": "org-kdca-ilje",
+   "collectedAt": "2026-09-22",
+   "note": "포스터에 주최가 질병관리청·한국보건사회연구원 두 곳으로 적혀 있습니다.",
+   "lat": 37.566679,
+   "lng": 126.978291,
+   "geo": "approx",
+   "city": "서울"
+  },
+  {
+   "id": "576e608f4ff38a60",
+   "org": "mohw",
+   "orgLabel": null,
+   "title": "「지역사회 일차의료 혁신 시범사업」 시행일 및 온라인 설명회 등 안내",
+   "start": "2026-09-22",
+   "end": "2026-09-22",
+   "startTime": "19:00",
+   "endTime": null,
+   "allDay": false,
+   "place": null,
+   "url": "https://www.hira.or.kr/bbsDummy.do?pgmid=HIRAA020002000100&brdScnBltNo=4&brdBltNo=12255&pageIndex=1&pageIndex2=1",
+   "source": "org-hira",
+   "collectedAt": "2026-09-22"
   },
   {
    "id": "992059f00f573279",
@@ -3217,9 +3280,9 @@
   }
  ],
  "map": {
-  "mapped": 132,
+  "mapped": 134,
   "online": 3,
-  "places": 116,
+  "places": 117,
   "geocodedAt": "2026-09-22"
  }
 }
