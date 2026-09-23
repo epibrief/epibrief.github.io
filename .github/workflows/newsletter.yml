@@ -19,12 +19,12 @@ jobs:
         run: python3 scripts/build_outbreak_feed.py
       - name: 변경 시 커밋
         run: |
-          if git diff --quiet -- data/feed.json; then
+          if git diff --quiet -- data/feed.json data/latest.json; then
             echo "변경 없음"
           else
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add data/feed.json
+            git add data/feed.json data/latest.json
             git commit -m "뉴스레터 소스 자동 갱신"
             git push
           fi

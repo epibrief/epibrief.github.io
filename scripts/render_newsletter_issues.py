@@ -291,7 +291,7 @@ def paper(data):
   <header class="nl-head">
     <div class="nl-topline">
       <span>{e(KINDS[data["kind"]]["name"])} 뉴스레터</span>
-      <span class="issue">{e(m.get("issue",""))}{" · " if m.get("issue") and date_txt else ""}{e(date_txt)}</span>
+      <span class="issue"><span data-live-issue data-cadence="{e(m.get("cadence",""))}">{e(m.get("issue",""))}</span>{" · " if m.get("issue") and date_txt else ""}<span data-live-date>{e(date_txt)}</span> <span class="sample-chip" title="발간 예시입니다. 발행일은 보는 날짜로 표시합니다">예시</span></span>
     </div>
     <div class="nl-kicker">{e(m.get("org",""))}</div>
     {f'<div class="nl-org-en">{e(m.get("orgEn"))}</div>' if m.get("orgEn") else ""}
@@ -310,6 +310,20 @@ def paper(data):
     {stats}
     {issues}
   </div>
+  <style>
+    .sample-chip{{display:inline-block;font-size:.72em;font-weight:700;padding:1px 7px;border-radius:999px;background:#fdf1e3;color:#bf560c;vertical-align:middle;margin-left:4px}}
+    .live{{margin:18px 0 6px;border:1px solid #dde2e9;border-left:4px solid #bf560c;border-radius:0 12px 12px 0;padding:12px 16px;background:#fffdf9}}
+    .live-head{{font-size:1.02rem}} .live-when{{font-size:.84rem;color:#5d6875;margin-left:6px}}
+    .live-note{{margin:4px 0 8px;font-size:.88rem;color:#5d6875}}
+    .live-list{{margin:0;padding-left:20px}} .live-list li{{margin:6px 0;font-size:.95rem;line-height:1.5}}
+    .live-list .lm{{display:block;font-size:.82rem;color:#5d6875}}
+    @media print{{ .live,.sample-chip{{display:none}} }}
+  </style>
+  <section class="live" id="live" hidden>
+    <div class="live-head"><b>오늘 수집된 최신 자료</b> <span class="live-when" id="liveWhen"></span></div>
+    <p class="live-note">위 본문은 편집 예시 원고이고, 아래는 매일 새벽 자동 수집되는 실제 최신 자료입니다. 제목·출처·링크만 싣습니다.</p>
+    <ol class="live-list" id="liveList"></ol>
+  </section>
   {explainer_box(d)}
   {intro}
   {topics}
@@ -318,10 +332,10 @@ def paper(data):
   <footer class="foot-note">
     <div class="cover">
       <b>자료 수집</b>
-      {f'<span>이 호가 다룬 기간 {e(m.get("coverage"))}</span>' if m.get("coverage") else ""}
-      <span>소스 102곳을 매일 새벽 5시(KST)에 자동 수집</span>
+      {f'<span>이 호가 다룬 기간 <span data-live-coverage data-cadence="{e(m.get("cadence",""))}">{e(m.get("coverage"))}</span></span>' if m.get("coverage") else ""}
+      <span>소스 149곳을 매일 새벽 5시(KST)에 자동 수집</span>
       {f'<span>{e(m.get("cadence"))}</span>' if m.get("cadence") else ""}
-      {f'<span>다음 호 {e(m.get("nextIssue","").replace("-", "."))}.</span>' if m.get("nextIssue") else ""}
+      {f'<span>다음 호 <span data-live-next data-cadence="{e(m.get("cadence",""))}">{e(m.get("nextIssue","").replace("-", "."))}.</span></span>' if m.get("nextIssue") else ""}
     </div>
     본 뉴스레터는 각 기관의 공개 자료와 학술 문헌을 정리한 것으로, 원문의 내용이 우선합니다.<br>
     {e(m.get("org",""))}{" · " + e(m.get("editor","")) if m.get("editor") else ""}
@@ -421,6 +435,34 @@ def page(data, others):
     t.textContent = msg; t.classList.add('on');
     setTimeout(() => t.classList.remove('on'), 2600);
   }};
+  /* 발간 예시 — 발행일은 보는 날짜로, 주간지는 호수·기간·다음 호도 오늘 기준으로 */
+  (function(){{
+    const d = new Date(), p2 = n => String(n).padStart(2, '0');
+    const dot = x => `${{x.getFullYear()}}.${{p2(x.getMonth() + 1)}}.${{p2(x.getDate())}}.`;
+    const weekly = c => /주 ?1회/.test(c || '');
+    const shift = n => {{ const x = new Date(d); x.setDate(d.getDate() + n); return x; }};
+    const t = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+    const day = t.getUTCDay() || 7; t.setUTCDate(t.getUTCDate() + 4 - day);          // ISO 주차: 목요일 기준
+    const week = Math.ceil(((t - Date.UTC(t.getUTCFullYear(), 0, 1)) / 864e5 + 1) / 7);
+    document.querySelectorAll('[data-live-date]').forEach(el => {{ el.textContent = dot(d); }});
+    document.querySelectorAll('[data-live-issue]').forEach(el => {{
+      if (weekly(el.dataset.cadence)) el.textContent = `${{t.getUTCFullYear()}}년 제${{week}}호`; }});
+    document.querySelectorAll('[data-live-coverage]').forEach(el => {{
+      if (weekly(el.dataset.cadence)) el.textContent = dot(shift(-7)) + '~' + dot(shift(-1)); }});
+    document.querySelectorAll('[data-live-next]').forEach(el => {{
+      if (weekly(el.dataset.cadence)) el.textContent = dot(shift(7)); }});
+  }})();
+  /* 오늘 수집된 최신 자료 — data/latest.json (분야별 10건, 제목·출처·링크만) */
+  fetch('../data/latest.json', {{ cache: 'no-store' }}).then(r => r.json()).then(j => {{
+    const rows = (j.byKind || {{}})[DATA.kind] || [];
+    if (!rows.length) return;
+    const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}}[c]));
+    document.getElementById('liveList').innerHTML = rows.map(r =>
+      `<li><a href="${{esc(r.link)}}" target="_blank" rel="noopener">${{esc(r.title)}}</a>
+        <span class="lm">${{esc(r.origin || r.sourceName)}} · ${{esc(r.date)}} · ${{esc(r.via)}}</span></li>`).join('');
+    document.getElementById('liveWhen').textContent = '수집 ' + (j.updated || '');
+    document.getElementById('live').hidden = false;
+  }}).catch(() => {{}});
   document.getElementById('jump').addEventListener('change', e => {{ location.href = e.target.value; }});
   document.addEventListener('click', async e => {{      // 보고용 3줄 복사
     const b = e.target.closest('[data-copy]'); if (!b) return;
@@ -454,7 +496,7 @@ def index_page(rows):
     <a class="issue k-{e(r["kind"])}" data-kind="{e(r["kind"])}" href="{e(r["file"])}">
       <div class="kind">{e(r["kindName"])}</div>
       <div class="t">{e(r["title"])}</div>
-      <div class="m">{e(r["issue"])} · {e(r["date"])} · {e(r["org"])}</div>
+      <div class="m"><span data-live-issue data-cadence="{e(r.get("cadence",""))}">{e(r["issue"])}</span> · <span data-live-date>{e(r["date"])}</span> · {e(r["org"])} <span style="font-size:.8em;color:#bf560c;font-weight:700" title="발간 예시라 발행일은 보는 날짜로 표시합니다">예시</span></div>
       <p class="lead">{e(r["tagline"])}</p>
       <div class="topics">{"".join(f'<span>{e(x)}</span>' for x in r["topics"][:4])}</div>
     </a>''' for r in rows)
@@ -507,6 +549,16 @@ def index_page(rows):
   /* ?series=phsm 처럼 열면 그 뉴스레터만 보여 줍니다 (QR로 들어온 경우) */
   var NAMES = {{ outbreak:'감염병 발생 동향', phsm:'감염병 사회대응',
                 chronic:'만성질환 동향', climate:'기후·건강 위기 동향', injury:'손상·안전 동향' }};
+  /* 예시이므로 발행일은 보는 날짜로, 주간지는 호수도 오늘 기준 주차로 */
+  (function(){{
+    var d = new Date(), p2 = function(n){{ return String(n).padStart(2, '0'); }};
+    var iso = d.getFullYear() + '-' + p2(d.getMonth() + 1) + '-' + p2(d.getDate());
+    var t = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate())); var day = t.getUTCDay() || 7; t.setUTCDate(t.getUTCDate() + 4 - day);
+    var w = Math.ceil(((t - Date.UTC(t.getUTCFullYear(), 0, 1)) / 864e5 + 1) / 7);
+    document.querySelectorAll('[data-live-date]').forEach(function(el){{ el.textContent = iso; }});
+    document.querySelectorAll('[data-live-issue]').forEach(function(el){{
+      if (/주 ?1회/.test(el.dataset.cadence || '')) el.textContent = t.getUTCFullYear() + '년 제' + w + '호'; }});
+  }})();
   var series = new URLSearchParams(location.search).get('series');
   if (series && NAMES[series]) {{
     var shown = 0;
@@ -558,7 +610,7 @@ def main():
         m, d = me["data"]["meta"], me["data"]["draft"]
         rows.append({"file": me["file"], "kind": me["data"]["kind"], "kindName": me["kindName"],
                      "title": m.get("title", ""), "issue": m.get("issue", ""), "date": m.get("date", ""),
-                     "org": m.get("org", ""), "tagline": d.get("tagline", ""),
+                     "org": m.get("org", ""), "cadence": m.get("cadence", ""), "tagline": d.get("tagline", ""),
                      "topics": [t["name"] for t in d["topics"]]})
         print("생성:", me["file"])
     rows.sort(key=lambda r: r["date"], reverse=True)

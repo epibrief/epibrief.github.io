@@ -299,5 +299,16 @@ def main():
         json.dump(data, f, ensure_ascii=False, indent=1)
     print(f"저장: {OUT} ({len(items)}건)")
 
+    # 발간 예시 페이지가 '오늘 수집된 최신 자료'를 보여줄 때 쓰는 작은 파일 (분야별 최근 10건, 제목·출처·링크만)
+    latest = {"updated": data["updated"], "byKind": {}}
+    for it in items:
+        bucket = latest["byKind"].setdefault(it["kind"], [])
+        if len(bucket) >= 10: continue
+        bucket.append({k: it[k] for k in ("title", "origin", "sourceName", "link", "date", "via")})
+    latest_path = os.path.join(os.path.dirname(OUT), "latest.json")
+    with open(latest_path, "w", encoding="utf-8") as f:
+        json.dump(latest, f, ensure_ascii=False, indent=1)
+    print(f"저장: {latest_path} (분야 {len(latest['byKind'])}개)")
+
 if __name__ == "__main__":
     main()

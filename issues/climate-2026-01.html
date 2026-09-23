@@ -76,7 +76,7 @@
   <header class="nl-head">
     <div class="nl-topline">
       <span>기후·건강 뉴스레터</span>
-      <span class="issue">2026년 제1호(창간호) · 2026.09.14.</span>
+      <span class="issue"><span data-live-issue data-cadence="월 1회 발행 (매월 둘째 주)">2026년 제1호(창간호)</span> · <span data-live-date>2026.09.14.</span> <span class="sample-chip" title="발간 예시입니다. 발행일은 보는 날짜로 표시합니다">예시</span></span>
     </div>
     <div class="nl-kicker">에피청 에피기후보건국</div>
     <div class="nl-org-en">Epi Agency, Bureau of Climate and Health</div>
@@ -125,6 +125,20 @@
             <span class="tag tag-정책">정책</span></span>
         </a></li></ol>
   </div>
+  <style>
+    .sample-chip{display:inline-block;font-size:.72em;font-weight:700;padding:1px 7px;border-radius:999px;background:#fdf1e3;color:#bf560c;vertical-align:middle;margin-left:4px}
+    .live{margin:18px 0 6px;border:1px solid #dde2e9;border-left:4px solid #bf560c;border-radius:0 12px 12px 0;padding:12px 16px;background:#fffdf9}
+    .live-head{font-size:1.02rem} .live-when{font-size:.84rem;color:#5d6875;margin-left:6px}
+    .live-note{margin:4px 0 8px;font-size:.88rem;color:#5d6875}
+    .live-list{margin:0;padding-left:20px} .live-list li{margin:6px 0;font-size:.95rem;line-height:1.5}
+    .live-list .lm{display:block;font-size:.82rem;color:#5d6875}
+    @media print{ .live,.sample-chip{display:none} }
+  </style>
+  <section class="live" id="live" hidden>
+    <div class="live-head"><b>오늘 수집된 최신 자료</b> <span class="live-when" id="liveWhen"></span></div>
+    <p class="live-note">위 본문은 편집 예시 원고이고, 아래는 매일 새벽 자동 수집되는 실제 최신 자료입니다. 제목·출처·링크만 싣습니다.</p>
+    <ol class="live-list" id="liveList"></ol>
+  </section>
   
   <div class="intro">폭염은 이제 ‘무더운 날씨’가 아니라 감시하고 대비해야 할 건강 위해입니다.
 이 뉴스레터는 기상 경보와 보건 감시, 그리고 관련 연구를 한자리에 모아 정리합니다. 창간호는 기록적인 더위가 지나간 2026년 여름을 짚고, 대기질과 매개체 감염병으로 이어지는 연결 고리를 함께 봅니다.</div>
@@ -246,10 +260,10 @@
   <footer class="foot-note">
     <div class="cover">
       <b>자료 수집</b>
-      <span>이 호가 다룬 기간 2026.09.01.~2026.09.12.</span>
-      <span>소스 102곳을 매일 새벽 5시(KST)에 자동 수집</span>
+      <span>이 호가 다룬 기간 <span data-live-coverage data-cadence="월 1회 발행 (매월 둘째 주)">2026.09.01.~2026.09.12.</span></span>
+      <span>소스 149곳을 매일 새벽 5시(KST)에 자동 수집</span>
       <span>월 1회 발행 (매월 둘째 주)</span>
-      <span>다음 호 2026.10.12.</span>
+      <span>다음 호 <span data-live-next data-cadence="월 1회 발행 (매월 둘째 주)">2026.10.12.</span></span>
     </div>
     본 뉴스레터는 각 기관의 공개 자료와 학술 문헌을 정리한 것으로, 원문의 내용이 우선합니다.<br>
     에피청 에피기후보건국 · 에피기후과
@@ -266,6 +280,34 @@
     t.textContent = msg; t.classList.add('on');
     setTimeout(() => t.classList.remove('on'), 2600);
   };
+  /* 발간 예시 — 발행일은 보는 날짜로, 주간지는 호수·기간·다음 호도 오늘 기준으로 */
+  (function(){
+    const d = new Date(), p2 = n => String(n).padStart(2, '0');
+    const dot = x => `${x.getFullYear()}.${p2(x.getMonth() + 1)}.${p2(x.getDate())}.`;
+    const weekly = c => /주 ?1회/.test(c || '');
+    const shift = n => { const x = new Date(d); x.setDate(d.getDate() + n); return x; };
+    const t = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+    const day = t.getUTCDay() || 7; t.setUTCDate(t.getUTCDate() + 4 - day);          // ISO 주차: 목요일 기준
+    const week = Math.ceil(((t - Date.UTC(t.getUTCFullYear(), 0, 1)) / 864e5 + 1) / 7);
+    document.querySelectorAll('[data-live-date]').forEach(el => { el.textContent = dot(d); });
+    document.querySelectorAll('[data-live-issue]').forEach(el => {
+      if (weekly(el.dataset.cadence)) el.textContent = `${t.getUTCFullYear()}년 제${week}호`; });
+    document.querySelectorAll('[data-live-coverage]').forEach(el => {
+      if (weekly(el.dataset.cadence)) el.textContent = dot(shift(-7)) + '~' + dot(shift(-1)); });
+    document.querySelectorAll('[data-live-next]').forEach(el => {
+      if (weekly(el.dataset.cadence)) el.textContent = dot(shift(7)); });
+  })();
+  /* 오늘 수집된 최신 자료 — data/latest.json (분야별 10건, 제목·출처·링크만) */
+  fetch('../data/latest.json', { cache: 'no-store' }).then(r => r.json()).then(j => {
+    const rows = (j.byKind || {})[DATA.kind] || [];
+    if (!rows.length) return;
+    const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+    document.getElementById('liveList').innerHTML = rows.map(r =>
+      `<li><a href="${esc(r.link)}" target="_blank" rel="noopener">${esc(r.title)}</a>
+        <span class="lm">${esc(r.origin || r.sourceName)} · ${esc(r.date)} · ${esc(r.via)}</span></li>`).join('');
+    document.getElementById('liveWhen').textContent = '수집 ' + (j.updated || '');
+    document.getElementById('live').hidden = false;
+  }).catch(() => {});
   document.getElementById('jump').addEventListener('change', e => { location.href = e.target.value; });
   document.addEventListener('click', async e => {      // 보고용 3줄 복사
     const b = e.target.closest('[data-copy]'); if (!b) return;
