@@ -9,7 +9,7 @@
 - 수집 스크립트: `scripts/build_outbreak_feed.py`
 - 자동화: `.github/workflows/newsletter.yml`
 
-## 발간한 뉴스레터 (바로 보기)
+## 발간 예시 (바로 보기)
 
 | 호 | 서식 | 파일 |
 |---|---|---|

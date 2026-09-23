@@ -6,7 +6,7 @@
 
   **공유 페이지**
   - 제작 도구: https://epibrief.github.io/
-  - 발간한 뉴스레터: https://epibrief.github.io/issues/
+  - 발간 예시: https://epibrief.github.io/issues/
   - 구독 신청: https://epibrief.github.io/subscribe.html
   - 지자체 소식지: https://epibrief.github.io/local/?org=suwon
   - 지자체 관리자: https://epibrief.github.io/local/admin.html (관리자 키 필요, 화면에 키를 적지 않음)

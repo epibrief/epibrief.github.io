@@ -180,7 +180,7 @@ textarea{min-height:90px;resize:vertical}
       자료의 원 출처는 세계보건기구·미국 질병통제예방센터·유럽질병예방통제센터 등 각 기관의 공개 발표와 논문입니다.</p>
     <nav class="steps" id="mainNav">
       <button data-nav="home" class="on">홈</button>
-      <button data-nav="issues">발간한 뉴스레터</button>
+      <button data-nav="issues">발간 예시</button>
       <button data-nav="make">맞춤형 제작</button>
       <button data-nav="mine">내 보관함</button>
     </nav>
@@ -203,14 +203,14 @@ textarea{min-height:90px;resize:vertical}
     </div>
     <div class="row" style="margin-top:20px">
       <button class="btn pri" data-nav="make" style="font-size:1.04rem">맞춤형 뉴스레터 만들기 →</button>
-      <button class="btn" data-nav="issues">발간한 뉴스레터 보기</button>
+      <button class="btn" data-nav="issues">발간 예시 보기</button>
       <a class="note" href="subscribe.html" style="align-self:center">구독 신청 화면 미리보기 →</a>
       <a class="note" href="local/" target="_blank" rel="noopener" style="align-self:center">보건소·지자체용 지역 소식지 (새 창) →</a>
     </div>
   </div>
 
   <div class="card">
-    <h2>발간한 뉴스레터</h2>
+    <h2>발간 예시</h2>
     <p class="hint">바로 읽고, 그대로 발행할 수 있습니다. 서식과 구성을 가져다 새 호를 만들 수도 있습니다.</p>
     <div id="homeIssues" class="issue-list"></div>
   </div>
@@ -219,7 +219,7 @@ textarea{min-height:90px;resize:vertical}
 <!-- ───────────── 최신 뉴스레터 ───────────── -->
 <section class="navpanel" id="nav-issues"><div class="wrap">
   <div class="card">
-    <h2>발간한 뉴스레터</h2>
+    <h2>발간 예시</h2>
     <p class="hint">호를 열어 읽거나, <b>발행 방법</b>을 골라 바로 보낼 수 있습니다.</p>
     <div id="allIssues" class="issue-list"></div>
   </div>
@@ -731,7 +731,7 @@ function sanitize(){
 /* ── 메뉴 이동 ───────────────────────────── */
 const KIND_COLOR = { outbreak:['#1b3fb0','#bf560c'], phsm:['#0d6e6d','#bf560c'],
                      chronic:['#146c3a','#bf560c'], climate:['#0d5c8c','#bf560c'], injury:['#7b1e3c','#bf560c'] };
-let ISSUES = [];                         // 발간한 뉴스레터 목록
+let ISSUES = [];                         // 발간 예시 목록
 let SOURCE_COUNT = 0;                    // 기본 소스 개수(자동 수집 대상)
 function nav(name){
   if (name === 'make') document.body.dataset.kind = S.kind; else delete document.body.dataset.kind;
@@ -771,7 +771,7 @@ async function doPublish(act, data, url){
   }
 }
 
-/* 발간한 뉴스레터 목록 */
+/* 발간 예시 목록 */
 function issueCard(r, i, pre){
   const [c, a] = KIND_COLOR[r.kind] || KIND_COLOR.outbreak;
   return `<div class="issue-card" style="--ic:${c};--ia:${a}">
@@ -798,7 +798,7 @@ async function renderIssueList(sel, limit){
   const box = $(sel); if (!box) return;
   const pre = sel.replace(/\W/g, '');
   box.innerHTML = rows.length ? rows.map((r, i) => issueCard(r, i, pre)).join('')
-    : '<p class="note">아직 발간한 뉴스레터가 없습니다.</p>';
+    : '<p class="note">아직 발간 예시가 없습니다.</p>';
 }
 document.addEventListener('click', async e => {
   const t = e.target.closest('[data-pubtoggle]');

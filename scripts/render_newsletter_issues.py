@@ -463,8 +463,8 @@ def index_page(rows):
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>발간한 뉴스레터</title>
-<meta name="description" content="에피브리프로 발간한 호 목록. 감염병 발생동향, 사회 대응(PHSM), 만성질환, 기후·건강.">
+<title>발간 예시</title>
+<meta name="description" content="에피브리프로 만든 발간 예시 목록. 감염병 발생동향, 사회 대응(PHSM), 만성질환, 기후·건강.">
 {FONTS}
 <style>
  :root{{ --ink:#191f28; --muted:#6d7885; --line:#dde2e9; }}
@@ -495,11 +495,11 @@ def index_page(rows):
 </style>
 </head>
 <body>
-<nav class="bar"><a href="../">← 에피브리프</a><a href="./" id="allLink" hidden>전체 뉴스레터 보기</a>
+<nav class="bar"><a href="../">← 에피브리프</a><a href="./" id="allLink" hidden>전체 발간 예시 보기</a>
   <a href="../subscribe.html" id="subLink" style="margin-left:auto">구독 신청</a></nav>
 <div class="wrap">
-  <h1 id="listTitle">발간한 뉴스레터</h1>
-  <p class="sub" id="listSub">에피브리프로 만든 호입니다. 서식과 구성을 그대로 가져다 새 호를 만들 수 있습니다.</p>
+  <h1 id="listTitle">발간 예시</h1>
+  <p class="sub" id="listSub">에피브리프로 만들어 본 예시 호입니다. 서식과 구성을 그대로 가져다 새 호를 만들 수 있습니다.</p>
   {cards}
   <p class="sub" id="listEmpty" hidden>아직 이 뉴스레터의 다른 호가 없습니다. 이번 호가 창간호입니다.</p>
 </div>
@@ -515,7 +515,7 @@ def index_page(rows):
       el.hidden = !keep; if (keep) shown++;
     }});
     document.getElementById('listTitle').textContent = NAMES[series];
-    document.getElementById('listSub').textContent = shown + '개 호가 발간되었습니다. 받아보시려면 위의 [구독 신청]을 눌러 주세요.';
+    document.getElementById('listSub').textContent = shown + '개 예시 호가 있습니다. 받아보시려면 위의 [구독 신청]을 눌러 주세요.';
     document.getElementById('allLink').hidden = false;
     document.getElementById('subLink').href = '../subscribe.html?series=' + series;
     document.getElementById('listEmpty').hidden = shown > 1;
