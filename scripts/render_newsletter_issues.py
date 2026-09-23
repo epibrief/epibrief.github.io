@@ -26,7 +26,7 @@ SUBSCRIBE = BASE + "/subscribe.html"   # 구독 신청 페이지
 KINDS = {
     "outbreak": {"name": "감염병 발생동향", "sumTitle": "목차",
                  "secs": ["발생 상황", "상황 평가", "국내 관련성 · 권고"], "brand": "#1b3fb0", "accent": "#bf560c"},
-    "phsm":     {"name": "감염병 사회 대응(PHSM)", "sumTitle": "목차",
+    "phsm":     {"name": "감염병 사회대응", "sumTitle": "목차",
                  "secs": ["연구 · 정책 동향", "핵심 쟁점과 근거", "분과위 시사점 · 토론거리"], "brand": "#0d6e6d", "accent": "#bf560c"},
     "chronic":  {"name": "만성질환", "sumTitle": "목차",
                  "secs": ["주요 동향", "근거 해석", "국내 적용 시사점"], "brand": "#146c3a", "accent": "#bf560c"},
@@ -505,7 +505,7 @@ def index_page(rows):
 </div>
 <script>
   /* ?series=phsm 처럼 열면 그 뉴스레터만 보여 줍니다 (QR로 들어온 경우) */
-  var NAMES = {{ outbreak:'전 세계 감염병 발생 동향', phsm:'감염병 사회 대응(PHSM) 분과위원회',
+  var NAMES = {{ outbreak:'감염병 발생 동향', phsm:'감염병 사회대응',
                 chronic:'만성질환 동향', climate:'기후·건강 위기 동향', injury:'손상·안전 동향' }};
   var series = new URLSearchParams(location.search).get('series');
   if (series && NAMES[series]) {{

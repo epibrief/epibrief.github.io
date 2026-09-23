@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>에피브리프 구독 신청</title>
+<title>구독 신청 — 에피브리프</title>
 <meta name="description" content="감염병 발생동향·사회 대응(PHSM)·만성질환·기후건강 뉴스레터 구독 신청">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css">
@@ -66,9 +66,9 @@
       <label>받아볼 뉴스레터 <span style="color:var(--accent)">*</span></label>
       <div class="series" id="series">
         <label><input type="checkbox" name="s" value="감염병 발생동향" data-k="outbreak">
-          <span>전 세계 감염병 발생 동향<span class="d">주 1회 · WHO·美CDC·ECDC 발표 정리</span></span></label>
-        <label><input type="checkbox" name="s" value="감염병 사회 대응(PHSM)" data-k="phsm">
-          <span>감염병 사회 대응(PHSM)<span class="d">격주 · 거리두기·위험소통 연구 동향</span></span></label>
+          <span>감염병 발생 동향<span class="d">주 1회 · WHO·美CDC·ECDC 발표 정리</span></span></label>
+        <label><input type="checkbox" name="s" value="감염병 사회대응" data-k="phsm">
+          <span>감염병 사회대응<span class="d">격주 · 거리두기·위험소통 연구 동향</span></span></label>
         <label><input type="checkbox" name="s" value="만성질환 동향" data-k="chronic">
           <span>만성질환 동향<span class="d">월 1회 · 통계와 예방·관리 연구</span></span></label>
         <label><input type="checkbox" name="s" value="기후·건강 위기 동향" data-k="climate">
@@ -130,7 +130,7 @@
 
 <script>
 const $ = s => document.querySelector(s);
-const NAMES = { outbreak:'전 세계 감염병 발생 동향', phsm:'감염병 사회 대응(PHSM) 분과위원회',
+const NAMES = { outbreak:'감염병 발생 동향', phsm:'감염병 사회대응',
                 chronic:'만성질환 동향', climate:'기후·건강 위기 동향', injury:'손상·안전 동향' };
 let CONF = { email:'', formUrl:'', org:'에피청', note:'' };
 

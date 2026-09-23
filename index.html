@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>에피브리프 — 보건 동향 뉴스레터</title>
+<title>에피브리프 — 보건 뉴스레터 플랫폼</title>
 <meta name="description" content="WHO·미국 CDC·ECDC·Europe PMC 등 공식 소스를 골라 감염병 발생동향, 사회 대응(PHSM), 만성질환 뉴스레터를 만들고 HTML·PDF·이메일·워드로 내보내는 도구.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,6 +38,8 @@ button{font-family:inherit}
 
 /* ── 상단 ── */
 .top{background:var(--navy);color:#fff;padding:16px 0 0}
+.top h1 .tagline{font-family:"Pretendard Variable","Pretendard",system-ui,sans-serif;font-weight:600;font-size:.72em;color:rgba(255,255,255,.80);letter-spacing:0;margin-left:8px;white-space:nowrap}
+@media (max-width:520px){ .top h1 .tagline{display:block;margin:3px 0 0;font-size:.8em} }
 .top h1{margin:0;font-family:"Nanum Myeongjo",serif;font-size:clamp(1.18rem,3.6vw,1.42rem);
   font-weight:800;letter-spacing:-.02em;word-break:keep-all}
 .top .sub{font-size:clamp(.82rem,2.4vw,.9rem);color:rgba(255,255,255,.82);margin-top:5px;word-break:keep-all}
@@ -179,7 +181,7 @@ textarea{min-height:90px;resize:vertical}
 
 <div class="top">
   <div class="wrap">
-    <h1>에피브리프</h1>
+    <h1>에피브리프 <span class="tagline">보건 뉴스레터 플랫폼</span></h1>
     <div class="sub">감염병 발생동향 · 사회 대응(PHSM: 거리두기 같은 사회적 조치) · 만성질환 · 기후·건강 — 공식 소스를 고르면 서식에 맞춰 뉴스레터를 만들어 드립니다. <span id="saveTag" class="badge" title="작업 내용은 이 컴퓨터의 브라우저에만 저장됩니다. 다른 컴퓨터에서는 보이지 않습니다." style="background:#1d4a80;border-color:#2a5c99;color:#cfe3ff;cursor:help">자동 저장 ⓘ</span></div>
     <p class="notice">개인이 만든 <b>비공식 도구</b>입니다. 어떤 기관의 공식 사이트도 아닙니다.
       자료의 원 출처는 세계보건기구·미국 질병통제예방센터·유럽질병예방통제센터 등 각 기관의 공개 발표와 논문입니다.</p>
@@ -290,9 +292,9 @@ textarea{min-height:90px;resize:vertical}
     <p class="hint">유형을 고르면 그에 맞는 소스·서식·문체가 준비됩니다.</p>
     <div class="row" id="kindBox">
       <label class="srcitem grow" style="cursor:pointer"><input type="radio" name="kind" value="outbreak" checked>
-        <span><span class="nm">전 세계 감염병 발생 동향</span><span class="mt">WHO·美CDC·ECDC 공식 발표 중심 주간 발생 동향 · <a href="issues/outbreak-2026-37.html" target="_blank" rel="noopener">발간 예시 보기</a></span></span></label>
+        <span><span class="nm">감염병 발생 동향</span><span class="mt">WHO·美CDC·ECDC 공식 발표 중심 주간 발생 동향 · <a href="issues/outbreak-2026-37.html" target="_blank" rel="noopener">발간 예시 보기</a></span></span></label>
       <label class="srcitem grow" style="cursor:pointer"><input type="radio" name="kind" value="phsm">
-        <span><span class="nm">감염병 사회 대응(PHSM) 분과위원회</span><span class="mt">거리두기·위험소통 등 사회적 조치의 최신 연구·정책 동향 · <a href="issues/phsm-2026-01.html" target="_blank" rel="noopener">발간 예시 보기</a></span></span></label>
+        <span><span class="nm">감염병 사회대응</span><span class="mt">거리두기·위험소통 등 사회적 조치의 최신 연구·정책 동향 · <a href="issues/phsm-2026-01.html" target="_blank" rel="noopener">발간 예시 보기</a></span></span></label>
       <label class="srcitem grow" style="cursor:pointer"><input type="radio" name="kind" value="chronic">
         <span><span class="nm">만성질환 동향</span><span class="mt">심뇌혈관·당뇨·암·건강행태 통계와 연구 동향 · <a href="issues/chronic-2026-01.html" target="_blank" rel="noopener">발간 예시 보기</a></span></span></label>
       <label class="srcitem grow" style="cursor:pointer"><input type="radio" name="kind" value="injury">
@@ -422,7 +424,7 @@ textarea{min-height:90px;resize:vertical}
     <p class="hint">표지에 들어가는 내용입니다.</p>
     <div class="row">
       <div class="grow"><label class="f">발행 기관<span class="req">*필수</span></label><input type="text" id="mOrg" placeholder="예: 질병관리청 감염병위기대응국"></div>
-      <div class="grow"><label class="f">뉴스레터 이름<span class="req">*필수</span></label><input type="text" id="mTitle" placeholder="예: 전 세계 감염병 발생 동향"></div>
+      <div class="grow"><label class="f">뉴스레터 이름<span class="req">*필수</span></label><input type="text" id="mTitle" placeholder="예: 감염병 발생 동향"></div>
     </div>
     <div class="row" style="margin-top:10px">
       <div class="grow"><label class="f">호수<span class="req">*필수</span></label><input type="text" id="mIssue" placeholder="예: 2026년 제31호"></div>
@@ -534,7 +536,7 @@ const domainOf = u => { try { const h = new URL(u).hostname.replace(/^www\./, ''
     return h === 'news.google.com' ? '' : h; } catch(e){ return ''; } };
 const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
-const DEFAULT_META = { org:'', title:'전 세계 감염병 발생 동향', issue:'', date:'', editor:'', subUrl:'', subLabel:'뉴스레터 구독·지난 호 보기',
+const DEFAULT_META = { org:'', title:'감염병 발생 동향', issue:'', date:'', editor:'', subUrl:'', subLabel:'뉴스레터 구독·지난 호 보기',
                        asOf:'', period:'', contact:'', prevUrl:'' };
 const S = {
   kind: 'outbreak', sel: {}, days: 14, picked: [], mySources: [], myItems: [],
@@ -555,14 +557,14 @@ let SOURCES = { groups: [] }, FEED = { items: [], updated: '' };
 /* 뉴스레터 유형별 설정 — 이름, 본문 소제목, AI에게 줄 역할 */
 const KINDS = {
   outbreak: {
-    title: '전 세계 감염병 발생 동향',
+    title: '감염병 발생 동향',
     sumTitle: '이번 호 요약',
     secs: ['발생 상황', '상황 평가', '국내 관련성 · 권고'],
     role: '질병관리청 감염병 주간동향 보고서를 작성하는 담당자',
     guide: 'situation=기관별 발생 규모·지역·기간, assess=추세와 위험도 평가, korea=국내 발생 여부와 국민 권고사항'
   },
   phsm: {
-    title: '감염병 사회 대응(PHSM) 분과위원회 뉴스레터',
+    title: '감염병 사회대응 뉴스레터',
     sumTitle: '이번 호 핵심 메시지',
     secs: ['연구 · 정책 동향', '핵심 쟁점과 근거', '분과위 시사점 · 토론거리'],
     role: '감염병 사회 대응(공중보건·사회적 조치, PHSM) 분과위원회의 간사',

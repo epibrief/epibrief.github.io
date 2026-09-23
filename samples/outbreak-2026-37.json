@@ -3,12 +3,12 @@
  "tpl": "official",
  "meta": {
   "org": "에피청 에피대응국",
-  "title": "전 세계 감염병 발생 동향",
+  "title": "감염병 발생 동향",
   "issue": "2026년 제37호",
   "date": "2026-09-14",
   "editor": "에피총괄과",
   "orgEn": "Epi Agency, Bureau of Outbreak Response",
-  "titleEn": "Global Infectious Disease Outbreak Update",
+  "titleEn": "Infectious Disease Outbreak Update",
   "cadence": "주 1회 발행 (매주 월요일)",
   "nextIssue": "2026-09-21",
   "coverage": "2026.09.07.~2026.09.13."

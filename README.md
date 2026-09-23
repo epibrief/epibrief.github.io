@@ -13,7 +13,7 @@
 
 | 호 | 서식 | 파일 |
 |---|---|---|
-| 전 세계 감염병 발생 동향 2026년 제37호 | 공문서형 | `issues/outbreak-2026-37.html` |
+| 감염병 발생 동향 2026년 제37호 | 공문서형 | `issues/outbreak-2026-37.html` |
 | 감염병 사회 대응(PHSM) 분과위원회 창간호 | 공문서형 | `issues/phsm-2026-01.html` |
 | 만성질환 동향 창간호 | 카드형 | `issues/chronic-2026-01.html` |
 | 기후·건강 위기 동향 창간호 | 간결 브리프형 | `issues/climate-2026-01.html` |
@@ -29,7 +29,7 @@ python3 scripts/render_newsletter_issues.py
 
 | 유형 | 쓰임 | 주요 소스 |
 |---|---|---|
-| 전 세계 감염병 발생 동향 | 주간 발생 동향 보고 | WHO DON·보도자료, 美CDC(뉴스룸·HAN·MMWR), ECDC, ProMED, CIDRAP, 질병관리청 |
+| 감염병 발생 동향 | 주간 발생 동향 보고 | WHO DON·보도자료, 美CDC(뉴스룸·HAN·MMWR), ECDC, ProMED, CIDRAP, 질병관리청 |
 | 감염병 사회 대응(PHSM) 분과위원회 | 사회적 조치 연구·정책 스터디 | WHO PHSM 지식허브, 영국 UKHSA, ECDC NPI 지침, Europe PMC 논문 5종, medRxiv |
 | 만성질환 동향 | 만성질환 예방·관리 | WHO NCD, 美CDC 만성질환, 질병관리청 건강통계, OECD·NCHS, 건보공단, Europe PMC 논문 10종 |
 | 기후·건강 (폭염 등) | 폭염·기후 건강피해 | WHO 기후와 건강, WMO, 美CDC HeatRisk, 국내 온열질환 응급실감시, Europe PMC 논문 5종 |

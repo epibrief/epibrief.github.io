@@ -2,5 +2,6 @@
  "brand": "epibrief",
  "brandKo": "에피브리프",
  "baseUrl": "https://epibrief.github.io",
- "note": "주소를 옮기면 baseUrl 한 줄만 바꾸면 됩니다. 예: https://epibrief.github.io"
+ "note": "주소를 옮기면 baseUrl 한 줄만 바꾸면 됩니다. brandKo·tagline은 화면에 쓰는 이름입니다.",
+ "tagline": "보건 뉴스레터 플랫폼"
 }
