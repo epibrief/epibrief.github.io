@@ -244,6 +244,14 @@ def main():
             if keys:   # 주제와 먼 글을 걸러낸다 (프리프린트처럼 분야가 넓은 소스용)
                 got = [g2 for g2 in got
                        if any(k in (g2["title"] + " " + g2["excerpt"]).lower() for k in keys)]
+            if not got and via != "뉴스검색" and s.get("query"):
+                # 기관 페이지·RSS를 읽긴 했지만 거르고 나니 남은 글이 없으면 — 게시판 첫 쪽에 없었을 뿐이므로 뉴스검색으로 대체한다
+                got = items_from(fetch_xml(google_news_rss(s["query"], s.get("lang", "en"))))[:PER_SOURCE]
+                via = "뉴스검색"
+                s = dict(s); s.pop("rss", None)
+                if keys:
+                    got = [g2 for g2 in got
+                           if any(k in (g2["title"] + " " + g2["excerpt"]).lower() for k in keys)]
             musts = [k.lower() for k in s.get("must", [])]
             if musts and via == "뉴스검색":   # 기관 이름을 단 소스인데 검색 결과가 그 기관 글이 아니면 버린다
                 got = [g2 for g2 in got
