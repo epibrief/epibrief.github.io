@@ -435,18 +435,13 @@ def page(data, others):
     t.textContent = msg; t.classList.add('on');
     setTimeout(() => t.classList.remove('on'), 2600);
   }};
-  /* 발간 예시 — 발행일은 보는 날짜로, 주간지는 호수·기간·다음 호도 오늘 기준으로 */
+  /* 발간 예시 — 발행일은 보는 날짜로, 주간지는 다룬 기간·다음 호도 오늘 기준으로 (호수는 그대로) */
   (function(){{
     const d = new Date(), p2 = n => String(n).padStart(2, '0');
     const dot = x => `${{x.getFullYear()}}.${{p2(x.getMonth() + 1)}}.${{p2(x.getDate())}}.`;
     const weekly = c => /주 ?1회/.test(c || '');
     const shift = n => {{ const x = new Date(d); x.setDate(d.getDate() + n); return x; }};
-    const t = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
-    const day = t.getUTCDay() || 7; t.setUTCDate(t.getUTCDate() + 4 - day);          // ISO 주차: 목요일 기준
-    const week = Math.ceil(((t - Date.UTC(t.getUTCFullYear(), 0, 1)) / 864e5 + 1) / 7);
     document.querySelectorAll('[data-live-date]').forEach(el => {{ el.textContent = dot(d); }});
-    document.querySelectorAll('[data-live-issue]').forEach(el => {{
-      if (weekly(el.dataset.cadence)) el.textContent = `${{t.getUTCFullYear()}}년 제${{week}}호`; }});
     document.querySelectorAll('[data-live-coverage]').forEach(el => {{
       if (weekly(el.dataset.cadence)) el.textContent = dot(shift(-7)) + '~' + dot(shift(-1)); }});
     document.querySelectorAll('[data-live-next]').forEach(el => {{
@@ -549,15 +544,11 @@ def index_page(rows):
   /* ?series=phsm 처럼 열면 그 뉴스레터만 보여 줍니다 (QR로 들어온 경우) */
   var NAMES = {{ outbreak:'감염병 발생 동향', phsm:'감염병 사회대응',
                 chronic:'만성질환 동향', climate:'기후·건강 위기 동향', injury:'손상·안전 동향' }};
-  /* 예시이므로 발행일은 보는 날짜로, 주간지는 호수도 오늘 기준 주차로 */
+  /* 예시이므로 발행일은 보는 날짜로 표시합니다 (호수는 그대로) */
   (function(){{
     var d = new Date(), p2 = function(n){{ return String(n).padStart(2, '0'); }};
     var iso = d.getFullYear() + '-' + p2(d.getMonth() + 1) + '-' + p2(d.getDate());
-    var t = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate())); var day = t.getUTCDay() || 7; t.setUTCDate(t.getUTCDate() + 4 - day);
-    var w = Math.ceil(((t - Date.UTC(t.getUTCFullYear(), 0, 1)) / 864e5 + 1) / 7);
     document.querySelectorAll('[data-live-date]').forEach(function(el){{ el.textContent = iso; }});
-    document.querySelectorAll('[data-live-issue]').forEach(function(el){{
-      if (/주 ?1회/.test(el.dataset.cadence || '')) el.textContent = t.getUTCFullYear() + '년 제' + w + '호'; }});
   }})();
   var series = new URLSearchParams(location.search).get('series');
   if (series && NAMES[series]) {{

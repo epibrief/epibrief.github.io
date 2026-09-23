@@ -58,7 +58,7 @@
 <nav class="bar">
   <a class="home" href="../"><span class="full">← 에피브리프</span><span class="short">← 홈</span></a>
   <a class="home" href="./"><span class="full">발간 목록</span><span class="short">목록</span></a>
-  <select id="jump" aria-label="다른 호 보기"><option value="chronic-2026-01.html" selected>만성질환 · 2026년 제1호(창간호)</option><option value="climate-2026-01.html">기후·건강 · 2026년 제1호(창간호)</option><option value="injury-2026-01.html">손상·안전 · 2026년 제1호(창간호)</option><option value="outbreak-2026-37.html">감염병 발생동향 · 2026년 제37호</option><option value="phsm-2026-01.html">감염병 사회대응 · 2026년 제1호(창간호)</option></select>
+  <select id="jump" aria-label="다른 호 보기"><option value="chronic-2026-01.html" selected>만성질환 · 2026년 제1호(창간호)</option><option value="climate-2026-01.html">기후·건강 · 2026년 제1호(창간호)</option><option value="injury-2026-01.html">손상·안전 · 2026년 제1호(창간호)</option><option value="outbreak-2026-37.html">감염병 발생동향 · 2026년 제1호(창간호)</option><option value="phsm-2026-01.html">감염병 사회대응 · 2026년 제1호(창간호)</option></select>
   <span class="sp"></span>
   <button class="ghost" onclick="window.print()"><span class="full">인쇄 · PDF</span><span class="short">인쇄</span></button>
   <span class="menu">
@@ -280,18 +280,13 @@
     t.textContent = msg; t.classList.add('on');
     setTimeout(() => t.classList.remove('on'), 2600);
   };
-  /* 발간 예시 — 발행일은 보는 날짜로, 주간지는 호수·기간·다음 호도 오늘 기준으로 */
+  /* 발간 예시 — 발행일은 보는 날짜로, 주간지는 다룬 기간·다음 호도 오늘 기준으로 (호수는 그대로) */
   (function(){
     const d = new Date(), p2 = n => String(n).padStart(2, '0');
     const dot = x => `${x.getFullYear()}.${p2(x.getMonth() + 1)}.${p2(x.getDate())}.`;
     const weekly = c => /주 ?1회/.test(c || '');
     const shift = n => { const x = new Date(d); x.setDate(d.getDate() + n); return x; };
-    const t = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
-    const day = t.getUTCDay() || 7; t.setUTCDate(t.getUTCDate() + 4 - day);          // ISO 주차: 목요일 기준
-    const week = Math.ceil(((t - Date.UTC(t.getUTCFullYear(), 0, 1)) / 864e5 + 1) / 7);
     document.querySelectorAll('[data-live-date]').forEach(el => { el.textContent = dot(d); });
-    document.querySelectorAll('[data-live-issue]').forEach(el => {
-      if (weekly(el.dataset.cadence)) el.textContent = `${t.getUTCFullYear()}년 제${week}호`; });
     document.querySelectorAll('[data-live-coverage]').forEach(el => {
       if (weekly(el.dataset.cadence)) el.textContent = dot(shift(-7)) + '~' + dot(shift(-1)); });
     document.querySelectorAll('[data-live-next]').forEach(el => {

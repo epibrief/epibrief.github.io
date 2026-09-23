@@ -65,7 +65,7 @@
     <a class="issue k-outbreak" data-kind="outbreak" href="outbreak-2026-37.html">
       <div class="kind">감염병 발생동향</div>
       <div class="t">감염병 발생 동향</div>
-      <div class="m"><span data-live-issue data-cadence="주 1회 발행 (매주 월요일)">2026년 제37호</span> · <span data-live-date>2026-09-14</span> · 에피청 에피대응과 <span style="font-size:.8em;color:#bf560c;font-weight:700" title="발간 예시라 발행일은 보는 날짜로 표시합니다">예시</span></div>
+      <div class="m"><span data-live-issue data-cadence="주 1회 발행 (매주 월요일)">2026년 제1호(창간호)</span> · <span data-live-date>2026-09-14</span> · 에피청 에피대응과 <span style="font-size:.8em;color:#bf560c;font-weight:700" title="발간 예시라 발행일은 보는 날짜로 표시합니다">예시</span></div>
       <p class="lead">독감 유행주의보가 예년보다 이르게 내려졌고, 콩고민주공화국 에볼라는 7개 주로 번졌습니다.</p>
       <div class="topics"><span>인플루엔자, 대한민국</span><span>에볼라바이러스병, 콩고민주공화국</span><span>레지오넬라증, 미국</span><span>홍역, 미국</span></div>
     </a>
@@ -82,15 +82,11 @@
   /* ?series=phsm 처럼 열면 그 뉴스레터만 보여 줍니다 (QR로 들어온 경우) */
   var NAMES = { outbreak:'감염병 발생 동향', phsm:'감염병 사회대응',
                 chronic:'만성질환 동향', climate:'기후·건강 위기 동향', injury:'손상·안전 동향' };
-  /* 예시이므로 발행일은 보는 날짜로, 주간지는 호수도 오늘 기준 주차로 */
+  /* 예시이므로 발행일은 보는 날짜로 표시합니다 (호수는 그대로) */
   (function(){
     var d = new Date(), p2 = function(n){ return String(n).padStart(2, '0'); };
     var iso = d.getFullYear() + '-' + p2(d.getMonth() + 1) + '-' + p2(d.getDate());
-    var t = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate())); var day = t.getUTCDay() || 7; t.setUTCDate(t.getUTCDate() + 4 - day);
-    var w = Math.ceil(((t - Date.UTC(t.getUTCFullYear(), 0, 1)) / 864e5 + 1) / 7);
     document.querySelectorAll('[data-live-date]').forEach(function(el){ el.textContent = iso; });
-    document.querySelectorAll('[data-live-issue]').forEach(function(el){
-      if (/주 ?1회/.test(el.dataset.cadence || '')) el.textContent = t.getUTCFullYear() + '년 제' + w + '호'; });
   })();
   var series = new URLSearchParams(location.search).get('series');
   if (series && NAMES[series]) {
