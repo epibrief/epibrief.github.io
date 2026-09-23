@@ -28,6 +28,8 @@
   --accent:#e39a4d; --accent-soft:#2c231a; --today:#2a2218; --today-fill:#b56a18; --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.3);
 }
 *{box-sizing:border-box}
+/* display 를 정해 둔 자리는 hidden 을 붙여도 안 숨습니다. 숨기라고 하면 확실히 숨깁니다. */
+[hidden]{display:none!important}
 html,body{margin:0;padding:0}
 body{
   background:var(--bg); color:var(--ink);
@@ -39,7 +41,10 @@ a{color:inherit}
 button{font:inherit;color:inherit;cursor:pointer}
 
 header.top{padding:22px 0 14px;display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;justify-content:space-between}
-.brand{display:flex;align-items:center;gap:10px}
+.brand{display:flex;align-items:center;gap:10px;border:0;background:transparent;padding:0;
+  text-align:left;cursor:pointer;border-radius:12px}
+.brand:hover h1{color:var(--accent)}
+.brand:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .brand .logo{font-size:30px;line-height:1}
 .brand h1{margin:0;font-size:23px;letter-spacing:-.02em}
 .brand p{margin:2px 0 0;font-size:13px;color:var(--dim)}
@@ -67,7 +72,15 @@ header.top{padding:22px 0 14px;display:flex;flex-wrap:wrap;gap:12px;align-items:
 .seg button{border:0;background:transparent;padding:7px 13px;font-size:13px;font-weight:600}
 .seg button[aria-pressed="true"]{background:var(--accent-soft);color:var(--accent)}
 
-.layout{display:grid;grid-template-columns:232px 1fr;gap:16px;margin-top:14px;align-items:start}
+.hidden-note{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:10px;
+  background:var(--panel);border:1px dashed var(--line);border-radius:12px;padding:9px 13px;font-size:13px;color:var(--dim)}
+.hidden-note b{color:var(--ink)}
+.hidden-note button{margin-left:auto;border:1px solid var(--line);background:var(--bg);border-radius:999px;
+  padding:5px 13px;font-size:12.5px;font-weight:700;color:var(--ink)}
+.hidden-note button:hover{border-color:var(--accent);color:var(--accent)}
+.layout{display:grid;grid-template-columns:232px minmax(0,1fr);gap:16px;margin-top:14px;align-items:start}
+.layout > main{min-width:0}
+#map-view,#list-view,#cal-view{min-width:0}
 @media (max-width:860px){.layout{grid-template-columns:1fr}.side{order:2}}
 
 .side{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:14px;box-shadow:var(--shadow)}
@@ -134,11 +147,15 @@ header.top{padding:22px 0 14px;display:flex;flex-wrap:wrap;gap:12px;align-items:
 .banner .label{position:absolute;left:0;top:0;z-index:2;background:var(--accent);color:#fff;font-size:10.5px;font-weight:700;
   padding:3px 10px;border-bottom-right-radius:10px;letter-spacing:.02em}
 @media (max-width:640px){
-  .banner .slide{grid-template-columns:86px 1fr;min-height:104px}
-  .banner .poster{padding-top:20px}
-  .banner .poster .dd{font-size:32px}
-  .banner h2{font-size:15.5px}
-  .banner .body{padding:13px 13px 26px}
+  .banner .slide{grid-template-columns:62px 1fr;min-height:96px}
+  .banner .poster{padding-top:18px}
+  .banner .poster .wd{font-size:10.5px;letter-spacing:.12em}
+  .banner .poster .dd{font-size:26px}
+  .banner .poster .mm{font-size:10.5px}
+  /* 날짜는 왼쪽 칸에 이미 있습니다. 좁은 화면에서 또 적으면 제목이 밀립니다. */
+  .banner .kicker .full-date{display:none}
+  .banner h2{font-size:15.5px;-webkit-line-clamp:3}
+  .banner .body{padding:11px 12px 24px}
   .banner .rot{right:10px;bottom:7px}
 }
 @media (prefers-reduced-motion:reduce){.banner .fade{animation:none}}
@@ -166,6 +183,17 @@ header.top{padding:22px 0 14px;display:flex;flex-wrap:wrap;gap:12px;align-items:
   overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:100%;min-width:0;font-weight:600
 }
 .ev:hover{filter:brightness(.96)}
+/* 달력 칸은 좁아서 제목이 잘립니다. 마우스를 얹으면 전체 이름을 띄워 줍니다. */
+.tip{position:fixed;z-index:70;max-width:min(320px,86vw);padding:10px 12px;border-radius:12px;
+  background:var(--panel);border:1px solid var(--line);box-shadow:0 10px 28px rgba(0,0,0,.16);
+  font-size:12.5px;line-height:1.45;color:var(--ink);pointer-events:none;opacity:0;transform:translateY(3px);
+  transition:opacity .12s ease,transform .12s ease}
+.tip[data-on]{opacity:1;transform:translateY(0)}
+.tip .who{font-size:11px;font-weight:700;color:var(--dim);margin-bottom:2px}
+.tip .what{font-weight:700;color:var(--strong)}
+.tip .when,.tip .where{font-size:11.5px;color:var(--dim);margin-top:3px}
+@media (hover:none){.tip{display:none}}
+@media (prefers-reduced-motion:reduce){.tip{transition:none}}
 .ev .t{font-weight:700;opacity:.85;margin-right:3px;font-variant-numeric:tabular-nums}
 .more{font-size:11px;color:var(--dim);border:0;background:transparent;text-align:left;padding:0 6px}
 
@@ -177,7 +205,16 @@ header.top{padding:22px 0 14px;display:flex;flex-wrap:wrap;gap:12px;align-items:
 .mapbar .where-in input{border:0;background:transparent;outline:none;width:100%;font:inherit;color:inherit}
 .mapbar .msg{font-size:12.5px;color:var(--dim);width:100%}
 .mapbar .msg b{color:var(--ink)}
-#map{height:min(66vh,560px);border-radius:var(--r);border:1px solid var(--line);box-shadow:var(--shadow);z-index:1}
+.linky{border:0;background:transparent;color:var(--accent);font-weight:700;font-size:12.5px;
+  text-decoration:underline;text-underline-offset:2px;padding:0}
+#map{height:min(62vh,560px);border-radius:var(--r);border:1px solid var(--line);box-shadow:var(--shadow);z-index:1}
+@media (max-width:640px){
+  .mapbar{gap:7px}
+  .mapbar .where-in{order:3;flex:1 0 100%;min-width:0}
+  .mapbar #btn-here{flex:1 1 auto}
+  .mapbar #btn-addr,.mapbar #btn-wide{flex:0 0 auto;padding:8px 12px}
+  #map{height:52vh}
+}
 #map.dim{filter:brightness(.86) contrast(1.04)}
 .leaflet-container{background:var(--bg);font:inherit}
 .pin{border-radius:50%;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4)}
@@ -193,6 +230,12 @@ header.top{padding:22px 0 14px;display:flex;flex-wrap:wrap;gap:12px;align-items:
 .pop .acts{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}
 .pop .acts a,.pop .acts button{font-size:12px;font-weight:700;border-radius:8px;padding:5px 9px;border:1px solid #ddd;background:#fff;color:#222;text-decoration:none}
 .pop .acts a.go{background:var(--accent);border-color:var(--accent);color:#fff}
+.away{margin:0 0 10px;display:flex;flex-wrap:wrap;gap:7px;align-items:center}
+.away .t{font-size:12.5px;color:var(--dim);margin-right:2px}
+.away button{border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:5px 12px;
+  font-size:13px;font-weight:700;box-shadow:var(--shadow)}
+.away button:hover{border-color:var(--accent);color:var(--accent)}
+.away button b{color:var(--accent);margin-left:5px;font-variant-numeric:tabular-nums}
 .near{margin-top:10px;display:flex;flex-direction:column;gap:7px}
 .near .row{display:flex;gap:10px;align-items:center;justify-content:space-between;background:var(--panel);
   border:1px solid var(--line);border-left:4px solid var(--dot);border-radius:10px;padding:8px 11px;text-align:left;width:100%}
@@ -215,6 +258,14 @@ header.top{padding:22px 0 14px;display:flex;flex-wrap:wrap;gap:12px;align-items:
 .dots i{width:7px;height:7px;border-radius:50%;background:var(--dot);display:block}
 .day.tappable{cursor:pointer}
 .day.tappable:active{background:var(--accent-soft)}
+.daypick{display:flex;align-items:center;gap:10px;flex-wrap:wrap;background:var(--accent-soft);
+  border:1px solid color-mix(in srgb,var(--accent) 30%,transparent);border-radius:12px;
+  padding:9px 13px;margin-bottom:10px}
+.daypick b{font-size:15px}
+.daypick span{font-size:12.5px;color:var(--dim);flex:1}
+.daypick button{border:1px solid var(--line);background:var(--panel);border-radius:999px;
+  padding:5px 12px;font-size:12.5px;font-weight:700}
+.daypick button:hover{border-color:var(--accent);color:var(--accent)}
 .month-sep{font-size:13px;font-weight:700;color:var(--dim);margin:12px 0 2px}
 
 .empty{padding:48px 20px;text-align:center;color:var(--dim)}
@@ -255,7 +306,8 @@ footer a{color:var(--accent)}
 <div class="wrap">
 
 <header class="top">
-  <div class="brand">
+  <div class="brand" id="go-home" role="button" tabindex="0"
+       title="처음 화면으로 (이번 달 달력)" aria-label="처음 화면으로">
     <div class="logo" aria-hidden="true">🍞</div>
     <div>
       <h1>빵캘</h1>
@@ -296,13 +348,15 @@ footer a{color:var(--accent)}
   </div>
 </div>
 
+<div class="hidden-note" id="hidden-note" hidden></div>
+
 <div class="layout">
   <aside class="side">
     <details id="filt" open>
       <summary><span>기관 고르기</span></summary>
       <p class="hint">보고 싶은 곳만 남겨 두세요.</p>
       <div id="filters"></div>
-      <button class="btn ghost" id="reset" style="width:100%;margin-top:4px;font-size:13px">전부 다시 보기</button>
+      <button class="btn ghost" id="reset" style="width:100%;margin-top:4px;font-size:13px">전체 선택</button>
     </details>
   </aside>
 
@@ -322,8 +376,10 @@ footer a{color:var(--accent)}
           <input id="addr" type="search" placeholder="주소나 동네 이름 (예: 서울 중구 세종대로)" aria-label="내 위치를 주소로 찾기">
         </div>
         <button class="btn" id="btn-addr">찾기</button>
+        <button class="btn ghost" id="btn-wide">전국 보기</button>
         <div class="msg" id="map-msg"></div>
       </div>
+      <div class="away" id="away" hidden></div>
       <div id="map"></div>
       <div class="near" id="near"></div>
     </div>
@@ -335,7 +391,7 @@ footer a{color:var(--accent)}
     일정은 각 기관 공고에서 모읍니다. 자세한 내용과 신청은 반드시 원문에서 확인해 주세요.
     <span id="updated"></span>
   </div>
-  <div>지음웍스닷컴 · <a href="https://jieumworks.com" target="_blank" rel="noopener">jieumworks.com</a> · 2026년 9월</div>
+  <div>지음웍스닷컴 · <a href="http://jieumworks.com" target="_blank" rel="noopener">jieumworks.com</a> · 2026년 9월</div>
 </footer>
 </div>
 
@@ -348,11 +404,17 @@ footer a{color:var(--accent)}
   <div class="sub-list" id="sub-list"></div>
   <ol class="steps">
     <li>위에서 원하는 달력의 <b>주소 복사</b>를 누릅니다.</li>
-    <li>컴퓨터에서 <b>구글 캘린더</b>를 엽니다. (휴대폰 앱에서는 이 기능이 없습니다)</li>
-    <li>왼쪽 <b>다른 캘린더</b> 옆 <b>＋</b> → <b>URL로 만들기</b>를 누릅니다.</li>
-    <li>복사한 주소를 붙여넣고 <b>캘린더 추가</b>를 누릅니다.<br>
-        붙여넣기는 윈도우 <b>Ctrl + V</b>, 맥 <b>⌘ + V</b> 입니다.</li>
+    <li>아래 <b>구글 캘린더 열기</b>를 누릅니다. 주소 넣는 칸이 바로 나옵니다.</li>
+    <li>그 칸에 붙여넣고 <b>캘린더 추가</b>를 누릅니다.<br>
+        붙여넣기는 윈도우 <b>Ctrl + V</b>, 맥 <b>⌘ + V</b>, 휴대폰은 <b>길게 눌러 붙여넣기</b> 입니다.</li>
   </ol>
+  <div class="acts" style="margin-top:12px">
+    <a class="btn primary" href="https://calendar.google.com/calendar/u/0/r/settings/addbyurl" target="_blank" rel="noopener">구글 캘린더 열기</a>
+  </div>
+  <div class="steps" style="margin-top:10px;padding-left:0">
+    한 번 넣어 두면 그다음부터는 손댈 것이 없습니다. 새 행사가 알아서 들어옵니다.<br>
+    빼고 싶을 때는 구글 캘린더 왼쪽 목록에서 그 달력 옆 <b>⋮</b> → <b>구독 취소</b> 입니다.
+  </div>
   <div class="notice">구글은 구독한 달력을 보통 하루에 한두 번 새로 읽습니다. 방금 올라온 일정이 바로 안 보여도 잠시 기다리시면 됩니다.</div>
 </div></dialog>
 
@@ -396,10 +458,10 @@ const style = (id) => {
 /** 한 행사에 주최 기관이 여럿일 수 있습니다. */
 const hostsOf = (e) => (e.orgs && e.orgs.length ? e.orgs : [e.org]).filter((id) => ORGS[id]);
 const hostNames = (e) => {
-  // 우리가 아는 기관이면 그 이름을, 모르면 공고에 적힌 이름이라도 보여 줍니다.
-  const known = hostsOf(e).filter((id) => id !== 'etc').map((id) => ORGS[id].name);
+  // '임상 학회', '그 밖의 기관' 은 묶음 칸일 뿐입니다. 행사에 적힌 진짜 주최 이름을 보여 줍니다.
+  const known = hostsOf(e).filter((id) => !ORGS[id].bucket).map((id) => ORGS[id].name);
   if (known.length) return known.join('·');
-  return e.orgLabel || '그 밖의 기관';
+  return e.orgLabel || (ORGS[hostsOf(e)[0]] || {}).name || '그 밖의 기관';
 };
 
 const visible = () => EVENTS.filter((e) => {
@@ -475,6 +537,37 @@ function renderFilters() {
   }
 }
 
+/** 꺼 둔 기관이 있으면 그 사실과 건수를 알려 줍니다. 모르고 못 보는 일이 없게 합니다. */
+function renderHiddenNote() {
+  const box = $('#hidden-note');
+  // 내용을 다 만든 다음에야 보여 줍니다. 중간에 걸려도 빈 상자가 남지 않습니다.
+  box.hidden = true;
+  box.innerHTML = '';
+  try {
+    const offIds = [...hidden].filter((id) => ORGS[id]);
+    if (!offIds.length) return;
+
+    const count = EVENTS.filter((e) =>
+      (e.orgs && e.orgs.length ? e.orgs : [e.org]).some((id) => hidden.has(id))
+      && (e.end || e.start) >= TODAY).length;
+    if (!count) return;
+
+    const names = offIds.map((id) => ORGS[id].name);
+    const label = names.length <= 2 ? names.join('·') : `${names[0]} 등 ${names.length}곳`;
+    const text = document.createElement('span');
+    text.innerHTML = `<b>${escapeHtml(label)}</b> 행사 ${count}건은 지금 꺼져 있습니다.`;
+    const on = document.createElement('button');
+    on.textContent = names.length === 1 ? `${names[0]} 켜기` : '전부 켜기';
+    on.onclick = () => { hidden.clear(); saveHidden(); draw(); };
+    box.appendChild(text);
+    box.appendChild(on);
+    box.hidden = false;
+  } catch {
+    box.hidden = true;
+    box.innerHTML = '';
+  }
+}
+
 /** 켜짐·꺼짐 토글 하나를 만듭니다. */
 function toggle(on, onChange, extra = '') {
   const el = document.createElement('input');
@@ -486,7 +579,12 @@ function toggle(on, onChange, extra = '') {
 }
 
 function saveHidden() {
-  try { localStorage.setItem('bbangcal-off', JSON.stringify([...hidden])); } catch {}
+  // 끈 기관과 함께 '그때 있던 기관 목록'도 적어 둡니다.
+  // 나중에 새 기관이 늘어나면, 그 기관은 저장해 두신 설정 대신 기본값을 따릅니다.
+  const known = CONF && CONF.orgs ? CONF.orgs.map((o) => o.id) : [...hidden];
+  try {
+    localStorage.setItem('bbangcal-off', JSON.stringify({ off: [...hidden], known }));
+  } catch {}
 }
 
 function renderMonth() {
@@ -512,6 +610,11 @@ function renderMonth() {
     num.textContent = d.getDate();
     cell.appendChild(num);
     const list = (byDay[key] || []).sort((a, b) => (a.startTime || '99').localeCompare(b.startTime || '99'));
+    if (list.length) {
+      cell.classList.add('tappable');
+      cell.onclick = () => openDay(key);
+      cell.title = `${d.getMonth() + 1}월 ${d.getDate()}일 행사 ${list.length}건 보기`;
+    }
     if (compact()) {
       // 좁은 화면에서는 제목이 잘려 읽을 수 없으니 점으로 알리고, 누르면 목록으로 보여 줍니다.
       if (list.length) {
@@ -524,7 +627,6 @@ function renderMonth() {
         });
         cell.appendChild(dots);
         cell.classList.add('tappable');
-        cell.onclick = () => { jumpTo = key; view = 'list'; setView(); };
       }
     } else {
       const cap = 3;
@@ -533,7 +635,7 @@ function renderMonth() {
         const more = document.createElement('button');
         more.className = 'more';
         more.textContent = `+${list.length - cap}건 더`;
-        more.onclick = () => { jumpTo = key; view = 'list'; setView(); };
+        more.onclick = (ev) => { ev.stopPropagation(); openDay(key); };
         cell.appendChild(more);
       }
     }
@@ -548,27 +650,87 @@ function chip(e, day) {
   const cont = day !== e.start;
   b.innerHTML = (e.startTime && !cont ? `<span class="t">${e.startTime}</span>` : cont ? '<span class="t">↳</span>' : '') +
     escapeHtml(e.title);
-  b.title = `${hostNames(e)} · ${e.title}`;
-  b.onclick = () => openEvent(e);
+  // 기본 말풍선은 느리고 글자가 작아서, 직접 만든 말풍선을 씁니다.
+  b.setAttribute('aria-label', `${hostNames(e)} · ${e.title}`);
+  bindTip(b, e);
+  b.onclick = (ev) => { ev.stopPropagation(); openEvent(e); };
   return b;
 }
 
-let jumpTo = null;
+let tipBox = null, tipTimer = 0;
+
+/** 달력 칸의 행사에 마우스를 얹으면 전체 이름을 띄웁니다. */
+function bindTip(el, e) {
+  if (!matchMedia('(hover:hover)').matches) return;
+  el.addEventListener('mouseenter', () => { clearTimeout(tipTimer); tipTimer = setTimeout(() => showTip(el, e), 120); });
+  el.addEventListener('mouseleave', hideTip);
+  el.addEventListener('focus', () => showTip(el, e));
+  el.addEventListener('blur', hideTip);
+}
+
+function showTip(el, e) {
+  if (!document.body.contains(el)) return;
+  if (!tipBox) {
+    tipBox = document.createElement('div');
+    tipBox.className = 'tip';
+    tipBox.setAttribute('role', 'tooltip');
+    document.body.appendChild(tipBox);
+  }
+  tipBox.innerHTML = `<div class="who">${escapeHtml(hostNames(e))}</div>`
+    + `<div class="what">${escapeHtml(e.title)}</div>`
+    + `<div class="when">${escapeHtml(dateLabel(e))}</div>`
+    + (e.place ? `<div class="where">${escapeHtml(e.place)}</div>` : '');
+
+  // 화면 밖으로 나가지 않게 자리를 잡습니다.
+  tipBox.style.left = '0px';
+  tipBox.style.top = '0px';
+  const r = el.getBoundingClientRect();
+  const t = tipBox.getBoundingClientRect();
+  const pad = 8;
+  let left = r.left + r.width / 2 - t.width / 2;
+  left = Math.max(pad, Math.min(left, innerWidth - t.width - pad));
+  let top = r.top - t.height - 8;
+  if (top < pad) top = Math.min(r.bottom + 8, innerHeight - t.height - pad);
+  tipBox.style.left = Math.round(left) + 'px';
+  tipBox.style.top = Math.round(top) + 'px';
+  tipBox.setAttribute('data-on', '');
+}
+
+function hideTip() {
+  clearTimeout(tipTimer);
+  if (tipBox) tipBox.removeAttribute('data-on');
+}
+addEventListener('scroll', hideTip, true);
+addEventListener('keydown', (ev) => { if (ev.key === 'Escape') hideTip(); });
+
+let dayPick = null;   // 누른 날짜. 그날 행사만 보여 줍니다.
 function renderList() {
   const box = $('#list-view');
   box.innerHTML = '';
-  const from = jumpTo || TODAY;
-  const list = visible().filter((e) => (e.end || e.start) >= from);
-  if (jumpTo) {
+  // 날짜를 눌러 들어왔으면 그날 열리는 행사만 보여 줍니다.
+  const list = dayPick
+    ? visible().filter((e) => e.start <= dayPick && (e.end || e.start) >= dayPick)
+    : visible().filter((e) => (e.end || e.start) >= TODAY);
+
+  if (dayPick) {
+    const d = new Date(dayPick + 'T00:00:00');
+    const head = document.createElement('div');
+    head.className = 'daypick';
+    head.innerHTML = `<b>${d.getMonth() + 1}월 ${d.getDate()}일(${DOW[d.getDay()]})</b>
+      <span>행사 ${list.length}건</span>`;
     const back = document.createElement('button');
-    back.className = 'btn ghost';
-    back.style.cssText = 'margin-bottom:10px;font-size:13px';
     back.textContent = '‹ 달력으로';
-    back.onclick = () => { view = 'month'; setView(); };
-    box.appendChild(back);
+    back.onclick = () => { dayPick = null; view = 'month'; setView(); };
+    head.appendChild(back);
+    box.appendChild(head);
   }
-  jumpTo = null;
-  if (!list.length) { box.innerHTML = `<div class="empty"><div class="big">🍞</div>조건에 맞는 일정이 없습니다.</div>`; return; }
+  if (!list.length) {
+    const e = document.createElement('div');
+    e.className = 'empty';
+    e.innerHTML = `<div class="big">🍞</div>${dayPick ? '이날은 열리는 행사가 없습니다.' : '조건에 맞는 일정이 없습니다.'}`;
+    box.appendChild(e);
+    return;
+  }
   const holder = document.createElement('div');
   holder.className = 'list';
   let curMonth = '';
@@ -599,6 +761,22 @@ function renderList() {
 let map = null, layer = null, meMarker = null, me = null;
 // 도심 이동을 어림잡는 값입니다. 직선 거리 기준이라 실제보다 짧게 나옵니다.
 const SPEED_KMH = 22, OVERHEAD_MIN = 20;
+// 이 거리 안쪽을 '갈 만한 거리' 로 봅니다.
+const NEAR_KM = 35;
+// 행사 열에 아홉이 서울입니다. 그래서 서울을 기본 자리로 둡니다.
+const SEOUL = { lat: 37.5665, lng: 126.9780 };
+let mapMoved = false;
+
+/** 행사가 가장 많이 몰린 덩어리를 찾습니다. 서울 행사 열 건과 속초 한 건을 같이 비추지 않기 위해서입니다. */
+function denseBounds(list) {
+  let best = null;
+  for (const c of list) {
+    const near = list.filter((e) => km(c, e) <= NEAR_KM);
+    if (!best || near.length > best.length) best = near;
+  }
+  const use = best && best.length ? best : list;
+  return L.latLngBounds(use.map((e) => [e.lat, e.lng]));
+}
 
 const mapped = () => visible().filter((e) => typeof e.lat === 'number' && typeof e.lng === 'number');
 
@@ -670,6 +848,8 @@ function renderMap() {
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 18, attribution: '지도 © OpenStreetMap 기여자'
     }).addTo(map);
+    // 손으로 지도를 움직인 뒤에는 멋대로 돌아가지 않게 합니다.
+    map.on('dragend zoomend', () => { mapMoved = true; });
     map.on('popupopen', (ev) => {
       const b = ev.popup.getElement().querySelector('[data-ev]');
       if (b) b.onclick = () => { const e = EVENTS.find((x) => x.id === b.dataset.ev); if (e) openEvent(e); };
@@ -680,23 +860,99 @@ function renderMap() {
     meMarker = L.marker([me.lat, me.lng], { icon: L.divIcon({ className: '', html: '<div class="pin me"></div>', iconSize: [16, 16], iconAnchor: [8, 8] }) })
       .addTo(map).bindPopup('내 위치');
   }
+  map.invalidateSize();
   if (layer) layer.remove();
   layer = L.layerGroup(list.map((e) => L.marker([e.lat, e.lng], { icon: dot(e), title: e.title }).bindPopup(popupHtml(e)))).addTo(map);
 
-  if (list.length) {
-    const b = L.latLngBounds(list.map((e) => [e.lat, e.lng]));
-    if (me) b.extend([me.lat, me.lng]);
-    map.fitBounds(b.pad(0.18), { maxZoom: me ? 13 : 11 });
+  if (list.length && !mapMoved) {
+    if (me) {
+      // 내 위치를 넣었으면 갈 만한 거리만 비춥니다. 속초 행사 하나 때문에 전국이 보이면 쓸모가 없습니다.
+      const near = list.filter((e) => km(me, e) <= NEAR_KM);
+      const b = L.latLngBounds([[me.lat, me.lng], ...near.map((e) => [e.lat, e.lng])]);
+      const tight = compact() ? 12 : 13;
+      if (near.length) map.fitBounds(b.pad(0.3), { maxZoom: tight });
+      else map.setView([me.lat, me.lng], tight - 1);
+    } else {
+      // 위치를 모르면 서울을 비춥니다. 지방 행사 하나 때문에 전국이 보이면 아무것도 안 보입니다.
+      map.setView([SEOUL.lat, SEOUL.lng], compact() ? 10 : 11);
+    }
   }
-  setTimeout(() => map.invalidateSize(), 60);
+  setTimeout(() => map.invalidateSize(), 120);
 
   const off = visible().filter((e) => e.online).length;
   const noGeo = visible().length - list.length - off;
-  $('#map-msg').innerHTML = me
-    ? `내 위치를 기준으로 가까운 차례로 아래에 늘어놓았습니다. 이동 시간은 직선 거리에 시속 ${SPEED_KMH}km 와 환승·도보 ${OVERHEAD_MIN}분을 더한 <b>어림값</b>입니다. 정확한 시간은 길찾기에서 보세요.`
-    : `내 위치를 넣으면 지금 갈 수 있는 행사인지 알려 드립니다. 위치는 이 브라우저 안에서만 쓰고 어디에도 보내지 않습니다.`;
+  // 위치를 이미 잡았으면 이 단추가 할 일은 '다시 잡기' 뿐입니다.
+  // 지도 위의 '현재 위치' 단추와 역할이 겹쳐 보이지 않게 이름을 바꿉니다.
+  const here = $('#btn-here');
+  if (here) {
+    here.textContent = me ? '🔄 위치 다시 잡기' : '📍 내 위치 쓰기';
+    here.title = me ? '지금 자리를 새로 잡아 순서를 다시 매깁니다' : '지금 자리를 잡아 가까운 차례로 늘어놓습니다';
+  }
+  if (me) {
+    const kind = me.fresh ? (me.label || '지금 위치') : '지난번에 잡아 둔 위치';
+    const acc = me.accuracy && me.accuracy > 3000 ? ` (오차 약 ${Math.round(me.accuracy / 1000)}km)` : '';
+    $('#map-msg').innerHTML = `<b>${escapeHtml(kind)}</b>${acc}를 기준으로 가까운 차례로 늘어놓았습니다. `
+      + `<button class="linky" id="clear-me">위치 지우기</button><br>`
+      + `이동 시간은 직선 거리에 시속 ${SPEED_KMH}km 와 환승·도보 ${OVERHEAD_MIN}분을 더한 <b>어림값</b>입니다. 정확한 시간은 길찾기에서 보세요.`;
+  } else {
+    $('#map-msg').innerHTML = '내 위치를 넣으면 지금 갈 수 있는 행사인지 알려 드립니다. 위치는 이 브라우저 안에서만 쓰고 어디에도 보내지 않습니다.';
+  }
   if (off || noGeo) $('#map-msg').innerHTML += `<br>지도에 없는 행사: 온라인 ${off}건, 장소를 알 수 없는 행사 ${noGeo}건.`;
+  const clear = $('#clear-me');
+  if (clear) clear.onclick = () => {
+    me = null; mapMoved = false;
+    if (meMarker) { meMarker.remove(); meMarker = null; }
+    try { localStorage.removeItem('bbangcal-me'); } catch {}
+    renderMap();
+    toast('위치를 지웠습니다');
+  };
+  renderAway(list);
   renderNear(list);
+}
+
+/** 지금 보이는 자리 밖에 있는 행사를 도시별로 알려 줍니다. 숨기지 않고 한 번에 갈 수 있게 합니다. */
+function renderAway(list) {
+  const box = $('#away');
+  const from = me || SEOUL;
+  const far = list.filter((e) => km(from, e) > NEAR_KM);
+  if (!far.length) { box.hidden = true; box.innerHTML = ''; return; }
+
+  const byCity = {};
+  for (const e of far) {
+    const c = e.city || '그 밖';
+    (byCity[c] ||= []).push(e);
+  }
+  box.hidden = false;
+  box.innerHTML = `<span class="t">${me ? '멀리 있는 행사' : '서울 밖 행사'}</span>`;
+  for (const [city, evs] of Object.entries(byCity).sort((a, b) => b[1].length - a[1].length)) {
+    const bt = document.createElement('button');
+    bt.innerHTML = `${escapeHtml(city)}<b>${evs.length}</b>`;
+    bt.title = evs.map((e) => e.title).join('\n');
+    bt.onclick = () => {
+      mapMoved = true;
+      if (evs.length === 1) {
+        map.setView([evs[0].lat, evs[0].lng], 13);
+        L.popup().setLatLng([evs[0].lat, evs[0].lng]).setContent(popupHtml(evs[0])).openOn(map);
+      } else {
+        map.fitBounds(L.latLngBounds(evs.map((e) => [e.lat, e.lng])).pad(0.3), { maxZoom: 13 });
+      }
+    };
+    box.appendChild(bt);
+  }
+  const home = document.createElement('button');
+  home.textContent = me ? '📍 현재 위치' : '서울로';
+  home.title = me ? '지도를 내 위치로 당겨서 봅니다' : '서울을 비춥니다';
+  home.onclick = () => {
+    mapMoved = true;
+    if (!me) { map.setView([SEOUL.lat, SEOUL.lng], compact() ? 10 : 11); return; }
+    // 내 위치는 바짝 당겨서 보여 줍니다. 어느 골목인지 보이게 합니다.
+    const slow = !matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const z = 16;
+    if (slow && map.flyTo) map.flyTo([me.lat, me.lng], z, { duration: 0.8 });
+    else map.setView([me.lat, me.lng], z);
+    if (meMarker) setTimeout(() => meMarker.openPopup(), slow ? 850 : 60);
+  };
+  box.appendChild(home);
 }
 
 function renderNear(list) {
@@ -719,23 +975,34 @@ function renderNear(list) {
   }
 }
 
-function setMe(lat, lng, label) {
-  me = { lat, lng };
+function setMe(lat, lng, label, accuracy) {
+  me = { lat, lng, label, accuracy, fresh: true };
+  mapMoved = false;
   try { localStorage.setItem('bbangcal-me', JSON.stringify({ lat, lng, label })); } catch {}
   if (meMarker) meMarker.remove();
   meMarker = L.marker([lat, lng], { icon: L.divIcon({ className: '', html: '<div class="pin me"></div>', iconSize: [16, 16], iconAnchor: [8, 8] }) })
     .addTo(map).bindPopup(`내 위치${label ? '<br>' + escapeHtml(label) : ''}`);
   renderMap();
-  toast('내 위치를 잡았습니다');
+  toast(accuracy && accuracy > 3000 ? `대략 ${Math.round(accuracy / 1000)}km 범위로 잡았습니다` : '지금 위치를 잡았습니다');
 }
 
 function askHere() {
   if (!navigator.geolocation) { toast('이 브라우저는 위치를 알려 주지 못합니다'); return; }
-  $('#map-msg').textContent = '위치를 확인하는 중입니다…';
+  $('#map-msg').textContent = '지금 위치를 확인하는 중입니다…';
   navigator.geolocation.getCurrentPosition(
-    (pos) => setMe(pos.coords.latitude, pos.coords.longitude, '기기에서 잡은 위치'),
-    () => { $('#map-msg').textContent = '위치를 쓰지 못했습니다. 아래 칸에 주소를 넣어 보세요.'; },
-    { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 }
+    (pos) => {
+      // 얼마나 정확한지 함께 알려 줍니다. 오차가 크면 통신망으로 잡은 대략 위치입니다.
+      const acc = Math.round(pos.coords.accuracy || 0);
+      setMe(pos.coords.latitude, pos.coords.longitude, acc > 3000 ? '대략 위치' : '지금 위치', acc);
+    },
+    (err) => {
+      const why = err.code === 1 ? '위치 사용을 막아 두셨습니다. 브라우저 주소창 왼쪽 자물쇠에서 위치를 허용해 주세요.'
+        : err.code === 3 ? '위치를 잡는 데 시간이 너무 걸렸습니다. 건물 안이면 창가에서 다시 해 보세요.'
+        : '위치를 잡지 못했습니다.';
+      $('#map-msg').textContent = why + ' 아래 칸에 주소를 넣으셔도 됩니다.';
+    },
+    // 묵은 값을 받지 않습니다. 눌렀으면 지금 자리를 새로 잡습니다.
+    { enableHighAccuracy: true, timeout: 15000, maximumAge: 0 }
   );
 }
 
@@ -812,7 +1079,7 @@ function paintBanner() {
       <div class="kicker">
         <span class="chip">${escapeHtml(hostNames(e))}</span>
         <span class="when">${escapeHtml(countdown)}</span>
-        <span>${escapeHtml(dateLabel(e))}</span>
+        <span class="full-date">${escapeHtml(dateLabel(e))}</span>
       </div>
       <h2>${escapeHtml(e.title)}</h2>
       <div class="where">${escapeHtml(e.place || when)}</div>
@@ -849,6 +1116,14 @@ function startRotate() {
 function stopRotate() { if (bannerTimer) { clearInterval(bannerTimer); bannerTimer = null; } }
 
 const DOW = ['일', '월', '화', '수', '목', '금', '토'];
+/** 그 날짜 하나만 보여 주는 화면으로 갑니다. */
+function openDay(key) {
+  dayPick = key;
+  view = 'list';
+  setView();
+  $('#list-view').scrollIntoView({ block: 'start', behavior: 'smooth' });
+}
+
 function dateLabel(e) {
   const d = new Date(e.start + 'T00:00:00');
   let s = `${d.getMonth() + 1}월 ${d.getDate()}일(${DOW[d.getDay()]})`;
@@ -935,12 +1210,13 @@ function setView() {
 }
 function draw() {
   renderFilters();
+  renderHiddenNote();
   renderBanner();
   const monthNav = [$('#prev'), $('#next'), $('#today')];
   for (const b of monthNav) b.hidden = view !== 'month';
   if (view === 'month') renderMonth();
   else if (view === 'map') { $('#month-label').textContent = '지도로 찾기'; renderMap(); }
-  else { $('#month-label').textContent = '앞으로 열릴 일정'; renderList(); }
+  else { $('#month-label').textContent = dayPick ? '하루치 보기' : '앞으로 열릴 일정'; renderList(); }
 }
 
 async function boot() {
@@ -957,10 +1233,23 @@ async function boot() {
     $('#cal-view').innerHTML = `<div class="empty"><div class="big">🍞</div>일정을 불러오지 못했습니다. 잠시 뒤 새로고침해 주세요.</div>`;
     return;
   }
-  try {
-    const off = JSON.parse(localStorage.getItem('bbangcal-off') || '[]');
-    if (Array.isArray(off)) hidden = new Set(off.filter((id) => ORGS[id]));
-  } catch {}
+  // 처음 오신 분에게는 임상 학회를 꺼 둡니다. 보건정책 행사가 학술대회에 묻히지 않게 하기 위해서입니다.
+  let saved = null;
+  try { saved = JSON.parse(localStorage.getItem('bbangcal-off') || 'null'); } catch {}
+  const defaultOff = CONF.orgs.filter((o) => o.offByDefault).map((o) => o.id);
+  let off = [];
+  let known = new Set();
+  if (saved && !Array.isArray(saved) && Array.isArray(saved.off)) {
+    off = saved.off.filter((id) => ORGS[id]);
+    known = new Set((saved.known || []).filter((id) => ORGS[id]));
+  } else if (Array.isArray(saved)) {
+    // 예전 방식으로 저장된 설정입니다. 그때는 없던 기관은 기본값(꺼짐)으로 시작합니다.
+    off = saved.filter((id) => ORGS[id]);
+    known = new Set(CONF.orgs.map((o) => o.id).filter((id) => !defaultOff.includes(id)));
+  }
+  hidden = new Set(off);
+  for (const id of defaultOff) if (!known.has(id)) hidden.add(id);
+  saveHidden();
 
   // 앞으로 열릴 일정이 있는 달로 첫 화면을 맞춥니다.
   const next = EVENTS.find((e) => (e.end || e.start) >= TODAY);
@@ -971,15 +1260,35 @@ async function boot() {
   $('#prev').onclick = () => { cursor.setMonth(cursor.getMonth() - 1); draw(); };
   $('#next').onclick = () => { cursor.setMonth(cursor.getMonth() + 1); draw(); };
   $('#today').onclick = () => { cursor = new Date(); draw(); };
-  $('#view-month').onclick = () => { view = 'month'; setView(); };
-  $('#view-list').onclick = () => { view = 'list'; setView(); };
-  $('#view-map').onclick = () => { view = 'map'; setView(); };
+  // 이름을 누르면 처음 화면으로 돌아옵니다. 이번 달 달력, 검색어와 날짜 고름은 지웁니다.
+  const goHome = () => {
+    dayPick = null;
+    query = '';
+    $('#q').value = '';
+    cursor = new Date();
+    view = 'month';   // 좁은 화면에서도 달력을 보여 줍니다. 처음 화면은 달력입니다.
+    setView();
+    scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+  };
+  $('#go-home').onclick = goHome;
+  $('#go-home').onkeydown = (ev) => {
+    if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); goHome(); }
+  };
+  $('#view-month').onclick = () => { dayPick = null; view = 'month'; setView(); };
+  $('#view-list').onclick = () => { dayPick = null; view = 'list'; setView(); };
+  $('#view-map').onclick = () => { dayPick = null; view = 'map'; setView(); };
   $('#btn-here').onclick = askHere;
   $('#btn-addr').onclick = findAddr;
+  $('#btn-wide').onclick = () => {
+    const list = mapped();
+    if (!list.length) return;
+    mapMoved = true;
+    map.fitBounds(L.latLngBounds(list.map((e) => [e.lat, e.lng])).pad(0.15));
+  };
   $('#addr').onkeydown = (ev) => { if (ev.key === 'Enter') findAddr(); };
   try {
     const saved = JSON.parse(localStorage.getItem('bbangcal-me') || 'null');
-    if (saved && typeof saved.lat === 'number') me = { lat: saved.lat, lng: saved.lng };
+    if (saved && typeof saved.lat === 'number') me = { lat: saved.lat, lng: saved.lng, label: saved.label, fresh: false };
   } catch {}
   $('#reset').onclick = () => { hidden.clear(); saveHidden(); query = ''; $('#q').value = ''; draw(); };
   $('#q').oninput = (e) => { query = e.target.value.trim().toLowerCase(); if (query && view === 'month') { view = 'list'; setView(); } else draw(); };

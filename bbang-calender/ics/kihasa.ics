@@ -19,7 +19,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:c5f91c89a8bf52a8@bbangcal.epibrief.github.io
-DTSTAMP:20260919T120246Z
+DTSTAMP:20260922T235805Z
 DTSTART;TZID=Asia/Seoul:20260807T130000
 DTEND;TZID=Asia/Seoul:20260807T170000
 SUMMARY:[국민건강보험공단·한국보건사회연구원] 2026년
@@ -27,14 +27,14 @@ SUMMARY:[국민건강보험공단·한국보건사회연구원] 2026년
 LOCATION:대한상공회의소(서울) 의원회의실
 DESCRIPTION:주최: 국민건강보험공단·한국보건사회연구
  원\n원문: https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0
- %95%EB%B3%B4/?mod=document&pageid=2&uid=5668\n빵캘: https://epibrief.
+ %95%EB%B3%B4/?mod=document&pageid=3&uid=5668\n빵캘: https://epibrief.
  github.io/bbang-calender/
 URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
- %B4/?mod=document&pageid=2&uid=5668
+ %B4/?mod=document&pageid=3&uid=5668
 END:VEVENT
 BEGIN:VEVENT
 UID:9ff89e7ff7d157b7@bbangcal.epibrief.github.io
-DTSTAMP:20260919T120246Z
+DTSTAMP:20260922T235805Z
 DTSTART;TZID=Asia/Seoul:20260903T130000
 DTEND;TZID=Asia/Seoul:20260903T180000
 SUMMARY:[국민건강보험공단·한국보건사회연구원] 2026년
@@ -49,7 +49,7 @@ URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
 END:VEVENT
 BEGIN:VEVENT
 UID:040331ec9f9f6eca@bbangcal.epibrief.github.io
-DTSTAMP:20260919T120246Z
+DTSTAMP:20260922T235805Z
 DTSTART;TZID=Asia/Seoul:20260911T140000
 DTEND;TZID=Asia/Seoul:20260911T163000
 SUMMARY:[한국보건사회연구원·보건복지부] 상병수당 제
@@ -62,7 +62,7 @@ URL:https://www.kihasa.re.kr/news/event/view?seq=76736
 END:VEVENT
 BEGIN:VEVENT
 UID:09798fc9504bd155@bbangcal.epibrief.github.io
-DTSTAMP:20260919T120246Z
+DTSTAMP:20260922T235805Z
 DTSTART;VALUE=DATE:20260921
 DTEND;VALUE=DATE:20260922
 SUMMARY:[질병관리청·한국보건사회연구원] 2026년 제1차 
@@ -72,5 +72,18 @@ DESCRIPTION:주최: 질병관리청·한국보건사회연구원\n원
  문: https://www.kihasa.re.kr/news/event/view?seq=76820\n빵캘: https:
  //epibrief.github.io/bbang-calender/
 URL:https://www.kihasa.re.kr/news/event/view?seq=76820
+END:VEVENT
+BEGIN:VEVENT
+UID:ac301110f80e9ff5@bbangcal.epibrief.github.io
+DTSTAMP:20260922T235805Z
+DTSTART;VALUE=DATE:20260921
+DTEND;VALUE=DATE:20260922
+SUMMARY:[질병관리청·한국보건사회연구원] 방역과 안전
+ 한 일상을 위해\, 감염병 위기 사회대응 포럼 개최
+LOCATION:코트야드 메리어트 서울 명동
+DESCRIPTION:주최: 질병관리청·한국보건사회연구원\n원
+ 문: https://www.kdca.go.kr/bbs/kdca/61/312730/artclView.do?layout=unkn
+ own\n빵캘: https://epibrief.github.io/bbang-calender/
+URL:https://www.kdca.go.kr/bbs/kdca/61/312730/artclView.do?layout=unknown
 END:VEVENT
 END:VCALENDAR

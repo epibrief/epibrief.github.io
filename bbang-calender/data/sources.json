@@ -19,6 +19,11 @@
    "id": "society",
    "name": "학회·협회",
    "hue": 280
+  },
+  {
+   "id": "clinical",
+   "name": "임상 학회",
+   "hue": 340
   }
  ],
  "orgs": [
@@ -171,10 +176,9 @@
    "name": "대한공공의학회",
    "short": "공공의학",
    "category": "society",
-   "home": "https://www.kspm.kr/",
-   "board": "https://www.kspm.kr/",
-   "verified": false,
-   "note": "누리집이 응답하지 않아 수집을 꺼 두었습니다. 주소를 확인하면 다시 켜세요."
+   "home": "https://www.pubmed.or.kr/",
+   "board": "https://www.pubmed.or.kr/",
+   "verified": true
   },
   {
    "id": "kshep",
@@ -190,10 +194,9 @@
    "name": "대한보건협회",
    "short": "보건협회",
    "category": "society",
-   "home": "https://www.kpha.or.kr/",
-   "board": "https://www.kpha.or.kr/",
-   "verified": false,
-   "note": "누리집이 응답하지 않아 수집을 꺼 두었습니다. 주소를 확인하면 다시 켜세요."
+   "home": "http://www.kpha.or.kr/",
+   "board": "http://www.kpha.or.kr/",
+   "verified": false
   },
   {
    "id": "kosqua",
@@ -232,13 +235,26 @@
    "verified": false
   },
   {
+   "id": "clinic",
+   "name": "임상 학회",
+   "short": "임상",
+   "category": "clinical",
+   "home": "https://www.kams.or.kr/bbs/?code=ws",
+   "board": "https://www.kams.or.kr/bbs/?code=ws",
+   "verified": true,
+   "bucket": true,
+   "note": "대한의학회가 모아 둔 각 학회 학술대회입니다. 주최는 행사마다 다릅니다",
+   "offByDefault": true
+  },
+  {
    "id": "etc",
    "name": "그 밖의 기관",
    "short": "기타",
    "category": "research",
    "home": "",
    "board": "",
-   "verified": true
+   "verified": true,
+   "bucket": true
   }
  ],
  "feeds": [
@@ -397,21 +413,25 @@
   },
   {
    "id": "org-kams",
-   "name": "대한의학회 공지",
-   "adapter": "generic",
-   "url": "https://www.kams.or.kr/bbs/?code=ws",
-   "org": "kams",
+   "name": "대한의학회 학술행사 표",
+   "adapter": "kams",
+   "url": "https://www.kams.or.kr/bbs/index.php?code=ws",
    "enabled": true,
-   "note": "국내 인터넷에서 돌려야 열립니다"
+   "note": "여러 학회의 학술대회를 모아 둔 표입니다. 주최는 각 학회입니다",
+   "fetchBody": false,
+   "healthOnly": false,
+   "months": 5,
+   "trustAll": true,
+   "org": "clinic"
   },
   {
    "id": "org-kspm",
    "name": "대한공공의학회 공지",
    "adapter": "generic",
-   "url": "https://www.kspm.kr/",
+   "url": "https://www.pubmed.or.kr/",
    "org": "kspm",
-   "enabled": false,
-   "note": "누리집이 응답하지 않습니다. 주소를 확인하면 enabled 를 true 로 바꾸세요"
+   "enabled": true,
+   "note": "첫 화면에 여러 게시판 글이 함께 뜹니다"
   },
   {
    "id": "org-kshep",
@@ -426,10 +446,10 @@
    "id": "org-kpha",
    "name": "대한보건협회 공지",
    "adapter": "generic",
-   "url": "https://www.kpha.or.kr/",
+   "url": "http://www.kpha.or.kr/",
    "org": "kpha",
-   "enabled": false,
-   "note": "누리집이 응답하지 않습니다. 주소를 확인하면 enabled 를 true 로 바꾸세요"
+   "enabled": true,
+   "note": "https 는 응답하지 않습니다. http 로 읽습니다"
   },
   {
    "id": "org-kosqua",
