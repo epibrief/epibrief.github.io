@@ -14,6 +14,20 @@
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"Pretendard Variable","Pretendard","Noto Sans KR","Apple SD Gothic Neo",system-ui,sans-serif;font-size:16.5px;line-height:1.6;word-break:keep-all}
 .wrap{max-width:1360px;margin:0 auto;padding:0 18px}
+/* 공통 메뉴 — 에피브리프의 다른 화면과 같은 모양입니다 */
+.sitenav{background:#142f85}
+.sitenav .wrap{display:flex;align-items:center;gap:2px;flex-wrap:wrap}
+.sitenav a{color:rgba(255,255,255,.78);text-decoration:none;font-size:.96rem;font-weight:700;
+  padding:11px 12px;border-bottom:3px solid transparent;white-space:nowrap;border-radius:8px 8px 0 0}
+.sitenav a:hover{color:#fff;background:rgba(255,255,255,.10)}
+.sitenav a.on{color:#fff;background:rgba(255,255,255,.16);border-bottom-color:#fff}
+.sitenav a.brand{font-family:"Nanum Myeongjo",serif;font-weight:800;color:#fff;padding-left:0;margin-right:10px}
+.sitenav a.right{margin-left:auto}
+@media (max-width:640px){ .sitenav a{font-size:.88rem;padding:10px 8px} }
+/* 아직 인증받지 않은 기관에 붙는 띠 */
+.trialbar{background:#fff7e8;border-bottom:1px solid #f1d9a8;color:#6b4a00;font-size:.92rem;padding:10px 0}
+.trialbar .wrap{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.trialbar a{color:#8a4b00;font-weight:700}
 .top{background:var(--navy);color:#fff;padding:14px 0}
 .top h1{margin:0;font-family:"Nanum Myeongjo",serif;font-size:clamp(1.15rem,3.4vw,1.4rem);font-weight:800}
 .top .sub{font-size:.9rem;color:rgba(255,255,255,.82);margin-top:4px}
@@ -77,6 +91,21 @@ textarea{min-height:76px;resize:vertical}
 </style>
 </head>
 <body>
+
+<nav class="sitenav noprint" aria-label="주요 메뉴"><div class="wrap">
+  <a class="brand" href="../">에피브리프</a>
+  <a href="../">홈</a>
+  <a href="../issues/">발간 예시</a>
+  <a href="../#make">맞춤형 제작</a>
+  <a class="on" href="./">기관 소식지</a>
+  <a href="../apply.html">발행 권한</a>
+  <a class="right" href="../admin/" id="navAdmin" hidden>관리</a>
+</div></nav>
+
+<div class="trialbar noprint" id="trialBar" hidden><div class="wrap">
+  <span id="trialMsg"><b>체험 중</b>인 소식지입니다. 아직 기관 인증을 받지 않았습니다.</span>
+  <a href="../apply.html" id="trialLink">발행 권한 신청하기 →</a>
+</div></div>
 
 <div class="top"><div class="wrap">
   <h1 id="brandTitle">지역 보건소식지</h1>
@@ -597,7 +626,9 @@ const ERR = { NO_OFFICE:'그 기관 코드는 등록돼 있지 않습니다. 코
   TOO_LARGE:'내용이 너무 큽니다. 로고 그림을 지우거나 소식을 줄여 주세요.',
   NEED_LOAD:'이 기관에는 이미 저장된 소식지가 있습니다. 덮어쓰지 않도록 먼저 [불러오기]를 해 주세요.',
   REGISTRY_FULL:'등록할 수 있는 기관 수가 찼습니다. 에피브리프 관리자에게 연락해 주세요.',
-  TOO_MANY_REGISTRATIONS:'짧은 시간에 등록이 너무 많습니다. 잠시 뒤 다시 해 주세요.' };
+  TOO_MANY_REGISTRATIONS:'짧은 시간에 등록이 너무 많습니다. 잠시 뒤 다시 해 주세요.',
+  SLUG_RESERVED:'기관을 가리키는 코드라 잠겨 있습니다. [발행 권한 신청]에서 신청하시면 확인 후 내어 드립니다. 그 전에는 다른 코드(예: suwon-bogun)로 바로 시작하실 수 있습니다.',
+  SUSPENDED:'이 기관은 이용이 중지되어 저장할 수 없습니다. 읽기만 됩니다. 에피브리프 관리자에게 문의해 주세요.' };
 const errText = m => {
   const lock = String(m).match(/^LOCKED:(\d+)/);
   if (lock) return `비밀번호를 여러 번 틀려 잠겼습니다. 약 ${lock[1]}분 뒤 다시 해 주세요.`;
@@ -663,8 +694,22 @@ function applyCloud(res){
   SAVING_FROM_CLOUD = true;
   try { applyCloud2(res); } finally { SAVING_FROM_CLOUD = false; }
 }
+/* 아직 인증받지 않은 기관에는 화면 맨 위에 '체험 중' 띠를 붙입니다.
+   기능을 막지는 않습니다 — 기관 이름을 공개적으로 내세울 수 있는가의 차이입니다. */
+function showTrial(status, slug){
+  const bar = $('#trialBar'); if (!bar) return;
+  if (!status || status === 'verified'){ bar.hidden = true; return; }
+  bar.hidden = false;
+  $('#trialMsg').innerHTML = status === 'suspended'
+    ? '이 소식지는 <b>이용이 중지</b>되었습니다. 읽기만 되고 저장은 되지 않습니다.'
+    : '<b>체험 중</b>인 소식지입니다. 아직 기관 인증을 받지 않았습니다. 만들고 인쇄하고 공유하는 것은 모두 됩니다.';
+  const a = $('#trialLink');
+  a.textContent = status === 'suspended' ? '관리자에게 문의 →' : '발행 권한 신청하기 →';
+  a.href = '../apply.html' + (slug ? '?org=' + encodeURIComponent(slug) : '');
+}
 function applyCloud2(res){
   CLOUD = { slug: res.slug, version: res.version || null, dirty: false, connected: true };
+  showTrial(res.status, res.slug);
   if (res.data){ L = sanitize(res.data); L.slug = res.slug; save(); syncForm(); }
   else { L.slug = res.slug; if (!L.org) L.org = res.name || L.org; save(); syncForm(); }
   const when = res.updated_at ? new Date(res.updated_at).toLocaleString('ko-KR', { dateStyle:'short', timeStyle:'short' }) : '';
@@ -682,7 +727,9 @@ $('#cReg').onclick = async () => {
     const res = await rpc('epibrief_register', { p_slug: c.slug, p_name: L.org, p_key: c.key });
     cloudRemember(); applyCloud(res);
     history.replaceState(null, '', '?org=' + encodeURIComponent(c.slug));
-    alert('등록했습니다. 이제 [저장하기]를 누르면 다른 담당자도 같은 소식지를 불러올 수 있습니다.');
+    alert(res.status === 'verified'
+      ? '등록했습니다. 승인된 신청이 있어 바로 인증 기관으로 등록되었습니다.\n이제 [저장하기]를 누르면 다른 담당자도 같은 소식지를 불러올 수 있습니다.'
+      : '등록했습니다. 이제 [저장하기]를 누르면 다른 담당자도 같은 소식지를 불러올 수 있습니다.\n\n지금은 체험 중입니다. 기능 제한은 없고, 기관 이름으로 공식 발행하시려면 위의 [발행 권한]에서 신청해 주세요.');
   } catch(e){ cloudStatus(e.message, false); alert(e.message); }
 };
 $('#cLoad').onclick = async () => {
@@ -756,6 +803,8 @@ async function cloudAutoLoad(slug){
   if (!got && !q && remembered && remembered !== slug) await cloudAutoLoad(remembered);
   if (got) history.replaceState(null, '', '?org=' + encodeURIComponent(slug));
   showBackup();
+  try { if (sessionStorage.getItem('epibrief-admin') || localStorage.getItem('epibrief-admin-seen'))
+          $('#navAdmin').hidden = false; } catch(e){}
 })();
 </script>
 </body>

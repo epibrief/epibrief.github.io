@@ -47,6 +47,11 @@ button{font-family:inherit}
   border-radius:8px 8px 0 0;white-space:nowrap}
 .steps button.on{color:#fff;background:rgba(255,255,255,.16);border-bottom-color:#fff}
 .steps button:disabled{opacity:.45;cursor:not-allowed}
+/* 다른 화면으로 가는 메뉴 — 같은 줄에서 같은 모양으로 보이게 합니다 */
+.steps a{flex:0 0 auto;color:rgba(255,255,255,.75);text-decoration:none;font-size:.98rem;font-weight:700;
+  padding:10px 13px;border-bottom:3px solid transparent;border-radius:8px 8px 0 0;white-space:nowrap}
+.steps a:hover{color:#fff;background:rgba(255,255,255,.10)}
+.steps a.right{margin-left:auto}
 
 /* ── 공통 ── */
 .navpanel{display:none}
@@ -183,6 +188,9 @@ textarea{min-height:90px;resize:vertical}
       <button data-nav="issues">발간 예시</button>
       <button data-nav="make">맞춤형 제작</button>
       <button data-nav="mine">내 보관함</button>
+      <a href="local/">기관 소식지</a>
+      <a href="apply.html">발행 권한</a>
+      <a class="right" href="admin/" id="navAdmin" hidden>관리</a>
     </nav>
   </div>
 </div>
@@ -204,8 +212,8 @@ textarea{min-height:90px;resize:vertical}
     <div class="row" style="margin-top:20px">
       <button class="btn pri" data-nav="make" style="font-size:1.04rem">맞춤형 뉴스레터 만들기 →</button>
       <button class="btn" data-nav="issues">발간 예시 보기</button>
-      <a class="note" href="subscribe.html" style="align-self:center">구독 신청 화면 미리보기 →</a>
-      <a class="note" href="local/" target="_blank" rel="noopener" style="align-self:center">보건소·지자체용 지역 소식지 (새 창) →</a>
+      <a class="note" href="local/" style="align-self:center">보건소·지자체용 기관 소식지 →</a>
+      <a class="note" href="apply.html" style="align-self:center">기관 이름으로 발행하기 (권한 신청) →</a>
     </div>
   </div>
 
@@ -746,6 +754,16 @@ document.addEventListener('click', e => {
   const b = e.target.closest('[data-nav]'); if (!b) return;
   nav(b.dataset.nav);
 });
+/* 다른 화면에서 /#make 처럼 들어오면 그 칸을 열어 줍니다 */
+function navFromHash(){
+  const h = (location.hash || '').replace('#', '');
+  if (['home','issues','make','mine'].includes(h)) nav(h);
+}
+window.addEventListener('hashchange', navFromHash);
+navFromHash();
+/* 관리자 키를 넣어 본 적이 있는 컴퓨터에서만 [관리]를 보여 줍니다 */
+try { if (sessionStorage.getItem('epibrief-admin') || localStorage.getItem('epibrief-admin-seen'))
+        $('#navAdmin').hidden = false; } catch(e){}
 
 /* 발행 방법 고르기 — 어디서든 같은 방식으로 */
 function pubButtons(id){
