@@ -132,7 +132,7 @@
 const $ = s => document.querySelector(s);
 const NAMES = { outbreak:'전 세계 감염병 발생 동향', phsm:'감염병 사회 대응(PHSM) 분과위원회',
                 chronic:'만성질환 동향', climate:'기후·건강 위기 동향', injury:'손상·안전 동향' };
-let CONF = { email:'', formUrl:'', org:'질병관리청', note:'' };
+let CONF = { email:'', formUrl:'', org:'에피청', note:'' };
 
 /* QR이나 뉴스레터에서 ?series=phsm 으로 들어오면 그 뉴스레터를 미리 체크해 둔다 */
 const series = new URLSearchParams(location.search).get('series');
