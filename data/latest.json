@@ -1,7 +1,23 @@
 {
- "updated": "2026-09-23 13:10",
+ "updated": "2026-09-23 22:35",
  "byKind": {
   "outbreak": [
+   {
+    "title": "Ebola outbreak in DR Congo approaches 7,800 cases",
+    "origin": "CIDRAP",
+    "sourceName": "CIDRAP (미네소타대 감염병연구정책센터)",
+    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQR2FsZzBmQnl2cm1LQmswYUVFQVZ4a0NwcnJtaEN0YXNYYWJQNDlNU2lFamZMbGdaQ2JWanMxU09tblVFZFVUY2tOemk3MzFvRmRZN0NydG9sdDFTM191QUJQOUJCRXNWRVhwbUFSOElmMXRpOGY3Qk5YZWp0VWxUZ3pxTzE?oc=5",
+    "date": "2026-09-23",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "Measles outbreak in Chicago shelter cost nearly $9 million, CDC estimates",
+    "origin": "CIDRAP",
+    "sourceName": "CIDRAP (미네소타대 감염병연구정책센터)",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOYXpoWXdYc3VKZ3pLd0RpSzRfWl9jS2JsT3FfS3duaWw5NHlzZ2lEb25kRmF0RmFmNmF6WG9pZHFkc0J1aDJzTjNJeTBqdzZaTTMzMHF5S1FrLVJJS3lfbU0xbjhMYkd5Q2M2d2RZWFRjYnJVbFAxRDQtT3JUMnI0MEJTUjc4bHhIMzNvMjZaajFlLUt6Z2VTVUpSZGRRNzNwSVZsX0Z3?oc=5",
+    "date": "2026-09-23",
+    "via": "뉴스검색"
+   },
    {
     "title": "파주보건소, 추석 연휴 앞두고 해외여행객 감염병 주의 당부",
     "origin": "경기평화신문",
@@ -19,6 +35,14 @@
     "via": "뉴스검색"
    },
    {
+    "title": "Pakistan: partnering with Rotary to protect millions of children from polio",
+    "origin": "emro.who.int",
+    "sourceName": "WHO 동지중해지역사무처(EMRO)",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNT2JRQnJvS2tjQzJHRlpWRkpqRTYzVmxsbFVRaEtxcWRCVktEbjFfMllocnBCZjRkdklWd3Z0UFBpMW9kYXN0OEpXWHd4QXQ4VzNrcTlCV3lBVllKZkQ4Ty1TTHdpV2pTWHFIbUJfX0FFNTdaa1JSWFAxVG54T0NTQV9XdFMyZUxwQVVwWXdTLVpubHp4Qy1WQjNpUk9lT0lDaktXa0tmeFNNV29uVmVoTlU1UDdibHBLNURBX2VmVQ?oc=5",
+    "date": "2026-09-23",
+    "via": "뉴스검색"
+   },
+   {
     "title": "코로나·독감 동시접종 10월 12일 시작… 65세 이상 무료 484만회분",
     "origin": "매일신문",
     "sourceName": "국내 예방접종 사업",
@@ -28,7 +52,7 @@
    },
    {
     "title": "Rep. Kweisi Mfume introduces bill to contain Ebola outbreak",
-    "origin": "SoMdNews.com",
+    "origin": "somdnews.com",
     "sourceName": "WHO 보도자료",
     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPVzhxRl9yRnR1eS1oc2FoaXFCbEprWUZDenNrUEptd2R3cm9XUUZTSmRtQzNtN0dzb0hsd3oyekxsdFdLU2ZEd3ZNYkYwRXQ3Y0dkSENLRGRKNXdKT3NtNWtVNHA3dkxFUW9ITFBFMVR6RHdwRjY2bTVPX3hNWGtoQmNDSy1adl9hX3lrYmh3d0ZiMXRhQzdXc3A2YWFScXJtWkpnWTFLbVVmZVRfMVd6YjBfVHlrekFoQ3AzZTF1UGhhNVo2NzVmelpVVFA1NERhRm5keXd6bUxvQQ?oc=5",
     "date": "2026-09-22",
@@ -57,30 +81,6 @@
     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOQzVkTFJrb1RNb3k5RzMzZ3dDbVdSV1ZtenNoYXlaR2ZNeHNlcEloVFpWRWdLWF9mYTV5TUVnb0VTV0U3a0l1TmlteVNLNmdYYzVvUmwtUDRQOXZxQ2hJMDNYQlNKYTk5ZUJTWFFnX0w2VzN3dTh0VkhkaHhGVmg0NWctM215Y056VlpDcDRjV1VRWHZIUEExd3dXXzlValh6c1FudEhEbGE1aDJzTjJOY0FBQnlhOHkyeDVVTTB3?oc=5",
     "date": "2026-09-22",
     "via": "뉴스검색"
-   },
-   {
-    "title": "CDC confirms 37-case multistate hepatitis A outbreak linked to frozen clams",
-    "origin": "CIDRAP",
-    "sourceName": "CIDRAP (미네소타대 감염병연구정책센터)",
-    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPa2VQNVA2aC1Cc2dBZ0xqTnhsRW10Zk0tMDdPZUNQN1VUZVl2bUdvb2ZDcm1PT1ZKRG56UDl6RF9JeFhOTTJyOWxxTkd3UWF5NkYzQndNcVAyQUFZWE1ycW9xYVVTQ21PVEs0WU5vRk5oQkRHUmJ3VnBhSGFLWFRObkdlSzMwSGJwZWswSHppdW1vT21rZjZwWnZWMUZxdkFFM2FyU1hKZF9oZVk?oc=5",
-    "date": "2026-09-22",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "California: Mumps outbreak at San Diego State University",
-    "origin": "Outbreak News Today",
-    "sourceName": "Outbreak News Today",
-    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFA4alZfNGNsdm5Wdjc1RlhlTWtZbGxnUW0zeUVuYWlOaU5xRVFLblhDR2xWRnFneU1oY0FIRkRwMk05SEhiWWtWUUNTUHpQR1lOOXhhc240NGt5UFU1RlVBTk9HMFF5cml1Z3JoQ2lGZHZEUGNoUFE0eXZJSTdCZw?oc=5",
-    "date": "2026-09-22",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "Illinois: Legionnaires’ disease cases linked to Hilton Garden Inn in Evanston",
-    "origin": "Outbreak News Today",
-    "sourceName": "Outbreak News Today",
-    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQb0cwYjFDcDNoN1Zsb1QyZWdGSUNaaHN3Z19wN0lXeUhtUnVINlhuOGYwTjZjbEtkLUpvcG9OY2s2ZlRLSlhaemI0ZjZJd2Mtc0UxMjVMMnJvX0dzZTV0RmY1Y3VZeWR4THZOdGJfVHdTbWtHMVBoSjBvUmRfNGJpbm93?oc=5",
-    "date": "2026-09-22",
-    "via": "뉴스검색"
    }
   ],
   "phsm": [
@@ -89,6 +89,14 @@
     "origin": "",
     "sourceName": "영국 UKHSA 발표·근거자료",
     "link": "https://www.gov.uk/government/news/ukhsa-expands-wastewater-surveillance-to-strengthen-early-warning-system-for-dangerous-pathogens",
+    "date": "2026-09-23",
+    "via": "기관 RSS"
+   },
+   {
+    "title": "Social Isolation and All-Cause and Cause-Specific Mortality in the UK Biobank: The Modifying Role of Non-Commute Transportation Mode",
+    "origin": "",
+    "sourceName": "프리프린트: medRxiv 역학·보건정책",
+    "link": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363514v1?rss=1",
     "date": "2026-09-23",
     "via": "기관 RSS"
    },
@@ -155,181 +163,25 @@
     "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1Xb0tQWEhESmJEYWtha0VSaURHUkVwbE1nREVZbTItb19wQUp0STRCWDBLdlFXTll2NlFMVm9jXzFwaXNvbk1MRTJB?oc=5",
     "date": "2026-09-21",
     "via": "뉴스검색"
-   },
-   {
-    "title": "From Archetypes to Access: A Two-Axis Governance Framework and Decision-Support Tool for Rare Specimen Biobanking",
-    "origin": "Biopreservation and biobanking · Lerner EP, Kim MJ, Walters TD, Wine E, Huynh HQ, Perry T.",
-    "sourceName": "논문: 대비태세·거버넌스·법제",
-    "link": "https://doi.org/10.1177/19475535261486946",
-    "date": "2026-09-21",
-    "via": "논문 검색"
-   }
-  ],
-  "climate": [
-   {
-    "title": "WMO Calls for Cities to Gird for Record-Breaking Heat",
-    "origin": "qna.org.qa",
-    "sourceName": "세계기상기구(WMO) 폭염·극한기후",
-    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPdG1SU29tU0FqeGc3aEZFRkxYbzhrV0Z2WTBDSEdZYjlQeUFEdXBfT0JZemRwUkNDVkY5YXNTR0p3NzBfRHBZUmNhQkJGeGY4YlBpblYxSXlicUNYR1Z6RnV5R2NPQ1VJekdmR3NPdXZwb0RyTFV0UDNQOWVQemJVdmZxOG1zb2gyYU56X3BRVW1sa3JDME82d3NDY0ViS0o3WlE?oc=5",
-    "date": "2026-09-23",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "홍상금 태안군의원, “무더위쉼터가 실질적인 생활 속 안전망 돼야”",
-    "origin": "시사일보",
-    "sourceName": "국내 폭염·한파 대책",
-    "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5EZG5hY010UzgwQmpNUHIzU1JrSXpMRWxhZWlQWFQ2ZXZ5T0VXekxBMGNEQ0M4Rk9SSEN6YmlJTFE0MDdsbGRFLUk2LS0?oc=5",
-    "date": "2026-09-22",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "홍상금 군의원 “이상 기후 속 무더위쉼터 제 역할 절실”",
-    "origin": "ccnewsline.co.kr",
-    "sourceName": "국내 폭염·한파 대책",
-    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1Zb3BRWDBqWFRzQjlKV1NaNGxKWUZ0em9tRVJsVjBhRGRRZGR5OFBwRnJPY3ZyZm4tTXlHZEdYaTlER2R6Rmk3Q2d4VmdKTUxDanFLTWhZdUp6QXBGYzFteDRWWXhVN3BYWGY2Q0VrUU9jclnSAXNBVV95cUxNWW9wUVgwalhUc0I5SldTWjRsSllGdHpvbUVSbFYwYURkUWRkeThQcEZyT2N2cmZuLU15R2RHWGk5REdkekZpN0NneFZnSk1MQ2pxS01oWXVKekFwRmMxbXg0Vll4VTdwWFhmNkNFa1FPY3JZ?oc=5",
-    "date": "2026-09-22",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "Impact of Climate Change on Chinese Medicinal Plants and Adaptation Strategies",
-    "origin": "Plant science : an international journal of experimental plant biology · Yuan W, Gu M, Liu D, Liu Q, Sun Q, Zeng X.",
-    "sourceName": "논문: 기후 적응과 보건체계",
-    "link": "https://doi.org/10.1016/j.plantsci.2026.113468",
-    "date": "2026-09-22",
-    "via": "논문 검색"
-   },
-   {
-    "title": "In Hottest Summer on Record, 2 in 3 Americans Say Climate Change Is Increasing Heat-Related Illnesses",
-    "origin": "Annenberg School for Communication",
-    "sourceName": "WHO 기후변화와 건강",
-    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOaF9IVVhzSkd4aldsblZjQU1NeTcwbE5BdDBLeEc1WWlFeUctcU9PR0YzaDllNlR4NFk1aW1QMy0yQ1VYQnpXRHhqVVBVZkZvUm1udVBEZDF0MDZfT3JnNHJ1MllQQl9WeVp4NWxPeU5ZTzJhLVJNM1lmbWE3YTlRajMxUFZJQjVBaWg1ekVUaGw2Y1BkYlZMZGRTMWw3THFGSkVaREJTUjdrUTVLU1JrWHJzelhNSElQSmVhb2pWRUNQcGZrM1lTTVpqdw?oc=5",
-    "date": "2026-09-21",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "Climate change adaptation and mitigation in African health systems: a scoping review of research and policy translation",
-    "origin": "BMJ open · Netshiombo M, Brito Fernandes Ó, Ket H, Sperna Weiland NH, K",
-    "sourceName": "논문: 기후 적응과 보건체계",
-    "link": "https://doi.org/10.1136/bmjopen-2026-119188",
-    "date": "2026-09-21",
-    "via": "논문 검색"
-   },
-   {
-    "title": "Heat stress responses of plants during adaptation to high temperature environments: A review of recent advances and insights",
-    "origin": "Plant signaling & behavior · Wei X, Zhang H, Ma R, Zang J, Wang Y, Yu C.",
-    "sourceName": "리뷰 논문 (분야 종합)",
-    "link": "https://doi.org/10.1080/15592324.2026.2735211",
-    "date": "2026-09-20",
-    "via": "논문 검색"
-   },
-   {
-    "title": "Summer of 2026 broke records in Europe, and caused deaths",
-    "origin": "DW.com",
-    "sourceName": "WHO 기후변화와 건강",
-    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQczV2d3A2V1A0ZVRhRUJXVFlQc2JpNkp6eDJtQ1RweDZ0RUpFVUN4MXR5QkhqbEpFLXp4ZVkxcVdDOFYxQl9aM3FMRTFDZzNKTEY5U0x0SnRpR21Kd01uWGxrbGM4VGozWUlHWGQzYkZfU2FmNVowazdJeVNlb1hOaGdpbE1EWWphVW5mOWRYU3RiQm_SAZMBQVVfeXFMTnRMRlZHWVNNdk8wVUFNaW1XbkdaRGdyV1FUNE9JZ1FCdURleGROY2ktRWZ0dmhsSDdQMmNrSHlDVTJTSWlteXptRTgwSkp0QjJrZjljZVJadjFoaG9RblhOcjlWeVA3Q2prMGtTVWpRZzJ1LVV4X2llRUZSd3A0Z1RqaVF2SHA4ZFA1N0REYUxYSzZn?oc=5",
-    "date": "2026-09-19",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "Nonlinear modelling and simulation of climate-sensitive malaria transmission with imported infections and real data",
-    "origin": "Acta tropica · Zarin R, Humphries UW.",
-    "sourceName": "논문: 기후변화와 매개체 감염병",
-    "link": "https://doi.org/10.1016/j.actatropica.2026.108332",
-    "date": "2026-09-19",
-    "via": "논문 검색"
-   },
-   {
-    "title": "Seasonality is Changing for Extreme Dry and Humid Heat Events",
-    "origin": "eos.org",
-    "sourceName": "WHO 기후변화와 건강",
-    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNWEUxQmpLUW9iVjU0YjdhRmxDMnpPZDNDLWFldVVnSlFiSnZHMmFOTVB3aTBVeHFHREFtZHBLcU9EVVkzQjEyQm03dTA0NGZrSGdYWnBtQlVOOWt4OEI5YUotUktjVVpFdEt2ZlJLdERkQk9WTW0xT3lXSG9sTURRR3pVaGlEbGxWSlZoVmJkbEJyOWZTMDZhQWNiMA?oc=5",
-    "date": "2026-09-18",
-    "via": "뉴스검색"
-   }
-  ],
-  "injury": [
-   {
-    "title": "「손상예방과 건강한 사회」 2026년 2호 발간",
-    "origin": "",
-    "sourceName": "질병관리청 「손상예방과 건강한 사회」 (계간)",
-    "link": "https://www.kdca.go.kr/injury/disemg/2026/06/index.html",
-    "date": "2026-09-23",
-    "via": "기관 페이지"
-   },
-   {
-    "title": "「손상예방과 건강한 사회」 2026년 1호 발간",
-    "origin": "",
-    "sourceName": "질병관리청 「손상예방과 건강한 사회」 (계간)",
-    "link": "https://kdca.go.kr/injury/disemg/2026/03/index.html",
-    "date": "2026-09-23",
-    "via": "기관 페이지"
-   },
-   {
-    "title": "추석 연휴 응급실 어쩌나…정은경, 서울의료원서 응급의료 점검",
-    "origin": "뉴스1",
-    "sourceName": "중앙응급의료센터 응급의료 통계 (NEDIS·e-MEDIS)",
-    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE0zbERxNzMyVmd5dG1WU3F4RTlSTGM3Z2xUdS11NE9VNWVfbzlONkc0cXV0bGZMN0M0NXRuRTVhTnhZN3pBYndwQ0I2cUdnNGoydUQ1MFVBUHFtaUhucU5QU1ZB0gFiQVVfeXFMTTNsRHE3MzJWZ3l0bVZTcXhFOVJMYzdnbFR1LXU0T1U1ZV9vOU42RzRxdXRsZkw3QzQ1dG5FNWFOeFk3ekFid3BDQjZxR2c0ajJ1RDUwVUFQcW1pSG5xTlBTVkE?oc=5",
-    "date": "2026-09-23",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "복지부, 추석 연휴 대비 자살예방상담전화 ‘109’ 콜센터 점검",
-    "origin": "nursenews.co.kr",
-    "sourceName": "자살·자해 예방 통계 (보건복지부·한국생명존중희망재단)",
-    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8wdVJfQXNockRmTkladDBrc1oweHlpR0VUcGRSMk13YWJNNTAwNS00cjJYSjBsTXVrbjhOclZTZ201aXpGV1dTMWw2SnNNNDU0MXNkQ3VqdE5oRmR2aG5LNHFNaVNDUnAyVUdCSkJB?oc=5",
-    "date": "2026-09-23",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "추석 연휴에도 자살예방상담 24시간 운영",
-    "origin": "데일리안",
-    "sourceName": "자살·자해 예방 통계 (보건복지부·한국생명존중희망재단)",
-    "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE54eVBzUFlDY2tGdjNmeFUxYUppQ2VsM18yd1B2VFFSWWsxVnUtSE9JcVhDOFN6WXpQdjE0TjFvWExuTEVOX0xmcHVkejhwRmdZT0llaA?oc=5",
-    "date": "2026-09-23",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "추석연휴에도 자살예방상담은 109",
-    "origin": "서울Pn",
-    "sourceName": "자살·자해 예방 통계 (보건복지부·한국생명존중희망재단)",
-    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1BRTBkakJjMkpUQTRXZGlkcjhyX2ZHSDRoQW5VanpWRlRUQzFhY2pDcXJNTndmS045ZHJOUmFGOEZtUE5QSXdoSjhmRC1ha0NTakw4cEY3dHZfdTBGVnhEUF9R?oc=5",
-    "date": "2026-09-23",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "추석에도 하루 1000건 울리는 ‘109’…자살예방상담 24시간 가동",
-    "origin": "edaily.co.kr",
-    "sourceName": "자살·자해 예방 통계 (보건복지부·한국생명존중희망재단)",
-    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOUFk2VGJhUkQ3djZzWFdDd3F6c3JXb0kxN0E2dktORUNCYVUzTHVuQnFTMXhiaE5RbVh3Tlk5ekFzeWVBcmI2eEprS2FQUUREVksyT1lxSFUtUDcxXzhxVTNUSEpFN1BjYWR5UEhNY1ZGNVVNRzBIV3FQN3NWVHQ4Mg?oc=5",
-    "date": "2026-09-23",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "Distinct clinical patterns of preterm infants vulnerable to intestinal injury identified by unsupervised clustering",
-    "origin": "Pediatric research · Oh SH, Choi YS, Chung SH, Ahn J, Kim JY, Lee EH, Aghaeepour ",
-    "sourceName": "논문: 국내 손상 역학·감시",
-    "link": "https://doi.org/10.1038/s41390-026-05494-3",
-    "date": "2026-09-23",
-    "via": "논문 검색"
-   },
-   {
-    "title": "[9.23.수.조간] 음식 준비부터 식사까지 추석 명절 ‘가정 내 안전사고’ 주의",
-    "origin": "",
-    "sourceName": "질병관리청 보도자료 (손상·안전)",
-    "link": "https://www.kdca.go.kr/bbs/kdca/42/312724/artclView.do",
-    "date": "2026-09-22",
-    "via": "기관 페이지"
-   },
-   {
-    "title": "부안소방서, 추석 연휴 구급대원 폭행 “무관용 엄정 대응”… 생명 위협 범죄 근절",
-    "origin": "부안독립신문",
-    "sourceName": "소방청 119구급·구조 통계",
-    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB2R3R3dUdvaXh0bko4SnlCMUFmelVPNnc4b296aWVHZ2tfNmlZUEFmanhPNHFNLUdZNVVGbm82LThNV3hjcUJ4Q0ZBUk1iM0J3a3lBN0ZmTGZOc3lNdnQ0eGxubnVvdw?oc=5",
-    "date": "2026-09-22",
-    "via": "뉴스검색"
    }
   ],
   "chronic": [
+   {
+    "title": "How Bangladesh is shifting its health care approach to noncommunicable diseases",
+    "origin": "The World Economic Forum",
+    "sourceName": "국제 NCD 동향·캠페인",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxONHQ3Z2VBSU4yeTdsR2xzRGtubGhPNHhXLTlFS092TTN6Uzk2R2dyOHpIemlvTXlGRXduMjZ4RUlvMmx0bzZKZ242MHhFTEpkd0NiNG5UTGNTYW80aHZWNl9PVmMzNnBrbXJxam54dFdUdldLeWxCeGJ2RHlIbUIzSjAza3VmakpyRFlYbFBraGtRSzFKMVEzTHhJdmpvOE5tU1lPMUp0YzNpbVJfbEJQdXY2V19KS3JtWkVCRU1VUDBlQ1pJMWtfYjF2M3U?oc=5",
+    "date": "2026-09-23",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "The MND Mexico Well-being Series, Part 1: Health and healthcare",
+    "origin": "Mexico News Daily",
+    "sourceName": "OECD Health at a Glance·보건통계",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPQldRM1FtZ1pHWk9vdHB1MFJYQXRDaHk5VHFkZE9JMW5wU19OLURzaEZEcmtteElVTHpFM3pMYTBJWHA4UGtfMjlfZG5aOWhXeGo1WVVhSXFza2VBb1dMM2ZkZHhRNXVJcThib0EwMl9aUVNZNFZHN1h0ZzMwSDAwLTIxdGZLLUFDTDdIRUlSaVpNVlFNMGtRQUlaVTdDRUJnd0RvWFZXaDByZkpDdnplOEdn?oc=5",
+    "date": "2026-09-23",
+    "via": "뉴스검색"
+   },
    {
     "title": "Keeping Tobacco Health Warnings Fresh: Rotation Why’s and How’s",
     "origin": "Johns Hopkins Bloomberg School of Public Health",
@@ -363,6 +215,22 @@
     "via": "논문 검색"
    },
    {
+    "title": "Prevalence of liver fibrosis and steatotic liver disease in community-dwelling adults in China (the CHESS-LiverHealth project): cross-sectional baseline data from a prospective cohort study",
+    "origin": "The lancet. Gastroenterology & hepatology · Liu S, Liu X, Song J, Zhang Y, Shi H, Huang E, Ma L, Qi Y, B",
+    "sourceName": "논문: 만성콩팥병·간질환",
+    "link": "https://doi.org/10.1016/s2468-1253(26)00224-4",
+    "date": "2026-09-22",
+    "via": "논문 검색"
+   },
+   {
+    "title": "Functional hearing difficulty in Alzheimer's disease: Selective links to verbal fluency and behavioral and psychological symptoms of dementia severity",
+    "origin": "Journal of Alzheimer's disease : JAD · Uchiyama M, Sato T, Mamiya Y, Takato T, Matsui T, Imamura T.",
+    "sourceName": "논문: 치매·인지기능",
+    "link": "https://doi.org/10.1177/13872877261489803",
+    "date": "2026-09-22",
+    "via": "논문 검색"
+   },
+   {
     "title": "Transanal tube for the prevention of anastomotic leakage in rectal cancer surgery",
     "origin": "The Cochrane database of systematic reviews · Kawamura H, Tsujimoto Y, Miyakawa T, Hashimoto K, Hirano T, ",
     "sourceName": "코크란 리뷰 (신규 발표)",
@@ -377,38 +245,170 @@
     "link": "https://doi.org/10.1136/bmjopen-2025-110915",
     "date": "2026-09-22",
     "via": "논문 검색"
+   }
+  ],
+  "climate": [
+   {
+    "title": "WMO Calls for Cities to Gird for Record-Breaking Heat",
+    "origin": "qna.org.qa",
+    "sourceName": "세계기상기구(WMO) 폭염·극한기후",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPdG1SU29tU0FqeGc3aEZFRkxYbzhrV0Z2WTBDSEdZYjlQeUFEdXBfT0JZemRwUkNDVkY5YXNTR0p3NzBfRHBZUmNhQkJGeGY4YlBpblYxSXlicUNYR1Z6RnV5R2NPQ1VJekdmR3NPdXZwb0RyTFV0UDNQOWVQemJVdmZxOG1zb2gyYU56X3BRVW1sa3JDME82d3NDY0ViS0o3WlE?oc=5",
+    "date": "2026-09-23",
+    "via": "뉴스검색"
    },
    {
-    "title": "Assessment of Cardiorespiratory Fitness in Individuals With Type 2 Diabetes Mellitus: Protocol for a Systematic Review and Meta-Analysis",
-    "origin": "JMIR research protocols · Patil G, Khatib N, Rawekar A, Godse A, Umate L.",
-    "sourceName": "진행 중인 체계적 문헌고찰 (프로토콜)",
-    "link": "https://doi.org/10.2196/91185",
+    "title": "Super El Niño may cause 15,800 excess heat deaths in India: Study",
+    "origin": "National Herald",
+    "sourceName": "세계기상기구(WMO) 폭염·극한기후",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQckFaVVVEbzRibThGVW10VV9jWFZQSWlWRnNHTjR4bGtIWkp0algzaU1CbHlwU0NmUXF5RUN6MG1aR0tNaXR6MUNvTVRSUVZsMGRZY2ZBZmNmUk1hS2NqOTFtZWl0RUI0Y2JMeW1KSUQxYmJNWDFNcU9LQ2pwTUJZdnNxaUpKNkdYbEVtZjMwUGlMbjlldk1LX01PVVhKVjZLNjVYNjFqbTRWQV9UUmZMVjA2dDkwY0xBM2RSadIBvAFBVV95cUxQckFaVVVEbzRibThGVW10VV9jWFZQSWlWRnNHTjR4bGtIWkp0algzaU1CbHlwU0NmUXF5RUN6MG1aR0tNaXR6MUNvTVRSUVZsMGRZY2ZBZmNmUk1hS2NqOTFtZWl0RUI0Y2JMeW1KSUQxYmJNWDFNcU9LQ2pwTUJZdnNxaUpKNkdYbEVtZjMwUGlMbjlldk1LX01PVVhKVjZLNjVYNjFqbTRWQV9UUmZMVjA2dDkwY0xBM2RSaQ?oc=5",
+    "date": "2026-09-23",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "홍상금 태안군의원, “무더위쉼터가 실질적인 생활 속 안전망 돼야”",
+    "origin": "시사일보",
+    "sourceName": "국내 폭염·한파 대책",
+    "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5EZG5hY010UzgwQmpNUHIzU1JrSXpMRWxhZWlQWFQ2ZXZ5T0VXekxBMGNEQ0M4Rk9SSEN6YmlJTFE0MDdsbGRFLUk2LS0?oc=5",
+    "date": "2026-09-22",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "홍상금 군의원 “이상 기후 속 무더위쉼터 제 역할 절실”",
+    "origin": "충청뉴스라인",
+    "sourceName": "국내 폭염·한파 대책",
+    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1Zb3BRWDBqWFRzQjlKV1NaNGxKWUZ0em9tRVJsVjBhRGRRZGR5OFBwRnJPY3ZyZm4tTXlHZEdYaTlER2R6Rmk3Q2d4VmdKTUxDanFLTWhZdUp6QXBGYzFteDRWWXhVN3BYWGY2Q0VrUU9jclnSAXNBVV95cUxNWW9wUVgwalhUc0I5SldTWjRsSllGdHpvbUVSbFYwYURkUWRkeThQcEZyT2N2cmZuLU15R2RHWGk5REdkekZpN0NneFZnSk1MQ2pxS01oWXVKekFwRmMxbXg0Vll4VTdwWFhmNkNFa1FPY3JZ?oc=5",
+    "date": "2026-09-22",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "Impact of Climate Change on Chinese Medicinal Plants and Adaptation Strategies",
+    "origin": "Plant science : an international journal of experimental plant biology · Yuan W, Gu M, Liu D, Liu Q, Sun Q, Zeng X.",
+    "sourceName": "논문: 기후 적응과 보건체계",
+    "link": "https://doi.org/10.1016/j.plantsci.2026.113468",
     "date": "2026-09-22",
     "via": "논문 검색"
    },
    {
-    "title": "Building Computable Guidelines and Clinical Decision Support Tools for Cervical, Breast and Colorectal Cancer Screening and Risk Management: A CDC Initiative Update",
-    "origin": "Journal of women's health (2002) · Rim SH, Colbert J, Kobernik E, Richards TB, Miller JW, Colem",
-    "sourceName": "지침·권고 문헌",
-    "link": "https://doi.org/10.1177/15409996261489070",
-    "date": "2026-09-22",
+    "title": "In Hottest Summer on Record, 2 in 3 Americans Say Climate Change Is Increasing Heat-Related Illnesses",
+    "origin": "Annenberg School for Communication",
+    "sourceName": "WHO 기후변화와 건강",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOaF9IVVhzSkd4aldsblZjQU1NeTcwbE5BdDBLeEc1WWlFeUctcU9PR0YzaDllNlR4NFk1aW1QMy0yQ1VYQnpXRHhqVVBVZkZvUm1udVBEZDF0MDZfT3JnNHJ1MllQQl9WeVp4NWxPeU5ZTzJhLVJNM1lmbWE3YTlRajMxUFZJQjVBaWg1ekVUaGw2Y1BkYlZMZGRTMWw3THFGSkVaREJTUjdrUTVLU1JrWHJzelhNSElQSmVhb2pWRUNQcGZrM1lTTVpqdw?oc=5",
+    "date": "2026-09-21",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "Climate change adaptation and mitigation in African health systems: a scoping review of research and policy translation",
+    "origin": "BMJ open · Netshiombo M, Brito Fernandes Ó, Ket H, Sperna Weiland NH, K",
+    "sourceName": "논문: 기후 적응과 보건체계",
+    "link": "https://doi.org/10.1136/bmjopen-2026-119188",
+    "date": "2026-09-21",
     "via": "논문 검색"
    },
    {
-    "title": "[Surgery for colorectal cancer in the era of individualized treatment : The new German S3 guideline on colorectal cancer]",
-    "origin": "Chirurgie (Heidelberg, Germany) · Rink AD.",
-    "sourceName": "지침·권고 문헌",
-    "link": "https://doi.org/10.1007/s00104-026-02575-1",
-    "date": "2026-09-22",
+    "title": "The optimism premium: Repricing climate risk through adaptation policy",
+    "origin": "Journal of environmental management · Huang C, Wang K, Zhu M, Xu J.",
+    "sourceName": "중국 연구 동향",
+    "link": "https://doi.org/10.1016/j.jenvman.2026.130967",
+    "date": "2026-09-21",
     "via": "논문 검색"
    },
    {
-    "title": "Prevalence of meeting aerobic physical activity and resistance training guidelines in advanced prostate cancer: a descriptive study of racial and regional disparities in the IRONMAN registry",
-    "origin": "Supportive care in cancer : official journal of the Multinational Association of Supportive Care in Cancer · Solberg A, Grydeland M, Nilsen TS, Storås AH, Davis ID, Grea",
-    "sourceName": "지침·권고 문헌",
-    "link": "https://doi.org/10.1007/s00520-026-11251-3",
-    "date": "2026-09-22",
+    "title": "Heat stress responses of plants during adaptation to high temperature environments: A review of recent advances and insights",
+    "origin": "Plant signaling & behavior · Wei X, Zhang H, Ma R, Zang J, Wang Y, Yu C.",
+    "sourceName": "리뷰 논문 (분야 종합)",
+    "link": "https://doi.org/10.1080/15592324.2026.2735211",
+    "date": "2026-09-20",
     "via": "논문 검색"
+   },
+   {
+    "title": "Summer of 2026 broke records in Europe, and caused deaths",
+    "origin": "DW.com",
+    "sourceName": "WHO 기후변화와 건강",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQczV2d3A2V1A0ZVRhRUJXVFlQc2JpNkp6eDJtQ1RweDZ0RUpFVUN4MXR5QkhqbEpFLXp4ZVkxcVdDOFYxQl9aM3FMRTFDZzNKTEY5U0x0SnRpR21Kd01uWGxrbGM4VGozWUlHWGQzYkZfU2FmNVowazdJeVNlb1hOaGdpbE1EWWphVW5mOWRYU3RiQm_SAZMBQVVfeXFMTnRMRlZHWVNNdk8wVUFNaW1XbkdaRGdyV1FUNE9JZ1FCdURleGROY2ktRWZ0dmhsSDdQMmNrSHlDVTJTSWlteXptRTgwSkp0QjJrZjljZVJadjFoaG9RblhOcjlWeVA3Q2prMGtTVWpRZzJ1LVV4X2llRUZSd3A0Z1RqaVF2SHA4ZFA1N0REYUxYSzZn?oc=5",
+    "date": "2026-09-19",
+    "via": "뉴스검색"
+   }
+  ],
+  "injury": [
+   {
+    "title": "「손상예방과 건강한 사회」 2026년 2호 발간",
+    "origin": "",
+    "sourceName": "질병관리청 「손상예방과 건강한 사회」 (계간)",
+    "link": "https://www.kdca.go.kr/injury/disemg/2026/06/index.html",
+    "date": "2026-09-23",
+    "via": "기관 페이지"
+   },
+   {
+    "title": "「손상예방과 건강한 사회」 2026년 1호 발간",
+    "origin": "",
+    "sourceName": "질병관리청 「손상예방과 건강한 사회」 (계간)",
+    "link": "https://kdca.go.kr/injury/disemg/2026/03/index.html",
+    "date": "2026-09-23",
+    "via": "기관 페이지"
+   },
+   {
+    "title": "추석 연휴 응급실 어쩌나…정은경, 서울의료원서 응급의료 점검",
+    "origin": "뉴스1",
+    "sourceName": "중앙응급의료센터 응급의료 통계 (NEDIS·e-MEDIS)",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE0zbERxNzMyVmd5dG1WU3F4RTlSTGM3Z2xUdS11NE9VNWVfbzlONkc0cXV0bGZMN0M0NXRuRTVhTnhZN3pBYndwQ0I2cUdnNGoydUQ1MFVBUHFtaUhucU5QU1ZB0gFiQVVfeXFMTTNsRHE3MzJWZ3l0bVZTcXhFOVJMYzdnbFR1LXU0T1U1ZV9vOU42RzRxdXRsZkw3QzQ1dG5FNWFOeFk3ekFid3BDQjZxR2c0ajJ1RDUwVUFQcW1pSG5xTlBTVkE?oc=5",
+    "date": "2026-09-23",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "추석 연휴 응급의료체계 가동…응급실 416곳 24시간 진료",
+    "origin": "v.daum.net",
+    "sourceName": "중앙응급의료센터 응급의료 통계 (NEDIS·e-MEDIS)",
+    "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE51ZkpRX18tbldKc2V2Rk5tcThFdjF4dDdzNjNTUUFoMXBaVTZ6b011RnB3aTQzUnVlTzRITjNud0lkSVhZVi1OcDlhR3JhNG8?oc=5",
+    "date": "2026-09-23",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "소비자원 \"일부 말랑이·왁뿌볼에서 유해물질 검출\"",
+    "origin": "연합뉴스",
+    "sourceName": "한국소비자원 위해정보 (CISS)",
+    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5BZDZHWEJnVnVpOVpuZjEzMlJqaHA4VjBNZ0V1RndNLTM5Qk1Gb2FIVFA4VmtCM0dha3lpcGs0VDFneTlOaDdIMHR1WFBoYVZxMXFfWFpHZExKcFZhc2laa9IBYEFVX3lxTE5BZDZHWEJnVnVpOVpuZjEzMlJqaHA4VjBNZ0V1RndNLTM5Qk1Gb2FIVFA4VmtCM0dha3lpcGs0VDFneTlOaDdIMHR1WFBoYVZxMXFfWFpHZExKcFZhc2laaw?oc=5",
+    "date": "2026-09-23",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "\"인기 장난감의 배신\"···한국소비자원, 왁뿌볼·말랑이서 유해물질 무더기 검출",
+    "origin": "더경남뉴스",
+    "sourceName": "한국소비자원 위해정보 (CISS)",
+    "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5VMkFmMWhOSVFzQ0dmejh5Zi1UWVplNjBHeXo1YldRRmw1T0EzcWhuTl8tMERnSGFxUndnelpyYW81Yk04OWFvZmFsSmpDYWxNaEhEMA?oc=5",
+    "date": "2026-09-23",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "복지부, 추석 연휴 대비 자살예방상담전화 ‘109’ 콜센터 점검",
+    "origin": "간호사신문",
+    "sourceName": "자살·자해 예방 통계 (보건복지부·한국생명존중희망재단)",
+    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8wdVJfQXNockRmTkladDBrc1oweHlpR0VUcGRSMk13YWJNNTAwNS00cjJYSjBsTXVrbjhOclZTZ201aXpGV1dTMWw2SnNNNDU0MXNkQ3VqdE5oRmR2aG5LNHFNaVNDUnAyVUdCSkJB?oc=5",
+    "date": "2026-09-23",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "추석연휴에도 자살예방상담은 109",
+    "origin": "서울Pn",
+    "sourceName": "자살·자해 예방 통계 (보건복지부·한국생명존중희망재단)",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1BRTBkakJjMkpUQTRXZGlkcjhyX2ZHSDRoQW5VanpWRlRUQzFhY2pDcXJNTndmS045ZHJOUmFGOEZtUE5QSXdoSjhmRC1ha0NTakw4cEY3dHZfdTBGVnhEUF9R?oc=5",
+    "date": "2026-09-23",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "추석 연휴에도 자살예방상담 24시간 운영",
+    "origin": "데일리안",
+    "sourceName": "자살·자해 예방 통계 (보건복지부·한국생명존중희망재단)",
+    "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE54eVBzUFlDY2tGdjNmeFUxYUppQ2VsM18yd1B2VFFSWWsxVnUtSE9JcVhDOFN6WXpQdjE0TjFvWExuTEVOX0xmcHVkejhwRmdZT0llaA?oc=5",
+    "date": "2026-09-23",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "추석에도 하루 1000건 울리는 ‘109’…자살예방상담 24시간 가동",
+    "origin": "edaily.co.kr",
+    "sourceName": "자살·자해 예방 통계 (보건복지부·한국생명존중희망재단)",
+    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOUFk2VGJhUkQ3djZzWFdDd3F6c3JXb0kxN0E2dktORUNCYVUzTHVuQnFTMXhiaE5RbVh3Tlk5ekFzeWVBcmI2eEprS2FQUUREVksyT1lxSFUtUDcxXzhxVTNUSEpFN1BjYWR5UEhNY1ZGNVVNRzBIV3FQN3NWVHQ4Mg?oc=5",
+    "date": "2026-09-23",
+    "via": "뉴스검색"
    }
   ]
  }
