@@ -520,6 +520,16 @@ textarea{min-height:90px;resize:vertical}
 </div></section>
 </section>
 
+<footer class="site-credit" id="siteCredit"></footer>
+<script>
+/* 제작 크레딧 — 문구·날짜는 site-config.json 의 credit 한 곳에서 관리합니다 (스타일: paper.css .site-credit) */
+fetch('site-config.json').then(r => r.json()).then(c => {
+  const k = c.credit; if (!k) return;
+  const a = document.createElement('a'); a.href = k.url; a.target = '_blank'; a.rel = 'noopener'; a.textContent = k.site;
+  document.getElementById('siteCredit').append(`${k.role} ${k.name} · `, a, ` · ${k.date}`);
+}).catch(() => {});
+</script>
+
 <script src="email.js"></script>
 <script src="vendor/qrcode.min.js"></script>
 <script>

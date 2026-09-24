@@ -44,6 +44,14 @@ def e(s):
     """HTML 이스케이프 + 줄바꿈 시 '—'가 줄머리에 오지 않게 앞 공백을 고정 공백으로."""
     return html.escape(str(s or ""), quote=True).replace(" —", "\u00a0—").replace(" ·", "\u00a0·")
 
+def credit_html():
+    """제작 크레딧 — 문구·날짜는 site-config.json 의 credit 한 곳에서 관리한다. 스타일은 paper.css .site-credit"""
+    k = _CFG.get("credit") or {}
+    if not k: return ""
+    return (f'<div class="site-credit">{e(k.get("role",""))} {e(k.get("name",""))} · '
+            f'<a href="{e(k.get("url",""))}" target="_blank" rel="noopener">{e(k.get("site",""))}</a>'
+            f' · {e(k.get("date",""))}</div>')
+
 def make_qr(url, out_path, brand="#12395f"):
     """구독 주소를 QR 그림(PNG)으로 저장한다. 인쇄·메일 어디서나 보이도록 그림 파일로 만든다."""
     qr = qrcode.QRCode(version=None, error_correction=qrcode.constants.ERROR_CORRECT_M,
@@ -340,6 +348,7 @@ def paper(data):
     본 뉴스레터는 각 기관의 공개 자료와 학술 문헌을 정리한 것으로, 원문의 내용이 우선합니다.<br>
     {e(m.get("org",""))}{" · " + e(m.get("editor","")) if m.get("editor") else ""}
   </footer>
+  {credit_html()}
 </div>'''
 
 def page(data, others):
@@ -540,6 +549,7 @@ def index_page(rows):
   {cards}
   <p class="sub" id="listEmpty" hidden>아직 이 뉴스레터의 다른 호가 없습니다. 이번 호가 창간호입니다.</p>
 </div>
+{credit_html()}
 <script>
   /* ?series=phsm 처럼 열면 그 뉴스레터만 보여 줍니다 (QR로 들어온 경우) */
   var NAMES = {{ outbreak:'감염병 발생 동향', phsm:'감염병 사회대응',
