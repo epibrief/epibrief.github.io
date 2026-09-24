@@ -510,6 +510,7 @@ def index_page(rows):
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>발간 예시</title>
+<link rel="stylesheet" href="../paper.css">
 <meta name="description" content="에피브리프로 만든 발간 예시 목록. 감염병 발생동향, 사회 대응(PHSM), 만성질환, 기후·건강.">
 {FONTS}
 <style>
