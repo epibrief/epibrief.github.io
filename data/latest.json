@@ -1,89 +1,105 @@
 {
- "updated": "2026-09-24 22:50",
+ "updated": "2026-09-25 23:13",
  "byKind": {
   "outbreak": [
    {
-    "title": "U.S. pledges an additional $267 million to contain fast-spreading Ebola",
-    "origin": "The Washington Post",
+    "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
+    "origin": "WHO Disease Outbreak News",
+    "sourceName": "WHO 발생 속보 (Disease Outbreak News)",
+    "link": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON618",
+    "date": "2026-09-25",
+    "via": "WHO 공식"
+   },
+   {
+    "title": "3 dead in suspected hantavirus outbreak aboard a cruise ship: What to know - ABC News",
+    "origin": "ABC News - Breaking News, Latest News and Videos",
     "sourceName": "WHO 보도자료",
-    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRG1RcEFIRGNOemN3eVQwTmVlRUpiV2RkcE9tcnR1RGJUa0w5ZldRNnNUbFl5Q1lES3JzRmx6dTVZNWkxY1JGTVVybktTMmVKdVJ0bjJFdE1YUkhUbWY2bUlVSjdlR2prZ0c1OXFPSld2eEZ3TXlSZ25NTC1UTFFrTUNGeElXOXcwMzRuMUxFdmgzZUF6MFJBYTNOTDBPdFpWYnBuelRUcXhPR1B4UFFPQkp6SjQ?oc=5",
-    "date": "2026-09-24",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPaVFxQTZQbEFJdm9jTU5qVFFlbUh1Z2tCRDhCZHBlY3NneVhwN0VEV1lJOUlZVjVoNUxfMGVsbmVpcGkwVTF6TWVRWTlhb0xSamJaZU5QMFJoZ0lNME1BT0FoRlJCSmNnWW81cXN0QVBqb2RhSWhJTDRmYWE4eW4tcUdMVlFjcTBVVTVCMGFKOF9RMjhUX2ZJTFRnTzVyLW0zbk930gGoAUFVX3lxTE50VnEwRi1SSDJvaTZ0Z2VjVjZaNWlrZGlZa3BneElvZjJzcUZoRWlIZ0hXTzV4QW1TY21oVVRuMVRGZHB5X09fU3NFVWhtVVpNN3Q2aWR3UkpUM3lOamItODI2R2VWdnhjRnhQNC1ub1hqQzhmUUVRVG5idWt1Q0VIcVQ2NzRVWUF4N1NWclk4ZVZqSEF4RHBFYUpzNnl5SHZMbDhYdHlRMw?oc=5",
+    "date": "2026-09-25",
     "via": "뉴스검색"
    },
    {
+    "title": "World leaders renew commitment to protect the world from future pandemics",
+    "origin": "who.int",
+    "sourceName": "WHO 보도자료",
+    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPTkt2Y0lYZGhYS2ktOVFvSGMwMDJjSVM5YXdReWFXQkJXMjdUeUxnMC11ZzI5dDd6Q0NyMzIyaVlVQmh6dmdwQ01aRTZHb2dDc1V6VzBCUnJyOFJUbEUwbnhTVVNPZzVVUVhzNFZHVUotOXVJeklhNlJ2RWU4WXpOV1h0RDl6UUoyS1Y5dzZsdGVER1RIZDJyRFRzYzc2R09zWk1HZEZvRlBhVHByczE4VmdOQjBTQVlzclN2MGU1bWZKR2RiX0twVEduRjkzS2dS?oc=5",
+    "date": "2026-09-25",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "Congo Ebola contact tracing falls far short as outbreak spreads, Africa CDC chief says",
+    "origin": "Yahoo",
+    "sourceName": "美CDC 여행 건강 경보",
+    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZGZzRWJGRW9mMlJyUHNvTnBfQWhOUE5Md1ZYTjd4QTlDZ2JObHRMY1BkcmhQN2w1bHV3VzNkYWZrRzdPOUkwalVWYWltUHUtdDFTWmVoRTVJTUNyZ2lSRkI3c2doYXBTWXdIMVRXNzhZRkhxekN6NXhYOWR2RE1jSU1JTUFoajZYUU5iSUpUcG12UU5U?oc=5",
+    "date": "2026-09-25",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "Ebola cases, deaths in DR Congo outbreak near 7,900 and 3,800 as virus spreads to 2 more health zones",
+    "origin": "CIDRAP",
+    "sourceName": "CIDRAP (미네소타대 감염병연구정책센터)",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQX3A0T0dCU3ZCYUJueGN6VmxoX3pRRFpHWmd3OWdXRmtTUmNuU1JzZWoxSHNmSlhWY3I0bzJuYWZHLThveVdoSEJ2b05xU0o3bkJsZTBCZDhYV2lXRWpjRi1tSHpfdUdWRUw5ZkY5anFQQXBpWTR0VEpXTHBBblE4eGFMZVpiNGh4UVBCRVdZdl9vSDk1SHE5Wi12MlNhTlZvMjhjWmhPSlBfdDdMOXpYQ25jSTRJUTBpMDc5MExraw?oc=5",
+    "date": "2026-09-25",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "\"추석 성묘 때 풀숲 조심하세요\"…치명적인 진드기 감염병 주의",
+    "origin": "뉴스웍스",
+    "sourceName": "국내 감염병 발생 동향",
+    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9yOUFoVGhWM1B1LTdPcjdLZTdLQzA2c2ZISjNPMFU5OVV1RnpEZ1pQdF9fMjJGQ2NiNDRNbWlRV185YmJkemtObVBzRVlSOU5NOUkyaUhTaDM5WFo3Y0xYTkVGRnpHMHdGZTdkWVE5Y203Vzg?oc=5",
+    "date": "2026-09-25",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "Australians urged to get free flu jab as season peaks later than usual",
+    "origin": "ABC News & Headlines – Australian Broadcasting Corporation",
+    "sourceName": "호주 보건부·NNDSS",
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPVUF3WnpDREFYc1hYMkM1dXo0eUFKc1pYOE13Z182dXVXalJTbUV0UWJIWmw2WEtJZVR3S0huUWZlNkllcnlsM2xMOE9BRWZIejkwN2lRSmNfLUd4SF9yeXdjLWFnQmtucU5zTGJfY2lReDNkaGcxcUlweVNhMmZKQVlhbFc2QTFfS2ZBdXBFWQ?oc=5",
+    "date": "2026-09-25",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "Deano's Pasta Issue Allergy Alert on Undeclared Lobster in Pear and Pecorino Triangoli Ravioli",
+    "origin": "",
+    "sourceName": "美CDC 뉴스룸",
+    "link": "https://tools.cdc.gov/api/embed/downloader/download.asp?m=316422&c=766526",
+    "date": "2026-09-24",
+    "via": "기관 RSS"
+   },
+   {
+    "title": "Galil Importing Corp Recalls Lior Cinnamon Ground Seasoning Due to Elevated Lead Levels",
+    "origin": "",
+    "sourceName": "美CDC 뉴스룸",
+    "link": "https://tools.cdc.gov/api/embed/downloader/download.asp?m=316422&c=766527",
+    "date": "2026-09-24",
+    "via": "기관 RSS"
+   },
+   {
     "title": "10 more sickened in Salmonella outbreak tied to broccoli sprouts",
-    "origin": "cidrap.umn.edu",
+    "origin": "CIDRAP",
     "sourceName": "CIDRAP (미네소타대 감염병연구정책센터)",
     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOUnkyZVZieVRyYm8tZ3ByV293a2VMTGJ5VTBkVGVCTG4wOFBVaFF3bmIxdlhWV3J5NlZIM2x5WmZHN09WQWhOZWJDaGRJUG1qck1MeEd3bkN5Mjk5RVBDeDhRRlVFRUNQaWx3aElIakpnZ01NSUYyc3YzUWtKSk9sWHFoM3BwVWhaMVltOEJNWmk3S0lMemtlU0FvUHktZzJseWlyUXJR?oc=5",
     "date": "2026-09-24",
     "via": "뉴스검색"
-   },
-   {
-    "title": "Fractured ecosystems, climate change raise risk of zoonotic, vector-borne disease outbreaks, study finds",
-    "origin": "cidrap.umn.edu",
-    "sourceName": "CIDRAP (미네소타대 감염병연구정책센터)",
-    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQaGtuT1dod2xpWjJRR2ZXc0lhbHloSGZPSjFuTk51VnZKMlRiZkR5bzJmbUlqc1BxWHRJbGJwVE01TktwZURNZVZGUWo1ZmVMcmViZTV0SjhSUWRESDVDS21YaW5sTHVBY0k1cGNxSzBsYWE5b0JINEcwOU1teHZMcTR5U3Fxcm5MVVpDei1xOFdEaEswYVZXZkE3ZHZhRUlUelNTd1oyOHJJNzFsWXl1NzdqTmVNNVAweFE?oc=5",
-    "date": "2026-09-24",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "기온 상승 탓, 열대 감염병·온열환자 증가세",
-    "origin": "남도일보",
-    "sourceName": "국내 감염병 발생 동향",
-    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1mM2dTbWozTGVESENTdVZvTFZacWR0dHprQV8xQWZxOGlQTGxZR3YtLWR3STlVdVFoUEtEX3VBSUpTcHItMWo2TzNWX0hVX01BNmVOQmNTQXd4ZDZ5VGNUdTFHQU5adWJmNW5zS9IBcEFVX3lxTE4xcHVLaFVSSGNIamRHZm9GSXpGVHl0R1RqOWRVZ2dxbkpQY3FrTWRtWmROY1lVUXczTUJ4Y3lXYWY1RE8zMDVjMERqWk9zd19HSjFONVY1VEtRdmpLU25qdldPR1NtOTFNZXNVbmROc1A?oc=5",
-    "date": "2026-09-24",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "Is the Western Pacific ready for a cross-border food safety emergency? Countries test their readiness",
-    "origin": "who.int",
-    "sourceName": "WHO 서태평양지역사무처(WPRO)",
-    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNNVIwMmF6R3hzb3BCaDl0c2VKbFpFOVJzN2huTWpMMUpJV2lLelIwY3hFQy1WN0VkcFhwX2thamFvMUxkamlOdVd1cmpDalgteWFzbmwtQnVCb0xLY0dJMFBSUW1JZFlHbzZCcWdERG83NzI5RW42eW9RLW40ZUJQZVFjaGRUb0dvMzZrZzVzOA?oc=5",
-    "date": "2026-09-24",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "WHO South-East Asia immunization experts meet focuses on measles outbreaks and closing immunity gaps",
-    "origin": "who.int",
-    "sourceName": "WHO 동남아지역사무처(SEARO)",
-    "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPd3Zud2htMGx4UGpyRDZQT1dPbTNNZWVqTTdWZHVyMFpmZHV1OWE2OTNnZHVwY2p2U2JjMGNiUjJySk90ODI2czlYc01RMmE4OXBCbUItbmlndDctYV9JdnBYQTBQVmxhTzgtUHd0eTJEQVVfcUxxOFdHX05GYzJLdF8yT01WeWwtM1p3MUJKV0kzSnIzYWNEVzdwcFB3TlU2dFpPRHlVN1BmQjNzNVppdTlCbE44dlJZTWhodndvUzJIWVMwVU9nS2VkOHBLYV9Zd1V2WS1fUXVBNFlwZG1fTVc5akpwX29vSFJxMjVB?oc=5",
-    "date": "2026-09-24",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "Partners in Public Health: UN Volunteers are advancing WHO's work across South-East Asia",
-    "origin": "who.int",
-    "sourceName": "WHO 동남아지역사무처(SEARO)",
-    "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPOTQtbHNkZWwxVy1OYnlXeWpaUEdfaTI1Z0kzeklOUVdDODBhOVhlRi11aDdsekMzZUROd2tOU3FEYXhRamR0UzNRUjlGdVZPRTM3RkZMS1VwbkxZSHJZazBnLUVWWUpoX2k1SzlCUVhrVVlfRUJOQU4zQ2pXRWJlOGFXXzc3aWdSYk80LWlBcHNDTXdvR2pPYUZiTDVaeVJWNHJtNlJibVFPdTZVWGI3SG9BNzQ0RnJzeG5BSl9kal8wNE9RRFJoYmNzcFc3dGJMRVdZWkN0N1RYVUg1Z2RPVHM4ZDM?oc=5",
-    "date": "2026-09-24",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "Berlin Seeds Recalls Alfalfa Sprouting Seed Because of Possible Health Risk",
-    "origin": "",
-    "sourceName": "美CDC 뉴스룸",
-    "link": "https://tools.cdc.gov/api/embed/downloader/download.asp?m=316422&c=766511",
-    "date": "2026-09-23",
-    "via": "기관 RSS"
-   },
-   {
-    "title": "Ebola outbreak in DR Congo approaches 7,800 cases",
-    "origin": "cidrap.umn.edu",
-    "sourceName": "CIDRAP (미네소타대 감염병연구정책센터)",
-    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQR2FsZzBmQnl2cm1LQmswYUVFQVZ4a0NwcnJtaEN0YXNYYWJQNDlNU2lFamZMbGdaQ2JWanMxU09tblVFZFVUY2tOemk3MzFvRmRZN0NydG9sdDFTM191QUJQOUJCRXNWRVhwbUFSOElmMXRpOGY3Qk5YZWp0VWxUZ3pxTzE?oc=5",
-    "date": "2026-09-23",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "파주보건소, 추석 연휴 앞두고 해외여행객 감염병 주의 당부",
-    "origin": "경기평화신문",
-    "sourceName": "해외유입 감염병·검역",
-    "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE0tME5sbzl5cFVCX1ZqM1NVeGhBcVZVX2hmaUhTQVlPbVZXdzVhM1JFZWgySHNBeXRMQ2dNcjN0TmMzZ1o0QVd2OHhn?oc=5",
-    "date": "2026-09-23",
-    "via": "뉴스검색"
    }
   ],
   "phsm": [
+   {
+    "title": "WHO global technical consultation on public health and social measures during health emergencies: report of the third meeting, Geneva, Switzerland, 24-26 March 2026",
+    "origin": "WHO 발간물",
+    "sourceName": "WHO 발간물: 공중보건·사회적 조치(PHSM)",
+    "link": "https://www.who.int/publications/i/item/who-global-technical-consultation-on-public-health-and-social-measures-during-health-emergencies--report-of-the-third-meeting--geneva--switzerland--24-26-march-2026",
+    "date": "2026-09-25",
+    "via": "WHO 공식"
+   },
+   {
+    "title": "The World Health Organization in crisis",
+    "origin": "GIS Reports",
+    "sourceName": "국제 대비태세 감시(GPMB 등)",
+    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBpQzdlaXdad0ZwWmhtVTZtNDJnNEJmTjhWWE43NXVlY0pWWWJrZ18zOHFIblRzdWNIMlBGUHZrY0gwWjdNNW5meVhockJoblZXWEVCaU5aU3RkWGMtbXZsZXdCY2g4ckNZQ1BvWExyNmRHaC1mRlBr?oc=5",
+    "date": "2026-09-25",
+    "via": "뉴스검색"
+   },
    {
     "title": "UKHSA priorities in 2026 to 2027",
     "origin": "",
@@ -117,6 +133,14 @@
     "via": "기관 RSS"
    },
    {
+    "title": "Technical Rationality Under Pressure: Nursing Leadership and Clinical Governance in Politically Volatile Health-Care Settings",
+    "origin": "Creative nursing · Ferreira JESM.",
+    "sourceName": "논문: 대비태세·거버넌스·법제",
+    "link": "https://doi.org/10.1177/10784535261492027",
+    "date": "2026-09-23",
+    "via": "논문 검색"
+   },
+   {
     "title": "UKHSA and PACE make new bacteria available to support research into tackling antimicrobial resistance",
     "origin": "",
     "sourceName": "영국 UKHSA 발표·근거자료",
@@ -139,36 +163,28 @@
     "link": "https://doi.org/10.3347/phd.26037",
     "date": "2026-09-22",
     "via": "논문 검색"
-   },
-   {
-    "title": "\"코로나 거리두기 규제 효과 불명확…계량적 기준 만들어야\"",
-    "origin": "연합뉴스",
-    "sourceName": "국내 방역·사회적 거리두기 정책",
-    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE55elBxQTgydnRGVS1uVGN3LWp0ZHVTa09FTjJyMGlWN2ViR0RLUGI3eVFWM3lLektkajk3bVZNZDZ4QURnSmZXWVZiT1AtTENSeDJTRHlwdU5NVknSAWBBVV95cUxPSzZFT2hEZGRlQkJpSFZzUjhiQ0ZXbUR6bGVFQlJUUkxhc3E4bC00eVZRQlhSNDBIdzNQajZsWXlVdW40MVpFRHdadWFvVWJOQmNlcjh0ZDhpUV9PZy00X0I?oc=5",
-    "date": "2026-09-21",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "코로나 거리두기 성과·한계는…감염병 사회대응 체계 모색",
-    "origin": "newsis.com",
-    "sourceName": "국내 방역·사회적 거리두기 정책",
-    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA2LUoxMENFVU1JYmZUVjY5bEVsRkY1NkEwOWJMV2ZrX2wtSHAtNmduTTNfSjZDb2tsRVJwa05xUUFna1NBYXhwRGN1MG1tYzQ2OUxaWU9VNW9DdGk0ZElYOdIBeEFVX3lxTE04S291NjBBSkwySTc1cFZuLTNwaExaSWZna2tTajdvbnRwQVFDWVZTdkdDbEVQTTB1Ymp0SzVYVWVueklnR3lhdW9OZE9YZ0lVRlV3R1k4VE1MWGJvMEdJVDFOR0pzeGc2dDVuUnhSWHpJd2NFUVhoQw?oc=5",
-    "date": "2026-09-21",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "질병청, 코로나 거리두기 사회적 비용 평가…미래 감염병 대응 논의",
-    "origin": "edaily.co.kr",
-    "sourceName": "국내 방역·사회적 거리두기 정책",
-    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPSVk1aHJuT3ZHOU1HNVZnMHVmVXlOSmRnRFJzb1FnRGFQbnRMRTFpeUFCNXExYkk1SEwtZWZ1WG85VXhDMWstc2F4TVNhQzNSMXljb1NXNkJpalB4SmJOWTBfYzN1ZktfamFpSmNIRkN2eENRck5Gc01aRnVodF9UZQ?oc=5",
-    "date": "2026-09-21",
-    "via": "뉴스검색"
    }
   ],
   "chronic": [
    {
+    "title": "Chronic Diseases Now Behind Nearly Half of African Deaths",
+    "origin": "NewsGhana",
+    "sourceName": "WHO 비감염성질환(NCD) 소식",
+    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNaDRoMU9FNWVHZ1JxWVMtSVVsamF3TUd0alF3MFE3TGZuY0N4NW1kZVRiM0EySEotQjIydkNFbEd1RkFfcE9vNXB3Wi0xTUN4RUFTUTBUbFllTEVRbE0yMVA1SnhiU3p3SFh3WXRsSmNQRnV4U3pHcEhka0U0NUlZXzc3T1o3NXQ4RVBF?oc=5",
+    "date": "2026-09-25",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "From Commitments to Action: Centering Lived Experience in NCD Responses",
+    "origin": "Global Issues.Org",
+    "sourceName": "국제 NCD 동향·캠페인",
+    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5HaWFfd0t2MEFaVi12X0UzUkVoam5Vcnd1TG5XMEdhaVI5T0M3Y3ZJQU5TWDVUd1AtS0s1Yzc2TDFzX2VmWGdSM0xqaF9UMFN0Ykp4anI3Q0Z0VUVTNWxwYl9Nb2bSAWRBVV95cUxOR2lhX3dLdjBBWlYtdl9FM1JFaGpuVXJ3dUxuVzBHYWlSOU9DN2N2SUFOU1g1VHdQLUtLNWM3Nkwxc19lZlhnUjNMamhfVDBTdGJKeGpyN0NGdFVFUzVscGJfTW9m?oc=5",
+    "date": "2026-09-25",
+    "via": "뉴스검색"
+   },
+   {
     "title": "Hong Kong reports more than 40% drop in cancer-related death rate over 30 years",
-    "origin": "scmp.com",
+    "origin": "South China Morning Post",
     "sourceName": "국제 NCD 동향·캠페인",
     "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQbmpXM0ktWnZWMzBVUFA0YkhMRDhnXzJnQkFOWEtvT1JXNnV3Wm1DLXhpeURDNVVsZW5rUWZvZDJnNDZhRkhiTGdONENBeUN4Z09uRDJ2eXNlcGhlUXMyeS1MMWVBU0Q3ZnR6N3hFRVFrbjZoejBhYkp6Y1hoYThmUER5enZlLVgyeEQ1RTZhTmxQNDJkVkhvZ3JVc1lqaGRkUmhGT1dXNXI5N1dGdVM3X0wycjlHV1NTazE4Mko2ZVBrSEdubEQ3dUxTRW5VdWNnejRmTTB3OEjSAdgBQVVfeXFMUG5qVzNJLVp2VjMwVVBQNGJITEQ4Z18yZ0JBTlhLb09SVzZ1d1ptQy14aXlEQzVVbGVua1Fmb2QyZzQ2YUZIYkxnTjRDQXlDeGdPbkQydnlzZXBoZVFzMnktTDFlQVNEN2Z0ejd4RUVRa242aHowYWJKemNYaGE4ZlBEeXp2ZS1YMnhENUU2YU5sUDQyZFZIb2dyVXNZamhkZFJoRk9XVzVyOTdXRnVTN19MMnI5R1dTU2sxODJKNmVQa0hHbmxEN3VMU0VuVXVjZ3o0Zk0wdzhI?oc=5",
     "date": "2026-09-24",
@@ -191,12 +207,20 @@
     "via": "뉴스검색"
    },
    {
-    "title": "Keeping Tobacco Health Warnings Fresh: Rotation Why’s and How’s",
-    "origin": "Johns Hopkins Bloomberg School of Public Health",
-    "sourceName": "국제 NCD 동향·캠페인",
-    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNaDdLSXJQekE4emV4WHFoanRFa1VtRnJGbDE2cXNqZGh3RjMzdzYwWWVMVzNhNGRnM3YwVU5TMHNIWG5seHF6d2lRUC1KaXBKWDZ5dTVSYXdVWGJ0S1NYLXYtYldJeTZkRHhTb1FmVVc1aFhBS2hLN3MxTWpqVUEwVGd3c3VrTVQ0U3B0ODZqRkw0R0Y2MXBISlU1RktGR2lsQmtxZ0RMOElISFgtUVVTeEhXbWVEX21Ob0NMcTBtQ1BfbG8yUTF4bFdTb2c?oc=5",
+    "title": "Evidence-Informed Multidisciplinary Consensus Guidance for the Psychosocial Care of Adolescents With High-Risk Cancer: Recommendations From the Italian Association of Pediatric Hematology and Oncology",
+    "origin": "Pediatric blood & cancer · Blom JMC, Scarponi D, Zucchetti G, Perillo T, Montanaro M, M",
+    "sourceName": "지침·권고 문헌",
+    "link": "https://doi.org/10.1002/1545-5017.70668",
+    "date": "2026-09-23",
+    "via": "논문 검색"
+   },
+   {
+    "title": "Heterogeneous associations between cigarette and e-cigarette use patterns and chronic disease burden: A population-based study",
+    "origin": "Journal of epidemiology and population health · Adebisi YA, Cantone G, Bafail DA, Ogunkola IO, Tomaselli V, ",
+    "sourceName": "논문: 만성질환 예방·관리 정책",
+    "link": "https://doi.org/10.1016/j.jeph.2026.203800",
     "date": "2026-09-22",
-    "via": "뉴스검색"
+    "via": "논문 검색"
    },
    {
     "title": "Phenotypic age metrics for risk stratification of chronic disease burden and all-cause mortality in adults",
@@ -207,43 +231,101 @@
     "via": "논문 검색"
    },
    {
-    "title": "Firearm safety and suicide prevention in older adults: a primary care clinical framework",
-    "origin": "Journal of osteopathic medicine · Delp R, Langenau E.",
+    "title": "Decoding the Indian plate: dietary patterns and their glycemic implications in Type 2 diabetes mellitus-a narrative review",
+    "origin": "Diabetology international · Saha D, Mishra RK, Abubakar M, Kumar VU, Kashid RV, Prakash ",
+    "sourceName": "논문: 건강행태(흡연·음주·신체활동·식이)",
+    "link": "https://doi.org/10.1007/s13340-026-00930-5",
+    "date": "2026-09-22",
+    "via": "논문 검색"
+   },
+   {
+    "title": "TIDES 2.0: A protocol for examining the prevalence and longitudinal course of depression, anxiety and behaviour problems in children with cystic fibrosis under 12 years of age",
+    "origin": "BMJ open respiratory research · Smith BA, Barker DH, Georgiopoulos AM, Schechter MS, Mohan M",
     "sourceName": "논문: 노인·다질환·정신건강",
-    "link": "https://doi.org/10.1515/jom-2026-0155",
+    "link": "https://doi.org/10.1136/bmjresp-2026-004611",
     "date": "2026-09-22",
     "via": "논문 검색"
-   },
+   }
+  ],
+  "injury": [
    {
-    "title": "Functional hearing difficulty in Alzheimer's disease: Selective links to verbal fluency and behavioral and psychological symptoms of dementia severity",
-    "origin": "Journal of Alzheimer's disease : JAD · Uchiyama M, Sato T, Mamiya Y, Takato T, Matsui T, Imamura T.",
-    "sourceName": "논문: 치매·인지기능",
-    "link": "https://doi.org/10.1177/13872877261489803",
-    "date": "2026-09-22",
-    "via": "논문 검색"
-   },
-   {
-    "title": "Transanal tube for the prevention of anastomotic leakage in rectal cancer surgery",
-    "origin": "The Cochrane database of systematic reviews · Kawamura H, Tsujimoto Y, Miyakawa T, Hashimoto K, Hirano T, ",
-    "sourceName": "코크란 리뷰 (신규 발표)",
-    "link": "https://doi.org/10.1002/14651858.cd015472.pub2",
-    "date": "2026-09-22",
-    "via": "논문 검색"
-   },
-   {
-    "title": "Health Ministry promotes safe care for non-communicable diseases in the Cook Islands",
-    "origin": "Cook Islands News",
-    "sourceName": "WHO 비감염성질환(NCD) 소식",
-    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQRXF6SHR3RjBuMUJrRW1IMUw5VnFHbElHb052M3otcDNwdUlxSmhTOTBodkljbkFnSUM1UGJ3X0FBX3dQVldLR2VGMWpMRW5JTFViMGdYUmprV2o4UjU0LVA2SDFOdnRrMWVhZEJlUm1UcXdnczdRaEtkTTJ2V1QwOXBJNGdiS0xhSDA1d3piTTBtd3JvNHhpbUhvdVZGWmZhNWNORDRURGFIQXE5T3d5OXljaVk0bXV6b0NfQi1KR2pKa2pQQjdPZUJTWDltd0lnSWNMVkF3OVJqRjM2?oc=5",
-    "date": "2026-09-21",
+    "title": "“추석연휴도 멈추지 않는다”…자살예방 ‘109’ 24시간 가동",
+    "origin": "식약일보",
+    "sourceName": "자살·자해 예방 통계 (보건복지부·한국생명존중희망재단)",
+    "link": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1KSjY4SUNOTl84MlJ3eG9lek1jZ01fcnpaZ3JERmw1Uml0NWNwNDdkWUVVOWtzcmdOSFFwYWdLU2U?oc=5",
+    "date": "2026-09-25",
     "via": "뉴스검색"
    },
    {
-    "title": "How Sugar and Diabetes Are Fueling a Dialysis Crisis in Los Angeles Latino Communities",
-    "origin": "Parriva",
-    "sourceName": "美CDC 만성질환·건강행태",
-    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1PU2lWNl9UcDc0YnIzcFdpWF9PaFROS0NmZVktSXVnaVRQQ1ItTzFrdXJQQmlSRGxyeHZhWTVjWkNtNDNTVGRBUkZETVVheHdoQ1F4Wlg2dWZEU3RkLTYtX3N4c3RmV2dXYjVvREh5U28yOFQxNXc?oc=5",
-    "date": "2026-09-21",
+    "title": "추석 명절 가정 내 안전사고 주의하세요",
+    "origin": "busan.com",
+    "sourceName": "질병관리청 보도자료 (손상·안전)",
+    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1Xa1Y5a1h0OEtSOC1naTVFb1VjTklBT1VwaHhmSXZZbHVKdTQ2emQzNDlMb2VGa1ltbVpBblJ0ZHpWcFRGMk1uR0thSkJRZXoyc3hYcW5zQXNMTG5Jd0FnRTFYaFh4QjBQVFNKb01KMnZodw?oc=5",
+    "date": "2026-09-24",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "국표원-한국소비자원 등 충북 농촌마을 가전제품 안전사용 캠페인 실시",
+    "origin": "서울Pn",
+    "sourceName": "한국소비자원 위해정보 (CISS)",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBiQXpabkZOTGFBR1RCRzVRcHN1dGdiWmFYOUFfWHBjLW5pN3RkTUJDNmZtVUFoRkZGT084MnFZSXRsM0hCQW01RGZJaGktbUxBRXQ2amlUVXNKSm1XZjFnal9B?oc=5",
+    "date": "2026-09-24",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "ISP highlights safety checks across Illinois",
+    "origin": "WEEK | 25 News Now",
+    "sourceName": "Safe Kids Worldwide (어린이 안전)",
+    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQMnY4T0lra2dOMHNfNEdqQjJWTENpdVgtTzJmLV9EZ2tiVGUyWEdlcU5wSTZ0QVMwLWJQNkRWV3pHd2N1VVd1d3JBQjhELXllU2g3dEltWlRBVW53U1NuNUs2amstdkQxdmRpR25Sa1pSQ2xtOFY3bjJDYUpQYzZXUkpwaHVYajJVR2fSAZ4BQVVfeXFMTWNnS2EzSzUxMVZjWmNoWlNjbmZvZjhwc241UmMyRWJZaGhzdGRkSEZWWmR4cXplbHJoNWxmc3BNazJkN0JMNDFQbnRzNVNIS3cwTkgwc3BiZ1h3cW84SUZkRUQxZjUyQjBJWlQzZFA5d3BjaTU5aUZsX1ZvWGY2RGtpYTItYVpuTnN1SGJZelA5U1BmRTdIam4taTJJMGc?oc=5",
+    "date": "2026-09-24",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "How to trade old, damaged child car seats for coupons at Target across the First Coast",
+    "origin": "firstcoastnews.com",
+    "sourceName": "Safe Kids Worldwide (어린이 안전)",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOVXppU0xWLXFhX09IYWliUXBOb0tTUHg2VVV4bXdnSU9zWEpmeXF1dUM1czhITDV6d1pvVURsVnAzeE9qNndReEI4WUJtMU0yMkJUUU9BRjBfYzBCQ05YOHVaaFpuNXBIYTFtb0lzdUNVMzhQYXd1LWtOaDE4VHBDMzRyTWFOaFJSMW9BSFdzQnA1b0JkTkkzQkFTem1vU29qeUlUclZ5ZXk0UlcwRllYQmNvWTQ3bXdfR2F3?oc=5",
+    "date": "2026-09-24",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "4-Year-Old Killed in the Road While Family Was Dealing with Nearby Parked Car",
+    "origin": "AOL.com",
+    "sourceName": "Safe Kids Worldwide (어린이 안전)",
+    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE84Um55SG4zcndranYtSnpIVzZRdDNkMFhlQW1ITWNJeERBaHQyQW4yWDBDa2lYcEtSV1FGUzhFc0k3R2hDWG5BX25ERkZBT2xHdGNPLVJKSS01Q3BLZUl1R2xGaS1WbzZpTnJ0c0oycGdyUTB5VE50c25jV0k?oc=5",
+    "date": "2026-09-24",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "추석 연휴 주방이 위험하다…화상 2.2배·베임 1.9배 껑충",
+    "origin": "메디소비자뉴스",
+    "sourceName": "질병관리청 보도자료 (손상·안전)",
+    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1ETzZMNUlFMHBBU1NNSFZ6bGJ0LVF2NkJGcmpwbG8yanVqSkZvY0JzTUxYTXdnZHN2TmZHcFRZdDBTbEx3MzRLNFVEWmJRVFAtbENmLTgzQndaZzdvd2pqZkk0WDlBZHpCMWVZOFJ1cGdFNzjSAXZBVV95cUxPV2ZLSUdqbkdqS1YzbU5ORGYzLTJ1d0h2S29fcmMyVlpKNmI2eGxfSmY4VS1TNkVHZHFPaUVJdEZnSWJ4Tm5HUUNOaG1RZ2pGLTlIWi1BMEoza01HRmN5alRUNUt5X2UwM1ZVZ2tFWUJOWlhMVmp3?oc=5",
+    "date": "2026-09-23",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "추석 음식 준비하다 ‘화상·베임’, 먹다가 ‘목 막힘’ 주의",
+    "origin": "시사저널",
+    "sourceName": "질병관리청 보도자료 (손상·안전)",
+    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9Fb0Y1UXFXTk1QckVxOFRaRXBPQVh1cHFmQ0sxRUVlNk5SVWhhR2xFLUtYZmpaNDNqV2pRaVRUSEQ4YkhBYnJkVXNRNFN3SlA5Y0xnbEhqZEtRdDA0UTNLbDhIelVkcDFGYVlUWTVFTkFrOVXSAXNBVV95cUxPRW9GNVFxV05NUHJFcThUWkVwT0FYdXBxZkNLMUVFZTZOUlVoYUdsRS1LWGZqWjQzaldqUWlUVEhEOGJIQWJyZFVzUTRTd0pQOWNMZ2xIamRLUXQwNFEzS2w4SHpVZHAxRmFZVFk1RU5BazlV?oc=5",
+    "date": "2026-09-23",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "벌초·성묘 중 벌 쏘임·뱀 물림, 민간요법은 조직 손상… 골든타임 놓치지 않으려면?",
+    "origin": "하이닥",
+    "sourceName": "질병관리청 보도자료 (손상·안전)",
+    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE91UkdiQUxCQ25EV1NuWlJKWFdMeE4tVHZOT3dkTDk3cV8ydjdxQ0JDSllfWmxZTHhORHNORURHYWZiWTV2UzNpdlk4UzRfZjhaM3JiTkhHbmU2VVZvdnBiYXA5MXBHQUw5eGc?oc=5",
+    "date": "2026-09-23",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "명절에 문 여는 병의원·약국 어디? 추석 연휴 응급의료기관 안내",
+    "origin": "서울특별시",
+    "sourceName": "중앙응급의료센터 응급의료 통계 (NEDIS·e-MEDIS)",
+    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE03QXRVWWo5czlkOThINW1wellvdXdKSlFNQnl4clNpUEZmcmVfUXpxeThmcDRKdTMtWkp1ZllNWlJLSzBsRGRuUlVjMl91bUZNVmRJRlhSZzk?oc=5",
+    "date": "2026-09-23",
     "via": "뉴스검색"
    }
   ],
@@ -257,10 +339,10 @@
     "via": "뉴스검색"
    },
    {
-    "title": "WashU Expert: Family resilience can help protect children from climate change",
-    "origin": "WashU",
+    "title": "Family resilience can help protect children from climate change",
+    "origin": "Phys.org",
     "sourceName": "WHO 기후변화와 건강",
-    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQbWpkMzJ3Qk83X3BRS3dicjRjMG5mOUNZVDRIMC1nblBKVzFwbGdMVEE2UE9TWWc4WmFuZ2ZQVzZlRXBiMERjbUNHbFZoLVhHd3hKYTlIUUxwRURFb0o5anNWcFFiZlQ3TUpOcWVLTS1fdUF1WFBLSHNELUlmR3JmdVZMQThVX0VQLTlKWXZYbG1ENHp5S192RFp2LTBQYnpZUWtZY2diY2t6LXB5RkM0?oc=5",
+    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE51QklkbGlGRExRLWtjTE9KZk5rdDJJekNmT284MnVQUkNuMGF5YTFWQk9jTWljaVhQdHNjUGxkOGlibl9wT1N5TXdKWlNvblFaZnpGSUhwclNzOFFhd1YxVENDd0JyMTFRRTh4YlhHeHY1TFRrVldTXw?oc=5",
     "date": "2026-09-24",
     "via": "뉴스검색"
    },
@@ -281,10 +363,18 @@
     "via": "뉴스검색"
    },
    {
-    "title": "홍상금 군의원 “이상 기후 속 무더위쉼터 제 역할 절실”",
-    "origin": "충청뉴스라인",
+    "title": "AI Weather Forecasts for Health: The Case for a Decision-First Approach",
+    "origin": "The Rockefeller Foundation",
+    "sourceName": "WHO 기후변화와 건강",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNY3Iyczh2aXVFNWItM1NZeFppYktyRk1QVENJZF96dzcySFlzWElHTHFDc3dfazVSNkVyTUVkdDhjbDFtN3lKbEhmbFBNVGYwQVU0RWM2c251aVJkaFNmMVhlZncweFlxcU45UXBFMThpMllmOU5HQ2llOVRUbWFPbVdObUZBZ3RwYUZjRV9jNElSY0RqNm5MZXZxeTlhbkhyWjNtVF9TR1ZNVlgwbWw2TTZMYks3LW90?oc=5",
+    "date": "2026-09-22",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "홍상금 태안군의원, “무더위쉼터, 실질적인 생활 속 안전망 돼야”",
+    "origin": "daily.hankooki.com",
     "sourceName": "국내 폭염·한파 대책",
-    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1Zb3BRWDBqWFRzQjlKV1NaNGxKWUZ0em9tRVJsVjBhRGRRZGR5OFBwRnJPY3ZyZm4tTXlHZEdYaTlER2R6Rmk3Q2d4VmdKTUxDanFLTWhZdUp6QXBGYzFteDRWWXhVN3BYWGY2Q0VrUU9jclnSAXNBVV95cUxNWW9wUVgwalhUc0I5SldTWjRsSllGdHpvbUVSbFYwYURkUWRkeThQcEZyT2N2cmZuLU15R2RHWGk5REdkekZpN0NneFZnSk1MQ2pxS01oWXVKekFwRmMxbXg0Vll4VTdwWFhmNkNFa1FPY3JZ?oc=5",
+    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE41TG56bkpYWFJLMlpnalNOT2lJMTJKLUlGMGFLWFlVZ29EanU1LW5lblJqN295cU11b0x2ZUI5RThDUWpQZEFpQUZZQkZfQzNPVFA3bklIakVWNmNuOTR3bXFLS2Y5VElqa1RQS2pmNNIBc0FVX3lxTE00WkJYLTBoVTBWTzRyQVprZXdqcGlqTkd2Rk0yZVNfSWhXX1dhWi1XbEFCYjlJdVNsMlBsXzNOVFlJdDgzOHBxX2FQSGpQR2RrY0UtWVNMbXRsNXVCaTc3M3RhWUJTcksxVU9VRUJsQk9jNzA?oc=5",
     "date": "2026-09-22",
     "via": "뉴스검색"
    },
@@ -297,20 +387,20 @@
     "via": "뉴스검색"
    },
    {
-    "title": "홍상금 태안군의원, “무더위쉼터, 실질적인 생활 속 안전망 돼야”",
-    "origin": "데일리한국",
+    "title": "홍상금 태안군의원, “무더위쉼터가 실질적인 생활 속 안전망 돼야”",
+    "origin": "충남인터넷뉴스",
     "sourceName": "국내 폭염·한파 대책",
-    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE00WkJYLTBoVTBWTzRyQVprZXdqcGlqTkd2Rk0yZVNfSWhXX1dhWi1XbEFCYjlJdVNsMlBsXzNOVFlJdDgzOHBxX2FQSGpQR2RrY0UtWVNMbXRsNXVCaTc3M3RhWUJTcksxVU9VRUJsQk9jNzDSAXNBVV95cUxNNFpCWC0waFUwVk80ckFaa2V3anBpak5HdkZNMmVTX0loV19XYVotV2xBQmI5SXVTbDJQbF8zTlRZSXQ4MzhwcV9hUEhqUEdka2NFLVlTTG10bDV1Qmk3NzN0YVlCU3JLMVVPVUVCbEJPYzcw?oc=5",
+    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5nSnhYU3A5X3M2bWw3enZxNDk3Qi1zTGl3V1Z0cXg2RzFFRG5CV3ZpVjV1MVdHbWxOQUNQemgyY1ZvTkNDUmFfZW9wSGxSLWVaN25ndkZqMDhQVjFGclNxUzlXNVlmci0wdHc?oc=5",
     "date": "2026-09-22",
     "via": "뉴스검색"
    },
    {
-    "title": "In Hottest Summer on Record, 2 in 3 Americans Say Climate Change Is Increasing Heat-Related Illnesses",
-    "origin": "Annenberg School for Communication",
-    "sourceName": "WHO 기후변화와 건강",
-    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOaF9IVVhzSkd4aldsblZjQU1NeTcwbE5BdDBLeEc1WWlFeUctcU9PR0YzaDllNlR4NFk1aW1QMy0yQ1VYQnpXRHhqVVBVZkZvUm1udVBEZDF0MDZfT3JnNHJ1MllQQl9WeVp4NWxPeU5ZTzJhLVJNM1lmbWE3YTlRajMxUFZJQjVBaWg1ekVUaGw2Y1BkYlZMZGRTMWw3THFGSkVaREJTUjdrUTVLU1JrWHJzelhNSElQSmVhb2pWRUNQcGZrM1lTTVpqdw?oc=5",
-    "date": "2026-09-21",
-    "via": "뉴스검색"
+    "title": "Impact of Climate Change on Chinese Medicinal Plants and Adaptation Strategies",
+    "origin": "Plant science : an international journal of experimental plant biology · Yuan W, Gu M, Liu D, Liu Q, Sun Q, Zeng X.",
+    "sourceName": "논문: 기후 적응과 보건체계",
+    "link": "https://doi.org/10.1016/j.plantsci.2026.113468",
+    "date": "2026-09-22",
+    "via": "논문 검색"
    },
    {
     "title": "Climate change adaptation and mitigation in African health systems: a scoping review of research and policy translation",
@@ -319,96 +409,6 @@
     "link": "https://doi.org/10.1136/bmjopen-2026-119188",
     "date": "2026-09-21",
     "via": "논문 검색"
-   },
-   {
-    "title": "The optimism premium: Repricing climate risk through adaptation policy",
-    "origin": "Journal of environmental management · Huang C, Wang K, Zhu M, Xu J.",
-    "sourceName": "중국 연구 동향",
-    "link": "https://doi.org/10.1016/j.jenvman.2026.130967",
-    "date": "2026-09-21",
-    "via": "논문 검색"
-   }
-  ],
-  "injury": [
-   {
-    "title": "「손상예방과 건강한 사회」 2026년 2호 발간",
-    "origin": "",
-    "sourceName": "질병관리청 「손상예방과 건강한 사회」 (계간)",
-    "link": "https://www.kdca.go.kr/injury/disemg/2026/06/index.html",
-    "date": "2026-09-24",
-    "via": "기관 페이지"
-   },
-   {
-    "title": "「손상예방과 건강한 사회」 2026년 1호 발간",
-    "origin": "",
-    "sourceName": "질병관리청 「손상예방과 건강한 사회」 (계간)",
-    "link": "https://kdca.go.kr/injury/disemg/2026/03/index.html",
-    "date": "2026-09-24",
-    "via": "기관 페이지"
-   },
-   {
-    "title": "ISP highlights safety checks across Illinois",
-    "origin": "25newsnow.com",
-    "sourceName": "Safe Kids Worldwide (어린이 안전)",
-    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQMnY4T0lra2dOMHNfNEdqQjJWTENpdVgtTzJmLV9EZ2tiVGUyWEdlcU5wSTZ0QVMwLWJQNkRWV3pHd2N1VVd1d3JBQjhELXllU2g3dEltWlRBVW53U1NuNUs2amstdkQxdmRpR25Sa1pSQ2xtOFY3bjJDYUpQYzZXUkpwaHVYajJVR2fSAZ4BQVVfeXFMTWNnS2EzSzUxMVZjWmNoWlNjbmZvZjhwc241UmMyRWJZaGhzdGRkSEZWWmR4cXplbHJoNWxmc3BNazJkN0JMNDFQbnRzNVNIS3cwTkgwc3BiZ1h3cW84SUZkRUQxZjUyQjBJWlQzZFA5d3BjaTU5aUZsX1ZvWGY2RGtpYTItYVpuTnN1SGJZelA5U1BmRTdIam4taTJJMGc?oc=5",
-    "date": "2026-09-24",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "How to trade old, damaged child car seats for coupons at Target across the First Coast",
-    "origin": "firstcoastnews.com",
-    "sourceName": "Safe Kids Worldwide (어린이 안전)",
-    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOVXppU0xWLXFhX09IYWliUXBOb0tTUHg2VVV4bXdnSU9zWEpmeXF1dUM1czhITDV6d1pvVURsVnAzeE9qNndReEI4WUJtMU0yMkJUUU9BRjBfYzBCQ05YOHVaaFpuNXBIYTFtb0lzdUNVMzhQYXd1LWtOaDE4VHBDMzRyTWFOaFJSMW9BSFdzQnA1b0JkTkkzQkFTem1vU29qeUlUclZ5ZXk0UlcwRllYQmNvWTQ3bXdfR2F3?oc=5",
-    "date": "2026-09-24",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "4-Year-Old Killed in the Road While Family Was Dealing with Nearby Parked Car",
-    "origin": "People.com",
-    "sourceName": "Safe Kids Worldwide (어린이 안전)",
-    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPT3RSQTdRUExOMEg0c0pLZUVtX3V0OE1UUFhPNTE2RGNiLVpGUm5SXzN6QW1RTG9ubzlwVUctcEdEZEJsOWxZYUtTdUFfbElqTVhRSTU0UTByUkZ0MVhoTnBLaV9NcTdIQXdnUVU5c3JQTFhOTWl1TlIxSDZiMkl0UWlyaUp0TFREVUVHajNQZ29sYUl4ZzNISW5oeGJBcV9NT3Atek1Zdkt3Q0o3UEpYNXVyamVaQQ?oc=5",
-    "date": "2026-09-24",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "명절에 문 여는 병의원·약국 어디? 추석 연휴 응급의료기관 안내",
-    "origin": "mediahub.seoul.go.kr",
-    "sourceName": "중앙응급의료센터 응급의료 통계 (NEDIS·e-MEDIS)",
-    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE03QXRVWWo5czlkOThINW1wellvdXdKSlFNQnl4clNpUEZmcmVfUXpxeThmcDRKdTMtWkp1ZllNWlJLSzBsRGRuUlVjMl91bUZNVmRJRlhSZzk?oc=5",
-    "date": "2026-09-23",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "추석 연휴 응급의료체계 가동…응급실 416곳 24시간 진료",
-    "origin": "v.daum.net",
-    "sourceName": "중앙응급의료센터 응급의료 통계 (NEDIS·e-MEDIS)",
-    "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBPUmZDTlNZNjhmckFKc25HLU5fUW9WcDBsSjBiem5Vd2RwU1VTb1lGSFZfa0Y0S0d4MFBScmI3WGhmZlNXSEdCODBiSQ?oc=5",
-    "date": "2026-09-23",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "추석 연휴 응급실 어쩌나…정은경, 서울의료원서 응급의료 점검",
-    "origin": "뉴스1",
-    "sourceName": "중앙응급의료센터 응급의료 통계 (NEDIS·e-MEDIS)",
-    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE0zbERxNzMyVmd5dG1WU3F4RTlSTGM3Z2xUdS11NE9VNWVfbzlONkc0cXV0bGZMN0M0NXRuRTVhTnhZN3pBYndwQ0I2cUdnNGoydUQ1MFVBUHFtaUhucU5QU1ZB0gFiQVVfeXFMTTNsRHE3MzJWZ3l0bVZTcXhFOVJMYzdnbFR1LXU0T1U1ZV9vOU42RzRxdXRsZkw3QzQ1dG5FNWFOeFk3ekFid3BDQjZxR2c0ajJ1RDUwVUFQcW1pSG5xTlBTVkE?oc=5",
-    "date": "2026-09-23",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "소비자원 \"일부 말랑이·왁뿌볼에서 유해물질 검출\"",
-    "origin": "연합뉴스",
-    "sourceName": "한국소비자원 위해정보 (CISS)",
-    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5BZDZHWEJnVnVpOVpuZjEzMlJqaHA4VjBNZ0V1RndNLTM5Qk1Gb2FIVFA4VmtCM0dha3lpcGs0VDFneTlOaDdIMHR1WFBoYVZxMXFfWFpHZExKcFZhc2laa9IBYEFVX3lxTE5BZDZHWEJnVnVpOVpuZjEzMlJqaHA4VjBNZ0V1RndNLTM5Qk1Gb2FIVFA4VmtCM0dha3lpcGs0VDFneTlOaDdIMHR1WFBoYVZxMXFfWFpHZExKcFZhc2laaw?oc=5",
-    "date": "2026-09-23",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "\"인기 장난감의 배신\"···한국소비자원, 왁뿌볼·말랑이서 유해물질 무더기 검출",
-    "origin": "더경남뉴스",
-    "sourceName": "한국소비자원 위해정보 (CISS)",
-    "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5VMkFmMWhOSVFzQ0dmejh5Zi1UWVplNjBHeXo1YldRRmw1T0EzcWhuTl8tMERnSGFxUndnelpyYW81Yk04OWFvZmFsSmpDYWxNaEhEMA?oc=5",
-    "date": "2026-09-23",
-    "via": "뉴스검색"
    }
   ]
  }
