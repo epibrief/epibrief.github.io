@@ -64,6 +64,7 @@ details td:first-child{white-space:nowrap;font-family:ui-monospace,Menlo,monospa
  body.tab-edit #view{display:none}
 }
 </style>
+<script src="vendor/qrcode.min.js"></script>
 </head>
 <body>
 <header>
@@ -94,7 +95,7 @@ details td:first-child{white-space:nowrap;font-family:ui-monospace,Menlo,monospa
     <tr><td>| a | b |</td><td>표 (첫 줄이 머리글)</td></tr>
     <tr><td>```</td><td>코드 상자</td></tr>
     <tr><td>![설명](주소)</td><td>사진</td></tr>
-    <tr><td>youtube: 영상ID</td><td>유튜브 (누르면 재생). 주소 전체를 붙여도 됨</td></tr>
+    <tr><td>youtube: 영상ID</td><td>유튜브 영상과 QR 카드. 주소 전체를 붙여도 됨</td></tr>
     <tr><td>::: 메모</td><td>회색 메모 상자 (한 줄)</td></tr>
    </table>
    <p class="hint" style="margin:10px 0 4px"><b>세미나·강연 정리용</b></p>
@@ -195,6 +196,22 @@ details td:first-child{white-space:nowrap;font-family:ui-monospace,Menlo,monospa
   s=s.replace(/&lt;br\s*\/?&gt;/gi,'<br>');
   return s;
  }
+ // 주소를 QR 그림(SVG)으로. 책 파일 안에 그대로 박히므로 인터넷 없이도 보인다.
+ // vendor/qrcode.min.js 는 화면에 그려 주는 라이브러리라, 계산된 칸 정보만 읽어 SVG 로 다시 그린다.
+ function qrSvg(url){
+  try{
+   if(typeof QRCode!=='function') return '';
+   var box=document.createElement('div');
+   var made=new QRCode(box,{text:url,correctLevel:QRCode.CorrectLevel.M,width:256,height:256});
+   var m=made._oQRCode; if(!m||!m.getModuleCount) return '';
+   var n=m.getModuleCount(), d='';
+   for(var r=0;r<n;r++) for(var c=0;c<n;c++) if(m.isDark(r,c)) d+='M'+c+' '+r+'h1v1h-1z';
+   var q=4; // 조용한 여백 (QR 규격상 네 칸)
+   return '<svg viewBox="'+(-q)+' '+(-q)+' '+(n+q*2)+' '+(n+q*2)+'" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="영상 주소 QR 코드">'
+     +'<rect x="'+(-q)+'" y="'+(-q)+'" width="'+(n+q*2)+'" height="'+(n+q*2)+'" fill="#fff"/>'
+     +'<path d="'+d+'" fill="#15130f"/></svg>';
+  }catch(e){ return ''; }
+ }
  function ytid(s){var m=s.match(/(?:youtu\.be\/|v=|shorts\/|embed\/)([\w-]{11})/)||s.match(/^([\w-]{11})$/);return m?m[1]:null;}
  // "12:30" 또는 "1:02:30" → 초
  function toSec(t){
@@ -268,7 +285,14 @@ details td:first-child{white-space:nowrap;font-family:ui-monospace,Menlo,monospa
    var im=L.match(/^!\[([^\]]*)\]\(([^)\s]+)\)/);
    if(im){out.push({html:'<figure><img src="'+esc(im[2])+'" alt="'+esc(im[1])+'" loading="lazy">'+(im[1]?'<figcaption>'+esc(im[1])+'</figcaption>':'')+'</figure>',len:420});i++;continue;}
    var yt=/^youtube:\s*(.+)$/i.test(L)?ytid(L.replace(/^youtube:\s*/i,'').trim()):(/^https?:\/\/(www\.)?(youtube\.com|youtu\.be)\//.test(L.trim())?ytid(L.trim()):null);
-   if(yt){out.push({html:'<div class="vwrap" data-v="'+yt+'"><div class="vframe" style="background-image:url(https://i.ytimg.com/vi/'+yt+'/hqdefault.jpg)"></div></div>',len:380});i++;continue;}
+   if(yt){
+    var vurl='https://youtu.be/'+yt, sv=qrSvg(vurl);
+    var h='<div class="vwrap" data-v="'+yt+'"><div class="vframe" style="background-image:url(https://i.ytimg.com/vi/'+yt+'/hqdefault.jpg)"></div></div>';
+    h+='<div class="vqr">'+(sv?'<span class="qi">'+sv+'</span>':'')
+      +'<span class="qt"><span class="qu">youtu.be/'+esc(yt)+'</span>'
+      +'<span class="qc">휴대폰으로 찍으면 바로 열립니다</span></span></div>';
+    out.push({html:h,len:380+150}); i++; continue;
+   }
    var STOP=/^(#|##|---|>|:::|[-*]\s|\d+[.)]\s|\||!\[|```|youtube:|Q\s*[::]|A\s*[::]|발표자\s*[::]|연사\s*[::]|speaker\s*[::]|핵심\s*[::]|요점\s*[::]|결론\s*[::]|\d{1,2}:\d{2}(?::\d{2})?\s+\S|https?:\/\/(www\.)?(youtube\.com|youtu\.be))/i;
    var p=[L];i++;while(i<lines.length&&lines[i].trim()&&!STOP.test(lines[i]))p.push(lines[i++]);
    para(p.join('\n'));
