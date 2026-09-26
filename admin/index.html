@@ -292,6 +292,20 @@ function mailText(a){
     '쓰시다 막히는 부분이 있으면 이 메일로 회신 주세요.',
     '기관 서식에 맞춘 소식지 틀이 필요하시면 그것도 도와드립니다.'].join('\n');
 }
+/* 승인·거절을 누르면 신청자에게 결과 메일이 갑니다.
+   메일 설정이 없거나 함수가 닿지 않으면 조용히 넘어갑니다 — 처리 자체는 이미 끝났습니다. */
+async function sendDecisionMail(a, decision, note){
+  try {
+    const res = await fetch(SB.url + '/functions/v1/epibrief-mail', { method:'POST',
+      headers:{ 'apikey': SB.key, 'Authorization': 'Bearer ' + SB.key, 'Content-Type':'application/json' },
+      body: JSON.stringify({ kind:'decision', adminKey: key(), decision,
+                             slug:a.slug, org:a.org, dept:a.dept, person:a.person,
+                             email:a.email, note: note || '' }) });
+    const j = await res.json();
+    return !!j.mailed;
+  } catch(e){ return false; }
+}
+
 $('#apps').addEventListener('click', async e => {
   const b = e.target.closest('[data-act]'); if (!b) return;
   const box = b.closest('.app'), id = Number(box.dataset.id);
@@ -309,9 +323,11 @@ $('#apps').addEventListener('click', async e => {
   if (d === 'approved' && !confirm('이 신청을 승인할까요? 그 기관의 체험 표시가 사라집니다.')) return;
   try {
     const r = await rpc('epibrief_admin_decide', { p_admin_key: key(), p_id: id, p_decision: d, p_note: note });
-    stat(r.awaiting_register
+    const mailed = a ? await sendDecisionMail(a, d, note) : false;   // 결과를 신청자에게 바로 알린다
+    const tail = mailed ? ` ${a.email} 로 결과 메일을 보냈습니다.` : '';
+    stat((r.awaiting_register
       ? `「${r.slug}」 승인했습니다. 아직 기관 등록 전이라, 그 코드로 등록하는 순간 인증 상태가 됩니다.`
-      : `「${r.slug}」 ${d === 'approved' ? '승인' : '거절'}했습니다.`, 'ok');
+      : `「${r.slug}」 ${d === 'approved' ? '승인' : '거절'}했습니다.`) + tail, 'ok');
     await Promise.all([loadApps(), loadOffices()]);
   } catch(err){ stat(err.message, 'err'); alert(err.message); }
 });
