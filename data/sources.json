@@ -66,11 +66,8 @@
      "lang": "en",
      "query": "CDC MMWR report",
      "desc": "CDC 주간 이환·사망 보고(MMWR). 역학조사 결과가 논문 형태로 실림",
-     "via": "뉴스 검색",
-     "must": [
-      "MMWR",
-      "Morbidity and Mortality"
-     ]
+     "via": "기관 RSS",
+     "rss": "https://www.cdc.gov/mmwr/rss/mmwr.xml"
     },
     {
      "id": "cdc-han",
@@ -269,19 +266,22 @@
      "id": "who-phsm",
      "name": "WHO PHSM 지식허브 (공중보건·사회적 조치)",
      "region": "국제",
-     "query": "WHO public health and social measures PHSM",
+     "query": "WHO public health social measures pandemic preparedness guidance",
      "site": "https://phsm.who.int/",
      "lang": "en",
      "desc": "WHO PHSM 지식허브. 공중보건·사회적 조치의 국제 기준과 사례",
      "via": "뉴스 검색",
      "filter": [
-      "PHSM",
+      "phsm",
       "social measures",
       "public health measures",
       "distancing",
       "mask",
       "quarantine",
-      "outbreak response"
+      "outbreak response",
+      "preparedness",
+      "non-pharmaceutical",
+      "risk communication"
      ]
     },
     {
@@ -489,11 +489,16 @@
      "filter": [
       "chronic",
       "obesity",
-      "diabetes",
-      "hypertension",
+      "diabet",
+      "hypertens",
       "cancer",
-      "smoking",
-      "heart"
+      "smok",
+      "tobacco",
+      "heart",
+      "stroke",
+      "cholesterol",
+      "nutrition",
+      "physical activity"
      ]
     },
     {
@@ -750,10 +755,12 @@
      "via": "뉴스 검색",
      "lang": "en",
      "must": [
-      "Japan",
-      "Japanese",
-      "JIHS",
-      "NIID"
+      "japan",
+      "japanese",
+      "jihs",
+      "niid",
+      "tokyo",
+      "health ministry"
      ]
     },
     {
@@ -1220,15 +1227,18 @@
      "page": "https://www.kma.go.kr/kma/news/press_01.jsp",
      "page_re": "<a href=\"(?P<link>https://www\\.kma\\.go\\.kr/kma/news/press_01\\.jsp\\?bid=press&amp;mode=view&amp;num=\\d+)[^\"]*\">(?P<title>[^<]+)</a>(?:(?!</tr>).)*?<td[^>]*>\\s*(?P<date>\\d{4}[-./]\\d{2}[-./]\\d{2}\\.?)\\s*</td>",
      "filter": [
-      "기후특성",
+      "기후",
       "기온",
       "폭염",
       "한파",
-      "기후전망",
-      "기후 전망",
-      "이상기후",
       "장마",
-      "열대야"
+      "열대야",
+      "이상기후",
+      "강수",
+      "가뭄",
+      "태풍",
+      "날씨",
+      "기상"
      ],
      "limit": 10,
      "lang": "ko",
@@ -1788,8 +1798,10 @@
      "must": [
       "해양경찰",
       "행정안전부",
-      "소방청",
-      "행안부"
+      "소방",
+      "행안부",
+      "안전처",
+      "구조"
      ]
     },
     {
@@ -1904,8 +1916,9 @@
      "lang": "en",
      "via": "뉴스 검색",
      "must": [
-      "AIHW",
-      "Australian Institute of Health"
+      "aihw",
+      "australian institute",
+      "australia"
      ]
     },
     {
@@ -1918,9 +1931,12 @@
      "lang": "en",
      "via": "뉴스 검색",
      "must": [
-      "RoSPA",
-      "UKHSA",
-      "NHS"
+      "rospa",
+      "ukhsa",
+      "nhs",
+      "uk health",
+      "britain",
+      "british"
      ]
     },
     {

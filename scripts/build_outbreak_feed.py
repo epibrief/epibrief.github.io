@@ -219,8 +219,11 @@ def main():
     except Exception:
         pass
 
-    items, seen, status = [], set(), []
+    items, seen_by_kind, status = [], {}, []
     for g in groups:
+        # 같은 지침·논문이라도 분과(뉴스레터)가 다르면 각각 실어야 한다.
+        # 전체에서 한 번만 걸러내면 먼저 도는 분과가 다 가져가고 나머지는 빈손이 된다.
+        seen = seen_by_kind.setdefault(g.get("kind", "outbreak"), set())
         for s in g["sources"]:
             print(f"- {s['name']}")
             got, via = [], ""
