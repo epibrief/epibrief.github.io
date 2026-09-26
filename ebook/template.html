@@ -88,6 +88,15 @@ figcaption{font-size:11px;color:var(--dim);margin-top:6px;text-align:center}
 .vwrap iframe,.vframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .vframe{background:#111 center/cover no-repeat;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Pretendard',sans-serif;font-weight:800;letter-spacing:.3px}
 .vframe::after{content:'▶  영상 보기';background:rgba(0,0,0,.55);padding:10px 18px;border-radius:999px}
+/* 영상 아래 QR 카드 — 폰으로 찍어 바로 열게 한다. 인쇄물에서도 보인다 */
+.vqr{display:flex;align-items:center;gap:clamp(12px,2.2vh,18px);margin:12px 0 14px;padding:clamp(11px,1.8vh,15px) clamp(12px,2vh,16px);
+ background:#fff;border:1px solid var(--line2);border-radius:2px}
+.vqr .qi{flex:none;width:clamp(74px,11vh,96px);height:clamp(74px,11vh,96px);display:block}
+.vqr .qi svg{width:100%;height:100%;display:block;shape-rendering:crispEdges}
+.vqr .qt{min-width:0;flex:1}
+.vqr .qu{display:block;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:clamp(12.5px,1.85vh,15px);font-weight:700;
+ color:var(--ink);letter-spacing:-.2px;overflow-wrap:anywhere;line-height:1.45}
+.vqr .qc{display:block;margin-top:5px;font-size:clamp(11px,1.5vh,12.5px);color:var(--muted);line-height:1.6;word-break:keep-all}
 
 /* ── 세미나·강연 정리용 ──────────────────────────────── */
 /* 발표자 정보칸 */
@@ -173,6 +182,7 @@ figcaption{font-size:11px;color:var(--dim);margin-top:6px;text-align:center}
  .prose p{font-size:11.5pt;line-height:1.9}
  h1{font-size:30pt}h2{font-size:22pt}h3{font-size:17pt}.chnum{font-size:60pt}
  .vwrap{display:none}
+ .vqr{display:flex !important;break-inside:avoid;border-color:var(--line)}
  .tj{color:var(--muted);border-color:var(--line)}
  .tj::before{content:''}
  .marks .mrow{cursor:default}
