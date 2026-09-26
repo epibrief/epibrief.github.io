@@ -210,6 +210,10 @@ const MSG = {
   TOO_MANY_APPLICATIONS:'짧은 시간에 신청이 너무 많습니다. 잠시 뒤 다시 해 주세요.'
 };
 
+/* 신청은 메일 함수를 거칩니다 — 접수와 동시에 신청자에게 확인 메일이 갑니다.
+   함수가 닿지 않으면 예전처럼 데이터베이스 함수를 바로 불러 접수만이라도 끝냅니다. */
+const MAIL_FN = SB.url + '/functions/v1/epibrief-mail';
+
 async function rpc(fn, params){
   const r = await fetch(`${SB.url}/rest/v1/rpc/${fn}`, { method:'POST',
     headers:{ 'apikey': SB.key, 'Authorization': 'Bearer ' + SB.key, 'Content-Type':'application/json' },
@@ -262,10 +266,23 @@ $('#form').addEventListener('submit', async e => {
 
   const btn = $('#submit'); btn.disabled = true; btn.textContent = '보내는 중…';
   try {
-    const r = await rpc('epibrief_apply', p);
+    let r, mailed = false;
+    try {
+      const res = await fetch(MAIL_FN, { method:'POST',
+        headers:{ 'apikey': SB.key, 'Authorization': 'Bearer ' + SB.key, 'Content-Type':'application/json' },
+        body: JSON.stringify({ kind:'apply', slug:p.p_slug, org:p.p_org, dept:p.p_dept,
+                               person:p.p_person, email:p.p_email, purpose:p.p_purpose }) });
+      r = await res.json();
+      mailed = !!r.mailed;
+    } catch(e){                      // 메일 함수가 없거나 닿지 않을 때
+      r = await rpc('epibrief_apply', p);
+    }
     if (!r.ok) throw new Error(MSG[r.error] || ('신청하지 못했습니다: ' + r.error));
     $('#form').style.display = 'none';
-    $('#okMail').innerHTML = `<b>${p.p_email.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}</b> 로 결과를 보내 드립니다. 영업일 기준 1~2일 걸립니다.`;
+    const mailHtml = p.p_email.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+    $('#okMail').innerHTML = mailed
+      ? `<b>${mailHtml}</b> 로 접수 확인 메일을 보냈습니다. 결과는 영업일 기준 1~2일 안에 같은 주소로 알려 드립니다.`
+      : `<b>${mailHtml}</b> 로 결과를 보내 드립니다. 영업일 기준 1~2일 걸립니다.`;
     $('#ok').classList.add('on');
     window.scrollTo({ top: $('#ok').offsetTop - 80, behavior:'smooth' });
   } catch(err){
