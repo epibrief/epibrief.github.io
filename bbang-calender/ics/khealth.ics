@@ -18,17 +18,16 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:9b57a4beacb03ae1@bbangcal.epibrief.github.io
-DTSTAMP:20260926T140117Z
+UID:ae86d80adf506dba@bbangcal.epibrief.github.io
+DTSTAMP:20260927T000731Z
 DTSTART;TZID=Asia/Seoul:20261030T100000
-DTEND;TZID=Asia/Seoul:20261030T183000
-SUMMARY:[한국보건교육건강증진학회·한국건강증진개발
- 원] 2026년 추계학술대회 일정 안내 및 발표·토론 참여
-  요청 (10/30 금)
+DTEND;TZID=Asia/Seoul:20261030T180000
+SUMMARY:[한국건강증진개발원·한국보건교육건강증진학
+ 회] 2026년 추계학술대회 안내
 LOCATION:한국방송통신대학교 열린관 대강당 및 414호
-DESCRIPTION:주최: 한국보건교육건강증진학회·한국건강
- 증진개발원\n원문: https://khep.or.kr/board/notice/article/284380
+DESCRIPTION:주최: 한국건강증진개발원·한국보건교육건
+ 강증진학회\n원문: https://khep.or.kr/board/notice/article/285239
  \n빵캘: https://epibrief.github.io/bbang-calender/
-URL:https://khep.or.kr/board/notice/article/284380
+URL:https://khep.or.kr/board/notice/article/285239
 END:VEVENT
 END:VCALENDAR
