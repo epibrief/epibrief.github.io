@@ -1,29 +1,13 @@
 {
- "updated": "2026-09-26 22:18",
+ "updated": "2026-09-27 22:41",
  "byKind": {
   "outbreak": [
    {
-    "title": "US rejects UN pandemic preparedness declaration, blocking consensus adoption",
-    "origin": "WZTV",
+    "title": "US, EU reject UN pandemic plan",
+    "origin": "The Hans India",
     "sourceName": "WHO 보도자료",
-    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPTm1kNm9TREd2VG4tbmFlUmdYTXB2OE5BSjJmdGZNQ1YydnJ2dzdmZ3N2UklFdGlnOVBiam0xazZoLWtEcF9peVNsZ0VTQzVleDFXZUR4RmZxYXVvaFJfQzQ4ZjQ4Z3ZyMGh0R1dLaGR5Y2RYWWpGZ3NsRWtHVDdHUEp5eUJLWG00SE5BZmVzY2dwWlJ4LXVPUDcxSG1YWXNodUZlc0JtT0N3SnRxWWFEUA?oc=5",
-    "date": "2026-09-26",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "Ebola cases rise as outbreak expands to 63 health zones in DR Congo: WHO",
-    "origin": "Peoples Gazette Nigeria",
-    "sourceName": "WHO 보도자료",
-    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTkt3czZCSU9KU0FCUXVqakRURHUwQU1Hc3lzczR1QXFlYTNTeFYxWVNoaVRqREM0YjgzX1JSS24ybDNBUXo0U3RNZEZyRW5NY0hIZG9qamJUTDJKMGp6c2tQZFl0ci1rUFpEM1lENDBhZmMxZ1VhOVExM1F6MURZdkJJSHVncTFUZ1ItQkdNZDZGam5EWGd3V2RSYw?oc=5",
-    "date": "2026-09-26",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "UN Pandemic Preparedness Meeting Ends Without Consensus Declaration",
-    "origin": "SuaraGarut.ID",
-    "sourceName": "WHO 보도자료",
-    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQUzJlakVWWkN2Q2ZSZnpjYktFNHRqVUVTNWdzQlhfbVI2aS10eVpicFd6R1ZkSXEzSWZEa2hNWkk4elkzM2ZPaHhvTHFtTzRXQ2VBNEMwbkZIVzlxTlRmVDFjRm4yQ3NqeVl3SVFNbG5rMFJoQV9uTUJidGNxYXcwMThEdVZWTlE?oc=5",
-    "date": "2026-09-26",
+    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPclJzMkZ5c2dzRUxFaGEwSkVpSTdMMmtXUUplalJBT2psNW52al9FUkdGT2NKOHFURmxHX2NoajFqUE9nNW5Ed2RWMUgzQzJMNE9mVWtXM0FPODVLRVktRnpQVDlSLW1XU0NpbU1rd09SbXVYTndKQ0ZZUXhxUXU3RE4waWEwaWVaRGpMSFpn?oc=5",
+    "date": "2026-09-27",
     "via": "뉴스검색"
    },
    {
@@ -31,7 +15,7 @@
     "origin": "",
     "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
     "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6725a1.htm?s_cid=mm6725a1_x",
-    "date": "2026-09-26",
+    "date": "2026-09-27",
     "via": "기관 RSS"
    },
    {
@@ -39,7 +23,7 @@
     "origin": "",
     "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
     "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6725a2.htm?s_cid=mm6725a2_x",
-    "date": "2026-09-26",
+    "date": "2026-09-27",
     "via": "기관 RSS"
    },
    {
@@ -47,7 +31,7 @@
     "origin": "",
     "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
     "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6725a3.htm?s_cid=mm6725a3_x",
-    "date": "2026-09-26",
+    "date": "2026-09-27",
     "via": "기관 RSS"
    },
    {
@@ -55,7 +39,7 @@
     "origin": "",
     "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
     "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6725a4.htm?s_cid=mm6725a4_x",
-    "date": "2026-09-26",
+    "date": "2026-09-27",
     "via": "기관 RSS"
    },
    {
@@ -63,7 +47,7 @@
     "origin": "",
     "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
     "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6725a5.htm?s_cid=mm6725a5_x",
-    "date": "2026-09-26",
+    "date": "2026-09-27",
     "via": "기관 RSS"
    },
    {
@@ -71,7 +55,7 @@
     "origin": "",
     "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
     "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6725a6.htm?s_cid=mm6725a6_x",
-    "date": "2026-09-26",
+    "date": "2026-09-27",
     "via": "기관 RSS"
    },
    {
@@ -79,99 +63,57 @@
     "origin": "",
     "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
     "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6725a7.htm?s_cid=mm6725a7_x",
-    "date": "2026-09-26",
+    "date": "2026-09-27",
     "via": "기관 RSS"
-   }
-  ],
-  "chronic": [
-   {
-    "title": "Arkansas’ obesity rate falls for second consecutive year, but remains in national top 10 - Northwest Arkansas Democrat-Gazette",
-    "origin": "Northwest Arkansas Democrat-Gazette",
-    "sourceName": "美CDC 만성질환·건강행태",
-    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQdDBiMmxoVEFWU2lNcXhwTldXLWJjTlU1RTNMSUtkcU16VVdiVlA3c0tvMnBOd0ZaNGtVblpxTk5YRHNRX1FTS3ZDUVMyRzYwSElvYnRqWkc4NlhYSl90a0VjQlJIMktIVlM4NmZUdTBOaGdGWXoyMGU4c09hUHhXTVpMM3V0U0Q0V1E?oc=5",
-    "date": "2026-09-26",
-    "via": "뉴스검색"
    },
    {
-    "title": "Chronic Diseases Now Behind Nearly Half of African Deaths",
-    "origin": "NewsGhana",
-    "sourceName": "WHO 비감염성질환(NCD) 소식",
-    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNaDRoMU9FNWVHZ1JxWVMtSVVsamF3TUd0alF3MFE3TGZuY0N4NW1kZVRiM0EySEotQjIydkNFbEd1RkFfcE9vNXB3Wi0xTUN4RUFTUTBUbFllTEVRbE0yMVA1SnhiU3p3SFh3WXRsSmNQRnV4U3pHcEhka0U0NUlZXzc3T1o3NXQ4RVBF?oc=5",
-    "date": "2026-09-25",
-    "via": "뉴스검색"
+    "title": "QuickStats: Percentage of Residential Care Communities That Use Electronic Health Records, by Census Region — United States, 2016",
+    "origin": "",
+    "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
+    "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6725a8.htm?s_cid=mm6725a8_x",
+    "date": "2026-09-27",
+    "via": "기관 RSS"
    },
    {
-    "title": "From Commitments to Action: Centering Lived Experience in NCD Responses",
-    "origin": "Global Issues.Org",
-    "sourceName": "국제 NCD 동향·캠페인",
-    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5HaWFfd0t2MEFaVi12X0UzUkVoam5Vcnd1TG5XMEdhaVI5T0M3Y3ZJQU5TWDVUd1AtS0s1Yzc2TDFzX2VmWGdSM0xqaF9UMFN0Ykp4anI3Q0Z0VUVTNWxwYl9Nb2bSAWRBVV95cUxOR2lhX3dLdjBBWlYtdl9FM1JFaGpuVXJ3dUxuVzBHYWlSOU9DN2N2SUFOU1g1VHdQLUtLNWM3Nkwxc19lZlhnUjNMamhfVDBTdGJKeGpyN0NGdFVFUzVscGJfTW9m?oc=5",
-    "date": "2026-09-25",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "Hong Kong reports more than 40% drop in cancer-related death rate over 30 years",
-    "origin": "South China Morning Post",
-    "sourceName": "국제 NCD 동향·캠페인",
-    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQbmpXM0ktWnZWMzBVUFA0YkhMRDhnXzJnQkFOWEtvT1JXNnV3Wm1DLXhpeURDNVVsZW5rUWZvZDJnNDZhRkhiTGdONENBeUN4Z09uRDJ2eXNlcGhlUXMyeS1MMWVBU0Q3ZnR6N3hFRVFrbjZoejBhYkp6Y1hoYThmUER5enZlLVgyeEQ1RTZhTmxQNDJkVkhvZ3JVc1lqaGRkUmhGT1dXNXI5N1dGdVM3X0wycjlHV1NTazE4Mko2ZVBrSEdubEQ3dUxTRW5VdWNnejRmTTB3OEjSAdgBQVVfeXFMUG5qVzNJLVp2VjMwVVBQNGJITEQ4Z18yZ0JBTlhLb09SVzZ1d1ptQy14aXlEQzVVbGVua1Fmb2QyZzQ2YUZIYkxnTjRDQXlDeGdPbkQydnlzZXBoZVFzMnktTDFlQVNEN2Z0ejd4RUVRa242aHowYWJKemNYaGE4ZlBEeXp2ZS1YMnhENUU2YU5sUDQyZFZIb2dyVXNZamhkZFJoRk9XVzVyOTdXRnVTN19MMnI5R1dTU2sxODJKNmVQa0hHbmxEN3VMU0VuVXVjZ3o0Zk0wdzhI?oc=5",
-    "date": "2026-09-24",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "UNGA81 Multistakeholder Gathering Explores How to Act on NCDs Better Together – NCD Alliance",
-    "origin": "Oncodaily",
-    "sourceName": "국제 NCD 동향·캠페인",
-    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9QTVgyTmpuS2JleTVfU0JxZ2hIbTV3WXliSzlzbmZLeWR2OVVvaXEwLS1qTnRucUVQZ3dLejNyWUdOR1Q1aWo1VTY4SDV1TExWNUhJbmRUOG1wWk82eDJ3NQ?oc=5",
-    "date": "2026-09-24",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "How Bangladesh is shifting its health care approach to noncommunicable diseases",
-    "origin": "The World Economic Forum",
-    "sourceName": "국제 NCD 동향·캠페인",
-    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxONHQ3Z2VBSU4yeTdsR2xzRGtubGhPNHhXLTlFS092TTN6Uzk2R2dyOHpIemlvTXlGRXduMjZ4RUlvMmx0bzZKZ242MHhFTEpkd0NiNG5UTGNTYW80aHZWNl9PVmMzNnBrbXJxam54dFdUdldLeWxCeGJ2RHlIbUIzSjAza3VmakpyRFlYbFBraGtRSzFKMVEzTHhJdmpvOE5tU1lPMUp0YzNpbVJfbEJQdXY2V19KS3JtWkVCRU1VUDBlQ1pJMWtfYjF2M3U?oc=5",
-    "date": "2026-09-23",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "The MND Mexico Well-being Series, Part 1: Health and healthcare",
-    "origin": "Mexico News Daily",
-    "sourceName": "OECD Health at a Glance·보건통계",
-    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPQldRM1FtZ1pHWk9vdHB1MFJYQXRDaHk5VHFkZE9JMW5wU19OLURzaEZEcmtteElVTHpFM3pMYTBJWHA4UGtfMjlfZG5aOWhXeGo1WVVhSXFza2VBb1dMM2ZkZHhRNXVJcThib0EwMl9aUVNZNFZHN1h0ZzMwSDAwLTIxdGZLLUFDTDdIRUlSaVpNVlFNMGtRQUlaVTdDRUJnd0RvWFZXaDByZkpDdnplOEdn?oc=5",
-    "date": "2026-09-23",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "Evidence-Informed Multidisciplinary Consensus Guidance for the Psychosocial Care of Adolescents With High-Risk Cancer: Recommendations From the Italian Association of Pediatric Hematology and Oncology",
-    "origin": "Pediatric blood & cancer · Blom JMC, Scarponi D, Zucchetti G, Perillo T, Montanaro M, M",
-    "sourceName": "지침·권고 문헌",
-    "link": "https://doi.org/10.1002/1545-5017.70668",
-    "date": "2026-09-23",
-    "via": "논문 검색"
-   },
-   {
-    "title": "Heterogeneous associations between cigarette and e-cigarette use patterns and chronic disease burden: A population-based study",
-    "origin": "Journal of epidemiology and population health · Adebisi YA, Cantone G, Bafail DA, Ogunkola IO, Tomaselli V, ",
-    "sourceName": "논문: 만성질환 예방·관리 정책",
-    "link": "https://doi.org/10.1016/j.jeph.2026.203800",
-    "date": "2026-09-22",
-    "via": "논문 검색"
-   },
-   {
-    "title": "Phenotypic age metrics for risk stratification of chronic disease burden and all-cause mortality in adults",
-    "origin": "Cardiovascular diabetology. Endocrinology reports · Wang Z, Zhong X, Cai Y, Wang J, Lin B, Liu L, Li S, He H, Ya",
-    "sourceName": "논문: 만성질환 예방·관리 정책",
-    "link": "https://doi.org/10.1186/s40842-026-00331-2",
-    "date": "2026-09-22",
-    "via": "논문 검색"
+    "title": "National HIV Testing Day — June 27, 2018",
+    "origin": "",
+    "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
+    "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6724a1.htm?s_cid=mm6724a1_x",
+    "date": "2026-09-27",
+    "via": "기관 RSS"
    }
   ],
   "climate": [
    {
+    "title": "A super El Niño is gathering momentum, and it could devastate South Africa",
+    "origin": "news24.com",
+    "sourceName": "세계기상기구(WMO) 폭염·극한기후",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQcXhPN0NfU2F6ZTZCa01XUzRud0dLTTd4ZnZjRXFFTU1YV0FfQ0ZVZ1ZVOFlCdENDWTNxX0Z5bWRKNHF4X01WWF93NWlVVDl6VWp4bHp6WHk2dXJ6RkJDTExJTEljS2xzOWNBaG9KZ19MczRMeURyc3BKcjAwWEZuWG9NVWx3WjRvRUlfQnZUOWRTenlYZWpFT0lqNE5fYkJBZGFxcVlGQXh1YmVJczIxWVpFdGpWZGhTZ3FkcjVWYnJNbTUyU3ZFZWp4eXJEZw?oc=5",
+    "date": "2026-09-27",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "Beyond the Damage: The Trauma that Lingers after the Storm",
+    "origin": "Spectrum News",
+    "sourceName": "WHO 기후변화와 건강",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxObGlLSWNFVGpDdDhiNzNqWGFqcGpsR2FZVkE1c256cWtxZkZVU29iazJMbG4yaUU0VnJLQzVPd0t0b0g4OVl2WEg2VkR0WHl3SmRnNURQakJQQ2c0YkNOZWVhOXk2UXo1SzNNNzdWOENnWTQxcFhFX2psZk5tdVlkMGJSdHdRQVUzbjhPdE51TzFDX1RZTEFPU3lXRkpwS2Vad29qSktMSzBUMzN1ajV1VmNJWWhIb3diemF6QzRzcy1feGs?oc=5",
+    "date": "2026-09-26",
+    "via": "뉴스검색"
+   },
+   {
     "title": "홍상금 태안군의원, 무더위쉼터 체계적 관리 필요성 강조",
-    "origin": "newstnt.com",
+    "origin": "뉴스티앤티",
     "sourceName": "국내 폭염·한파 대책",
     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9PdUJxQzRPZkprMEJwWkJ1YWwwekRqcEtvYTZBTTh6UGNGaVRfZWJmLWVONEZUWXBTaGZzQ0UwUTFtbUlmYzFwMDdEWkNMdHhDS0dBeDJBckhKOFotRHpJYV9UNDBOdVd0NXc?oc=5",
     "date": "2026-09-26",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "AI can help clinicians to better address health risks from climate change",
+    "origin": "Deloitte",
+    "sourceName": "WHO 기후변화와 건강",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPYnB4STNVOXZKelFhTFVjWm5TbDlaZHJQWTRjOXJRRlMzMjByVXVRWkdIOE5aTW9EWDc0blJBZW0tUGNTeU5jem5vSEF5RnFTMm9SRi1BSGpONWFLYS1ONk4yS1NMZGpXajB2UmU3a2w2dDE0Tm8tY3BNVGQ0amM5eE5QQ1AtV3pNQXNkVWRQM2VYRjYyX1RhMWg4bG9VMFR0cVlhVGlJSXdhZkVDZDVVRHVFMmxHdw?oc=5",
+    "date": "2026-09-25",
     "via": "뉴스검색"
    },
    {
@@ -216,38 +158,22 @@
    },
    {
     "title": "홍상금 태안군의원, “무더위쉼터, 실질적인 생활 속 안전망 돼야”",
-    "origin": "daily.hankooki.com",
+    "origin": "데일리한국",
     "sourceName": "국내 폭염·한파 대책",
     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE41TG56bkpYWFJLMlpnalNOT2lJMTJKLUlGMGFLWFlVZ29EanU1LW5lblJqN295cU11b0x2ZUI5RThDUWpQZEFpQUZZQkZfQzNPVFA3bklIakVWNmNuOTR3bXFLS2Y5VElqa1RQS2pmNNIBc0FVX3lxTE00WkJYLTBoVTBWTzRyQVprZXdqcGlqTkd2Rk0yZVNfSWhXX1dhWi1XbEFCYjlJdVNsMlBsXzNOVFlJdDgzOHBxX2FQSGpQR2RrY0UtWVNMbXRsNXVCaTc3M3RhWUJTcksxVU9VRUJsQk9jNzA?oc=5",
     "date": "2026-09-22",
     "via": "뉴스검색"
-   },
-   {
-    "title": "[태안의 하루] 김영인·홍상금 의원 ‘생활밀착 조례’ 승부…교육부터 폭염 안전망까지",
-    "origin": "타파인",
-    "sourceName": "국내 폭염·한파 대책",
-    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1xMDhGbFlBRXJWUlhJbmRVbFIyQXBEc0lvS192SV9VNHo5NEJ2R2czbHltclJGOHFJYzE4Tks2SEgyeGxCajJKaHVBRF9URlF0Z3lFejBGbS1yYVRCS2c?oc=5",
-    "date": "2026-09-22",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "포항지진의 아픔 위에 ‘지진안전 거점’ 세운다 기후부·기상청·경북도·포항시 업무협약 체결",
-    "origin": "",
-    "sourceName": "기상청 보도자료 (월별·계절 기후특성)",
-    "link": "https://www.kma.go.kr/kma/news/press_01.jsp?bid=press&mode=view&num=1194742",
-    "date": "2026-09-22",
-    "via": "기관 페이지"
-   },
-   {
-    "title": "기상청, 한반도 넘어 전 세계 기상 한눈에… ‘날씨지도’ 서비스 개편",
-    "origin": "",
-    "sourceName": "기상청 보도자료 (월별·계절 기후특성)",
-    "link": "https://www.kma.go.kr/kma/news/press_01.jsp?bid=press&mode=view&num=1194740",
-    "date": "2026-09-22",
-    "via": "기관 페이지"
    }
   ],
   "injury": [
+   {
+    "title": "충남도, 자살예방 대책 추진",
+    "origin": "특급뉴스",
+    "sourceName": "자살·자해 예방 통계 (보건복지부·한국생명존중희망재단)",
+    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE55WU1GYTdlRnFyeExnTzIxOGpOdGlTRk1tZlFON0ZYbHhOSldzcjExaDB6dnNiM1UtdFg1a2NQWHZPN1Bra25KVWtqSW9OMmZHMFpfRUZiTlBZZ3JTWE1scVBRYWVSNzVJQ3R2S3JaNjhXUQ?oc=5",
+    "date": "2026-09-27",
+    "via": "뉴스검색"
+   },
    {
     "title": "「손상예방과 건강한 사회」 2026년 2호 발간",
     "origin": "",
@@ -290,7 +216,7 @@
    },
    {
     "title": "국표원-한국소비자원 등 충북 농촌마을 가전제품 안전사용 캠페인 실시",
-    "origin": "go.seoul.co.kr",
+    "origin": "서울Pn",
     "sourceName": "한국소비자원 위해정보 (CISS)",
     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBiQXpabkZOTGFBR1RCRzVRcHN1dGdiWmFYOUFfWHBjLW5pN3RkTUJDNmZtVUFoRkZGT084MnFZSXRsM0hCQW01RGZJaGktbUxBRXQ2amlUVXNKSm1XZjFnal9B?oc=5",
     "date": "2026-09-24",
@@ -314,19 +240,93 @@
    },
    {
     "title": "4-Year-Old Killed in the Road While Family Was Dealing with Nearby Parked Car",
-    "origin": "aol.com",
+    "origin": "AOL.com",
     "sourceName": "Safe Kids Worldwide (어린이 안전)",
     "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE84Um55SG4zcndranYtSnpIVzZRdDNkMFhlQW1ITWNJeERBaHQyQW4yWDBDa2lYcEtSV1FGUzhFc0k3R2hDWG5BX25ERkZBT2xHdGNPLVJKSS01Q3BLZUl1R2xGaS1WbzZpTnJ0c0oycGdyUTB5VE50c25jV0k?oc=5",
     "date": "2026-09-24",
     "via": "뉴스검색"
+   }
+  ],
+  "chronic": [
+   {
+    "title": "Arkansas' obesity rate falls for second consecutive year, but remains in national top 10",
+    "origin": "El Dorado News",
+    "sourceName": "美CDC 만성질환·건강행태",
+    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQcFVMRjVUamp3RTBjRXNEZ2hXcGtwcWxPNkgxQnFkMWJ4V3FxcHY4eEJxYVdST2s1VTV2LWhydnNjcjhzSzZXN3BkX3NndXIxZUhZMk12OVNtU0EyVzdEQzlYTG5fR0ZmTlFRR1ZoVTEwUDRabjhabjFhVHQyZEJpcWNncXE0TmRUYldoZUxn?oc=5",
+    "date": "2026-09-26",
+    "via": "뉴스검색"
    },
    {
-    "title": "명절에 문 여는 병의원·약국 어디? 추석 연휴 응급의료기관 안내",
-    "origin": "서울특별시",
-    "sourceName": "중앙응급의료센터 응급의료 통계 (NEDIS·e-MEDIS)",
-    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE03QXRVWWo5czlkOThINW1wellvdXdKSlFNQnl4clNpUEZmcmVfUXpxeThmcDRKdTMtWkp1ZllNWlJLSzBsRGRuUlVjMl91bUZNVmRJRlhSZzk?oc=5",
+    "title": "Chronic Diseases Now Behind Nearly Half of African Deaths",
+    "origin": "NewsGhana",
+    "sourceName": "WHO 비감염성질환(NCD) 소식",
+    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNaDRoMU9FNWVHZ1JxWVMtSVVsamF3TUd0alF3MFE3TGZuY0N4NW1kZVRiM0EySEotQjIydkNFbEd1RkFfcE9vNXB3Wi0xTUN4RUFTUTBUbFllTEVRbE0yMVA1SnhiU3p3SFh3WXRsSmNQRnV4U3pHcEhka0U0NUlZXzc3T1o3NXQ4RVBF?oc=5",
+    "date": "2026-09-25",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "From Commitments to Action: Centering Lived Experience in NCD Responses",
+    "origin": "Global Issues.Org",
+    "sourceName": "국제 NCD 동향·캠페인",
+    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5mSUdxY0tXV0ktUUJiWEJuZjh0Q0s1M0wwR0lwRnpjT2YwSDU4Z1pHcC1YSnYxMVFrWTIxam51dXllRjVjNVBTeHNtUC1Pa0tKRWxvUWhRdXdIZS1USjZR0gFkQVVfeXFMTkdpYV93S3YwQVpWLXZfRTNSRWhqblVyd3VMblcwR2FpUjlPQzdjdklBTlNYNVR3UC1LSzVjNzZMMXNfZWZYZ1IzTGpoX1QwU3RiSnhqcjdDRnRVRVM1bHBiX01vZg?oc=5",
+    "date": "2026-09-25",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "From adoption to compliance: Strengthening implementation of NCD prevention policies through lessons from smoke-free laws",
+    "origin": "World Health Organization (WHO)",
+    "sourceName": "국제 NCD 동향·캠페인",
+    "link": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxQV0tTLVVQaVM5bkpoQUNLMV9NZU5yMWxEMUIzSFBBN0trcGQzY0dGc3dnUFFoeXA1aDBXcm5uSFFjQk5UOU1RVXlIV2dYR2puV1VWWkpaUEdSRVJfYXI2V1RBMGFMZXBlYTdBdDF1eElKMzlrYUV0akwxT0pXT0R3Y2lmMU9LV0oxTmpPNWxzemVHRmR0UXlLMlY1MnJYdnRWUEREVVZMU0czNnc0WlJOclUyNmhlbVdabHV0M3puRTM1NGdMYU9pVWN2OEdydWV2OWVPYXFGa2VNczZnX2JGTkQ2RC1UaHh5QWpYSFVYdFBWNHJjTnpfN1RKVTZ5RldhMU9HTnJjNzJtTmVNbWJNUnVWODVIalRDX0g3TVhtdlhDTjBfQ1FXMVlZVkZ0TGdEaG1IdFRTd29XcC00eEhGYkZn?oc=5",
+    "date": "2026-09-24",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "UNGA81 Multistakeholder Gathering Explores How to Act on NCDs Better Together – NCD Alliance",
+    "origin": "Oncodaily",
+    "sourceName": "국제 NCD 동향·캠페인",
+    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9QTVgyTmpuS2JleTVfU0JxZ2hIbTV3WXliSzlzbmZLeWR2OVVvaXEwLS1qTnRucUVQZ3dLejNyWUdOR1Q1aWo1VTY4SDV1TExWNUhJbmRUOG1wWk82eDJ3NQ?oc=5",
+    "date": "2026-09-24",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "How Bangladesh is shifting its health care approach to noncommunicable diseases",
+    "origin": "weforum.org",
+    "sourceName": "국제 NCD 동향·캠페인",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxONHQ3Z2VBSU4yeTdsR2xzRGtubGhPNHhXLTlFS092TTN6Uzk2R2dyOHpIemlvTXlGRXduMjZ4RUlvMmx0bzZKZ242MHhFTEpkd0NiNG5UTGNTYW80aHZWNl9PVmMzNnBrbXJxam54dFdUdldLeWxCeGJ2RHlIbUIzSjAza3VmakpyRFlYbFBraGtRSzFKMVEzTHhJdmpvOE5tU1lPMUp0YzNpbVJfbEJQdXY2V19KS3JtWkVCRU1VUDBlQ1pJMWtfYjF2M3U?oc=5",
     "date": "2026-09-23",
     "via": "뉴스검색"
+   },
+   {
+    "title": "The MND Mexico Well-being Series, Part 1: Health and healthcare",
+    "origin": "Mexico News Daily",
+    "sourceName": "OECD Health at a Glance·보건통계",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPQldRM1FtZ1pHWk9vdHB1MFJYQXRDaHk5VHFkZE9JMW5wU19OLURzaEZEcmtteElVTHpFM3pMYTBJWHA4UGtfMjlfZG5aOWhXeGo1WVVhSXFza2VBb1dMM2ZkZHhRNXVJcThib0EwMl9aUVNZNFZHN1h0ZzMwSDAwLTIxdGZLLUFDTDdIRUlSaVpNVlFNMGtRQUlaVTdDRUJnd0RvWFZXaDByZkpDdnplOEdn?oc=5",
+    "date": "2026-09-23",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "Evidence-Informed Multidisciplinary Consensus Guidance for the Psychosocial Care of Adolescents With High-Risk Cancer: Recommendations From the Italian Association of Pediatric Hematology and Oncology",
+    "origin": "Pediatric blood & cancer · Blom JMC, Scarponi D, Zucchetti G, Perillo T, Montanaro M, M",
+    "sourceName": "지침·권고 문헌",
+    "link": "https://doi.org/10.1002/1545-5017.70668",
+    "date": "2026-09-23",
+    "via": "논문 검색"
+   },
+   {
+    "title": "Heterogeneous associations between cigarette and e-cigarette use patterns and chronic disease burden: A population-based study",
+    "origin": "Journal of epidemiology and population health · Adebisi YA, Cantone G, Bafail DA, Ogunkola IO, Tomaselli V, ",
+    "sourceName": "논문: 만성질환 예방·관리 정책",
+    "link": "https://doi.org/10.1016/j.jeph.2026.203800",
+    "date": "2026-09-22",
+    "via": "논문 검색"
+   },
+   {
+    "title": "Phenotypic age metrics for risk stratification of chronic disease burden and all-cause mortality in adults",
+    "origin": "Cardiovascular diabetology. Endocrinology reports · Wang Z, Zhong X, Cai Y, Wang J, Lin B, Liu L, Li S, He H, Ya",
+    "sourceName": "논문: 만성질환 예방·관리 정책",
+    "link": "https://doi.org/10.1186/s40842-026-00331-2",
+    "date": "2026-09-22",
+    "via": "논문 검색"
    }
   ],
   "phsm": [
