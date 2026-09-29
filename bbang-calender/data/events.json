@@ -1,26 +1,24 @@
 {
  "name": "빵캘",
- "updatedAt": "2026-09-29T01:24:49.701Z",
+ "updatedAt": "2026-09-29T16:19:19.093Z",
  "counts": {
-  "total": 168,
+  "total": 169,
   "upcoming": 111
  },
  "sources": [
   {
-   "id": "org-kdca",
-   "name": "질병관리청 공지",
-   "ok": true,
-   "found": 52,
-   "events": 1,
-   "ms": 5742
-  },
-  {
    "id": "org-mohw",
    "name": "보건복지부 공지",
-   "ok": true,
-   "found": 19,
-   "events": 4,
-   "ms": 13727
+   "ok": false,
+   "error": "fetch failed",
+   "ms": 24973
+  },
+  {
+   "id": "org-kdca",
+   "name": "질병관리청 공지",
+   "ok": false,
+   "error": "fetch failed",
+   "ms": 25472
   },
   {
    "id": "nkis",
@@ -28,23 +26,7 @@
    "ok": true,
    "found": 20,
    "events": 0,
-   "ms": 23834
-  },
-  {
-   "id": "org-khealth",
-   "name": "한국건강증진개발원 공지",
-   "ok": true,
-   "found": 11,
-   "events": 0,
-   "ms": 10665
-  },
-  {
-   "id": "org-nhis",
-   "name": "국민건강보험공단 공지",
-   "ok": true,
-   "found": 24,
-   "events": 0,
-   "ms": 3662
+   "ms": 26637
   },
   {
    "id": "org-ncc",
@@ -52,15 +34,23 @@
    "ok": true,
    "found": 4,
    "events": 2,
-   "ms": 5463
+   "ms": 6821
   },
   {
-   "id": "org-mfds",
-   "name": "식품의약품안전처 공지",
+   "id": "org-nhis",
+   "name": "국민건강보험공단 공지",
    "ok": true,
-   "found": 16,
-   "events": 8,
-   "ms": 23633
+   "found": 24,
+   "events": 0,
+   "ms": 5704
+  },
+  {
+   "id": "org-khealth",
+   "name": "한국건강증진개발원 공지",
+   "ok": true,
+   "found": 11,
+   "events": 0,
+   "ms": 16891
   },
   {
    "id": "org-hira",
@@ -68,22 +58,21 @@
    "ok": true,
    "found": 12,
    "events": 1,
-   "ms": 5306
+   "ms": 6888
   },
   {
-   "id": "org-kihasa",
-   "name": "한국보건사회연구원 공지",
-   "ok": true,
-   "found": 3,
-   "events": 2,
-   "ms": 4740
+   "id": "org-mfds",
+   "name": "식품의약품안전처 공지",
+   "ok": false,
+   "error": "fetch failed",
+   "ms": 25148
   },
   {
    "id": "org-neca",
    "name": "한국보건의료연구원 공지",
    "ok": false,
    "error": "HTTP 400",
-   "ms": 6988
+   "ms": 7786
   },
   {
    "id": "org-nmc",
@@ -91,47 +80,7 @@
    "ok": true,
    "found": 11,
    "events": 0,
-   "ms": 4171
-  },
-  {
-   "id": "org-nibp",
-   "name": "국가생명윤리정책원 공지",
-   "ok": true,
-   "found": 16,
-   "events": 0,
-   "ms": 5624
-  },
-  {
-   "id": "org-khidi",
-   "name": "한국보건산업진흥원 공지",
-   "ok": true,
-   "found": 20,
-   "events": 3,
-   "ms": 12428
-  },
-  {
-   "id": "org-ksepi",
-   "name": "한국역학회 공지",
-   "ok": true,
-   "found": 10,
-   "events": 5,
-   "ms": 5218
-  },
-  {
-   "id": "org-prevmed",
-   "name": "대한예방의학회 공지",
-   "ok": true,
-   "found": 15,
-   "events": 2,
-   "ms": 15910
-  },
-  {
-   "id": "org-kshpa",
-   "name": "한국보건행정학회 공지",
-   "ok": true,
-   "found": 9,
-   "events": 5,
-   "ms": 10967
+   "ms": 4709
   },
   {
    "id": "snu-health",
@@ -139,7 +88,54 @@
    "ok": true,
    "found": 30,
    "events": 20,
-   "ms": 57580
+   "ms": 58728
+  },
+  {
+   "id": "org-nibp",
+   "name": "국가생명윤리정책원 공지",
+   "ok": true,
+   "found": 16,
+   "events": 0,
+   "ms": 6103
+  },
+  {
+   "id": "org-khidi",
+   "name": "한국보건산업진흥원 공지",
+   "ok": true,
+   "found": 20,
+   "events": 3,
+   "ms": 14778
+  },
+  {
+   "id": "org-ksepi",
+   "name": "한국역학회 공지",
+   "ok": true,
+   "found": 10,
+   "events": 5,
+   "ms": 6332
+  },
+  {
+   "id": "org-kihasa",
+   "name": "한국보건사회연구원 공지",
+   "ok": false,
+   "error": "fetch failed",
+   "ms": 25047
+  },
+  {
+   "id": "org-kshpa",
+   "name": "한국보건행정학회 공지",
+   "ok": true,
+   "found": 9,
+   "events": 5,
+   "ms": 12300
+  },
+  {
+   "id": "org-prevmed",
+   "name": "대한예방의학회 공지",
+   "ok": true,
+   "found": 15,
+   "events": 3,
+   "ms": 20284
   },
   {
    "id": "org-kshep",
@@ -147,15 +143,7 @@
    "ok": true,
    "found": 1,
    "events": 1,
-   "ms": 3543
-  },
-  {
-   "id": "org-kpha",
-   "name": "대한보건협회 공지",
-   "ok": true,
-   "found": 15,
-   "events": 0,
-   "ms": 4072
+   "ms": 3889
   },
   {
    "id": "org-kosqua",
@@ -163,15 +151,7 @@
    "ok": true,
    "found": 7,
    "events": 1,
-   "ms": 1641
-  },
-  {
-   "id": "org-cochrane",
-   "name": "한국코크란 공지",
-   "ok": true,
-   "found": 16,
-   "events": 0,
-   "ms": 867
+   "ms": 1998
   },
   {
    "id": "org-kspm",
@@ -179,22 +159,22 @@
    "ok": true,
    "found": 16,
    "events": 1,
-   "ms": 10822
+   "ms": 12205
+  },
+  {
+   "id": "org-cochrane",
+   "name": "한국코크란 공지",
+   "ok": true,
+   "found": 16,
+   "events": 0,
+   "ms": 569
   },
   {
    "id": "org-koddi",
    "name": "한국장애인개발원 공지",
    "ok": false,
    "error": "HTTP 404",
-   "ms": 6269
-  },
-  {
-   "id": "org-kdca-ilje",
-   "name": "질병관리청 일정",
-   "ok": true,
-   "found": 32,
-   "events": 1,
-   "ms": 5222
+   "ms": 5720
   },
   {
    "id": "org-kams",
@@ -202,7 +182,21 @@
    "ok": true,
    "found": 132,
    "events": 132,
-   "ms": 31735
+   "ms": 29136
+  },
+  {
+   "id": "org-kpha",
+   "name": "대한보건협회 공지",
+   "ok": false,
+   "error": "fetch failed",
+   "ms": 25376
+  },
+  {
+   "id": "org-kdca-ilje",
+   "name": "질병관리청 일정",
+   "ok": false,
+   "error": "fetch failed",
+   "ms": 25454
   }
  ],
  "events": [
@@ -462,17 +456,32 @@
    "city": "대전"
   },
   {
-   "id": "7501b0d159fde8fc",
-   "org": "kdca",
+   "id": "86d26a5868289dac",
+   "org": "prevmed",
    "orgLabel": null,
    "title": "9월 세미나 <보건정책학의 이해: 시사점과 연구과제> 개최",
-   "start": "2026-09-07",
+   "start": "2026-09-08",
    "end": "2026-09-08",
    "startTime": "10:00",
    "endTime": "17:00",
    "allDay": false,
    "place": null,
    "url": "https://www.prevmed.or.kr/board_community_notice01/view.php?tn=board_community_notice01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject_s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=910&gid=886&cpage=1&spage=1",
+   "source": "org-prevmed",
+   "collectedAt": "2026-09-29"
+  },
+  {
+   "id": "a8c8847d88717dd6",
+   "org": "kdca",
+   "orgLabel": null,
+   "title": "미세먼지 대응 질병연구포럼 연구방법론분과 심포지엄 개최",
+   "start": "2026-09-08",
+   "end": "2026-09-11",
+   "startTime": "10:00",
+   "endTime": "17:00",
+   "allDay": false,
+   "place": null,
+   "url": "https://www.prevmed.or.kr/board_community_notice01/view.php?tn=board_community_notice01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject_s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=914&gid=890&cpage=1&spage=1",
    "source": "org-prevmed",
    "collectedAt": "2026-09-29"
   },
@@ -657,10 +666,10 @@
    "url": "https://www.kihasa.re.kr/news/event/view?seq=76736",
    "source": "org-kihasa",
    "collectedAt": "2026-09-29",
+   "city": "서울",
    "lat": 37.566485,
    "lng": 126.979505,
-   "geo": "exact",
-   "city": "서울"
+   "geo": "exact"
   },
   {
    "id": "71837e8cfdb5c2e8",
@@ -1170,10 +1179,10 @@
    "source": "org-kihasa",
    "collectedAt": "2026-09-29",
    "note": "포스터에 주최가 질병관리청·한국보건사회연구원 두 곳으로 적혀 있습니다.",
+   "city": "서울",
    "lat": 37.566679,
    "lng": 126.978291,
-   "geo": "approx",
-   "city": "서울"
+   "geo": "approx"
   },
   {
    "id": "ac301110f80e9ff5",
@@ -1194,10 +1203,10 @@
    "source": "org-kdca-ilje",
    "collectedAt": "2026-09-29",
    "note": "포스터에 주최가 질병관리청·한국보건사회연구원 두 곳으로 적혀 있습니다.",
+   "city": "서울",
    "lat": 37.566679,
    "lng": 126.978291,
-   "geo": "approx",
-   "city": "서울"
+   "geo": "approx"
   },
   {
    "id": "992059f00f573279",
