@@ -138,13 +138,15 @@ def page_items(url, item_re, title_fmt="{title}", limit=PER_SOURCE, link_fmt="")
     link_fmt 는 글 번호(?P<id>…)로 주소를 만드는 서식. limit 은 소스별 "limit" 값 — 간행물 목록처럼 옛 호가 한꺼번에 잡히는 페이지는 2~3으로 두는 것이 좋다.
     발행일을 못 읽으면 비워 두고, main()이 처음 발견한 날을 기억해 둔다."""
     raw = fetch_text(url)
-    out = []
+    out, got_links = [], set()
     for m in re.finditer(item_re, raw, re.S):
         g = m.groupdict()
         title = strip_tags(g.get("title") or "", 300)
         link  = html.unescape(g.get("link") or g.get("link2") or "").strip()   # link2: 대체 링크(내려받기 등)
         if link_fmt: link = link_fmt.format(**{k: (v or "") for k, v in g.items()})   # 자바스크립트 링크뿐인 게시판: 글 번호로 주소를 만든다
         if not title or not link: continue
+        if link in got_links: continue   # 같은 글이 머리기사 칸과 목록에 두 번 나오는 페이지가 있다
+        got_links.add(link)
         dtxt = re.sub(r"(\d)(st|nd|rd|th)\b", r"\1", strip_tags(g.get("date") or "", 60))   # "10th September 2026" → "10 September 2026"
         out.append({"title": title_fmt.format(title=title), "link": urllib.parse.urljoin(url, link),
                     "date": parse_date(dtxt), "excerpt": strip_tags(g.get("excerpt") or "", 420),
