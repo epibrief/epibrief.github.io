@@ -810,5 +810,8 @@
   "q": "서울",
   "label": "서울특별시, 대한민국",
   "precision": "approx"
+ },
+ "zoom 온라인 회의실(비대면)": {
+  "online": true
  }
 }

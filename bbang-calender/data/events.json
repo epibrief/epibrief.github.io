@@ -1,9 +1,9 @@
 {
  "name": "빵캘",
- "updatedAt": "2026-09-30T00:58:30.758Z",
+ "updatedAt": "2026-09-30T16:14:09.949Z",
  "counts": {
-  "total": 168,
-  "upcoming": 110
+  "total": 164,
+  "upcoming": 111
  },
  "sources": [
   {
@@ -12,7 +12,7 @@
    "ok": true,
    "found": 52,
    "events": 0,
-   "ms": 3508
+   "ms": 3746
   },
   {
    "id": "org-mohw",
@@ -20,39 +20,7 @@
    "ok": true,
    "found": 19,
    "events": 4,
-   "ms": 14428
-  },
-  {
-   "id": "nkis",
-   "name": "NKIS 정책세미나안내",
-   "ok": true,
-   "found": 20,
-   "events": 0,
-   "ms": 23106
-  },
-  {
-   "id": "org-mfds",
-   "name": "식품의약품안전처 공지",
-   "ok": true,
-   "found": 16,
-   "events": 8,
-   "ms": 24676
-  },
-  {
-   "id": "org-ncc",
-   "name": "국립암센터 공지",
-   "ok": true,
-   "found": 4,
-   "events": 2,
-   "ms": 5903
-  },
-  {
-   "id": "org-nhis",
-   "name": "국민건강보험공단 공지",
-   "ok": true,
-   "found": 24,
-   "events": 0,
-   "ms": 7004
+   "ms": 15521
   },
   {
    "id": "org-khealth",
@@ -60,38 +28,55 @@
    "ok": true,
    "found": 11,
    "events": 0,
-   "ms": 21625
+   "ms": 5244
+  },
+  {
+   "id": "nkis",
+   "name": "NKIS 정책세미나안내",
+   "ok": true,
+   "found": 20,
+   "events": 0,
+   "ms": 24994
+  },
+  {
+   "id": "org-ncc",
+   "name": "국립암센터 공지",
+   "ok": true,
+   "found": 4,
+   "events": 2,
+   "ms": 7512
+  },
+  {
+   "id": "org-mfds",
+   "name": "식품의약품안전처 공지",
+   "ok": true,
+   "found": 16,
+   "events": 8,
+   "ms": 25354
+  },
+  {
+   "id": "org-nhis",
+   "name": "국민건강보험공단 공지",
+   "ok": true,
+   "found": 24,
+   "events": 0,
+   "ms": 5872
   },
   {
    "id": "org-hira",
    "name": "건강보험심사평가원 공지",
    "ok": true,
    "found": 12,
-   "events": 1,
-   "ms": 7841
+   "events": 0,
+   "ms": 2984
   },
   {
    "id": "org-kihasa",
    "name": "한국보건사회연구원 공지",
    "ok": true,
-   "found": 3,
-   "events": 2,
-   "ms": 5694
-  },
-  {
-   "id": "org-neca",
-   "name": "한국보건의료연구원 공지",
-   "ok": false,
-   "error": "HTTP 400",
-   "ms": 7250
-  },
-  {
-   "id": "org-nibp",
-   "name": "국가생명윤리정책원 공지",
-   "ok": true,
-   "found": 16,
+   "found": 0,
    "events": 0,
-   "ms": 5653
+   "ms": 2835
   },
   {
    "id": "org-nmc",
@@ -99,15 +84,30 @@
    "ok": true,
    "found": 11,
    "events": 0,
-   "ms": 6546
+   "ms": 2699
+  },
+  {
+   "id": "org-neca",
+   "name": "한국보건의료연구원 공지",
+   "ok": false,
+   "error": "HTTP 400",
+   "ms": 7823
   },
   {
    "id": "org-khidi",
    "name": "한국보건산업진흥원 공지",
    "ok": true,
    "found": 20,
-   "events": 3,
-   "ms": 13726
+   "events": 1,
+   "ms": 10349
+  },
+  {
+   "id": "org-nibp",
+   "name": "국가생명윤리정책원 공지",
+   "ok": true,
+   "found": 16,
+   "events": 0,
+   "ms": 6677
   },
   {
    "id": "org-ksepi",
@@ -115,15 +115,7 @@
    "ok": true,
    "found": 10,
    "events": 5,
-   "ms": 5554
-  },
-  {
-   "id": "snu-health",
-   "name": "서울대 보건대학원 세미나정보",
-   "ok": true,
-   "found": 30,
-   "events": 20,
-   "ms": 63892
+   "ms": 5667
   },
   {
    "id": "org-kshpa",
@@ -131,7 +123,7 @@
    "ok": true,
    "found": 9,
    "events": 5,
-   "ms": 14246
+   "ms": 12598
   },
   {
    "id": "org-prevmed",
@@ -139,7 +131,7 @@
    "ok": true,
    "found": 15,
    "events": 3,
-   "ms": 21056
+   "ms": 20324
   },
   {
    "id": "org-kshep",
@@ -147,31 +139,7 @@
    "ok": true,
    "found": 1,
    "events": 1,
-   "ms": 4477
-  },
-  {
-   "id": "org-kosqua",
-   "name": "한국의료질향상학회 공지",
-   "ok": true,
-   "found": 7,
-   "events": 1,
-   "ms": 2563
-  },
-  {
-   "id": "org-kpha",
-   "name": "대한보건협회 공지",
-   "ok": true,
-   "found": 15,
-   "events": 0,
-   "ms": 3748
-  },
-  {
-   "id": "org-cochrane",
-   "name": "한국코크란 공지",
-   "ok": true,
-   "found": 16,
-   "events": 0,
-   "ms": 417
+   "ms": 4330
   },
   {
    "id": "org-kspm",
@@ -179,22 +147,38 @@
    "ok": true,
    "found": 16,
    "events": 1,
-   "ms": 12008
+   "ms": 12075
   },
   {
-   "id": "org-kdca-ilje",
-   "name": "질병관리청 일정",
+   "id": "org-kosqua",
+   "name": "한국의료질향상학회 공지",
    "ok": true,
-   "found": 32,
-   "events": 0,
-   "ms": 2971
+   "found": 7,
+   "events": 1,
+   "ms": 2078
   },
   {
    "id": "org-koddi",
    "name": "한국장애인개발원 공지",
    "ok": false,
    "error": "HTTP 404",
-   "ms": 5940
+   "ms": 5840
+  },
+  {
+   "id": "snu-health",
+   "name": "서울대 보건대학원 세미나정보",
+   "ok": true,
+   "found": 30,
+   "events": 21,
+   "ms": 76247
+  },
+  {
+   "id": "org-cochrane",
+   "name": "한국코크란 공지",
+   "ok": true,
+   "found": 16,
+   "events": 0,
+   "ms": 733
   },
   {
    "id": "org-kams",
@@ -202,7 +186,22 @@
    "ok": true,
    "found": 132,
    "events": 132,
-   "ms": 25890
+   "ms": 29571
+  },
+  {
+   "id": "org-kdca-ilje",
+   "name": "질병관리청 일정",
+   "ok": true,
+   "found": 32,
+   "events": 0,
+   "ms": 2797
+  },
+  {
+   "id": "org-kpha",
+   "name": "대한보건협회 공지",
+   "ok": false,
+   "error": "fetch failed",
+   "ms": 25364
   }
  ],
  "events": [
@@ -289,7 +288,7 @@
    "endTime": null,
    "allDay": true,
    "place": "천안 소노벨",
-   "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pageid=2&uid=5707",
+   "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pageid=3&uid=5707",
    "source": "snu-health",
    "collectedAt": "2026-09-30",
    "lat": 36.81028,
@@ -312,21 +311,6 @@
    "source": "snu-health",
    "collectedAt": "2026-09-30",
    "online": true
-  },
-  {
-   "id": "afe7abb4d2b8d690",
-   "org": "hira",
-   "orgLabel": null,
-   "title": "검체검사 위·수탁 제도 개편 관련 청구소프트웨어 공급업체 온라인 간담회 질의응답 추가 게시",
-   "start": "2026-09-01",
-   "end": "2026-09-01",
-   "startTime": "09:00",
-   "endTime": "18:00",
-   "allDay": false,
-   "place": null,
-   "url": "https://www.hira.or.kr/bbsDummy.do?pgmid=HIRAA020002000100&brdScnBltNo=4&brdBltNo=12254&pageIndex=1&pageIndex2=1",
-   "source": "org-hira",
-   "collectedAt": "2026-09-30"
   },
   {
    "id": "44bbaac95dbb924f",
@@ -521,7 +505,7 @@
    "endTime": null,
    "allDay": true,
    "place": null,
-   "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&uid=5777",
+   "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pageid=2&uid=5777",
    "source": "snu-health",
    "collectedAt": "2026-09-30"
   },
@@ -653,29 +637,6 @@
    "lng": 126.646738,
    "geo": "exact",
    "city": "인천"
-  },
-  {
-   "id": "040331ec9f9f6eca",
-   "org": "kihasa",
-   "orgs": [
-    "kihasa",
-    "mohw"
-   ],
-   "orgLabel": null,
-   "title": "상병수당 제도화 방안 마련을 위한 토론회",
-   "start": "2026-09-11",
-   "end": "2026-09-11",
-   "startTime": "14:00",
-   "endTime": "16:30",
-   "allDay": false,
-   "place": "프레지던트호텔 슈벨트홀",
-   "url": "https://www.kihasa.re.kr/news/event/view?seq=76736",
-   "source": "org-kihasa",
-   "collectedAt": "2026-09-30",
-   "lat": 37.566485,
-   "lng": 126.979505,
-   "geo": "exact",
-   "city": "서울"
   },
   {
    "id": "71837e8cfdb5c2e8",
@@ -864,29 +825,6 @@
    "collectedAt": "2026-09-30"
   },
   {
-   "id": "594de9f192adb995",
-   "org": "khidi",
-   "orgs": [
-    "khidi",
-    "mohw"
-   ],
-   "orgLabel": null,
-   "title": "제32회 보건의료포럼 개최 안내",
-   "start": "2026-09-16",
-   "end": "2026-09-16",
-   "startTime": "13:00",
-   "endTime": "17:30",
-   "allDay": false,
-   "place": "서울대학교병원 암연구소 이건희홀",
-   "url": "https://www.khidi.or.kr/board/view?linkId=48949861&menuId=MENU00099",
-   "source": "org-khidi",
-   "collectedAt": "2026-09-30",
-   "lat": 37.579118,
-   "lng": 126.998733,
-   "geo": "exact",
-   "city": "서울"
-  },
-  {
    "id": "270e86def34b1060",
    "org": "snuph",
    "orgLabel": null,
@@ -897,7 +835,7 @@
    "endTime": null,
    "allDay": true,
    "place": "보건대학원 221동 113호",
-   "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&uid=5783",
+   "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pageid=2&uid=5783",
    "source": "snu-health",
    "collectedAt": "2026-09-30",
    "lat": 37.465022,
@@ -1061,21 +999,6 @@
    "collectedAt": "2026-09-30"
   },
   {
-   "id": "37d8480181aadd55",
-   "org": "khidi",
-   "orgLabel": null,
-   "title": "「2026 한-카자흐스탄 보건의료 해외진출 홍보 및 공공조달 협력 세미나」 참가기관 모집 공고(~9.18(금) 18:00)",
-   "start": "2026-09-18",
-   "end": "2026-09-18",
-   "startTime": "18:00",
-   "endTime": null,
-   "allDay": false,
-   "place": null,
-   "url": "https://www.khidi.or.kr/board/view?linkId=48949928&menuId=MENU01108",
-   "source": "org-khidi",
-   "collectedAt": "2026-09-30"
-  },
-  {
    "id": "5bc672f76bff1996",
    "org": "kdca",
    "orgLabel": null,
@@ -1164,30 +1087,6 @@
    "lat": 37.488452,
    "lng": 127.085341,
    "geo": "exact",
-   "city": "서울"
-  },
-  {
-   "id": "09798fc9504bd155",
-   "org": "kdca",
-   "orgs": [
-    "kdca",
-    "kihasa"
-   ],
-   "orgLabel": null,
-   "title": "2026년 제1차 감염병 위기 사회대응 포럼",
-   "start": "2026-09-21",
-   "end": "2026-09-21",
-   "startTime": null,
-   "endTime": null,
-   "allDay": true,
-   "place": "코트야드 메리어트 서울 명동",
-   "url": "https://www.kihasa.re.kr/news/event/view?seq=76820",
-   "source": "org-kihasa",
-   "collectedAt": "2026-09-30",
-   "note": "포스터에 주최가 질병관리청·한국보건사회연구원 두 곳으로 적혀 있습니다.",
-   "lat": 37.566679,
-   "lng": 126.978291,
-   "geo": "approx",
    "city": "서울"
   },
   {
@@ -1334,6 +1233,22 @@
    "lng": 126.825665,
    "geo": "exact",
    "city": "서울"
+  },
+  {
+   "id": "fa92b522632f0562",
+   "org": "snuph",
+   "orgLabel": null,
+   "title": "평창에서 본 의료취약지 일차보건의료: 공공 보건의원 논의에 부쳐",
+   "start": "2026-10-07",
+   "end": "2026-10-07",
+   "startTime": null,
+   "endTime": null,
+   "allDay": true,
+   "place": "zoom 온라인 회의실(비대면)",
+   "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&uid=5841",
+   "source": "snu-health",
+   "collectedAt": "2026-09-30",
+   "online": true
   },
   {
    "id": "9b788d462f403c11",
@@ -3295,9 +3210,9 @@
   }
  ],
  "map": {
-  "mapped": 135,
-  "online": 3,
-  "places": 119,
+  "mapped": 132,
+  "online": 4,
+  "places": 117,
   "geocodedAt": "2026-09-30"
  }
 }

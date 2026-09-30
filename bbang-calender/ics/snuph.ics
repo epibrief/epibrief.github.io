@@ -19,7 +19,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:25ceb2ec225ac7b2@bbangcal.epibrief.github.io
-DTSTAMP:20260930T005830Z
+DTSTAMP:20260930T161410Z
 DTSTART;TZID=Asia/Seoul:20260826T140000
 DTEND;TZID=Asia/Seoul:20260826T160000
 SUMMARY:[서울대 보건대학원] 졸업생-재학생 간담회 안
@@ -33,7 +33,7 @@ URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
 END:VEVENT
 BEGIN:VEVENT
 UID:270e86def34b1060@bbangcal.epibrief.github.io
-DTSTAMP:20260930T005830Z
+DTSTAMP:20260930T161410Z
 DTSTART;VALUE=DATE:20260916
 DTEND;VALUE=DATE:20260917
 SUMMARY:[서울대 보건대학원] 효과 검증에서 실제 시행
@@ -41,14 +41,14 @@ SUMMARY:[서울대 보건대학원] 효과 검증에서 실제 시행
  tein 보충제 사업의 교훈
 LOCATION:보건대학원 221동 113호
 DESCRIPTION:주최: 서울대 보건대학원\n원문: https://health.s
- nu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&ui
- d=5783\n빵캘: https://epibrief.github.io/bbang-calender/
+ nu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pa
+ geid=2&uid=5783\n빵캘: https://epibrief.github.io/bbang-calender/
 URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
- %B4/?mod=document&uid=5783
+ %B4/?mod=document&pageid=2&uid=5783
 END:VEVENT
 BEGIN:VEVENT
 UID:77927bb0829c4f6a@bbangcal.epibrief.github.io
-DTSTAMP:20260930T005830Z
+DTSTAMP:20260930T161410Z
 DTSTART;VALUE=DATE:20260930
 DTEND;VALUE=DATE:20261001
 SUMMARY:[서울대 보건대학원] 개방 공간 데이터과학과 
@@ -59,5 +59,19 @@ DESCRIPTION:주최: 서울대 보건대학원\n원문: https://health.s
  d=5808\n빵캘: https://epibrief.github.io/bbang-calender/
 URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
  %B4/?mod=document&uid=5808
+END:VEVENT
+BEGIN:VEVENT
+UID:fa92b522632f0562@bbangcal.epibrief.github.io
+DTSTAMP:20260930T161410Z
+DTSTART;VALUE=DATE:20261007
+DTEND;VALUE=DATE:20261008
+SUMMARY:[서울대 보건대학원] 평창에서 본 의료취약지 
+ 일차보건의료: 공공 보건의원 논의에 부쳐
+LOCATION:zoom 온라인 회의실(비대면)
+DESCRIPTION:주최: 서울대 보건대학원\n원문: https://health.s
+ nu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&ui
+ d=5841\n빵캘: https://epibrief.github.io/bbang-calender/
+URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
+ %B4/?mod=document&uid=5841
 END:VEVENT
 END:VCALENDAR
