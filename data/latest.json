@@ -1,253 +1,317 @@
 {
- "updated": "2026-09-30 23:20",
+ "updated": "2026-10-01 23:34",
  "byKind": {
   "outbreak": [
    {
-    "title": "Ebola disease outbreak in the Democratic Republic of the Congo",
-    "origin": "European Centre for Disease Prevention and Control",
-    "sourceName": "ECDC 뉴스·주간 위협보고(CDTR)",
-    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPcjUwMFo1WUtEN0t1RFpuaUh5N0c5UGFOSW1oVGZZbDZFLXYzbUI2MFJmdS0wM294ZDliYXo5dEU1Nk9rOHpOMlJITWpBQmRRV2pJczFTSVg2SmRyNU8tTVZrMGlhcFZuTXhpNW82ZHlzVjZ6SGlCRFpVNmdkdnotUU83dDU0S0pq?oc=5",
-    "date": "2026-09-30",
+    "title": "WHO/Europe Pandemic Influenza Preparedness Framework Meeting",
+    "origin": "World Health Organization (WHO)",
+    "sourceName": "WHO 유럽지역사무처 (뉴스검색)",
+    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOTXhfcWxJeUEwWXhwaHRJMktXLXRpNDJZdTRvYXYxRFRSa1AwcGg5ZHJab2hvUEwtSzlscmI5cllaQzRBbFI2SExxS0E0VFJNNXd3Q3NzQzU0RkdVSTd6T0RsZ3E1Uzh5d2Fyc3JIVkdrY3FLaVFBU3BhZHJLUDduZHoxSjk2VXcxNG56Rzg0czRPM3pibjh3VGNYRDRVZWtkNU4wUjVDbVlRZzFkN1VGZjVUaDZnZU5GWXZYS1FtY0k2N200VGR1MHZ3RV9UdnZjZTU4?oc=5",
+    "date": "2026-10-01",
     "via": "뉴스검색"
    },
    {
-    "title": "국가예방접종 백신, 품질이상부터 안전접종까지 전주기 관리 강화(9.30.수)",
+    "title": "Outbreaks Associated with Untreated Recreational Water — United States, 2000–2014",
     "origin": "",
-    "sourceName": "질병관리청 보도자료 (감염병)",
-    "link": "https://www.kdca.go.kr/bbs/kdca/42/312800/artclView.do",
-    "date": "2026-09-30",
-    "via": "기관 페이지"
+    "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
+    "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6725a1.htm?s_cid=mm6725a1_x",
+    "date": "2026-10-01",
+    "via": "기관 RSS"
    },
    {
-    "title": "질병관리청, 「2026년 원헬스 연차보고서」 발간(9.30.수)",
+    "title": "Geographic Variation in Pediatric Cancer Incidence — United States, 2003–2014",
     "origin": "",
-    "sourceName": "질병관리청 보도자료 (감염병)",
-    "link": "https://www.kdca.go.kr/bbs/kdca/42/312792/artclView.do",
-    "date": "2026-09-30",
-    "via": "기관 페이지"
+    "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
+    "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6725a2.htm?s_cid=mm6725a2_x",
+    "date": "2026-10-01",
+    "via": "기관 RSS"
    },
    {
-    "title": "인수공통감염병 10년 추적했더니…살모넬라·CRE 등 4종 증가세",
-    "origin": "연합뉴스",
-    "sourceName": "국내 감염병 발생 동향",
-    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBoREIwelZkVkx5bmd1SnlLS20yNUVvbkg2Ny1vSWNfTF9mcDMxLU1HSDdlcXJ4NVhrSTRIWHFrYldvenNkdjZ6dHNXdDFBUVdPTnBvSW05dmVLbENsWmwzadIBYEFVX3lxTFBoREIwelZkVkx5bmd1SnlLS20yNUVvbkg2Ny1vSWNfTF9mcDMxLU1HSDdlcXJ4NVhrSTRIWHFrYldvenNkdjZ6dHNXdDFBUVdPTnBvSW05dmVLbENsWmwzaQ?oc=5",
-    "date": "2026-09-30",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "지난해 '살인진드기' 65% 폭증… '사람-동물 감염병' 10년 추이 봤더니 - 머니투데이",
-    "origin": "머니투데이",
-    "sourceName": "국내 감염병 발생 동향",
-    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1RN21nTy1UUFRxT2R3blU3OUc3Z1p3TUY2QWtiZEg0dTBuZUpTbmhzOVVVcUhSN3cwNk5vRVNBNjQzOTdnZ0dtd0ZmSTQ2MkZpWnVNRWZIT3ZWWHJySDN6XzNtQXRqYnFTdWlPQWtTd9IBb0FVX3lxTE1RN21nTy1UUFRxT2R3blU3OUc3Z1p3TUY2QWtiZEg0dTBuZUpTbmhzOVVVcUhSN3cwNk5vRVNBNjQzOTdnZ0dtd0ZmSTQ2MkZpWnVNRWZIT3ZWWHJySDN6XzNtQXRqYnFTdWlPQWtTdw?oc=5",
-    "date": "2026-09-30",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "작년 ‘중증열성혈소판감소증후군’ 65% 급증…살모넬라·CRE 등 증가세",
-    "origin": "v.daum.net",
-    "sourceName": "국내 감염병 발생 동향",
-    "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE8wOGwxV0R6ZXdzX2FwSDJGRzNUZnR4SUExV0I3X004S0VPOUx1LVBMTnBZNkFaT2xjNXktaTN2LVBCb3FkQ0lFNklickg0Q1E?oc=5",
-    "date": "2026-09-30",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "SFTS 환자 65% 늘어 280명…장출혈성대장균 신고도 두배 가까이",
-    "origin": "v.daum.net",
-    "sourceName": "국내 감염병 발생 동향",
-    "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9OTFNpRmw1QV9iVU9FTGxOOC1uNW9kb2RBdkluazZuLV9tRHVtYUY5YXpKQnVuTlhsYWdVbkRTcmtVeExjYmc?oc=5",
-    "date": "2026-09-30",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "살모넬라균·캄필로박터균·장출혈성대장균·CRE 감염증, 10년간 큰 폭 증가",
-    "origin": "재활뉴스",
-    "sourceName": "국내 감염병 발생 동향",
-    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE54cDN5aUFiZndjLXFtdmhzTE1hMllZWnpwWmVIMHo3WDJNNGkyQnFyS3VPMFlSaXA3MVQ2allMbUpTVkRqWjVPc0toUUt6YWNGSDRZbDhrdVZpV2xWLVZiV1lmNGJxV2FnNzFj?oc=5",
-    "date": "2026-09-30",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "SFTS·식중독균 일제히 급증… 질병청 ‘원헬스 보고서’ 발간",
-    "origin": "간호사신문",
-    "sourceName": "국내 감염병 발생 동향",
-    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9faFE2U09JRnRHVGJEeTVGNTNtNWIzVVh4NmNiWDZnTVdoUTJYNjItUFdtX0dMU0k3S0RfMTB6aUltZUw5bGJnVWZDQ0FmbWZidTB6WG0wbmVBekhpdW5tVWVuQi11eVdaZm5UUHJR?oc=5",
-    "date": "2026-09-30",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "최근 10년간 살모넬라감염증 등 뚜렷한 증가세",
-    "origin": "메디팜뉴스",
-    "sourceName": "국내 감염병 발생 동향",
-    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFA5c09OVjFzZ1dzQ2g1WVY2MjRGeG9Rc2ljOWthdm5yendLVmxxZUJvR2Q2dkdGbVFfakdCd3Z1N3JCdGhmUDVtVHhiYkUwRExKaEJ0Sm1qT1lRMTloWmR3V2drcjVvTGFNcjVxVXR4SFhZMldjRVHSAXZBVV95cUxQOXNPTlYxc2dXc0NoNVlWNjI0RnhvUXNpYzlrYXZucnp3S1ZscWVCb0dkNnZHRm1RX2pHQnd2dTdyQnRoZlA1bVR4YmJFMERMSmhCdEptak9ZUTE5aFpkd1dna3I1b0xhTXI1cVV0eEhYWTJXY0VR?oc=5",
-    "date": "2026-09-30",
-    "via": "뉴스검색"
-   }
-  ],
-  "chronic": [
-   {
-    "title": "일부 지역에 머물던 만성질환 관리, 더 많은 지역(국민)으로 확대(9.30.수)",
+    "title": "Prevalence and Predictors of Provider-Initiated HIV Test Offers Among Heterosexual Persons at Increased Risk for Acquiring HIV Infection — Virginia, 2016",
     "origin": "",
-    "sourceName": "질병관리청 보도자료 (만성질환·건강통계)",
-    "link": "https://www.kdca.go.kr/bbs/kdca/42/312816/artclView.do",
-    "date": "2026-09-30",
-    "via": "기관 페이지"
+    "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
+    "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6725a3.htm?s_cid=mm6725a3_x",
+    "date": "2026-10-01",
+    "via": "기관 RSS"
    },
    {
-    "title": "[9.30.수.석간] 「2025년 국민건강영양조사」 결과 발표",
+    "title": "Fatal Sepsis Associated with Bacterial Contamination of Platelets — Utah and California, August 2017",
     "origin": "",
-    "sourceName": "질병관리청 보도자료 (만성질환·건강통계)",
-    "link": "https://www.kdca.go.kr/bbs/kdca/42/312791/artclView.do",
-    "date": "2026-09-30",
-    "via": "기관 페이지"
+    "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
+    "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6725a4.htm?s_cid=mm6725a4_x",
+    "date": "2026-10-01",
+    "via": "기관 RSS"
    },
    {
-    "title": "만성질환 관리사업 전국으로 단계적 확대",
-    "origin": "병원신문",
-    "sourceName": "국내 만성질환 관리 정책",
-    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9UUWZlMl9UUmtDbVVaU1dFUGNtYmVYYmdVQmtUZGRUdFVCQmx0S1RXaUx5Zy1WVWJ0ajdMczM0R1FnczFRNTVTT0FIdTl3ZFNCbi0tdUNQWDJncjRkWjl6VmVBSkdfSFZQTWc?oc=5",
-    "date": "2026-09-30",
-    "via": "뉴스검색"
+    "title": "Update of Recommendations for Use of Once-Weekly Isoniazid-Rifapentine Regimen to Treat Latent Mycobacterium tuberculosis Infection",
+    "origin": "",
+    "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
+    "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6725a5.htm?s_cid=mm6725a5_x",
+    "date": "2026-10-01",
+    "via": "기관 RSS"
    },
    {
-    "title": "이재명 정부, 고혈압·당뇨병 등록환자 의료비 지원 축소 추진… “치료 공백 우려”",
-    "origin": "강원지방신문",
-    "sourceName": "국내 만성질환 관리 정책",
-    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5vRTg3REotd2VtMU96U3E1SHBXdWZxdXIwWUEtRkR0ajBkcXpvNmlPNmZXbEpWNV9PdDN5bGV5T2IzUk1kR1hWMUhsNGJka2hyWUVVb09sRlk3dThsSUp2R2JZc19pVVlOeGM0aV930gFuQVVfeXFMTm9FODdESi13ZW0xT3pTcTVIcFd1ZnF1cjBZQS1GRHRqMGRxem82aU82ZldsSlY1X090M3lsZXlPYjNSTWRHWFYxSGw0YmRraHJZRVVvT2xGWTd1OGxJSnZHYllzX2lVWU54YzRpX3c?oc=5",
-    "date": "2026-09-30",
-    "via": "뉴스검색"
+    "title": "Notes from the Field: Domestically Acquired Verona Integron-Mediated Metallo-β-Lactamase-Producing Enterobacteriaceae — Indiana, 2016–2017",
+    "origin": "",
+    "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
+    "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6725a6.htm?s_cid=mm6725a6_x",
+    "date": "2026-10-01",
+    "via": "기관 RSS"
    },
    {
-    "title": "Mauritius is the first country to show it is reversing the type 2 diabetes epidemic using gold-standard testing",
-    "origin": "Medical Xpress",
-    "sourceName": "국제 NCD 동향·캠페인",
-    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPSXRrOFA3N1plN09JcXZYTkxCSVlOTTJSVFZQUWU3UXZvNGIxcjNtd2pfRkJBRnFBaWZZUTFYempyUEJDQlZKQlBFRWNxYzZScjRvOUlIZjc5U1NDUl9uVVROT3BIQWJpTFZGV29XYWROa0NsR0l5MkdkQWt3UGVOcGl4RnFzWV9vOTVfQjZDWFc3NWM?oc=5",
-    "date": "2026-09-30",
-    "via": "뉴스검색"
+    "title": "Notice to Readers: Ongoing Reanalysis of Suicide Rates Data by Occupational Group from Results Reported in MMWR",
+    "origin": "",
+    "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
+    "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6725a7.htm?s_cid=mm6725a7_x",
+    "date": "2026-10-01",
+    "via": "기관 RSS"
    },
    {
-    "title": "[기고/유근영]아시아 암 퇴치의 청사진이 된 ‘K-암관리’",
-    "origin": "동아일보",
-    "sourceName": "국가암등록통계·암검진",
-    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1tMlVIazRuenNRSldlMER1aVJFd21XcmwwS2llRXFZZ1QtMlNPNFlmNjVTZXAwa3JCcDlZdGlRSUJXTHhrWTc4YXl3M3V2NVNBb2MwTUIzSTN2MlNOTkdFNzM4MTJqQdIBZkFVX3lxTE1tMlVIazRuenNRSldlMER1aVJFd21XcmwwS2llRXFZZ1QtMlNPNFlmNjVTZXAwa3JCcDlZdGlRSUJXTHhrWTc4YXl3M3V2NVNBb2MwTUIzSTN2MlNOTkdFNzM4MTJqQQ?oc=5",
-    "date": "2026-09-30",
-    "via": "뉴스검색"
+    "title": "QuickStats: Percentage of Residential Care Communities That Use Electronic Health Records, by Census Region — United States, 2016",
+    "origin": "",
+    "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
+    "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6725a8.htm?s_cid=mm6725a8_x",
+    "date": "2026-10-01",
+    "via": "기관 RSS"
    },
    {
-    "title": "Address childhood obesity before it poses future health risks",
-    "origin": "Tallahassee Democrat",
-    "sourceName": "美CDC 만성질환·건강행태",
-    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNeVhsN291cFQ4XzdFMDcxZDZkaklPNXR0ZzZybUpDOEhHMXVncHZvVElzekVoeGZvM0VrbVlDNEtlYnYzQkQ1ZFZxN1B6YWt6Z24wa3pTVjVvWlB0Y1NSc0pMOUphTXI2dzE5NUtQNlItTkYyX2gyMGZkMnNsTGQzY1ZGWmFfTUhSeEJMN2djM2J2SHlyVTFKQkZFT0ExYVUyMjVzOFpjLVpSZWtuZGtmVjN2NjZRdVJxRDQtWkZOblJqcUowdzRFTVlrM285anFJNXc?oc=5",
-    "date": "2026-09-29",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "Mexico's Treatable Mortality Exceeds Regional Average:",
-    "origin": "Mexico Business News",
-    "sourceName": "OECD Health at a Glance·보건통계",
-    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMl80aC1sZU9WMEpCWDNpcDA5UmZhMG1weWd2TFA1RlhDZVdCUk5xTnFvcU5LRGpSV1NIUTRSTUxjUWZoaG1VZVA0cFk3QndiX1JNa0Z6YkYtb3J6Y2VTenkxVHRVeW56ZVREVERFNlhXRWlNUlJHUTBMQkEweExVUUJRTm1CN2FOSm1FRXJSbVVSd2Fpc1lF?oc=5",
-    "date": "2026-09-29",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "국가 건강검진 부당청구 76억…무자격 검진도 잇따라",
-    "origin": "애드뉴스인천",
-    "sourceName": "국가건강검진 결과·제도",
-    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5qQlFmWnR6Sk9rYkkyTXprdXpkTG14M0RvQU9hNDVqNG5jN3NMVXNScUtVUEc2OHNodDJScUhicXRTNVFMakdNQ3g1eURxVnhFT0JEWHNBWTV1WVdRWHhNRWZZdjNndFBQNWRV?oc=5",
-    "date": "2026-09-29",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "국가건강검진 부당청구 5년간 76억…조치 55%는 행정지도",
-    "origin": "경북신문",
-    "sourceName": "국가건강검진 결과·제도",
-    "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1qQnhIZ1dfOExqbklGQnBoekttMEJwc3BvWlcxWVdMU3d2eHBFSVBRTEZLUTZNZDEwbUx4NVFWZXhlaG1wTm9MM3hFQWtHM2c?oc=5",
-    "date": "2026-09-29",
-    "via": "뉴스검색"
+    "title": "National HIV Testing Day — June 27, 2018",
+    "origin": "",
+    "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
+    "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6724a1.htm?s_cid=mm6724a1_x",
+    "date": "2026-10-01",
+    "via": "기관 RSS"
    }
   ],
   "phsm": [
    {
-    "title": "Blue Matter Launches Behavioral Science Center of Excellence to Decode and Predict Health Care Decisions in a Rapidly Evolving Biopharma Landscape",
-    "origin": "Via TT",
-    "sourceName": "WHO 행동통찰·수용도 조사",
-    "link": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxQT1pVY0JjRHJULWZsZW9ZQU5CTDVJUkhuR1VweEQyZWo0WkM3WUdxbHhZX051cjJVaHozOVlQRlc0YUpVcHotenlNYWIzdVFPaXJWOWdUX3M3YWswMHliaWp5RGdtMHVsWGRRY0F4S1JyY1BHRWZSVUVaOTBUa1ZCYVlhNEZ3WEU4R0lRX3NUNkRPSTFjZGF1UTlVZm9SemkzX1JGaDVuZWRsc18tRlotVHFNMF9PTXhlMjFHRlpBa1dsWlhSQWQxa2lFZzNNQW9yR1c3MW1mMnc3OTJmbHZqNEJXR0x1TFh2UjUyMFlsQmNPQzFYbERIVm55WmNQRmpLbF9VYlFsY3MtVDZDcjdHaW84a2Rkai0welBqWlBMQ0R4dy01R0M5akNHQXN2ZzBMQlN6OENtWmdhT2c?oc=5",
-    "date": "2026-09-30",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "Ebola disease outbreak in the Democratic Republic of the Congo",
-    "origin": "European Centre for Disease Prevention and Control",
-    "sourceName": "국제 대비태세 감시(GPMB 등)",
-    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPcjUwMFo1WUtEN0t1RFpuaUh5N0c5UGFOSW1oVGZZbDZFLXYzbUI2MFJmdS0wM294ZDliYXo5dEU1Nk9rOHpOMlJITWpBQmRRV2pJczFTSVg2SmRyNU8tTVZrMGlhcFZuTXhpNW82ZHlzVjZ6SGlCRFpVNmdkdnotUU83dDU0S0pq?oc=5",
-    "date": "2026-09-30",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "“신종 감염병 원내 유입 원천 차단”… 전북대병원, 고강도 대응 훈련",
-    "origin": "간호사신문",
-    "sourceName": "국내 대응체계·매뉴얼 논의",
-    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1fU1ZNelBLdXVSd1E2Z2tFak05UUlPU01VVDFBQWt3cTFfOUJsWUw2NVlFY05ZNl9KUHdjUm5ELTM1SG53eTUyMFROZUIxTVZXQTFPM1BnRlF5eEFVRXdSS3Z2N3N3TW9RWGpPMGpn?oc=5",
-    "date": "2026-09-30",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "Gendered behaviors are associated with health beyond binary sex",
+    "title": "Over 212,000 get the first MenB dose but almost 75% missing out",
     "origin": "",
-    "sourceName": "프리프린트: medRxiv 역학·보건정책",
-    "link": "https://www.medrxiv.org/content/10.64898/2026.09.28.26364210v1?rss=1",
-    "date": "2026-09-29",
+    "sourceName": "영국 UKHSA 발표·근거자료",
+    "link": "https://www.gov.uk/government/news/over-212000-get-the-first-menb-dose-but-almost-75-missing-out",
+    "date": "2026-10-01",
     "via": "기관 RSS"
    },
    {
-    "title": "Open ecological, genomic and digital behavioural data resolve the 2026 MV Hondius Andes virus outbreak to the southern-Andean reservoir zone",
+    "title": "Risk to general population remains very low following fourth imported Ebola case in Europe",
     "origin": "",
-    "sourceName": "프리프린트: medRxiv 역학·보건정책",
-    "link": "https://www.medrxiv.org/content/10.64898/2026.09.28.26364179v1?rss=1",
-    "date": "2026-09-29",
-    "via": "기관 RSS"
+    "sourceName": "ECDC 비약물적 중재(NPI) 지침",
+    "link": "https://www.ecdc.europa.eu/en/news-events/risk-general-population-remains-very-low-following-fourth-imported-ebola-case-europe",
+    "date": "2026-10-01",
+    "via": "기관 페이지"
    },
    {
-    "title": "Caregiving transition trajectories and health behaviours: a latent class analysis of the UK Household Longitudinal Study",
-    "origin": "",
-    "sourceName": "프리프린트: medRxiv 역학·보건정책",
-    "link": "https://www.medrxiv.org/content/10.64898/2026.09.26.26364079v1?rss=1",
-    "date": "2026-09-28",
-    "via": "기관 RSS"
-   },
-   {
-    "title": "Morocco Advances Disaster Risk Management With OECD-Backed Reforms",
-    "origin": "Morocco World News",
-    "sourceName": "OECD 보건정책·대유행 대비",
-    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWHRtRWs3azJNRzROZndOQS15Y1FmbWdmakFOanU4dUZkeWo5dndpNEVBWmRoeTZiMmVCeUU4MWdUTXpVZ2FzRDIyclRXWTlNYzh2NS1lQnJUbUdQekd5SzNfbHdQWW55eHk1Rlp0OHc0SFhadXM3T1FfQTczNm9ITjlVUWhGTHNjTVpsZmlhY3NBaTFZMkRZXzBheDJJQ0tUUWk4ZTFWa2RsYlVjVURHWG8teGNidw?oc=5",
-    "date": "2026-09-28",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "From continental strategy to country implementation: a document-based scorecard for assessing health security and sovereignty readiness in Africa",
-    "origin": "Global health action · Osborne A, Bangura C, Ali AS, Sesay U, Vandi M.",
-    "sourceName": "논문: 대비태세·거버넌스·법제",
-    "link": "https://doi.org/10.1080/16549716.2026.2735716",
-    "date": "2026-09-28",
+    "title": "Changes in Dengue Epidemiology in China Before, During, and After COVID-19 2015-2024: A Retrospective National Surveillance and Spatiotemporal Study",
+    "origin": "Journal of medical virology · Chen Y, Shang M, Dou S, Wang X, Ji H, Liu Q.",
+    "sourceName": "논문: 비약물적 중재(NPI)·거리두기 효과",
+    "link": "https://doi.org/10.1002/jmv.71162",
+    "date": "2026-10-01",
     "via": "논문 검색"
    },
    {
-    "title": "WHO global technical consultation on public health and social measures during health emergencies: report of the third meeting, Geneva, Switzerland, 24-26 March 2026",
+    "title": "Longer healthier lives, stronger economies: The potential for Europe's preventive care agenda to set a global example",
+    "origin": "IFPMA",
+    "sourceName": "OECD 보건정책·대유행 대비",
+    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOZExBU3phMjFJaG5NekI5ZGNYQU5HdkF4OVNaYXNfbG5FUmk4X3lWekVYaWllZHdQUVNNeTVzRnZtREw1YS00NjBjdzJMM1BTUC16TUVmWjVmUk5iSHlXNGxjR0QyOVk3aHdNY0FUUE5SY1FKTFpOeURmaThQLTZ5cjI2V1ZYM1lKNDVwX2dQeW80bDM3VE1JM2tKT3pScldmRkcxWDJJd0JmU21oYkhjbDEtYWl0aDE0bTR6R1FWWmdiMWxNQ1Z0YXF1UWxETVFvT1N5OE8waFJaT2lQTHBV?oc=5",
+    "date": "2026-10-01",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "김천교육지원청, 2026년 학교 감염병 업무 담당자 역량 강화 연수 개최",
+    "origin": "시사일보",
+    "sourceName": "국내 대응체계·매뉴얼 논의",
+    "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBNY0VyRUJEaktwX2JsVEVSN1pmS0Vkc3pmTGxqVHhpYnVhNnhHb19NMDFqMDU5RUp6b2JCX25JYm42Zk1Qb0Z3UFFuS0Y?oc=5",
+    "date": "2026-10-01",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "Implementing School-Associated Vaccination Events in Colorado Public Schools: A Statewide Survey of Nurses",
+    "origin": "The Journal of school health · Nienstedt L, Gromis A, Faherty LJ, Korn AR.",
+    "sourceName": "논문: 학교·직장 방역",
+    "link": "https://doi.org/10.1111/josh.70232",
+    "date": "2026-10-01",
+    "via": "논문 검색"
+   },
+   {
+    "title": "Policy Frameworks and Governance of Student Evaluation of Teaching in Nursing Education: Document Analysis",
+    "origin": "Nursing open · Alshammari M, Rolls K, Frost S, Drury P.",
+    "sourceName": "논문: 대비태세·거버넌스·법제",
+    "link": "https://doi.org/10.1002/nop2.70863",
+    "date": "2026-10-01",
+    "via": "논문 검색"
+   },
+   {
+    "title": "Incorporating Hormesis Into Policy: Opportunities, Risks, and Governance Challenges",
+    "origin": "Risk analysis : an official publication of the Society for Risk Analysis · Agathokleous E.",
+    "sourceName": "논문: 대비태세·거버넌스·법제",
+    "link": "https://doi.org/10.1111/risa.70375",
+    "date": "2026-10-01",
+    "via": "논문 검색"
+   },
+   {
+    "title": "Health Security for All? Racial Discourse in Presidential Health Speeches from Roosevelt to Biden",
+    "origin": "Journal of health politics, policy and law · Halfmann D.",
+    "sourceName": "논문: 대비태세·거버넌스·법제",
+    "link": "https://doi.org/10.1215/03616878-12513788",
+    "date": "2026-10-01",
+    "via": "논문 검색"
+   },
+   {
+    "title": "&lt;i&gt;AJPH&lt;/i&gt; as a Trusted Source for Maternal Vaccination Recommendations",
+    "origin": "American journal of public health · Kim-Farley R, Ojikutu BO, Lau DT.",
+    "sourceName": "지침·권고 문헌",
+    "link": "https://doi.org/10.2105/ajph.2026.308740",
+    "date": "2026-10-01",
+    "via": "논문 검색"
+   }
+  ],
+  "chronic": [
+   {
+    "title": "[10.2.금.조간] 국가건강정보포털 건강정보, 인공지능이 활용하기 쉽게 정비한다",
+    "origin": "",
+    "sourceName": "질병관리청 보도자료 (만성질환·건강통계)",
+    "link": "https://www.kdca.go.kr/bbs/kdca/42/312806/artclView.do",
+    "date": "2026-10-01",
+    "via": "기관 페이지"
+   },
+   {
+    "title": "고혈압·당뇨 등록관리 전국 확대…지원금 최대 8만원",
+    "origin": "docdocdoc.co.kr",
+    "sourceName": "국내 만성질환 관리 정책",
+    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA1SWJibWlLUmpTMzJ5TXliclBEVkV1dGVWTS1RZXNVRmZTcHBaMFFMRjhFMTBjWmlBNkZHblRHdnBEUS12aXY2YU9wYlpQYlhLNHRyTllBdWlyNkU0TEFlVjFoY0ZVQlRzQ0dwZ2tHdWzSAXNBVV95cUxPUDVxNk9SZU90d0xrcXBNSFl0dDRsc3RHU2FaRW5qMkR3S3ZJRXdFdmZpZzVDQ3lEbmx2S040Zko2Q1EydXh1NnJ4N01OQVBDYWIwOTBUZnlyNE52Q1ZMMHQ0QkYyOE9heFJLYmNqQmRGN2g0?oc=5",
+    "date": "2026-10-01",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "질병청, 고혈압·당뇨사업 개편…노인 의료비 지원 ‘건생금’으로 전환",
+    "origin": "의학신문",
+    "sourceName": "국내 만성질환 관리 정책",
+    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1UM0syNFRzaHZQdDlBT3ZrT2hUaUZkbkJyZXpGOXhwbVhkVzJKd2c2a1VRMHNlWENMczJDamp5Uk43aFNVYkVfdWMtNk5FdUozTmpzaEdtN3pxOXVTUUdaUG82Q1c2VW1TRmln?oc=5",
+    "date": "2026-10-01",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "From local innovation to system change – public-sector pathways for scaling community-driven initiatives on noncommunicable diseases",
     "origin": "WHO 발간물",
-    "sourceName": "WHO 발간물: 공중보건·사회적 조치(PHSM)",
-    "link": "https://www.who.int/publications/i/item/who-global-technical-consultation-on-public-health-and-social-measures-during-health-emergencies--report-of-the-third-meeting--geneva--switzerland--24-26-march-2026",
-    "date": "2026-09-25",
+    "sourceName": "WHO 발간물: 만성질환",
+    "link": "https://www.who.int/publications/i/item/9789240124936",
+    "date": "2026-10-01",
     "via": "WHO 공식"
    },
    {
-    "title": "Rates of severe acute respiratory syndrome coronavirus 2 infection in a highly exposed South African blood donor cohort, 2022-2023",
-    "origin": "Vox sanguinis · Vermeulen M, Swanevelder R, Mmenu C, Brits T, Mitchel J, Gre",
-    "sourceName": "논문: 비약물적 중재(NPI)·거리두기 효과",
-    "link": "https://doi.org/10.1111/vox.70368",
-    "date": "2026-09-25",
+    "title": "Causal Associations Between Plasma Metabolites and Stroke Risk Identified by Mendelian Randomization",
+    "origin": "IUBMB life · Ding L, Li Z, Deng F, Fan B, Wu Y, Zhang G, Zeng J, Lu L.",
+    "sourceName": "논문: 심뇌혈관질환·고혈압",
+    "link": "https://doi.org/10.1002/iub.70124",
+    "date": "2026-10-01",
+    "via": "논문 검색"
+   },
+   {
+    "title": "Trends in annual medication possession in older adults with type 2 diabetes",
+    "origin": "Journal of managed care & specialty pharmacy · Dombrowski SK, An J, Lewis M, Hayduk VA, Neugebauer R, O'Con",
+    "sourceName": "논문: 당뇨병·비만·대사질환",
+    "link": "https://doi.org/10.18553/jmcp.2026.32.10.1227",
+    "date": "2026-10-01",
+    "via": "논문 검색"
+   },
+   {
+    "title": "Response to Comment on Meier et al. Different Metabolic Responses to Long-term Weight Loss After Lifestyle Intervention Among Type 2 Diabetes Risk Clusters: Results From the TULIP Study",
+    "origin": "Diabetes · Meier CZ, Birkenfeld AL, Fritsche A, Stefan N.",
+    "sourceName": "논문: 당뇨병·비만·대사질환",
+    "link": "https://doi.org/10.2337/dbi26-0025",
+    "date": "2026-10-01",
+    "via": "논문 검색"
+   },
+   {
+    "title": "Comment on Meier et al. Different Metabolic Responses to Long-term Weight Loss After Lifestyle Intervention Among Type 2 Diabetes Risk Clusters: Results From the TULIP Study",
+    "origin": "Diabetes · Chen J, Zhao Q, Hua Y, Zhao Y.",
+    "sourceName": "논문: 당뇨병·비만·대사질환",
+    "link": "https://doi.org/10.2337/db26-0398",
+    "date": "2026-10-01",
+    "via": "논문 검색"
+   },
+   {
+    "title": "Assessing Levels of Evidence for Cancer Screening: A Focus on Testicular Self-examination",
+    "origin": "Cancer prevention research (Philadelphia, Pa.) · Thomas K, Malvita A, Rovito MJ.",
+    "sourceName": "논문: 암 검진·예방",
+    "link": "https://doi.org/10.1158/1940-6207.capr-26-0125",
+    "date": "2026-10-01",
+    "via": "논문 검색"
+   },
+   {
+    "title": "Healthcare Providers' Strategies to Improve Breast Cancer Screening Among South Asian Women in Victoria",
+    "origin": "Health promotion journal of Australia : official journal of Australian Association of Health Promotion Professionals · Rizvi F, White V, Livingston PM, Bellingham K, McLachlan SA,",
+    "sourceName": "논문: 암 검진·예방",
+    "link": "https://doi.org/10.1002/hpja.70251",
+    "date": "2026-10-01",
     "via": "논문 검색"
    }
   ],
   "climate": [
+   {
+    "title": "Research reveals major impact of climate change on skin health worldwide",
+    "origin": "Medical Xpress",
+    "sourceName": "WHO 기후변화와 건강",
+    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNUTRQSmw4dGZPZC1fUjNtN0lBQkQyYl9PaXV4UXd6dC1OMExXWG1qRjdjQTNkU3FsTzNyaGJSUmtpdW1BQnBiY1dZOVRmUjczbXNDQzduYXZlRTItN1R6V3MxNlMtVXlZd0trc0dVRkdnUGRJTHVRcEFvREU0QU1UY3dyQQ?oc=5",
+    "date": "2026-10-01",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "SCV News | Extreme Heat Warning: High Temperatures Expected Across SCV, County",
+    "origin": "SCVNews.com",
+    "sourceName": "美CDC 폭염 건강(HeatRisk)",
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPRkxGbWY1ZHlqUzFUTHF5c0l3WkdyU29kVGpSSTV5cG1kaEhKS3c3M3lrWndsY2hvQ09BTWJSejgyRWkxYlg4Z3J2YW9MV1I4SVZyc2lJNUxkd0E0UExFdlo0Q2M5T1lvYmhoUmZ6Mm9kNVcyZHBwdlJWV3RmRU9sS3RCcldqUDlBbzUyeEdXcw?oc=5",
+    "date": "2026-10-01",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "Heat deaths in Western Europe top 34,600 during hottest summer on record",
+    "origin": "japantimes.co.jp",
+    "sourceName": "유럽 폭염·기후 매개체 감시",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQNUxFZHNaNWhEWU45R1paSjY2dTVmUjhUWmxBMnRvQXh5RFZJZlVoNnAyOWVGVXpKTTNKYUllMHpTRHlndERuWHhpdjJfeDlrTmpOZWM5bVFjTmVxVnJJX1JTd1Q0V2xCRG9HTUR3WV9PMGhITTJkNWdtUUF5OVZCTUN3ckVPRlNrQW9MbkJzLTA5bk1VRE9kQjNB?oc=5",
+    "date": "2026-10-01",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "'It Got Me Thinking About My Home Environment but Was Also Great Fun': Using Experiential Methods in Public Involvement Workshops on Indoor Air Pollution in Later Life",
+    "origin": "Health expectations : an international journal of public participation in health care and health policy · Liddle J, Spiers GF, Wearn A, Thomson KH.",
+    "sourceName": "논문: 대기질·산불 연기와 건강",
+    "link": "https://doi.org/10.1111/hex.70869",
+    "date": "2026-10-01",
+    "via": "논문 검색"
+   },
+   {
+    "title": "Vegetation Phenology Shifts Under Climate Change: Cross-Season Mechanisms and Consequences for Ecosystem Productivity",
+    "origin": "Global change biology · Liu Z, Wu Z, Zohner CM, Zhang Y, Peñuelas J, Fu YH.",
+    "sourceName": "리뷰 논문 (분야 종합)",
+    "link": "https://doi.org/10.1111/gcb.71112",
+    "date": "2026-10-01",
+    "via": "논문 검색"
+   },
+   {
+    "title": "Adaptation to heat stress by diversification of the vertebrate heat shock transcription factor family",
+    "origin": "Philosophical transactions of the Royal Society of London. Series B, Biological sciences · Takii R, Fujimoto M, Nakai A.",
+    "sourceName": "리뷰 논문 (분야 종합)",
+    "link": "https://doi.org/10.1098/rstb.2025.0274",
+    "date": "2026-10-01",
+    "via": "논문 검색"
+   },
+   {
+    "title": "How behavioural changes can help deal with the health impacts of climate change to achieve SDG 13 (climate action)",
+    "origin": "Applied psychology. Health and well-being · Filho WL, Wolf F.",
+    "sourceName": "리뷰 논문 (분야 종합)",
+    "link": "https://doi.org/10.1111/aphw.70221",
+    "date": "2026-10-01",
+    "via": "논문 검색"
+   },
+   {
+    "title": "Changes in Dengue Epidemiology in China Before, During, and After COVID-19 2015-2024: A Retrospective National Surveillance and Spatiotemporal Study",
+    "origin": "Journal of medical virology · Chen Y, Shang M, Dou S, Wang X, Ji H, Liu Q.",
+    "sourceName": "중국 연구 동향",
+    "link": "https://doi.org/10.1002/jmv.71162",
+    "date": "2026-10-01",
+    "via": "논문 검색"
+   },
    {
     "title": "Public health advocates pitch New Mexico lawmakers on heat, climate change initiatives",
     "origin": "Source New Mexico",
@@ -263,151 +327,87 @@
     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNZ1lxc0xSX1d1YjNMV1VXaWtoZXNMMFdkWHNYVHNrTExnNFVSNUtMekxBckVBTkk5d1hhb25IMjV6NklGQnB0T1JveElCbEFBSmhpQU5ral9rMl95VlFiNl9qNGtoRXpGaUUzcU1qaU1odk11dGF4UDNKTEdUYlRncg?oc=5",
     "date": "2026-09-30",
     "via": "뉴스검색"
-   },
-   {
-    "title": "Mass Heat Wave Deaths in Europe Show Climate Extremes Are Outpacing Adaptation Efforts",
-    "origin": "Inside Climate News",
-    "sourceName": "WHO 기후변화와 건강",
-    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5GLVRNaDk2cGNxZVNKeEdFNzVFMXpxdm4xbklUd3lXbTAxc2wzRFdjbHFLRmhrQVhQZ3A2b0JvbmFMV0pOcmRWSzhHUko3ZEtJdTFvM0kwbVBwMEVSYWpodDFIcjkxeDhSLUNYWlFNbDRIS3NHTnJz?oc=5",
-    "date": "2026-09-30",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "Call for the WHO to declare the climate crisis a public health emergency of international concern",
-    "origin": "Medical Xpress",
-    "sourceName": "WHO 기후변화와 건강",
-    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNNk1nNEJoMGlmSnJOMmJoN0pEOGZaX2VvVTlNRU96bXlkaHpSV01DRHZYcU5pU2RxbjdTVGpCYmdrSEZ1MDg0UUdUYk5qcndlSVNWTk5XV19qSFI0ZTdQY3hJT1kydlVoeElNLUNHNHRuRnI0QmRRT2dZTFo5Z1RfUEJBTEVoeC14cmtF?oc=5",
-    "date": "2026-09-30",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "“한국형 도심항공교통 기상기술, 세계를 선도할 길을 찾다” 국내외 전문가와 발전 방향 논의",
-    "origin": "",
-    "sourceName": "기상청 보도자료 (월별·계절 기후특성)",
-    "link": "https://www.kma.go.kr/kma/news/press_01.jsp?bid=press&mode=view&num=1194748",
-    "date": "2026-09-30",
-    "via": "기관 페이지"
-   },
-   {
-    "title": "Prevention and management of heat-related illness at mass gatherings: developing evidence-based communication messages",
-    "origin": "WHO 발간물",
-    "sourceName": "WHO 발간물: 기후·폭염·대기질",
-    "link": "https://www.who.int/publications/i/item/9789240124257",
-    "date": "2026-09-30",
-    "via": "WHO 공식"
-   },
-   {
-    "title": "Prevention and management of heat-related illness at mass gatherings: considerations for implementation",
-    "origin": "WHO 발간물",
-    "sourceName": "WHO 발간물: 기후·폭염·대기질",
-    "link": "https://www.who.int/publications/i/item/9789240124332",
-    "date": "2026-09-30",
-    "via": "WHO 공식"
-   },
-   {
-    "title": "Prevention and management of heat-related illness at mass gatherings: risk assessment tool",
-    "origin": "WHO 발간물",
-    "sourceName": "WHO 발간물: 기후·폭염·대기질",
-    "link": "https://www.who.int/publications/i/item/B09844",
-    "date": "2026-09-30",
-    "via": "WHO 공식"
-   },
-   {
-    "title": "Prevention and management of heat-related illness at mass gatherings: systematic reviews",
-    "origin": "WHO 발간물",
-    "sourceName": "WHO 발간물: 기후·폭염·대기질",
-    "link": "https://www.who.int/publications/i/item/B09849",
-    "date": "2026-09-30",
-    "via": "WHO 공식"
-   },
-   {
-    "title": "기상청, 태양광·풍력 발전량 예측 돕는 고해상도 일사·바람 예측자료 제공",
-    "origin": "",
-    "sourceName": "기상청 보도자료 (월별·계절 기후특성)",
-    "link": "https://www.kma.go.kr/kma/news/press_01.jsp?bid=press&mode=view&num=1194744",
-    "date": "2026-09-29",
-    "via": "기관 페이지"
    }
   ],
   "injury": [
    {
-    "title": "2026년 제2차 국가손상관리위원회 개최(9.30.수)",
-    "origin": "",
-    "sourceName": "질병관리청 보도자료 (손상·안전)",
-    "link": "https://www.kdca.go.kr/bbs/kdca/42/312801/artclView.do",
-    "date": "2026-09-30",
-    "via": "기관 페이지"
-   },
-   {
-    "title": "급성 심장정지 부르는 ‘나쁜 생활습관 조합’ 따로 있다",
-    "origin": "간호사신문",
+    "title": "출산·심정지 대응은 지역 격차…비만 치료 부담도 커졌다",
+    "origin": "뉴스더보이스헬스케어",
     "sourceName": "질병관리청 보도자료 (급성심장정지)",
-    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA2RGtyWWRKS0pxRWdxV3NTX2Z6QVBNcEd6a2tzSm5pejRlcTAtcTRGYkVIQUdITUFVZV9zMGhoVkt5OE5jeHJod0RnRjByQTljRFNnaVZpMGhWYVZEbzJJY1F3NjhxeVRfTWR3RjBn?oc=5",
-    "date": "2026-09-30",
+    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE93Qk1rUG5XcGlkTHRxV3R2UGV2VkM5NmtkY015TXVpS1hZU1NLeDQ4Q3FmTUJZSEdmb3pjNUFtdTFQbDhLNTQ4eVR5RTlVbjlUTnU2RnBUam4zcDB4YXg0cXBHeEJrX2tjMHNWSVRBWQ?oc=5",
+    "date": "2026-10-01",
     "via": "뉴스검색"
    },
    {
-    "title": "심정지, 지역 따라 CPR 시행률 4배 차이",
-    "origin": "뉴스데일리",
+    "title": "지역 따라 4배 벌어진 심폐소생술 시행률... 생존율 높일 맞춤형 대책 시급 > 뉴스",
+    "origin": "thekorea.kr",
     "sourceName": "질병관리청 보도자료 (급성심장정지)",
-    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9scnRDUUlGbG9sSmhLTU1fS1pGUXlXUnM2bVVCbktKNS13NExzTG0takFrUzJCbldnZmw3MVZ2eGozU1dGQlpieTNMNHlfbVl3ZWRRa2tNdklWcWZENWN5cmNzbi1pMjlDS2pB?oc=5",
-    "date": "2026-09-30",
+    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBmODdOMVdyLU1SWU05a0dENW5fdWEtU085RnFBQktPdDU3aXZzMVp1d2pKSEp1QTdtRlA2TmdUMWFrajZlNU02WFBvZjNDQ0lSMlJIQkVMR01ncFYzaDYwTWVnTWFQbTVnbnN3V2Vma0o?oc=5",
+    "date": "2026-10-01",
     "via": "뉴스검색"
    },
    {
-    "title": "「손상예방과 건강한 사회」 2026년 2호 발간",
-    "origin": "",
-    "sourceName": "질병관리청 「손상예방과 건강한 사회」 (계간)",
-    "link": "https://www.kdca.go.kr/injury/disemg/2026/06/index.html",
-    "date": "2026-09-30",
-    "via": "기관 페이지"
-   },
-   {
-    "title": "「손상예방과 건강한 사회」 2026년 1호 발간",
-    "origin": "",
-    "sourceName": "질병관리청 「손상예방과 건강한 사회」 (계간)",
-    "link": "https://kdca.go.kr/injury/disemg/2026/03/index.html",
-    "date": "2026-09-30",
-    "via": "기관 페이지"
-   },
-   {
-    "title": "안산 상록수보건소, 반월동서 ‘노쇠 예방관리’ 교육 시작",
-    "origin": "매일일보",
-    "sourceName": "어린이·고령자 안전사고 대책 (행정안전부·지자체)",
-    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9LTnVDNHdvTXJ5b1VXTm5kcXp1cVIzUXV2Q1lQQW9IQmRxNUtqVWtUWE4wUVY0SEk0cC1hdFFfbWE1R2lIc3RGS3ZNeXZqYjFwVnp3OGlFblFBVWoyN0drWmxhWjI?oc=5",
-    "date": "2026-09-30",
+    "title": "제주 심정지 CPR 일반인 시행률 37.9% ‘전국 4위’…2년 새 10.5%p 상승",
+    "origin": "제주뉴스",
+    "sourceName": "질병관리청 보도자료 (급성심장정지)",
+    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9ESkVtQmh2N1RFXzJsbmdlUm9EQXlWU0RQbktvRW83NWNfWVhOZVdJUFlTZVlQOTJ3cFRMUFNTaFdQMUQ5alBYazRMdnctUTdiQ3VFNFFPNURFQTFXTUktNDdKMHdqNnhQaGlWZ1pR0gFuQVVfeXFMT0RKRW1CaHY3VEVfMmxuZ2VSb0RBeVZTRFBuS29Fbzc1Y19ZWE5lV0lQWVNlWVA5MndwVExQU1NoV1AxRDlqUFhrNEx2dy1RN2JDdUU0UU81REVBMVdNSS00N0owd2o2eFBoaVZnWlE?oc=5",
+    "date": "2026-10-01",
     "via": "뉴스검색"
    },
    {
-    "title": "안산시 상록수보건소, 65세 이상 어르신 노쇠 예방교육 시작",
-    "origin": "NANOOM ENERGY",
-    "sourceName": "어린이·고령자 안전사고 대책 (행정안전부·지자체)",
-    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE10OTktNERyZ1o2MlVISy01dk5CeTBhQ2I3NlFpLW5zRUhDSnY5WGRRSmhHRXJpRzhfMXJFTHdjYTdiOGpYY01Cc2pKYmJXM1NaNkhsaE80a0ZzcWtTTXVQRTJXZDJrOC1FNGdKRQ?oc=5",
-    "date": "2026-09-30",
+    "title": "심정지 생존 가르는 CPR, 세종 55.1%·충남 23.9%…같은 충청권도 2.3배 격차",
+    "origin": "뉴스홈(newshome)",
+    "sourceName": "질병관리청 보도자료 (급성심장정지)",
+    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE81ellvT254VHpDY3BXT1FhRWhZSWpsLTJjdEZnWU9BSGhweEJ2TjBicEdRU2tELVpjT2JrUVhlZXVKa1NZT1RfOWV5bWMyaDU1TFlNNHVrQzkxdVhPUkIwbjhLRG1DVUVPT19lU2l3?oc=5",
+    "date": "2026-10-01",
     "via": "뉴스검색"
    },
    {
-    "title": "Baby Product Recalls Parents Should Know About in 2026",
-    "origin": "Consumer Reports",
-    "sourceName": "Safe Kids Worldwide (어린이 안전)",
-    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNa3BNaDdCT21pWjV0Tzhhbk1TSmF5SW1TcVZWaEhHZWtVZUkyc3Q5UWdZMDF3Y05kSHlhLWpVWW45LTZrQWdBbUgxUHlYMk9VSS1ERDF4Z0xyOWZyOW5UZ25hdlVtMzc3OXlja05DaVZNZXh1TGZITjBSdXVUc0l0U2E5b2FlS3FRZ3htSUFzVHFrbkpEQ0FQTmEzT0YyU051dFRyckJ4WkZlTFZCYWlSaWMxOHlqOTRDcDUyWXN3M1VONmNBenFKbVJGM0NmNzc3ZXc?oc=5",
-    "date": "2026-09-30",
+    "title": "소병훈 의원, 심정지 CPR 시행률 지역 따라 4배 차이",
+    "origin": "newspeak.kr",
+    "sourceName": "질병관리청 보도자료 (급성심장정지)",
+    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9YUmRrLVh3NXJSekhSLXN1dGxKMVU4ZTNodGZRTDJiMzRNX29uazJKb1JmQzFiRU85aWJSdXNydWhIOV9vNWRtSWNSbzVHUGZ5N3hkTmlxbnpNQUNTUGN1aWtFUzVabl9P?oc=5",
+    "date": "2026-10-01",
     "via": "뉴스검색"
    },
    {
-    "title": "소방청, 현장의 목소리 제도개선으로 잇는다",
-    "origin": "go.seoul.co.kr",
-    "sourceName": "소방청 119구급·구조 통계",
-    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE05WFRuVEE2TWF3cGhMd3dDOGJVR1MwcUp2c1NiNkVwdnR5MW5GMXltSFFtNnZFSUpDT3J2dnpMdldnTmx3bVdMZGMtTE1PT0wzNDF4R1BzWlJ4US0yazNaMFNn?oc=5",
-    "date": "2026-09-29",
+    "title": "응급의료체계 혁신안 권고...'응급실 뺑뺑이'막는다",
+    "origin": "이로운넷",
+    "sourceName": "중앙응급의료센터 응급의료 통계 (NEDIS·e-MEDIS)",
+    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5UelVVLVA3NWNPYVU0ckZFNERtWndoTEVvc1hzNUxIMnhvRmlPdG5CMXZwR0FXZmFiQ0pVZ1JJeTJPSDhDdTUwNE14OTN0T2R4QzhidHUyd1VvbklFZVdVUVNZYWFKdw?oc=5",
+    "date": "2026-10-01",
     "via": "뉴스검색"
    },
    {
-    "title": "안산시 상록수보건소, 어르신 '생활터 중심 노쇠 예방관리' 시범 운영",
-    "origin": "경기in",
-    "sourceName": "어린이·고령자 안전사고 대책 (행정안전부·지자체)",
-    "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTFBtbkZXNnhsQ2dnNkZBSHJqeGZHWXBwNWtDQ3VhVFZTc1EzQUMxYTA3LThXWnBvN0tZcGZ1NWUwVC1QT2M?oc=5",
-    "date": "2026-09-29",
+    "title": "소비자원 \"에스컬레이터 끼임 사고 주의보 발령, 7세 이하가 가장 많아\"",
+    "origin": "MBC 뉴스",
+    "sourceName": "한국소비자원 위해정보 (CISS)",
+    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE43dEJtTDdncEJUSTJDQUVpekR5ejh5bF9xeHU4LUVITmxUMXZNMFo2U2VLUGFkUUp2ZkQxcDFXZ1BfN0hJem5XMkVYQm9leFU4U1lGN09SVmdWWDBzaThfMFQ2c0NTS3c0TjNTTWhkRDRrZ3Bv0gF0QVVfeXFMTktYTDE1aEd2aS1jbmdua2dtNHdXUDRzanZvT3AwbUpzRlM3Q24yWGpETXpZMU1EWUgzRDQ2UUN5ZlFMWjNCcTA3X2hGTi16RmlCNGFDV245bEJIeVBVZDFYOUpRTzNUWWRPTWtocF9iQmdCVGE?oc=5",
+    "date": "2026-10-01",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "소비자원 \"에스컬레이터 끼임사고 주의…절반이 영유아·고령자\"",
+    "origin": "v.daum.net",
+    "sourceName": "한국소비자원 위해정보 (CISS)",
+    "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9PR0VOTUF2WW5TYV81bkE4cklNUFFFMzBYeXBSNXh5U3RMRmE2d0dzdklrYmM5T0U4eE9jMDRHZkRDY05uQ3Z3a1FkbHNxRE0?oc=5",
+    "date": "2026-10-01",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "소비자원, 에스컬레이터·무빙워크 끼임 사고 주의보…영유아·고령자 사고 집중",
+    "origin": "nsenior.co.kr",
+    "sourceName": "한국소비자원 위해정보 (CISS)",
+    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9xQnRaYjBCYUMzQlB5Mk9kU0pheDdud1J5dFR2Nld1V0ROcVllUjVBTHMzdFo2RzNnTkM1RmpqUHVhaHlFU1R5cjJzbnRIaFMxTWpKXzEzQlM3MXMwRElqOUpLNA?oc=5",
+    "date": "2026-10-01",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "보건복지부, '목숨을 살리는 정부' 국정목표 위해 복지급여 신청주의, 응급환자 이송체계, 자살예방 제도 등 개선",
+    "origin": "정안뉴스",
+    "sourceName": "자살·자해 예방 통계 (보건복지부·한국생명존중희망재단)",
+    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1vam80OEJFN2xLMzBKLWpNQms2Y2ZPY19RQnF3U0JHdi1lcURJYnc3U1E2Vm0yclc0T19NUnhZWWxiMkhJM3Y3Ulh1RHNGTXhyQzMwYlpORThwOTM2c21iT0xsRVc?oc=5",
+    "date": "2026-10-01",
     "via": "뉴스검색"
    }
   ]
