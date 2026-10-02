@@ -19,7 +19,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:c5f91c89a8bf52a8@bbangcal.epibrief.github.io
-DTSTAMP:20261002T011538Z
+DTSTAMP:20261002T160444Z
 DTSTART;TZID=Asia/Seoul:20260807T130000
 DTEND;TZID=Asia/Seoul:20260807T170000
 SUMMARY:[국민건강보험공단·한국보건사회연구원] 2026년
@@ -34,7 +34,7 @@ URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
 END:VEVENT
 BEGIN:VEVENT
 UID:9ff89e7ff7d157b7@bbangcal.epibrief.github.io
-DTSTAMP:20261002T011538Z
+DTSTAMP:20261002T160444Z
 DTSTART;TZID=Asia/Seoul:20260903T130000
 DTEND;TZID=Asia/Seoul:20260903T180000
 SUMMARY:[국민건강보험공단·한국보건사회연구원] 2026년
@@ -46,19 +46,5 @@ DESCRIPTION:주최: 국민건강보험공단·한국보건사회연구
  github.io/bbang-calender/
 URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
  %B4/?mod=document&pageid=2&uid=5723
-END:VEVENT
-BEGIN:VEVENT
-UID:793b9d7ef6cfed83@bbangcal.epibrief.github.io
-DTSTAMP:20261002T011538Z
-DTSTART;TZID=Asia/Seoul:20260930T140000
-DTEND;TZID=Asia/Seoul:20260930T170000
-SUMMARY:[한국보건사회연구원] 제4차 지역사회 통합돌봄
-  포럼 개최 안내
-LOCATION:비앤디파트너스 서울역점 10호 회의실 (서울 용
- 산구 한강대로 372 KDB생명타워 B2)
-DESCRIPTION:주최: 한국보건사회연구원\n원문: https://www.ks
- hpa.org/bbs/notice2/1547\n빵캘: https://epibrief.github.io/bbang-cale
- nder/
-URL:https://www.kshpa.org/bbs/notice2/1547
 END:VEVENT
 END:VCALENDAR
