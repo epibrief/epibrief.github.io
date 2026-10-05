@@ -203,6 +203,108 @@
   vertical-align:-.08em; margin-left:.45em;
 }
 .sec li sup{ font-size:.68em; color:var(--accent); font-weight:700; padding-left:1px; }
+.sec li sup.fn a{ color:inherit; text-decoration:none; }
+.sec li sup.fn a:hover{ text-decoration:underline; }
+.sec li sup.fn a + a::before{ content:"]["; color:var(--accent); }
+/* 하위 항목 — 앞 항목을 풀어 쓰는 줄 */
+.sec li.sub{
+  padding-left:32px; margin-bottom:9px; font-size:.95rem; line-height:1.68; color:var(--ink-2);
+}
+.sec li.sub::before{
+  left:17px; top:.8em; width:6px; height:1px; border-radius:0; background:var(--line-2);
+}
+.sec li.sub + li:not(.sub):not(.note){ margin-top:16px; }
+/* 주석 — 해석할 때 걸리는 단서 */
+.sec li.note{
+  padding:9px 12px 9px 13px; margin:10px 0 16px; font-size:.9rem; line-height:1.66;
+  color:var(--muted); background:#f7f9fb; border-left:2px solid var(--line-2);
+}
+.sec li.note::before{ display:none; }
+
+/* 꼭지 머리 핵심 상자 — 본문을 다 읽지 않아도 뜻이 통하게 */
+.keybox{
+  margin:14px 0 4px; background:#f4f7fb; border:1px solid var(--line);
+  border-left:3px solid var(--brand); padding:14px 16px 4px;
+}
+.keybox h5{
+  margin:0 0 9px; font-size:.78rem; font-weight:800; letter-spacing:.04em; color:var(--brand);
+}
+.keybox ul{ margin:0; padding:0; list-style:none; }
+.keybox li{
+  position:relative; padding-left:15px; margin-bottom:9px; font-size:.97rem; line-height:1.7;
+  color:var(--ink-2); word-break:keep-all;
+}
+.keybox li::before{
+  content:""; position:absolute; left:0; top:.66em; width:5px; height:5px; border-radius:50%;
+  background:var(--brand); opacity:.55;
+}
+.keybox li b.num{ color:var(--accent); font-weight:700; }
+.keybox li sup{ font-size:.68em; color:var(--accent); font-weight:700; }
+.keybox li sup a{ color:inherit; text-decoration:none; }
+
+/* 요약 — 바쁜 분은 이 한 쪽만 읽어도 되게 */
+.digest{ margin:26px 0 6px; border:1px solid var(--line); border-top:3px solid var(--brand); padding:20px 20px 6px; }
+.digest > h3{
+  margin:0; font-size:1.18rem; font-weight:800; color:var(--brand); letter-spacing:-.01em;
+}
+.digest .dg-help{ margin:4px 0 16px; font-size:.84rem; color:var(--muted); }
+.dg-item{ border-top:1px solid var(--line-2); padding-top:14px; margin-bottom:16px; }
+.dg-item:first-of-type{ border-top:0; padding-top:0; }
+.dg-item h4{ margin:0 0 6px; font-size:1.06rem; line-height:1.5; }
+.dg-item h4 a{ color:var(--brand); text-decoration:none; font-weight:800; word-break:keep-all; }
+.dg-item h4 a:hover{ text-decoration:underline; text-underline-offset:3px; }
+.dg-no{
+  display:inline-block; min-width:1.45em; margin-right:7px; text-align:center;
+  font-size:.82rem; font-weight:800; color:#fff; background:var(--brand); border-radius:3px;
+  padding:1px 0; vertical-align:.12em;
+}
+.dg-en{ display:block; margin:2px 0 0 0; font-size:.78rem; font-weight:500; color:var(--muted); }
+.dg-lead{
+  margin:0 0 9px; font-size:1.02rem; font-weight:700; line-height:1.65; color:var(--ink);
+  word-break:keep-all;
+}
+.dg-item ul{ margin:0; padding:0; list-style:none; }
+.dg-item li{
+  position:relative; padding-left:15px; margin-bottom:8px; font-size:.95rem; line-height:1.7;
+  color:var(--ink-2); word-break:keep-all;
+}
+.dg-item li::before{
+  content:""; position:absolute; left:0; top:.68em; width:4px; height:4px; border-radius:50%;
+  background:var(--accent);
+}
+.dg-item li b.num{ color:var(--accent); font-weight:700; }
+.dg-item li sup{ font-size:.68em; color:var(--accent); font-weight:700; }
+.dg-item li sup a{ color:inherit; text-decoration:none; }
+
+/* 자료표 — 수치는 문장에 녹이지 말고 표로 */
+.dtable{ margin:16px 0 6px; }
+.dtable figcaption{
+  font-size:.88rem; font-weight:800; color:var(--brand); margin-bottom:7px; word-break:keep-all;
+}
+.dt-scroll{ overflow-x:auto; -webkit-overflow-scrolling:touch; }
+.dtable table{ width:100%; border-collapse:collapse; font-size:.9rem; min-width:420px; }
+.dtable th, .dtable td{
+  border:1px solid var(--line); padding:8px 10px; text-align:left; line-height:1.6;
+  word-break:keep-all; vertical-align:top;
+}
+.dtable thead th{
+  background:var(--brand); color:#fff; font-weight:700; font-size:.86rem; white-space:nowrap;
+}
+.dtable tbody tr:nth-child(even) td{ background:#f7f9fb; }
+.dtable td.n{ text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap; }
+.dt-note{ font-size:.78rem; color:var(--muted); margin-top:7px; line-height:1.6; }
+
+/* 출처 목록 — 인쇄본에도 그대로 남는다 */
+.reflist{ margin-top:20px; border-top:1px dashed var(--line); padding-top:12px; }
+.reflist h5{
+  margin:0 0 7px; font-size:.78rem; font-weight:800; letter-spacing:.04em; color:var(--muted);
+}
+.reflist ol{ margin:0; padding-left:20px; }
+.reflist li{
+  font-size:.82rem; line-height:1.65; color:var(--muted); margin-bottom:5px; word-break:break-word;
+}
+.reflist li:target{ background:var(--accent-soft); }
+.reflist a{ white-space:nowrap; font-weight:700; }
 
 /* 출처 */
 /* 연구 동향 그래프 */
@@ -217,6 +319,9 @@
 .chart .xl{ font-size:9px; fill:var(--muted); text-anchor:middle; font-family:var(--sans); }
 .chart .vl{ font-size:10px; font-weight:700; fill:var(--ink); text-anchor:middle;
   font-family:var(--sans); font-variant-numeric:tabular-nums; }
+.chart svg.hbar{ height:auto; }
+.chart .yl{ font-size:9px; fill:var(--ink-2); text-anchor:end; font-family:var(--sans); font-weight:700; }
+.chart .vr{ font-size:9px; fill:var(--ink); text-anchor:start; font-family:var(--sans); font-weight:700; }
 .chart .cnote{ font-size:.78rem; color:var(--muted); margin-top:8px; line-height:1.5; }
 .chart .cdata{ position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); }
 @media print{ .chart{ break-inside:avoid; } }
@@ -398,6 +503,17 @@
   .topic h2{ font-size:1.28rem; line-height:1.38; }
   .topic-head{ grid-template-columns:auto minmax(0,1fr); }
   .topic-head .tag, .topic-head .ev{ font-size:.72rem; padding:2px 7px; margin-top:2px; }
+  .digest{ padding:16px 14px 4px; }
+  .digest > h3{ font-size:1.08rem; }
+  .dg-item h4{ font-size:1rem; }
+  .dg-lead{ font-size:.98rem; }
+  .dg-item li, .keybox li{ font-size:.94rem; }
+  .keybox{ padding:13px 14px 4px; }
+  .sec li.sub{ padding-left:28px; font-size:.93rem; }
+  .sec li.sub::before{ left:15px; }
+  .dtable table{ font-size:.84rem; min-width:360px; }
+  .dtable th, .dtable td{ padding:7px 8px; }
+  .reflist li{ font-size:.78rem; }
 }
 
 /* ── 인쇄 ───────────────────────────────────────────── */
@@ -424,8 +540,29 @@
   .refs{ display:block !important; }
   .refs ol{ display:block !important; }
   .refs summary::before, .refs[open] summary::before{ content:""; }
-  @page{ size:A4; margin:15mm 14mm; }
+  /* 요약·핵심 상자·표는 쪽을 넘어 잘리지 않게 */
+  .digest{ break-inside:auto; background:#fff !important; }
+  .dg-item, .keybox, .dtable, .chart, .profile, .reflist{ break-inside:avoid; }
+  .keybox{ background:#f4f7fb !important; }
+  .sec li.note{ background:#f7f9fb !important; }
+  .dtable thead th{ background:var(--brand) !important; color:#fff !important; }
+  .dtable tbody tr:nth-child(even) td{ background:#f7f9fb !important; }
+  .dt-scroll{ overflow:visible !important; }
+  .dtable table{ min-width:0 !important; }
+  .sec li.sub{ margin-bottom:6px; }
+  /* 각주 번호는 종이에서 링크가 아니라 번호로만 읽힌다 */
+  .sec li sup.fn a, .keybox li sup a, .dg-item li sup a{ text-decoration:none !important; }
+  /* 종이로 넘길 때 지금 보는 것이 무엇인지 쪽마다 알려 준다 */
+  .printhead{
+    display:block !important; position:fixed; top:-9mm; left:0; right:0;
+    font-size:8.5pt; color:#6b7480; border-bottom:.5pt solid #dde2e9; padding-bottom:2mm;
+  }
+  .printhead .ph-r{ float:right; }
+  @page{ size:A4; margin:22mm 14mm 15mm; }
 }
+
+/* 인쇄 쪽머리 — 화면에서는 숨고 종이에서만 쪽마다 반복된다 */
+.printhead{ display:none; }
 
 /* 제작 크레딧 — 모든 화면 맨 아래 공용. 문구는 site-config.json 의 credit 한 곳에서 관리한다 */
 .site-credit{ margin:28px 0 18px; padding:0 16px; text-align:center; font-size:.76rem; line-height:1.6;

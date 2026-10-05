@@ -1669,7 +1669,12 @@ ${src}
 아래 JSON 형식으로만 답하세요. 설명·인사말 없이 JSON만.
 headline 은 이 꼭지를 3초 안에 파악할 수 있는 한 문장(40자 안팎)입니다.
 tag 는 자료 성격으로 경보·정책·연구·통계 중 하나만 고르세요.
-{"nameEn":"영문 표기","headline":"한 문장 요지","tag":"연구","summary":["요약 2~4줄"],"situation":["${K.secs[0]} 3~6개"],"assess":["${K.secs[1]} 2~4개"],"korea":["${K.secs[2]} 2~4개"]}`;
+summary 는 본문을 읽지 않아도 뜻이 통하는 완결된 문장 2~3개입니다. 핵심 수치를 반드시 넣으세요.
+불릿은 세 가지 층으로 적을 수 있습니다.
+- 보통 항목: 그냥 쓰고, 앞머리에 '규모 :: ' 처럼 키워드를 붙이면 굵게 표시됩니다.
+- 하위 항목: 문장 앞에 '- ' 를 붙이면 바로 위 항목을 풀어 쓰는 줄로 들여써집니다.
+- 주석: 문장 앞에 '※ ' 를 붙이면 해석할 때 걸리는 단서로 따로 표시됩니다. 분모·보고 범위·비교 불가 사유를 여기에 적으세요.
+{"nameEn":"영문 표기","headline":"한 문장 요지","tag":"연구","summary":["핵심 문장 2~3개"],"situation":["${K.secs[0]} 3~6개"],"assess":["${K.secs[1]} 2~4개"],"korea":["${K.secs[2]} 2~4개"]}`;
 
   const r = await fetch('https://api.anthropic.com/v1/messages', {
     method: 'POST',
@@ -1781,14 +1786,33 @@ const TIPS_HTML = `<aside class="tips"><h4>이 뉴스레터를 정책에 쓰실 
   TIPS.map(([h, w]) => `<li><b>${esc(h)}</b><span class="why">${esc(w)}</span></li>`).join('')}</ol></aside>`;
 
 /* 숫자는 굵게, [1] 같은 근거 번호는 위첨자로 — 눈으로 빨리 짚이도록 */
-const NUMRE = /(\d[\d,\.]*\s?(?:배|명|건|개|%|℃|년|주|일|시간|개국|만 명|억|달러|쌍)|\d{1,3}(?:,\d{3})+)/g;
-function mark(text){
-  let t = esc(text);
+const NUMRE = /(\d[\d,\.]*\s?(?:배|명|건|곳|개|%|%p|℃|주|시간|개국|만 명|억|달러|쌍)|\d{1,3}(?:,\d{3})+)/g;
+/* 날짜·연도·호수는 강조하지 않습니다. 눈에 띄어야 할 것은 규모와 비율이지 달력이 아닙니다. */
+const DATERE = /(?:\d{4}년(?:\s?\d{1,2}월)?(?:\s?\d{1,2}일)?|\d{1,2}월\s?\d{1,2}일|\d{1,2}월|\d{4}\.\s?\d{1,2}\.\s?\d{1,2}\.?|\d{1,2}\.\d{1,2}\.|\d{4}~\d{4}년?|제\s?\d+호)/g;
+/* 'ti' 를 주면 각주 [1] 이 그 꼭지의 출처 목록으로 이어집니다. */
+function mark(text, ti){
+  let raw = String(text == null ? '' : text), lead = '';
+  const cut = raw.indexOf(' :: ');
+  if (cut > -1){ lead = `<b class="lead">${esc(raw.slice(0, cut).trim())}</b>`; raw = raw.slice(cut + 4); }
+  let t = esc(raw);
+  const held = [];
+  t = t.replace(DATERE, m => { held.push(m); return '\u0000' + (held.length - 1) + '\u0000'; });
   t = t.replace(NUMRE, '<b class="num">$1</b>');
-  t = t.replace(/\[(\d+(?:\]\[\d+)*)\]/g, '<sup>[$1]</sup>');
-  return t;
+  t = t.replace(/\u0000(\d+)\u0000/g, (_, i) => held[+i]);
+  t = t.replace(/\[(\d+(?:\]\[\d+)*)\]/g, (m0, g1) => {
+    if (ti == null) return `<sup>[${g1}]</sup>`;
+    const links = (g1.match(/\d+/g) || []).map(n => `<a href="#r${ti}-${n}">${n}</a>`).join('');
+    return `<sup class="fn">[${links}]</sup>`;
+  });
+  return lead + t;
 }
-const ul = arr => '<ul>' + (arr || []).map(x => `<li>${mark(x)}</li>`).join('') + '</ul>';
+/* 불릿 층위 — '- ' 로 시작하면 하위 항목, '※'·'* ' 로 시작하면 주석입니다. */
+const ul = (arr, ti) => '<ul>' + (arr || []).map(x => {
+  let raw = String(x == null ? '' : x), cls = '';
+  if (raw.startsWith('- ')){ cls = ' class="sub"'; raw = raw.slice(2); }
+  else if (raw.startsWith('※') || raw.startsWith('* ')) cls = ' class="note"';
+  return `<li${cls}>${mark(raw, ti)}</li>`;
+}).join('') + '</ul>';
 /* 이 자료가 기관 발표인지, 언론 보도인지, 논문인지 — 출처 표기와 배지에 씁니다. */
 function viaOf(it){
   const v = it.via || ((FEED.status || []).find(x => x.id === it.sourceId) || {}).via || '';
@@ -1803,13 +1827,49 @@ function splitRef(r){
   return i < 0 ? [r, ''] : [r.slice(0, i), r.slice(i + 3).trim()];
 }
 const safeUrl = u => /^https?:\/\//i.test(u || '') ? u : '';
-const refsBlock = refs => {
-  const items = (refs || []).map(r => {
+const refsBlock = (refs, ti) => {
+  const items = (refs || []).map((r, n) => {
     const [head, link0] = splitRef(r); const link = safeUrl(link0);
-    return `<li>${esc(head)}${link ? ` <a href="${esc(link)}" target="_blank" rel="noopener">원문</a>` : ''}</li>`;
+    const id = ti == null ? '' : ` id="r${ti}-${n + 1}"`;
+    return `<li${id}>${esc(head)}${link ? ` <a href="${esc(link)}" target="_blank" rel="noopener">원문</a>` : ''}</li>`;
   });
-  return `<details class="refs"><summary>출처 ${items.length}건</summary><ol>${items.join('')}</ol></details>`;
+  if (!items.length) return '';
+  return `<div class="reflist"><h5>출처 ${items.length}건</h5><ol>${items.join('')}</ol></div>`;
 };
+
+/* 꼭지 맨 앞의 핵심 상자 — 본문을 다 읽지 않아도 뜻이 통해야 합니다. */
+const keybox = (t, ti) => (t.summary || []).length
+  ? `<div class="keybox"><h5>핵심</h5>${ul(t.summary, ti)}</div>` : '';
+
+/* 요약 — 바쁜 분은 이 한 쪽만 읽어도 되게 꼭지 핵심을 앞에 모읍니다. */
+function digestBlock(topics){
+  const has = (topics || []).some(t => (t.summary || []).length);
+  if (!has) return '';
+  const blocks = (topics || []).map((t, i) => {
+    if (!(t.summary || []).length) return '';
+    const n = i + 1;
+    return `<section class="dg-item">
+      <h4><a href="#t${n}"><span class="dg-no">${n}</span>${esc(t.name)}${t.en ? `<span class="dg-en">${esc(t.en)}</span>` : ''}</a></h4>
+      ${t.headline ? `<p class="dg-lead">${mark(t.headline, n)}</p>` : ''}
+      ${ul(t.summary, n)}</section>`;
+  }).join('');
+  return `<section class="digest" id="digest"><h3>요약</h3>
+    <p class="dg-help">각 꼭지의 핵심만 모았습니다. 제목을 누르면 본문으로 갑니다.</p>${blocks}</section>`;
+}
+
+/* 번호 붙은 자료표 — 수치는 문장에 녹이지 말고 표로 두어야 옮겨 쓰기 쉽습니다. */
+const dataTables = (t, ti) => (t.tables || []).map((tb, n) => {
+  const head = (tb.head || []).map(h => `<th>${esc(h)}</th>`).join('');
+  const body = (tb.rows || []).map(row => `<tr>${row.map(c => {
+    const txt = String(c == null ? '' : c);
+    const n = /^[\d,\.]+\s?(?:명|건|%|%p|곳|개)?$/.test(txt.trim()) ? ' class="n"' : '';
+    return `<td${n}>${esc(txt).replace(/\[(\d+(?:\]\[\d+)*)\]/g, '<sup>[$1]</sup>')}</td>`;
+  }).join('')}</tr>`).join('');
+  const foot = [tb.source ? '출처 ' + esc(tb.source) : '', tb.note ? esc(tb.note) : ''].filter(Boolean).join(' · ');
+  return `<figure class="dtable"><figcaption>표 ${ti}-${n + 1}. ${esc(tb.title || '')}</figcaption>
+    <div class="dt-scroll"><table><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table></div>
+    ${foot ? `<div class="dt-note">${foot}</div>` : ''}</figure>`;
+}).join('');
 
 let PAPER_SNAP = '';                       // 미리보기를 그린 직후 모습 — 직접 고쳤는지 비교용
 const paperEdited = () => !!S.draft && $('#paper').innerHTML !== PAPER_SNAP;
@@ -1853,10 +1913,12 @@ function renderPaper(){
       </div>
       ${(t.sources || []).length ? `<div class="topic-src">출처 <b>${esc((t.sources || []).join(' · '))}</b></div>` : ''}
       ${t.headline ? `<p class="topic-lead" contenteditable="true">${esc(t.headline)}</p>` : ''}
-      <div class="sec"><h4>${esc(K.secs[0])}</h4><div contenteditable="true">${ul(t.situation)}</div></div>
-      <div class="sec"><h4>${esc(K.secs[1])}</h4><div contenteditable="true">${ul(t.assess)}</div></div>
-      <div class="sec"><h4>${esc(K.secs[2])}</h4><div contenteditable="true">${ul(t.korea)}</div></div>
-      ${refsBlock(t.refs)}
+      ${keybox(t, i+1)}
+      <div class="sec"><h4>${esc(K.secs[0])}</h4><div contenteditable="true">${ul(t.situation, i+1)}</div></div>
+      ${dataTables(t, i+1)}
+      <div class="sec"><h4>${esc(K.secs[1])}</h4><div contenteditable="true">${ul(t.assess, i+1)}</div></div>
+      <div class="sec"><h4>${esc(K.secs[2])}</h4><div contenteditable="true">${ul(t.korea, i+1)}</div></div>
+      ${refsBlock(t.refs, i+1)}
     </section>`).join('');
 
   const sub = m.subUrl ? `<aside class="subscribe">
@@ -1869,6 +1931,7 @@ function renderPaper(){
     </aside>` : '';
 
   p.innerHTML = `
+  <div class="printhead" aria-hidden="true">${esc((KINDS[S.kind] || {}).title || '')}<span class="ph-r">${esc(m.issue || '')}</span></div>
   <header class="nl-head">
     <div class="nl-topline">
       <span>${esc((KINDS[S.kind] || {}).title || '')}</span>
@@ -1891,6 +1954,7 @@ function renderPaper(){
     ${stats}
     ${issues}
   </div>
+  ${digestBlock(d.topics)}
   ${d.explainer ? `<aside class="explainer">
       <h4>${esc(d.explainer.title || '')}</h4>
       ${(d.explainer.body || []).map(b => `<p>${esc(b)}</p>`).join('')}
