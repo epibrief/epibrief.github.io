@@ -205,7 +205,10 @@
 .sec li sup{ font-size:.68em; color:var(--accent); font-weight:700; padding-left:1px; }
 .sec li sup.fn a{ color:inherit; text-decoration:none; }
 .sec li sup.fn a:hover{ text-decoration:underline; }
-.sec li sup.fn a + a::before{ content:"]["; color:var(--accent); }
+.sec li sup.fn a + a::before, .keybox li sup a + a::before, .dg-item li sup a + a::before,
+.dtable sup a + a::before{ content:"]["; color:var(--accent); }
+.keybox li sup a, .dg-item li sup a{ color:inherit; text-decoration:none; }
+.keybox li sup a:hover, .dg-item li sup a:hover{ text-decoration:underline; }
 /* 하위 항목 — 앞 항목을 풀어 쓰는 줄 */
 .sec li.sub{
   padding-left:32px; margin-bottom:9px; font-size:.95rem; line-height:1.68; color:var(--ink-2);
