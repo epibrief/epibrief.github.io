@@ -1922,9 +1922,11 @@ function renderPaper(){
       <div class="topic-head">
         <span class="topic-no">${i+1}</span>
         <h2 contenteditable="true">${esc(t.name)} <span class="en">${esc(t.en || '')}</span></h2>
-        ${(t.urgency || t.impact) ? `<span class="judge">
+        ${(t.urgency || t.impact || t.scope === '국내') ? `<span class="judge">
            ${t.urgency ? `<span class="u u-${esc(t.urgency)}">${esc(t.urgency)}</span>` : ''}
-           ${t.impact ? `<span class="im im-${esc(t.impact)}">국내 영향 ${esc(t.impact)}</span>` : ''}</span>` : ''}
+           ${t.scope === '국내'
+              ? `<span class="im im-home" title="국내 기관·조사 자료를 다룬 꼭지입니다">국내 자료</span>`
+              : (t.impact ? `<span class="im im-${esc(t.impact)}">국내 영향 ${esc(t.impact)}</span>` : '')}</span>` : ''}
         ${t.tag ? `<span class="tag tag-${esc(t.tag)}">${esc(t.tag)}</span>` : ''}
       </div>
       ${(t.sources || []).length ? `<div class="topic-src">출처 <b>${esc((t.sources || []).join(' · '))}</b></div>` : ''}

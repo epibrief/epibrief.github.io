@@ -348,7 +348,6 @@
         "en": "Heat-related illness in Korea: fewer cases, more deaths",
         "tag": "경보",
         "urgency": "즉시조치",
-        "impact": "상",
         "evidence": "weak",
         "headline": "추정 사망 36명으로 2018년에 이어 역대 두 번째. 환자 수가 줄었는데 사망이 늘었습니다.",
         "sources": [
@@ -449,14 +448,14 @@
           "언론 보도",
           "감시자료 인용",
           "2026년 여름"
-        ]
+        ],
+        "scope": "국내"
       },
       {
         "name": "9월 평균기온 21.7℃, 강수량은 역대 두 번째로 적었다",
         "en": "September 2026 climate characteristics, Republic of Korea",
         "tag": "통계",
         "urgency": "이번분기",
-        "impact": "중",
         "evidence": "mid",
         "headline": "2020년대 들어 여섯 해 연속 9월이 평년보다 더웠습니다. 비는 평년의 17%였습니다.",
         "sources": [
@@ -639,7 +638,8 @@
             "k": "보건과의 연결",
             "v": "온열질환 응급실감시체계 운영 기간, 폭염 대책 기간, 취약계층 안부 확인 기간의 근거 자료"
           }
-        ]
+        ],
+        "scope": "국내"
       }
     ]
   },

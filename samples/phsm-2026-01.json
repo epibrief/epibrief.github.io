@@ -343,7 +343,6 @@
         "en": "Advancing the influenza vaccination schedule, Republic of Korea",
         "tag": "정책",
         "urgency": "즉시조치",
-        "impact": "상",
         "evidence": "weak",
         "headline": "학령기에서 먼저 번졌고 입원은 어르신에 몰렸습니다. 백신은 작년보다 400만 도즈 적습니다.",
         "sources": [
@@ -516,14 +515,14 @@
             "k": "접종 후 주의",
             "v": "20~30분간 접종기관에 머물러 이상반응 관찰"
           }
-        ]
+        ],
+        "scope": "국내"
       },
       {
         "name": "학교를 멈추지 않는 방역",
         "en": "Keeping schools open: school-based preparedness",
         "tag": "정책",
         "urgency": "이번분기",
-        "impact": "중",
         "evidence": "weak",
         "headline": "학교 방역의 목표가 ‘차단’에서 ‘교육 활동의 연속성’으로 옮겨가고 있습니다.",
         "sources": [
@@ -621,7 +620,8 @@
             "k": "기록의 중요성",
             "v": "끝난 뒤 되짚는 연구는 당시 기록이 있어야 가능. 조치 시점·범위·근거를 남겨 둘 것"
           }
-        ]
+        ],
+        "scope": "국내"
       }
     ]
   },

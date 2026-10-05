@@ -152,11 +152,17 @@ EV = {   # 근거 강도 — 짧은 라벨로 두고 자세한 설명은 title �
 }
 
 def judge_badges(t):
+    """긴급도와 국내 영향도. 국내 자료를 다룬 꼭지에는 '국내 영향'을 붙이지 않는다 —
+    국내 자료에 국내 영향도를 매기는 것은 같은 말을 두 번 하는 셈이다. 대신 '국내 자료'로 표시한다."""
     u, im = t.get("urgency"), t.get("impact")
-    if not u and not im: return ""
+    home = t.get("scope") == "국내"
+    if not u and not im and not home: return ""
     parts = []
-    if u:  parts.append(f'<span class="u u-{e(u)}" title="긴급도">{e(u)}</span>')
-    if im: parts.append(f'<span class="im im-{e(im)}" title="국내 영향도">국내 영향 {e(im)}</span>')
+    if u: parts.append(f'<span class="u u-{e(u)}" title="긴급도">{e(u)}</span>')
+    if home:
+        parts.append('<span class="im im-home" title="국내 기관·조사 자료를 다룬 꼭지입니다">국내 자료</span>')
+    elif im:
+        parts.append(f'<span class="im im-{e(im)}" title="국내 영향도">국내 영향 {e(im)}</span>')
     return '<span class="judge">' + "".join(parts) + "</span>"
 
 def evidence_badge(t):

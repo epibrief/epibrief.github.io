@@ -77,7 +77,6 @@
         "en": "Self-harm and suicide attempts among children and adolescents",
         "tag": "경보",
         "urgency": "즉시조치",
-        "impact": "상",
         "evidence": "weak",
         "headline": "10년 새 약 6.5배입니다. 증가폭이 이 정도면 ‘추세’가 아니라 ‘사건’으로 다뤄야 합니다.",
         "sources": [
@@ -191,14 +190,14 @@
             "k": "상담",
             "v": "자살예방 상담전화 109 · 정신건강 상담전화 1577-0199"
           }
-        ]
+        ],
+        "scope": "국내"
       },
       {
         "name": "급성심장정지 — 일반인 심폐소생술 지역 격차 4배",
         "en": "Regional disparity in bystander CPR, Republic of Korea",
         "tag": "통계",
         "urgency": "즉시조치",
-        "impact": "상",
         "evidence": "weak",
         "headline": "같은 나라 안에서 목격자 심폐소생술 시행률이 4배 차이 납니다. 생존사슬의 첫 고리입니다.",
         "sources": [
@@ -302,14 +301,14 @@
             "source": "보도된 지역 격차를 해석하기 위해 정리한 표",
             "note": "맨 아래 항목은 지역 간 비교 시 보정 대상입니다. 보정 없는 순위표는 책임 공방으로 끝납니다."
           }
-        ]
+        ],
+        "scope": "국내"
       },
       {
         "name": "에스컬레이터 끼임 — 절반 이상이 영유아와 고령자",
         "en": "Escalator entrapment injuries: children and older adults",
         "tag": "경보",
         "urgency": "이번분기",
-        "impact": "중",
         "evidence": "weak",
         "headline": "7세 이하가 가장 많습니다. 사고 장소가 정해져 있다는 것은 예방이 가능하다는 뜻입니다.",
         "sources": [
@@ -416,14 +415,14 @@
             "k": "국내 손상 감시",
             "v": "응급실손상환자심층조사에서도 ‘운송수단 외 기계·설비’ 손상으로 수집됨"
           }
-        ]
+        ],
+        "scope": "국내"
       },
       {
         "name": "손상 자료로 위험을 예측하는 쪽으로",
         "en": "Toward AI-based injury risk prediction: National Injury Management Committee",
         "tag": "정책",
         "urgency": "이번분기",
-        "impact": "중",
         "evidence": "weak",
         "headline": "쌓인 감시 자료를 예측과 예방으로 잇는 중장기 전략이 논의되었습니다.",
         "sources": [
@@ -528,7 +527,8 @@
             "k": "성과의 관건",
             "v": "모델 정확도가 아니라 예측 뒤에 붙는 개입. 자료 연계 범위와 품질이 성능을 좌우함"
           }
-        ]
+        ],
+        "scope": "국내"
       }
     ]
   },
