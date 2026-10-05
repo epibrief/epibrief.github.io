@@ -76,7 +76,7 @@
         "name": "소아·청소년 자해·자살 시도 10년 새 553% 증가",
         "en": "Self-harm and suicide attempts among children and adolescents",
         "tag": "경보",
-        "urgency": "즉시조치",
+        "urgency": "먼저 볼 것",
         "evidence": "weak",
         "headline": "10년 새 약 6.5배입니다. 증가폭이 이 정도면 ‘추세’가 아니라 ‘사건’으로 다뤄야 합니다.",
         "sources": [
@@ -197,7 +197,7 @@
         "name": "급성심장정지 — 일반인 심폐소생술 지역 격차 4배",
         "en": "Regional disparity in bystander CPR, Republic of Korea",
         "tag": "통계",
-        "urgency": "즉시조치",
+        "urgency": "먼저 볼 것",
         "evidence": "weak",
         "headline": "같은 나라 안에서 목격자 심폐소생술 시행률이 4배 차이 납니다. 생존사슬의 첫 고리입니다.",
         "sources": [
@@ -308,7 +308,7 @@
         "name": "에스컬레이터 끼임 — 절반 이상이 영유아와 고령자",
         "en": "Escalator entrapment injuries: children and older adults",
         "tag": "경보",
-        "urgency": "이번분기",
+        "urgency": "이번 분기",
         "evidence": "weak",
         "headline": "7세 이하가 가장 많습니다. 사고 장소가 정해져 있다는 것은 예방이 가능하다는 뜻입니다.",
         "sources": [
@@ -349,8 +349,8 @@
           "국내 보도 | 소비자원 “에스컬레이터 끼임 사고 주의보 발령, 7세 이하가 가장 많아” (2026.10.1.) — https://news.google.com/rss/search?q=%EC%97%90%EC%8A%A4%EC%BB%AC%EB%A0%88%EC%9D%B4%ED%84%B0+7%EC%84%B8+%EC%9D%B4%ED%95%98"
         ],
         "design": [
-          "기관 발표",
-          "위해정보",
+          "언론 보도",
+          "소비자원 안전주의보",
           "2026.10.1."
         ],
         "tables": [
@@ -422,7 +422,7 @@
         "name": "손상 자료로 위험을 예측하는 쪽으로",
         "en": "Toward AI-based injury risk prediction: National Injury Management Committee",
         "tag": "정책",
-        "urgency": "이번분기",
+        "urgency": "이번 분기",
         "evidence": "weak",
         "headline": "쌓인 감시 자료를 예측과 예방으로 잇는 중장기 전략이 논의되었습니다.",
         "sources": [

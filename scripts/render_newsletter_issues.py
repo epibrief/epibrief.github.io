@@ -151,14 +151,31 @@ EV = {   # 근거 강도 — 짧은 라벨로 두고 자세한 설명은 title �
     "weak": ("○○○", "발표·보도", "기관 발표 · 언론 보도 · 프리프린트", "low"),
 }
 
+# 읽는 순서 — '무엇을 하라'가 아니라 '언제 볼 것인가'다. 판단은 읽는 분 몫이다.
+ORDER = ["먼저 볼 것", "이번 분기", "지켜볼 것"]
+
+def read_order(t):
+    """편집자가 매긴 읽는 순서. 언론 보도가 근거인 꼭지는 맨 앞자리를 주지 않는다 —
+    분모도 확인되지 않은 수치를 가장 먼저 보라고 할 수는 없다."""
+    u = t.get("urgency")
+    if u not in ORDER: return u
+    by_press = any("언론 보도" in str(x) for x in (t.get("design") or []))
+    if by_press and u == ORDER[0]:
+        return ORDER[1]
+    return u
+
+def order_class(u):
+    """말에 빈칸이 있어 그대로 class 로 쓰면 여러 class 로 쪼개진다. 자리 번호로 바꾼다."""
+    return f"u-{ORDER.index(u)+1}" if u in ORDER else "u-3"
+
 def judge_badges(t):
-    """긴급도와 국내 영향도. 국내 자료를 다룬 꼭지에는 '국내 영향'을 붙이지 않는다 —
+    """읽는 순서와 국내 영향도. 국내 자료를 다룬 꼭지에는 '국내 영향'을 붙이지 않는다 —
     국내 자료에 국내 영향도를 매기는 것은 같은 말을 두 번 하는 셈이다. 대신 '국내 자료'로 표시한다."""
-    u, im = t.get("urgency"), t.get("impact")
+    u, im = read_order(t), t.get("impact")
     home = t.get("scope") == "국내"
     if not u and not im and not home: return ""
     parts = []
-    if u: parts.append(f'<span class="u u-{e(u)}" title="긴급도">{e(u)}</span>')
+    if u: parts.append(f'<span class="u {order_class(u)}" title="읽는 순서 — 편집자가 매긴 것입니다">{e(u)}</span>')
     if home:
         parts.append('<span class="im im-home" title="국내 기관·조사 자료를 다룬 꼭지입니다">국내 자료</span>')
     elif im:
@@ -381,7 +398,7 @@ def paper(data):
           <span class="no">{i+1}</span>
           <span class="it">{e(t["name"])}
             {f'<span class="ih">{e(t.get("headline"))}</span>' if t.get("headline") else ''}</span>
-          <span class="meta">{f'<span class="u u-{e(t.get("urgency"))}">{e(t.get("urgency"))}</span>' if t.get("urgency") else ''}{src_chips(t)}
+          <span class="meta">{f'<span class="u {order_class(read_order(t))}">{e(read_order(t))}</span>' if read_order(t) else ''}{src_chips(t)}
             {f'<span class="tag tag-{e(t.get("tag"))}">{e(t.get("tag"))}</span>' if t.get("tag") else ''}</span>
         </a></li>''' for i, t in enumerate(d["topics"])) + "</ol>"
 
@@ -440,7 +457,7 @@ def paper(data):
     {f'<span>구독 <a href="{e((data.get("subscribe") or {{}}).get("url",""))}">이 뉴스레터 받아보기 →</a></span>' if (data.get("subscribe") or {{}}).get("url") else ""}
   </div>
   <div class="brief">
-    <div class="brief-label">이번 호에는 <span class="go">— 제목을 누르면 해당 꼭지로 이동합니다</span></div>
+    <div class="brief-label">이번 호에는 <span class="go">— 제목을 누르면 해당 꼭지로 이동합니다. 「먼저 볼 것 · 이번 분기 · 지켜볼 것」은 편집자가 매긴 읽는 순서입니다</span></div>
     {stats}
     {issues}
   </div>
