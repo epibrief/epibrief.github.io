@@ -1,6 +1,6 @@
 {
  "name": "빵캘",
- "updatedAt": "2026-10-05T00:24:07.171Z",
+ "updatedAt": "2026-10-05T19:01:58.583Z",
  "counts": {
   "total": 132,
   "upcoming": 110
@@ -12,7 +12,7 @@
    "ok": true,
    "found": 52,
    "events": 0,
-   "ms": 3218
+   "ms": 3728
   },
   {
    "id": "org-mohw",
@@ -20,7 +20,7 @@
    "ok": true,
    "found": 19,
    "events": 4,
-   "ms": 14879
+   "ms": 15169
   },
   {
    "id": "nkis",
@@ -28,7 +28,7 @@
    "ok": true,
    "found": 20,
    "events": 0,
-   "ms": 21108
+   "ms": 23851
   },
   {
    "id": "org-mfds",
@@ -36,7 +36,7 @@
    "ok": true,
    "found": 16,
    "events": 8,
-   "ms": 24357
+   "ms": 26126
   },
   {
    "id": "org-ncc",
@@ -44,7 +44,7 @@
    "ok": true,
    "found": 4,
    "events": 2,
-   "ms": 6876
+   "ms": 7094
   },
   {
    "id": "org-hira",
@@ -52,15 +52,7 @@
    "ok": true,
    "found": 12,
    "events": 0,
-   "ms": 2610
-  },
-  {
-   "id": "org-khealth",
-   "name": "한국건강증진개발원 공지",
-   "ok": true,
-   "found": 11,
-   "events": 0,
-   "ms": 16365
+   "ms": 2462
   },
   {
    "id": "org-nhis",
@@ -68,15 +60,21 @@
    "ok": true,
    "found": 24,
    "events": 0,
-   "ms": 4425
+   "ms": 4897
   },
   {
-   "id": "org-kihasa",
-   "name": "한국보건사회연구원 공지",
-   "ok": true,
-   "found": 0,
-   "events": 0,
-   "ms": 2725
+   "id": "org-khealth",
+   "name": "한국건강증진개발원 공지",
+   "ok": false,
+   "error": "fetch failed",
+   "ms": 25356
+  },
+  {
+   "id": "org-neca",
+   "name": "한국보건의료연구원 공지",
+   "ok": false,
+   "error": "HTTP 400",
+   "ms": 7702
   },
   {
    "id": "org-nmc",
@@ -84,14 +82,7 @@
    "ok": true,
    "found": 11,
    "events": 0,
-   "ms": 3060
-  },
-  {
-   "id": "org-neca",
-   "name": "한국보건의료연구원 공지",
-   "ok": false,
-   "error": "HTTP 400",
-   "ms": 7488
+   "ms": 4059
   },
   {
    "id": "org-khidi",
@@ -99,7 +90,7 @@
    "ok": true,
    "found": 20,
    "events": 1,
-   "ms": 6549
+   "ms": 6552
   },
   {
    "id": "org-nibp",
@@ -107,15 +98,14 @@
    "ok": true,
    "found": 16,
    "events": 0,
-   "ms": 5943
+   "ms": 6178
   },
   {
-   "id": "org-kshpa",
-   "name": "한국보건행정학회 공지",
-   "ok": true,
-   "found": 9,
-   "events": 5,
-   "ms": 12060
+   "id": "org-kihasa",
+   "name": "한국보건사회연구원 공지",
+   "ok": false,
+   "error": "fetch failed",
+   "ms": 26244
   },
   {
    "id": "org-prevmed",
@@ -123,7 +113,15 @@
    "ok": true,
    "found": 15,
    "events": 3,
-   "ms": 20863
+   "ms": 24594
+  },
+  {
+   "id": "org-kshpa",
+   "name": "한국보건행정학회 공지",
+   "ok": true,
+   "found": 9,
+   "events": 5,
+   "ms": 12650
   },
   {
    "id": "snu-health",
@@ -131,15 +129,7 @@
    "ok": true,
    "found": 30,
    "events": 21,
-   "ms": 69705
-  },
-  {
-   "id": "org-kspm",
-   "name": "대한공공의학회 공지",
-   "ok": true,
-   "found": 16,
-   "events": 1,
-   "ms": 11162
+   "ms": 74157
   },
   {
    "id": "org-kshep",
@@ -147,15 +137,15 @@
    "ok": true,
    "found": 1,
    "events": 1,
-   "ms": 4386
+   "ms": 4203
   },
   {
-   "id": "org-kpha",
-   "name": "대한보건협회 공지",
+   "id": "org-kspm",
+   "name": "대한공공의학회 공지",
    "ok": true,
-   "found": 15,
-   "events": 0,
-   "ms": 4365
+   "found": 16,
+   "events": 1,
+   "ms": 13260
   },
   {
    "id": "org-kosqua",
@@ -163,7 +153,7 @@
    "ok": true,
    "found": 7,
    "events": 1,
-   "ms": 1923
+   "ms": 2002
   },
   {
    "id": "org-koddi",
@@ -171,7 +161,7 @@
    "ok": true,
    "found": 21,
    "events": 0,
-   "ms": 1763
+   "ms": 1914
   },
   {
    "id": "org-cochrane",
@@ -179,15 +169,7 @@
    "ok": true,
    "found": 16,
    "events": 0,
-   "ms": 808
-  },
-  {
-   "id": "org-kams",
-   "name": "대한의학회 학술행사 표",
-   "ok": true,
-   "found": 101,
-   "events": 101,
-   "ms": 23528
+   "ms": 502
   },
   {
    "id": "org-kdca-ilje",
@@ -195,7 +177,7 @@
    "ok": true,
    "found": 32,
    "events": 0,
-   "ms": 2705
+   "ms": 2836
   },
   {
    "id": "org-ksepi",
@@ -203,6 +185,21 @@
    "ok": false,
    "error": "The operation was aborted due to timeout",
    "ms": 44502
+  },
+  {
+   "id": "org-kams",
+   "name": "대한의학회 학술행사 표",
+   "ok": true,
+   "found": 101,
+   "events": 101,
+   "ms": 24994
+  },
+  {
+   "id": "org-kpha",
+   "name": "대한보건협회 공지",
+   "ok": false,
+   "error": "fetch failed",
+   "ms": 25153
   }
  ],
  "events": [
