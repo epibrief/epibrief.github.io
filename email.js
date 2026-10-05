@@ -20,10 +20,44 @@
     .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   const FONT = "'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif";
 
+  /* 메일에서도 불릿 층위를 살립니다. '- ' 는 하위 항목, '※'·'* ' 는 주석,
+     '키워드 :: 본문' 은 앞머리 키워드. 메일 클라이언트가 CSS를 지우므로 모두 인라인으로 씁니다. */
   function bullets(items, c) {
-    return (items || []).map(x =>
-      `<tr><td style="padding:0 0 8px 0;font:400 15px/1.75 ${FONT};color:#3d4753">
-         <span style="color:${c.accent};font-weight:700">·</span> ${esc(x)}</td></tr>`).join('');
+    return (items || []).map(x => {
+      let raw = String(x == null ? '' : x), kind = '';
+      if (raw.startsWith('- ')) { kind = 'sub'; raw = raw.slice(2); }
+      else if (raw.startsWith('※') || raw.startsWith('* ')) kind = 'note';
+      let lead = '';
+      const cut = raw.indexOf(' :: ');
+      if (cut > -1) {
+        lead = `<b style="color:#191f28">${esc(raw.slice(0, cut).trim())}</b>
+                <span style="color:#c9d0da">|</span> `;
+        raw = raw.slice(cut + 4);
+      }
+      if (kind === 'sub') {
+        return `<tr><td style="padding:0 0 6px 22px;font:400 14px/1.7 ${FONT};color:#5d6875">
+           <span style="color:#c9d0da;font-weight:700">–</span> ${lead}${esc(raw)}</td></tr>`;
+      }
+      if (kind === 'note') {
+        return `<tr><td style="padding:8px 12px;margin:0;font:400 13.5px/1.65 ${FONT};color:#5d6875;
+           background:#f7f9fb;border-left:2px solid #dde2e9">${esc(raw)}</td></tr>
+           <tr><td style="height:8px;line-height:8px">&nbsp;</td></tr>`;
+      }
+      return `<tr><td style="padding:0 0 8px 0;font:400 15px/1.75 ${FONT};color:#3d4753">
+         <span style="color:${c.accent};font-weight:700">·</span> ${lead}${esc(raw)}</td></tr>`;
+    }).join('');
+  }
+
+  /* 꼭지 맨 앞의 핵심 상자 — 메일을 스크롤하지 않는 분을 위해 */
+  function keybox(t, c) {
+    if (!(t.summary || []).length) return '';
+    return `<tr><td style="padding:12px 0 2px 0">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+          style="background:#f4f7fb;border-left:3px solid ${c.brand}"><tr><td style="padding:13px 16px 6px">
+          <div style="font:800 11px/1.4 ${FONT};letter-spacing:.05em;color:${c.brand};padding-bottom:7px">핵심</div>
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0">${bullets(t.summary, c)}</table>
+        </td></tr></table>
+      </td></tr>`;
   }
 
   function section(title, items, c) {
@@ -79,6 +113,7 @@
         ${t.headline ? `<div style="font:600 15px/1.6 ${FONT};color:#191f28;border-left:3px solid ${c.accent};
           padding:2px 0 2px 12px;margin-top:10px">${esc(t.headline)}</div>` : ''}
       </td></tr>
+      ${keybox(t, c)}
       ${section(secs[0], t.situation, c)}
       ${section(secs[1], t.assess, c)}
       ${section(secs[2], t.korea, c)}
@@ -158,7 +193,7 @@
     (d.topics || []).forEach((t, i) => {
       lines.push(`${i + 1}. ${t.name}${t.tag ? ' [' + t.tag + ']' : ''}`);
       if (t.headline) lines.push('   ' + t.headline);
-      (t.summary || []).forEach(s => lines.push('   - ' + s));
+      (t.summary || []).forEach(s => lines.push('   - ' + String(s).replace(/^[-※*]\s*/, '').replace(' :: ', ': ')));
       lines.push('');
     });
     return lines.join('\n');

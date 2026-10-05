@@ -20,6 +20,12 @@ try:
 except Exception:
     _CFG = {}
 BASE      = (_CFG.get("baseUrl") or "https://epibrief.github.io").rstrip("/")
+try:   # 꼬리말에 적는 소스 수 — 손으로 고치지 않게 소스 DB에서 센다
+    SOURCE_COUNT = sum(len(g.get("sources") or [])
+                       for g in json.load(open(os.path.join(ROOT, "data/sources.json"),
+                                               encoding="utf-8")).get("groups", []))
+except Exception:
+    SOURCE_COUNT = 0
 SITE      = BASE + "/issues/"          # 메일에서 이미지를 불러올 주소
 SUBSCRIBE = BASE + "/subscribe.html"   # 구독 신청 페이지
 
@@ -61,30 +67,64 @@ def make_qr(url, out_path, brand="#12395f"):
     img.save(out_path)
     return os.path.basename(out_path)
 
-NUM = re.compile(r"(\d[\d,\.]*\s?(?:배|명|건|개|%|℃|년|주|일|시간|개국|개 주|만 명|억|달러|쌍)|\d{1,3}(?:,\d{3})+)")
-def mark(text):
-    """'키워드 :: 본문' 은 앞머리 키워드로, 숫자는 색 강조, [1] 은 위첨자로."""
+NUM = re.compile(r"(\d[\d,\.]*\s?(?:배|명|건|곳|개|%|%p|℃|주|시간|개국|개 주|만 명|억|달러|쌍)"
+                 r"|\d{1,3}(?:,\d{3})+)")
+# 날짜·연도·호수는 강조하지 않는다. 눈에 띄어야 할 것은 규모와 비율이지 달력이 아니다.
+DATE = re.compile(r"(?:\d{4}년(?:\s?\d{1,2}월)?(?:\s?\d{1,2}일)?"
+                  r"|\d{1,2}월\s?\d{1,2}일|\d{1,2}월"
+                  r"|\d{4}\.\s?\d{1,2}\.\s?\d{1,2}\.?|\d{1,2}\.\d{1,2}\."
+                  r"|\d{4}~\d{4}년?|\d{4}년?~\d{4}|제\s?\d+호|\d{1,2}~\d{1,3}주)")
+def mark(text, ti=None):
+    """'키워드 :: 본문' 은 앞머리 키워드로, 숫자는 색 강조, [1] 은 출처로 가는 위첨자로."""
     raw = str(text or "")
     lead = ""
     if " :: " in raw:
         head, _, raw = raw.partition(" :: ")
         lead = f'<b class="lead">{e(head.strip())}</b>'
     t = e(raw)
+    # 날짜 표현은 잠시 치워 두고 숫자 강조를 건 뒤 되돌린다
+    held = []
+    def hold(m):
+        held.append(m.group(0))
+        return "\x00%d\x00" % (len(held) - 1)
+    t = DATE.sub(hold, t)
     t = NUM.sub(r'<b class="num">\1</b>', t)
-    t = re.sub(r"\[(\d+(?:\]\[\d+)*)\]", lambda m: "<sup>[" + m.group(1) + "]</sup>", t)
+    t = re.sub(r"\x00(\d+)\x00", lambda m: held[int(m.group(1))], t)
+    def sup(m):
+        nums = re.findall(r"\d+", m.group(1))
+        if ti is None:
+            return "<sup>[" + m.group(1) + "]</sup>"
+        links = "".join(f'<a href="#r{ti}-{n}">{n}</a>' for n in nums)
+        return f'<sup class="fn">[{links}]</sup>'
+    t = re.sub(r"\[(\d+(?:\]\[\d+)*)\]", sup, t)
     return lead + t
 
-def ul(items):
-    return "<ul>" + "".join(f"<li>{mark(x)}</li>" for x in (items or [])) + "</ul>"
+def ul(items, ti=None):
+    """불릿에 층위를 둔다. '- ' 로 시작하면 하위 항목, '※'·'*' 로 시작하면 주석."""
+    out = []
+    for x in (items or []):
+        raw = str(x or "")
+        cls = ""
+        if raw.startswith("- "):
+            cls, raw = " class=\"sub\"", raw[2:]
+        elif raw.startswith("※") or raw.startswith("* "):
+            cls = " class=\"note\""
+        out.append(f"<li{cls}>{mark(raw, ti)}</li>")
+    return "<ul>" + "".join(out) + "</ul>"
 
-def refs_block(refs):
+def refs_block(refs, ti=None):
+    """본문 위첨자 [1] 이 가리키는 출처 목록. 인쇄본에도 그대로 남는다."""
     items = []
-    for r in refs or []:
+    for n, r in enumerate(refs or [], 1):
         head, _, link = r.partition(" — ")
         label = "기사" if "news.google.com" in link else "원문"
-        items.append(f"<li>{e(head)}" + (f' <a href="{e(link)}" target="_blank" rel="noopener">{label}</a>' if link else "") + "</li>")
-    return (f'<details class="refs"><summary>출처 {len(items)}건</summary>'
-            f'<ol>{"".join(items)}</ol></details>')
+        aid = f' id="r{ti}-{n}"' if ti is not None else ""
+        items.append(f"<li{aid}>{e(head)}"
+                     + (f' <a href="{e(link)}" target="_blank" rel="noopener">{label}</a>' if link else "")
+                     + "</li>")
+    if not items: return ""
+    return (f'<div class="reflist"><h5>출처 {len(items)}건</h5>'
+            f'<ol>{"".join(items)}</ol></div>')
 
 BAD_CARD = re.compile(r"^(redirecting|client challenge|just a moment|attention required|access denied|error)\.?$", re.I)
 
@@ -153,13 +193,43 @@ def logo_img(t):
     return (f'<img class="srclogo" src="{e(lg["file"])}" alt="{e(lg.get("site",""))}" '
             f'title="{e(lg.get("site",""))}" onerror="this.remove()">')
 
-def trend_chart(t):
-    """연도별 논문 수 막대 그래프 — 외부 라이브러리 없이 SVG로 그린다(인쇄·저장에도 남는다)."""
+def trend_chart(t, ti=None):
+    """막대 그래프 — 외부 라이브러리 없이 SVG로 그린다(인쇄·저장에도 남는다).
+    chart.kind 가 'cat' 이면 항목별 비교(이름이 길므로 가로 막대), 없으면 연도별 추이(세로 막대)."""
     c = t.get("chart") or {}
-    rows = c.get("data") or []
-    if len(rows) < 4:
+    rows = [r for r in (c.get("data") or []) if r.get("v")]
+    if len(rows) < 2:
         return ""
-    W, H = 320.0, 104.0
+    fignum = f"그림 {ti}-1. " if ti else ""
+    cap = fignum + (c.get("title") or "")
+    note = (" · " + e(c.get("note"))) if c.get("note") else ""
+    foot = ('<div class="cnote">' + e(c.get("source", "")) + note
+            + " · 단위 " + e(c.get("unit", "건"))
+            + (" · " + e(c["figNote"]) if c.get("figNote") else "") + "</div>")
+    table = "".join("<tr><th>%s</th><td>%s</td></tr>" % (e(r["y"]), r["v"]) for r in rows)
+    data_tbl = ('<table class="cdata"><caption>' + e(cap) + "</caption><tbody>"
+                + table + "</tbody></table>")
+
+    if c.get("kind") == "cat":          # ── 가로 막대: 이름이 긴 국가·지역 비교용
+        top = max(r["v"] for r in rows) or 1
+        RH, GAP, LW = 22.0, 8.0, 84.0
+        H = len(rows) * (RH + GAP)
+        parts = []
+        for i, r in enumerate(rows):
+            y = i * (RH + GAP)
+            w = max((320.0 - LW - 46) * (r["v"] / top), 2.0)
+            parts.append('<text class="yl" x="%.1f" y="%.1f">%s</text>' % (LW - 6, y + RH * 0.72, e(r["y"])))
+            parts.append('<rect class="b%s" x="%.1f" y="%.1f" width="%.1f" height="%.1f" rx="2"/>'
+                         % (" cur" if i == 0 else "", LW, y + 3, w, RH - 6))
+            parts.append('<text class="vr" x="%.1f" y="%.1f">%s</text>'
+                         % (LW + w + 5, y + RH * 0.72, f'{r["v"]:,}'))
+        aria = "%s — %s %s, %s %s" % (cap, e(rows[0]["y"]), rows[0]["v"], e(rows[-1]["y"]), rows[-1]["v"])
+        svg = ('<svg class="hbar" viewBox="0 0 320 %.1f" role="img" aria-label="%s" '
+               'style="height:%.0fpx">%s</svg>' % (H, e(aria), H * 1.5, "".join(parts)))
+        return ('<figure class="chart"><figcaption>' + e(cap) + "</figcaption>"
+                + svg + foot + data_tbl + "</figure>")
+
+    W, H = 320.0, 104.0                 # ── 세로 막대: 연도별 추이
     PAD_B, PAD_T = 18.0, 16.0
     top = max(r["v"] for r in rows) or 1
     slot = W / len(rows)
@@ -178,20 +248,44 @@ def trend_chart(t):
         if r is peak or cur:          # 숫자는 최고점과 올해에만
             values.append('<text class="vl" x="%.1f" y="%.1f">%d</text>'
                           % (i * slot + slot / 2, y - 4, r["v"]))
-    table = "".join("<tr><th>%s</th><td>%s</td></tr>" % (r["y"], r["v"]) for r in rows)
-    note = (" · " + e(c.get("note"))) if c.get("note") else ""
-    aria = "%s — %s년 %d편에서 %s년 %d편" % (c.get("title", ""), rows[0]["y"], rows[0]["v"],
-                                              rows[-1]["y"], rows[-1]["v"])
+    aria = "%s — %s %d에서 %s %d" % (cap, rows[0]["y"], rows[0]["v"], rows[-1]["y"], rows[-1]["v"])
     return (
         '<figure class="chart">'
-        '<figcaption>' + e(c.get("title", "")) + '</figcaption>'
+        '<figcaption>' + e(cap) + '</figcaption>'
         '<svg viewBox="0 0 320 104" role="img" preserveAspectRatio="none" aria-label="' + e(aria) + '">'
         '<line class="ax" x1="0" y1="%.1f" x2="320" y2="%.1f"/>' % (H - PAD_B, H - PAD_B)
         + "".join(bars) + "".join(values) + "".join(labels) +
-        '</svg>'
-        '<div class="cnote">' + e(c.get("source", "")) + note + ' · 단위 ' + e(c.get("unit", "편")) + '</div>'
-        '<table class="cdata"><caption>' + e(c.get("title", "")) + '</caption><tbody>' + table + '</tbody></table>'
-        '</figure>')
+        '</svg>' + foot + data_tbl + '</figure>')
+
+NUMCELL = re.compile(r"^[\d,\.]+\s?(?:명|건|%|%p|곳|개)?$")
+
+def cell(v):
+    """표 안에서는 숫자를 따로 물들이지 않는다 — 칸 전체가 숫자라 강조가 오히려 어지럽다.
+    숫자만 있는 칸은 오른쪽으로 맞춰 자릿수를 비교하기 쉽게 한다."""
+    txt = str(v or "")
+    cls = ' class="n"' if NUMCELL.match(txt.strip()) else ""
+    out = e(txt)
+    out = re.sub(r"\[(\d+(?:\]\[\d+)*)\]", lambda m: "<sup>[" + m.group(1) + "]</sup>", out)
+    return f"<td{cls}>{out}</td>"
+
+def data_tables(t, ti=None):
+    """번호 붙은 자료표. 수치를 문장에 녹이지 않고 표로 두어야 옮겨 쓰기 쉽다."""
+    out = []
+    for n, tb in enumerate(t.get("tables") or [], 1):
+        head = "".join(f"<th>{e(h)}</th>" for h in tb.get("head", []))
+        body = "".join("<tr>" + "".join(cell(c) for c in row) + "</tr>"
+                       for row in tb.get("rows", []))
+        num = f"표 {ti}-{n}. " if ti else ""
+        foot = []
+        if tb.get("source"): foot.append("출처 " + e(tb["source"]))
+        if tb.get("note"):   foot.append(e(tb["note"]))
+        out.append('<figure class="dtable">'
+                   f'<figcaption>{e(num + tb.get("title",""))}</figcaption>'
+                   f'<div class="dt-scroll"><table><thead><tr>{head}</tr></thead>'
+                   f'<tbody>{body}</tbody></table></div>'
+                   + (f'<div class="dt-note">{" · ".join(foot)}</div>' if foot else "")
+                   + "</figure>")
+    return "".join(out)
 
 def profile_table(t):
     rows = t.get("profile") or []
@@ -234,6 +328,29 @@ def tips_box():
     return (f'<aside class="tips"><h4>이 뉴스레터를 정책에 쓰실 때</h4>'
             f'<ol>{items}</ol></aside>')
 
+def keybox(t, ti):
+    """꼭지 맨 앞의 핵심 상자. 본문을 다 읽지 않아도 이 상자만으로 뜻이 통해야 한다."""
+    if not t.get("summary"): return ""
+    return f'<div class="keybox"><h5>핵심</h5>{ul(t["summary"], ti)}</div>'
+
+def digest_block(topics, secs):
+    """요약 — 각 꼭지의 핵심을 앞에 모아 둔다. 바쁜 분은 이 한 쪽만 읽어도 되게.
+    꼭지의 summary 가 본문 요약이고, headline 이 한 줄 결론이다."""
+    if not any(t.get("summary") for t in topics): return ""
+    blocks = []
+    for i, t in enumerate(topics, 1):
+        if not t.get("summary"): continue
+        en = '<span class="dg-en">' + e(t["en"]) + "</span>" if t.get("en") else ""
+        lead = '<p class="dg-lead">' + mark(t.get("headline", ""), i) + "</p>" if t.get("headline") else ""
+        blocks.append(
+            '<section class="dg-item">'
+            '<h4><a href="#t' + str(i) + '"><span class="dg-no">' + str(i) + "</span>"
+            + e(t["name"]) + en + "</a></h4>"
+            + lead + ul(t["summary"], i) + "</section>")
+    return ('<section class="digest" id="digest"><h3>요약</h3>'
+            '<p class="dg-help">각 꼭지의 핵심만 모았습니다. 제목을 누르면 본문으로 갑니다.</p>'
+            + "".join(blocks) + "</section>")
+
 def paper(data):
     k = KINDS[data["kind"]]
     m, d = data["meta"], data["draft"]
@@ -272,14 +389,16 @@ def paper(data):
       {f'<div class="topic-src"><span class="lbl">출처</span>{logo_img(t)} <b>{e(" · ".join(t.get("sources") or []))}</b></div>' if t.get("sources") else ''}
       {f'<p class="topic-lead">{e(t.get("headline"))}</p>' if t.get("headline") else ''}
       {design_chips(t)}
-      {trend_chart(t)}
+      {keybox(t, i+1)}
       {src_card(t)}
-      <div class="sec"><h4>{e(k["secs"][0])}</h4>{ul(t.get("situation"))}</div>
-      <div class="sec"><h4>{e(k["secs"][1])}</h4>{ul(t.get("assess"))}</div>
-      <div class="sec"><h4>{e(k["secs"][2])}</h4>{ul(t.get("korea"))}</div>
+      <div class="sec"><h4>{e(k["secs"][0])}</h4>{ul(t.get("situation"), i+1)}</div>
+      {trend_chart(t, i+1)}
+      {data_tables(t, i+1)}
+      <div class="sec"><h4>{e(k["secs"][1])}</h4>{ul(t.get("assess"), i+1)}</div>
+      <div class="sec"><h4>{e(k["secs"][2])}</h4>{ul(t.get("korea"), i+1)}</div>
       {caveat_box(t)}
       {profile_table(t)}
-      {refs_block(t.get("refs"))}
+      {refs_block(t.get("refs"), i+1)}
       {copy_bar(t, i, m)}
     </section>''' for i, t in enumerate(d["topics"]))
 
@@ -296,6 +415,7 @@ def paper(data):
     </div>
   </aside>'''
     return f'''<div id="paper" class="t-{e(data.get("tpl","official"))} k-{e(data["kind"])}">
+  <div class="printhead" aria-hidden="true">{e(KINDS[data["kind"]]["name"])}<span class="ph-r">{e(m.get("issue",""))}</span></div>
   <header class="nl-head">
     <div class="nl-topline">
       <span>{e(KINDS[data["kind"]]["name"])} 뉴스레터</span>
@@ -332,6 +452,7 @@ def paper(data):
     <p class="live-note">위 본문은 편집 예시 원고이고, 아래는 매일 새벽 자동 수집되는 실제 최신 자료입니다. 제목·출처·링크만 싣습니다.</p>
     <ol class="live-list" id="liveList"></ol>
   </section>
+  {digest_block(d["topics"], k["secs"])}
   {explainer_box(d)}
   {intro}
   {topics}
@@ -341,7 +462,7 @@ def paper(data):
     <div class="cover">
       <b>자료 수집</b>
       {f'<span>이 호가 다룬 기간 <span data-live-coverage data-cadence="{e(m.get("cadence",""))}">{e(m.get("coverage"))}</span></span>' if m.get("coverage") else ""}
-      <span>소스 149곳을 매일 새벽 5시(KST)에 자동 수집</span>
+      <span>소스 {SOURCE_COUNT}곳을 매일 새벽 5시(KST)에 자동 수집</span>
       {f'<span>{e(m.get("cadence"))}</span>' if m.get("cadence") else ""}
       {f'<span>다음 호 <span data-live-next data-cadence="{e(m.get("cadence",""))}">{e(m.get("nextIssue","").replace("-", "."))}.</span></span>' if m.get("nextIssue") else ""}
     </div>
