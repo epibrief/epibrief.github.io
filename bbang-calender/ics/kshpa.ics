@@ -18,22 +18,21 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:814db4273ef97fd0@bbangcal.epibrief.github.io
-DTSTAMP:20260930T005830Z
-DTSTART;TZID=Asia/Seoul:20260928T140000
-DTEND;TZID=Asia/Seoul:20260928T170000
-SUMMARY:[한국보건행정학회] 국회 정책토론회_고혈압·
- 당뇨병 환자 지속치료를 위한 관리체계 방안 토론회 
- 개최 안내
-LOCATION:국회의원회관 제9간담회의실
+UID:6007ae20b118c965@bbangcal.epibrief.github.io
+DTSTAMP:20261005T002407Z
+DTSTART;TZID=Asia/Seoul:20261029T133000
+DTEND;TZID=Asia/Seoul:20261029T170000
+SUMMARY:[한국보건행정학회] 2026년 장애인 건강보건통계
+  컨퍼런스 개최 안내
+LOCATION:국립재활원 나래관 3층 중강당
 DESCRIPTION:주최: 한국보건행정학회\n원문: https://www.kshpa
- .org/bbs/notice2/1546\n빵캘: https://epibrief.github.io/bbang-calende
+ .org/bbs/notice2/1549\n빵캘: https://epibrief.github.io/bbang-calende
  r/
-URL:https://www.kshpa.org/bbs/notice2/1546
+URL:https://www.kshpa.org/bbs/notice2/1549
 END:VEVENT
 BEGIN:VEVENT
 UID:9fbccb5f1fb43221@bbangcal.epibrief.github.io
-DTSTAMP:20260930T005830Z
+DTSTAMP:20261005T002407Z
 DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261106
 SUMMARY:[한국보건행정학회] 2026 후기학술대회 북페어 
@@ -46,7 +45,7 @@ URL:https://www.kshpa.org/bbs/notice/1535
 END:VEVENT
 BEGIN:VEVENT
 UID:e719a95bba4d99ff@bbangcal.epibrief.github.io
-DTSTAMP:20260930T005830Z
+DTSTAMP:20261005T002407Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:[한국보건행정학회] 2026년 한국보건행정학회 후
@@ -56,5 +55,18 @@ DESCRIPTION:주최: 한국보건행정학회\n원문: https://www.kshpa
  .org/calendar/list/14\n빵캘: https://epibrief.github.io/bbang-calende
  r/
 URL:https://www.kshpa.org/calendar/list/14
+END:VEVENT
+BEGIN:VEVENT
+UID:6480ab1330916f0f@bbangcal.epibrief.github.io
+DTSTAMP:20261005T002407Z
+DTSTART;TZID=Asia/Seoul:20261126T100000
+DTEND;TZID=Asia/Seoul:20261126T120000
+SUMMARY:[한국보건행정학회] 2026 후기학술대회 포스터 
+ 발표 신청 안내
+LOCATION:영남대학교병원 권역호흡기전문질환센터 강당
+DESCRIPTION:주최: 한국보건행정학회\n원문: https://www.kshpa
+ .org/bbs/notice2/1548\n빵캘: https://epibrief.github.io/bbang-calende
+ r/
+URL:https://www.kshpa.org/bbs/notice2/1548
 END:VEVENT
 END:VCALENDAR

@@ -464,10 +464,10 @@
    "id": "org-koddi",
    "name": "한국장애인개발원 공지",
    "adapter": "generic",
-   "url": "https://www.koddi.or.kr/bbs/board.do?bbsId=BBSMSTR_000000000021",
+   "url": "https://www.koddi.or.kr/bbs/notice01.jsp",
    "org": "koddi",
    "enabled": true,
-   "note": "국내 인터넷에서 돌려야 열립니다"
+   "note": "알림마당 공지사항"
   },
   {
    "id": "org-cochrane",

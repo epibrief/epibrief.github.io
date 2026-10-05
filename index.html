@@ -69,6 +69,20 @@ button{font-family:inherit}
 .hero .ht b{font-size:1rem}
 .hero .ht span:last-child{display:block;font-size:.88rem;color:var(--muted);margin-top:6px;line-height:1.55}
 .issue-list{display:flex;flex-direction:column;gap:12px}
+/* 홈에서는 뉴스레터를 격자로 늘어놓아 한눈에 보이게 한다 */
+#homeIssues{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;align-items:start}
+#homeIssues .issue-card{display:flex;flex-direction:column;height:100%}
+#homeIssues .issue-card .il{flex:1}
+#homeIssues .issue-card .it{font-size:1.18rem}
+#homeIssues .acts{margin-top:12px}
+#homeIssues .acts .btn{font-size:.86rem;padding:6px 11px}
+@media (max-width:560px){#homeIssues{grid-template-columns:1fr}}
+/* '어떻게 쓰나요?' 접었다 펴기 */
+.hero details>summary{cursor:pointer;font-weight:700;color:var(--navy);list-style:none;
+  display:inline-flex;align-items:center;gap:6px;padding:6px 0}
+.hero details>summary::-webkit-details-marker{display:none}
+.hero details>summary::before{content:'▸';font-size:.9em}
+.hero details[open]>summary::before{content:'▾'}
 .issue-card{border:1px solid var(--line);border-top:5px solid var(--ic,var(--navy));border-radius:10px;
   padding:18px 20px;background:#fff}
 .issue-card .ik{font-size:.86rem;font-weight:800;letter-spacing:0;color:var(--ia,var(--teal))}
@@ -199,30 +213,32 @@ textarea{min-height:90px;resize:vertical}
 
 <!-- ───────────── 홈 ───────────── -->
 <section class="navpanel on" id="nav-home"><div class="wrap">
+  <div class="card">
+    <h2>최근 발간 뉴스레터</h2>
+    <p class="hint">바로 읽고, 그대로 발행할 수 있습니다. 서식과 구성을 가져다 새 호를 만들 수도 있습니다.</p>
+    <div id="homeIssues" class="issue-list"></div>
+  </div>
+
   <div class="card hero">
     <h2 style="font-size:1.5rem;margin-bottom:6px">무엇을 하는 곳인가요?</h2>
-    <p class="hint" style="font-size:1rem;margin-bottom:18px">
+    <p class="hint" style="font-size:1rem;margin-bottom:14px">
       WHO·미국 CDC·ECDC·질병관리청 같은 <b>공식 기관 발표</b>와 <b>최신 논문</b>을 매일 모아 두었습니다.
       필요한 것만 고르면 <b>보고서 서식에 맞춘 뉴스레터</b>가 만들어지고, 그대로 인쇄·이메일·링크로 보낼 수 있습니다.
     </p>
-    <div class="howto">
+    <details><summary>어떻게 쓰나요? — 네 단계</summary>
+    <div class="howto" style="margin-top:12px">
       <div class="ht"><span class="n">1</span><b>소스 고르기</b><span>분야(감염병·사회대응·만성질환·기후)를 고르고 기관을 선택합니다. 102곳이 이미 들어 있습니다.</span></div>
       <div class="ht"><span class="n">2</span><b>자료 담기</b><span>주제 칩이나 키워드로 걸러 필요한 자료만 담습니다. 키워드 하나로 보고서를 만들 수도 있습니다.</span></div>
       <div class="ht"><span class="n">3</span><b>서식 고르고 만들기</b><span>서식 3종 중 하나를 고르면 요약·평가·시사점 초안까지 만들어집니다.</span></div>
       <div class="ht"><span class="n">4</span><b>발행하기</b><span>인쇄·PDF, 메일, 워드 파일, 공유 링크. 구독 QR도 함께 넣습니다.</span></div>
     </div>
-    <div class="row" style="margin-top:20px">
+    </details>
+    <div class="row" style="margin-top:18px">
       <button class="btn pri" data-nav="make" style="font-size:1.04rem">맞춤형 뉴스레터 만들기 →</button>
       <button class="btn" data-nav="issues">발간 예시 보기</button>
       <a class="note" href="local/" style="align-self:center">보건소·지자체용 기관 소식지 →</a>
       <a class="note" href="apply.html" style="align-self:center">기관 이름으로 발행하기 (권한 신청) →</a>
     </div>
-  </div>
-
-  <div class="card">
-    <h2>발간 예시</h2>
-    <p class="hint">바로 읽고, 그대로 발행할 수 있습니다. 서식과 구성을 가져다 새 호를 만들 수도 있습니다.</p>
-    <div id="homeIssues" class="issue-list"></div>
   </div>
 </div></section>
 
@@ -805,7 +821,7 @@ async function doPublish(act, data, url){
 function todayIso(){ const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; }
 function issueCard(r, i, pre){
   const [c, a] = KIND_COLOR[r.kind] || KIND_COLOR.outbreak;
-  return `<div class="issue-card" style="--ic:${c};--ia:${a}">
+  return `<div class="issue-card" data-idx="${i}" style="--ic:${c};--ia:${a}">
       <div class="ik">${esc(r.kindName)}</div>
       <div class="it">${esc(r.title)}</div>
       <div class="imeta">${esc(r.issue)} · ${todayIso()} · ${esc(r.org)} <span class="note" title="발간 예시라 발행일은 보는 날짜로 표시합니다">(예시)</span></div>
@@ -837,7 +853,7 @@ document.addEventListener('click', async e => {
   const pb = e.target.closest('[data-pub]');
   if (pb){
     const card = pb.closest('.issue-card');
-    const idx = Array.from(card.parentElement.children).indexOf(card);
+    const idx = +card.dataset.idx;
     const r = ISSUES[idx];
     if (r && r.mine){ doPublish(pb.dataset.pub, r.data, location.pathname); return; }
     if (!r) return;
