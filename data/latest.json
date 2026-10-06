@@ -1,7 +1,47 @@
 {
- "updated": "2026-10-06 01:03",
+ "updated": "2026-10-06 23:27",
  "byKind": {
   "outbreak": [
+   {
+    "title": "Rubio urges Russia to share more information on plague lab worker's death",
+    "origin": "BBC",
+    "sourceName": "WHO 보도자료",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5td1NQbEhnNkcxaWtRaDlkQzlPR3ZqWDFnRWtob1hLMHQxLVhyemJicGhLVXVUbXJZcGRPM0ZOLUZvazhHVEVRdWFGWUhHQ2ZKWndyczhBMFhxbUU?oc=5",
+    "date": "2026-10-06",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "Russian lab worker dies of suspected plague in Siberia; US monitoring case",
+    "origin": "Al Jazeera",
+    "sourceName": "WHO 보도자료",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQYU53d1JWY0UzZlJrQlloejFrUnVaSzFpX0xBdVc1N1NxSGJvbC04cVduUkJ6d2lDZ3lMRS0wTml6R1pMaFRjVHRLTVNRQzN1UTQ2amJTVGhhWW1uUTUzMkVsYzhOWDhpRm1SN1dBLW1MMHFUYmdxQ21JRENJN3RSTGNCN0xmM0N2T0ozNHlGTHIwOXAwMm9ZS0duUTdHOXpUUkJaTmlqZGEyUlY2TXV5ZXY3cHjSAboBQVVfeXFMTkRHeFIyM2RzN0dDY1VfZ25WUjZNSl8yaGhQXzJVQ3FwWUhrZGZ1WFc5U1dfQUtHWFlSVURoN3BDLWFndEV0czBSUXB6cndYbXYxV0NodzBGeDhUVVQ0eHp5aG03QWhoZzRycXVfS3RrWVhTVnZPUFdiX2ZKY29EVHVha0VWTVY4WEtONnVDazRlSEw5aXlCYWZRcDRManpKUm9IZzNCaE5KNi0wSExtdV9PcFYtMGtWX3pR?oc=5",
+    "date": "2026-10-06",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "Plague epidemic risk in Russia low after death of lab technician, WHO says",
+    "origin": "The Guardian",
+    "sourceName": "WHO 보도자료",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQakozM2lPQWE3YzBYMVJWdzBldFJBS2EwYVQzU3l1N3p0emhTZmhVSkl0WXQ2eHJQVEN1Mm0zZjE0RFpKRmJyczZYaThFZWNyb1haY1c4dWthT2RXT0lUUzBLZDJpbkhRNWpBQUxOQ2diQkw1S0VOeWlFYmVYUW9NWV9nSVNTUlpKVERIZFZBMHFOekZzaEthTHBuZ0RaLVVCckZnSXBn?oc=5",
+    "date": "2026-10-06",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "The death of a Russian plague researcher, explained by a microbiologist",
+    "origin": "Gavi, the Vaccine Alliance",
+    "sourceName": "WHO 보도자료",
+    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNY2V4dnJVUGh4NWJNQTNqT19Pc1V4R1I5aVkxTmJrUWIzU1BwOFlCOHRNLUhLQi1IZU5hQXJIckZNYVJVUzI0bzRLMmt2bFBXZVQ1a1lCV050bTNqdDRlcThKbTRkbXNaUXlnR3VRTUREOHFqLVZVbFkwb3ExXzRoZ0FERnRSS0hLVExXY2JwT01Kd1BM?oc=5",
+    "date": "2026-10-06",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "FSIS Issues Public Health Alert for Ineligible Chicken Vienna-Style Sausage Products Illegally Imported From Jamaicapha",
+    "origin": "",
+    "sourceName": "美CDC 뉴스룸",
+    "link": "https://tools.cdc.gov/api/embed/downloader/download.asp?m=316422&c=766591",
+    "date": "2026-10-06",
+    "via": "기관 RSS"
+   },
    {
     "title": "Outbreaks Associated with Untreated Recreational Water — United States, 2000–2014",
     "origin": "",
@@ -41,131 +81,49 @@
     "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6725a5.htm?s_cid=mm6725a5_x",
     "date": "2026-10-06",
     "via": "기관 RSS"
-   },
-   {
-    "title": "Notes from the Field: Domestically Acquired Verona Integron-Mediated Metallo-β-Lactamase-Producing Enterobacteriaceae — Indiana, 2016–2017",
-    "origin": "",
-    "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
-    "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6725a6.htm?s_cid=mm6725a6_x",
-    "date": "2026-10-06",
-    "via": "기관 RSS"
-   },
-   {
-    "title": "Notice to Readers: Ongoing Reanalysis of Suicide Rates Data by Occupational Group from Results Reported in MMWR",
-    "origin": "",
-    "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
-    "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6725a7.htm?s_cid=mm6725a7_x",
-    "date": "2026-10-06",
-    "via": "기관 RSS"
-   },
-   {
-    "title": "QuickStats: Percentage of Residential Care Communities That Use Electronic Health Records, by Census Region — United States, 2016",
-    "origin": "",
-    "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
-    "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6725a8.htm?s_cid=mm6725a8_x",
-    "date": "2026-10-06",
-    "via": "기관 RSS"
-   },
-   {
-    "title": "National HIV Testing Day — June 27, 2018",
-    "origin": "",
-    "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
-    "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6724a1.htm?s_cid=mm6724a1_x",
-    "date": "2026-10-06",
-    "via": "기관 RSS"
-   },
-   {
-    "title": "Interval Since Last HIV Test for Men and Women with Recent Risk for HIV Infection — United States, 2006–2016",
-    "origin": "",
-    "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
-    "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6724a2.htm?s_cid=mm6724a2_x",
-    "date": "2026-10-06",
-    "via": "기관 RSS"
-   }
-  ],
-  "injury": [
-   {
-    "title": "「손상예방과 건강한 사회」 2026년 3호 발간",
-    "origin": "",
-    "sourceName": "질병관리청 「손상예방과 건강한 사회」 (계간)",
-    "link": "https://www.kdca.go.kr/injury/disemg/2026/09/index.html",
-    "date": "2026-10-06",
-    "via": "기관 페이지"
-   },
-   {
-    "title": "「손상예방과 건강한 사회」 2026년 2호 발간",
-    "origin": "",
-    "sourceName": "질병관리청 「손상예방과 건강한 사회」 (계간)",
-    "link": "https://www.kdca.go.kr/injury/disemg/2026/06/index.html",
-    "date": "2026-10-06",
-    "via": "기관 페이지"
-   },
-   {
-    "title": "How to avoid common car seat mistakes",
-    "origin": "Antigo Daily Journal",
-    "sourceName": "Safe Kids Worldwide (어린이 안전)",
-    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOUlFLUVdVd2M0dWtzN2MxX0I0TVgzTXdCUXlzZG9MRUVBM3B3Z3h3Q193c18zdHZUcFdfYkQ3WU5SdUFVN0ZpVGZvLUJBQkh4b1FoMEZqaGhSWDhSWl9aNW43b3NJUGRuRktTM2xRWFhROERVTzdnY3JpdWJHU0VZaUFoWUk2cGQ4Sm16VFVaUWxlQUM5YldGMVRLOUdUVldRMHJkcVBIa0NqMmxhV0c3MjI4MU43VEJ1eXdYbkxwOA?oc=5",
-    "date": "2026-10-05",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "Jerusalem hospital urges helmet use after nine children injured in one day - J-Wire",
-    "origin": "J-Wire",
-    "sourceName": "Safe Kids Worldwide (어린이 안전)",
-    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOYmJNSXludmVTZUVGNWhxeDM4YkJfQ3FGSDFTelIzYnJ3TXhaSEYwY2ozMENTVXhtdWlNT196MjZvb29pazRtelhreWJ3TFhXWnZqR211M2x3bXRQUktnZ3A5Y0tjX2puemh4SXk3dkxoT1NZZjF3ZEF4Q2hoUWFfeG1wMEpEQXNiam5KcmdSMW5wUURUYVNtQldxYXk4WUp3Z1E?oc=5",
-    "date": "2026-10-05",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "Media-induced indirect trauma for adolescents: a COSMIN-based systematic review of measurement instruments and their psychometric suitability",
-    "origin": "European journal of psychotraumatology · Baek S, Lee M.",
-    "sourceName": "논문: 국내 손상 역학·감시",
-    "link": "https://doi.org/10.1080/20008066.2026.2732540",
-    "date": "2026-10-05",
-    "via": "논문 검색"
-   },
-   {
-    "title": "Bolus-Only Versus Bolus-Plus-Infusion Tranexamic Acid for Trauma: A Propensity Score-Matched Study",
-    "origin": "World journal of surgery · Min SK, Choi KK, Yu B, Lee GJ, Lee MA, Lee S, Jeon S, Jang M",
-    "sourceName": "논문: 국내 손상 역학·감시",
-    "link": "https://doi.org/10.1002/wjs.70587",
-    "date": "2026-10-04",
-    "via": "논문 검색"
-   },
-   {
-    "title": "Road injuries 10th leading cause for deaths in India: WHO report",
-    "origin": "The Times of India",
-    "sourceName": "WHO 손상·폭력 예방",
-    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQVHpiZmdmTDdjUHpraUp5VS04ZVgzUlpWX2xYSVpNUzdUY2RjSDhrWFFsWXg0R1haa0VpUnktMWM0UGdHRDY5ZmI4dURXSjFGdmdOQVJrMlF4bXFoenBqUEVEZVc0UjN0dUVXVmJBRkJEdEZnWWFWQ0dISUh1a1NlS2FoR1B4S0dBaVNJNDBmN3ZfRjBpQVppTkNVQkhBd2lvWG9rczFCeUdHYm8tdnNWdzVHWDZfejUyZGUyYVFzMXJzanRZT21aMXNCSnRWZDBUNnBzeFZ5cHRKLVoyZ0HSAeMBQVVfeXFMTlRWVjVjNGhEYTV1SjFYV20wbDMwc1hxQmt6ejAtRVZyRFZ3X25pY093bmRJZlVuWXlOMWd4dmE5QUl6LWQzdlVmeGlrbTBuNmN0TzBkTXNuRUhRVEJ2NC0wSTVXMzRiQ0xTSjg2MWMwVFNVS04xZnlJUHpWM3NsMWxTVlhIa2JMTzFuemw1Q19MUlhPMzV5NDBaYzdHaGlKeTVETndCZktPenpfVmMtQXFaeDlQZzZoMnoxT0xocGticURjcmg2aFNzWWxLTEtRdll3Z0lHOWtaOVQtb3VSZG80MUU?oc=5",
-    "date": "2026-10-03",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "2 children, 1 woman dead following collision in southeastern Saskatchewan",
-    "origin": "Global News",
-    "sourceName": "Safe Kids Worldwide (어린이 안전)",
-    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQcFJ0cWFCT0ttOXJhQ1IzRlgzWTA4eGI2NkowZXQyZkgxdUVaOUMwUExHRzI1Sml1VjZLYldwcG1McmZ4WEVCQUk0Nnk2VXEzcndQYWJzVGozUnc4ZmNUWWptU2pwTFJFemZSUzJiWUtZZHdaZ3psYnY1NEMzaFQ3R0docWRHZUtY?oc=5",
-    "date": "2026-10-03",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "Sex, Racial/Ethnic, and Regional Disparities in Mortality Involving Both Cardiac Arrest and Type 2 Diabetes Mellitus Among U.S. Adults, 1999-2020",
-    "origin": "Journal of racial and ethnic health disparities · Chaudhary A, Khalid AA, Fawaz-Ur-Rehman, Sabir R, Bashir AMD",
-    "sourceName": "논문: 중증외상·응급의료체계",
-    "link": "https://doi.org/10.1007/s40615-026-03215-4",
-    "date": "2026-10-03",
-    "via": "논문 검색"
-   },
-   {
-    "title": "의대협, 응급의료법 통과에 \"생명 살리는 길 포기하게 만드나\"",
-    "origin": "의협신문",
-    "sourceName": "중앙응급의료센터 응급의료 통계 (NEDIS·e-MEDIS)",
-    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBOYU56SzRDdGhBaWRVa2JvTzJFVHpyT3MwczBHVFBzRkR2UkZqRnFyek1QbmdNbm9XdGUxaWZJbjhzb2JyQ2U3VkV4Zk5IMHpHS3ZJSHpuU0Nkbk5aM3hTVThLdDdrRzM4S0F1TTg0MmU5QQ?oc=5",
-    "date": "2026-10-02",
-    "via": "뉴스검색"
    }
   ],
   "phsm": [
+   {
+    "title": "UKHSA appoints Chief Medical Advisor and Chief Scientific Officer",
+    "origin": "",
+    "sourceName": "영국 UKHSA 발표·근거자료",
+    "link": "https://www.gov.uk/government/news/ukhsa-appoints-chief-medical-advisor-and-chief-scientific-officer",
+    "date": "2026-10-06",
+    "via": "기관 RSS"
+   },
+   {
+    "title": "ECDC closely monitoring situation following case of pneumonia of unknown origin in Russia",
+    "origin": "",
+    "sourceName": "ECDC 비약물적 중재(NPI) 지침",
+    "link": "https://www.ecdc.europa.eu/en/news-events/ecdc-closely-monitoring-situation-following-case-pneumonia-unknown-origin-russia",
+    "date": "2026-10-06",
+    "via": "기관 페이지"
+   },
+   {
+    "title": "Overdose-related communication in Connecticut: reported receipt, perceived utility, and responses among overdose prevention and response professionals",
+    "origin": "",
+    "sourceName": "프리프린트: medRxiv 역학·보건정책",
+    "link": "https://www.medrxiv.org/content/10.64898/2026.10.01.26363949v1?rss=1",
+    "date": "2026-10-06",
+    "via": "기관 RSS"
+   },
+   {
+    "title": "Social and behavioral risk factors are associated with age-related differences in sustained attention: A cross-sectional GradCPT analysis of the All of Us dataset",
+    "origin": "",
+    "sourceName": "프리프린트: medRxiv 역학·보건정책",
+    "link": "https://www.medrxiv.org/content/10.64898/2026.10.01.26364102v1?rss=1",
+    "date": "2026-10-06",
+    "via": "기관 RSS"
+   },
+   {
+    "title": "Frontiers: A Roundtable Discussion on the I-Frame vs. S-Frame Debate",
+    "origin": "Behavioral Scientist",
+    "sourceName": "WHO 행동통찰·수용도 조사",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdktsQ1JKblUzWXZibnhFdU91eGJENFJKUVhxemZ6N2lDcmdZSXF0S25jYXc1LXNtOXNMMERQV2NGaDFHRHlkcnVzUnRQcTdEMVM2UEotQTBKZnBEeTZCY0RkN2pOVUxTaV9na0RmWUgzbmFOMlktaDBUQmJuX0RBanBLcVdHLUJJbDk0Z1FwUGl0SE9rNlA0NHF2T29IUkNv?oc=5",
+    "date": "2026-10-06",
+    "via": "뉴스검색"
+   },
    {
     "title": "Potential effect of replacing sedentary behavior with physical activity on the risk of atrial fibrillation: results from the UK Biobank and REGARDS study",
     "origin": "",
@@ -205,134 +163,118 @@
     "link": "https://doi.org/10.1016/j.jacr.2026.09.029",
     "date": "2026-10-03",
     "via": "논문 검색"
-   },
-   {
-    "title": "It’s Time We Reframe Healthcare Organizational Culture Using Behavioral Science",
-    "origin": "MedCity News",
-    "sourceName": "WHO 행동통찰·수용도 조사",
-    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOcjUzQUF4Y0NYdlo0MThkTV9ZbldsUHU3andfWnNwMHgzNW05YmFnX29NT2d3VTUteFphc0xSVk1lZG1UTTI5aWsyZ0I1MG5LbUY0WVRySEwtMUZBN0NEZkRkRkVMLXZNck1TYnNrd2lveXFiTHpzeFp3Z1M1Y0hqVTNFbmYySUlEUkpuSUFHWV95MWUxWFU2ZU84U3RXSVFLbDdtYU1CYXJPaGVuUEdGXw?oc=5",
-    "date": "2026-10-02",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "Societies Release Vaccine Recommendations for Respiratory Virus Season",
-    "origin": "JAMA · Anderer S.",
-    "sourceName": "지침·권고 문헌",
-    "link": "https://doi.org/10.1001/jama.2026.20006",
-    "date": "2026-10-02",
-    "via": "논문 검색"
-   },
-   {
-    "title": "Over 212,000 get the first MenB dose but almost 75% missing out",
-    "origin": "",
-    "sourceName": "영국 UKHSA 발표·근거자료",
-    "link": "https://www.gov.uk/government/news/over-212000-get-the-first-menb-dose-but-almost-75-missing-out",
-    "date": "2026-10-01",
-    "via": "기관 RSS"
-   },
-   {
-    "title": "Risk to general population remains very low following fourth imported Ebola case in Europe",
-    "origin": "",
-    "sourceName": "ECDC 비약물적 중재(NPI) 지침",
-    "link": "https://www.ecdc.europa.eu/en/news-events/risk-general-population-remains-very-low-following-fourth-imported-ebola-case-europe",
-    "date": "2026-10-01",
-    "via": "기관 페이지"
-   },
-   {
-    "title": "Inequitable nutritional impact of India's first COVID-19 lockdown: a national cross-sectional analysis",
-    "origin": "BMC global and public health · Marri AR, Dauphinais MR, Martinez L, Karoly M, McQuaid F, Si",
-    "sourceName": "논문: 비약물적 중재(NPI)·거리두기 효과",
-    "link": "https://doi.org/10.1186/s44263-026-00326-2",
-    "date": "2026-10-01",
-    "via": "논문 검색"
    }
   ],
   "chronic": [
    {
-    "title": "가난하면 구강검진도 제외··· 국감서 ‘건강불평등’ 도마",
-    "origin": "덴탈이슈",
-    "sourceName": "국가건강검진 결과·제도",
-    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBEaTB2SWFuQ1VWSjYtcTJRM3hJc2ZoUDFBX3dGUElaT2RGYkNBcEpKWW50d3hEbFpCTlZNaDM5czRzY21XaGk4ell4RkFKUkZXd25TSWMtOEl2TmUtVzdfNUFXQW5uaEtF?oc=5",
-    "date": "2026-10-05",
+    "title": "WHO warns of growing NCD burden despite longer lives",
+    "origin": "Ghana Business News",
+    "sourceName": "WHO 비감염성질환(NCD) 소식",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPMDNtMENfV2pTVV9Lc0t6cEdrUFlydVRmN242V0dPQ0laREVaQVFka01EWlVmWk1VSnFxWVNjOUpIZ3B0enVrYXQ0OWlMQjVjYldDeGdWdDRRb0poZmFFOVNlNjlSUXdnMlZjX3FrV242X2FpNm9PSXQwMVg4Tm9wUi1nV2tEYzdQcnJiVGRGS1hneHhsUW5GWEk2NkI0V0k?oc=5",
+    "date": "2026-10-06",
     "via": "뉴스검색"
    },
    {
-    "title": "Eleven-year population-based evaluation of a regional newborn hearing screening programme",
-    "origin": "European archives of oto-rhino-laryngology : official journal of the European Federation of Oto-Rhino-Laryngological Societies (EUFOS) : affiliated with the German Society for Oto-Rhino-Laryngology - Head and Neck Surgery · Lund A, Hansen AE, Devantier L.",
-    "sourceName": "논문: 암 검진·예방",
-    "link": "https://doi.org/10.1007/s00405-026-10651-9",
-    "date": "2026-10-04",
-    "via": "논문 검색"
-   },
-   {
-    "title": "Understanding Contact Risks of Pediatric Physical Activity: Video Analysis to Inform Decisions for Children at Risk of Bleeding Injuries",
-    "origin": "Haemophilia : the official journal of the World Federation of Hemophilia · Backstein L, Patel R, Elmikaty M, Westlake B, Sbeiti S, Bran",
-    "sourceName": "논문: 건강행태(흡연·음주·신체활동·식이)",
-    "link": "https://doi.org/10.1111/hae.70412",
-    "date": "2026-10-04",
-    "via": "논문 검색"
-   },
-   {
-    "title": "2026 영유아 건강검진 일정 및 차수별 문진표 예약 가이드 : 건강",
-    "origin": "재경일보",
-    "sourceName": "국가건강검진 결과·제도",
-    "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5BRVA3X0tXTjFBeFZTdXg3eHE1dlNIdkVIUmRRcFJRX2lkQnRRY0NsbkZWMndPQ2FaRnVjcXIyUGd2Qi1sNnJEM0RSWQ?oc=5",
-    "date": "2026-10-04",
+    "title": "WHO reinforces oral disease surveillance with an updated NCD STEPS module",
+    "origin": "World Health Organization (WHO)",
+    "sourceName": "국제 NCD 동향·캠페인",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOSEZ6RzhGRzVGTHhxTVJFTk9LcGM4NTB1NnYwTzdVS05YTS05ckd1M2ZhZS1hWlBHbFBnSWxDUWt3c1FQNXU3RjhvRkMwNnlfYmthNWF6VTdZVG81YldSNDJSUWtWR3A0QVpCY05hUTBvLTltN2dnMXVldlFmM0pDcDZ2UEhEazNYSjBTSXgxWGZWMlNFd2NCT3JPa1ZrNkNCQUhMQ1hpc1lBLVZsX1VibWdZbDI?oc=5",
+    "date": "2026-10-06",
     "via": "뉴스검색"
    },
    {
-    "title": "E-Cigarette Perceptions Among Adults with Recent Myocardial Infarction or Heart Failure Diagnosis: Population Assessment of Tobacco and Health Study, 2022-2023",
-    "origin": "Substance use & misuse · Selva Kumar D, Lee SY, Gathright E.",
-    "sourceName": "논문: 담배·전자담배 규제",
-    "link": "https://doi.org/10.1080/10826084.2026.2734262",
-    "date": "2026-10-04",
-    "via": "논문 검색"
+    "title": "폐기능검사 국가검진 포함됐지만…국민 88.4% “모른다”",
+    "origin": "뉴스더보이스헬스케어",
+    "sourceName": "국가건강검진 결과·제도",
+    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5DZldIUDBlOHo0WkVaeGpxWEpScndyUVVFRzgtUXhBQTZTOGw2UjgxV1MzZ210S3NQR1dEaUJVVmJycG1QMGVUNlZnWDJ4RnRZdW55WHgzSjN5ZGV1SmRmYjJlREVqQmMwOTZ5UkZ2aw?oc=5",
+    "date": "2026-10-06",
+    "via": "뉴스검색"
    },
    {
-    "title": "Prevalence, risk factors and adverse health outcomes of osteosarcopenia in middle-aged and older adults with type 2 diabetes mellitus-a scoping review",
-    "origin": "Osteoporosis international : a journal established as result of cooperation between the European Foundation for Osteoporosis and the National Osteoporosis Foundation of the USA · Tan AWK, Wong CS, Smith HE, Munro YL, Best JD, Lim WS.",
-    "sourceName": "논문: 당뇨병·비만·대사질환",
-    "link": "https://doi.org/10.1007/s00198-026-08228-7",
-    "date": "2026-10-03",
-    "via": "논문 검색"
+    "title": "국가건강검진 '폐기능검사' 인지도 국민 10명 중 1명 불과",
+    "origin": "헬스미디어뉴스",
+    "sourceName": "국가건강검진 결과·제도",
+    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5IcmNMenV5dnd3M0F5Sk1PV1d3c1hqdkR3WExTVVc4d1N3SURLNG1FcVlQcEtOMjZlT1ZmWEU1d3hIdUhyamlkbG5GZnA4NWtONXV3UW5FbWJ1aTBNOUdGUjBNVmt3NGNtU0h6SmlraTNDQQ?oc=5",
+    "date": "2026-10-06",
+    "via": "뉴스검색"
    },
    {
-    "title": "Prevalence of binge eating disorder symptoms and associated characteristics in Danish adults with type 2 diabetes: A cross-sectional study",
-    "origin": "Diabetic medicine : a journal of the British Diabetic Association · Nybo PF, Domazet SL, Røder ME, Linnet J.",
-    "sourceName": "논문: 당뇨병·비만·대사질환",
-    "link": "https://doi.org/10.1111/dme.70489",
-    "date": "2026-10-03",
-    "via": "논문 검색"
+    "title": "국가건강검진 제외는 평등권 ‘침해’",
+    "origin": "건치신문",
+    "sourceName": "국가건강검진 결과·제도",
+    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1FZDBtdXlrU1RCZEJNMFVtd3dMLVFfbkNXRHdXcHZ3RXhpVU9ianUxTGF5aGpwZHgyYkpsQTNlOE1BVWxsY2k0SVA4OHBVT2hCWnplS0ZhSWllWGpyblpfY3FIOW84RDNJV3RNdQ?oc=5",
+    "date": "2026-10-06",
+    "via": "뉴스검색"
    },
    {
-    "title": "Non-completion of colorectal cancer screening among Alaska Native people in an intervention trial",
-    "origin": "Journal of the National Cancer Institute. Monographs · Redwood D, Flanagan C, Jeffries L, Toffolon M, Klejka J, Fin",
-    "sourceName": "논문: 암 검진·예방",
-    "link": "https://doi.org/10.1093/jncimonographs/lgag020",
-    "date": "2026-10-03",
-    "via": "논문 검색"
+    "title": "국가검진 폐기능검사 국민 88% \"도입 사실 몰라\"",
+    "origin": "의학신문",
+    "sourceName": "국가건강검진 결과·제도",
+    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1QYVYwTko2YTZMSFZfYlBxQ204bDJheC1oR1M3YTZnNHZfUml1TmpnYjd2cURON2R6Y3BsX0FxVFZHX1lvaE1vMVBGM2dia1lzU3ZJVVBWdm1DQVpiQ1JJeENMNUpTSnQzZEE?oc=5",
+    "date": "2026-10-06",
+    "via": "뉴스검색"
    },
    {
-    "title": "Should I drink water or wine? Impacts of online nutritional counseling on the alcohol consumption of elderly individuals with mild cognitive impairment : Secondary Data Analysis from the RCT \"BrainFit-Nutrition\"",
-    "origin": "BMC public health · Scheuermann JS, Graessel E, Scheerbaum P, Hanslian E, Schiel",
-    "sourceName": "논문: 치매·인지기능",
-    "link": "https://doi.org/10.1186/s12889-026-29728-5",
-    "date": "2026-10-03",
-    "via": "논문 검색"
+    "title": "폐기능검사 국가검진 도입…대상자 77%가 \"몰랐다\"",
+    "origin": "서울경제TV",
+    "sourceName": "국가건강검진 결과·제도",
+    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9aLUl4T0laTmRvS2VKTGtwdElGNTN3OE90dEpQMGQ5VUNvVUU1aWVZNkdrRkVFaHJDbU9SYTdNV0ppOWhyUUJXOUhDb1VkaV8wa0tYZjNxejlrTGg0dkJ1aTBuNlE?oc=5",
+    "date": "2026-10-06",
+    "via": "뉴스검색"
    },
    {
-    "title": "Indications and pathways of Type 2 diabetes mellitus as a predictor of neurocognitive decline and dementia: Clinical implications and management",
-    "origin": "Applied neuropsychology. Adult · Megari K, Keramida MM.",
-    "sourceName": "논문: 치매·인지기능",
-    "link": "https://doi.org/10.1080/23279095.2026.2741894",
-    "date": "2026-10-03",
-    "via": "논문 검색"
+    "title": "\"폐기능검사 받겠다\" 90%인데, 국가검진 도입 아는 국민 11.6%",
+    "origin": "약사공론",
+    "sourceName": "국가건강검진 결과·제도",
+    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9uLUtZc2tKNlBDaHFFYXhORmpKZllCckp0QnFUQ3phS19jd3lUWG9YcnNBc3BvbE45dTBJSVhoVmMxdExCbWNUdTdFLWpfVnBzYm5rTDVOYmJZd2c1MmxNX1VBd3ByTWhGSGwzNw?oc=5",
+    "date": "2026-10-06",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "국가검진 들어온 폐기능검사…국민 88.4%는 도입 몰랐다",
+    "origin": "메디파나뉴스",
+    "sourceName": "국가건강검진 결과·제도",
+    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1fYXdkSTJKdkMxMzdMSUpaaU9oSEF3ekFaN21FenR3cWZuTzFUOXAxdG5mQTFINUdJUy1BTGltSFJPODFqNmMxb29URk9ZV1hFZ0ZLcVh2dnBQaWdjdUgwMWNkUXc1T041Uk8w?oc=5",
+    "date": "2026-10-06",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "대상자 10명 중 8명 몰라…“국가검진 폐기능 검사 가능” [건강한겨레]",
+    "origin": "Daum",
+    "sourceName": "국가건강검진 결과·제도",
+    "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9xWFlMOFgxUVRtY3VWWnU3XzdlOUJMS3d0ZDVLUkdFQlA0SGMwd0kwNnV2MGhzRmVUOFAxd0ZQQnVEZUxZQ3AyUmxQT0ZhdHI5dlhWNg?oc=5",
+    "date": "2026-10-06",
+    "via": "뉴스검색"
    }
   ],
   "climate": [
    {
+    "title": "Global Heat Forum seeks to galvanize action and investment",
+    "origin": "World Meteorological Organization WMO",
+    "sourceName": "세계기상기구(WMO) 폭염·극한기후",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPLWtYYm5BYkR5TXMwMGMtT0l4QmRYc0lfd2FVUUk4VnhJVFVuTWU2Yzg2aVI4WWVQZmxNeFZNY2hBQVA0Z0F6RnAyTTB0WlRiRGF3YldHNUp1SzFDRXhpNTIwWUl3c0lQNHl6NENaWkZ4OE4zc2lGZ1FSSlVXaW9jbnpuSHYwYWVxRDR4YzlPenQzOFk?oc=5",
+    "date": "2026-10-06",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "대구·경북 올여름 온열질환 413명…사망도 2명",
+    "origin": "뉴시스",
+    "sourceName": "국내 온열질환 응급실감시체계",
+    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB2eXlJNVRpSnFyUGNHcXd1SkZkRmRrX2Q5S0VNUnBMcUpjS29aQWVhRG9IelZwN2FLRTBVOXNwdDRLbVBOdmg0S1Fpbm9GRU1aMXk3ZGpkaWVNQTFOSk1DNk5FM3lKRVdReTJlZE1VM3F3ME5iTFFNVtIBeEFVX3lxTFB2eXlJNVRpSnFyUGNHcXd1SkZkRmRrX2Q5S0VNUnBMcUpjS29aQWVhRG9IelZwN2FLRTBVOXNwdDRLbVBOdmg0S1Fpbm9GRU1aMXk3ZGpkaWVNQTFOSk1DNk5FM3lKRVdReTJlZE1VM3F3ME5iTFFNVg?oc=5",
+    "date": "2026-10-06",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "Unrelenting heat: Ten trends shaping heat action",
+    "origin": "PreventionWeb",
+    "sourceName": "WHO 기후변화와 건강",
+    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQNm9aeTlJVm8wLVloWmlaOUtvWUI3SXJkbjB5MGUtODAxWTA2X2NzRGQtX1pkU29KNWpmOHBCd0ZYa1N4UFAzTUlvYnNUMFVQc3lLRWJrdDI3Q2dfYlpZUWlWMERfRko3dFZHSnJCNjVJNFR3STkzcDNtNk9uUWJOb3lvSFVheldTYUE?oc=5",
+    "date": "2026-10-05",
+    "via": "뉴스검색"
+   },
+   {
     "title": "El Nino forecast update as weather experts urge 'act now' with disease warning",
-    "origin": "The Mirror",
+    "origin": "Daily Mirror",
     "sourceName": "세계기상기구(WMO) 폭염·극한기후",
     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSjhabzhGWkRLWjkwc0xkdHloQ0JnMTFjdTBrRWdibGhnY1NJd29xakRwb0ZPRURma0ZWOExiT2c2cUhXUV82Mnd3eXYteHhEN3I2WkFfWjd5RFBPVGFLWjR6ZVBXaGxpVTd3ZlN2M2F4MXo5dWlPbWhoMEQ5VXpUb2pOQVLSAYQBQVVfeXFMTUo4Wm84RlpES1o5MHNMZHR5aENCZzExY3Uwa0VnYmxoZ2NTSXdvcWpEcG9GT0VEZmtGVjhMYk9nNnFIV1FfNjJ3d3l2LXh4RDdyNlpBX1o3eURQT1RhS1o0emVQV2hsaVU3d2ZTdjNheDF6OXVpT21oaDBEOVV6VG9qTkFS?oc=5",
     "date": "2026-10-05",
@@ -385,30 +327,88 @@
     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPWmp6ZHI0djlyS2NfM2JVSjMtaG1MdWkyOXpUay1lUVI0dFl0X1VKTmhrUVJ1ZWtxanJ1azgwdTBERE9pTjByZEhvV0kySTktV3ZLZFkxTEllM0VlY2lZajNUUVpHV2E1dkpvbDlxNDEyMkctdzRMZnZ4ejJVRVo0UVAwdHpRRVV4eTNJOUt3?oc=5",
     "date": "2026-10-02",
     "via": "뉴스검색"
+   }
+  ],
+  "injury": [
+   {
+    "title": "「손상예방과 건강한 사회」 2026년 3호 발간",
+    "origin": "",
+    "sourceName": "질병관리청 「손상예방과 건강한 사회」 (계간)",
+    "link": "https://www.kdca.go.kr/injury/disemg/2026/09/index.html",
+    "date": "2026-10-06",
+    "via": "기관 페이지"
    },
    {
-    "title": "Europe heatwave: Half the continent faced extreme heat stress this summer, scientists say",
-    "origin": "gulfnews.com",
-    "sourceName": "유럽 폭염·기후 매개체 감시",
-    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPRVRjUnpsNk1iLWw0N2VmUGlUa0R5cHB0UlhVd2FoOXFQMjR1ZmpFbVhUbjN2U1BWU1lyZkM3aVIxV3c5c2psdC1vR3RTWVlUaUVZLU1aRnBraUdpN1lDRTRqMGlSZUV0VjFkU0JPREF6TE5PWkc4cEJmcUlUYzVFTnoyMjFBakxOdTRjSUk5dnpjb2c5Y3AwSDAwNzBwdm9BM1Rkc3duZDhrbEY1RWRlY0x5eFg5VWtsZ3fSAcwBQVVfeXFMTVg0TlhsUTZaTE1uRUNrWFoyZmdPNzZRcFpRY3NBRU5hMDFTd0poN0xYUEQ5TG1VUExXVnhTQUlqVzVDM0V1T2JXOGVKVmNHb2lubUZ0LWlpNEk2bTFCWjZrMVRjM1VDdkgwcTFYaVZxWE1IYm0wSkFJUmVSbUlMbnBMYXd1RzUwTENJT0JmZDcwUko2aDBSbklQNGs2V1ZJSC1xcHRZdnl1UjZmVy1XbUhXMTNRSUNHTVdmX1JTbFZsNF80bkMwZ0oyMjZh?oc=5",
-    "date": "2026-10-02",
+    "title": "「손상예방과 건강한 사회」 2026년 2호 발간",
+    "origin": "",
+    "sourceName": "질병관리청 「손상예방과 건강한 사회」 (계간)",
+    "link": "https://www.kdca.go.kr/injury/disemg/2026/06/index.html",
+    "date": "2026-10-06",
+    "via": "기관 페이지"
+   },
+   {
+    "title": "How three former CDC employees have dealt with the agency's shredding",
+    "origin": "Georgia Public Broadcasting",
+    "sourceName": "美CDC 손상센터 (NCIPC·WISQARS)",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZnNfLWNEdXE3MV9oSGs5ZkZXXzNnLUNsWGgycjZMUmhjQ3dRVml3OWNBanpqQ0FZOUhZenVjeGJSU2FnMUpCcVJqNTFWbkZ2eFB2Z2hPMWZfb2xRZkI4VkpYNjBBcWFoM3ZTYVZUVVEzMnhCMEdhV0d2NUstZ0Z5T1ZqTmllOHowOEFEVS1kcXVmZjlueVY0YW80OGpjcjRp?oc=5",
+    "date": "2026-10-06",
     "via": "뉴스검색"
    },
    {
-    "title": "Summer 2026 was hottest on record in Western Europe, yet still no political awakening",
-    "origin": "Le Monde.fr",
-    "sourceName": "유럽 폭염·기후 매개체 감시",
-    "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQVExKSUpVSmFMQXZxWUpxVjBKYk9mMk9ZanBsQ2NhX1BMNVdUSFVmSDJCUXVkemExMzRGWUcwT0V1c2FyOWxqOXVwQjBmM0Q4MXpROHpTSXR5ZEM4QUpvZVd4MTBzbEZfYnlmUWtBZ0M0X2JyN3BNY2gtM1c5TVVQdXhlTVNwSk1Wb1FhNkxFMXU0SklvM0lKRGNaTEhmZkhBZTZyZlNmR2hnaFRmMHRfTEVTWTA3bkZad1IzVDI3ZXZmZmlLT2hLM0JkMHRtaWsxRl9EbFVycWQ5N3BNckRKQ3BUTnk0SEk5STZJbE1HLXAxcjBWR2UwdHVQdWduN1pKTEs0?oc=5",
-    "date": "2026-10-02",
+    "title": "The CDC Updated the Defensive Gun Use Statistics on its Website — Again",
+    "origin": "The Trace",
+    "sourceName": "美CDC 손상센터 (NCIPC·WISQARS)",
+    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNRTJjX3RJaHJFN0trZTZWZGZzQzJjTDVXTW1lVFZkamVkbFZWaUh3aS1oeHJBQkItUFpRUjVYam5iWjFHUkhqVjlQX29HT2RqblFzWV96aWF2VjVuSVBkYTQxTlpnVkhmVzJ5bzhZQVpWR3piZV9WZTlhZWZVWGlSQVRubzd1bWUxM1E?oc=5",
+    "date": "2026-10-06",
     "via": "뉴스검색"
    },
    {
-    "title": "Europe hit by four of its 10 worst heatwaves in a single summer",
-    "origin": "Modern Ghana",
-    "sourceName": "유럽 폭염·기후 매개체 감시",
-    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxORUlkQnpSSEhBMnFSYzdzdmZaM3c4YmxvYXgySUlJaWttWTh4TENoU0taZDQ1LTc4VGRmanNpamJQc3RZSm54MTFfU0lHU2dXTVVfSG05dlRyWGQ4LXhydGYxRnZoaUpLT3JJNU0weHkyOFBiTHU4VEVPTEZPZC02YWxaNlVjUnhvcHB1allrQWZMVDVFTkxRVtIBlwFBVV95cUxQLXZwNTZJbE9DNDBCWFJNb3NzMC1wQS1hekpVaVRxMWdYMUVfVkFiak1sSlNON19vYWxuWF92d2RCazVFNkVENE1LS21UbFcxNl90V2c1VE8yRXZIMDhSblFvMkhHSXFpcTlPYkZfUTBlV2lkWGJkdFlOTmdsaDdMcjZaaXBFeENrVE1PT1R4TFFYVzBaUkdV?oc=5",
-    "date": "2026-10-02",
+    "title": "Putting women first: ethical and safety recommendations for research on violence against women",
+    "origin": "WHO 발간물",
+    "sourceName": "WHO 발간물: 손상·안전",
+    "link": "https://www.who.int/publications/i/item/9789240125582",
+    "date": "2026-10-06",
+    "via": "WHO 공식"
+   },
+   {
+    "title": "Prevalence of intimate partner violence and non-partner sexual violence against adolescent girls aged 15–19 years: technical brief",
+    "origin": "WHO 발간물",
+    "sourceName": "WHO 발간물: 손상·안전",
+    "link": "https://www.who.int/publications/i/item/B09912",
+    "date": "2026-10-06",
+    "via": "WHO 공식"
+   },
+   {
+    "title": "How to avoid common car seat mistakes",
+    "origin": "Antigo Daily Journal",
+    "sourceName": "Safe Kids Worldwide (어린이 안전)",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOUlFLUVdVd2M0dWtzN2MxX0I0TVgzTXdCUXlzZG9MRUVBM3B3Z3h3Q193c18zdHZUcFdfYkQ3WU5SdUFVN0ZpVGZvLUJBQkh4b1FoMEZqaGhSWDhSWl9aNW43b3NJUGRuRktTM2xRWFhROERVTzdnY3JpdWJHU0VZaUFoWUk2cGQ4Sm16VFVaUWxlQUM5YldGMVRLOUdUVldRMHJkcVBIa0NqMmxhV0c3MjI4MU43VEJ1eXdYbkxwOA?oc=5",
+    "date": "2026-10-05",
     "via": "뉴스검색"
+   },
+   {
+    "title": "Jerusalem hospital urges helmet use after nine children injured in one day - J-Wire",
+    "origin": "J-Wire",
+    "sourceName": "Safe Kids Worldwide (어린이 안전)",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOYmJNSXludmVTZUVGNWhxeDM4YkJfQ3FGSDFTelIzYnJ3TXhaSEYwY2ozMENTVXhtdWlNT196MjZvb29pazRtelhreWJ3TFhXWnZqR211M2x3bXRQUktnZ3A5Y0tjX2puemh4SXk3dkxoT1NZZjF3ZEF4Q2hoUWFfeG1wMEpEQXNiam5KcmdSMW5wUURUYVNtQldxYXk4WUp3Z1E?oc=5",
+    "date": "2026-10-05",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "Media-induced indirect trauma for adolescents: a COSMIN-based systematic review of measurement instruments and their psychometric suitability",
+    "origin": "European journal of psychotraumatology · Baek S, Lee M.",
+    "sourceName": "논문: 국내 손상 역학·감시",
+    "link": "https://doi.org/10.1080/20008066.2026.2732540",
+    "date": "2026-10-05",
+    "via": "논문 검색"
+   },
+   {
+    "title": "Bolus-Only Versus Bolus-Plus-Infusion Tranexamic Acid for Trauma: A Propensity Score-Matched Study",
+    "origin": "World journal of surgery · Min SK, Choi KK, Yu B, Lee GJ, Lee MA, Lee S, Jeon S, Jang M",
+    "sourceName": "논문: 국내 손상 역학·감시",
+    "link": "https://doi.org/10.1002/wjs.70587",
+    "date": "2026-10-04",
+    "via": "논문 검색"
    }
   ]
  }
