@@ -25,9 +25,12 @@
 - `data/sources.json` 소스 DB → `scripts/build_outbreak_feed.py`(GitHub Actions 매일 KST 05:00) → `data/feed.json`.
 - 소스 형식: rss / query(뉴스검색, must) / epmc / who_api / who_pub / page(page_re, link_fmt, title_fmt, limit, filter).
 - 발간본 추가: `samples/<kind>-<yyyy>-<nn>.json` 작성 → `python3 scripts/render_newsletter_issues.py` → index.html의 SAMPLE_FILE 갱신.
-- 발간본 주소를 바꾸면 옛 주소에 자동 이동 페이지를 남긴다 (예: `issues/phsm-2026-01.html` → 37호). 렌더 스크립트는 이 파일을 지우지 않는다.
+- 발간본 주소를 바꾸면 옛 주소에 자동 이동 페이지를 남긴다 (예: `issues/outbreak-2026-37.html` → 1호). 렌더 스크립트는 이 파일을 지우지 않는다.
 - 원고 꼭지(topic)가 쓸 수 있는 칸: `summary`(요약·꼭지 머리 핵심 상자에 같이 쓰임) · `situation`/`assess`/`korea`(본문 세 꼭지) ·
   `tables`(번호 붙는 자료표) · `chart`(`kind:"cat"` 이면 가로 막대, 없으면 연도별 세로 막대) · `profile`(질병 개요) · `refs`(각주 목록) · `caveat`.
+- `urgency`: 읽는 순서 — `먼저 볼 것` / `이번 분기` / `지켜볼 것`. '무엇을 하라'가 아니라 '언제 볼 것인가'다.
+  `design` 에 '언론 보도' 가 있으면 `먼저 볼 것` 을 달아도 렌더링 때 `이번 분기` 로 한 칸 내려간다.
+- `scope`: 국내 기관·조사 자료를 다룬 꼭지는 `"국내"`. 이때 '국내 영향 상' 대신 '국내 자료' 가 붙고 `impact` 는 쓰지 않는다.
 - 불릿 층위: 그냥 쓰면 보통 항목, 앞에 `- ` 를 붙이면 하위 항목, `※ ` 를 붙이면 주석 상자. `키워드 :: 본문` 은 앞머리 키워드.
 - 본문의 `[1]` 은 그 꼭지 `refs` 의 1번으로 이어진다. 숫자 강조는 규모·비율만 하고 날짜·연도는 하지 않는다.
 - 서식은 발간본(`scripts/render_newsletter_issues.py`)·제작 도구(`index.html`)·메일(`email.js`) 세 곳에 각각 있다. 한 곳을 고치면 세 곳을 함께 고친다.
