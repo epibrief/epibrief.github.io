@@ -18,20 +18,8 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:79e1a3d202c45798@bbangcal.epibrief.github.io
-DTSTAMP:20261008T013022Z
-DTSTART;VALUE=DATE:20261021
-DTEND;VALUE=DATE:20261024
-SUMMARY:[대한예방의학회] 2026년 제78차 대한예방의학회 
- 가을학술대회
-LOCATION:경주화백컨벤션센터
-DESCRIPTION:주최: 대한예방의학회\n원문: http://www.prevmed.o
- r.kr/\n빵캘: https://epibrief.github.io/bbang-calender/
-URL:http://www.prevmed.or.kr/
-END:VEVENT
-BEGIN:VEVENT
 UID:b744d68864203471@bbangcal.epibrief.github.io
-DTSTAMP:20261008T013022Z
+DTSTAMP:20261008T171124Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:[대한예방의학회] 기획 세미나「자살예방의 정
