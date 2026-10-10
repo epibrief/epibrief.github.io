@@ -1,12 +1,28 @@
 {
- "updated": "2026-10-09 23:41",
+ "updated": "2026-10-10 23:04",
  "byKind": {
   "outbreak": [
+   {
+    "title": "Pneumonia of undetermined etiology - the Russian Federation",
+    "origin": "WHO Disease Outbreak News",
+    "sourceName": "WHO 발생 속보 (Disease Outbreak News)",
+    "link": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON620",
+    "date": "2026-10-10",
+    "via": "WHO 공식"
+   },
+   {
+    "title": "CDC Closes Angola and South Sudan Offices, with Zimbabwe Next as U.S. Ties Health Aid to Country Deals",
+    "origin": "Medical Daily",
+    "sourceName": "美CDC 여행 건강 경보",
+    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQQWtETDZMTFMtZ0VOazFLWnJfSndFR0R5MEZ3cVJ5SHpnSTFINDd4eXRXd2ZOSkJQUHlQSmJwM3lFV21ZM2ljbEpXMzFBQlVJeXUwcnozOWRuRklWLVEtOE56MTdVVWxuVGdURVZ2SVNnNlA0V1h4WXByT1F0ZXFtdlZINjA0eXNvaUY1RG0yMVc?oc=5",
+    "date": "2026-10-10",
+    "via": "뉴스검색"
+   },
    {
     "title": "Oliva LLC Issues Allergy Alert on Undeclared Sesame in Baba Ghanouj, Spicy Baba Ghanouj, and Hummus",
     "origin": "",
     "sourceName": "美CDC 뉴스룸",
-    "link": "https://tools.cdc.gov/api/embed/downloader/download.asp?m=316422&c=766612",
+    "link": "https://tools.cdc.gov/api/embed/downloader/download.asp?m=316422&c=766632",
     "date": "2026-10-09",
     "via": "기관 RSS"
    },
@@ -14,7 +30,7 @@
     "title": "Krasnyi Oktyabr Inc. Recalls Starfish Seafood Trio Because of Possible Health Risk",
     "origin": "",
     "sourceName": "美CDC 뉴스룸",
-    "link": "https://tools.cdc.gov/api/embed/downloader/download.asp?m=316422&c=766613",
+    "link": "https://tools.cdc.gov/api/embed/downloader/download.asp?m=316422&c=766633",
     "date": "2026-10-09",
     "via": "기관 RSS"
    },
@@ -65,107 +81,33 @@
     "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6725a6.htm?s_cid=mm6725a6_x",
     "date": "2026-10-09",
     "via": "기관 RSS"
-   },
-   {
-    "title": "Notice to Readers: Ongoing Reanalysis of Suicide Rates Data by Occupational Group from Results Reported in MMWR",
-    "origin": "",
-    "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
-    "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6725a7.htm?s_cid=mm6725a7_x",
-    "date": "2026-10-09",
-    "via": "기관 RSS"
-   },
-   {
-    "title": "QuickStats: Percentage of Residential Care Communities That Use Electronic Health Records, by Census Region — United States, 2016",
-    "origin": "",
-    "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
-    "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6725a8.htm?s_cid=mm6725a8_x",
-    "date": "2026-10-09",
-    "via": "기관 RSS"
-   }
-  ],
-  "phsm": [
-   {
-    "title": "PapersOwl Survey Finds 77% of US Gen Z Identify With Soft Hermitting, Citing Cost Over Mental Health",
-    "origin": "USA Today",
-    "sourceName": "WHO 행동통찰·수용도 조사",
-    "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOSTVqYnhIU3BFNmJGSVZhN3pseVhWQUJyZktRdVdGam1OMDBqREowT3NVdGFSZ0lCLXJsZzhWT2dpc2l3ejZDYUpoYXFoUmxVQXE1RnJhcHI1ZnRjSExWdFBTcEo4TThkSkd6dzBJUXlHZWI0VFoxM1dHZkkyeGRBMFlLdVBkdk9XWWZ4ZmoyV1g5WV9MNVpRbGRDV0M0WDk3Ykd3bFdLUlNQQktDWG5fSnNzTC1GU1dZUkZXaGtHMVVpOTdPWVd3YnNQUENrckZwU0VwRWxRWlp0TGdyNEZWR3l4R24?oc=5",
-    "date": "2026-10-09",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "£33.2 million to protect public from future epidemics and pandemics",
-    "origin": "",
-    "sourceName": "영국 UKHSA 발표·근거자료",
-    "link": "https://www.gov.uk/government/news/332m-to-protect-public-from-future-epidemics-and-pandemics",
-    "date": "2026-10-08",
-    "via": "기관 RSS"
-   },
-   {
-    "title": "Latest UKHSA weekly winter virus surveillance data",
-    "origin": "",
-    "sourceName": "영국 UKHSA 발표·근거자료",
-    "link": "https://www.gov.uk/government/news/latest-ukhsa-weekly-winter-virus-surveillance-data",
-    "date": "2026-10-08",
-    "via": "기관 RSS"
-   },
-   {
-    "title": "Flu levels low at start of season but higher than previous 4 years",
-    "origin": "",
-    "sourceName": "영국 UKHSA 발표·근거자료",
-    "link": "https://www.gov.uk/government/news/flu-levels-low-at-start-of-season-but-higher-than-previous-4-years",
-    "date": "2026-10-08",
-    "via": "기관 RSS"
-   },
-   {
-    "title": "Kenya Strengthens Ebola Preparedness and Contact Tracing",
-    "origin": "health.go.ke",
-    "sourceName": "WHO PHSM 지식허브 (공중보건·사회적 조치)",
-    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQRkNVMnlqemptY1NPcGdVWXN0ZTNxQTlNY3loYmxOcjRaNE1jY19NN2RJLVBuSWlRb3lWa244QU13OFNCa01ycEoyUF9Wd3c5NEh0NzhPRUJRa2JnTWpBUXhSczNyclpyS25zVzZaeXNfSE5rUlczeWdWUEFhd0hpeGVDWTVjUHVl?oc=5",
-    "date": "2026-10-07",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "Cell-Cell Communication Patterns in Alzheimer's Disease Differ by Cortical Layer",
-    "origin": "",
-    "sourceName": "프리프린트: medRxiv 역학·보건정책",
-    "link": "https://www.medrxiv.org/content/10.64898/2026.10.05.26364776v1?rss=1",
-    "date": "2026-10-07",
-    "via": "기관 RSS"
-   },
-   {
-    "title": "UKHSA appoints Chief Medical Advisor and Chief Scientific Officer",
-    "origin": "",
-    "sourceName": "영국 UKHSA 발표·근거자료",
-    "link": "https://www.gov.uk/government/news/ukhsa-appoints-chief-medical-advisor-and-chief-scientific-officer",
-    "date": "2026-10-06",
-    "via": "기관 RSS"
-   },
-   {
-    "title": "ECDC closely monitoring situation following case of pneumonia of unknown origin in Russia",
-    "origin": "",
-    "sourceName": "ECDC 비약물적 중재(NPI) 지침",
-    "link": "https://www.ecdc.europa.eu/en/news-events/ecdc-closely-monitoring-situation-following-case-pneumonia-unknown-origin-russia",
-    "date": "2026-10-06",
-    "via": "기관 페이지"
-   },
-   {
-    "title": "Overdose-related communication in Connecticut: reported receipt, perceived utility, and responses among overdose prevention and response professionals",
-    "origin": "",
-    "sourceName": "프리프린트: medRxiv 역학·보건정책",
-    "link": "https://www.medrxiv.org/content/10.64898/2026.10.01.26363949v1?rss=1",
-    "date": "2026-10-06",
-    "via": "기관 RSS"
-   },
-   {
-    "title": "Social and behavioral risk factors are associated with age-related differences in sustained attention: A cross-sectional GradCPT analysis of the All of Us dataset",
-    "origin": "",
-    "sourceName": "프리프린트: medRxiv 역학·보건정책",
-    "link": "https://www.medrxiv.org/content/10.64898/2026.10.01.26364102v1?rss=1",
-    "date": "2026-10-06",
-    "via": "기관 RSS"
    }
   ],
   "chronic": [
+   {
+    "title": "고혈압·당뇨 등록관리사업 개편 논란…“약값 지원 끊기면 치료 중단 늘 것”",
+    "origin": "현대건강신문",
+    "sourceName": "국내 만성질환 관리 정책",
+    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE53SGVCYWxaeDR0YUpIN1g2TVZwZEYyUURDcXFpSU56N1lKRXNFaXpSaFg4Wm1WUzJUYTg3SndNb1dOeEZNSFlNZk00WWVaWjlWTmlvZ3lR?oc=5",
+    "date": "2026-10-10",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "요양시설 출장구강검진, 의료급여 수급자는 제외 ‘사각지대’",
+    "origin": "치과신문",
+    "sourceName": "국가건강검진 결과·제도",
+    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBPNER6WVN1cERKR3RyM0Nacy1BQ2thNU1hR2IzTHpUb3pzM0kyU3FNZGY2eXNrbVp6N19HSzA1ci00TG1zbDJqWGNKMldHZVFXNmtJWDIxLUlYdzFZZmowUktFcHJXUQ?oc=5",
+    "date": "2026-10-10",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "Dr Mercy Karanja, Head of the Division of Mental Health at the Ministry of Health, speaks on the importance of integrating mental health services into the treatment of non-communicable diseases (NCDs) under the M-Care project being piloted in Murang’a Cou",
+    "origin": "Facebook",
+    "sourceName": "WHO 비감염성질환(NCD) 소식",
+    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPcTFVV21wZHB4czRTN0paY2NOUndwRkExa2ptNHdMelh3NW4zZEVqTjdXeXlhNlI5SDg5X3JzWHIwYjV6S0hPN3hqMlNIdFlXYkVSSVdVeXUzaFJ3eUlPeWNRRnd0dGhNVHIxRmFNQlhzMlNoWGhtREFXUzl3aHM0S25BcUl5TjJoYUdRWURSTmdJSFhwMHBVWkphV3NWUy11ekpCaDFVdlpnLVpGLXBPUDhRTjZSbkt3d05zTVo1cWl1VUNfVEs0c1VlSmQ4cVJ6UkhBT0ZuVE5LajF0VG5r?oc=5",
+    "date": "2026-10-09",
+    "via": "뉴스검색"
+   },
    {
     "title": "건강검진 연말에 몰린다…“짝수년도 출생자라면 지금 예약하세요” [헬시타임]",
     "origin": "서울경제",
@@ -183,18 +125,18 @@
     "via": "뉴스검색"
    },
    {
-    "title": "Saol Therapeutics Announces Completion of Enrollment in Pivotal Phase III BEACON Trial of SL1002 for the Treatment of Chronic Pain Related to Osteoarthritis of the Knee",
-    "origin": "BioSpace",
-    "sourceName": "미국 국립보건통계센터(NCHS)",
-    "link": "https://news.google.com/rss/articles/CBMisgJBVV95cUxOdlJvQmloS29VZGpRX1VsWVUyaWNCaExtS2pqY2FWamlGdF8zNlVSMjVTUEUwb1Q1TmNyQkR0TEZrNTFmd3R2dlJCcEN2Nk1ZMWVQWklUQ3ZZWXR5VHRzT3JmRXhIYjhvVk1Kak1pbEZISFd1elVtNTlPblVfM3BycVM0cEExaU14ZGVVSzRwLS1qV3A1Z0dGTUJvTnlsenBtVkxSUFF0UDZSM0JHN2tidGFSeUplWjl4SmcyM2F5dmVsQjRkYlJJVlpyWFA5SHJDdUtnbWdmUkVPQlc3YkxMT19RcFR4dnZtLW1YcGozYjN0WlNScEt4dnhySG45N2RrNnV6ek5iUERwTVlfQWNpdV9RM0IzbnY0MnQyUGZaZFdzNGpYOUMxY3FhNnNFMUxvMlE?oc=5",
+    "title": "WHO issues first global guidelines on child and adolescent obesity",
+    "origin": "Pan American Health Organization (PAHO)",
+    "sourceName": "국제 NCD 동향·캠페인",
+    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOdjI0N3ZaVHVRZWxBNDNQU2kyTDVHMjVnbUhFdzhKWnFBZGhiamJxOTcyNkM3Vl8teEs5dllwYnhiV1lfdFktNk9YQ0J0ZVdaaVgwSzgycEVOa1I0dElVbS1QVUZ1UVlYZi1WVDMzYzExUWVVbHBraUZ5SFRGaHVpU0R4V3hacERTYTJLMFlfUF9XWGlFNlVtbnAtczFmYy1nVE1yRA?oc=5",
     "date": "2026-10-08",
     "via": "뉴스검색"
    },
    {
-    "title": "올해 국가건강검진은 짝수년도 출생자 대상",
-    "origin": "메드월드뉴스",
-    "sourceName": "국가건강검진 결과·제도",
-    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1sR2N1Rl9VeENtWTZWNndJVHFhODJfczlwMUFMSHJKYTRXVXY2OW5hUWV3a2hKcU9oZFhOWGRsdDMyRHpyR0N0b3lBdDczMXlTbEt2ZVZOMjlOTmRxbUcxWXRXTE9BNjhTWjh5Nkl3?oc=5",
+    "title": "Saol Therapeutics Announces Completion of Enrollment in Pivotal Phase III BEACON Trial of SL1002 for the Treatment of Chronic Pain Related to Osteoarthritis of the Knee",
+    "origin": "BioSpace",
+    "sourceName": "미국 국립보건통계센터(NCHS)",
+    "link": "https://news.google.com/rss/articles/CBMisgJBVV95cUxOdlJvQmloS29VZGpRX1VsWVUyaWNCaExtS2pqY2FWamlGdF8zNlVSMjVTUEUwb1Q1TmNyQkR0TEZrNTFmd3R2dlJCcEN2Nk1ZMWVQWklUQ3ZZWXR5VHRzT3JmRXhIYjhvVk1Kak1pbEZISFd1elVtNTlPblVfM3BycVM0cEExaU14ZGVVSzRwLS1qV3A1Z0dGTUJvTnlsenBtVkxSUFF0UDZSM0JHN2tidGFSeUplWjl4SmcyM2F5dmVsQjRkYlJJVlpyWFA5SHJDdUtnbWdmUkVPQlc3YkxMT19RcFR4dnZtLW1YcGozYjN0WlNScEt4dnhySG45N2RrNnV6ek5iUERwTVlfQWNpdV9RM0IzbnY0MnQyUGZaZFdzNGpYOUMxY3FhNnNFMUxvMlE?oc=5",
     "date": "2026-10-08",
     "via": "뉴스검색"
    },
@@ -218,31 +160,7 @@
     "title": "건보공단, 연말 건강검진 수검자 몰릴 전망…“미리 받으세요”",
     "origin": "포인트데일리",
     "sourceName": "국가건강검진 결과·제도",
-    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1JQVd5bXYxN2JjSEpfWkpVZ184TFlzVm5IbzdnU3paZFRhM1RoRTZaZnBUSnhtZG0xZlR3bE40V2xuTEl6TnA1RWZJVmNodEkyaGM0T0VHNURrVVc0SnpQd3RYYlB2SW5VU3ZCNUxiRFgzMjNh0gF0QVVfeXFMTUlBV3ltdjE3YmNISl9aSlVnXzhMWXNWbkhvN2dTelpkVGEzVGhFNlpmcFRKeG1kbTFmVHdsTjRXbG5MSXpOcDVFZklWY2h0STJoYzRPRUc1RGtVVzRKelB3dFhiUHZJblVTdkI1TGJEWDMyM2E?oc=5",
-    "date": "2026-10-08",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "건보공단, “국가건강검진 미리 받으세요”…연말 예약 집중 주의",
-    "origin": "안티에이징뉴스",
-    "sourceName": "국가건강검진 결과·제도",
-    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9WWlRfeWYzSmE3SkVGR0x3dml1WjZVWUpYLXgzbkVCWTZLYTM2VWpXVjBIbF82c1hRRnRURll1WXNZdGpkaEJUSUh3UXRDS21Cd0hSSHlRSHM?oc=5",
-    "date": "2026-10-08",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "연말 몰리는 국가건강검진…군산시, 짝수년생 조기 수검 당부",
-    "origin": "더펜뉴스",
-    "sourceName": "국가건강검진 결과·제도",
-    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBHUFZLVHJDZ0NCdXFWZnVWMnl5Rk1IV0paQjZKbHFBSkx4M2E0Skpxcy15ZXBRMzNfUW9kUWpkVW10alBXTEV3Q1lNUC12b05pMXRLYzF3WEdqaENSVjJfSXdTZw?oc=5",
-    "date": "2026-10-08",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "[칼럼] 장애인 건강검진부터 고혈압·당뇨 관리까지, 놓치기 쉬운 의료비 지원제도",
-    "origin": "케이에스피뉴스",
-    "sourceName": "국가건강검진 결과·제도",
-    "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE16ZnRtNVFOYkpOeUFlN05sVDdVYnNmd1lWUThKcDNvREk0ajBZejZIekFvdVhyV0taSTdRVUpXTWFTYUg1LXc?oc=5",
+    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5XbnZVUW83SGxLS212dURDLWxhRHBTV19qQ0lJcTI2SjhCU2dUUHg3M1FUVEEwd3F1d2tfdGZNcjQydVRGNWlRNEpTcWtNdkRlNXdoNkN6WFkzeWN6Nmtic25XeW02Z3lUNWVSYWIyU3TSAXRBVV95cUxNSUFXeW12MTdiY0hKX1pKVWdfOExZc1ZuSG83Z1N6WmRUYTNUaEU2WmZwVEp4bWRtMWZUd2xONFdsbkxJek5wNUVmSVZjaHRJMmhjNE9FRzVEa1VXNEp6UHd0WGJQdkluVVN2QjVMYkRYMzIzYQ?oc=5",
     "date": "2026-10-08",
     "via": "뉴스검색"
    }
@@ -297,14 +215,6 @@
     "via": "뉴스검색"
    },
    {
-    "title": "Europe braces for another summer heatwave",
-    "origin": "The Standard (HK)",
-    "sourceName": "유럽 폭염·기후 매개체 감시",
-    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNd3lJbW4yN0dvelJRZnhaNzU5YnlUV1dDenVFclBZM0hmTTA0LU9ZTmhVNVhFV0tRaHVlci1BeVI3M0lrOEF3SDhVM19KeHpyVHlzOVl2UlhOVmFXME9qQXlvRzBnMTRkQWpuaWN0YkxkN1FfZ2RYTFIycUpXQmlKOTk1c2UyS0xJMWFpOUxCZjVqdGtCcjJKWg?oc=5",
-    "date": "2026-10-08",
-    "via": "뉴스검색"
-   },
-   {
     "title": "질병청 온열질환 사망자 집계, 실제 통계와 245명 차이 > 뉴스",
     "origin": "한의신문",
     "sourceName": "국내 온열질환 응급실감시체계",
@@ -326,6 +236,14 @@
     "sourceName": "국내 온열질환 응급실감시체계",
     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBmMFJIYWNSVThnS1c5RXhLWElMaThIQk1WVFFZem9kRmRqdEN5THZvcVlQd2JkU0lkUmJ3ZUc5Qm8wMXNXT1BGemp0SGJtclRnOTF6WVpBam5iUFlfdkV3WW9PSDU5TDNoXzIxdno5eEI?oc=5",
     "date": "2026-10-08",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "Vulnerability to heat waves varies greatly from one area to another within cities",
+    "origin": "Phys.org",
+    "sourceName": "WHO 기후변화와 건강",
+    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPeU5yX1dqU3RBeDRaXzZGOUFKZm5ZM2FKQzFZYU1SblFhUXhybU53RkFOTmYtQWhnZnlNMjk5S3VXaUFtN1hLdl9lY3VzYndyNzBwZnR4MXZqTGJHNmhTdVJNLUJQLXFtX0c1Qjlhb0NYOGdETEtxSEEyd2pNdk1pZQ?oc=5",
+    "date": "2026-10-07",
     "via": "뉴스검색"
    }
   ],
@@ -355,10 +273,10 @@
     "via": "뉴스검색"
    },
    {
-    "title": "Northwell’s Center for Gun Violence Prevention Awarded CDC Research Grant to Expand Firearm Safety Screening to Women’s Health Clinics - News-Press NOW",
-    "origin": "News-Press NOW",
+    "title": "Northwell’s Center for Gun Violence Prevention Awarded CDC Research Grant to Expand Firearm Safety Screening to Women’s Health Clinics",
+    "origin": "Business Wire",
     "sourceName": "美CDC 손상센터 (NCIPC·WISQARS)",
-    "link": "https://news.google.com/rss/articles/CBMimAJBVV95cUxPYkU4T3BuOVVGaG9uamVTTXBDdS1lZXhqektQX0FBU2FJdEtqVEJDc3BYdVNGaFk4UTlpSEt2a2x3cWdrMENOZDVOLUlYSmpOZjJXTGJvUVN5OEhhMkdDTEx6Q3pNaGI3RnlWbG9oTUFFSkZaWnpPODFDZkpjaGVvSkFuNWtlS1hQSGdUaVgxeDliR0N5dVpqMFhSYVdIMGdVY1hrZUhXTkljV0Y3UFdVTnNvVXNXT2dZMTVQbkwxOXdoaTBxZ2VRUEJkVkV3OEhNOFdENmpoNTQzMVRjZF9VemJ3aHhEaXo0aERrbGNJUURYUS1oMEE5TXY4aE1qa1BFcVdLOC1QVS1xYy1YbHRiTmcxSG5SVkZa?oc=5",
+    "link": "https://news.google.com/rss/articles/CBMimAJBVV95cUxNQ0lJd1JWdFBNWkNVNU91MlJ5LTZRYXZUbXp3YklJVUVGdHJLVmZ2bVE3aU1vRE9ZVjljR1RzNHdkbXZzYkc1Ylh6UHY0ZEpGSDZjdzJOOE5jcjZPR2F4UXFXQU52QVFoYVRucXFRQUkxMUxSaGdSZ3Q4UXpMeWZUOFJRSFdNQUhOX0V1MUNkQkNtWHFxbGEydGEyNkdUMmxyTHRGV1BYNDlaSk9WMFBvYXBPbXNzS2EtZXpBcng0eUZWY3kxa01KZ3ZrY1VLNnBpNFZibTdNblI1UDRTV3BUeHF6NTJ2ZnJPRjk1NEVId2JGeS03OEN1MzRUMm1wYy1PMDd5WVprR0JSV1hTMWJCTWNST3lrQjdl?oc=5",
     "date": "2026-10-09",
     "via": "뉴스검색"
    },
@@ -387,28 +305,110 @@
     "via": "뉴스검색"
    },
    {
-    "title": "ICT minister urges global action for children’s online safety",
-    "origin": "New Age BD",
-    "sourceName": "Safe Kids Worldwide (어린이 안전)",
-    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPM2xkdk00RUZIanRMNDZfc3J1UlY1ZWdPbUIzV0tuR19OOEVHOHYwbEs1ejJSQWxkazNGa0dHTWUtcU42SGt5RTlocm5IMXF4THJPMk5zNkc0blFIdzMydGI5THVYdGMyMjhHRnlHWERfY2l4S2lWVjVSV1Fjd1ZrS3kyTjRnc1IzS2swcDl2Y1RFRjVqU2FPcl9YQzJfRHE1bzRTWXEtSEQ?oc=5",
+    "title": "Clinical Overview of TMVII",
+    "origin": "Centers for Disease Control and Prevention | CDC (.gov)",
+    "sourceName": "美CDC 손상센터 (NCIPC·WISQARS)",
+    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5yWDkwc3l3RUZVOW1IOXFzNlhvVy1NRGJWNERNMXY4VzNWSGhvV3VpaXM3bXpIeGxhMEpvRzZSS3V4Mk12QVFVajI4V0ZuQTkzd0xPQXM0c3BQeDZFOG1wbEJKa2JESWVQVjNXT1Nn?oc=5",
     "date": "2026-10-08",
     "via": "뉴스검색"
    },
    {
-    "title": "이광희 의원 “소방공무원 충원률 행정직 105.6%, 화재·구조·구급 현장직 96.5%”",
-    "origin": "시사뉴스",
-    "sourceName": "소방청 119구급·구조 통계",
-    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBtQlhEZHZuNjdLNkxMTUFjZVRiSHR0Sk16cjNwc1c0NTdZUmZ4enMxbkVJQmJQNEtnXzZTVWV4R0p1Y1pHemF4Y2Q5WlU0M3AtMVoycVZkd2lWZ19iTXE0NFBpNA?oc=5",
+    "title": "Leading causes of death in the U.S., according to CDC",
+    "origin": "qz.com",
+    "sourceName": "美CDC 손상센터 (NCIPC·WISQARS)",
+    "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5uRlRac0dzUzNzcnIwemhKaVZsczB1dVg1UGkwOEpYdkFiWHkwT1E0VnB0WXQyMXp1bG8yLWx4Zm80YTl6Nkl6ZEFSZy10Wmp4X3VaZA?oc=5",
+    "date": "2026-10-08",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "New child car seat rules coming into effect on Oct. 19",
+    "origin": "CBC",
+    "sourceName": "Safe Kids Worldwide (어린이 안전)",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOdC03TlBjOURNaFYyN3J3YUVMNjU2b1FTeDRXYjBPQUNwM3dnOXRtQjlPY19ZN2FWdWl3eW12SHZZekJILU9FcXd5S2VMYjJjZklNVmtJcEtsUVZPWnFuZlNpeHpqRlhSaDU1S0NzYVYtTFhXUTF5VFE1VzYxT2YzVUd6bG5FMjI0U0RyVWdHRXVhS1NmOGxqd2lEOHJGWDUwRGF6d2tESQ?oc=5",
+    "date": "2026-10-08",
+    "via": "뉴스검색"
+   }
+  ],
+  "phsm": [
+   {
+    "title": "£33.2 million to protect public from future epidemics and pandemics",
+    "origin": "",
+    "sourceName": "영국 UKHSA 발표·근거자료",
+    "link": "https://www.gov.uk/government/news/332m-to-protect-public-from-future-epidemics-and-pandemics",
+    "date": "2026-10-08",
+    "via": "기관 RSS"
+   },
+   {
+    "title": "Latest UKHSA weekly winter virus surveillance data",
+    "origin": "",
+    "sourceName": "영국 UKHSA 발표·근거자료",
+    "link": "https://www.gov.uk/government/news/latest-ukhsa-weekly-winter-virus-surveillance-data",
+    "date": "2026-10-08",
+    "via": "기관 RSS"
+   },
+   {
+    "title": "Flu levels low at start of season but higher than previous 4 years",
+    "origin": "",
+    "sourceName": "영국 UKHSA 발표·근거자료",
+    "link": "https://www.gov.uk/government/news/flu-levels-low-at-start-of-season-but-higher-than-previous-4-years",
+    "date": "2026-10-08",
+    "via": "기관 RSS"
+   },
+   {
+    "title": "Kenya Strengthens Ebola Preparedness as CS Urges Public to Rely on Official Information",
+    "origin": "health.go.ke",
+    "sourceName": "WHO PHSM 지식허브 (공중보건·사회적 조치)",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQOVh0ZDRWWTZqV2JMWDFMTUZUZTduQm9saVhnN25RQ1I5ZlRiNGxLTlFRVE1QWTl4YXg5a01MQ3dmRGhORUFHOWppTEloX1Y1VnRqVWdoREhMeU1IMWdHcFJySVA1aTdoWmdUWERIamVaQk42bXhERW9jUkREbzRLV1JDenVCdzBKUVZ6WTNPRklwTGpQdDMtUkQ4OWhjd1E1aTRISWJn?oc=5",
     "date": "2026-10-07",
     "via": "뉴스검색"
    },
    {
-    "title": "Child safety advocate says N.S. changes to car seat rules makes province ‘leader’ in country - Halifax",
-    "origin": "Global News",
-    "sourceName": "Safe Kids Worldwide (어린이 안전)",
-    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9GeE9hU2l5LXphNFpma1RlLXZoWlRSUnp5X1RuU2ZEd05vSDd3cEduZFJtejdLZ3RQS3piMk1NZFp4dXE3bFVlblZBTVlhbFZRU1FBN1VfOXdJN1gwcTRGSlFFc3NhSmdhWUFmV25R?oc=5",
+    "title": "Kenya Strengthens Ebola Preparedness and Contact Tracing",
+    "origin": "health.go.ke",
+    "sourceName": "WHO PHSM 지식허브 (공중보건·사회적 조치)",
+    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQRkNVMnlqemptY1NPcGdVWXN0ZTNxQTlNY3loYmxOcjRaNE1jY19NN2RJLVBuSWlRb3lWa244QU13OFNCa01ycEoyUF9Wd3c5NEh0NzhPRUJRa2JnTWpBUXhSczNyclpyS25zVzZaeXNfSE5rUlczeWdWUEFhd0hpeGVDWTVjUHVl?oc=5",
     "date": "2026-10-07",
     "via": "뉴스검색"
+   },
+   {
+    "title": "Cell-Cell Communication Patterns in Alzheimer's Disease Differ by Cortical Layer",
+    "origin": "",
+    "sourceName": "프리프린트: medRxiv 역학·보건정책",
+    "link": "https://www.medrxiv.org/content/10.64898/2026.10.05.26364776v1?rss=1",
+    "date": "2026-10-07",
+    "via": "기관 RSS"
+   },
+   {
+    "title": "UKHSA appoints Chief Medical Advisor and Chief Scientific Officer",
+    "origin": "",
+    "sourceName": "영국 UKHSA 발표·근거자료",
+    "link": "https://www.gov.uk/government/news/ukhsa-appoints-chief-medical-advisor-and-chief-scientific-officer",
+    "date": "2026-10-06",
+    "via": "기관 RSS"
+   },
+   {
+    "title": "ECDC closely monitoring situation following case of pneumonia of unknown origin in Russia",
+    "origin": "",
+    "sourceName": "ECDC 비약물적 중재(NPI) 지침",
+    "link": "https://www.ecdc.europa.eu/en/news-events/ecdc-closely-monitoring-situation-following-case-pneumonia-unknown-origin-russia",
+    "date": "2026-10-06",
+    "via": "기관 페이지"
+   },
+   {
+    "title": "Overdose-related communication in Connecticut: reported receipt, perceived utility, and responses among overdose prevention and response professionals",
+    "origin": "",
+    "sourceName": "프리프린트: medRxiv 역학·보건정책",
+    "link": "https://www.medrxiv.org/content/10.64898/2026.10.01.26363949v1?rss=1",
+    "date": "2026-10-06",
+    "via": "기관 RSS"
+   },
+   {
+    "title": "Social and behavioral risk factors are associated with age-related differences in sustained attention: A cross-sectional GradCPT analysis of the All of Us dataset",
+    "origin": "",
+    "sourceName": "프리프린트: medRxiv 역학·보건정책",
+    "link": "https://www.medrxiv.org/content/10.64898/2026.10.01.26364102v1?rss=1",
+    "date": "2026-10-06",
+    "via": "기관 RSS"
    }
   ]
  }
