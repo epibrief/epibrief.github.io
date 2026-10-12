@@ -1,6 +1,6 @@
 {
  "name": "빵캘",
- "updatedAt": "2026-10-12T00:54:51.449Z",
+ "updatedAt": "2026-10-12T19:35:01.567Z",
  "counts": {
   "total": 133,
   "upcoming": 112
@@ -10,9 +10,9 @@
    "id": "org-kdca",
    "name": "질병관리청 공지",
    "ok": true,
-   "found": 52,
+   "found": 51,
    "events": 0,
-   "ms": 2927
+   "ms": 3354
   },
   {
    "id": "org-mohw",
@@ -20,7 +20,7 @@
    "ok": true,
    "found": 19,
    "events": 4,
-   "ms": 13457
+   "ms": 13948
   },
   {
    "id": "org-khealth",
@@ -28,7 +28,7 @@
    "ok": true,
    "found": 11,
    "events": 0,
-   "ms": 3585
+   "ms": 4072
   },
   {
    "id": "nkis",
@@ -36,7 +36,7 @@
    "ok": true,
    "found": 20,
    "events": 0,
-   "ms": 21703
+   "ms": 21868
   },
   {
    "id": "org-ncc",
@@ -44,7 +44,7 @@
    "ok": true,
    "found": 4,
    "events": 2,
-   "ms": 5249
+   "ms": 6589
   },
   {
    "id": "org-hira",
@@ -52,7 +52,7 @@
    "ok": true,
    "found": 12,
    "events": 0,
-   "ms": 1653
+   "ms": 2488
   },
   {
    "id": "org-nhis",
@@ -60,7 +60,7 @@
    "ok": true,
    "found": 24,
    "events": 0,
-   "ms": 3502
+   "ms": 5343
   },
   {
    "id": "org-mfds",
@@ -68,7 +68,7 @@
    "ok": true,
    "found": 16,
    "events": 8,
-   "ms": 23111
+   "ms": 23902
   },
   {
    "id": "org-kihasa",
@@ -76,7 +76,7 @@
    "ok": true,
    "found": 0,
    "events": 0,
-   "ms": 1905
+   "ms": 2258
   },
   {
    "id": "org-nmc",
@@ -84,22 +84,14 @@
    "ok": true,
    "found": 11,
    "events": 0,
-   "ms": 1520
+   "ms": 1852
   },
   {
    "id": "org-neca",
    "name": "한국보건의료연구원 공지",
    "ok": false,
    "error": "HTTP 400",
-   "ms": 6756
-  },
-  {
-   "id": "org-nibp",
-   "name": "국가생명윤리정책원 공지",
-   "ok": true,
-   "found": 16,
-   "events": 0,
-   "ms": 4985
+   "ms": 7352
   },
   {
    "id": "org-khidi",
@@ -107,7 +99,15 @@
    "ok": true,
    "found": 20,
    "events": 1,
-   "ms": 8795
+   "ms": 9004
+  },
+  {
+   "id": "org-nibp",
+   "name": "국가생명윤리정책원 공지",
+   "ok": true,
+   "found": 16,
+   "events": 0,
+   "ms": 7008
   },
   {
    "id": "org-ksepi",
@@ -115,15 +115,7 @@
    "ok": true,
    "found": 10,
    "events": 5,
-   "ms": 5323
-  },
-  {
-   "id": "org-kshpa",
-   "name": "한국보건행정학회 공지",
-   "ok": true,
-   "found": 9,
-   "events": 5,
-   "ms": 11724
+   "ms": 8643
   },
   {
    "id": "org-prevmed",
@@ -131,7 +123,15 @@
    "ok": true,
    "found": 15,
    "events": 2,
-   "ms": 18237
+   "ms": 20009
+  },
+  {
+   "id": "org-kshpa",
+   "name": "한국보건행정학회 공지",
+   "ok": true,
+   "found": 9,
+   "events": 5,
+   "ms": 22953
   },
   {
    "id": "org-kshep",
@@ -139,7 +139,7 @@
    "ok": true,
    "found": 1,
    "events": 1,
-   "ms": 3579
+   "ms": 3813
   },
   {
    "id": "org-kspm",
@@ -147,55 +147,7 @@
    "ok": true,
    "found": 16,
    "events": 1,
-   "ms": 10142
-  },
-  {
-   "id": "org-kpha",
-   "name": "대한보건협회 공지",
-   "ok": true,
-   "found": 15,
-   "events": 0,
-   "ms": 4510
-  },
-  {
-   "id": "org-kosqua",
-   "name": "한국의료질향상학회 공지",
-   "ok": true,
-   "found": 7,
-   "events": 1,
-   "ms": 1630
-  },
-  {
-   "id": "org-koddi",
-   "name": "한국장애인개발원 공지",
-   "ok": true,
-   "found": 21,
-   "events": 0,
-   "ms": 1439
-  },
-  {
-   "id": "org-cochrane",
-   "name": "한국코크란 공지",
-   "ok": true,
-   "found": 16,
-   "events": 0,
-   "ms": 908
-  },
-  {
-   "id": "org-kdca-ilje",
-   "name": "질병관리청 일정",
-   "ok": true,
-   "found": 32,
-   "events": 0,
-   "ms": 2255
-  },
-  {
-   "id": "snu-health",
-   "name": "서울대 보건대학원 세미나정보",
-   "ok": true,
-   "found": 30,
-   "events": 21,
-   "ms": 64183
+   "ms": 11722
   },
   {
    "id": "org-kams",
@@ -203,7 +155,54 @@
    "ok": true,
    "found": 101,
    "events": 101,
-   "ms": 35273
+   "ms": 21498
+  },
+  {
+   "id": "org-koddi",
+   "name": "한국장애인개발원 공지",
+   "ok": true,
+   "found": 21,
+   "events": 0,
+   "ms": 1608
+  },
+  {
+   "id": "org-kosqua",
+   "name": "한국의료질향상학회 공지",
+   "ok": true,
+   "found": 7,
+   "events": 1,
+   "ms": 2230
+  },
+  {
+   "id": "snu-health",
+   "name": "서울대 보건대학원 세미나정보",
+   "ok": true,
+   "found": 30,
+   "events": 21,
+   "ms": 69407
+  },
+  {
+   "id": "org-kdca-ilje",
+   "name": "질병관리청 일정",
+   "ok": true,
+   "found": 31,
+   "events": 0,
+   "ms": 2319
+  },
+  {
+   "id": "org-cochrane",
+   "name": "한국코크란 공지",
+   "ok": true,
+   "found": 16,
+   "events": 0,
+   "ms": 3736
+  },
+  {
+   "id": "org-kpha",
+   "name": "대한보건협회 공지",
+   "ok": false,
+   "error": "fetch failed",
+   "ms": 25016
   }
  ],
  "events": [
@@ -2225,25 +2224,6 @@
    "geo": "approx"
   },
   {
-   "id": "6480ab1330916f0f",
-   "org": "kshpa",
-   "orgLabel": null,
-   "title": "2026 후기학술대회 포스터 발표 신청 안내",
-   "start": "2026-11-26",
-   "end": "2026-11-26",
-   "startTime": "10:00",
-   "endTime": null,
-   "allDay": false,
-   "place": "영남대학교병원 권역호흡기전문질환센터 강당",
-   "url": "https://www.kshpa.org/bbs/notice2/1548",
-   "source": "org-kshpa",
-   "collectedAt": "2026-10-12",
-   "lat": 35.847322,
-   "lng": 128.585045,
-   "geo": "exact",
-   "city": "대구"
-  },
-  {
    "id": "1252db64a88ebeb5",
    "org": "clinic",
    "orgLabel": "대한신경과학회",
@@ -2261,6 +2241,25 @@
    "lng": 126.980628,
    "geo": "exact",
    "city": "서울"
+  },
+  {
+   "id": "07f7de0118e22c1d",
+   "org": "kshpa",
+   "orgLabel": null,
+   "title": "2026년 후기학술대회 사전등록 안내",
+   "start": "2026-11-26",
+   "end": "2026-11-26",
+   "startTime": "10:00",
+   "endTime": null,
+   "allDay": false,
+   "place": "영남대학교병원 권역호흡기전문질환센터 강당",
+   "url": "https://www.kshpa.org/bbs/notice2/1552",
+   "source": "org-kshpa",
+   "collectedAt": "2026-10-12",
+   "lat": 35.847322,
+   "lng": 128.585045,
+   "geo": "exact",
+   "city": "대구"
   },
   {
    "id": "792342176ef98420",
