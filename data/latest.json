@@ -1,335 +1,97 @@
 {
- "updated": "2026-10-11 23:19",
+ "updated": "2026-10-13 23:31",
  "byKind": {
   "outbreak": [
    {
-    "title": "WHO says suspected hantavirus cluster 'is not the start of a COVID pandemic' - ABC News",
-    "origin": "ABC News - Breaking News, Latest News and Videos",
+    "title": "With Only Three 'No' Votes, UN Adopts Political Declaration On Pandemic Preparedness",
+    "origin": "Health Policy Watch",
     "sourceName": "WHO 보도자료",
-    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOanBya3VnenlXNEprVzFhcGNBN1MwQ0VCSE9rU1dSRHp6THlLTElCZThJb0VvMW9xbVk3cnhYNUFBVTBPWHpkWDM1clBkaTRiNVIyQm0xLUhsYzh2X0x3dXBMN0xPVUtpa3FDQWgyZHFUc1ZNVUtMM0JiVW52OW1tS2ZaeEROeUVxYS1OX2NYcW1JVzBFbVU2X0lsMTNzdUp5azJLNUp1Y3FJNWvSAbABQVVfeXFMUFFXRG5FYW9leWxiQmVtVWlSY1FLd1kxWnFnS0NCMm1Ra0lsUnlxRmVoVmFJazVfSnNzQVctcEYwM0JhQVNBRnNMLUZrRkIwcFh2ZTlNeGxoYU9ic1BLemd0Q3hrMVpzQk42UUlkbENhaTFfZDJhYTRMVHYtbzhlVFdiUWhNNFoxekpOOUJDcGJkYW1oeGo0RW85bl9WZzBaeGpvejV6VGNnbVFKSS1OZlI?oc=5",
-    "date": "2026-10-11",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPS0htTjVFNjBmYjFTUU1ZQlBFcy1MNV93cXhOZ0tqNE5NVGNpcktWZW5uVVRmVHNpQVhsZGRqaGNzd1ZxUkF0bm0tTE5VZWlwS2NlcHg3MmxIQnBWREF3Sml0OHdMeHNaUnFEaXp2b0FTcWtIUW92SUZsNUc0MXZtZDJvWHBOV1d2eE14QVlocmNNVG8?oc=5",
+    "date": "2026-10-13",
     "via": "뉴스검색"
    },
    {
-    "title": "American doctor tests positive for Ebola in Democratic Republic of Congo outbreak - ABC News",
-    "origin": "ABC News - Breaking News, Latest News and Videos",
+    "title": "Ebola cases top 9,000 in DR Congo outbreak",
+    "origin": "CIDRAP",
+    "sourceName": "CIDRAP (미네소타대 감염병연구정책센터)",
+    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE4tNFp6RGt1aFdEWm00ZG1wTVVhSkh5OWFTZzlaZG9JUjMwbE1VUzdPWUN1b0RXU3dub21JdXh1dGxvckR0NUhHTGFUencxeFFHNjNVZERoNGxXdGhTZlVoYjVkOFF1bV8tNGkwTlVCNkNKdWdYc0gyRzdhNA?oc=5",
+    "date": "2026-10-13",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "Brazil: Chikungunya in Mato Grosso do Sul",
+    "origin": "Outbreak News Today",
+    "sourceName": "Outbreak News Today",
+    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1pNzlfQWYwRHFDV3hrQU5TWTVsWXNnYXB5MU1ZcE1LVmFZZTd1anROQnRPbklYOEhzTWlucDdKM0RIUVRUdmRrVFRpTlBQeVlKbklTSWZtT1hKVFhGZGYyTnh6Zml3TDJTUHFGdVNCRmlBWTRpMUM4VUN3LVNQYnc?oc=5",
+    "date": "2026-10-13",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "러시아서 폐페스트 의심 사망…질병청 \"국내 유입 위험 낮아\"",
+    "origin": "한국공공정책신문",
+    "sourceName": "해외유입 감염병·검역",
+    "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9vdi1oMVFpNWE2TkkzQ0R0Tnl5UkU0VHBjN3diSXprUFBJbUpJNG5WVnR0ajdIQXh4dlpuZjRKOUt2ZlU?oc=5",
+    "date": "2026-10-13",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "KukiMAT: Ready to respond when every minute counts",
+    "origin": "World Health Organization (WHO)",
+    "sourceName": "WHO 서태평양지역사무처(WPRO)",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQclo4WHIxYXNQckhJdGt0Z1cycVhJOWNlMTBGWkZHY2hxVHFqdWR3S1BWNkh4dWxDekdISnlGMG1uc1dFdERLdEhVUjJnNm1xVUV5eERoS2NpSXlQdFNLMjYxSFBseUp0WG9PUllFS3FZNFV4dklTQVBRUUo3cnNMZVYxbUxRUEZZSFZjdWRHS2d3b3NXWnVSR0Nla0RwZlhxZUl3TUZya2xheE1wem9oaG1GRDl6Zw?oc=5",
+    "date": "2026-10-13",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "Health taxes: Overcoming technical and political challenges, including illicit trade concerns, and lessons from country experience",
+    "origin": "World Health Organization (WHO)",
+    "sourceName": "WHO 서태평양지역사무처(WPRO)",
+    "link": "https://news.google.com/rss/articles/CBMizgJBVV95cUxQMGF2eWhtZ1JZaEt0TkVXTk5qUGFpcnRxNWk4ZDVrUXBYNHhyb1RSYWh4WUp3cmpiTThOTldYNENHWTRqRk5uaW5VWmRZRTJ6TU9NNHJSNUpqLXEtOWk2SFFuWklEWU5RdmFQei1BNVhhdVlFUmdMMnRZMVE2VjEtc3VvSDgxM1lHZFVfb1hlbElrOEFDR0dUWEw2UmVPTEJuOVlXNjJTN0JHeXMzR1hNVWtja3NhN2J1V2ZUQ0RJZDlHNlFLcW1kSTd2UXN1eW5CVFFqTE5CZjZmOEhwMjVLYmxFbWVkdkI5MUdOUERqNGp6XzFNZXY3RXVEZ3R0UmNvbmNhdVZpdlB5X2phSmVwTDUtN1B5T1N0ZzN2SjMtRXo1aWU2bzkzSEhGUUN2cno4dHNXem5YT1hqLXdCWVBzc3IyYTJDMERWaEtGVnNn?oc=5",
+    "date": "2026-10-13",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "Malaysia moves climate and health commitments towards action through ATACH",
+    "origin": "World Health Organization (WHO)",
+    "sourceName": "WHO 서태평양지역사무처(WPRO)",
+    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQSWRrdEpNNE9IdUZjVlgtbjg1SzR0UUZIaks2dDFtOXNBbURFZkFkWlo0bF9BNU55WkVKbGs3SFNISWxoY1lPQWRKb1VEY1I1eGFITEpHOVZjNVdLSDROdkU1bnB4YWc0c21Gcy1WMDJPcERWYUVvcng0Y3pSY0I1Q3VMekRBdDBqOFFYMUJDRUVGdWZOT1VBZzBId0lhUDMwMXhLU3o5aWJGa0N1cXA1UndSRHNRaW1zUzNWcklRZ193c2VGR281NjBtNnc1bTdOX0czaTNn?oc=5",
+    "date": "2026-10-13",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "73rd session of the WHO Regional Committee for the Eastern Mediterranean opens in Cairo",
+    "origin": "World Health Organization (WHO)",
+    "sourceName": "WHO 동지중해지역사무처(EMRO)",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQRUNibjlReEFUcDlsZzlKaEsxZjliVHQzcFVlTnUzeGI4WVNjcmdlbUFFUlZPTWFyN1c1R1djUGtjbFFlVG1TYWpXYTlGV0FWQmxJLTg0aWtpZkp1ZC14WWhwNl9XaDRHRHZkRXM0ZmVYSC1BRzBqOGtkWV9icldFVzlyeHZLaGJHNTRBRXZ2RUhsdGFDS2tVQTdicVNLSEU4M1FJRV9wTU1ybGpubDBWNVVWTjlsU0RLdWxQaWJMRG9UTlZzWjlF?oc=5",
+    "date": "2026-10-13",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "인천시 의료감염 예방관리 주간…의료감염 차단 나선다",
+    "origin": "동방일보",
+    "sourceName": "질병관리청 주간 감염병 발생 동향",
+    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5od2c3SkV4NUdOSGJURWJJUnhKSTZPSE1iM2YwbUs0dXluVGxrSUhqM256OURIVmp4UjVzZDJla25udmsxeXJKWUY5LU4wSXlXRFNMQmRiQkRaclRWVlRWMlVUUnFoQjNIY3lmUlFaejVUZzA?oc=5",
+    "date": "2026-10-13",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "WHO welcomes adoption of United Nations political declaration on pandemic prevention, preparedness and response",
+    "origin": "World Health Organization (WHO)",
     "sourceName": "WHO 보도자료",
-    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQeXR1TnZvNUVIVVYzTnJXSW9vYlFkbG4yOExvSVJTLUVoZ09qVlFrb1RnN1pTUUJYeExwbVF4Wi1XTGxabUxxSzNabFRHTzJKNU1MQ1NuZl9aV3ZKdkllX0l1RFRobWVjNngzRWZlUS1ZUDJpUk1ZOFFXWTZ3OVlIYUpmWUxHajhRVlRQUkhSUnFFNEhaa1RLMnA4b1M0cTVWNFJCck9XRE9qZ1VZ0gGyAUFVX3lxTFBZWEVENWx1NDRTOXktZUstTlpnSk9nWXNNUnQ3bGVlUFppTG13amFaQjZGUk9NQVNLQ3FreTNmTXQ2WlBfTHJNaWlFbzM0NzNZOUVVaDFnOERoVmJNbUpSbXRUZ3FSSTdKb0JzRTMtOHBFVDBfVGZKZW1GREl3UmVDWENfdFNlekZCNHNfWU5rOWJiV1F5UkhBQWRORDN4VGJxSDI4aU5jLVZKU2ROZXdoQVE?oc=5",
-    "date": "2026-10-11",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "Officials in Arizona, Georgia monitoring some hantavirus cruise ship passengers who have returned to US - ABC News",
-    "origin": "ABC News - Breaking News, Latest News and Videos",
-    "sourceName": "WHO 보도자료",
-    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNeFY0UEluMmNRVzc0a0NhZ25Cd19EMFAwNzI5NjZHZm13SXlla3VnQ0FfdmZ6X3BwcVRvbThMRTdFbjR0MXBEQ2Z5OXA0MkNuaUhvcVhlYWtTenlKUlRydTVWYU53NE1XaV9JejM5dVVzMkk0bUo4RlBQMHQwMlFpdDEzOXBBNzFxWVBqcng1c2pqSF9yU1R3RUhBaVJVdXU3RkxIUtIBqgFBVV95cUxQQnVZbl9jc0NZM3otVGpTclk1TXpJMGIyTm4wVHFOQ2hZSmktdzR4S1duNzc3QnBWLTRlbTFLVTNhaXhtcWptZXA5UWViVUwtc2d6QXNLNmxCZEhtMGdjMllHZUNRclJwb3F3SE03alFDWHlwbUxpTGJvTThqeWRycEdWTUNXMHRYSEpZeE9NQ1dlblhVYVZNQ05oWExuU0hrd1U0ci1oem9Wdw?oc=5",
-    "date": "2026-10-11",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "Outbreaks Associated with Untreated Recreational Water — United States, 2000–2014",
-    "origin": "",
-    "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
-    "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6725a1.htm?s_cid=mm6725a1_x",
-    "date": "2026-10-11",
-    "via": "기관 RSS"
-   },
-   {
-    "title": "Geographic Variation in Pediatric Cancer Incidence — United States, 2003–2014",
-    "origin": "",
-    "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
-    "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6725a2.htm?s_cid=mm6725a2_x",
-    "date": "2026-10-11",
-    "via": "기관 RSS"
-   },
-   {
-    "title": "Prevalence and Predictors of Provider-Initiated HIV Test Offers Among Heterosexual Persons at Increased Risk for Acquiring HIV Infection — Virginia, 2016",
-    "origin": "",
-    "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
-    "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6725a3.htm?s_cid=mm6725a3_x",
-    "date": "2026-10-11",
-    "via": "기관 RSS"
-   },
-   {
-    "title": "Fatal Sepsis Associated with Bacterial Contamination of Platelets — Utah and California, August 2017",
-    "origin": "",
-    "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
-    "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6725a4.htm?s_cid=mm6725a4_x",
-    "date": "2026-10-11",
-    "via": "기관 RSS"
-   },
-   {
-    "title": "Update of Recommendations for Use of Once-Weekly Isoniazid-Rifapentine Regimen to Treat Latent Mycobacterium tuberculosis Infection",
-    "origin": "",
-    "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
-    "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6725a5.htm?s_cid=mm6725a5_x",
-    "date": "2026-10-11",
-    "via": "기관 RSS"
-   },
-   {
-    "title": "Notes from the Field: Domestically Acquired Verona Integron-Mediated Metallo-β-Lactamase-Producing Enterobacteriaceae — Indiana, 2016–2017",
-    "origin": "",
-    "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
-    "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6725a6.htm?s_cid=mm6725a6_x",
-    "date": "2026-10-11",
-    "via": "기관 RSS"
-   },
-   {
-    "title": "Notice to Readers: Ongoing Reanalysis of Suicide Rates Data by Occupational Group from Results Reported in MMWR",
-    "origin": "",
-    "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
-    "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6725a7.htm?s_cid=mm6725a7_x",
-    "date": "2026-10-11",
-    "via": "기관 RSS"
-   }
-  ],
-  "chronic": [
-   {
-    "title": "대장내시경 국가검진 도입 가시화...소독교육 확대 시급",
-    "origin": "의학신문",
-    "sourceName": "국가건강검진 결과·제도",
-    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1rMGVzanQzWHZGN0Y1YU5MNkFLVGY3U3dlckNkVFpJYjdiNU5JMzhHellGSjJPNnhicU1vZ0FxaDZNVWZfTV9oNzJVR3YtdXFZUFgyWVNMZXIwRXgxN0xCZE1vcVNFVXVjeXc?oc=5",
-    "date": "2026-10-11",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "검진의학회 \"교육 막히고 규제만\"…내시경 소독 확대 촉구",
-    "origin": "보건신문",
-    "sourceName": "국가건강검진 결과·제도",
-    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFAwTWs3cThzTWRfUjNoQVJYWnFIc1cwbUdiVjA5bVVoQ0VqYlNPT0h4dFVyMGFua3BpLW9WWXFkOElteDFiTmU1bjhZRVVYblRVQVZ3MDY5QWNoN0w5dENHNHBnYw?oc=5",
-    "date": "2026-10-11",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "대한검진의학회 박창영 회장 연임",
-    "origin": "의학신문",
-    "sourceName": "국가건강검진 결과·제도",
-    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9OLWw0Y1NpZG9ua3NQS0M5QVRHNHRmY09kMjRyOFJEU3hCVU9QYm81eExkZi0zUGpqUXA5djd5MGdMTGFidjFwOXhxVC1HY0RtRE81ZW14aFI4blNqNGhRbEs1alpGNUM5U2c?oc=5",
-    "date": "2026-10-11",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "대한검진의학회 “내시경 세척·소독 교육기관 확대 절실”",
-    "origin": "메드월드뉴스",
-    "sourceName": "국가건강검진 결과·제도",
-    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE55WHYwNWVNeXNjczA5TUIweHpOWHRLRGlfM195LXZuNlFET2lxVlJ0dFA0X1Y4N2JIMlRIbkdtQk1DeWlwQ3UwN3owQnhUWmdpUE5jZ0R3RlJqSmNpWkVQckswM09YbzAzSTBheHJB?oc=5",
-    "date": "2026-10-11",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "고혈압·당뇨 등록관리사업 개편 논란…“약값 지원 끊기면 치료 중단 늘 것”",
-    "origin": "현대건강신문",
-    "sourceName": "국내 만성질환 관리 정책",
-    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE53SGVCYWxaeDR0YUpIN1g2TVZwZEYyUURDcXFpSU56N1lKRXNFaXpSaFg4Wm1WUzJUYTg3SndNb1dOeEZNSFlNZk00WWVaWjlWTmlvZ3lR?oc=5",
-    "date": "2026-10-10",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "Dr Mercy Karanja, Head of the Division of Mental Health at the Ministry of Health, speaks on the importance of integrating mental health services into the treatment of non-communicable diseases (NCDs) under the M-Care project being piloted in Murang’a Cou",
-    "origin": "Facebook",
-    "sourceName": "WHO 비감염성질환(NCD) 소식",
-    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPcTFVV21wZHB4czRTN0paY2NOUndwRkExa2ptNHdMelh3NW4zZEVqTjdXeXlhNlI5SDg5X3JzWHIwYjV6S0hPN3hqMlNIdFlXYkVSSVdVeXUzaFJ3eUlPeWNRRnd0dGhNVHIxRmFNQlhzMlNoWGhtREFXUzl3aHM0S25BcUl5TjJoYUdRWURSTmdJSFhwMHBVWkphV3NWUy11ekpCaDFVdlpnLVpGLXBPUDhRTjZSbkt3d05zTVo1cWl1VUNfVEs0c1VlSmQ4cVJ6UkhBT0ZuVE5LajF0VG5r?oc=5",
-    "date": "2026-10-09",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "건강검진 연말에 몰린다…“짝수년도 출생자라면 지금 예약하세요” [헬시타임]",
-    "origin": "서울경제",
-    "sourceName": "국가건강검진 결과·제도",
-    "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4yZHcxYWQyWDFVYXFuVlVmYWRONE1GNW91S05WaFRJNUo0Uk9wQWxlZjNkYTBDTU5sWDJwSEV3elRuRXBGWXVYR2h3OVdxdmRqeVHSAVNBVV95cUxNeWpzZWhpbW05X2NvQkY0WFBBVUFodEFVU2c1empOWUJJUnh6MWhBTlRseXNneEFfTDBZVno3aWViTGlJMF9sa3JZSnY1UV9TOHdQTQ?oc=5",
-    "date": "2026-10-09",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "U.S. states with the lowest adult obesity rates",
-    "origin": "qz.com",
-    "sourceName": "美CDC 만성질환·건강행태",
-    "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5JejdVcXkzUlRYM3JUallnaTVuLTVHd1JEeFJhV2V4cTdyT2VTM2FVOTc5aEdlZW4zSVpvQWI5Wm1zQnR6ZlUyN0VoWFB1dGF2VjgtRzRfVmJPbTEt?oc=5",
-    "date": "2026-10-08",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "WHO issues first global guidelines on child and adolescent obesity",
-    "origin": "Pan American Health Organization (PAHO)",
-    "sourceName": "국제 NCD 동향·캠페인",
-    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOdjI0N3ZaVHVRZWxBNDNQU2kyTDVHMjVnbUhFdzhKWnFBZGhiamJxOTcyNkM3Vl8teEs5dllwYnhiV1lfdFktNk9YQ0J0ZVdaaVgwSzgycEVOa1I0dElVbS1QVUZ1UVlYZi1WVDMzYzExUWVVbHBraUZ5SFRGaHVpU0R4V3hacERTYTJLMFlfUF9XWGlFNlVtbnAtczFmYy1nVE1yRA?oc=5",
-    "date": "2026-10-08",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "Saol Therapeutics Announces Completion of Enrollment in Pivotal Phase III BEACON Trial of SL1002 for the Treatment of Chronic Pain Related to Osteoarthritis of the Knee",
-    "origin": "BioSpace",
-    "sourceName": "미국 국립보건통계센터(NCHS)",
-    "link": "https://news.google.com/rss/articles/CBMisgJBVV95cUxOdlJvQmloS29VZGpRX1VsWVUyaWNCaExtS2pqY2FWamlGdF8zNlVSMjVTUEUwb1Q1TmNyQkR0TEZrNTFmd3R2dlJCcEN2Nk1ZMWVQWklUQ3ZZWXR5VHRzT3JmRXhIYjhvVk1Kak1pbEZISFd1elVtNTlPblVfM3BycVM0cEExaU14ZGVVSzRwLS1qV3A1Z0dGTUJvTnlsenBtVkxSUFF0UDZSM0JHN2tidGFSeUplWjl4SmcyM2F5dmVsQjRkYlJJVlpyWFA5SHJDdUtnbWdmUkVPQlc3YkxMT19RcFR4dnZtLW1YcGozYjN0WlNScEt4dnhySG45N2RrNnV6ek5iUERwTVlfQWNpdV9RM0IzbnY0MnQyUGZaZFdzNGpYOUMxY3FhNnNFMUxvMlE?oc=5",
-    "date": "2026-10-08",
-    "via": "뉴스검색"
-   }
-  ],
-  "injury": [
-   {
-    "title": "「손상예방과 건강한 사회」 2026년 3호 발간",
-    "origin": "",
-    "sourceName": "질병관리청 「손상예방과 건강한 사회」 (계간)",
-    "link": "https://www.kdca.go.kr/injury/disemg/2026/09/index.html",
-    "date": "2026-10-11",
-    "via": "기관 페이지"
-   },
-   {
-    "title": "「손상예방과 건강한 사회」 2026년 2호 발간",
-    "origin": "",
-    "sourceName": "질병관리청 「손상예방과 건강한 사회」 (계간)",
-    "link": "https://www.kdca.go.kr/injury/disemg/2026/06/index.html",
-    "date": "2026-10-11",
-    "via": "기관 페이지"
-   },
-   {
-    "title": "의창소방서 구급대원 폭행 근절 위해 시민 협조 당부",
-    "origin": "경남도민신문",
-    "sourceName": "소방청 119구급·구조 통계",
-    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE51NHQ5SGM1ZExyNU13dnV2bUZ3aEY0Q2cwTEZiYV95WFRmUE1LSFBXN0g1NlpKR18teVk0R0dhcnl5Z1ZRS2hzZ1oteHVFbmdOVVZVNGYxOHFtWDRSQi1RRVJfemhyeFB0?oc=5",
-    "date": "2026-10-11",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "소방청, 현장의 목소리 제도개선으로 잇는다",
-    "origin": "서울Pn",
-    "sourceName": "소방청 119구급·구조 통계",
-    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE05WFRuVEE2TWF3cGhMd3dDOGJVR1MwcUp2c1NiNkVwdnR5MW5GMXltSFFtNnZFSUpDT3J2dnpMdldnTmx3bVdMZGMtTE1PT0wzNDF4R1BzWlJ4US0yazNaMFNn?oc=5",
-    "date": "2026-10-11",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "[마신] 한국소비자원, '에스컬레이터·무빙워크' 이용 시 '신발·소지품' 끼임 사고 주의",
-    "origin": "마일드경제",
-    "sourceName": "한국소비자원 위해정보 (CISS)",
-    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBQZXlpTnVfRGdjQzg0Z29SUTg2M2poSEJfSUZ4UzY1UEtQLVExeWtaQVVfcWg4WFROcWNJQTJjNDlSSU5DencxRXMxVV9SYmQ3ZFpkY21sZlNPbjlUbnpYZkp2VGJlUDVROFNv?oc=5",
-    "date": "2026-10-09",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "정부 자살예방기본계획 수립과 고위험자 발굴 정책 강화",
-    "origin": "https://www.2news.co.kr/",
-    "sourceName": "자살·자해 예방 통계 (보건복지부·한국생명존중희망재단)",
-    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5JLVlxT2hMZGI3MHpJRkJFSTVWM0RKenFEcnpJbkRBUWZjUFV4WDFNR0lFVFlYVFduUmtmRTNzU1c1YV9WVjV4N0l3aklmR2p0LUNCckFqRUFwYVQtUTFoclVCNWFlalc3?oc=5",
-    "date": "2026-10-09",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "Northwell’s Center for Gun Violence Prevention Awarded CDC Research Grant to Expand Firearm Safety Screening to Women’s Health Clinics",
-    "origin": "Morningstar",
-    "sourceName": "美CDC 손상센터 (NCIPC·WISQARS)",
-    "link": "https://news.google.com/rss/articles/CBMinwJBVV95cUxQY2JfZFdScGpvd1RMRWlPZk11VndvdXJ3ZUNESGV5ODFKcHFaTk8tUjJ2UmRENXk0bDhPSHhFSGJqU1ZNaFhVLWFITzZMa3ZMaUdKMWYzUER5U0JXZ1AtQl9ueXhCc0UwQ09qVUx4SkY1dDNFN3BPd1Z0WnJzZHVtSTJGX1A5UUV2MXBCVVZCcGo5MzZpb0ZmNVJLTEVmTndYVndZVU5mV0lLZUh0R3A0cDdRdFJmQW9JYW02RFlPY3VhWHZHbU1YTkVqYkxaWWJ6ZlU2UHRydll3andjQWdTM2VpUkhTd3Q1TUxtQTdsYXRqV180YUFCZXFaMDVYZlY1WGlzMDRoVUMyM0JiV3Z5TXZMWm1pMFZtWVpBLVRvUQ?oc=5",
-    "date": "2026-10-09",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "Measles Cases and Outbreaks",
-    "origin": "Centers for Disease Control and Prevention | CDC (.gov)",
-    "sourceName": "美CDC 손상센터 (NCIPC·WISQARS)",
-    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9kU2puTzAxZ3ktbE1vNzU0RU9xZTlMYzIyb3JRaENuSnJJdnllQUJDeWs3TElwZmJmYU84dkFsc1ZKaEw0N2dTUHFVSlktVE91ejM0TG10YkRVellCcXo2X3VR?oc=5",
-    "date": "2026-10-09",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "의창소방서, 구급대원 폭행 근절 위한 시민 협조 당부",
-    "origin": "안전정보",
-    "sourceName": "소방청 119구급·구조 통계",
-    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5JeC0tRlZBZkVkQ1F5cjUzZ1Bxa0QwalJhTkxQM1AwTmlIajNUNnRaZXhNTERVWDl4UmlxT3VReWtJT0hNQ2ZSM3UxZDM1YWQ1QmJoc2pwLVNOUm1YXzVleFJjYUs3ci1FNHY4?oc=5",
-    "date": "2026-10-08",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "추석연휴에도 자살예방상담은 109",
-    "origin": "서울Pn",
-    "sourceName": "자살·자해 예방 통계 (보건복지부·한국생명존중희망재단)",
-    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1BRTBkakJjMkpUQTRXZGlkcjhyX2ZHSDRoQW5VanpWRlRUQzFhY2pDcXJNTndmS045ZHJOUmFGOEZtUE5QSXdoSjhmRC1ha0NTakw4cEY3dHZfdTBGVnhEUF9R?oc=5",
-    "date": "2026-10-08",
-    "via": "뉴스검색"
-   }
-  ],
-  "climate": [
-   {
-    "title": "Deadly 2026 heat season shatters state records for heat-related emergency calls, fatalities",
-    "origin": "Maryland Matters",
-    "sourceName": "WHO 기후변화와 건강",
-    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOWE56QTdSMGlJT2RrMVlUREJJNGxCYUg4cTBxVnJuWnJMUEJ4NldOSnphSEMxTEQydGQzUUUycTFLT1hyM3g2SFppdXI5MThpZC12eEU2RUNCcGU2N1NNdzRZMVJnUC12YndXV2ZXem4xTTd4c2kyWl9aT182c2xFWEJ4OGFMSUtpM1lhZFpOcHhQYlpzbkZvMlBjRnZRR0hUdDdEaFZQQ25ZYlFVT3Uwdm1nUGttWWotYjBrMEROMGszd013MEdjRVZB?oc=5",
-    "date": "2026-10-09",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "‘Super-Duper El Niño’ Alert: Could October-December Bring Record Heat And Extreme Weather Worldwide?",
-    "origin": "News18",
-    "sourceName": "세계기상기구(WMO) 폭염·극한기후",
-    "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQZEhYSVJOcnRTdl9MazF2N1VROWRHUDJSLXlRT2plRUtLMXBwSG5WVWZuVVliTkVXM2xFZFMtcHFnMjA2azNlRUJ6RElDdHd6XzZpY0RST05wR2JnRElIdzdWSE1JM0NnMl9RM18yalcyV3czS0FVZzAwUWxqMjI4OWJGZ2ZBTjRaUjREWmY0NzN6bDN6UFQ2bUpfbE5JR1VmcEZEdWJYMUYzSDlsR1hNZ3gwUjRXRUwtQTRSa1VxTEJrZi0xSHlkN3FUY3VialFoN2QyeUJrNGhod0NSNXpHXy1jVHBwOGEwU3pGRXJVTUJWb0w3dFHSAfsBQVVfeXFMT0hWUmJocHVmUDFHTXBMdnJqOUhHX1VsZ3BOZjNLblY5a2hYdlpYZUYzRlJESUN1Z1BPajRoR2hZaVRZM1oxOE5TRHZBeTREaGJQUlhzdnpmZ2NWVkE4VVUxeWpjdDYtUk9LOUxkUXRybzdtMnZEd0NQZjh3TXFZQ3M5VmJLMHhlTTVPRi1rWHpsbmszSW53NXRYdklERGhfOUMtSWMxRmVQeWM4WExOTDdPWGo2Q2NiaUpZQWxsNUw0eV9XZVZfYzVhaWpxSTJfSjR6MTVQQWxkYV9aRzAzandvSXlQemJncE5nOG1ESWZsUFZ3TnBxcnBCUFk?oc=5",
-    "date": "2026-10-09",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "Monitoring Global Temperature and Precipitation in September 2026",
-    "origin": "",
-    "sourceName": "미국 해양대기청(NOAA NCEI) 월간 전 지구 기후 보고",
-    "link": "https://www.ncei.noaa.gov/news/global-climate-202609",
-    "date": "2026-10-09",
-    "via": "기관 페이지"
-   },
-   {
-    "title": "Top Climate Scientists Set Out Five Steps to Help the World Prepare for Super El NiñO | Newswise",
-    "origin": "Newswise",
-    "sourceName": "WHO 기후변화와 건강",
-    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOOVo4R2pmdXE3cTFoZFBnUHIzc3ZBSUlXODYzRFR6SnhEZjYyTTY3NkxYYXg5MDV4SFNTQS03MWdDdURtZGloZFhzYUxHWThydWJBSl9uMVgzeW1xUWVudTBIcXJiQk1sMnQxZ0xPS1VMeU5JS2lGRndubVFpbDVVZ1h5WWk3d3dKeGo2NjU4TFd4X3ZiV3BWRERHR1otZUctUGNhVzNlWGhMZVhlQkRtWDNKRXcwdzN2MFA40gG7AUFVX3lxTE45WjhHamZ1cTdxMWhkUGdQcjNzdkFJSVc4NjNEVHpKeERmNjJNNjc2TFhheDkwNXhIU1NBLTcxZ0N1RG1kaWhkWHNhTEdZOHJ1YkFKX24xWDN5bXFRZW51MEhxcmJCTWwydDFnTE9LVUx5TklLaUZGd25tUWlsNVVnWHlZaTd3d0p4ajY2NThMV3hfdmJXcFZEREdHWi1lRy1QY2FXM2VYaExlWGVCRG1YM0pFdzB3M3YwUDg?oc=5",
-    "date": "2026-10-08",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "El Nino forecast to reach record strength as global heat, weather risks rise: WMO",
-    "origin": "Anadolu Ajansı",
-    "sourceName": "세계기상기구(WMO) 폭염·극한기후",
-    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNelRvZmo2cjJ0UnB6VTJ3b0hGQkEyajRVWjExendHOThXOWtkV2NtUjRsazNibHpOMEZXWXdRZ1QyTm9neWpMWElidnR3RzJ3Z25QRk50bXUxcHBTVmVwRzc1NnhNZm5rTGVLQ2NJTUN0b2ZMaEpPLWc4STdaYkJNNS15MVMtSjROcV9oMkM4bFF2YVlBRXVkc1czNHhHd25CeWFRSThybE5FQTlIeW9TZkJkNGdGNEVQWkJpNXMyS1NWZWsyV1ZKbFV5dXgzcDdTZmVR?oc=5",
-    "date": "2026-10-08",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "Bangladesh, 3 other South Asian countries launch new initiative to tackle extreme heat",
-    "origin": "Prothom Alo English",
-    "sourceName": "세계기상기구(WMO) 폭염·극한기후",
-    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBtSGl0eHNuNEZzT2VTb1FmaVVsaXFORUZ5QzctaXRnajc1M05rZmZQSzB6T0sxamozTld6Qnd5aUdyd2lXc2IxOVpDcjcweW82clhTdk5USU01NkJNZjNDeFZZRFUyTFM1eFczZ1FBMEvSAX5BVV95cUxQajZHNENIMmZISGFvQTdOQXQyMk5aa25mVDZuQXhOd01sLXpnT3VsS3BQMW45MGNnLVAzUldrNTFhMmFGLXJVTW04Mi15LTkzQzNYZ3dVZ285OXRhSllYZ0JlTWtJUDUyN1BLeV9LM3IzMkxfRjRCclNSVnZJMnc?oc=5",
-    "date": "2026-10-08",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "El Nino, Meaning, Effect in India and World, Weather",
-    "origin": "Vajiram & Ravi",
-    "sourceName": "세계기상기구(WMO) 폭염·극한기후",
-    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5YMy11S0gtX3A4Wl9HZGgxWHZOR2ctdE1HaG80aU1HVlF6RDg3cWxFY2tRbnpIekFrSC1tOTNNMlpueGJhTE8zS1R2TW9ySTh2M19sdld2MVRXaFJfQmcxOA?oc=5",
-    "date": "2026-10-08",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "El Niño is getting stronger: WMO warns of record-breaking heat and global weather disruption",
-    "origin": "Mathrubhumi English",
-    "sourceName": "세계기상기구(WMO) 폭염·극한기후",
-    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPV0JTcVpjNS1WQmRnM25mZWlHSkl0SFh0MDlubGhGUTRzTk9EcjVuY0dLVGtqSWZ2ajYzSkdqUGN1bWtGNzlwQlY3aDVMUVE5ZlN5SXBXb2tvNEdXWFZwc0ZuV2FDMlhPblk1MldmRGhJUFFuTmpNYmNiSzZubWhldWR5di1FTzJVUC0xWHRHSG4wMXVrUnFDSUNlWU5fd9IBowFBVV95cUxPcGI0YlI4cmIzQUltb0JQNWVoc1NmUjlreG9HSlIwQ1R4U1QzaHJ3dWQ1Qml3Sk5vNjBhb05YMG1lMFlpV3pZaXVLNkF3Nl9WSzRYXzJ2VVhnWjBwRDg1Sjlqb1VZT1U1Q3pQVDdKWlRqSDN5dkZ2QU0tcGw5WGIwRy1JTzFNeVFlMm0xZUEySXlxN3VXVUtRS1hCa04xNDgwVm4w?oc=5",
-    "date": "2026-10-08",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "Earth ‘Almost Entirely in the Red’: Intensifying Super El Nino Smashes Ocean Heat Records",
-    "origin": "LatestLY",
-    "sourceName": "세계기상기구(WMO) 폭염·극한기후",
-    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNMm1BVm1RbDZTQkJuRmlYZ2lkSmdUWmQ5WFBPcmFINlljX3RibXlDTndpdXZjdmlITXlCdVlkb2FkeHI1akVDY3Rfc2MwSXpGMjQ0MWtKREdveVMySWtVN2k1SXZPSnp6ZjlsdEJoNDBhbGhNWXRBQ3RXYnFwZ0JjR2h6UjBVd01uTDZUdjZpWlNySjNKR3locmlPWW5Wd0RpYVYyNFF4Q2pNMHpNTWhMekI3M21pU0JhaFRBTzVGLVVZZV9lSkFybjNR0gHPAUFVX3lxTE9jVGI3Nnc4ZndTVTVvNm50dlNKdUhMV2c0cGRzakVwYjRmajZ2a0ViX2t2UlFwd3FrODk2cHRyT0MzRm9QS2RyZmRQTDhfLW1Mb3Bibnp6bzNnYXZRc2s1ejU0ZlY2cHpOczJ0MGI1S0lkMnl1eVp3MElxM2xqOFJOeElfRzhjOVluLVR1MW50eXAwLWt3RnNabWNqaHBsdDlZeG44ZDZOMWNSZWFaOF9hSFBENHprbUl1bTJiVVVOZ0hIUkhpQTQxSkRMdGFJRQ?oc=5",
-    "date": "2026-10-08",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "질병청 온열질환 사망자 집계, 실제 통계와 245명 차이 > 뉴스",
-    "origin": "한의신문",
-    "sourceName": "국내 온열질환 응급실감시체계",
-    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9jUVFON2NwcnhJbkkyM01wWkxELWtiS0hmS2s5OVJXNFBDM1llc2FGZ1F2N0RaRmhaTEZYUW1zQXBwTE9obVVQVWNyalVOaVRFeU4yVWEtcUdvQkNBVkZQdTlkaXBwVGk4VUUyR0R2VTU5dw?oc=5",
-    "date": "2026-10-08",
+    "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOcE5FbVVaV2ROcXN5a0RpYzk0TnJZZC05eGE2Q3p5N0ROSVFiZ3lxY3F4bFk4WUV0Q29tM0VUbG5YV1I5SS0tWDF0M0dnMktxNnJZVkE3eEk4bTFVcWVzUHBqODRpM3Z0TlhoRTR5VTd0Wlo5ZWtQaTlhMjJrOWRzWG55SmtZYzA3d3luZm1tRDJpVHRsNGZaZU4xZTVuR0ZRV3Jnc3JCNlBkVXFmRUJ5UXREU2k3TjJ1NURnOVNLRDJ5Vi1FZTJBUkJFbEgwWFowWGpGaUtJYWg4NUdyMHhSNk5qeUZhdw?oc=5",
+    "date": "2026-10-12",
     "via": "뉴스검색"
    }
   ],
   "phsm": [
+   {
+    "title": "Language eligibility criteria and enrolled racial and ethnic composition in US clinical trials: a cross-sectional study",
+    "origin": "",
+    "sourceName": "프리프린트: medRxiv 역학·보건정책",
+    "link": "https://www.medrxiv.org/content/10.64898/2026.10.09.26365106v1?rss=1",
+    "date": "2026-10-13",
+    "via": "기관 RSS"
+   },
    {
     "title": "£33.2 million to protect public from future epidemics and pandemics",
     "origin": "",
@@ -395,20 +157,258 @@
     "via": "기관 페이지"
    },
    {
-    "title": "Frontiers: A Roundtable Discussion on the I-Frame vs. S-Frame Debate",
-    "origin": "Behavioral Scientist",
-    "sourceName": "WHO 행동통찰·수용도 조사",
-    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdktsQ1JKblUzWXZibnhFdU91eGJENFJKUVhxemZ6N2lDcmdZSXF0S25jYXc1LXNtOXNMMERQV2NGaDFHRHlkcnVzUnRQcTdEMVM2UEotQTBKZnBEeTZCY0RkN2pOVUxTaV9na0RmWUgzbmFOMlktaDBUQmJuX0RBanBLcVdHLUJJbDk0Z1FwUGl0SE9rNlA0NHF2T29IUkNv?oc=5",
-    "date": "2026-10-06",
-    "via": "뉴스검색"
-   },
-   {
     "title": "Mapping policy architecture for vaccine research, development and manufacturing in Africa: a scoping review protocol",
     "origin": "Open Res Africa · Adenipekun A, Harriss E, Alam U, Vanderslott S, Norton A.",
     "sourceName": "진행 중인 체계적 문헌고찰 (프로토콜)",
     "link": "https://doi.org/10.12688/openresafrica.16549.3",
     "date": "2026-10-06",
     "via": "논문 검색"
+   }
+  ],
+  "chronic": [
+   {
+    "title": "미 연방 하원의원, 한국 국가건강검진 체계 견학",
+    "origin": "LG헬로비전",
+    "sourceName": "국가건강검진 결과·제도",
+    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1WU2ZIakF1ZjhVbjl2b2FzSUlRRUVpRFJTOFVyQVBpd0c3VlpDWDNCZWtZcnNfUnF2WUNpT0tKbGstSEMyVGR5REVET0dWeURZRkpGOUp3QkNmYmhyZjhQVy1hNnJhVW9paEV5SllOVngxZ9IBdkFVX3lxTFBHQkdGOUM2S3Q0Yk1qcTlCcGpQTk9Sd21HZEFhUThROGhBU3NkSUsyejkwcjQzNXJNWlJvZUp6a2xKR19IWG5JaFBfdUVpTXU1QVBBTjVpMHpxaW5pMG5JY2M5aU1QTzJXOVhUQVRobm55S1prYkE?oc=5",
+    "date": "2026-10-13",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "지원 축소 논란 고혈압·당뇨병 등록관리사업 ‘다시 빛볼까’",
+    "origin": "약사공론",
+    "sourceName": "국내 만성질환 관리 정책",
+    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9BdFlMX01nckZwWTZNTXBmTnlfa2ZWNEpvalFiZnF6alcxR256UEJxU1JqdDQ0bkhGLWZjdzY0R2VmZXpQR3pSVmVKZEh3SFdLTzJSYzN6cHczM2VQdENiQ2lTQ1VHVUhOVlQ3SQ?oc=5",
+    "date": "2026-10-12",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "고혈압·당뇨병 환자 병원비 지원 바뀐다… 어르신 혜택 줄어들까",
+    "origin": "헬스조선",
+    "sourceName": "국내 만성질환 관리 정책",
+    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1xdThqTTlfVm9PbnFreGdzcDF1LWxIRGY3TFBuN0Vmem1ZOWMxZ2dteXpOY3FHU1AydnpsMEk3RkFTSHVHRjdOSm9WWGdwbWhxQkM4Z2dsckY5djhrN1AwZG9Sc1JQX2psN2d1WXRrQ0RIQVZPZlE?oc=5",
+    "date": "2026-10-12",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "검진의학회 \"전립선암 국가검진 도입 필요...내시경 소독교육 인프라 확대해야\"",
+    "origin": "라포르시안",
+    "sourceName": "국가건강검진 결과·제도",
+    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBUTkd1clV3M1YyRVdISGx4X2lCalZTeEREOUtfMjhscTNHYlg2ZEdVb20zbHAzQjlYVFhUbVUzVUFibVhfcHNYaUJDWXFGOF9uR1l3S1MzUGZrQlI4TlNSNDUwRHpWM1FQUElOYk5B?oc=5",
+    "date": "2026-10-12",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "대장내시경 국가검진 도입 가시화...소독교육 확대 시급",
+    "origin": "의학신문",
+    "sourceName": "국가건강검진 결과·제도",
+    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1rMGVzanQzWHZGN0Y1YU5MNkFLVGY3U3dlckNkVFpJYjdiNU5JMzhHellGSjJPNnhicU1vZ0FxaDZNVWZfTV9oNzJVR3YtdXFZUFgyWVNMZXIwRXgxN0xCZE1vcVNFVXVjeXc?oc=5",
+    "date": "2026-10-11",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "검진의학회 \"교육 막히고 규제만\"…내시경 소독 확대 촉구",
+    "origin": "보건신문",
+    "sourceName": "국가건강검진 결과·제도",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBWWDVDMGUydVVDOFFGdXQyWS1YRnI4RUdEZm1zQnZxNnNjUDlBSkRPUlpHdHFVUUVfYXhzNTlOV2JlaVZUQXlCc2o2S2ZqS1ZfQzNHRlU3QTdWRlZQbzAtZmR3?oc=5",
+    "date": "2026-10-11",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "대한검진의학회 박창영 회장 연임",
+    "origin": "의학신문",
+    "sourceName": "국가건강검진 결과·제도",
+    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9OLWw0Y1NpZG9ua3NQS0M5QVRHNHRmY09kMjRyOFJEU3hCVU9QYm81eExkZi0zUGpqUXA5djd5MGdMTGFidjFwOXhxVC1HY0RtRE81ZW14aFI4blNqNGhRbEs1alpGNUM5U2c?oc=5",
+    "date": "2026-10-11",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "건강검진 연말에 몰린다…“짝수년도 출생자라면 지금 예약하세요” [헬시타임]",
+    "origin": "서울경제",
+    "sourceName": "국가건강검진 결과·제도",
+    "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4yZHcxYWQyWDFVYXFuVlVmYWRONE1GNW91S05WaFRJNUo0Uk9wQWxlZjNkYTBDTU5sWDJwSEV3elRuRXBGWXVYR2h3OVdxdmRqeVHSAVNBVV95cUxNeWpzZWhpbW05X2NvQkY0WFBBVUFodEFVU2c1empOWUJJUnh6MWhBTlRseXNneEFfTDBZVno3aWViTGlJMF9sa3JZSnY1UV9TOHdQTQ?oc=5",
+    "date": "2026-10-09",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "U.S. states with the lowest adult obesity rates",
+    "origin": "qz.com",
+    "sourceName": "美CDC 만성질환·건강행태",
+    "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5JejdVcXkzUlRYM3JUallnaTVuLTVHd1JEeFJhV2V4cTdyT2VTM2FVOTc5aEdlZW4zSVpvQWI5Wm1zQnR6ZlUyN0VoWFB1dGF2VjgtRzRfVmJPbTEt?oc=5",
+    "date": "2026-10-08",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "WHO issues first global guidelines on child and adolescent obesity",
+    "origin": "Pan American Health Organization (PAHO)",
+    "sourceName": "국제 NCD 동향·캠페인",
+    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOdjI0N3ZaVHVRZWxBNDNQU2kyTDVHMjVnbUhFdzhKWnFBZGhiamJxOTcyNkM3Vl8teEs5dllwYnhiV1lfdFktNk9YQ0J0ZVdaaVgwSzgycEVOa1I0dElVbS1QVUZ1UVlYZi1WVDMzYzExUWVVbHBraUZ5SFRGaHVpU0R4V3hacERTYTJLMFlfUF9XWGlFNlVtbnAtczFmYy1nVE1yRA?oc=5",
+    "date": "2026-10-08",
+    "via": "뉴스검색"
+   }
+  ],
+  "climate": [
+   {
+    "title": "Climate Action from Geneva to Antalya | UN Climate Change Conference COP31",
+    "origin": "Geneva Environment Network",
+    "sourceName": "세계기상기구(WMO) 폭염·극한기후",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPN2ZQbU16eDVFTGpGdmJwZkFmWnhiR1NnZWpXVkItQWJIeG1lZlVuQXFhUUI0QmctZTFOdFRtM0hnUks2TVRYYmk4ZGwtaHFCbUljckNnTTY3MUxQc29IZUo3VkhLUGo3eXRIQjA5N2pSeG1DM2VNZmw0WV90REl2SW53dHdXTjl4c3FrR3VuTTgtcDE1dE5zczN4RUFOa2k4alpxNjVKSzFJdE5iSm5TR0p5dXNia25kd3pibFk3RWdRRW1yRXVQZ0NBd08?oc=5",
+    "date": "2026-10-13",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "올여름 온열질환자 줄었지만 사망자는 24% 증가…고령층 피해 집중",
+    "origin": "시사저널",
+    "sourceName": "국내 온열질환 응급실감시체계",
+    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE40c3JtT2F6NDg5X3NoNGlsVGthekxna0dUakQ2Vnc2ZkdsM0hRblptaEUwV052YlRnZ0tqeDI1RU9RbHFpaGZ3amQ1MkIxbkdlWDRqUDhQQmxsT0Q1ZjJDRGtkczM2a18xTnd1VFRqcnl3UknSAXNBVV95cUxONHNybU9hejQ4OV9zaDRpbFRrYXpMZ2tHVGpENlZ3NmZHbDNIUW5abWhFMFdOdmJUZ2dLangyNUVPUWxxaWhmd2pkNTJCMW5HZVg0alA4UEJsbE9ENWYyQ0RrZHMzNmtfMU53dVRUanJ5d1JJ?oc=5",
+    "date": "2026-10-13",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "온열질환 15% 줄었지만… 제주 인구 대비 전국 3위",
+    "origin": "파이낸셜뉴스",
+    "sourceName": "국내 온열질환 응급실감시체계",
+    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9GWjV2RnFWN19BWnFodmJHdFdJZmZTUU1Hd084cDRDQUpQb3BsMXYyZXg2TXZ0NU43b2VBUTlEa3Z0b016cmhFQWdxNGUtaWhKd0NYak9LTGlCUQ?oc=5",
+    "date": "2026-10-13",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "The World Meteorological Organization said that the 2026 El Niño will peak in December and is nearly 100% certain to last until February 2027 with sea surface temperatures set to break records. Link to the full story in the comments section. | via ANC 24/7",
+    "origin": "Facebook",
+    "sourceName": "세계기상기구(WMO) 폭염·극한기후",
+    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNWlRqVktncjc3LU9kMjlLcjdwbklYMnB2MDZOOGVXSjNQZFV2UERVV0RvMW1Bc3llOVFGVDdrUkhDTXNjNFdteEtXbWxmLTJieUZkbERfdnRkY1dQa21xOTBudEV5WEFuUnRONlhpY2pidHpCV0tmQWxIcXByUXBuWjdJakkzbmVaS0FfZGdZU0FBZTN1MkZnNXJDdmZSdktlOWRsZHhqcGhjSFJ2RFZzdUZocGlfQjZZTHNybk02eFpHeHMyMVphZGhGZmo0bk9QMnNnLXY5NUp2ZHUzWEE?oc=5",
+    "date": "2026-10-12",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "온열질환자 9% 줄었는데 사망자는 24%↑…80세 이상 피해집중",
+    "origin": "연합뉴스",
+    "sourceName": "국내 온열질환 응급실감시체계",
+    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBySUNWMWhXZ1pVUVBlaEFCQ1A3akwycU1BVWVjc0VfUGJJbjJyS0RSMm5CVzJPc2piaGxkZ20wbGhqNjF0bjF0NUJWeV8zMFpEa3hnQUdxZnJhb1FLLU5NRNIBYEFVX3lxTFBySUNWMWhXZ1pVUVBlaEFCQ1A3akwycU1BVWVjc0VfUGJJbjJyS0RSMm5CVzJPc2piaGxkZ20wbGhqNjF0bjF0NUJWeV8zMFpEa3hnQUdxZnJhb1FLLU5NRA?oc=5",
+    "date": "2026-10-12",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "올해 온열질환 사망자 24%↑…80세 이상·실내 증가",
+    "origin": "뉴시스",
+    "sourceName": "국내 온열질환 응급실감시체계",
+    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9JWnZMTEFQOVR1dG9NRTVHRURqcmhhVTRLSGF4a3I1QWtTajhZV2Y3UWNkamxXWEVpWmkyQnVoejE3cUdOVzNVT2l0bWhPcFpuU3dPR25HaE5ka3VSTzRhMldaZ1MtTVF0TGJnYVBHengtSHVtd09vZ9IBeEFVX3lxTE9JWnZMTEFQOVR1dG9NRTVHRURqcmhhVTRLSGF4a3I1QWtTajhZV2Y3UWNkamxXWEVpWmkyQnVoejE3cUdOVzNVT2l0bWhPcFpuU3dPR25HaE5ka3VSTzRhMldaZ1MtTVF0TGJnYVBHengtSHVtd09vZw?oc=5",
+    "date": "2026-10-12",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "온열질환자 9% 줄었지만 사망자는 24%↑‥'폭염특보' 8월 첫주 발생 집중",
+    "origin": "MBC 뉴스",
+    "sourceName": "국내 온열질환 응급실감시체계",
+    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBkZE1CajJITHN2UWtFVElHeFlhc1BJQ2w1alFwUWQwM0V2cVFfcmgwbncyRVQ0aDc4ZnN1NV9tRWdDTkdWSExIOTg4N29hbFNzU3cwaV9XOXZEeDBIQmJDeHZISzVkNlJJSUFUWDFhOXRiRVQxanIw0gF3QVVfeXFMUGRkTUJqMkhMc3ZRa0VUSUd4WWFzUElDbDVqUXBRZDAzRXZxUV9yaDBudzJFVDRoNzhmc3U1X21FZ0NOR1ZITEg5ODg3b2FsU3NTdzBpX1c5dkR4MEhCYkN4dkhLNWQ2UklJQVRYMWE5dGJFVDFqcjA?oc=5",
+    "date": "2026-10-12",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "올해 온열질환자 8.8% 감소했지만 추정 사망자는 24.1% 증가",
+    "origin": "한국의약통신",
+    "sourceName": "국내 온열질환 응급실감시체계",
+    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB1dWtfN204bEtfd3g2NXlEb3VWQTkwOFR4bUlGWEh4RF85aWNlTmlSTUxSb1dDem5XS1g0Q2Z5MG9MdVRzYlJXWHM4c0JWWk0tWHlqMGNzenY3NVhMc1B2ZEtqZzV2MkFvc1VZ?oc=5",
+    "date": "2026-10-12",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "올해 온열질환자 8.8% 감소했지만 추정 사망자는 증가, 고령층 보호 강화 필요",
+    "origin": "투위복지뉴스",
+    "sourceName": "국내 온열질환 응급실감시체계",
+    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE12YlJ1RE9uZzd1TVNSc2lNdV85RGhGS254V3d2MDFUd2UwNXBKOVByWnpNSFA2ZG1pNDJiQzhkdk1YSXBXT3E5Y3R1UURRNUVoMmtwbDdJd0NCSE5va21zbm9GRUh4WEI1dmc?oc=5",
+    "date": "2026-10-12",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "올여름 온열질환자 줄었지만 사망자는 24% 증가···8월 초 폭염 시기 피해 집중",
+    "origin": "경향신문",
+    "sourceName": "국내 온열질환 응급실감시체계",
+    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5FcGRWVnN6aEZEbXdLeW5lUGxVdEVPVlFkMlJvQlJvcG5kbktlUlpvRktwNXlDUkVXQVJTNjZmYjBSQXVPR1RoMGFDM1NHRVpsSXhLd3JOZnlBV0pNYjM00gFfQVVfeXFMTkVwZFZWc3poRkRtd0t5bmVQbFV0RU9WUWQyUm9CUm9wbmRuS2VSWm9GS3A1eUNSRVdBUlM2NmZiMFJBdU9HVGgwYUMzU0dFWmxJeEt3ck5meUFXSk1iMzQ?oc=5",
+    "date": "2026-10-12",
+    "via": "뉴스검색"
+   }
+  ],
+  "injury": [
+   {
+    "title": "6차 자살예방기본계획안…빈곤·채무까지 넓혀 2030년 10만명당 18.9명 목표",
+    "origin": "ISSUE ON (이슈온)",
+    "sourceName": "자살·자해 예방 통계 (보건복지부·한국생명존중희망재단)",
+    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB6dm9YV2RBck11UlBTY3ZFRUxGeko1Q1VxUVBlS0FXX0htSHE1TFRtaHM4MHU1UDdQTFBXZFFyam1ULVg3X1d6T2Q4RUNVZktHYVBJNC15WGo4REtYWEE0LTZDaWpQckI4WGdj?oc=5",
+    "date": "2026-10-13",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "[10.13.화.조간] 올해 온열질환자 8.8% 감소했지만 추정 사망자는 증가, 고령층 보호 강화 필요",
+    "origin": "",
+    "sourceName": "질병관리청 보도자료 (손상·안전)",
+    "link": "https://www.kdca.go.kr/bbs/kdca/42/312898/artclView.do",
+    "date": "2026-10-12",
+    "via": "기관 페이지"
+   },
+   {
+    "title": "소방청, 119소방안전 활동 상황",
+    "origin": "세이프투데이",
+    "sourceName": "소방청 119구급·구조 통계",
+    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1LWkU1Z083aTRpeFUxNEMzZ2Q0aDE1ZmNhOVlDdWRJOFE2ZmJmeW9ESG5sTFIyRWpvRVZPUDZ6OVZHWFdteDE1QWJNZThRMF9VTTJYOGVMT0JCVkNONlU3YjZKUGJtY2N0ZzVzS0xB0gFuQVVfeXFMTUtaRTVnTzdpNGl4VTE0QzNnZDRoMTVmY2E5WUN1ZEk4UTZmYmZ5b0RIbmxMUjJFam9FVk9QNno5VkdYV214MTVBYk1lOFEwX1VNMlg4ZUxPQkJWQ042VTdiNkpQYm1jY3RnNXNLTEE?oc=5",
+    "date": "2026-10-12",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "제6차 자살예방기본계획 사전브리핑",
+    "origin": "정책브리핑",
+    "sourceName": "자살·자해 예방 통계 (보건복지부·한국생명존중희망재단)",
+    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5SY3hlRFM2bUpIaktzU0ZzdTd1c09hRzMxWUVROVhzWGtYUktSYkE0UkZwaDRERUZweHFqbDBINW9aUEJ3dlpQYUlubDYxazVlUFNfcXl4VlRpMzhJaUFJemxMbnBqdXZOdnpWOC1TaHRVcVhZRjRV?oc=5",
+    "date": "2026-10-12",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "“자살률 5년 내 33% 감축”… 위험군 관리 위해 강제개입 추진 [6차 자살예방기본계획]",
+    "origin": "세계일보",
+    "sourceName": "자살·자해 예방 통계 (보건복지부·한국생명존중희망재단)",
+    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5ISHFfYmI5OHpUdVVYVVJVZkFvWHRNcWJrX2l2VWd0dUhCN2FFV1lmbHdiNzMyTEJWeWVUQkVJR0QwMjlocU9tc1lPeDNwMkN6ZjhZMGt5LXjSAVRBVV95cUxOY0NLN1NxZUlmcWtNSmN2LUlVcm5mb2xaN3dUN3RvQkprWjBNaWhQR00wY05raElvaGV5QnZnNnZkVmZ1d3F5OGp3UE5oRkQ1MFZoLWQ?oc=5",
+    "date": "2026-10-12",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "지역별 자살예방 성적표 주민에 공개…‘뒷짐 진 행정’ 압박한다",
+    "origin": "서울신문",
+    "sourceName": "자살·자해 예방 통계 (보건복지부·한국생명존중희망재단)",
+    "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBKODRmRERqcDRiX2xjdlF5dTFzdUhaTXR4cF9oX1h4VGl3d0JrNklTMzhhSXRTXzJMVllPM0tncDJzS1N5THM1NFBiQ3NvWDNJNmdGY2xENA?oc=5",
+    "date": "2026-10-12",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "예산군보건소, 치매노인 안심 주거환경 조성 위한 맞춤형 개선 '총력'",
+    "origin": "충청일보",
+    "sourceName": "어린이·고령자 안전사고 대책 (행정안전부·지자체)",
+    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBRa3Zxa2w0cWlfZk5KS0J0NDBfQ1ZCZXNGbE1NTmgybTFVYllwRDFkUElSV2hmU2s1anhDUHlVUFF2RVUzejNGQ2ZlelNzdi1NQ05rUkJGVjRLdmluMVI1SkNNQkltbzh3MmJEdjRJY2g?oc=5",
+    "date": "2026-10-12",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "「손상예방과 건강한 사회」 2026년 3호 발간",
+    "origin": "",
+    "sourceName": "질병관리청 「손상예방과 건강한 사회」 (계간)",
+    "link": "https://www.kdca.go.kr/injury/disemg/2026/09/index.html",
+    "date": "2026-10-11",
+    "via": "기관 페이지"
+   },
+   {
+    "title": "「손상예방과 건강한 사회」 2026년 2호 발간",
+    "origin": "",
+    "sourceName": "질병관리청 「손상예방과 건강한 사회」 (계간)",
+    "link": "https://www.kdca.go.kr/injury/disemg/2026/06/index.html",
+    "date": "2026-10-11",
+    "via": "기관 페이지"
+   },
+   {
+    "title": "의창소방서 구급대원 폭행 근절 위해 시민 협조 당부",
+    "origin": "경남도민신문",
+    "sourceName": "소방청 119구급·구조 통계",
+    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE51NHQ5SGM1ZExyNU13dnV2bUZ3aEY0Q2cwTEZiYV95WFRmUE1LSFBXN0g1NlpKR18teVk0R0dhcnl5Z1ZRS2hzZ1oteHVFbmdOVVZVNGYxOHFtWDRSQi1RRVJfemhyeFB0?oc=5",
+    "date": "2026-10-11",
+    "via": "뉴스검색"
    }
   ]
  }
