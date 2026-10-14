@@ -1,18 +1,18 @@
 {
  "name": "빵캘",
- "updatedAt": "2026-10-14T00:50:15.146Z",
+ "updatedAt": "2026-10-14T14:51:15.823Z",
  "counts": {
-  "total": 136,
-  "upcoming": 113
+  "total": 139,
+  "upcoming": 115
  },
  "sources": [
   {
    "id": "org-kdca",
    "name": "질병관리청 공지",
    "ok": true,
-   "found": 50,
+   "found": 51,
    "events": 0,
-   "ms": 3866
+   "ms": 3674
   },
   {
    "id": "org-mohw",
@@ -20,7 +20,7 @@
    "ok": true,
    "found": 19,
    "events": 4,
-   "ms": 14859
+   "ms": 15555
   },
   {
    "id": "org-khealth",
@@ -28,7 +28,7 @@
    "ok": true,
    "found": 11,
    "events": 0,
-   "ms": 4533
+   "ms": 5027
   },
   {
    "id": "nkis",
@@ -36,7 +36,7 @@
    "ok": true,
    "found": 20,
    "events": 0,
-   "ms": 23158
+   "ms": 23575
   },
   {
    "id": "org-ncc",
@@ -44,23 +44,7 @@
    "ok": true,
    "found": 4,
    "events": 2,
-   "ms": 6886
-  },
-  {
-   "id": "org-nhis",
-   "name": "국민건강보험공단 공지",
-   "ok": true,
-   "found": 24,
-   "events": 0,
-   "ms": 4752
-  },
-  {
-   "id": "org-hira",
-   "name": "건강보험심사평가원 공지",
-   "ok": true,
-   "found": 12,
-   "events": 0,
-   "ms": 2948
+   "ms": 6676
   },
   {
    "id": "org-mfds",
@@ -68,7 +52,23 @@
    "ok": true,
    "found": 16,
    "events": 8,
-   "ms": 25433
+   "ms": 24911
+  },
+  {
+   "id": "org-nhis",
+   "name": "국민건강보험공단 공지",
+   "ok": true,
+   "found": 24,
+   "events": 0,
+   "ms": 5461
+  },
+  {
+   "id": "org-hira",
+   "name": "건강보험심사평가원 공지",
+   "ok": true,
+   "found": 12,
+   "events": 0,
+   "ms": 2226
   },
   {
    "id": "org-kihasa",
@@ -76,7 +76,7 @@
    "ok": true,
    "found": 0,
    "events": 0,
-   "ms": 2597
+   "ms": 2439
   },
   {
    "id": "org-nmc",
@@ -84,14 +84,14 @@
    "ok": true,
    "found": 11,
    "events": 0,
-   "ms": 2437
+   "ms": 2595
   },
   {
    "id": "org-neca",
    "name": "한국보건의료연구원 공지",
    "ok": false,
    "error": "HTTP 400",
-   "ms": 7467
+   "ms": 7782
   },
   {
    "id": "org-khidi",
@@ -99,7 +99,7 @@
    "ok": true,
    "found": 20,
    "events": 1,
-   "ms": 10055
+   "ms": 9388
   },
   {
    "id": "org-nibp",
@@ -107,7 +107,7 @@
    "ok": true,
    "found": 16,
    "events": 0,
-   "ms": 7732
+   "ms": 7728
   },
   {
    "id": "org-ksepi",
@@ -115,7 +115,7 @@
    "ok": true,
    "found": 10,
    "events": 5,
-   "ms": 6011
+   "ms": 5547
   },
   {
    "id": "org-kshpa",
@@ -123,15 +123,15 @@
    "ok": true,
    "found": 9,
    "events": 6,
-   "ms": 14880
+   "ms": 14080
   },
   {
    "id": "org-prevmed",
    "name": "대한예방의학회 공지",
    "ok": true,
    "found": 15,
-   "events": 4,
-   "ms": 25045
+   "events": 5,
+   "ms": 24803
   },
   {
    "id": "org-kshep",
@@ -139,7 +139,7 @@
    "ok": true,
    "found": 1,
    "events": 1,
-   "ms": 3959
+   "ms": 3946
   },
   {
    "id": "org-kams",
@@ -147,39 +147,7 @@
    "ok": true,
    "found": 101,
    "events": 101,
-   "ms": 28068
-  },
-  {
-   "id": "snu-health",
-   "name": "서울대 보건대학원 세미나정보",
-   "ok": true,
-   "found": 30,
-   "events": 21,
-   "ms": 73939
-  },
-  {
-   "id": "org-kosqua",
-   "name": "한국의료질향상학회 공지",
-   "ok": true,
-   "found": 7,
-   "events": 1,
-   "ms": 1934
-  },
-  {
-   "id": "org-cochrane",
-   "name": "한국코크란 공지",
-   "ok": true,
-   "found": 16,
-   "events": 0,
-   "ms": 534
-  },
-  {
-   "id": "org-kdca-ilje",
-   "name": "질병관리청 일정",
-   "ok": true,
-   "found": 30,
-   "events": 0,
-   "ms": 2865
+   "ms": 23187
   },
   {
    "id": "org-kspm",
@@ -187,21 +155,54 @@
    "ok": true,
    "found": 16,
    "events": 1,
-   "ms": 27729
+   "ms": 12138
+  },
+  {
+   "id": "org-kosqua",
+   "name": "한국의료질향상학회 공지",
+   "ok": true,
+   "found": 7,
+   "events": 1,
+   "ms": 1871
+  },
+  {
+   "id": "org-cochrane",
+   "name": "한국코크란 공지",
+   "ok": true,
+   "found": 16,
+   "events": 0,
+   "ms": 544
+  },
+  {
+   "id": "org-kdca-ilje",
+   "name": "질병관리청 일정",
+   "ok": true,
+   "found": 31,
+   "events": 0,
+   "ms": 2629
+  },
+  {
+   "id": "org-koddi",
+   "name": "한국장애인개발원 공지",
+   "ok": true,
+   "found": 21,
+   "events": 0,
+   "ms": 8052
+  },
+  {
+   "id": "snu-health",
+   "name": "서울대 보건대학원 세미나정보",
+   "ok": true,
+   "found": 30,
+   "events": 23,
+   "ms": 84445
   },
   {
    "id": "org-kpha",
    "name": "대한보건협회 공지",
    "ok": false,
    "error": "fetch failed",
-   "ms": 25085
-  },
-  {
-   "id": "org-koddi",
-   "name": "한국장애인개발원 공지",
-   "ok": false,
-   "error": "The operation was aborted due to timeout",
-   "ms": 34592
+   "ms": 24989
   }
  ],
  "events": [
@@ -269,7 +270,7 @@
    "endTime": null,
    "allDay": true,
    "place": "온라인(zoom)",
-   "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pageid=2&uid=5727",
+   "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pageid=3&uid=5727",
    "source": "snu-health",
    "collectedAt": "2026-10-14",
    "online": true
@@ -304,7 +305,7 @@
    "endTime": "18:00",
    "allDay": false,
    "place": "부산 웨스틴조선 2층 오키드홀",
-   "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pageid=2&uid=5723",
+   "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pageid=3&uid=5723",
    "source": "snu-health",
    "collectedAt": "2026-10-14",
    "lat": 35.179953,
@@ -328,11 +329,26 @@
    "collectedAt": "2026-10-14"
   },
   {
-   "id": "e1e5047014f655d9",
+   "id": "6f14107f48eca701",
+   "org": "prevmed",
+   "orgLabel": null,
+   "title": "2026 대한약리학회 제78차 추계학술대회 안내",
+   "start": "2026-09-14",
+   "end": "2026-09-16",
+   "startTime": "10:00",
+   "endTime": "17:00",
+   "allDay": false,
+   "place": null,
+   "url": "https://www.prevmed.or.kr/board_community_notice01/view.php?tn=board_community_notice01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject_s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=921&gid=896&cpage=1&spage=1",
+   "source": "org-prevmed",
+   "collectedAt": "2026-10-14"
+  },
+  {
+   "id": "56f74d108056e095",
    "org": "mohw",
    "orgLabel": null,
    "title": "2026년 제27회 한국장애와건강포럼 개최 안내",
-   "start": "2026-09-11",
+   "start": "2026-09-14",
    "end": "2026-09-14",
    "startTime": "10:00",
    "endTime": "17:00",
@@ -343,22 +359,22 @@
    "collectedAt": "2026-10-14"
   },
   {
-   "id": "d9a9935b7417d8b7",
+   "id": "3999d9043b5376fb",
    "org": "prevmed",
    "orgLabel": null,
-   "title": "미세먼지 대응 질병연구포럼 연구방법론분과 심포지엄 개최",
-   "start": "2026-09-11",
-   "end": "2026-09-11",
+   "title": "2026년 추계학술대회 사전접수 안내",
+   "start": "2026-09-14",
+   "end": "2026-09-16",
    "startTime": "10:00",
    "endTime": "17:00",
    "allDay": false,
    "place": null,
-   "url": "https://www.prevmed.or.kr/board_community_notice01/view.php?tn=board_community_notice01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject_s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=914&gid=890&cpage=1&spage=1",
+   "url": "https://www.prevmed.or.kr/board_community_notice01/view.php?tn=board_community_notice01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject_s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=920&gid=895&cpage=1&spage=1",
    "source": "org-prevmed",
    "collectedAt": "2026-10-14"
   },
   {
-   "id": "0b9b2cfdb8d27bcd",
+   "id": "bb7cb264488536a8",
    "org": "mohw",
    "orgs": [
     "mohw",
@@ -366,7 +382,7 @@
    ],
    "orgLabel": null,
    "title": "제13차 미래 건강전략 포럼 개최",
-   "start": "2026-09-11",
+   "start": "2026-09-14",
    "end": "2026-09-14",
    "startTime": "10:00",
    "endTime": "17:00",
@@ -535,7 +551,7 @@
    "endTime": null,
    "allDay": true,
    "place": "보건대학원 221동 113호",
-   "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&uid=5808",
+   "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pageid=2&uid=5808",
    "source": "snu-health",
    "collectedAt": "2026-10-14",
    "lat": 37.465022,
@@ -952,6 +968,25 @@
    "city": "서울"
   },
   {
+   "id": "f178e695d15fbc47",
+   "org": "snuph",
+   "orgLabel": null,
+   "title": "기후위기 대응 보건 정책의 현황과 과제",
+   "start": "2026-10-21",
+   "end": "2026-10-21",
+   "startTime": null,
+   "endTime": null,
+   "allDay": true,
+   "place": "보건대학원 221동 113호",
+   "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&uid=5863",
+   "source": "snu-health",
+   "collectedAt": "2026-10-14",
+   "lat": 37.465022,
+   "lng": 126.9547,
+   "geo": "exact",
+   "city": "서울"
+  },
+  {
    "id": "74d3e5754304d346",
    "org": "clinic",
    "orgLabel": "대한소아청소년과학회",
@@ -1293,7 +1328,7 @@
    "endTime": "16:30",
    "allDay": false,
    "place": "국립재활원 나래관 3층 중강당(서울시 강북구 소재)",
-   "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&uid=5807",
+   "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pageid=2&uid=5807",
    "source": "snu-health",
    "collectedAt": "2026-10-14",
    "lat": 37.638567,
@@ -1908,6 +1943,22 @@
    "lng": 129.27675,
    "geo": "exact",
    "city": "경주"
+  },
+  {
+   "id": "ab351c635770eb4b",
+   "org": "etc",
+   "orgLabel": "대한근거기반의학회",
+   "title": "2026년 대한근거기반의학회 하반기 온라인 교육워크숍: 총 3회",
+   "start": "2026-11-13",
+   "end": "2026-11-13",
+   "startTime": null,
+   "endTime": null,
+   "allDay": true,
+   "place": "온라인(Zoom)",
+   "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&uid=5858",
+   "source": "snu-health",
+   "collectedAt": "2026-10-14",
+   "online": true
   },
   {
    "id": "a890ad8d1c9f778c",
@@ -2676,9 +2727,9 @@
   }
  ],
  "map": {
-  "mapped": 103,
-  "online": 6,
-  "places": 101,
+  "mapped": 104,
+  "online": 7,
+  "places": 102,
   "geocodedAt": "2026-10-14"
  }
 }

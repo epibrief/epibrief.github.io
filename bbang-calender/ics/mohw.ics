@@ -18,10 +18,10 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:e1e5047014f655d9@bbangcal.epibrief.github.io
-DTSTAMP:20261014T005015Z
-DTSTART;VALUE=DATE:20260911
-DTEND;VALUE=DATE:20260915
+UID:56f74d108056e095@bbangcal.epibrief.github.io
+DTSTAMP:20261014T145115Z
+DTSTART;TZID=Asia/Seoul:20260914T100000
+DTEND;TZID=Asia/Seoul:20260914T170000
 SUMMARY:[보건복지부] 2026년 제27회 한국장애와건강포럼 
  개최 안내
 DESCRIPTION:주최: 보건복지부\n원문: https://www.prevmed.or.kr/
@@ -35,10 +35,10 @@ URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
  gid=893&cpage=1&spage=1
 END:VEVENT
 BEGIN:VEVENT
-UID:0b9b2cfdb8d27bcd@bbangcal.epibrief.github.io
-DTSTAMP:20261014T005015Z
-DTSTART;VALUE=DATE:20260911
-DTEND;VALUE=DATE:20260915
+UID:bb7cb264488536a8@bbangcal.epibrief.github.io
+DTSTAMP:20261014T145115Z
+DTSTART;TZID=Asia/Seoul:20260914T100000
+DTEND;TZID=Asia/Seoul:20260914T170000
 SUMMARY:[보건복지부·한국건강증진개발원] 제13차 미래 
  건강전략 포럼 개최
 DESCRIPTION:주최: 보건복지부·한국건강증진개발원\n원
@@ -54,7 +54,7 @@ URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
 END:VEVENT
 BEGIN:VEVENT
 UID:7edfdde6847968e6@bbangcal.epibrief.github.io
-DTSTAMP:20261014T005015Z
+DTSTAMP:20261014T145115Z
 DTSTART;TZID=Asia/Seoul:20261029T133000
 DTEND;TZID=Asia/Seoul:20261029T163000
 SUMMARY:[보건복지부] 2026년도 장애인 건강보건통계 컨
@@ -62,9 +62,9 @@ SUMMARY:[보건복지부] 2026년도 장애인 건강보건통계 컨
 LOCATION:국립재활원 나래관 3층 중강당(서울시 강북구 
  소재)
 DESCRIPTION:주최: 보건복지부\n원문: https://health.snu.ac.kr/%
- EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&uid=5807\n
- 빵캘: https://epibrief.github.io/bbang-calender/
+ EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pageid=2&uid
+ =5807\n빵캘: https://epibrief.github.io/bbang-calender/
 URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
- %B4/?mod=document&uid=5807
+ %B4/?mod=document&pageid=2&uid=5807
 END:VEVENT
 END:VCALENDAR
