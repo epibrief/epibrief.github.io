@@ -1,9 +1,9 @@
 {
  "name": "빵캘",
- "updatedAt": "2026-10-15T00:16:37.541Z",
+ "updatedAt": "2026-10-15T14:37:39.030Z",
  "counts": {
-  "total": 139,
-  "upcoming": 114
+  "total": 138,
+  "upcoming": 113
  },
  "sources": [
   {
@@ -12,15 +12,15 @@
    "ok": true,
    "found": 51,
    "events": 0,
-   "ms": 3969
+   "ms": 2778
   },
   {
    "id": "org-mohw",
    "name": "보건복지부 공지",
    "ok": true,
    "found": 19,
-   "events": 4,
-   "ms": 16393
+   "events": 3,
+   "ms": 12773
   },
   {
    "id": "org-khealth",
@@ -28,7 +28,7 @@
    "ok": true,
    "found": 11,
    "events": 0,
-   "ms": 5051
+   "ms": 4517
   },
   {
    "id": "nkis",
@@ -36,7 +36,7 @@
    "ok": true,
    "found": 20,
    "events": 0,
-   "ms": 24477
+   "ms": 21298
   },
   {
    "id": "org-ncc",
@@ -44,7 +44,7 @@
    "ok": true,
    "found": 4,
    "events": 2,
-   "ms": 6992
+   "ms": 6257
   },
   {
    "id": "org-nhis",
@@ -52,15 +52,7 @@
    "ok": true,
    "found": 24,
    "events": 0,
-   "ms": 4926
-  },
-  {
-   "id": "org-mfds",
-   "name": "식품의약품안전처 공지",
-   "ok": true,
-   "found": 16,
-   "events": 8,
-   "ms": 26160
+   "ms": 3914
   },
   {
    "id": "org-hira",
@@ -68,7 +60,15 @@
    "ok": true,
    "found": 12,
    "events": 0,
-   "ms": 2847
+   "ms": 1934
+  },
+  {
+   "id": "org-mfds",
+   "name": "식품의약품안전처 공지",
+   "ok": true,
+   "found": 16,
+   "events": 8,
+   "ms": 23548
   },
   {
    "id": "org-kihasa",
@@ -76,14 +76,7 @@
    "ok": true,
    "found": 0,
    "events": 0,
-   "ms": 2683
-  },
-  {
-   "id": "org-neca",
-   "name": "한국보건의료연구원 공지",
-   "ok": false,
-   "error": "HTTP 400",
-   "ms": 7875
+   "ms": 1862
   },
   {
    "id": "org-nmc",
@@ -91,15 +84,14 @@
    "ok": true,
    "found": 11,
    "events": 0,
-   "ms": 5038
+   "ms": 2205
   },
   {
-   "id": "org-khidi",
-   "name": "한국보건산업진흥원 공지",
-   "ok": true,
-   "found": 20,
-   "events": 1,
-   "ms": 9702
+   "id": "org-neca",
+   "name": "한국보건의료연구원 공지",
+   "ok": false,
+   "error": "HTTP 400",
+   "ms": 6879
   },
   {
    "id": "org-nibp",
@@ -107,7 +99,15 @@
    "ok": true,
    "found": 16,
    "events": 0,
-   "ms": 8178
+   "ms": 7502
+  },
+  {
+   "id": "org-khidi",
+   "name": "한국보건산업진흥원 공지",
+   "ok": true,
+   "found": 20,
+   "events": 1,
+   "ms": 11051
   },
   {
    "id": "org-ksepi",
@@ -115,7 +115,7 @@
    "ok": true,
    "found": 10,
    "events": 5,
-   "ms": 5807
+   "ms": 5638
   },
   {
    "id": "org-kshpa",
@@ -123,15 +123,15 @@
    "ok": true,
    "found": 9,
    "events": 6,
-   "ms": 14859
+   "ms": 13913
   },
   {
    "id": "org-prevmed",
    "name": "대한예방의학회 공지",
    "ok": true,
    "found": 15,
-   "events": 5,
-   "ms": 26002
+   "events": 4,
+   "ms": 22366
   },
   {
    "id": "org-kshep",
@@ -139,15 +139,7 @@
    "ok": true,
    "found": 1,
    "events": 1,
-   "ms": 4525
-  },
-  {
-   "id": "org-kams",
-   "name": "대한의학회 학술행사 표",
-   "ok": true,
-   "found": 101,
-   "events": 101,
-   "ms": 24936
+   "ms": 3682
   },
   {
    "id": "org-kspm",
@@ -155,7 +147,7 @@
    "ok": true,
    "found": 16,
    "events": 1,
-   "ms": 12499
+   "ms": 11202
   },
   {
    "id": "org-kosqua",
@@ -163,7 +155,23 @@
    "ok": true,
    "found": 7,
    "events": 1,
-   "ms": 2049
+   "ms": 1730
+  },
+  {
+   "id": "org-kams",
+   "name": "대한의학회 학술행사 표",
+   "ok": true,
+   "found": 101,
+   "events": 101,
+   "ms": 22386
+  },
+  {
+   "id": "org-koddi",
+   "name": "한국장애인개발원 공지",
+   "ok": true,
+   "found": 21,
+   "events": 0,
+   "ms": 1597
   },
   {
    "id": "org-cochrane",
@@ -171,7 +179,7 @@
    "ok": true,
    "found": 16,
    "events": 0,
-   "ms": 361
+   "ms": 877
   },
   {
    "id": "org-kdca-ilje",
@@ -179,7 +187,7 @@
    "ok": true,
    "found": 31,
    "events": 0,
-   "ms": 3179
+   "ms": 2024
   },
   {
    "id": "snu-health",
@@ -187,21 +195,14 @@
    "ok": true,
    "found": 30,
    "events": 23,
-   "ms": 86191
+   "ms": 74208
   },
   {
    "id": "org-kpha",
    "name": "대한보건협회 공지",
    "ok": false,
    "error": "fetch failed",
-   "ms": 25028
-  },
-  {
-   "id": "org-koddi",
-   "name": "한국장애인개발원 공지",
-   "ok": false,
-   "error": "The operation was aborted due to timeout",
-   "ms": 44505
+   "ms": 24986
   }
  ],
  "events": [
@@ -328,70 +329,6 @@
    "collectedAt": "2026-10-15"
   },
   {
-   "id": "6f14107f48eca701",
-   "org": "prevmed",
-   "orgLabel": null,
-   "title": "2026 대한약리학회 제78차 추계학술대회 안내",
-   "start": "2026-09-14",
-   "end": "2026-09-16",
-   "startTime": "10:00",
-   "endTime": "17:00",
-   "allDay": false,
-   "place": null,
-   "url": "https://www.prevmed.or.kr/board_community_notice01/view.php?tn=board_community_notice01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject_s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=921&gid=896&cpage=1&spage=1",
-   "source": "org-prevmed",
-   "collectedAt": "2026-10-15"
-  },
-  {
-   "id": "56f74d108056e095",
-   "org": "mohw",
-   "orgLabel": null,
-   "title": "2026년 제27회 한국장애와건강포럼 개최 안내",
-   "start": "2026-09-14",
-   "end": "2026-09-14",
-   "startTime": "10:00",
-   "endTime": "17:00",
-   "allDay": false,
-   "place": null,
-   "url": "https://www.prevmed.or.kr/board_community_notice01/view.php?tn=board_community_notice01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject_s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=917&gid=893&cpage=1&spage=1",
-   "source": "org-prevmed",
-   "collectedAt": "2026-10-15"
-  },
-  {
-   "id": "3999d9043b5376fb",
-   "org": "prevmed",
-   "orgLabel": null,
-   "title": "2026년 추계학술대회 사전접수 안내",
-   "start": "2026-09-14",
-   "end": "2026-09-16",
-   "startTime": "10:00",
-   "endTime": "17:00",
-   "allDay": false,
-   "place": null,
-   "url": "https://www.prevmed.or.kr/board_community_notice01/view.php?tn=board_community_notice01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject_s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=920&gid=895&cpage=1&spage=1",
-   "source": "org-prevmed",
-   "collectedAt": "2026-10-15"
-  },
-  {
-   "id": "bb7cb264488536a8",
-   "org": "mohw",
-   "orgs": [
-    "mohw",
-    "khealth"
-   ],
-   "orgLabel": null,
-   "title": "제13차 미래 건강전략 포럼 개최",
-   "start": "2026-09-14",
-   "end": "2026-09-14",
-   "startTime": "10:00",
-   "endTime": "17:00",
-   "allDay": false,
-   "place": null,
-   "url": "https://www.prevmed.or.kr/board_community_notice01/view.php?tn=board_community_notice01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject_s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=916&gid=892&cpage=1&spage=1",
-   "source": "org-prevmed",
-   "collectedAt": "2026-10-15"
-  },
-  {
    "id": "39aebf171b731f77",
    "org": "etc",
    "orgLabel": null,
@@ -404,6 +341,66 @@
    "place": null,
    "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pageid=2&uid=5728",
    "source": "snu-health",
+   "collectedAt": "2026-10-15"
+  },
+  {
+   "id": "74ce40cc02b6f288",
+   "org": "prevmed",
+   "orgLabel": null,
+   "title": "2026 대한약리학회 제78차 추계학술대회 안내",
+   "start": "2026-09-16",
+   "end": "2026-09-16",
+   "startTime": "10:00",
+   "endTime": "17:00",
+   "allDay": false,
+   "place": null,
+   "url": "https://www.prevmed.or.kr/board_community_notice01/view.php?tn=board_community_notice01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject_s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=921&gid=896&cpage=1&spage=1",
+   "source": "org-prevmed",
+   "collectedAt": "2026-10-15"
+  },
+  {
+   "id": "08b0c0a93c7e0179",
+   "org": "prevmed",
+   "orgLabel": null,
+   "title": "2026년 추계학술대회 사전접수 안내",
+   "start": "2026-09-16",
+   "end": "2026-09-16",
+   "startTime": "10:00",
+   "endTime": "17:00",
+   "allDay": false,
+   "place": null,
+   "url": "https://www.prevmed.or.kr/board_community_notice01/view.php?tn=board_community_notice01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject_s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=920&gid=895&cpage=1&spage=1",
+   "source": "org-prevmed",
+   "collectedAt": "2026-10-15"
+  },
+  {
+   "id": "36d39b349131eb6b",
+   "org": "prevmed",
+   "orgLabel": null,
+   "title": "고혈압·당뇨병 환자 등록 기반(의료비 지원)의 지속가능한 노인 만성질환 관리체계 방안 (9/28)",
+   "start": "2026-09-16",
+   "end": "2026-09-16",
+   "startTime": "10:00",
+   "endTime": "17:00",
+   "allDay": false,
+   "place": null,
+   "url": "https://www.prevmed.or.kr/board_community_notice01/view.php?tn=board_community_notice01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject_s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=923&gid=897&cpage=1&spage=1",
+   "source": "org-prevmed",
+   "collectedAt": "2026-10-15"
+  },
+  {
+   "id": "9bb2a707d893b690",
+   "org": "prevmed",
+   "orgLabel": null,
+   "title": "창립 30주년 국제학술대회 개최 안내",
+   "start": "2026-09-16",
+   "end": "2026-09-16",
+   "startTime": "10:00",
+   "endTime": "17:00",
+   "allDay": false,
+   "place": null,
+   "url": "https://www.prevmed.or.kr/board_community_notice01/view.php?tn=board_community_notice01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject_s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=924&gid=898&cpage=1&spage=1",
+   "source": "org-prevmed",
    "collectedAt": "2026-10-15"
   },
   {
@@ -869,6 +866,25 @@
    "lat": 37.512825,
    "lng": 127.057265,
    "geo": "exact",
+   "city": "서울"
+  },
+  {
+   "id": "d3ba219f044dedf0",
+   "org": "kihasa",
+   "orgLabel": null,
+   "title": "제5차 지역사회 통합돌봄 포럼 개최 안내",
+   "start": "2026-10-20",
+   "end": "2026-10-20",
+   "startTime": "14:00",
+   "endTime": "17:00",
+   "allDay": false,
+   "place": "비앤디파트너스 서울역점 2+3호 회의실",
+   "url": "https://www.kshpa.org/bbs/notice2/1555",
+   "source": "org-kshpa",
+   "collectedAt": "2026-10-15",
+   "lat": 37.566679,
+   "lng": 126.978291,
+   "geo": "approx",
    "city": "서울"
   },
   {
@@ -2342,25 +2358,6 @@
    "city": "서울"
   },
   {
-   "id": "07f7de0118e22c1d",
-   "org": "kshpa",
-   "orgLabel": null,
-   "title": "2026년 후기학술대회 사전등록 안내",
-   "start": "2026-11-26",
-   "end": "2026-11-26",
-   "startTime": "10:00",
-   "endTime": null,
-   "allDay": false,
-   "place": "영남대학교병원 권역호흡기전문질환센터 강당",
-   "url": "https://www.kshpa.org/bbs/notice2/1552",
-   "source": "org-kshpa",
-   "collectedAt": "2026-10-15",
-   "lat": 35.847322,
-   "lng": 128.585045,
-   "geo": "exact",
-   "city": "대구"
-  },
-  {
    "id": "792342176ef98420",
    "org": "clinic",
    "orgLabel": "대한법의학회",
@@ -2655,21 +2652,6 @@
    "lng": 126.998733,
    "geo": "exact",
    "city": "서울"
-  },
-  {
-   "id": "b744d68864203471",
-   "org": "prevmed",
-   "orgLabel": null,
-   "title": "기획 세미나「자살예방의 정책 구성, 균형, 거버넌스」 (10/1~12/16, 전 5회) 안내, 3회차 시간 변경 재공지",
-   "start": "2026-12-16",
-   "end": "2026-12-16",
-   "startTime": null,
-   "endTime": null,
-   "allDay": true,
-   "place": null,
-   "url": "https://www.prevmed.or.kr/board_community_notice01/view.php?tn=board_community_notice01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject_s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=919&gid=894&cpage=1&spage=1",
-   "source": "org-prevmed",
-   "collectedAt": "2026-10-15"
   },
   {
    "id": "d3b47a5130124f45",

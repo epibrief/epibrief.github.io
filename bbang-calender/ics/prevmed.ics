@@ -18,10 +18,10 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6f14107f48eca701@bbangcal.epibrief.github.io
-DTSTAMP:20261015T001637Z
-DTSTART;VALUE=DATE:20260914
-DTEND;VALUE=DATE:20260917
+UID:74ce40cc02b6f288@bbangcal.epibrief.github.io
+DTSTAMP:20261015T143747Z
+DTSTART;TZID=Asia/Seoul:20260916T100000
+DTEND;TZID=Asia/Seoul:20260916T170000
 SUMMARY:[대한예방의학회] 2026 대한약리학회 제78차 추계
  학술대회 안내
 DESCRIPTION:주최: 대한예방의학회\n원문: https://www.prevmed.
@@ -35,10 +35,10 @@ URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
  gid=896&cpage=1&spage=1
 END:VEVENT
 BEGIN:VEVENT
-UID:3999d9043b5376fb@bbangcal.epibrief.github.io
-DTSTAMP:20261015T001637Z
-DTSTART;VALUE=DATE:20260914
-DTEND;VALUE=DATE:20260917
+UID:08b0c0a93c7e0179@bbangcal.epibrief.github.io
+DTSTAMP:20261015T143747Z
+DTSTART;TZID=Asia/Seoul:20260916T100000
+DTEND;TZID=Asia/Seoul:20260916T170000
 SUMMARY:[대한예방의학회] 2026년 추계학술대회 사전접수
   안내
 DESCRIPTION:주최: 대한예방의학회\n원문: https://www.prevmed.
@@ -52,8 +52,43 @@ URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
  gid=895&cpage=1&spage=1
 END:VEVENT
 BEGIN:VEVENT
+UID:36d39b349131eb6b@bbangcal.epibrief.github.io
+DTSTAMP:20261015T143747Z
+DTSTART;TZID=Asia/Seoul:20260916T100000
+DTEND;TZID=Asia/Seoul:20260916T170000
+SUMMARY:[대한예방의학회] 고혈압·당뇨병 환자 등록 기
+ 반(의료비 지원)의 지속가능한 노인 만성질환 관리체
+ 계 방안 (9/28)
+DESCRIPTION:주최: 대한예방의학회\n원문: https://www.prevmed.
+ or.kr/board_community_notice01/view.php?tn=board_community_notice01&lis
+ t_count_s=&G_state=&pm=5.1&part_part_s=&subject_s=&content_s=&name_s=&w
+ ritedate_s=&keyfield_s=&search_word_s=&uid=923&gid=897&cpage=1&spage=1\
+ n빵캘: https://epibrief.github.io/bbang-calender/
+URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
+ d_community_notice01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject
+ _s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=923&
+ gid=897&cpage=1&spage=1
+END:VEVENT
+BEGIN:VEVENT
+UID:9bb2a707d893b690@bbangcal.epibrief.github.io
+DTSTAMP:20261015T143747Z
+DTSTART;TZID=Asia/Seoul:20260916T100000
+DTEND;TZID=Asia/Seoul:20260916T170000
+SUMMARY:[대한예방의학회] 창립 30주년 국제학술대회 개
+ 최 안내
+DESCRIPTION:주최: 대한예방의학회\n원문: https://www.prevmed.
+ or.kr/board_community_notice01/view.php?tn=board_community_notice01&lis
+ t_count_s=&G_state=&pm=5.1&part_part_s=&subject_s=&content_s=&name_s=&w
+ ritedate_s=&keyfield_s=&search_word_s=&uid=924&gid=898&cpage=1&spage=1\
+ n빵캘: https://epibrief.github.io/bbang-calender/
+URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
+ d_community_notice01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject
+ _s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=924&
+ gid=898&cpage=1&spage=1
+END:VEVENT
+BEGIN:VEVENT
 UID:79e1a3d202c45798@bbangcal.epibrief.github.io
-DTSTAMP:20261015T001637Z
+DTSTAMP:20261015T143747Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261024
 SUMMARY:[대한예방의학회] 2026년 제78차 대한예방의학회 
@@ -62,23 +97,5 @@ LOCATION:경주화백컨벤션센터
 DESCRIPTION:주최: 대한예방의학회\n원문: http://www.prevmed.o
  r.kr/\n빵캘: https://epibrief.github.io/bbang-calender/
 URL:http://www.prevmed.or.kr/
-END:VEVENT
-BEGIN:VEVENT
-UID:b744d68864203471@bbangcal.epibrief.github.io
-DTSTAMP:20261015T001637Z
-DTSTART;VALUE=DATE:20261216
-DTEND;VALUE=DATE:20261217
-SUMMARY:[대한예방의학회] 기획 세미나「자살예방의 정
- 책 구성\, 균형\, 거버넌스」 (10/1~12/16\, 전 5회) 안내\, 
- 3회차 시간 변경 재공지
-DESCRIPTION:주최: 대한예방의학회\n원문: https://www.prevmed.
- or.kr/board_community_notice01/view.php?tn=board_community_notice01&lis
- t_count_s=&G_state=&pm=5.1&part_part_s=&subject_s=&content_s=&name_s=&w
- ritedate_s=&keyfield_s=&search_word_s=&uid=919&gid=894&cpage=1&spage=1\
- n빵캘: https://epibrief.github.io/bbang-calender/
-URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
- d_community_notice01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject
- _s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=919&
- gid=894&cpage=1&spage=1
 END:VEVENT
 END:VCALENDAR
