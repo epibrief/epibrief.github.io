@@ -363,11 +363,12 @@
   font-size:.74rem; font-weight:800; letter-spacing:0; border-radius:3px;
   padding:2px 8px; white-space:nowrap; border:1px solid;
 }
-.u-즉시조치{ color:#a11b1b; border-color:#e7bcbc; background:#fdf2f2; }
-.u-이번분기{ color:#8a5206; border-color:#eed9b6; background:#fdf6e9; }
-.u-모니터링{ color:#41505f; border-color:var(--line); background:#f4f6f9; }
+.u-1{ color:#a11b1b; border-color:#e7bcbc; background:#fdf2f2; }
+.u-2{ color:#8a5206; border-color:#eed9b6; background:#fdf6e9; }
+.u-3{ color:#41505f; border-color:var(--line); background:#f4f6f9; }
 .im{ color:#41505f; border-color:var(--line); background:#fff; font-weight:700; }
 .im-상{ color:#a11b1b; border-color:#e7bcbc; }
+.im-home{ color:#1f5e3c; border-color:#bfdfcd; background:#f1f9f4; }
 
 /* 정책 담당자 참고 — 모든 호 하단에 고정 */
 .tips{

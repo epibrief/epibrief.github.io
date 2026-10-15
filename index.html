@@ -1765,7 +1765,7 @@ async function generate(useAI){
       : '초안이 준비됐습니다. 내 보관함에 저장했습니다.';
   go(4);
 }
-const SAMPLE_FILE = { outbreak: 'outbreak-2026-37', phsm: 'phsm-2026-37', chronic: 'chronic-2026-37', climate: 'climate-2026-37', injury: 'injury-2026-37' };
+const SAMPLE_FILE = { outbreak: 'outbreak-2026-01', phsm: 'phsm-2026-01', chronic: 'chronic-2026-01', climate: 'climate-2026-01', injury: 'injury-2026-01' };
 $('#loadSample').onclick = async () => {
   if (!SAMPLE_FILE[S.kind]){ alert('이 유형은 아직 예시 호가 없습니다. 기사를 담고 [초안 만들기]로 첫 호를 만들어 주세요.'); return; }
   if (!confirmReplace('예시 호')) return;
@@ -1823,6 +1823,18 @@ function mark(text, ti){
   return lead + t;
 }
 /* 불릿 층위 — '- ' 로 시작하면 하위 항목, '※'·'* ' 로 시작하면 주석입니다. */
+/* 읽는 순서 — '무엇을 하라'가 아니라 '언제 볼 것인가'입니다. 판단은 읽는 분 몫입니다. */
+const ORDER = ['먼저 볼 것', '이번 분기', '지켜볼 것'];
+/* 언론 보도가 근거인 꼭지는 맨 앞자리를 주지 않습니다 — 분모도 확인되지 않은 수치를 가장 먼저 보라고 할 수는 없습니다. */
+function readOrder(t){
+  const u = t.urgency;
+  if (!ORDER.includes(u)) return u;
+  const byPress = (t.design || []).some(x => String(x).includes('언론 보도'));
+  return (byPress && u === ORDER[0]) ? ORDER[1] : u;
+}
+/* 말에 빈칸이 있어 그대로 class 로 쓰면 여러 class 로 쪼개집니다. 자리 번호로 바꿉니다. */
+const orderClass = u => ORDER.includes(u) ? `u-${ORDER.indexOf(u) + 1}` : 'u-3';
+
 const ul = (arr, ti) => '<ul>' + (arr || []).map(x => {
   let raw = String(x == null ? '' : x), cls = '';
   if (raw.startsWith('- ')){ cls = ' class="sub"'; raw = raw.slice(2); }
@@ -1914,7 +1926,7 @@ function renderPaper(){
       <li><a href="#t${i+1}">
         <span class="no">${i+1}</span>
         <span class="it">${esc(t.name)}${t.headline ? `<span class="ih">${esc(t.headline)}</span>` : ''}</span>
-        <span class="meta">${t.urgency ? `<span class="u u-${esc(t.urgency)}">${esc(t.urgency)}</span>` : ''}${chips(t)}${t.tag ? `<span class="tag tag-${esc(t.tag)}">${esc(t.tag)}</span>` : ''}</span>
+        <span class="meta">${readOrder(t) ? `<span class="u ${orderClass(readOrder(t))}" title="읽는 순서 — 편집자가 매긴 것입니다">${esc(readOrder(t))}</span>` : ''}${chips(t)}${t.tag ? `<span class="tag tag-${esc(t.tag)}">${esc(t.tag)}</span>` : ''}</span>
       </a></li>`).join('')}</ol>`;
 
   const topics = d.topics.map((t, i) => `
@@ -1922,9 +1934,11 @@ function renderPaper(){
       <div class="topic-head">
         <span class="topic-no">${i+1}</span>
         <h2 contenteditable="true">${esc(t.name)} <span class="en">${esc(t.en || '')}</span></h2>
-        ${(t.urgency || t.impact) ? `<span class="judge">
-           ${t.urgency ? `<span class="u u-${esc(t.urgency)}">${esc(t.urgency)}</span>` : ''}
-           ${t.impact ? `<span class="im im-${esc(t.impact)}">국내 영향 ${esc(t.impact)}</span>` : ''}</span>` : ''}
+        ${(t.urgency || t.impact || t.scope === '국내') ? `<span class="judge">
+           ${readOrder(t) ? `<span class="u ${orderClass(readOrder(t))}" title="읽는 순서 — 편집자가 매긴 것입니다">${esc(readOrder(t))}</span>` : ''}
+           ${t.scope === '국내'
+              ? `<span class="im im-home" title="국내 기관·조사 자료를 다룬 꼭지입니다">국내 자료</span>`
+              : (t.impact ? `<span class="im im-${esc(t.impact)}">국내 영향 ${esc(t.impact)}</span>` : '')}</span>` : ''}
         ${t.tag ? `<span class="tag tag-${esc(t.tag)}">${esc(t.tag)}</span>` : ''}
       </div>
       ${(t.sources || []).length ? `<div class="topic-src">출처 <b>${esc((t.sources || []).join(' · '))}</b></div>` : ''}
@@ -1966,7 +1980,7 @@ function renderPaper(){
     ${m.subUrl ? `<span>구독 <a href="${esc(m.subUrl)}" target="_blank" rel="noopener">이 뉴스레터 받아보기</a></span>` : ''}
   </div>
   <div class="brief">
-    <div class="brief-label">이번 호에는 <span class="go">— 제목을 누르면 해당 꼭지로 이동합니다</span></div>
+    <div class="brief-label">이번 호에는 <span class="go">— 제목을 누르면 해당 꼭지로 이동합니다. 「먼저 볼 것 · 이번 분기 · 지켜볼 것」은 편집자가 매긴 읽는 순서입니다</span></div>
     ${stats}
     ${issues}
   </div>
