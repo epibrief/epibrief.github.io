@@ -19,7 +19,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:9ff89e7ff7d157b7@bbangcal.epibrief.github.io
-DTSTAMP:20261016T000146Z
+DTSTAMP:20261016T142849Z
 DTSTART;TZID=Asia/Seoul:20260903T130000
 DTEND;TZID=Asia/Seoul:20260903T180000
 SUMMARY:[국민건강보험공단·한국보건사회연구원] 2026년
@@ -31,18 +31,5 @@ DESCRIPTION:주최: 국민건강보험공단·한국보건사회연구
  github.io/bbang-calender/
 URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
  %B4/?mod=document&pageid=3&uid=5723
-END:VEVENT
-BEGIN:VEVENT
-UID:d3ba219f044dedf0@bbangcal.epibrief.github.io
-DTSTAMP:20261016T000146Z
-DTSTART;TZID=Asia/Seoul:20261020T140000
-DTEND;TZID=Asia/Seoul:20261020T170000
-SUMMARY:[한국보건사회연구원] 제5차 지역사회 통합돌봄
-  포럼 개최 안내
-LOCATION:비앤디파트너스 서울역점 2+3호 회의실
-DESCRIPTION:주최: 한국보건사회연구원\n원문: https://www.ks
- hpa.org/bbs/notice2/1555\n빵캘: https://epibrief.github.io/bbang-cale
- nder/
-URL:https://www.kshpa.org/bbs/notice2/1555
 END:VEVENT
 END:VCALENDAR

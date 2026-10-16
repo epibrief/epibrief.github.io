@@ -19,7 +19,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:49a599a2e168a68b@bbangcal.epibrief.github.io
-DTSTAMP:20261016T000146Z
+DTSTAMP:20261016T142849Z
 DTSTART;VALUE=DATE:20260825
 DTEND;VALUE=DATE:20260827
 SUMMARY:[식품의약품안전처] 2026 K-건강기능식품\, 세계
@@ -34,7 +34,7 @@ URL:https://www.mfds.go.kr/brd/m_220/view.do?seq=32928&srchFr=&srchTo=&
 END:VEVENT
 BEGIN:VEVENT
 UID:5409e7115b83d106@bbangcal.epibrief.github.io
-DTSTAMP:20261016T000146Z
+DTSTAMP:20261016T142849Z
 DTSTART;VALUE=DATE:20260917
 DTEND;VALUE=DATE:20260919
 SUMMARY:[식품의약품안전처] 의료기기의 사이버보안 업
@@ -49,7 +49,7 @@ URL:https://www.mfds.go.kr/brd/m_220/view.do?seq=32930&srchFr=&srchTo=&
 END:VEVENT
 BEGIN:VEVENT
 UID:5bc672f76bff1996@bbangcal.epibrief.github.io
-DTSTAMP:20261016T000146Z
+DTSTAMP:20261016T142849Z
 DTSTART;TZID=Asia/Seoul:20260918T130000
 DTEND;TZID=Asia/Seoul:20260918T172000
 SUMMARY:[질병관리청] 2026 담배폐해 전문가 심포지엄
@@ -62,7 +62,7 @@ URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
 END:VEVENT
 BEGIN:VEVENT
 UID:53f2ef954dea2f84@bbangcal.epibrief.github.io
-DTSTAMP:20261016T000146Z
+DTSTAMP:20261016T142849Z
 DTSTART;TZID=Asia/Seoul:20261001T103000
 DTEND;TZID=Asia/Seoul:20261001T170000
 SUMMARY:[한국장애인개발원] 제6회 장애인삶 패널조사 
@@ -70,14 +70,27 @@ SUMMARY:[한국장애인개발원] 제6회 장애인삶 패널조사
 LOCATION:대한상공회의소 중회의실A (서울특별시 중구 
  세종대로 39)
 DESCRIPTION:주최: 한국장애인개발원\n원문: https://health.sn
- u.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&uid
- =5816\n빵캘: https://epibrief.github.io/bbang-calender/
+ u.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pag
+ eid=2&uid=5816\n빵캘: https://epibrief.github.io/bbang-calender/
 URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
- %B4/?mod=document&uid=5816
+ %B4/?mod=document&pageid=2&uid=5816
+END:VEVENT
+BEGIN:VEVENT
+UID:45a94bf5e04cfd87@bbangcal.epibrief.github.io
+DTSTAMP:20261016T142849Z
+DTSTART;TZID=Asia/Seoul:20261022T103000
+DTEND;TZID=Asia/Seoul:20261022T123000
+SUMMARY:[한국건강증진개발원·보건복지부] 제14차 미래 
+ 건강전략 포럼 개최 안내
+LOCATION:경주화백컨벤션센터(HICO) 105호
+DESCRIPTION:주최: 한국건강증진개발원·보건복지부\n원
+ 문: https://www.kshpa.org/bbs/notice2/1558\n빵캘: https://epibrief.g
+ ithub.io/bbang-calender/
+URL:https://www.kshpa.org/bbs/notice2/1558
 END:VEVENT
 BEGIN:VEVENT
 UID:7edfdde6847968e6@bbangcal.epibrief.github.io
-DTSTAMP:20261016T000146Z
+DTSTAMP:20261016T142849Z
 DTSTART;TZID=Asia/Seoul:20261029T133000
 DTEND;TZID=Asia/Seoul:20261029T163000
 SUMMARY:[보건복지부] 2026년도 장애인 건강보건통계 컨
@@ -92,7 +105,7 @@ URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
 END:VEVENT
 BEGIN:VEVENT
 UID:ae86d80adf506dba@bbangcal.epibrief.github.io
-DTSTAMP:20261016T000146Z
+DTSTAMP:20261016T142849Z
 DTSTART;TZID=Asia/Seoul:20261030T100000
 DTEND;TZID=Asia/Seoul:20261030T173000
 SUMMARY:[한국건강증진개발원·한국보건교육건강증진학
@@ -102,18 +115,5 @@ DESCRIPTION:주최: 한국건강증진개발원·한국보건교육건
  강증진학회\n원문: https://khep.or.kr/board/notice/article/285239
  \n빵캘: https://epibrief.github.io/bbang-calender/
 URL:https://khep.or.kr/board/notice/article/285239
-END:VEVENT
-BEGIN:VEVENT
-UID:7660cd4a397176f9@bbangcal.epibrief.github.io
-DTSTAMP:20261016T000146Z
-DTSTART;VALUE=DATE:20261102
-DTEND;VALUE=DATE:20261103
-SUMMARY:[한국건강증진개발원] 2026 INHPF 정기총회 및 심
- 포지엄 개최 안내
-LOCATION:라한셀렉트 경주(경상북도 경주시)
-DESCRIPTION:주최: 한국건강증진개발원\n원문: https://www.ks
- hpa.org/bbs/notice2/1554\n빵캘: https://epibrief.github.io/bbang-cale
- nder/
-URL:https://www.kshpa.org/bbs/notice2/1554
 END:VEVENT
 END:VCALENDAR

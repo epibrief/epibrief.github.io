@@ -18,8 +18,21 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
+UID:45a94bf5e04cfd87@bbangcal.epibrief.github.io
+DTSTAMP:20261016T142849Z
+DTSTART;TZID=Asia/Seoul:20261022T103000
+DTEND;TZID=Asia/Seoul:20261022T123000
+SUMMARY:[한국건강증진개발원·보건복지부] 제14차 미래 
+ 건강전략 포럼 개최 안내
+LOCATION:경주화백컨벤션센터(HICO) 105호
+DESCRIPTION:주최: 한국건강증진개발원·보건복지부\n원
+ 문: https://www.kshpa.org/bbs/notice2/1558\n빵캘: https://epibrief.g
+ ithub.io/bbang-calender/
+URL:https://www.kshpa.org/bbs/notice2/1558
+END:VEVENT
+BEGIN:VEVENT
 UID:ae86d80adf506dba@bbangcal.epibrief.github.io
-DTSTAMP:20261016T000146Z
+DTSTAMP:20261016T142849Z
 DTSTART;TZID=Asia/Seoul:20261030T100000
 DTEND;TZID=Asia/Seoul:20261030T173000
 SUMMARY:[한국건강증진개발원·한국보건교육건강증진학
@@ -29,18 +42,5 @@ DESCRIPTION:주최: 한국건강증진개발원·한국보건교육건
  강증진학회\n원문: https://khep.or.kr/board/notice/article/285239
  \n빵캘: https://epibrief.github.io/bbang-calender/
 URL:https://khep.or.kr/board/notice/article/285239
-END:VEVENT
-BEGIN:VEVENT
-UID:7660cd4a397176f9@bbangcal.epibrief.github.io
-DTSTAMP:20261016T000146Z
-DTSTART;VALUE=DATE:20261102
-DTEND;VALUE=DATE:20261103
-SUMMARY:[한국건강증진개발원] 2026 INHPF 정기총회 및 심
- 포지엄 개최 안내
-LOCATION:라한셀렉트 경주(경상북도 경주시)
-DESCRIPTION:주최: 한국건강증진개발원\n원문: https://www.ks
- hpa.org/bbs/notice2/1554\n빵캘: https://epibrief.github.io/bbang-cale
- nder/
-URL:https://www.kshpa.org/bbs/notice2/1554
 END:VEVENT
 END:VCALENDAR
