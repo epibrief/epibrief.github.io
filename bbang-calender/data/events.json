@@ -1,6 +1,6 @@
 {
  "name": "빵캘",
- "updatedAt": "2026-10-17T00:07:20.952Z",
+ "updatedAt": "2026-10-17T13:26:14.265Z",
  "counts": {
   "total": 137,
   "upcoming": 107
@@ -12,7 +12,7 @@
    "ok": true,
    "found": 52,
    "events": 0,
-   "ms": 5934
+   "ms": 4760
   },
   {
    "id": "org-mohw",
@@ -20,7 +20,7 @@
    "ok": true,
    "found": 19,
    "events": 3,
-   "ms": 12426
+   "ms": 10791
   },
   {
    "id": "org-khealth",
@@ -28,31 +28,7 @@
    "ok": true,
    "found": 11,
    "events": 0,
-   "ms": 4945
-  },
-  {
-   "id": "nkis",
-   "name": "NKIS 정책세미나안내",
-   "ok": true,
-   "found": 20,
-   "events": 0,
-   "ms": 20815
-  },
-  {
-   "id": "org-nhis",
-   "name": "국민건강보험공단 공지",
-   "ok": true,
-   "found": 24,
-   "events": 0,
-   "ms": 4238
-  },
-  {
-   "id": "org-hira",
-   "name": "건강보험심사평가원 공지",
-   "ok": true,
-   "found": 12,
-   "events": 0,
-   "ms": 2147
+   "ms": 3430
   },
   {
    "id": "org-ncc",
@@ -60,15 +36,31 @@
    "ok": true,
    "found": 4,
    "events": 2,
-   "ms": 12829
+   "ms": 5430
   },
   {
-   "id": "org-mfds",
-   "name": "식품의약품안전처 공지",
+   "id": "nkis",
+   "name": "NKIS 정책세미나안내",
    "ok": true,
-   "found": 16,
-   "events": 8,
-   "ms": 24585
+   "found": 20,
+   "events": 0,
+   "ms": 22591
+  },
+  {
+   "id": "org-nhis",
+   "name": "국민건강보험공단 공지",
+   "ok": true,
+   "found": 24,
+   "events": 0,
+   "ms": 3677
+  },
+  {
+   "id": "org-hira",
+   "name": "건강보험심사평가원 공지",
+   "ok": true,
+   "found": 12,
+   "events": 0,
+   "ms": 2481
   },
   {
    "id": "org-kihasa",
@@ -76,7 +68,15 @@
    "ok": true,
    "found": 0,
    "events": 0,
-   "ms": 2472
+   "ms": 1581
+  },
+  {
+   "id": "org-mfds",
+   "name": "식품의약품안전처 공지",
+   "ok": true,
+   "found": 16,
+   "events": 8,
+   "ms": 22242
   },
   {
    "id": "org-nmc",
@@ -84,14 +84,14 @@
    "ok": true,
    "found": 11,
    "events": 0,
-   "ms": 1920
+   "ms": 1649
   },
   {
    "id": "org-neca",
    "name": "한국보건의료연구원 공지",
    "ok": false,
    "error": "HTTP 400",
-   "ms": 7506
+   "ms": 6443
   },
   {
    "id": "org-nibp",
@@ -99,7 +99,7 @@
    "ok": true,
    "found": 16,
    "events": 0,
-   "ms": 6987
+   "ms": 6439
   },
   {
    "id": "org-khidi",
@@ -107,7 +107,7 @@
    "ok": true,
    "found": 20,
    "events": 1,
-   "ms": 12165
+   "ms": 11906
   },
   {
    "id": "org-ksepi",
@@ -115,7 +115,7 @@
    "ok": true,
    "found": 10,
    "events": 5,
-   "ms": 5316
+   "ms": 5005
   },
   {
    "id": "org-kshpa",
@@ -123,7 +123,7 @@
    "ok": true,
    "found": 9,
    "events": 5,
-   "ms": 12185
+   "ms": 10831
   },
   {
    "id": "org-prevmed",
@@ -131,7 +131,7 @@
    "ok": true,
    "found": 15,
    "events": 3,
-   "ms": 24856
+   "ms": 22261
   },
   {
    "id": "org-kshep",
@@ -139,23 +139,7 @@
    "ok": true,
    "found": 1,
    "events": 1,
-   "ms": 4273
-  },
-  {
-   "id": "org-kspm",
-   "name": "대한공공의학회 공지",
-   "ok": true,
-   "found": 16,
-   "events": 1,
-   "ms": 12348
-  },
-  {
-   "id": "org-kosqua",
-   "name": "한국의료질향상학회 공지",
-   "ok": true,
-   "found": 7,
-   "events": 1,
-   "ms": 1813
+   "ms": 3594
   },
   {
    "id": "org-kams",
@@ -163,7 +147,15 @@
    "ok": true,
    "found": 101,
    "events": 101,
-   "ms": 23551
+   "ms": 19086
+  },
+  {
+   "id": "org-kosqua",
+   "name": "한국의료질향상학회 공지",
+   "ok": true,
+   "found": 7,
+   "events": 1,
+   "ms": 1647
   },
   {
    "id": "org-koddi",
@@ -171,7 +163,7 @@
    "ok": true,
    "found": 21,
    "events": 0,
-   "ms": 1668
+   "ms": 1714
   },
   {
    "id": "org-cochrane",
@@ -179,7 +171,7 @@
    "ok": true,
    "found": 16,
    "events": 0,
-   "ms": 454
+   "ms": 614
   },
   {
    "id": "snu-health",
@@ -187,7 +179,7 @@
    "ok": true,
    "found": 30,
    "events": 24,
-   "ms": 73444
+   "ms": 65737
   },
   {
    "id": "org-kdca-ilje",
@@ -195,14 +187,22 @@
    "ok": true,
    "found": 32,
    "events": 0,
-   "ms": 5016
+   "ms": 4112
   },
   {
    "id": "org-kpha",
    "name": "대한보건협회 공지",
    "ok": false,
    "error": "fetch failed",
-   "ms": 25451
+   "ms": 25249
+  },
+  {
+   "id": "org-kspm",
+   "name": "대한공공의학회 공지",
+   "ok": true,
+   "found": 16,
+   "events": 0,
+   "ms": 43279
   }
  ],
  "events": [
