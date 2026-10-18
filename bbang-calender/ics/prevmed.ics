@@ -19,7 +19,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:392e0409ee0c002e@bbangcal.epibrief.github.io
-DTSTAMP:20261018T134425Z
+DTSTAMP:20261018T235217Z
 DTSTART;TZID=Asia/Seoul:20260923T100000
 DTEND;TZID=Asia/Seoul:20260923T170000
 SUMMARY:[대한예방의학회] 2026년 후기 학술대회
@@ -35,7 +35,7 @@ URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
 END:VEVENT
 BEGIN:VEVENT
 UID:e83308d945ee613a@bbangcal.epibrief.github.io
-DTSTAMP:20261018T134425Z
+DTSTAMP:20261018T235217Z
 DTSTART;TZID=Asia/Seoul:20260923T100000
 DTEND;TZID=Asia/Seoul:20260923T170000
 SUMMARY:[대한예방의학회] 고혈압·당뇨병 환자 등록 기
@@ -53,7 +53,7 @@ URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
 END:VEVENT
 BEGIN:VEVENT
 UID:1e2732bb605f173b@bbangcal.epibrief.github.io
-DTSTAMP:20261018T134425Z
+DTSTAMP:20261018T235217Z
 DTSTART;TZID=Asia/Seoul:20260923T100000
 DTEND;TZID=Asia/Seoul:20260923T170000
 SUMMARY:[대한예방의학회] 창립 30주년 국제학술대회 개
@@ -70,7 +70,7 @@ URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
 END:VEVENT
 BEGIN:VEVENT
 UID:79e1a3d202c45798@bbangcal.epibrief.github.io
-DTSTAMP:20261018T134425Z
+DTSTAMP:20261018T235217Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261024
 SUMMARY:[대한예방의학회] 2026년 제78차 대한예방의학회 
