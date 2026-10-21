@@ -18,8 +18,20 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
+UID:16f84c205f219850@bbangcal.epibrief.github.io
+DTSTAMP:20261021T002028Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:[한국보건산업진흥원] 대한민국-브루나이 다루
+ 살람「스마트병원 협력 」세미나 개최
+DESCRIPTION:주최: 한국보건산업진흥원\n원문: https://www.kh
+ idi.or.kr/board/view?linkId=48951080&menuId=MENU00100\n빵캘: https://
+ epibrief.github.io/bbang-calender/
+URL:https://www.khidi.or.kr/board/view?linkId=48951080&menuId=MENU00100
+END:VEVENT
+BEGIN:VEVENT
 UID:408bf6bbcecf0281@bbangcal.epibrief.github.io
-DTSTAMP:20261020T143816Z
+DTSTAMP:20261021T002028Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:[한국보건산업진흥원] 「2026 첨단재생의료 미래
