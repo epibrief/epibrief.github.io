@@ -1,9 +1,9 @@
 {
  "name": "빵캘",
- "updatedAt": "2026-10-21T00:20:28.674Z",
+ "updatedAt": "2026-10-21T14:49:37.497Z",
  "counts": {
-  "total": 139,
-  "upcoming": 104
+  "total": 140,
+  "upcoming": 105
  },
  "sources": [
   {
@@ -12,7 +12,7 @@
    "ok": true,
    "found": 52,
    "events": 0,
-   "ms": 2459
+   "ms": 3553
   },
   {
    "id": "org-mohw",
@@ -20,7 +20,7 @@
    "ok": true,
    "found": 18,
    "events": 3,
-   "ms": 11621
+   "ms": 13639
   },
   {
    "id": "org-khealth",
@@ -28,7 +28,7 @@
    "ok": true,
    "found": 11,
    "events": 0,
-   "ms": 3774
+   "ms": 4777
   },
   {
    "id": "org-ncc",
@@ -36,7 +36,7 @@
    "ok": true,
    "found": 4,
    "events": 2,
-   "ms": 5814
+   "ms": 7032
   },
   {
    "id": "nkis",
@@ -44,23 +44,7 @@
    "ok": true,
    "found": 20,
    "events": 0,
-   "ms": 23092
-  },
-  {
-   "id": "org-hira",
-   "name": "건강보험심사평가원 공지",
-   "ok": true,
-   "found": 12,
-   "events": 0,
-   "ms": 2596
-  },
-  {
-   "id": "org-nhis",
-   "name": "국민건강보험공단 공지",
-   "ok": true,
-   "found": 24,
-   "events": 0,
-   "ms": 4885
+   "ms": 28616
   },
   {
    "id": "org-mfds",
@@ -68,7 +52,23 @@
    "ok": true,
    "found": 16,
    "events": 8,
-   "ms": 24499
+   "ms": 25387
+  },
+  {
+   "id": "org-nhis",
+   "name": "국민건강보험공단 공지",
+   "ok": true,
+   "found": 24,
+   "events": 0,
+   "ms": 4888
+  },
+  {
+   "id": "org-hira",
+   "name": "건강보험심사평가원 공지",
+   "ok": true,
+   "found": 12,
+   "events": 0,
+   "ms": 2348
   },
   {
    "id": "org-kihasa",
@@ -76,7 +76,7 @@
    "ok": true,
    "found": 0,
    "events": 0,
-   "ms": 1725
+   "ms": 2769
   },
   {
    "id": "org-nmc",
@@ -84,22 +84,22 @@
    "ok": true,
    "found": 11,
    "events": 0,
-   "ms": 1475
+   "ms": 2148
   },
   {
    "id": "org-neca",
    "name": "한국보건의료연구원 공지",
    "ok": false,
    "error": "HTTP 400",
-   "ms": 6712
+   "ms": 7794
   },
   {
    "id": "org-nibp",
    "name": "국가생명윤리정책원 공지",
    "ok": true,
    "found": 16,
-   "events": 0,
-   "ms": 6556
+   "events": 1,
+   "ms": 8044
   },
   {
    "id": "org-khidi",
@@ -107,7 +107,7 @@
    "ok": true,
    "found": 20,
    "events": 2,
-   "ms": 13189
+   "ms": 15257
   },
   {
    "id": "org-ksepi",
@@ -115,7 +115,7 @@
    "ok": true,
    "found": 10,
    "events": 5,
-   "ms": 5033
+   "ms": 5566
   },
   {
    "id": "org-kshpa",
@@ -123,7 +123,7 @@
    "ok": true,
    "found": 9,
    "events": 6,
-   "ms": 12660
+   "ms": 15526
   },
   {
    "id": "org-prevmed",
@@ -131,7 +131,7 @@
    "ok": true,
    "found": 15,
    "events": 2,
-   "ms": 21079
+   "ms": 25794
   },
   {
    "id": "org-kshep",
@@ -139,15 +139,7 @@
    "ok": true,
    "found": 1,
    "events": 1,
-   "ms": 4132
-  },
-  {
-   "id": "org-kams",
-   "name": "대한의학회 학술행사 표",
-   "ok": true,
-   "found": 101,
-   "events": 101,
-   "ms": 21302
+   "ms": 4284
   },
   {
    "id": "org-kspm",
@@ -155,7 +147,15 @@
    "ok": true,
    "found": 16,
    "events": 1,
-   "ms": 10105
+   "ms": 11454
+  },
+  {
+   "id": "org-kams",
+   "name": "대한의학회 학술행사 표",
+   "ok": true,
+   "found": 101,
+   "events": 101,
+   "ms": 25099
   },
   {
    "id": "org-kosqua",
@@ -163,15 +163,7 @@
    "ok": true,
    "found": 7,
    "events": 1,
-   "ms": 1692
-  },
-  {
-   "id": "org-koddi",
-   "name": "한국장애인개발원 공지",
-   "ok": true,
-   "found": 21,
-   "events": 0,
-   "ms": 1707
+   "ms": 1989
   },
   {
    "id": "org-cochrane",
@@ -179,7 +171,15 @@
    "ok": true,
    "found": 16,
    "events": 0,
-   "ms": 846
+   "ms": 344
+  },
+  {
+   "id": "org-koddi",
+   "name": "한국장애인개발원 공지",
+   "ok": true,
+   "found": 21,
+   "events": 0,
+   "ms": 1976
   },
   {
    "id": "org-kdca-ilje",
@@ -187,7 +187,7 @@
    "ok": true,
    "found": 32,
    "events": 0,
-   "ms": 1702
+   "ms": 2600
   },
   {
    "id": "snu-health",
@@ -195,14 +195,14 @@
    "ok": true,
    "found": 30,
    "events": 24,
-   "ms": 72138
+   "ms": 87667
   },
   {
    "id": "org-kpha",
    "name": "대한보건협회 공지",
    "ok": false,
    "error": "fetch failed",
-   "ms": 25055
+   "ms": 24965
   }
  ],
  "events": [
@@ -358,7 +358,7 @@
    "endTime": "15:50",
    "allDay": false,
    "place": null,
-   "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pageid=2&uid=5753",
+   "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pageid=3&uid=5753",
    "source": "snu-health",
    "collectedAt": "2026-10-21"
   },
@@ -1581,6 +1581,25 @@
    "city": "서울"
   },
   {
+   "id": "567a93f65e79bef5",
+   "org": "snuph",
+   "orgLabel": null,
+   "title": "사진으로 말하는 건강: 포토보이스와 참여적 건강연구",
+   "start": "2026-11-04",
+   "end": "2026-11-04",
+   "startTime": null,
+   "endTime": null,
+   "allDay": true,
+   "place": "보건대학원 221동 113호",
+   "url": "https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&uid=5884",
+   "source": "snu-health",
+   "collectedAt": "2026-10-21",
+   "lat": 37.465022,
+   "lng": 126.9547,
+   "geo": "exact",
+   "city": "서울"
+  },
+  {
    "id": "29aaf59e530e2d86",
    "org": "clinic",
    "orgLabel": "대한생리학회",
@@ -2738,7 +2757,7 @@
   }
  ],
  "map": {
-  "mapped": 107,
+  "mapped": 108,
   "online": 7,
   "places": 103,
   "geocodedAt": "2026-10-21"
