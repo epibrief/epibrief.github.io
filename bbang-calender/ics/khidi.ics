@@ -19,7 +19,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:16f84c205f219850@bbangcal.epibrief.github.io
-DTSTAMP:20261021T144937Z
+DTSTAMP:20261022T002222Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:[한국보건산업진흥원] 대한민국-브루나이 다루
@@ -28,17 +28,5 @@ DESCRIPTION:주최: 한국보건산업진흥원\n원문: https://www.kh
  idi.or.kr/board/view?linkId=48951080&menuId=MENU00100\n빵캘: https://
  epibrief.github.io/bbang-calender/
 URL:https://www.khidi.or.kr/board/view?linkId=48951080&menuId=MENU00100
-END:VEVENT
-BEGIN:VEVENT
-UID:408bf6bbcecf0281@bbangcal.epibrief.github.io
-DTSTAMP:20261021T144937Z
-DTSTART;VALUE=DATE:20261028
-DTEND;VALUE=DATE:20261029
-SUMMARY:[한국보건산업진흥원] 「2026 첨단재생의료 미래
- 전략포럼」개최
-DESCRIPTION:주최: 한국보건산업진흥원\n원문: https://www.kh
- idi.or.kr/board/view?linkId=48950835&menuId=MENU00100\n빵캘: https://
- epibrief.github.io/bbang-calender/
-URL:https://www.khidi.or.kr/board/view?linkId=48950835&menuId=MENU00100
 END:VEVENT
 END:VCALENDAR
