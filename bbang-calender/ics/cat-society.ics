@@ -19,7 +19,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:7959f356b5bb6342@bbangcal.epibrief.github.io
-DTSTAMP:20261023T002120Z
+DTSTAMP:20261023T143623Z
 DTSTART;VALUE=DATE:20260917
 DTEND;VALUE=DATE:20260919
 SUMMARY:[한국역학회] 2026 추계학술대회
@@ -31,7 +31,7 @@ URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
 END:VEVENT
 BEGIN:VEVENT
 UID:bc573858125cf556@bbangcal.epibrief.github.io
-DTSTAMP:20261023T002120Z
+DTSTAMP:20261023T143623Z
 DTSTART;VALUE=DATE:20260917
 DTEND;VALUE=DATE:20260919
 SUMMARY:[한국역학회] 2026 추계학술대회 사전등록 / 초록
@@ -44,7 +44,7 @@ URL:https://ksepi.org/web/lay1/bbs/S1T298C326/A/10/view.do?article_seq=
 END:VEVENT
 BEGIN:VEVENT
 UID:5146f7106b09d39b@bbangcal.epibrief.github.io
-DTSTAMP:20261023T002120Z
+DTSTAMP:20261023T143623Z
 DTSTART;TZID=Asia/Seoul:20261001T100000
 DTEND;TZID=Asia/Seoul:20261001T170000
 SUMMARY:[대한예방의학회] 2026년 후기 학술대회
@@ -60,7 +60,7 @@ URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
 END:VEVENT
 BEGIN:VEVENT
 UID:588a5ae29ff987ef@bbangcal.epibrief.github.io
-DTSTAMP:20261023T002120Z
+DTSTAMP:20261023T143623Z
 DTSTART;TZID=Asia/Seoul:20261001T100000
 DTEND;TZID=Asia/Seoul:20261001T170000
 SUMMARY:[대한예방의학회] 하반기 환경보건 워크숍 안내
@@ -76,7 +76,7 @@ URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
 END:VEVENT
 BEGIN:VEVENT
 UID:79e1a3d202c45798@bbangcal.epibrief.github.io
-DTSTAMP:20261023T002120Z
+DTSTAMP:20261023T143623Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261024
 SUMMARY:[대한예방의학회] 2026년 제78차 대한예방의학회 
@@ -87,8 +87,21 @@ DESCRIPTION:주최: 대한예방의학회\n원문: http://www.prevmed.o
 URL:http://www.prevmed.or.kr/
 END:VEVENT
 BEGIN:VEVENT
+UID:5fd943a301b7ff8c@bbangcal.epibrief.github.io
+DTSTAMP:20261023T143623Z
+DTSTART;TZID=Asia/Seoul:20261023T090000
+DTEND;TZID=Asia/Seoul:20261023T170000
+SUMMARY:[한국의료질향상학회] <안내> 2026 가을학술대회 
+ 초록 심사 결과_업데이트
+DESCRIPTION:주최: 한국의료질향상학회\n원문: https://www.ko
+ squa.net/index.php?page=view&idx=4343&hCode=BOARD&bo_idx=1\n빵캘: htt
+ ps://epibrief.github.io/bbang-calender/
+URL:https://www.kosqua.net/index.php?page=view&idx=4343&hCode=BOARD&bo_
+ idx=1
+END:VEVENT
+BEGIN:VEVENT
 UID:f801f62b75dac1b9@bbangcal.epibrief.github.io
-DTSTAMP:20261023T002120Z
+DTSTAMP:20261023T143623Z
 DTSTART;TZID=Asia/Seoul:20261029T133000
 DTEND;TZID=Asia/Seoul:20261029T163000
 SUMMARY:[한국보건행정학회] 2026년 공공의료 심포지엄 
@@ -101,7 +114,7 @@ URL:https://www.kshpa.org/bbs/notice2/1560
 END:VEVENT
 BEGIN:VEVENT
 UID:ae86d80adf506dba@bbangcal.epibrief.github.io
-DTSTAMP:20261023T002120Z
+DTSTAMP:20261023T143623Z
 DTSTART;TZID=Asia/Seoul:20261030T100000
 DTEND;TZID=Asia/Seoul:20261030T173000
 SUMMARY:[한국건강증진개발원·한국보건교육건강증진학
@@ -114,7 +127,7 @@ URL:https://khep.or.kr/board/notice/article/285239
 END:VEVENT
 BEGIN:VEVENT
 UID:2cb77b19cf0127b1@bbangcal.epibrief.github.io
-DTSTAMP:20261023T002120Z
+DTSTAMP:20261023T143623Z
 DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261106
 SUMMARY:[한국보건행정학회] 2026 후기학술대회 북페어 
@@ -127,7 +140,7 @@ URL:https://www.kshpa.org/bbs/notice/1535
 END:VEVENT
 BEGIN:VEVENT
 UID:e719a95bba4d99ff@bbangcal.epibrief.github.io
-DTSTAMP:20261023T002120Z
+DTSTAMP:20261023T143623Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:[한국보건행정학회] 2026년 한국보건행정학회 후
@@ -140,7 +153,7 @@ URL:https://www.kshpa.org/calendar/list/14
 END:VEVENT
 BEGIN:VEVENT
 UID:f101f07ab7b26cfa@bbangcal.epibrief.github.io
-DTSTAMP:20261023T002120Z
+DTSTAMP:20261023T143623Z
 DTSTART;TZID=Asia/Seoul:20261106T100000
 DTEND;TZID=Asia/Seoul:20261106T163000
 SUMMARY:[한국보건행정학회] ARPA-H 복지·돌봄 국제 심포
@@ -154,7 +167,7 @@ URL:https://www.kshpa.org/bbs/notice2/1559
 END:VEVENT
 BEGIN:VEVENT
 UID:ebcb515e5a9f00f5@bbangcal.epibrief.github.io
-DTSTAMP:20261023T002120Z
+DTSTAMP:20261023T143623Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261115
 SUMMARY:[한국역학회] KAI International Meeting 2026
@@ -165,7 +178,7 @@ URL:http://www.ksimm.or.kr/
 END:VEVENT
 BEGIN:VEVENT
 UID:16d66fa2ea37714c@bbangcal.epibrief.github.io
-DTSTAMP:20261023T002120Z
+DTSTAMP:20261023T143623Z
 DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261212
 SUMMARY:[한국의료질향상학회] 2026 가을학술대회
@@ -176,7 +189,7 @@ URL:http://www.kosqua.net/
 END:VEVENT
 BEGIN:VEVENT
 UID:7139a6b681a7282d@bbangcal.epibrief.github.io
-DTSTAMP:20261023T002120Z
+DTSTAMP:20261023T143623Z
 DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261211
 SUMMARY:[한국의료질향상학회] 2026 가을학술대회 참가 
@@ -190,7 +203,7 @@ URL:https://www.kosqua.net/index.php?page=view&idx=4338&hCode=BOARD&bo_
 END:VEVENT
 BEGIN:VEVENT
 UID:25ef47ed4d5c0d83@bbangcal.epibrief.github.io
-DTSTAMP:20261023T002120Z
+DTSTAMP:20261023T143623Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261219
 SUMMARY:[한국역학회] 2026년 하반기 국제학술대회 참가 

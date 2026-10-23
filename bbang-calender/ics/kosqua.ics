@@ -18,8 +18,21 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
+UID:5fd943a301b7ff8c@bbangcal.epibrief.github.io
+DTSTAMP:20261023T143623Z
+DTSTART;TZID=Asia/Seoul:20261023T090000
+DTEND;TZID=Asia/Seoul:20261023T170000
+SUMMARY:[한국의료질향상학회] <안내> 2026 가을학술대회 
+ 초록 심사 결과_업데이트
+DESCRIPTION:주최: 한국의료질향상학회\n원문: https://www.ko
+ squa.net/index.php?page=view&idx=4343&hCode=BOARD&bo_idx=1\n빵캘: htt
+ ps://epibrief.github.io/bbang-calender/
+URL:https://www.kosqua.net/index.php?page=view&idx=4343&hCode=BOARD&bo_
+ idx=1
+END:VEVENT
+BEGIN:VEVENT
 UID:16d66fa2ea37714c@bbangcal.epibrief.github.io
-DTSTAMP:20261023T002120Z
+DTSTAMP:20261023T143623Z
 DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261212
 SUMMARY:[한국의료질향상학회] 2026 가을학술대회
@@ -30,7 +43,7 @@ URL:http://www.kosqua.net/
 END:VEVENT
 BEGIN:VEVENT
 UID:7139a6b681a7282d@bbangcal.epibrief.github.io
-DTSTAMP:20261023T002120Z
+DTSTAMP:20261023T143623Z
 DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261211
 SUMMARY:[한국의료질향상학회] 2026 가을학술대회 참가 

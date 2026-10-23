@@ -18,15 +18,16 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:16f84c205f219850@bbangcal.epibrief.github.io
-DTSTAMP:20261022T145015Z
-DTSTART;VALUE=DATE:20261022
-DTEND;VALUE=DATE:20261023
-SUMMARY:[한국보건산업진흥원] 대한민국-브루나이 다루
- 살람「스마트병원 협력 」세미나 개최
+UID:9c96d0fcd85e7200@bbangcal.epibrief.github.io
+DTSTAMP:20261023T143623Z
+DTSTART;TZID=Asia/Seoul:20261104T130000
+DTEND;TZID=Asia/Seoul:20261104T173000
+SUMMARY:[한국보건산업진흥원] 제 16회 국가식품클러스
+ 터 국제콘퍼런스 및 제5회 고령친화식품산업 심포지
+ 엄
 DESCRIPTION:주최: 한국보건산업진흥원\n원문: https://www.kh
- idi.or.kr/board/view?linkId=48951080&menuId=MENU00100\n빵캘: https://
+ idi.or.kr/board/view?linkId=48951473&menuId=MENU00099\n빵캘: https://
  epibrief.github.io/bbang-calender/
-URL:https://www.khidi.or.kr/board/view?linkId=48951080&menuId=MENU00100
+URL:https://www.khidi.or.kr/board/view?linkId=48951473&menuId=MENU00099
 END:VEVENT
 END:VCALENDAR

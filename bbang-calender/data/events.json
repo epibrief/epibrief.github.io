@@ -1,9 +1,9 @@
 {
  "name": "빵캘",
- "updatedAt": "2026-10-23T00:21:20.701Z",
+ "updatedAt": "2026-10-23T14:36:22.116Z",
  "counts": {
-  "total": 138,
-  "upcoming": 101
+  "total": 141,
+  "upcoming": 103
  },
  "sources": [
   {
@@ -11,8 +11,8 @@
    "name": "질병관리청 공지",
    "ok": true,
    "found": 52,
-   "events": 0,
-   "ms": 2467
+   "events": 1,
+   "ms": 5646
   },
   {
    "id": "org-mohw",
@@ -20,7 +20,7 @@
    "ok": true,
    "found": 18,
    "events": 3,
-   "ms": 11056
+   "ms": 11764
   },
   {
    "id": "org-khealth",
@@ -28,7 +28,7 @@
    "ok": true,
    "found": 11,
    "events": 0,
-   "ms": 4155
+   "ms": 3917
   },
   {
    "id": "org-ncc",
@@ -36,7 +36,7 @@
    "ok": true,
    "found": 4,
    "events": 2,
-   "ms": 5518
+   "ms": 6608
   },
   {
    "id": "nkis",
@@ -44,15 +44,7 @@
    "ok": true,
    "found": 20,
    "events": 0,
-   "ms": 23013
-  },
-  {
-   "id": "org-nhis",
-   "name": "국민건강보험공단 공지",
-   "ok": true,
-   "found": 24,
-   "events": 0,
-   "ms": 3659
+   "ms": 24296
   },
   {
    "id": "org-hira",
@@ -60,7 +52,15 @@
    "ok": true,
    "found": 12,
    "events": 0,
-   "ms": 1746
+   "ms": 2040
+  },
+  {
+   "id": "org-nhis",
+   "name": "국민건강보험공단 공지",
+   "ok": true,
+   "found": 24,
+   "events": 0,
+   "ms": 4569
   },
   {
    "id": "org-kihasa",
@@ -68,7 +68,7 @@
    "ok": true,
    "found": 0,
    "events": 0,
-   "ms": 2053
+   "ms": 2236
   },
   {
    "id": "org-mfds",
@@ -76,7 +76,14 @@
    "ok": true,
    "found": 16,
    "events": 8,
-   "ms": 24573
+   "ms": 24084
+  },
+  {
+   "id": "org-neca",
+   "name": "한국보건의료연구원 공지",
+   "ok": false,
+   "error": "HTTP 400",
+   "ms": 6876
   },
   {
    "id": "org-nmc",
@@ -84,22 +91,15 @@
    "ok": true,
    "found": 11,
    "events": 0,
-   "ms": 2362
-  },
-  {
-   "id": "org-neca",
-   "name": "한국보건의료연구원 공지",
-   "ok": false,
-   "error": "HTTP 400",
-   "ms": 6593
+   "ms": 4241
   },
   {
    "id": "org-khidi",
    "name": "한국보건산업진흥원 공지",
    "ok": true,
    "found": 20,
-   "events": 0,
-   "ms": 8043
+   "events": 1,
+   "ms": 10566
   },
   {
    "id": "org-nibp",
@@ -107,7 +107,7 @@
    "ok": true,
    "found": 16,
    "events": 1,
-   "ms": 6726
+   "ms": 7183
   },
   {
    "id": "org-ksepi",
@@ -115,7 +115,7 @@
    "ok": true,
    "found": 10,
    "events": 5,
-   "ms": 5157
+   "ms": 6262
   },
   {
    "id": "org-kshpa",
@@ -123,7 +123,7 @@
    "ok": true,
    "found": 9,
    "events": 6,
-   "ms": 12595
+   "ms": 13238
   },
   {
    "id": "org-prevmed",
@@ -131,7 +131,7 @@
    "ok": true,
    "found": 15,
    "events": 2,
-   "ms": 23649
+   "ms": 24079
   },
   {
    "id": "org-kshep",
@@ -139,23 +139,7 @@
    "ok": true,
    "found": 1,
    "events": 1,
-   "ms": 3725
-  },
-  {
-   "id": "org-kspm",
-   "name": "대한공공의학회 공지",
-   "ok": true,
-   "found": 16,
-   "events": 1,
-   "ms": 10805
-  },
-  {
-   "id": "org-kosqua",
-   "name": "한국의료질향상학회 공지",
-   "ok": true,
-   "found": 7,
-   "events": 1,
-   "ms": 1666
+   "ms": 3713
   },
   {
    "id": "org-kams",
@@ -163,15 +147,15 @@
    "ok": true,
    "found": 101,
    "events": 101,
-   "ms": 21690
+   "ms": 22075
   },
   {
-   "id": "org-cochrane",
-   "name": "한국코크란 공지",
+   "id": "org-kosqua",
+   "name": "한국의료질향상학회 공지",
    "ok": true,
-   "found": 16,
-   "events": 0,
-   "ms": 718
+   "found": 7,
+   "events": 2,
+   "ms": 4165
   },
   {
    "id": "org-koddi",
@@ -179,15 +163,15 @@
    "ok": true,
    "found": 21,
    "events": 0,
-   "ms": 1526
+   "ms": 1583
   },
   {
-   "id": "org-kdca-ilje",
-   "name": "질병관리청 일정",
+   "id": "org-cochrane",
+   "name": "한국코크란 공지",
    "ok": true,
-   "found": 32,
+   "found": 16,
    "events": 0,
-   "ms": 1997
+   "ms": 579
   },
   {
    "id": "snu-health",
@@ -195,14 +179,30 @@
    "ok": true,
    "found": 30,
    "events": 24,
-   "ms": 73756
+   "ms": 76721
+  },
+  {
+   "id": "org-kdca-ilje",
+   "name": "질병관리청 일정",
+   "ok": true,
+   "found": 32,
+   "events": 1,
+   "ms": 4632
+  },
+  {
+   "id": "org-kspm",
+   "name": "대한공공의학회 공지",
+   "ok": true,
+   "found": 16,
+   "events": 1,
+   "ms": 26596
   },
   {
    "id": "org-kpha",
    "name": "대한보건협회 공지",
    "ok": false,
    "error": "fetch failed",
-   "ms": 24949
+   "ms": 25426
   }
  ],
  "events": [
@@ -733,6 +733,25 @@
    "city": "서울"
   },
   {
+   "id": "c1d23bc877a60af5",
+   "org": "kdca",
+   "orgLabel": null,
+   "title": "2026년 의료관련감염 예방관리 주간 포럼 개최",
+   "start": "2026-10-16",
+   "end": "2026-10-16",
+   "startTime": null,
+   "endTime": null,
+   "allDay": true,
+   "place": "서울 엘타워 그레이스홀",
+   "url": "https://www.kdca.go.kr/bbs/kdca/61/313037/artclView.do?layout=unknown",
+   "source": "org-kdca-ilje",
+   "collectedAt": "2026-10-23",
+   "lat": 37.482377,
+   "lng": 127.035617,
+   "geo": "exact",
+   "city": "서울"
+  },
+  {
    "id": "dffb42b9198efed2",
    "org": "clinic",
    "orgLabel": "대한신경정신의학회",
@@ -1016,6 +1035,21 @@
    "lng": 129.287637,
    "geo": "exact",
    "city": "경주"
+  },
+  {
+   "id": "5fd943a301b7ff8c",
+   "org": "kosqua",
+   "orgLabel": null,
+   "title": "<안내> 2026 가을학술대회 초록 심사 결과_업데이트",
+   "start": "2026-10-23",
+   "end": "2026-10-23",
+   "startTime": "09:00",
+   "endTime": "17:00",
+   "allDay": false,
+   "place": null,
+   "url": "https://www.kosqua.net/index.php?page=view&idx=4343&hCode=BOARD&bo_idx=1",
+   "source": "org-kosqua",
+   "collectedAt": "2026-10-23"
   },
   {
    "id": "4248ade2abd71c0e",
@@ -1568,6 +1602,21 @@
    "lng": 126.9547,
    "geo": "exact",
    "city": "서울"
+  },
+  {
+   "id": "9c96d0fcd85e7200",
+   "org": "khidi",
+   "orgLabel": null,
+   "title": "제 16회 국가식품클러스터 국제콘퍼런스 및 제5회 고령친화식품산업 심포지엄",
+   "start": "2026-11-04",
+   "end": "2026-11-04",
+   "startTime": "13:00",
+   "endTime": "17:30",
+   "allDay": false,
+   "place": null,
+   "url": "https://www.khidi.or.kr/board/view?linkId=48951473&menuId=MENU00099",
+   "source": "org-khidi",
+   "collectedAt": "2026-10-23"
   },
   {
    "id": "29aaf59e530e2d86",
@@ -2727,9 +2776,9 @@
   }
  ],
  "map": {
-  "mapped": 108,
+  "mapped": 109,
   "online": 7,
-  "places": 103,
+  "places": 104,
   "geocodedAt": "2026-10-23"
  }
 }
