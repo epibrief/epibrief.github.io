@@ -1,32 +1,26 @@
 {
  "name": "빵캘",
- "updatedAt": "2026-10-25T14:04:33.144Z",
+ "updatedAt": "2026-10-25T23:43:59.811Z",
  "counts": {
   "total": 141,
   "upcoming": 85
  },
  "sources": [
   {
-   "id": "nkis",
-   "name": "NKIS 정책세미나안내",
-   "ok": true,
-   "found": 20,
-   "events": 0,
-   "ms": 21564
-  },
-  {
    "id": "org-kdca",
    "name": "질병관리청 공지",
-   "ok": false,
-   "error": "fetch failed",
-   "ms": 25331
+   "ok": true,
+   "found": 52,
+   "events": 1,
+   "ms": 5574
   },
   {
    "id": "org-mohw",
    "name": "보건복지부 공지",
-   "ok": false,
-   "error": "fetch failed",
-   "ms": 25334
+   "ok": true,
+   "found": 18,
+   "events": 3,
+   "ms": 12623
   },
   {
    "id": "org-khealth",
@@ -34,7 +28,7 @@
    "ok": true,
    "found": 11,
    "events": 0,
-   "ms": 3770
+   "ms": 4309
   },
   {
    "id": "org-ncc",
@@ -42,7 +36,15 @@
    "ok": true,
    "found": 4,
    "events": 2,
-   "ms": 5380
+   "ms": 6335
+  },
+  {
+   "id": "nkis",
+   "name": "NKIS 정책세미나안내",
+   "ok": true,
+   "found": 20,
+   "events": 0,
+   "ms": 25759
   },
   {
    "id": "org-nhis",
@@ -50,7 +52,7 @@
    "ok": true,
    "found": 24,
    "events": 0,
-   "ms": 3199
+   "ms": 4323
   },
   {
    "id": "org-hira",
@@ -58,7 +60,15 @@
    "ok": true,
    "found": 12,
    "events": 0,
-   "ms": 1636
+   "ms": 2250
+  },
+  {
+   "id": "org-mfds",
+   "name": "식품의약품안전처 공지",
+   "ok": true,
+   "found": 16,
+   "events": 8,
+   "ms": 24456
   },
   {
    "id": "org-kihasa",
@@ -66,14 +76,7 @@
    "ok": true,
    "found": 0,
    "events": 0,
-   "ms": 2050
-  },
-  {
-   "id": "org-neca",
-   "name": "한국보건의료연구원 공지",
-   "ok": false,
-   "error": "HTTP 400",
-   "ms": 6407
+   "ms": 2276
   },
   {
    "id": "org-nmc",
@@ -81,7 +84,14 @@
    "ok": true,
    "found": 11,
    "events": 0,
-   "ms": 3596
+   "ms": 4023
+  },
+  {
+   "id": "org-neca",
+   "name": "한국보건의료연구원 공지",
+   "ok": false,
+   "error": "HTTP 400",
+   "ms": 7372
   },
   {
    "id": "org-khidi",
@@ -89,14 +99,7 @@
    "ok": true,
    "found": 20,
    "events": 1,
-   "ms": 10300
-  },
-  {
-   "id": "org-mfds",
-   "name": "식품의약품안전처 공지",
-   "ok": false,
-   "error": "fetch failed",
-   "ms": 25252
+   "ms": 11153
   },
   {
    "id": "org-nibp",
@@ -104,7 +107,7 @@
    "ok": true,
    "found": 16,
    "events": 1,
-   "ms": 6371
+   "ms": 7833
   },
   {
    "id": "org-ksepi",
@@ -112,15 +115,7 @@
    "ok": true,
    "found": 10,
    "events": 5,
-   "ms": 4957
-  },
-  {
-   "id": "snu-health",
-   "name": "서울대 보건대학원 세미나정보",
-   "ok": true,
-   "found": 30,
-   "events": 24,
-   "ms": 60038
+   "ms": 5319
   },
   {
    "id": "org-kshpa",
@@ -128,15 +123,7 @@
    "ok": true,
    "found": 9,
    "events": 6,
-   "ms": 11872
-  },
-  {
-   "id": "org-kshep",
-   "name": "한국보건교육건강증진학회 공지",
-   "ok": true,
-   "found": 1,
-   "events": 1,
-   "ms": 3332
+   "ms": 13170
   },
   {
    "id": "org-prevmed",
@@ -144,15 +131,15 @@
    "ok": true,
    "found": 15,
    "events": 2,
-   "ms": 21884
+   "ms": 24070
   },
   {
-   "id": "org-kosqua",
-   "name": "한국의료질향상학회 공지",
+   "id": "org-kshep",
+   "name": "한국보건교육건강증진학회 공지",
    "ok": true,
-   "found": 7,
-   "events": 2,
-   "ms": 2501
+   "found": 1,
+   "events": 1,
+   "ms": 3961
   },
   {
    "id": "org-kspm",
@@ -160,23 +147,7 @@
    "ok": true,
    "found": 16,
    "events": 1,
-   "ms": 9736
-  },
-  {
-   "id": "org-koddi",
-   "name": "한국장애인개발원 공지",
-   "ok": true,
-   "found": 21,
-   "events": 0,
-   "ms": 1420
-  },
-  {
-   "id": "org-cochrane",
-   "name": "한국코크란 공지",
-   "ok": true,
-   "found": 16,
-   "events": 0,
-   "ms": 846
+   "ms": 11314
   },
   {
    "id": "org-kams",
@@ -184,21 +155,54 @@
    "ok": true,
    "found": 101,
    "events": 101,
-   "ms": 20657
+   "ms": 21732
+  },
+  {
+   "id": "org-kosqua",
+   "name": "한국의료질향상학회 공지",
+   "ok": true,
+   "found": 7,
+   "events": 2,
+   "ms": 2739
+  },
+  {
+   "id": "org-cochrane",
+   "name": "한국코크란 공지",
+   "ok": true,
+   "found": 16,
+   "events": 0,
+   "ms": 441
+  },
+  {
+   "id": "org-koddi",
+   "name": "한국장애인개발원 공지",
+   "ok": true,
+   "found": 21,
+   "events": 0,
+   "ms": 1669
+  },
+  {
+   "id": "org-kdca-ilje",
+   "name": "질병관리청 일정",
+   "ok": true,
+   "found": 32,
+   "events": 1,
+   "ms": 4570
+  },
+  {
+   "id": "snu-health",
+   "name": "서울대 보건대학원 세미나정보",
+   "ok": true,
+   "found": 30,
+   "events": 24,
+   "ms": 87547
   },
   {
    "id": "org-kpha",
    "name": "대한보건협회 공지",
    "ok": false,
    "error": "fetch failed",
-   "ms": 25151
-  },
-  {
-   "id": "org-kdca-ilje",
-   "name": "질병관리청 일정",
-   "ok": false,
-   "error": "fetch failed",
-   "ms": 25025
+   "ms": 24662
   }
  ],
  "events": [
@@ -215,7 +219,7 @@
    "place": null,
    "url": "https://www.mfds.go.kr/brd/m_220/view.do?seq=32928&srchFr=&srchTo=&srchWord=&srchTp=&itm_seq_1=0&itm_seq_2=0&multi_itm_seq=0&company_cd=&company_nm=&page=1",
    "source": "org-mfds",
-   "collectedAt": "2026-10-24"
+   "collectedAt": "2026-10-25"
   },
   {
    "id": "25ceb2ec225ac7b2",
@@ -386,7 +390,7 @@
    "place": null,
    "url": "https://www.mfds.go.kr/brd/m_220/view.do?seq=32930&srchFr=&srchTo=&srchWord=&srchTp=&itm_seq_1=0&itm_seq_2=0&multi_itm_seq=0&company_cd=&company_nm=&page=1",
    "source": "org-mfds",
-   "collectedAt": "2026-10-24"
+   "collectedAt": "2026-10-25"
   },
   {
    "id": "5bc672f76bff1996",
@@ -741,11 +745,11 @@
    "place": "서울 엘타워 그레이스홀",
    "url": "https://www.kdca.go.kr/bbs/kdca/61/313037/artclView.do?layout=unknown",
    "source": "org-kdca-ilje",
-   "collectedAt": "2026-10-24",
-   "city": "서울",
+   "collectedAt": "2026-10-25",
    "lat": 37.482377,
    "lng": 127.035617,
-   "geo": "exact"
+   "geo": "exact",
+   "city": "서울"
   },
   {
    "id": "dffb42b9198efed2",
