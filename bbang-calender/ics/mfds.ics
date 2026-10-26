@@ -18,23 +18,8 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:49a599a2e168a68b@bbangcal.epibrief.github.io
-DTSTAMP:20261025T234359Z
-DTSTART;VALUE=DATE:20260825
-DTEND;VALUE=DATE:20260827
-SUMMARY:[식품의약품안전처] 2026 K-건강기능식품\, 세계
- 를 향한 혁신적 도약 전략 콘퍼런스 발표자료
-DESCRIPTION:주최: 식품의약품안전처\n원문: https://www.mfds.
- go.kr/brd/m_220/view.do?seq=32928&srchFr=&srchTo=&srchWord=&srchTp=&itm
- _seq_1=0&itm_seq_2=0&multi_itm_seq=0&company_cd=&company_nm=&page=1\n
- 빵캘: https://epibrief.github.io/bbang-calender/
-URL:https://www.mfds.go.kr/brd/m_220/view.do?seq=32928&srchFr=&srchTo=&
- srchWord=&srchTp=&itm_seq_1=0&itm_seq_2=0&multi_itm_seq=0&company_cd=&c
- ompany_nm=&page=1
-END:VEVENT
-BEGIN:VEVENT
 UID:5409e7115b83d106@bbangcal.epibrief.github.io
-DTSTAMP:20261025T234359Z
+DTSTAMP:20261026T162610Z
 DTSTART;VALUE=DATE:20260917
 DTEND;VALUE=DATE:20260919
 SUMMARY:[식품의약품안전처] 의료기기의 사이버보안 업

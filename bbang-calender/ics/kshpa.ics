@@ -19,7 +19,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:f801f62b75dac1b9@bbangcal.epibrief.github.io
-DTSTAMP:20261025T234359Z
+DTSTAMP:20261026T162610Z
 DTSTART;TZID=Asia/Seoul:20261029T133000
 DTEND;TZID=Asia/Seoul:20261029T163000
 SUMMARY:[한국보건행정학회] 2026년 공공의료 심포지엄 
@@ -32,7 +32,7 @@ URL:https://www.kshpa.org/bbs/notice2/1560
 END:VEVENT
 BEGIN:VEVENT
 UID:2cb77b19cf0127b1@bbangcal.epibrief.github.io
-DTSTAMP:20261025T234359Z
+DTSTAMP:20261026T162610Z
 DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261106
 SUMMARY:[한국보건행정학회] 2026 후기학술대회 북페어 
@@ -45,7 +45,7 @@ URL:https://www.kshpa.org/bbs/notice/1535
 END:VEVENT
 BEGIN:VEVENT
 UID:e719a95bba4d99ff@bbangcal.epibrief.github.io
-DTSTAMP:20261025T234359Z
+DTSTAMP:20261026T162610Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:[한국보건행정학회] 2026년 한국보건행정학회 후
@@ -57,17 +57,16 @@ DESCRIPTION:주최: 한국보건행정학회\n원문: https://www.kshpa
 URL:https://www.kshpa.org/calendar/list/14
 END:VEVENT
 BEGIN:VEVENT
-UID:f101f07ab7b26cfa@bbangcal.epibrief.github.io
-DTSTAMP:20261025T234359Z
-DTSTART;TZID=Asia/Seoul:20261106T100000
-DTEND;TZID=Asia/Seoul:20261106T163000
-SUMMARY:[한국보건행정학회] ARPA-H 복지·돌봄 국제 심포
- 지움 개최 안내
-LOCATION:분당서울대학교병원 헬스케어혁신파크 B1 대강
- 당
+UID:a7325c538a5513fc@bbangcal.epibrief.github.io
+DTSTAMP:20261026T162610Z
+DTSTART;TZID=Asia/Seoul:20261126T093000
+DTEND;TZID=Asia/Seoul:20261126T174000
+SUMMARY:[한국보건행정학회] 2026년 후기 학술대회 및 연
+ 수교육 개최 안내
+LOCATION:연세대학교 백양누리 그랜드볼룸
 DESCRIPTION:주최: 한국보건행정학회\n원문: https://www.kshpa
- .org/bbs/notice2/1559\n빵캘: https://epibrief.github.io/bbang-calende
+ .org/bbs/notice2/1563\n빵캘: https://epibrief.github.io/bbang-calende
  r/
-URL:https://www.kshpa.org/bbs/notice2/1559
+URL:https://www.kshpa.org/bbs/notice2/1563
 END:VEVENT
 END:VCALENDAR

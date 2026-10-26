@@ -18,21 +18,8 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:45a94bf5e04cfd87@bbangcal.epibrief.github.io
-DTSTAMP:20261025T234359Z
-DTSTART;TZID=Asia/Seoul:20261022T103000
-DTEND;TZID=Asia/Seoul:20261022T123000
-SUMMARY:[한국건강증진개발원·보건복지부] 제14차 미래 
- 건강전략 포럼 개최 안내
-LOCATION:경주화백컨벤션센터(HICO) 105호
-DESCRIPTION:주최: 한국건강증진개발원·보건복지부\n원
- 문: https://www.kshpa.org/bbs/notice2/1558\n빵캘: https://epibrief.g
- ithub.io/bbang-calender/
-URL:https://www.kshpa.org/bbs/notice2/1558
-END:VEVENT
-BEGIN:VEVENT
 UID:7edfdde6847968e6@bbangcal.epibrief.github.io
-DTSTAMP:20261025T234359Z
+DTSTAMP:20261026T162610Z
 DTSTART;TZID=Asia/Seoul:20261029T133000
 DTEND;TZID=Asia/Seoul:20261029T163000
 SUMMARY:[보건복지부] 2026년도 장애인 건강보건통계 컨
