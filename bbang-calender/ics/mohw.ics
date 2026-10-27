@@ -19,7 +19,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:7edfdde6847968e6@bbangcal.epibrief.github.io
-DTSTAMP:20261027T010400Z
+DTSTAMP:20261027T154136Z
 DTSTART;TZID=Asia/Seoul:20261029T133000
 DTEND;TZID=Asia/Seoul:20261029T163000
 SUMMARY:[보건복지부] 2026년도 장애인 건강보건통계 컨
@@ -31,5 +31,18 @@ DESCRIPTION:주최: 보건복지부\n원문: https://health.snu.ac.kr/%
  =5807\n빵캘: https://epibrief.github.io/bbang-calender/
 URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
  %B4/?mod=document&pageid=2&uid=5807
+END:VEVENT
+BEGIN:VEVENT
+UID:977636b47265207b@bbangcal.epibrief.github.io
+DTSTAMP:20261027T154136Z
+DTSTART;TZID=Asia/Seoul:20261102T150000
+DTEND;TZID=Asia/Seoul:20261102T180000
+SUMMARY:[보건복지부·한국보건산업진흥원] 「2026년 글
+ 로벌 보건의료 R&D 소통·발전 간담회」
+LOCATION:서울가든호텔 그랜드볼룸홀(2F)
+DESCRIPTION:주최: 보건복지부·한국보건산업진흥원\n원
+ 문: https://www.khidi.or.kr/board/view?linkId=48951780&menuId=MENU0009
+ 9\n빵캘: https://epibrief.github.io/bbang-calender/
+URL:https://www.khidi.or.kr/board/view?linkId=48951780&menuId=MENU00099
 END:VEVENT
 END:VCALENDAR

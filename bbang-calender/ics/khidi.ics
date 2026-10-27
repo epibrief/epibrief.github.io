@@ -18,8 +18,21 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
+UID:977636b47265207b@bbangcal.epibrief.github.io
+DTSTAMP:20261027T154136Z
+DTSTART;TZID=Asia/Seoul:20261102T150000
+DTEND;TZID=Asia/Seoul:20261102T180000
+SUMMARY:[보건복지부·한국보건산업진흥원] 「2026년 글
+ 로벌 보건의료 R&D 소통·발전 간담회」
+LOCATION:서울가든호텔 그랜드볼룸홀(2F)
+DESCRIPTION:주최: 보건복지부·한국보건산업진흥원\n원
+ 문: https://www.khidi.or.kr/board/view?linkId=48951780&menuId=MENU0009
+ 9\n빵캘: https://epibrief.github.io/bbang-calender/
+URL:https://www.khidi.or.kr/board/view?linkId=48951780&menuId=MENU00099
+END:VEVENT
+BEGIN:VEVENT
 UID:9c96d0fcd85e7200@bbangcal.epibrief.github.io
-DTSTAMP:20261027T010400Z
+DTSTAMP:20261027T154136Z
 DTSTART;TZID=Asia/Seoul:20261104T130000
 DTEND;TZID=Asia/Seoul:20261104T173000
 SUMMARY:[한국보건산업진흥원] 제 16회 국가식품클러스

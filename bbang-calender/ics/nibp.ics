@@ -18,8 +18,30 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
+UID:0216bd83e6b028dc@bbangcal.epibrief.github.io
+DTSTAMP:20261027T154136Z
+DTSTART;VALUE=DATE:20260828
+DTEND;VALUE=DATE:20260829
+SUMMARY:[국가생명윤리정책원] 기관생명윤리위원회(IRB) 
+ 역량강화 워크숍 개최 안내 (9.30.(수) 오후 2시)
+DESCRIPTION:주최: 국가생명윤리정책원\n원문: https://nibp.k
+ r/board/notice\n빵캘: https://epibrief.github.io/bbang-calender/
+URL:https://nibp.kr/board/notice
+END:VEVENT
+BEGIN:VEVENT
+UID:4203284c0137d4b6@bbangcal.epibrief.github.io
+DTSTAMP:20261027T154136Z
+DTSTART;VALUE=DATE:20260828
+DTEND;VALUE=DATE:20260901
+SUMMARY:[국가생명윤리정책원] 제1회 유네스코 첨단과학
+ 기술 윤리 포럼 안내
+DESCRIPTION:주최: 국가생명윤리정책원\n원문: https://nibp.k
+ r/board/notice\n빵캘: https://epibrief.github.io/bbang-calender/
+URL:https://nibp.kr/board/notice
+END:VEVENT
+BEGIN:VEVENT
 UID:2d91db80ab929bfc@bbangcal.epibrief.github.io
-DTSTAMP:20261027T010400Z
+DTSTAMP:20261027T154136Z
 DTSTART;VALUE=DATE:20260828
 DTEND;VALUE=DATE:20260829
 SUMMARY:[국가생명윤리정책원] 제76회 콜로키움 개최 안내
@@ -32,7 +54,7 @@ URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
 END:VEVENT
 BEGIN:VEVENT
 UID:b35fb3a9b2fb7dfd@bbangcal.epibrief.github.io
-DTSTAMP:20261027T010400Z
+DTSTAMP:20261027T154136Z
 DTSTART;VALUE=DATE:20260909
 DTEND;VALUE=DATE:20260910
 SUMMARY:[국가생명윤리정책원] 제1회 유네스코 첨단과학
@@ -45,7 +67,7 @@ URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
 END:VEVENT
 BEGIN:VEVENT
 UID:2327d80840761d8c@bbangcal.epibrief.github.io
-DTSTAMP:20261027T010400Z
+DTSTAMP:20261027T154136Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:[국가생명윤리정책원] 제77회 콜로키움 개최 안내
