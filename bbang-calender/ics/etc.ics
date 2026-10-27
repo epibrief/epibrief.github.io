@@ -18,22 +18,8 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:43b28ce89be69716@bbangcal.epibrief.github.io
-DTSTAMP:20261026T162610Z
-DTSTART;VALUE=DATE:20260827
-DTEND;VALUE=DATE:20260828
-SUMMARY:[그 밖의 기관] 다양한 감염병 모델 기반 통합분
- 석예측시스템 구축 워크숍 안내
-LOCATION:천안 소노벨
-DESCRIPTION:주최: 그 밖의 기관\n원문: https://health.snu.ac.kr
- /%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pageid=3&u
- id=5707\n빵캘: https://epibrief.github.io/bbang-calender/
-URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
- %B4/?mod=document&pageid=3&uid=5707
-END:VEVENT
-BEGIN:VEVENT
 UID:39aebf171b731f77@bbangcal.epibrief.github.io
-DTSTAMP:20261026T162610Z
+DTSTAMP:20261027T010400Z
 DTSTART;VALUE=DATE:20260915
 DTEND;VALUE=DATE:20260916
 SUMMARY:[그 밖의 기관] 서울시 중장년 정책포럼 2026
@@ -45,7 +31,7 @@ URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
 END:VEVENT
 BEGIN:VEVENT
 UID:2b86b8382de4828c@bbangcal.epibrief.github.io
-DTSTAMP:20261026T162610Z
+DTSTAMP:20261027T010400Z
 DTSTART;TZID=Asia/Seoul:20260923T160000
 DTEND;TZID=Asia/Seoul:20260923T173000
 SUMMARY:[그 밖의 기관] 9월 세미나 <보건정책학의 이해: 
@@ -60,7 +46,7 @@ URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
 END:VEVENT
 BEGIN:VEVENT
 UID:8acdee48e3a12e93@bbangcal.epibrief.github.io
-DTSTAMP:20261026T162610Z
+DTSTAMP:20261027T010400Z
 DTSTART;TZID=Asia/Seoul:20260929T140000
 DTEND;TZID=Asia/Seoul:20260929T150000
 SUMMARY:[그 밖의 기관] 2026 통일과나눔 세미나\, 시드니
@@ -75,7 +61,7 @@ URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
 END:VEVENT
 BEGIN:VEVENT
 UID:f0e2841be75be41f@bbangcal.epibrief.github.io
-DTSTAMP:20261026T162610Z
+DTSTAMP:20261027T010400Z
 DTSTART;TZID=Asia/Seoul:20261106T100000
 DTEND;TZID=Asia/Seoul:20261106T163000
 SUMMARY:[그 밖의 기관] 회복력 있는 돌봄\, 통합돌봄 네
@@ -91,7 +77,7 @@ URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
 END:VEVENT
 BEGIN:VEVENT
 UID:ab351c635770eb4b@bbangcal.epibrief.github.io
-DTSTAMP:20261026T162610Z
+DTSTAMP:20261027T010400Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:[그 밖의 기관] 2026년 대한근거기반의학회 하반
