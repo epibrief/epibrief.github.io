@@ -1,9 +1,9 @@
 {
  "name": "빵캘",
- "updatedAt": "2026-10-28T00:54:16.012Z",
+ "updatedAt": "2026-10-28T16:25:16.259Z",
  "counts": {
-  "total": 140,
-  "upcoming": 86
+  "total": 141,
+  "upcoming": 87
  },
  "sources": [
   {
@@ -12,7 +12,7 @@
    "ok": true,
    "found": 52,
    "events": 0,
-   "ms": 5336
+   "ms": 2781
   },
   {
    "id": "org-mohw",
@@ -20,7 +20,7 @@
    "ok": true,
    "found": 18,
    "events": 3,
-   "ms": 11179
+   "ms": 12038
   },
   {
    "id": "org-khealth",
@@ -28,7 +28,7 @@
    "ok": true,
    "found": 11,
    "events": 0,
-   "ms": 3733
+   "ms": 3919
   },
   {
    "id": "org-ncc",
@@ -36,7 +36,7 @@
    "ok": true,
    "found": 4,
    "events": 2,
-   "ms": 5757
+   "ms": 6135
   },
   {
    "id": "nkis",
@@ -44,31 +44,7 @@
    "ok": true,
    "found": 20,
    "events": 0,
-   "ms": 24421
-  },
-  {
-   "id": "org-nhis",
-   "name": "국민건강보험공단 공지",
-   "ok": true,
-   "found": 24,
-   "events": 0,
-   "ms": 4104
-  },
-  {
-   "id": "org-hira",
-   "name": "건강보험심사평가원 공지",
-   "ok": true,
-   "found": 12,
-   "events": 0,
-   "ms": 1849
-  },
-  {
-   "id": "org-kihasa",
-   "name": "한국보건사회연구원 공지",
-   "ok": true,
-   "found": 0,
-   "events": 0,
-   "ms": 2331
+   "ms": 23896
   },
   {
    "id": "org-mfds",
@@ -76,14 +52,31 @@
    "ok": true,
    "found": 16,
    "events": 8,
-   "ms": 24075
+   "ms": 23012
   },
   {
-   "id": "org-neca",
-   "name": "한국보건의료연구원 공지",
-   "ok": false,
-   "error": "HTTP 400",
-   "ms": 7151
+   "id": "org-hira",
+   "name": "건강보험심사평가원 공지",
+   "ok": true,
+   "found": 12,
+   "events": 0,
+   "ms": 2028
+  },
+  {
+   "id": "org-nhis",
+   "name": "국민건강보험공단 공지",
+   "ok": true,
+   "found": 24,
+   "events": 0,
+   "ms": 3917
+  },
+  {
+   "id": "org-kihasa",
+   "name": "한국보건사회연구원 공지",
+   "ok": true,
+   "found": 0,
+   "events": 0,
+   "ms": 2169
   },
   {
    "id": "org-nmc",
@@ -91,7 +84,14 @@
    "ok": true,
    "found": 11,
    "events": 0,
-   "ms": 6058
+   "ms": 1705
+  },
+  {
+   "id": "org-neca",
+   "name": "한국보건의료연구원 공지",
+   "ok": false,
+   "error": "HTTP 400",
+   "ms": 6697
   },
   {
    "id": "org-nibp",
@@ -99,15 +99,15 @@
    "ok": true,
    "found": 16,
    "events": 2,
-   "ms": 6762
+   "ms": 7130
   },
   {
    "id": "org-khidi",
    "name": "한국보건산업진흥원 공지",
    "ok": true,
    "found": 20,
-   "events": 2,
-   "ms": 10862
+   "events": 3,
+   "ms": 13179
   },
   {
    "id": "org-ksepi",
@@ -115,7 +115,7 @@
    "ok": true,
    "found": 10,
    "events": 5,
-   "ms": 5232
+   "ms": 5293
   },
   {
    "id": "org-kshpa",
@@ -123,15 +123,7 @@
    "ok": true,
    "found": 9,
    "events": 6,
-   "ms": 12974
-  },
-  {
-   "id": "snu-health",
-   "name": "서울대 보건대학원 세미나정보",
-   "ok": true,
-   "found": 30,
-   "events": 25,
-   "ms": 54439
+   "ms": 12643
   },
   {
    "id": "org-prevmed",
@@ -139,7 +131,7 @@
    "ok": true,
    "found": 15,
    "events": 4,
-   "ms": 21044
+   "ms": 22476
   },
   {
    "id": "org-kshep",
@@ -147,39 +139,7 @@
    "ok": true,
    "found": 1,
    "events": 1,
-   "ms": 3432
-  },
-  {
-   "id": "org-kosqua",
-   "name": "한국의료질향상학회 공지",
-   "ok": true,
-   "found": 7,
-   "events": 2,
-   "ms": 2862
-  },
-  {
-   "id": "org-koddi",
-   "name": "한국장애인개발원 공지",
-   "ok": true,
-   "found": 21,
-   "events": 0,
-   "ms": 1774
-  },
-  {
-   "id": "org-cochrane",
-   "name": "한국코크란 공지",
-   "ok": true,
-   "found": 16,
-   "events": 0,
-   "ms": 897
-  },
-  {
-   "id": "org-kspm",
-   "name": "대한공공의학회 공지",
-   "ok": true,
-   "found": 16,
-   "events": 1,
-   "ms": 11117
+   "ms": 3759
   },
   {
    "id": "org-kams",
@@ -187,7 +147,39 @@
    "ok": true,
    "found": 101,
    "events": 101,
-   "ms": 21353
+   "ms": 20342
+  },
+  {
+   "id": "org-kspm",
+   "name": "대한공공의학회 공지",
+   "ok": true,
+   "found": 16,
+   "events": 1,
+   "ms": 11198
+  },
+  {
+   "id": "org-koddi",
+   "name": "한국장애인개발원 공지",
+   "ok": true,
+   "found": 21,
+   "events": 0,
+   "ms": 1604
+  },
+  {
+   "id": "org-kosqua",
+   "name": "한국의료질향상학회 공지",
+   "ok": true,
+   "found": 7,
+   "events": 2,
+   "ms": 2372
+  },
+  {
+   "id": "org-cochrane",
+   "name": "한국코크란 공지",
+   "ok": true,
+   "found": 16,
+   "events": 0,
+   "ms": 1059
   },
   {
    "id": "org-kdca-ilje",
@@ -195,14 +187,22 @@
    "ok": true,
    "found": 32,
    "events": 0,
-   "ms": 4242
+   "ms": 2039
+  },
+  {
+   "id": "snu-health",
+   "name": "서울대 보건대학원 세미나정보",
+   "ok": true,
+   "found": 30,
+   "events": 25,
+   "ms": 75145
   },
   {
    "id": "org-kpha",
    "name": "대한보건협회 공지",
    "ok": false,
    "error": "fetch failed",
-   "ms": 25190
+   "ms": 25038
   }
  ],
  "events": [
@@ -1208,6 +1208,21 @@
    "lng": 127.059111,
    "geo": "exact",
    "city": "서울"
+  },
+  {
+   "id": "e0a8ace74b6627f3",
+   "org": "khidi",
+   "orgLabel": null,
+   "title": "제약바이오 신흥시장(중남미·중동) 진출 전략 세미나 위탁 운영(1차)",
+   "start": "2026-10-28",
+   "end": "2026-10-28",
+   "startTime": null,
+   "endTime": null,
+   "allDay": true,
+   "place": null,
+   "url": "https://www.khidi.or.kr/board/view?linkId=48951911&menuId=MENU00101",
+   "source": "org-khidi",
+   "collectedAt": "2026-10-28"
   },
   {
    "id": "f844546c2fa00f28",

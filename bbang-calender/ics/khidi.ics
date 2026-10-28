@@ -18,8 +18,20 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
+UID:e0a8ace74b6627f3@bbangcal.epibrief.github.io
+DTSTAMP:20261028T162516Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:[한국보건산업진흥원] 제약바이오 신흥시장(중
+ 남미·중동) 진출 전략 세미나 위탁 운영(1차)
+DESCRIPTION:주최: 한국보건산업진흥원\n원문: https://www.kh
+ idi.or.kr/board/view?linkId=48951911&menuId=MENU00101\n빵캘: https://
+ epibrief.github.io/bbang-calender/
+URL:https://www.khidi.or.kr/board/view?linkId=48951911&menuId=MENU00101
+END:VEVENT
+BEGIN:VEVENT
 UID:977636b47265207b@bbangcal.epibrief.github.io
-DTSTAMP:20261028T005416Z
+DTSTAMP:20261028T162516Z
 DTSTART;TZID=Asia/Seoul:20261102T150000
 DTEND;TZID=Asia/Seoul:20261102T180000
 SUMMARY:[보건복지부·한국보건산업진흥원] 「2026년 글
@@ -32,7 +44,7 @@ URL:https://www.khidi.or.kr/board/view?linkId=48951780&menuId=MENU00099
 END:VEVENT
 BEGIN:VEVENT
 UID:9c96d0fcd85e7200@bbangcal.epibrief.github.io
-DTSTAMP:20261028T005416Z
+DTSTAMP:20261028T162516Z
 DTSTART;TZID=Asia/Seoul:20261104T130000
 DTEND;TZID=Asia/Seoul:20261104T173000
 SUMMARY:[한국보건산업진흥원] 제 16회 국가식품클러스
