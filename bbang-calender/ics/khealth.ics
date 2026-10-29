@@ -18,25 +18,8 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:463062819499f1dc@bbangcal.epibrief.github.io
-DTSTAMP:20261029T013024Z
-DTSTART;TZID=Asia/Seoul:20261014T100000
-DTEND;TZID=Asia/Seoul:20261014T170000
-SUMMARY:[한국건강증진개발원] 2026 INHPF 정기총회 및 심
- 포지엄 행사 안내
-DESCRIPTION:주최: 한국건강증진개발원\n원문: https://www.pr
- evmed.or.kr/board_community_notice01/view.php?tn=board_community_notice
- 01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject_s=&content_s=&nam
- e_s=&writedate_s=&keyfield_s=&search_word_s=&uid=931&gid=905&cpage=1&sp
- age=1\n빵캘: https://epibrief.github.io/bbang-calender/
-URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
- d_community_notice01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject
- _s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=931&
- gid=905&cpage=1&spage=1
-END:VEVENT
-BEGIN:VEVENT
 UID:ae86d80adf506dba@bbangcal.epibrief.github.io
-DTSTAMP:20261029T013024Z
+DTSTAMP:20261029T163417Z
 DTSTART;TZID=Asia/Seoul:20261030T100000
 DTEND;TZID=Asia/Seoul:20261030T173000
 SUMMARY:[한국건강증진개발원·한국보건교육건강증진학
