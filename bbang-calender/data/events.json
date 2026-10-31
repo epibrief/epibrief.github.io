@@ -1,9 +1,9 @@
 {
  "name": "빵캘",
- "updatedAt": "2026-10-31T01:22:12.191Z",
+ "updatedAt": "2026-10-31T15:36:03.624Z",
  "counts": {
-  "total": 138,
-  "upcoming": 79
+  "total": 139,
+  "upcoming": 80
  },
  "sources": [
   {
@@ -12,7 +12,7 @@
    "ok": true,
    "found": 51,
    "events": 0,
-   "ms": 2576
+   "ms": 3250
   },
   {
    "id": "org-mohw",
@@ -20,7 +20,7 @@
    "ok": true,
    "found": 18,
    "events": 3,
-   "ms": 11228
+   "ms": 12329
   },
   {
    "id": "org-khealth",
@@ -28,7 +28,7 @@
    "ok": true,
    "found": 11,
    "events": 0,
-   "ms": 3919
+   "ms": 4424
   },
   {
    "id": "org-ncc",
@@ -36,7 +36,7 @@
    "ok": true,
    "found": 4,
    "events": 2,
-   "ms": 5419
+   "ms": 5945
   },
   {
    "id": "nkis",
@@ -44,15 +44,7 @@
    "ok": true,
    "found": 20,
    "events": 0,
-   "ms": 21267
-  },
-  {
-   "id": "org-nhis",
-   "name": "국민건강보험공단 공지",
-   "ok": true,
-   "found": 24,
-   "events": 0,
-   "ms": 4362
+   "ms": 25865
   },
   {
    "id": "org-mfds",
@@ -60,30 +52,15 @@
    "ok": true,
    "found": 16,
    "events": 8,
-   "ms": 23245
+   "ms": 24470
   },
   {
-   "id": "org-kihasa",
-   "name": "한국보건사회연구원 공지",
+   "id": "org-nhis",
+   "name": "국민건강보험공단 공지",
    "ok": true,
-   "found": 0,
+   "found": 24,
    "events": 0,
-   "ms": 2197
-  },
-  {
-   "id": "org-neca",
-   "name": "한국보건의료연구원 공지",
-   "ok": false,
-   "error": "HTTP 400",
-   "ms": 6998
-  },
-  {
-   "id": "org-nmc",
-   "name": "국립중앙의료원 공지",
-   "ok": true,
-   "found": 11,
-   "events": 0,
-   "ms": 1983
+   "ms": 5346
   },
   {
    "id": "org-hira",
@@ -91,15 +68,30 @@
    "ok": true,
    "found": 12,
    "events": 0,
-   "ms": 13293
+   "ms": 2300
   },
   {
-   "id": "org-khidi",
-   "name": "한국보건산업진흥원 공지",
+   "id": "org-kihasa",
+   "name": "한국보건사회연구원 공지",
    "ok": true,
-   "found": 20,
-   "events": 3,
-   "ms": 11721
+   "found": 1,
+   "events": 1,
+   "ms": 3671
+  },
+  {
+   "id": "org-neca",
+   "name": "한국보건의료연구원 공지",
+   "ok": false,
+   "error": "HTTP 400",
+   "ms": 7406
+  },
+  {
+   "id": "org-nmc",
+   "name": "국립중앙의료원 공지",
+   "ok": true,
+   "found": 11,
+   "events": 0,
+   "ms": 4148
   },
   {
    "id": "org-nibp",
@@ -107,7 +99,15 @@
    "ok": true,
    "found": 16,
    "events": 1,
-   "ms": 5888
+   "ms": 5782
+  },
+  {
+   "id": "org-khidi",
+   "name": "한국보건산업진흥원 공지",
+   "ok": true,
+   "found": 20,
+   "events": 3,
+   "ms": 13711
   },
   {
    "id": "org-ksepi",
@@ -115,7 +115,7 @@
    "ok": true,
    "found": 10,
    "events": 5,
-   "ms": 5296
+   "ms": 5489
   },
   {
    "id": "org-kshpa",
@@ -123,7 +123,7 @@
    "ok": true,
    "found": 9,
    "events": 5,
-   "ms": 11137
+   "ms": 12465
   },
   {
    "id": "org-prevmed",
@@ -131,7 +131,7 @@
    "ok": true,
    "found": 15,
    "events": 2,
-   "ms": 21622
+   "ms": 23908
   },
   {
    "id": "org-kshep",
@@ -139,7 +139,7 @@
    "ok": true,
    "found": 1,
    "events": 1,
-   "ms": 3610
+   "ms": 3943
   },
   {
    "id": "org-kspm",
@@ -147,15 +147,7 @@
    "ok": true,
    "found": 16,
    "events": 1,
-   "ms": 10792
-  },
-  {
-   "id": "snu-health",
-   "name": "서울대 보건대학원 세미나정보",
-   "ok": true,
-   "found": 30,
-   "events": 24,
-   "ms": 62952
+   "ms": 11818
   },
   {
    "id": "org-kosqua",
@@ -163,23 +155,7 @@
    "ok": true,
    "found": 7,
    "events": 2,
-   "ms": 2340
-  },
-  {
-   "id": "org-koddi",
-   "name": "한국장애인개발원 공지",
-   "ok": true,
-   "found": 21,
-   "events": 0,
-   "ms": 1433
-  },
-  {
-   "id": "org-cochrane",
-   "name": "한국코크란 공지",
-   "ok": true,
-   "found": 16,
-   "events": 0,
-   "ms": 702
+   "ms": 2471
   },
   {
    "id": "org-kams",
@@ -187,7 +163,23 @@
    "ok": true,
    "found": 101,
    "events": 101,
-   "ms": 20417
+   "ms": 23376
+  },
+  {
+   "id": "org-cochrane",
+   "name": "한국코크란 공지",
+   "ok": true,
+   "found": 16,
+   "events": 0,
+   "ms": 447
+  },
+  {
+   "id": "org-koddi",
+   "name": "한국장애인개발원 공지",
+   "ok": true,
+   "found": 21,
+   "events": 0,
+   "ms": 1701
   },
   {
    "id": "org-kdca-ilje",
@@ -195,14 +187,22 @@
    "ok": true,
    "found": 31,
    "events": 0,
-   "ms": 2124
+   "ms": 2505
+  },
+  {
+   "id": "snu-health",
+   "name": "서울대 보건대학원 세미나정보",
+   "ok": true,
+   "found": 30,
+   "events": 24,
+   "ms": 74662
   },
   {
    "id": "org-kpha",
    "name": "대한보건협회 공지",
    "ok": false,
    "error": "fetch failed",
-   "ms": 25206
+   "ms": 25428
   }
  ],
  "events": [
@@ -1430,6 +1430,25 @@
    "lng": 126.959215,
    "geo": "exact",
    "city": "서울"
+  },
+  {
+   "id": "6db09ce6807643a6",
+   "org": "kihasa",
+   "orgLabel": null,
+   "title": "제7차 한·일 사회정책 정례포럼",
+   "start": "2026-11-03",
+   "end": "2026-11-04",
+   "startTime": "10:30",
+   "endTime": "16:50",
+   "allDay": false,
+   "place": "한국보건사회연구원 세종실",
+   "url": "https://www.kihasa.re.kr/news/event/view?seq=77455",
+   "source": "org-kihasa",
+   "collectedAt": "2026-10-31",
+   "lat": 36.495137,
+   "lng": 127.305551,
+   "geo": "exact",
+   "city": "세종"
   },
   {
    "id": "a160133927b09cec",
@@ -2718,9 +2737,9 @@
   }
  ],
  "map": {
-  "mapped": 106,
+  "mapped": 107,
   "online": 6,
-  "places": 102,
+  "places": 103,
   "geocodedAt": "2026-10-31"
  }
 }

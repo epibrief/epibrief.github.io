@@ -19,7 +19,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:9ff89e7ff7d157b7@bbangcal.epibrief.github.io
-DTSTAMP:20261031T012212Z
+DTSTAMP:20261031T153608Z
 DTSTART;TZID=Asia/Seoul:20260903T130000
 DTEND;TZID=Asia/Seoul:20260903T180000
 SUMMARY:[국민건강보험공단·한국보건사회연구원] 2026년
@@ -31,5 +31,18 @@ DESCRIPTION:주최: 국민건강보험공단·한국보건사회연구
  github.io/bbang-calender/
 URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
  %B4/?mod=document&pageid=3&uid=5723
+END:VEVENT
+BEGIN:VEVENT
+UID:6db09ce6807643a6@bbangcal.epibrief.github.io
+DTSTAMP:20261031T153608Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261105
+SUMMARY:[한국보건사회연구원] 제7차 한·일 사회정책 정
+ 례포럼
+LOCATION:한국보건사회연구원 세종실
+DESCRIPTION:주최: 한국보건사회연구원\n원문: https://www.ki
+ hasa.re.kr/news/event/view?seq=77455\n빵캘: https://epibrief.github.i
+ o/bbang-calender/
+URL:https://www.kihasa.re.kr/news/event/view?seq=77455
 END:VEVENT
 END:VCALENDAR
