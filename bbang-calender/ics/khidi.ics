@@ -19,7 +19,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:e0a8ace74b6627f3@bbangcal.epibrief.github.io
-DTSTAMP:20261102T011203Z
+DTSTAMP:20261102T195711Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:[한국보건산업진흥원] 제약바이오 신흥시장(중
@@ -31,7 +31,7 @@ URL:https://www.khidi.or.kr/board/view?linkId=48951911&menuId=MENU00101
 END:VEVENT
 BEGIN:VEVENT
 UID:977636b47265207b@bbangcal.epibrief.github.io
-DTSTAMP:20261102T011203Z
+DTSTAMP:20261102T195711Z
 DTSTART;TZID=Asia/Seoul:20261102T150000
 DTEND;TZID=Asia/Seoul:20261102T180000
 SUMMARY:[보건복지부·한국보건산업진흥원] 「2026년 글
@@ -43,21 +43,8 @@ DESCRIPTION:주최: 보건복지부·한국보건산업진흥원\n원
 URL:https://www.khidi.or.kr/board/view?linkId=48951780&menuId=MENU00099
 END:VEVENT
 BEGIN:VEVENT
-UID:9c96d0fcd85e7200@bbangcal.epibrief.github.io
-DTSTAMP:20261102T011203Z
-DTSTART;TZID=Asia/Seoul:20261104T130000
-DTEND;TZID=Asia/Seoul:20261104T173000
-SUMMARY:[한국보건산업진흥원] 제 16회 국가식품클러스
- 터 국제콘퍼런스 및 제5회 고령친화식품산업 심포지
- 엄
-DESCRIPTION:주최: 한국보건산업진흥원\n원문: https://www.kh
- idi.or.kr/board/view?linkId=48951473&menuId=MENU00099\n빵캘: https://
- epibrief.github.io/bbang-calender/
-URL:https://www.khidi.or.kr/board/view?linkId=48951473&menuId=MENU00099
-END:VEVENT
-BEGIN:VEVENT
 UID:8c7b86728fb11192@bbangcal.epibrief.github.io
-DTSTAMP:20261102T011203Z
+DTSTAMP:20261102T195711Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261119
 SUMMARY:[한국보건산업진흥원] 2026 헬스케어 인공지능(AI
