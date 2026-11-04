@@ -18,27 +18,10 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:4810f0d46cc445d4@bbangcal.epibrief.github.io
-DTSTAMP:20261104T014956Z
-DTSTART;TZID=Asia/Seoul:20261015T100000
-DTEND;TZID=Asia/Seoul:20261015T170000
-SUMMARY:[대한예방의학회] 2026 후기학술대회(11월26일) 개
- 최 및 사전등록 안내
-DESCRIPTION:주최: 대한예방의학회\n원문: https://www.prevmed.
- or.kr/board_community_notice01/view.php?tn=board_community_notice01&lis
- t_count_s=&G_state=&pm=5.1&part_part_s=&subject_s=&content_s=&name_s=&w
- ritedate_s=&keyfield_s=&search_word_s=&uid=935&gid=909&cpage=1&spage=1\
- n빵캘: https://epibrief.github.io/bbang-calender/
-URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
- d_community_notice01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject
- _s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=935&
- gid=909&cpage=1&spage=1
-END:VEVENT
-BEGIN:VEVENT
-UID:d5b572cbf0fcfd33@bbangcal.epibrief.github.io
-DTSTAMP:20261104T014956Z
-DTSTART;VALUE=DATE:20261015
-DTEND;VALUE=DATE:20261017
+UID:b23de6c0cf60438a@bbangcal.epibrief.github.io
+DTSTAMP:20261104T174305Z
+DTSTART;TZID=Asia/Seoul:20261016T100000
+DTEND;TZID=Asia/Seoul:20261016T170000
 SUMMARY:[대한예방의학회] 2026년 제28회 한국장애와건강
  포럼 개최 안내
 DESCRIPTION:주최: 대한예방의학회\n원문: https://www.prevmed.
@@ -50,22 +33,5 @@ URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
  d_community_notice01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject
  _s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=937&
  gid=911&cpage=1&spage=1
-END:VEVENT
-BEGIN:VEVENT
-UID:4b01e3fe4e5c5b9d@bbangcal.epibrief.github.io
-DTSTAMP:20261104T014956Z
-DTSTART;TZID=Asia/Seoul:20261015T100000
-DTEND;TZID=Asia/Seoul:20261015T170000
-SUMMARY:[대한예방의학회] 38회 추계학술대회 및 연수교
- 육 개최 안내
-DESCRIPTION:주최: 대한예방의학회\n원문: https://www.prevmed.
- or.kr/board_community_notice01/view.php?tn=board_community_notice01&lis
- t_count_s=&G_state=&pm=5.1&part_part_s=&subject_s=&content_s=&name_s=&w
- ritedate_s=&keyfield_s=&search_word_s=&uid=936&gid=910&cpage=1&spage=1\
- n빵캘: https://epibrief.github.io/bbang-calender/
-URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
- d_community_notice01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject
- _s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=936&
- gid=910&cpage=1&spage=1
 END:VEVENT
 END:VCALENDAR

@@ -19,7 +19,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:5409e7115b83d106@bbangcal.epibrief.github.io
-DTSTAMP:20261104T014956Z
+DTSTAMP:20261104T174305Z
 DTSTART;VALUE=DATE:20260917
 DTEND;VALUE=DATE:20260919
 SUMMARY:[식품의약품안전처] 의료기기의 사이버보안 업
@@ -29,6 +29,21 @@ DESCRIPTION:주최: 식품의약품안전처\n원문: https://www.mfds.
  _seq_1=0&itm_seq_2=0&multi_itm_seq=0&company_cd=&company_nm=&page=1\n
  빵캘: https://epibrief.github.io/bbang-calender/
 URL:https://www.mfds.go.kr/brd/m_220/view.do?seq=32930&srchFr=&srchTo=&
+ srchWord=&srchTp=&itm_seq_1=0&itm_seq_2=0&multi_itm_seq=0&company_cd=&c
+ ompany_nm=&page=1
+END:VEVENT
+BEGIN:VEVENT
+UID:bb0255abe94d3e10@bbangcal.epibrief.github.io
+DTSTAMP:20261104T174305Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:[식품의약품안전처] 2026년 디지털의료기기 허가
+ ·심사 업무설명회(2차) 발표자료
+DESCRIPTION:주최: 식품의약품안전처\n원문: https://www.mfds.
+ go.kr/brd/m_220/view.do?seq=32931&srchFr=&srchTo=&srchWord=&srchTp=&itm
+ _seq_1=0&itm_seq_2=0&multi_itm_seq=0&company_cd=&company_nm=&page=1\n
+ 빵캘: https://epibrief.github.io/bbang-calender/
+URL:https://www.mfds.go.kr/brd/m_220/view.do?seq=32931&srchFr=&srchTo=&
  srchWord=&srchTp=&itm_seq_1=0&itm_seq_2=0&multi_itm_seq=0&company_cd=&c
  ompany_nm=&page=1
 END:VEVENT
