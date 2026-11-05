@@ -19,7 +19,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:e719a95bba4d99ff@bbangcal.epibrief.github.io
-DTSTAMP:20261105T015749Z
+DTSTAMP:20261105T174949Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:[한국보건행정학회] 2026년 한국보건행정학회 후
@@ -31,16 +31,16 @@ DESCRIPTION:주최: 한국보건행정학회\n원문: https://www.kshpa
 URL:https://www.kshpa.org/calendar/list/14
 END:VEVENT
 BEGIN:VEVENT
-UID:a7325c538a5513fc@bbangcal.epibrief.github.io
-DTSTAMP:20261105T015749Z
+UID:c546dcd0a71f64d2@bbangcal.epibrief.github.io
+DTSTAMP:20261105T174949Z
 DTSTART;TZID=Asia/Seoul:20261126T093000
-DTEND;TZID=Asia/Seoul:20261126T174000
-SUMMARY:[한국보건행정학회] 2026년 후기 학술대회 및 연
- 수교육 개최 안내
-LOCATION:연세대학교 백양누리 그랜드볼룸
+DTEND;TZID=Asia/Seoul:20261126T171000
+SUMMARY:[한국보건행정학회] 2026년 후기학술대회 세부 
+ 일정 및 사전등록 안내
+LOCATION:영남대학교병원 권역호흡기전문질환센터 강당
 DESCRIPTION:주최: 한국보건행정학회\n원문: https://www.kshpa
- .org/bbs/notice2/1563\n빵캘: https://epibrief.github.io/bbang-calende
+ .org/bbs/notice2/1567\n빵캘: https://epibrief.github.io/bbang-calende
  r/
-URL:https://www.kshpa.org/bbs/notice2/1563
+URL:https://www.kshpa.org/bbs/notice2/1567
 END:VEVENT
 END:VCALENDAR
