@@ -18,54 +18,20 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:394041f513b5b680@bbangcal.epibrief.github.io
-DTSTAMP:20261106T015839Z
-DTSTART;TZID=Asia/Seoul:20261019T100000
-DTEND;TZID=Asia/Seoul:20261019T170000
-SUMMARY:[대한예방의학회] 2026년 공공의료 심포지엄 개
- 최 안내
+UID:00b20a3c9eed82bd@bbangcal.epibrief.github.io
+DTSTAMP:20261106T171009Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261030
+SUMMARY:[대한예방의학회] 환경보건 겨울워크숍 개최 안
+ 내
 DESCRIPTION:주최: 대한예방의학회\n원문: https://www.prevmed.
  or.kr/board_community_notice01/view.php?tn=board_community_notice01&lis
  t_count_s=&G_state=&pm=5.1&part_part_s=&subject_s=&content_s=&name_s=&w
- ritedate_s=&keyfield_s=&search_word_s=&uid=940&gid=914&cpage=1&spage=1\
+ ritedate_s=&keyfield_s=&search_word_s=&uid=946&gid=920&cpage=1&spage=1\
  n빵캘: https://epibrief.github.io/bbang-calender/
 URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
  d_community_notice01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject
- _s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=940&
- gid=914&cpage=1&spage=1
-END:VEVENT
-BEGIN:VEVENT
-UID:4d0b48b5c6cf401b@bbangcal.epibrief.github.io
-DTSTAMP:20261106T015839Z
-DTSTART;TZID=Asia/Seoul:20261019T100000
-DTEND;TZID=Asia/Seoul:20261019T170000
-SUMMARY:[대한예방의학회] 2026년 손상예방의 날 기념행
- 사 및 손상포럼(26.11.2.월) 개최 안내
-DESCRIPTION:주최: 대한예방의학회\n원문: https://www.prevmed.
- or.kr/board_community_notice01/view.php?tn=board_community_notice01&lis
- t_count_s=&G_state=&pm=5.1&part_part_s=&subject_s=&content_s=&name_s=&w
- ritedate_s=&keyfield_s=&search_word_s=&uid=941&gid=915&cpage=1&spage=1\
- n빵캘: https://epibrief.github.io/bbang-calender/
-URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
- d_community_notice01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject
- _s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=941&
- gid=915&cpage=1&spage=1
-END:VEVENT
-BEGIN:VEVENT
-UID:46d80e842ad0da62@bbangcal.epibrief.github.io
-DTSTAMP:20261106T015839Z
-DTSTART;TZID=Asia/Seoul:20261019T100000
-DTEND;TZID=Asia/Seoul:20261019T170000
-SUMMARY:[대한예방의학회] 회복력 있는 돌봄\, 통합돌봄 
- 네트워크를 위한 배려기술
-DESCRIPTION:주최: 대한예방의학회\n원문: https://www.prevmed.
- or.kr/board_community_notice01/view.php?tn=board_community_notice01&lis
- t_count_s=&G_state=&pm=5.1&part_part_s=&subject_s=&content_s=&name_s=&w
- ritedate_s=&keyfield_s=&search_word_s=&uid=939&gid=913&cpage=1&spage=1\
- n빵캘: https://epibrief.github.io/bbang-calender/
-URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
- d_community_notice01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject
- _s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=939&
- gid=913&cpage=1&spage=1
+ _s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=946&
+ gid=920&cpage=1&spage=1
 END:VEVENT
 END:VCALENDAR
