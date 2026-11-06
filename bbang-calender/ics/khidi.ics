@@ -19,7 +19,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:e0a8ace74b6627f3@bbangcal.epibrief.github.io
-DTSTAMP:20261105T174949Z
+DTSTAMP:20261106T015839Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:[한국보건산업진흥원] 제약바이오 신흥시장(중
@@ -31,7 +31,7 @@ URL:https://www.khidi.or.kr/board/view?linkId=48951911&menuId=MENU00101
 END:VEVENT
 BEGIN:VEVENT
 UID:6a011d6c974448dc@bbangcal.epibrief.github.io
-DTSTAMP:20261105T174949Z
+DTSTAMP:20261106T015839Z
 DTSTART;TZID=Asia/Seoul:20261104T130000
 DTEND;TZID=Asia/Seoul:20261104T181000
 SUMMARY:[한국보건산업진흥원] 2026 강북삼성병원 미래헬
@@ -41,5 +41,17 @@ DESCRIPTION:주최: 한국보건산업진흥원\n원문: https://www.kh
  idi.or.kr/board/view?linkId=48952162&menuId=MENU00099\n빵캘: https://
  epibrief.github.io/bbang-calender/
 URL:https://www.khidi.or.kr/board/view?linkId=48952162&menuId=MENU00099
+END:VEVENT
+BEGIN:VEVENT
+UID:d9bb4fdc1fdfafdd@bbangcal.epibrief.github.io
+DTSTAMP:20261106T015839Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:[한국보건산업진흥원] 한국보건산업진흥원「제
+ 약바이오산업 혁신포럼」개최
+DESCRIPTION:주최: 한국보건산업진흥원\n원문: https://www.kh
+ idi.or.kr/board/view?linkId=48952346&menuId=MENU00100\n빵캘: https://
+ epibrief.github.io/bbang-calender/
+URL:https://www.khidi.or.kr/board/view?linkId=48952346&menuId=MENU00100
 END:VEVENT
 END:VCALENDAR

@@ -19,7 +19,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:394041f513b5b680@bbangcal.epibrief.github.io
-DTSTAMP:20261105T174949Z
+DTSTAMP:20261106T015839Z
 DTSTART;TZID=Asia/Seoul:20261019T100000
 DTEND;TZID=Asia/Seoul:20261019T170000
 SUMMARY:[대한예방의학회] 2026년 공공의료 심포지엄 개
@@ -36,7 +36,7 @@ URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
 END:VEVENT
 BEGIN:VEVENT
 UID:4d0b48b5c6cf401b@bbangcal.epibrief.github.io
-DTSTAMP:20261105T174949Z
+DTSTAMP:20261106T015839Z
 DTSTART;TZID=Asia/Seoul:20261019T100000
 DTEND;TZID=Asia/Seoul:20261019T170000
 SUMMARY:[대한예방의학회] 2026년 손상예방의 날 기념행
@@ -53,7 +53,7 @@ URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
 END:VEVENT
 BEGIN:VEVENT
 UID:46d80e842ad0da62@bbangcal.epibrief.github.io
-DTSTAMP:20261105T174949Z
+DTSTAMP:20261106T015839Z
 DTSTART;TZID=Asia/Seoul:20261019T100000
 DTEND;TZID=Asia/Seoul:20261019T170000
 SUMMARY:[대한예방의학회] 회복력 있는 돌봄\, 통합돌봄 
