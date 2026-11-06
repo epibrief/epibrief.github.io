@@ -1,7 +1,23 @@
 {
- "updated": "2026-11-06 00:38",
+ "updated": "2026-11-06 23:54",
  "byKind": {
   "outbreak": [
+   {
+    "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo, Kenya and Nigeria",
+    "origin": "WHO Disease Outbreak News",
+    "sourceName": "WHO 발생 속보 (Disease Outbreak News)",
+    "link": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON625",
+    "date": "2026-11-06",
+    "via": "WHO 공식"
+   },
+   {
+    "title": "Yellow fever - WHO African Region",
+    "origin": "WHO Disease Outbreak News",
+    "sourceName": "WHO 발생 속보 (Disease Outbreak News)",
+    "link": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON624",
+    "date": "2026-11-06",
+    "via": "WHO 공식"
+   },
    {
     "title": "Outbreaks Associated with Untreated Recreational Water — United States, 2000–2014",
     "origin": "",
@@ -65,22 +81,252 @@
     "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6725a8.htm?s_cid=mm6725a8_x",
     "date": "2026-11-06",
     "via": "기관 RSS"
+   }
+  ],
+  "chronic": [
+   {
+    "title": "고혈압·당뇨병 등 '만성질환 통합관리센터' 전국 단계적 확대",
+    "origin": "대한민국 정책브리핑",
+    "sourceName": "국내 만성질환 관리 정책",
+    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPNXozY3N1TlFmSVZ0cTd3LVNOOFZfRDZRY1M1SG9COFNUWExMOWVWRWtZTHNjQWh2MHBmMzhZX0VhNWVJRWN4VjdUbFZnYXVPU2VaS1NfZWV2NHREa3RLTk1sNEh0cWVWazdqYVFRR1Y2MWY1UEJZdU1INjVsd3ZSenoyQWVBTVNCQWc?oc=5",
+    "date": "2026-11-06",
+    "via": "뉴스검색"
    },
    {
-    "title": "National HIV Testing Day — June 27, 2018",
+    "title": "고혈압‧당뇨병 등 만성질환 관리, 만성질환 통합관리센터로 전국 단계적 확대(11.5.목)",
     "origin": "",
-    "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
-    "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6724a1.htm?s_cid=mm6724a1_x",
-    "date": "2026-11-06",
-    "via": "기관 RSS"
+    "sourceName": "질병관리청 보도자료 (만성질환·건강통계)",
+    "link": "https://www.kdca.go.kr/bbs/kdca/42/313366/artclView.do",
+    "date": "2026-11-05",
+    "via": "기관 페이지"
    },
    {
-    "title": "Interval Since Last HIV Test for Men and Women with Recent Risk for HIV Infection — United States, 2006–2016",
-    "origin": "",
-    "sourceName": "美CDC MMWR (주간 이환·사망 보고)",
-    "link": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6724a2.htm?s_cid=mm6724a2_x",
+    "title": "고당사업 막내리고 만성질환 통합관리센터서 총괄",
+    "origin": "재활뉴스",
+    "sourceName": "국내 만성질환 관리 정책",
+    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1WMTBTZnlUMlkweXdUSnR3bkRRRHBjcEdHbDl0X2dPVWkwdVpZQUd5SFFlTWtXU0FZRzVSaW9YX2FSd1JIamx0Zmlnbnp1RDlsR29XeEFoYWNMMElLbmh5R2VjaWFlNVUycVVB?oc=5",
+    "date": "2026-11-05",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "고혈압·당뇨병 등록교육센터, 2028년 통합관리센터 전환...기존 서비스 유지",
+    "origin": "의학신문",
+    "sourceName": "국내 만성질환 관리 정책",
+    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5vZXhDNTB4Rmp3bkoteXJWcWZta1BZMmdScUVERnQ5VXJ3czQtRUVZV2pmS1FhTGpueU50NWlHUGJlQU5KTnVTMTRwOXZoY052Z0t0bjNHUWM4YVRUSXZqM3FDSVI3a251aVE?oc=5",
+    "date": "2026-11-05",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "New 2026 ACC Expert Consensus Decision Pathway and 2025 AHA/ACC Hypertension Guideline Support the Role of Chlorthalidone in Resistant Hypertension",
+    "origin": "PR Newswire",
+    "sourceName": "미국 국립보건통계센터(NCHS)",
+    "link": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxQM2o5eC1UNXNhR0lXUzlBNndOblI5eW1VNFpJNWhrWVFoMVhBMUR5TzRJekIxazdUSzZCT0p0TnBFQnhCYXFPd3JKLU1xVmdNRWtZelZEcTQ5cFA2MkFpUTNIaHhfMjhXNlNlcmpZbzlxMmx2V2NJQ0RYWndjWmlOTlJ0M1FTcmk3T01XdHZPaDRTTjNpNGpPdFFQTTJ4MDFvRXdSSTd1SjBWZlotSzlWZm9nMU1nSkxub0VqNXRlTUpwbHJ5YnU4UU9sV0VHalFDUVV0eGN4Z2RiZ0hVd0g0WXhtMzE5TURXbFc3dXE2cEZvY1JrQjJTYlN6ZE1UbHI0WWJRT25Hb1ZzdzAtdjVNSTlkRlV0WlkzU3hrb19aVUZwSUJIY21kYm5B?oc=5",
+    "date": "2026-11-05",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "소득 따라 건강검진도 차별?…의료급여 노인 검진 사각지대 해소 '시급'",
+    "origin": "헬스경향",
+    "sourceName": "국가건강검진 결과·제도",
+    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE04MUR0YWE2TndSRnpFTkM2LWpxWEhLc0xDcU40LUQ4azVjZHBXaVpLOXk2ZkFVdXlrYzBMd0VUdFZFbTF5dS1sWU1wUFBYaUo3TjFWSnpBdU9IWTFaT3RvVjdoam54bnR4Vng4?oc=5",
+    "date": "2026-11-05",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "“AI 옷 입은 K-건강검진”…중앙아시아 4개국도 주목",
+    "origin": "헬스경향",
+    "sourceName": "국가건강검진 결과·제도",
+    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBHZ1JfeHlnYWE2TW4xMXFNVFBtenB1VG9jMk1oX1Z5M3UxWXlZMURYbnd2XzQ2Vk1LaTg5aWdKWTE3RndyT2kwd0lkcXI5TkhQbU1lQkE3c3FZVEEtSmFRaUlnd2NVdnhlRmw4?oc=5",
+    "date": "2026-11-05",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "GLP-1 Drugs Tied to 31% Lower Diabetes Risk Than Metformin in 256,492 Adults With Prediabetes and Obesity",
+    "origin": "inkl",
+    "sourceName": "美CDC 만성질환·건강행태",
+    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPc3R2UW9UU094dmJYcDdkX1hzN0Z1X2p4bWNoU0tpOUNRdWF2Vlc1U3BkR0F5elk2akhsQm5pY1dWUllyWlJwTkVyZnRIcHpFWnZmaDRSUnltcG9zcmtFUU40UDR6emxpVXJFblpTNDNnLVBMM25sLVFGZ3JQSDctRmppaWktSXFFMjhrblZLRkZrTVNOVlJDb3MxN29RSWwyVDZrY3J3MUZlTk5YaDZvcS1lejdURzVNNEczSk1yOEZpZzBrNWRON1ZR?oc=5",
+    "date": "2026-11-04",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "\"위·수탁 제도 개편, 국가검진 영역 확대는 안 된다\"",
+    "origin": "병원신문",
+    "sourceName": "국가건강검진 결과·제도",
+    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE11d0tWMEhPbnFrUFJtM0YxM3VRSDVUc25jRFVMQnBnQXppTG9JNnB5WlJHMngwOXJnQVBmS2Y4RmJCRWViRXk1Y1p3R1VCa3VmV2d3Tjl0SThWZjRvVWM4QU1rMDNxS0YwU0E?oc=5",
+    "date": "2026-11-04",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "Adults Who Report Not Having a Personal Doctor/Health Care Provider by Chronic Condition Status",
+    "origin": "KFF",
+    "sourceName": "美CDC 만성질환·건강행태",
+    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNdmctM0hPTU0xZlEwY01CQ3BqOVdJelFycFlNclh0MnhMZnRhMTA0REdkZG9qVHcxT3lUY0ZiVjRBU21heWUycEtVbUg4UmxNOE51RV83NEI4NnlMcENGVk1EZHFmcHBjZUlEWkFEdk5qbHlIaFBfQkR2ckZMLWlzRElab1V5Sk5TTGlvX0JhSUF5U002b1dwdWY5dTVzWGVVSGpuQ2xJbWRESFdCa1RDU3R6cWVUZDZ4bm1QN2o5TDNyUllsTnh5XzV3OFhpZG1ZdFh0RmlXNVVOdw?oc=5",
+    "date": "2026-11-03",
+    "via": "뉴스검색"
+   }
+  ],
+  "climate": [
+   {
+    "title": "When extreme heat becomes a pregnancy risk",
+    "origin": "Unitaid",
+    "sourceName": "WHO 기후변화와 건강",
+    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBGTl9aYURvQ1V3VUR4ZmhYeDE0b01YMjd4Zm1Qd2t2WVI2ZzVkdE8yM0ZyT0pSTVFzeTJiRTFNak13amdxVlYxanphQ3BwOC1ZNjZiT1pFSEg0c2xxcXJtcXY2MXdsNmJoWHdVOGdLUTEyUGtJNE5NZzIzSTZRUQ?oc=5",
     "date": "2026-11-06",
-    "via": "기관 RSS"
+    "via": "뉴스검색"
+   },
+   {
+    "title": "Marine Heatwaves Are Key to Tracking Climate Change",
+    "origin": "World Meteorological Organization WMO",
+    "sourceName": "세계기상기구(WMO) 폭염·극한기후",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNF93ZF9zVldsTFM3VTZKQXdONzJ1QmFDbDVPLTZ4OWhnMjkwTHlGUGM1VWFYVzNWNERva2N6MGZtM01OWUN3UUtLWWFEcHJfRXlxdXBVVTBKbXNwVmNueTJuTnlraGRLOFBCYUdlQmZPRzhoQlR4OVY4aUtEd05GSXhOQTM1VS1JdEJSLTVoLXktOE5hZGZSejZ1Vl8?oc=5",
+    "date": "2026-11-06",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "‘감기’는 노래로, ‘한파’는 대비로! 기상청, 이기찬과 한파 피해 예방 캠페인 전개",
+    "origin": "",
+    "sourceName": "기상청 보도자료 (월별·계절 기후특성)",
+    "link": "https://www.kma.go.kr/kma/news/press_01.jsp?bid=press&mode=view&num=1194766",
+    "date": "2026-11-06",
+    "via": "기관 페이지"
+   },
+   {
+    "title": "Up to 74M Filipinos could face dangerous heat by 2050s: Why health is where climate becomes personal",
+    "origin": "GMA Network",
+    "sourceName": "WHO 기후변화와 건강",
+    "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQTFdEaVFwd3A1aXRBRi0tZ2FRSkowWjhkYlhKcGxMazFzcFktNngxWlRDaXhfeXN6aGMtdzVXdkoyTWRmaElIbUlXdDlaRVNhRzltM3ZXd1VKWS1OUVV2Y0RLZ3p6UGdoM1pSdXJPX1BWVmVyRXpURENlMjgzM0tDbXpJWXJQV3Nfa0pyWTNud2Vfb0lEeENsYmc1VnlDV05WcVI4dndLdXp4cHpHYnBLZUxrVndvVnJTYmZkWURuQ0J6U2RHY2ZJbjVnU1NtVUhrdzZmU29nbDFBbDk2aU1uTExYSWpUZWs0R1pYeGlHMHZZeHd6bFVKTnNvONIBgAJBVV95cUxOamE2UGJibldWeWFQVHhhU2REVnVhUGVHR3NWUGZTQjJmRGtySmtiMEo5UFZLazl3a1ZvUUhGckh2UXJHODVOcXM0TDhzbkRUcXJUejFLNTNmdkl5WUlINjBSVW8wS0hUMEIzUS1fbS1MZnh6Q1Y3UmF4ZDZpMm92ekR4bEhpcG03cGNsSGUyUFJZcHQwQnYtWnNrdmdhaHR6NDZBX2J4TGprbW5rV3BEbW9LYlJobjNlV3MwMmxuTmFTVDhzUFN1N2ttUldBbmtpZVMxYVE3NEZEYzBSRzFLZzhqaG00cFJxQloyWHMxSnB5R2tlaTgyUlNPTTNULVMz?oc=5",
+    "date": "2026-11-05",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "Scientists Unite to Better Understand North Pacific Ocean Extremes",
+    "origin": "World Meteorological Organization WMO",
+    "sourceName": "세계기상기구(WMO) 폭염·극한기후",
+    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOVldKUFBaMzlCMVpZVmtzOVRGTFc3Q3d2Y05zMy1LY1hRODdQQUNFdEVrR2Y2aWdGdE9jdUY0T3FuMFNMTW54RVJPaTBXUENWWUo5Ml94ZVB1WExWTENRakpNNktkMzdLbE9XQjh6Z0tLaWVVOU5xcWVXeFJaa2VORER6VER6T3ZLYjBOcUN2b2NmY0IxMzczbTVZWlhTNnVsZFNnc2hGOGlEanNkTHlUMlpYYXdUUVFrdjU1aDVtQnpaUnNOeDZwd3U4RjFFMlR5bmRBcg?oc=5",
+    "date": "2026-11-05",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "Copernicus: Warmest October on record with 2026 virtually certain to exceed 1.5°C",
+    "origin": "",
+    "sourceName": "코페르니쿠스 기후변화서비스(C3S) 월간 기후 보도자료",
+    "link": "https://climate.copernicus.eu/copernicus-warmest-october-record-2026-virtually-certain-exceed-15degc",
+    "date": "2026-11-05",
+    "via": "기관 페이지"
+   },
+   {
+    "title": "Climate change and health: Doctor explains how extreme weather increases the risk of infections, respiratory problems and anxiety | Health",
+    "origin": "Hindustan Times",
+    "sourceName": "WHO 기후변화와 건강",
+    "link": "https://news.google.com/rss/articles/CBMiogJBVV95cUxNbkU3YUM0ZVlsT1JWaFNGWEtiR3VfS2hBbjBjZGhaVHplNS04NW54dUtoRjY4MlFOR0dDNjFzQVRNbF9UZmRITjdMZV9QTEFYSTF4aUhZSF9VWC1Ld0lUc2ttRGJhRWo4QlRMYjBpZk5sRVBlWXhZRWdRY2ZBTGk0U3JxQWdrZVVEVXlJajhLaFo1WFlTaUlhLUJrRGtWS0ludnlIT043alZUOWZaRUdpaS1VVDdabmJOWndqbXpWMXM5VzUtYUtRTjZRYnFDaGZUZVdfOHpna09HWWNCaHl0RDU2TTdONFRET29RUGJEVHVsX1VQV2hDVDhxVEp5TFQ3NUtsdzFLb2puNUhyTUNrYU1oaTBvbkNlNi1TM1VLd1FrUdIBpwJBVV95cUxPLWI0NHJ2b1lINHZDR25ROUoyQW5UakNEZE9wZUdSNDJ4NDd5Vi1NUU9UeE94RXh1aHJSeDZPMG5BS29ZSW9qN1lOdzFUVktVRl9hOUFvd2tuYkZrbWZGU0ZuTmFzMjN0cUpDcnJ1cXhENk4wRkYxWmZjZnVvQXF2dGtYWFNoUHhzNGIzMXlNX1FqR0ZCZUczdXQ2T0JqblFQeVhoSEM5X2RaempWazB6QmlNTktxUFFmazNZNm1YTWFoTnRxbE5rX0w0ZXVpeWVjV1pnc2lOc0hzeThRTkxoejliYVAzcWlIaUJ0QVFFbEstY3ZncEl4QU5PXzE5VE9sV0p1QmRlVnczU3dMOHJhbnJmcWx0cUdBLS1HNmxNSjI0MEZOZ2dr?oc=5",
+    "date": "2026-11-04",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "[2026년 10월 기후특성] 변동 컸던 10월, 상순 건조 → 중순 이상고온 → 하순 잦은 강수",
+    "origin": "",
+    "sourceName": "기상청 보도자료 (월별·계절 기후특성)",
+    "link": "https://www.kma.go.kr/kma/news/press_01.jsp?bid=press&mode=view&num=1194764",
+    "date": "2026-11-04",
+    "via": "기관 페이지"
+   },
+   {
+    "title": "Global benefits and costs of prioritized actions on climate change and health: technical report",
+    "origin": "WHO 발간물",
+    "sourceName": "WHO 발간물: 기후·폭염·대기질",
+    "link": "https://www.who.int/publications/i/item/9789240124813",
+    "date": "2026-11-04",
+    "via": "WHO 공식"
+   },
+   {
+    "title": "European summer 'deadliest' for heatwaves",
+    "origin": "The Ecologist",
+    "sourceName": "WHO 기후변화와 건강",
+    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBGeTlRdUllMC1WOHk3eHRHMFhnS1ZWNXpIYUtTTjBlR1pyc3NsZ21lS1FZMHpKdWwtaW5Ld0pyMTBVY0V2UngzV2loMzhOZkJjYnJoR2ZuMTRIZE11c19tMS14OWs1aUtYVnh2ZFd4NzRFNEJoRV9ZRmFjTUI?oc=5",
+    "date": "2026-11-03",
+    "via": "뉴스검색"
+   }
+  ],
+  "injury": [
+   {
+    "title": "10대 중독손상 90.7%가 치료약물 원인…중학생 오남용 예방교육 실시",
+    "origin": "헬스경향",
+    "sourceName": "질병관리청 보도자료 (손상·안전)",
+    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9ING9UWVVoV1RiVHkwcTBFWHpHTVVOeU4ycjhvNGNycDQyNGx0RmRoWEQ1Y2xQLWFSWmJpSDU0aklXR0liVlUzUHVTYnk2aWNIRmtUU0dtUUpsY0JLcV9hNVZLaVZOQWU5TjVF?oc=5",
+    "date": "2026-11-06",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "중앙손상관리센터, 중학생 347명에 의약품 오남용 예방교육",
+    "origin": "메디포뉴스",
+    "sourceName": "질병관리청 보도자료 (손상·안전)",
+    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1ITlk1VWo5V0ZmdndtUWVkNV9MYjFUcUlEdzhRbDJvRHpPOGtnS0piN1NMOHZPTGxSakl4TUgtbVpnbE9CQXpPWFYtNDN5TFlLN1dnRmhSOFhudDRNLVBpNVpQZGE?oc=5",
+    "date": "2026-11-06",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "중앙손상관리센터, 청소년 의약품 오남용 예방교육 진행",
+    "origin": "헬스미디어뉴스",
+    "sourceName": "질병관리청 보도자료 (손상·안전)",
+    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5QZnpsTzJ5YXltX1Jhc2F1aWRaNVNqUXZpTUhTT2VTYnh2aW53cVRDUDJmYW1Xa0JkTF9fS0s3REo1OGlNMHpwUWJHcWpxaU4wSGxkTGFnTE9KYXdycEZDNWJac0E5c0hROVlWZC1peGxPQQ?oc=5",
+    "date": "2026-11-06",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "「손상예방과 건강한 사회」 2026년 3호 발간",
+    "origin": "",
+    "sourceName": "질병관리청 「손상예방과 건강한 사회」 (계간)",
+    "link": "https://www.kdca.go.kr/injury/disemg/2026/09/index.html",
+    "date": "2026-11-06",
+    "via": "기관 페이지"
+   },
+   {
+    "title": "「손상예방과 건강한 사회」 2026년 2호 발간",
+    "origin": "",
+    "sourceName": "질병관리청 「손상예방과 건강한 사회」 (계간)",
+    "link": "https://www.kdca.go.kr/injury/disemg/2026/06/index.html",
+    "date": "2026-11-06",
+    "via": "기관 페이지"
+   },
+   {
+    "title": "소방청, 119소방안전 활동 상황",
+    "origin": "세이프투데이",
+    "sourceName": "소방청 119구급·구조 통계",
+    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE85LU5FOVF2VGllZWU1eUNWWnNvWktjYnMzZ29Bc0VjTVN3TFdrcWZpbmlLTDRQZGd4REJtQUp0anptN3JXbUpEV0V6S05qaDY5WExmVW9lX2RUNzVnT01ZOXp3TWtuWFBxanfSAW5BVV95cUxOcFd2a3lGNFRyOWx3TEhqM1VZTlBfUklkVWczUy05VUNGU2lkdjhObGhQRFZaNzBqUkNlcmh1c3cxenppMHYxMG5aZ0NZdF9BUW1wTldfYTRCcmR5cGhMdlNKVllyZU4tUnMydUstQQ?oc=5",
+    "date": "2026-11-05",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "Blood Sugar Test Lancet: FDA Classes, CDC Rules",
+    "origin": "CASRAI",
+    "sourceName": "美CDC 손상센터 (NCIPC·WISQARS)",
+    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9WRGVERUhaWFM4R2RTdV9xU3REV0dDdmNMb1ZKaWI2ZGlBeXBwdkNtYlM5QWd1ZUdJOGsxZV9lbGZITXF3ZEh4dnJnei0zWF8tbkxWSG04bWxYY0tFSUE?oc=5",
+    "date": "2026-11-04",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "질병관리청, ‘2026년 국가손상예방의 날’ 기념행사 개최 > 뉴스",
+    "origin": "한의신문",
+    "sourceName": "질병관리청 보도자료 (손상·안전)",
+    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBqQlo4SUs5WTlBamVFSk1obnVlWjI1R2hIWFgtMDNmX0E2aEZocU5nR2QxX2NZSG5EbFNnckZTN2NaYUwtMTFTdVp6OE9iaTJJc0VILWlKSUViMEhtRlVLeGF1QjdYYTJmdmxTTVVWTmU0Zw?oc=5",
+    "date": "2026-11-03",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "“아빠 일어나요”…학교서 배운 CPR로 심정지 아버지 살린 중학생 아들",
+    "origin": "경기일보",
+    "sourceName": "질병관리청 보도자료 (급성심장정지)",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE53T0ZkekhZQnpNQ3NrSkZJUFdWVDJwOUZkX1lDSVlDcXkzWVRpOUhsRGxqcmx5eE53YmZ6OTZNOTBsWE15dnZMMmthZkNTSGVIS0EtRk9RTmRYUXc?oc=5",
+    "date": "2026-11-03",
+    "via": "뉴스검색"
+   },
+   {
+    "title": "“심정지 아빠 살렸다”…중학생 아들이 CPR로 '7분 골든타임' 벌어",
+    "origin": "전자신문",
+    "sourceName": "질병관리청 보도자료 (급성심장정지)",
+    "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBwcUFzNEotMEhVQ3BucXZ2TkRMRXJiQUEzV3FHekZHWFNzcUZQM1BjQmdFalhDUjhldGdoWnlSWG53SFFMTDVNTENPTXFIUQ?oc=5",
+    "date": "2026-11-03",
+    "via": "뉴스검색"
    }
   ],
   "phsm": [
@@ -133,14 +379,6 @@
     "via": "기관 RSS"
    },
    {
-    "title": "한양대병원, 유행성 감염병 대응 도상훈련 실시...훈련 결과 표준메뉴얼에 반영",
-    "origin": "라포르시안",
-    "sourceName": "국내 대응체계·매뉴얼 논의",
-    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9ZNFNlV2FDTGFBUTJveTl0NC15MlFLT0ZlbVZmcng5NWZWZlR5Uk5vcUlTcF9qck5qNGEwc1Mtbk5yRXJ1aXBNeUtMdjlzQ2FCd2JqaGsyejF1OHE2eW95dWhNSmhSN1hhbWFHeUln?oc=5",
-    "date": "2026-11-04",
-    "via": "뉴스검색"
-   },
-   {
     "title": "UKHSA launches human biomonitoring study",
     "origin": "",
     "sourceName": "영국 UKHSA 발표·근거자료",
@@ -163,252 +401,14 @@
     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBkOFphWmFfYWtCazh3SExqdUpmbUNleGVuTFdBR0hJQ3ZVM1IyWmNieWpicm9SWGJ5bE1LRmZuNHp4c3QyNVlCNWs0S2J2d1pfN0VZX0Y2U3pWT3JRRXFQV3g0X19nN0R0Qnd6WXpBa3hoelBqVW9fbzh4VTlSemM?oc=5",
     "date": "2026-11-03",
     "via": "뉴스검색"
-   }
-  ],
-  "chronic": [
-   {
-    "title": "고혈압‧당뇨병 등 만성질환 관리, 만성질환 통합관리센터로 전국 단계적 확대(11.5.목)",
-    "origin": "",
-    "sourceName": "질병관리청 보도자료 (만성질환·건강통계)",
-    "link": "https://www.kdca.go.kr/bbs/kdca/42/313366/artclView.do",
-    "date": "2026-11-05",
-    "via": "기관 페이지"
    },
    {
-    "title": "고혈압‧당뇨병 등 만성질환 관리, 만성질환 통합관리센터로 확대 개편",
-    "origin": "헬스미디어뉴스",
-    "sourceName": "국내 만성질환 관리 정책",
-    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5heUhwdXZJY1hadVY1VTFvMy14eVB2UDRZZWt2RU1hX0s1ZlAySjN3d3RYblRuT1N2YUpGRXFER1Jib3ZEMFJCem8wZDRIWm9ZbjJxQjIwaEJZNF9PYzZPMndQUW52UWdVWTN5MHlLVVA4dw?oc=5",
-    "date": "2026-11-05",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "고당센터, 2028년 ‘만성질환 통합관리센터’ 전면 개편",
-    "origin": "간호사신문",
-    "sourceName": "국내 만성질환 관리 정책",
-    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1RaHRVVmNTaDRJTXFQdDZpR3h5Z0JrLTFnalBTQnlWWVFyRmUxQldJeXRLSEJWYlgwM2UwRGk4N2YyUHBUZ2F4SlM4N2VQdVhGVTBSeW55S0w0eXZHU3ZNNGZ2eTMtZUwzNEhhV0R3?oc=5",
-    "date": "2026-11-05",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "고혈압·당뇨병 등록교육센터, 2028년 통합관리센터 전환...기존 서비스 유지",
-    "origin": "의학신문",
-    "sourceName": "국내 만성질환 관리 정책",
-    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5vZXhDNTB4Rmp3bkoteXJWcWZta1BZMmdScUVERnQ5VXJ3czQtRUVZV2pmS1FhTGpueU50NWlHUGJlQU5KTnVTMTRwOXZoY052Z0t0bjNHUWM4YVRUSXZqM3FDSVI3a251aVE?oc=5",
-    "date": "2026-11-05",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "New 2026 ACC Expert Consensus Decision Pathway and 2025 AHA/ACC Hypertension Guideline Support the Role of Chlorthalidone in Resistant Hypertension",
-    "origin": "PR Newswire",
-    "sourceName": "미국 국립보건통계센터(NCHS)",
-    "link": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxQM2o5eC1UNXNhR0lXUzlBNndOblI5eW1VNFpJNWhrWVFoMVhBMUR5TzRJekIxazdUSzZCT0p0TnBFQnhCYXFPd3JKLU1xVmdNRWtZelZEcTQ5cFA2MkFpUTNIaHhfMjhXNlNlcmpZbzlxMmx2V2NJQ0RYWndjWmlOTlJ0M1FTcmk3T01XdHZPaDRTTjNpNGpPdFFQTTJ4MDFvRXdSSTd1SjBWZlotSzlWZm9nMU1nSkxub0VqNXRlTUpwbHJ5YnU4UU9sV0VHalFDUVV0eGN4Z2RiZ0hVd0g0WXhtMzE5TURXbFc3dXE2cEZvY1JrQjJTYlN6ZE1UbHI0WWJRT25Hb1ZzdzAtdjVNSTlkRlV0WlkzU3hrb19aVUZwSUJIY21kYm5B?oc=5",
-    "date": "2026-11-05",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "소득 따라 건강검진도 차별?…의료급여 노인 검진 사각지대 해소 '시급'",
-    "origin": "헬스경향",
-    "sourceName": "국가건강검진 결과·제도",
-    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE04MUR0YWE2TndSRnpFTkM2LWpxWEhLc0xDcU40LUQ4azVjZHBXaVpLOXk2ZkFVdXlrYzBMd0VUdFZFbTF5dS1sWU1wUFBYaUo3TjFWSnpBdU9IWTFaT3RvVjdoam54bnR4Vng4?oc=5",
-    "date": "2026-11-05",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "“AI 옷 입은 K-건강검진”…중앙아시아 4개국도 주목",
-    "origin": "헬스경향",
-    "sourceName": "국가건강검진 결과·제도",
-    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBHZ1JfeHlnYWE2TW4xMXFNVFBtenB1VG9jMk1oX1Z5M3UxWXlZMURYbnd2XzQ2Vk1LaTg5aWdKWTE3RndyT2kwd0lkcXI5TkhQbU1lQkE3c3FZVEEtSmFRaUlnd2NVdnhlRmw4?oc=5",
-    "date": "2026-11-05",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "\"위·수탁 제도 개편, 국가검진 영역 확대는 안 된다\"",
-    "origin": "병원신문",
-    "sourceName": "국가건강검진 결과·제도",
-    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE11d0tWMEhPbnFrUFJtM0YxM3VRSDVUc25jRFVMQnBnQXppTG9JNnB5WlJHMngwOXJnQVBmS2Y4RmJCRWViRXk1Y1p3R1VCa3VmV2d3Tjl0SThWZjRvVWM4QU1rMDNxS0YwU0E?oc=5",
-    "date": "2026-11-04",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "한국건강관리협회, 중앙아시아 4개국에 'AI 건강검진 모델' 공유",
-    "origin": "LG헬로비전",
-    "sourceName": "국가건강검진 결과·제도",
-    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBJM1hZRlhTOVZObTlCV0pfTnY5YkQ1aTZEVFVvQmVlZUxOZzFkcmUyWm0wdW1EOWtKTFBmclNDSUhFV2NZd1BVcU1PazdtSDFkWGlxWjR3V3pSNW1qQUpTWHlrU2ZUX2lRWTZPbFhiZDliMVliSFHSAXZBVV95cUxQSTNYWUZYUzlWTm05QldKX052OWJENWk2RFRVb0JlZWVMTmcxZHJlMlptMHVtRDlrSkxQZnJTQ0lIRVdjWXdQVXFNT2s3bUgxZFhpcVo0d1d6UjVtakFKU1h5a1NmVF9pUVk2T2xYYmQ5YjFZYkhR?oc=5",
-    "date": "2026-11-04",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "Adults Who Report Not Having a Personal Doctor/Health Care Provider by Chronic Condition Status",
-    "origin": "KFF",
-    "sourceName": "美CDC 만성질환·건강행태",
-    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNdmctM0hPTU0xZlEwY01CQ3BqOVdJelFycFlNclh0MnhMZnRhMTA0REdkZG9qVHcxT3lUY0ZiVjRBU21heWUycEtVbUg4UmxNOE51RV83NEI4NnlMcENGVk1EZHFmcHBjZUlEWkFEdk5qbHlIaFBfQkR2ckZMLWlzRElab1V5Sk5TTGlvX0JhSUF5U002b1dwdWY5dTVzWGVVSGpuQ2xJbWRESFdCa1RDU3R6cWVUZDZ4bm1QN2o5TDNyUllsTnh5XzV3OFhpZG1ZdFh0RmlXNVVOdw?oc=5",
+    "title": "NCDC Clarifies ₦10bn Emergency Fund, Says Money Was Not Meant for Ebola Alone",
+    "origin": "BarristerNG.com",
+    "sourceName": "국제 대비태세 감시(GPMB 등)",
+    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQYnBDRW41SF9BTmF3MHdqbGVuLThpYURuZU1QYmtZSUlFd25MZU5KLUg4YkQtVlNqdFZweWQyaG1tZFBPLUdlS2N6MENVTWMtNDVXenNKY0JHd2dldU02MTRXX3k2cjFMUFpVWEVIc2QyTzl2NzZOWUwwQWozUkVlcUx0bUpTV0ViOUNDaS1fcEhpdnVqemdyQWFuTW5PYkFoRkRhMFBYSTZOaTFRNkE?oc=5",
     "date": "2026-11-03",
     "via": "뉴스검색"
-   }
-  ],
-  "climate": [
-   {
-    "title": "Up to 74M Filipinos could face dangerous heat by 2050s: Why health is where climate becomes personal",
-    "origin": "GMA Network",
-    "sourceName": "WHO 기후변화와 건강",
-    "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQTFdEaVFwd3A1aXRBRi0tZ2FRSkowWjhkYlhKcGxMazFzcFktNngxWlRDaXhfeXN6aGMtdzVXdkoyTWRmaElIbUlXdDlaRVNhRzltM3ZXd1VKWS1OUVV2Y0RLZ3p6UGdoM1pSdXJPX1BWVmVyRXpURENlMjgzM0tDbXpJWXJQV3Nfa0pyWTNud2Vfb0lEeENsYmc1VnlDV05WcVI4dndLdXp4cHpHYnBLZUxrVndvVnJTYmZkWURuQ0J6U2RHY2ZJbjVnU1NtVUhrdzZmU29nbDFBbDk2aU1uTExYSWpUZWs0R1pYeGlHMHZZeHd6bFVKTnNvONIBgAJBVV95cUxOamE2UGJibldWeWFQVHhhU2REVnVhUGVHR3NWUGZTQjJmRGtySmtiMEo5UFZLazl3a1ZvUUhGckh2UXJHODVOcXM0TDhzbkRUcXJUejFLNTNmdkl5WUlINjBSVW8wS0hUMEIzUS1fbS1MZnh6Q1Y3UmF4ZDZpMm92ekR4bEhpcG03cGNsSGUyUFJZcHQwQnYtWnNrdmdhaHR6NDZBX2J4TGprbW5rV3BEbW9LYlJobjNlV3MwMmxuTmFTVDhzUFN1N2ttUldBbmtpZVMxYVE3NEZEYzBSRzFLZzhqaG00cFJxQloyWHMxSnB5R2tlaTgyUlNPTTNULVMz?oc=5",
-    "date": "2026-11-05",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "Climate change and health: Doctor explains how extreme weather increases the risk of infections, respiratory problems and anxiety | Health",
-    "origin": "Hindustan Times",
-    "sourceName": "WHO 기후변화와 건강",
-    "link": "https://news.google.com/rss/articles/CBMiogJBVV95cUxNbkU3YUM0ZVlsT1JWaFNGWEtiR3VfS2hBbjBjZGhaVHplNS04NW54dUtoRjY4MlFOR0dDNjFzQVRNbF9UZmRITjdMZV9QTEFYSTF4aUhZSF9VWC1Ld0lUc2ttRGJhRWo4QlRMYjBpZk5sRVBlWXhZRWdRY2ZBTGk0U3JxQWdrZVVEVXlJajhLaFo1WFlTaUlhLUJrRGtWS0ludnlIT043alZUOWZaRUdpaS1VVDdabmJOWndqbXpWMXM5VzUtYUtRTjZRYnFDaGZUZVdfOHpna09HWWNCaHl0RDU2TTdONFRET29RUGJEVHVsX1VQV2hDVDhxVEp5TFQ3NUtsdzFLb2puNUhyTUNrYU1oaTBvbkNlNi1TM1VLd1FrUdIBpwJBVV95cUxPLWI0NHJ2b1lINHZDR25ROUoyQW5UakNEZE9wZUdSNDJ4NDd5Vi1NUU9UeE94RXh1aHJSeDZPMG5BS29ZSW9qN1lOdzFUVktVRl9hOUFvd2tuYkZrbWZGU0ZuTmFzMjN0cUpDcnJ1cXhENk4wRkYxWmZjZnVvQXF2dGtYWFNoUHhzNGIzMXlNX1FqR0ZCZUczdXQ2T0JqblFQeVhoSEM5X2RaempWazB6QmlNTktxUFFmazNZNm1YTWFoTnRxbE5rX0w0ZXVpeWVjV1pnc2lOc0hzeThRTkxoejliYVAzcWlIaUJ0QVFFbEstY3ZncEl4QU5PXzE5VE9sV0p1QmRlVnczU3dMOHJhbnJmcWx0cUdBLS1HNmxNSjI0MEZOZ2dr?oc=5",
-    "date": "2026-11-04",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "[2026년 10월 기후특성] 변동 컸던 10월, 상순 건조 → 중순 이상고온 → 하순 잦은 강수",
-    "origin": "",
-    "sourceName": "기상청 보도자료 (월별·계절 기후특성)",
-    "link": "https://www.kma.go.kr/kma/news/press_01.jsp?bid=press&mode=view&num=1194764",
-    "date": "2026-11-04",
-    "via": "기관 페이지"
-   },
-   {
-    "title": "Global benefits and costs of prioritized actions on climate change and health: technical report",
-    "origin": "WHO 발간물",
-    "sourceName": "WHO 발간물: 기후·폭염·대기질",
-    "link": "https://www.who.int/publications/i/item/9789240124813",
-    "date": "2026-11-04",
-    "via": "WHO 공식"
-   },
-   {
-    "title": "European summer 'deadliest' for heatwaves",
-    "origin": "The Ecologist",
-    "sourceName": "WHO 기후변화와 건강",
-    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBGeTlRdUllMC1WOHk3eHRHMFhnS1ZWNXpIYUtTTjBlR1pyc3NsZ21lS1FZMHpKdWwtaW5Ld0pyMTBVY0V2UngzV2loMzhOZkJjYnJoR2ZuMTRIZE11c19tMS14OWs1aUtYVnh2ZFd4NzRFNEJoRV9ZRmFjTUI?oc=5",
-    "date": "2026-11-03",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "Climate Action from Geneva to Antalya | UN Climate Change Conference COP31",
-    "origin": "Geneva Environment Network",
-    "sourceName": "세계기상기구(WMO) 폭염·극한기후",
-    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPN2ZQbU16eDVFTGpGdmJwZkFmWnhiR1NnZWpXVkItQWJIeG1lZlVuQXFhUUI0QmctZTFOdFRtM0hnUks2TVRYYmk4ZGwtaHFCbUljckNnTTY3MUxQc29IZUo3VkhLUGo3eXRIQjA5N2pSeG1DM2VNZmw0WV90REl2SW53dHdXTjl4c3FrR3VuTTgtcDE1dE5zczN4RUFOa2k4alpxNjVKSzFJdE5iSm5TR0p5dXNia25kd3pibFk3RWdRRW1yRXVQZ0NBd08?oc=5",
-    "date": "2026-11-03",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "온열질환자 줄었는데 사망자는 왜 늘었나...\"집중된 폭염 영향 가능성↑\"",
-    "origin": ":: 위즈경제 ::",
-    "sourceName": "국내 온열질환 응급실감시체계",
-    "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1MSFZPeGtTWkRESGZwYmRuVm5EOVNIU0xYQ2pxczZvekN3ZFExdWMyeXVtRWF2Vi1qN090R3NMV0JoQWlSTHp3UVU4SkFhVy1SZmpBaw?oc=5",
-    "date": "2026-11-03",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "ECMWF and the Copernicus Climate and Atmosphere services at COP31 in Antalya",
-    "origin": "",
-    "sourceName": "코페르니쿠스 기후변화서비스(C3S) 월간 기후 보도자료",
-    "link": "https://climate.copernicus.eu/ecmwf-and-copernicus-climate-and-atmosphere-services-cop31-antalya-0",
-    "date": "2026-11-03",
-    "via": "기관 페이지"
-   },
-   {
-    "title": "Organizational barriers to addressing climate-sensitive diseases in the Global South: A case study of Peru's dengue response",
-    "origin": "Global public health · Espinoza MI.",
-    "sourceName": "논문: 기후변화와 매개체 감염병",
-    "link": "https://doi.org/10.1080/17441692.2026.2757323",
-    "date": "2026-11-03",
-    "via": "논문 검색"
-   },
-   {
-    "title": "Assessing policy readiness for climate-informed infectious disease early warning systems in Vietnam: a scoping review and stakeholder consultation",
-    "origin": "Global health action · Pham CT, Nguyen HT, Le HHTC, Bui V, Phung H, Phung D, Chu C.",
-    "sourceName": "리뷰 논문 (분야 종합)",
-    "link": "https://doi.org/10.1080/16549716.2026.2757958",
-    "date": "2026-11-03",
-    "via": "논문 검색"
-   }
-  ],
-  "injury": [
-   {
-    "title": "「손상예방과 건강한 사회」 2026년 3호 발간",
-    "origin": "",
-    "sourceName": "질병관리청 「손상예방과 건강한 사회」 (계간)",
-    "link": "https://www.kdca.go.kr/injury/disemg/2026/09/index.html",
-    "date": "2026-11-05",
-    "via": "기관 페이지"
-   },
-   {
-    "title": "「손상예방과 건강한 사회」 2026년 2호 발간",
-    "origin": "",
-    "sourceName": "질병관리청 「손상예방과 건강한 사회」 (계간)",
-    "link": "https://www.kdca.go.kr/injury/disemg/2026/06/index.html",
-    "date": "2026-11-05",
-    "via": "기관 페이지"
-   },
-   {
-    "title": "소방청, 119소방안전 활동 상황",
-    "origin": "세이프투데이",
-    "sourceName": "소방청 119구급·구조 통계",
-    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE85LU5FOVF2VGllZWU1eUNWWnNvWktjYnMzZ29Bc0VjTVN3TFdrcWZpbmlLTDRQZGd4REJtQUp0anptN3JXbUpEV0V6S05qaDY5WExmVW9lX2RUNzVnT01ZOXp3TWtuWFBxanfSAW5BVV95cUxOcFd2a3lGNFRyOWx3TEhqM1VZTlBfUklkVWczUy05VUNGU2lkdjhObGhQRFZaNzBqUkNlcmh1c3cxenppMHYxMG5aZ0NZdF9BUW1wTldfYTRCcmR5cGhMdlNKVllyZU4tUnMydUstQQ?oc=5",
-    "date": "2026-11-05",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "질병관리청, ‘2026년 국가손상예방의 날’ 기념행사 개최 > 뉴스",
-    "origin": "한의신문",
-    "sourceName": "질병관리청 보도자료 (손상·안전)",
-    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBqQlo4SUs5WTlBamVFSk1obnVlWjI1R2hIWFgtMDNmX0E2aEZocU5nR2QxX2NZSG5EbFNnckZTN2NaYUwtMTFTdVp6OE9iaTJJc0VILWlKSUViMEhtRlVLeGF1QjdYYTJmdmxTTVVWTmU0Zw?oc=5",
-    "date": "2026-11-03",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "“아빠 일어나요”…학교서 배운 CPR로 심정지 아버지 살린 중학생 아들",
-    "origin": "경기일보",
-    "sourceName": "질병관리청 보도자료 (급성심장정지)",
-    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE53T0ZkekhZQnpNQ3NrSkZJUFdWVDJwOUZkX1lDSVlDcXkzWVRpOUhsRGxqcmx5eE53YmZ6OTZNOTBsWE15dnZMMmthZkNTSGVIS0EtRk9RTmRYUXc?oc=5",
-    "date": "2026-11-03",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "아빠 심장멎자 배운대로 움직였다…중학생子, 7분간 심폐소생술로 살려",
-    "origin": "매일신문",
-    "sourceName": "질병관리청 보도자료 (급성심장정지)",
-    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5WaXBQS2dFbVFsQ2p6VV9Nc25YQVhjZmRmNVhFT3VRdU5rVHhjLTVvWmhKZmNJbUtfWE1NeVNFVXhDNjhkNWZVbDhHMXlMaTZxQ2tNRXZqRzR2VjZYWWdxZHFB?oc=5",
-    "date": "2026-11-03",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "갑자기 쓰러진 아버지…중학생 아들이 심폐소생술로 살려",
-    "origin": "연합뉴스",
-    "sourceName": "질병관리청 보도자료 (급성심장정지)",
-    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9LMWREM1ZLbG5nZmI5TEtFaDBFOFRxUjFTUFhCMmN0QjJzb3pLODdSMzZnY3pIcGViUjFIX1EwRHNkdkY0QWZsQ3lLYTdnUkI5NjZsUFJYSjkyTWJuY09UWdIBYEFVX3lxTE9LMWREM1ZLbG5nZmI5TEtFaDBFOFRxUjFTUFhCMmN0QjJzb3pLODdSMzZnY3pIcGViUjFIX1EwRHNkdkY0QWZsQ3lLYTdnUkI5NjZsUFJYSjkyTWJuY09UWQ?oc=5",
-    "date": "2026-11-03",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "[이슈 기획] 하루 39명 스스로 목숨 끊는 한국.. 정부·민간, 자살예방에 힘 모은다",
-    "origin": "한국재난안전뉴스",
-    "sourceName": "자살·자해 예방 통계 (보건복지부·한국생명존중희망재단)",
-    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBFX3l6Y0ZYc2IzTC0yNXJrVjNIMnNfRHl2aE1WakFHQXBXZ2RoZmFnSWZnWDN1Tk9ucXZQdzNNZEFZNllKRWJmOHloNXhDY0ctMU1MU2JVMmUyMElyUUE?oc=5",
-    "date": "2026-11-03",
-    "via": "뉴스검색"
-   },
-   {
-    "title": "Temporal instability in pedestrian injury severity: evidence from school and non-school zones using street-level imagery",
-    "origin": "International journal of injury control and safety promotion · Tamakloe R, Zhang K, Alogaili A, Das S, Kim I.",
-    "sourceName": "논문: 국내 손상 역학·감시",
-    "link": "https://doi.org/10.1080/17457300.2026.2742151",
-    "date": "2026-11-03",
-    "via": "논문 검색"
-   },
-   {
-    "title": "Racial and Ethnic Differences in Pediatric Perioperative Cardiac Arrest Survival",
-    "origin": "Pediatrics · Kitio SAY, Jung S, Gbadegesin S, Yeh J, Nafiu OO.",
-    "sourceName": "논문: 중증외상·응급의료체계",
-    "link": "https://doi.org/10.1542/peds.2026-077013",
-    "date": "2026-11-03",
-    "via": "논문 검색"
    }
   ]
  }
