@@ -1,9 +1,9 @@
 {
  "name": "빵캘",
- "updatedAt": "2026-11-08T01:01:23.803Z",
+ "updatedAt": "2026-11-08T16:29:57.763Z",
  "counts": {
-  "total": 102,
-  "upcoming": 58
+  "total": 104,
+  "upcoming": 60
  },
  "sources": [
   {
@@ -12,7 +12,7 @@
    "ok": true,
    "found": 52,
    "events": 0,
-   "ms": 6146
+   "ms": 4814
   },
   {
    "id": "org-mohw",
@@ -20,7 +20,7 @@
    "ok": true,
    "found": 18,
    "events": 3,
-   "ms": 12744
+   "ms": 10998
   },
   {
    "id": "org-khealth",
@@ -28,15 +28,7 @@
    "ok": true,
    "found": 11,
    "events": 0,
-   "ms": 4855
-  },
-  {
-   "id": "nkis",
-   "name": "NKIS 정책세미나안내",
-   "ok": true,
-   "found": 20,
-   "events": 0,
-   "ms": 23581
+   "ms": 3466
   },
   {
    "id": "org-ncc",
@@ -44,7 +36,15 @@
    "ok": true,
    "found": 4,
    "events": 2,
-   "ms": 6748
+   "ms": 5144
+  },
+  {
+   "id": "nkis",
+   "name": "NKIS 정책세미나안내",
+   "ok": true,
+   "found": 20,
+   "events": 0,
+   "ms": 22248
   },
   {
    "id": "org-nhis",
@@ -52,7 +52,7 @@
    "ok": true,
    "found": 24,
    "events": 0,
-   "ms": 5338
+   "ms": 4228
   },
   {
    "id": "org-hira",
@@ -60,7 +60,7 @@
    "ok": true,
    "found": 12,
    "events": 1,
-   "ms": 5482
+   "ms": 4209
   },
   {
    "id": "org-mfds",
@@ -68,7 +68,7 @@
    "ok": true,
    "found": 16,
    "events": 8,
-   "ms": 24515
+   "ms": 22089
   },
   {
    "id": "org-kihasa",
@@ -76,7 +76,14 @@
    "ok": true,
    "found": 1,
    "events": 1,
-   "ms": 4118
+   "ms": 3042
+  },
+  {
+   "id": "org-neca",
+   "name": "한국보건의료연구원 공지",
+   "ok": false,
+   "error": "HTTP 400",
+   "ms": 6317
   },
   {
    "id": "org-nmc",
@@ -84,22 +91,7 @@
    "ok": true,
    "found": 11,
    "events": 0,
-   "ms": 2190
-  },
-  {
-   "id": "org-neca",
-   "name": "한국보건의료연구원 공지",
-   "ok": false,
-   "error": "HTTP 400",
-   "ms": 7518
-  },
-  {
-   "id": "org-khidi",
-   "name": "한국보건산업진흥원 공지",
-   "ok": true,
-   "found": 19,
-   "events": 3,
-   "ms": 11544
+   "ms": 1609
   },
   {
    "id": "org-nibp",
@@ -107,7 +99,15 @@
    "ok": true,
    "found": 16,
    "events": 0,
-   "ms": 6211
+   "ms": 5068
+  },
+  {
+   "id": "org-khidi",
+   "name": "한국보건산업진흥원 공지",
+   "ok": true,
+   "found": 19,
+   "events": 3,
+   "ms": 11389
   },
   {
    "id": "org-ksepi",
@@ -115,15 +115,7 @@
    "ok": true,
    "found": 10,
    "events": 5,
-   "ms": 5391
-  },
-  {
-   "id": "org-kshpa",
-   "name": "한국보건행정학회 공지",
-   "ok": true,
-   "found": 9,
-   "events": 3,
-   "ms": 8585
+   "ms": 4922
   },
   {
    "id": "org-prevmed",
@@ -131,7 +123,15 @@
    "ok": true,
    "found": 15,
    "events": 3,
-   "ms": 22596
+   "ms": 17276
+  },
+  {
+   "id": "org-kshpa",
+   "name": "한국보건행정학회 공지",
+   "ok": true,
+   "found": 9,
+   "events": 5,
+   "ms": 10454
   },
   {
    "id": "org-kshep",
@@ -139,15 +139,7 @@
    "ok": true,
    "found": 0,
    "events": 0,
-   "ms": 1509
-  },
-  {
-   "id": "org-kspm",
-   "name": "대한공공의학회 공지",
-   "ok": true,
-   "found": 16,
-   "events": 1,
-   "ms": 13524
+   "ms": 1646
   },
   {
    "id": "org-kams",
@@ -155,23 +147,15 @@
    "ok": true,
    "found": 62,
    "events": 62,
-   "ms": 20295
+   "ms": 16413
   },
   {
-   "id": "org-koddi",
-   "name": "한국장애인개발원 공지",
-   "ok": true,
-   "found": 21,
-   "events": 0,
-   "ms": 1916
-  },
-  {
-   "id": "org-cochrane",
-   "name": "한국코크란 공지",
+   "id": "org-kspm",
+   "name": "대한공공의학회 공지",
    "ok": true,
    "found": 16,
-   "events": 0,
-   "ms": 400
+   "events": 1,
+   "ms": 10593
   },
   {
    "id": "org-kosqua",
@@ -179,15 +163,23 @@
    "ok": true,
    "found": 7,
    "events": 4,
-   "ms": 7073
+   "ms": 3943
   },
   {
-   "id": "org-kdca-ilje",
-   "name": "질병관리청 일정",
+   "id": "org-cochrane",
+   "name": "한국코크란 공지",
    "ok": true,
-   "found": 32,
+   "found": 16,
    "events": 0,
-   "ms": 4966
+   "ms": 570
+  },
+  {
+   "id": "org-koddi",
+   "name": "한국장애인개발원 공지",
+   "ok": true,
+   "found": 21,
+   "events": 0,
+   "ms": 2471
   },
   {
    "id": "snu-health",
@@ -195,14 +187,22 @@
    "ok": true,
    "found": 30,
    "events": 24,
-   "ms": 77322
+   "ms": 62415
+  },
+  {
+   "id": "org-kdca-ilje",
+   "name": "질병관리청 일정",
+   "ok": true,
+   "found": 32,
+   "events": 0,
+   "ms": 4028
   },
   {
    "id": "org-kpha",
    "name": "대한보건협회 공지",
    "ok": false,
    "error": "fetch failed",
-   "ms": 25173
+   "ms": 25256
   }
  ],
  "events": [
@@ -1014,6 +1014,22 @@
    "city": "서울"
   },
   {
+   "id": "3c3b54f6048d4e1b",
+   "org": "kshpa",
+   "orgLabel": null,
+   "title": "기획세미나 「일본의 지역포괄케어, 현장에서 본 것과 한국에 가져올 것」 개최 안내",
+   "start": "2026-11-10",
+   "end": "2026-11-10",
+   "startTime": "19:30",
+   "endTime": "21:00",
+   "allDay": false,
+   "place": "Zoom 온라인 세미나",
+   "url": "https://www.kshpa.org/bbs/notice2/1570",
+   "source": "org-kshpa",
+   "collectedAt": "2026-11-08",
+   "online": true
+  },
+  {
    "id": "01b0ebee8304b240",
    "org": "clinic",
    "orgLabel": "대한암학회",
@@ -1624,25 +1640,6 @@
    "city": "서울"
   },
   {
-   "id": "c546dcd0a71f64d2",
-   "org": "kshpa",
-   "orgLabel": null,
-   "title": "2026년 후기학술대회 세부 일정 및 사전등록 안내",
-   "start": "2026-11-26",
-   "end": "2026-11-26",
-   "startTime": "09:30",
-   "endTime": "17:10",
-   "allDay": false,
-   "place": "영남대학교병원 권역호흡기전문질환센터 강당",
-   "url": "https://www.kshpa.org/bbs/notice2/1567",
-   "source": "org-kshpa",
-   "collectedAt": "2026-11-08",
-   "lat": 35.847322,
-   "lng": 128.585045,
-   "geo": "exact",
-   "city": "대구"
-  },
-  {
    "id": "792342176ef98420",
    "org": "clinic",
    "orgLabel": "대한법의학회",
@@ -1938,6 +1935,25 @@
    "geo": "approx"
   },
   {
+   "id": "6c6e2d4da6953867",
+   "org": "kshpa",
+   "orgLabel": null,
+   "title": "2026년 추계 학술대회 개최 안내",
+   "start": "2026-12-11",
+   "end": "2026-12-11",
+   "startTime": "08:50",
+   "endTime": "18:30",
+   "allDay": false,
+   "place": "고려대학교 하나스퀘어 강당, 멀티미디어룸, 전시실",
+   "url": "https://www.kshpa.org/bbs/notice2/1572",
+   "source": "org-kshpa",
+   "collectedAt": "2026-11-08",
+   "lat": 37.588038,
+   "lng": 127.032393,
+   "geo": "exact",
+   "city": "서울"
+  },
+  {
    "id": "8ff4f3feac01e18a",
    "org": "clinic",
    "orgLabel": "대한근골격종양학회",
@@ -1950,6 +1966,25 @@
    "place": "서울대병원 이건희 홀",
    "url": "http://www.kmsts.org/",
    "source": "org-kams",
+   "collectedAt": "2026-11-08",
+   "lat": 37.579118,
+   "lng": 126.998733,
+   "geo": "exact",
+   "city": "서울"
+  },
+  {
+   "id": "fbea75c414f3c1d5",
+   "org": "kshpa",
+   "orgLabel": null,
+   "title": "2026 동계 학술대회 개최 안내",
+   "start": "2026-12-17",
+   "end": "2026-12-17",
+   "startTime": "09:00",
+   "endTime": "18:00",
+   "allDay": false,
+   "place": "서울대학교병원 의학연구혁신센터(CMI) 1층 서성환연구홀",
+   "url": "https://www.kshpa.org/bbs/notice2/1571",
+   "source": "org-kshpa",
    "collectedAt": "2026-11-08",
    "lat": 37.579118,
    "lng": 126.998733,
@@ -2030,9 +2065,9 @@
   }
  ],
  "map": {
-  "mapped": 72,
-  "online": 6,
-  "places": 75,
+  "mapped": 73,
+  "online": 7,
+  "places": 77,
   "geocodedAt": "2026-11-08"
  }
 }
