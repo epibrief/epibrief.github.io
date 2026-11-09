@@ -19,7 +19,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:e0a8ace74b6627f3@bbangcal.epibrief.github.io
-DTSTAMP:20261109T012244Z
+DTSTAMP:20261109T202224Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:[한국보건산업진흥원] 제약바이오 신흥시장(중
@@ -30,21 +30,8 @@ DESCRIPTION:주최: 한국보건산업진흥원\n원문: https://www.kh
 URL:https://www.khidi.or.kr/board/view?linkId=48951911&menuId=MENU00101
 END:VEVENT
 BEGIN:VEVENT
-UID:6a011d6c974448dc@bbangcal.epibrief.github.io
-DTSTAMP:20261109T012244Z
-DTSTART;TZID=Asia/Seoul:20261104T130000
-DTEND;TZID=Asia/Seoul:20261104T181000
-SUMMARY:[한국보건산업진흥원] 2026 강북삼성병원 미래헬
- 스심포지엄
-LOCATION:강북삼성병원 대회의실
-DESCRIPTION:주최: 한국보건산업진흥원\n원문: https://www.kh
- idi.or.kr/board/view?linkId=48952162&menuId=MENU00099\n빵캘: https://
- epibrief.github.io/bbang-calender/
-URL:https://www.khidi.or.kr/board/view?linkId=48952162&menuId=MENU00099
-END:VEVENT
-BEGIN:VEVENT
 UID:d9bb4fdc1fdfafdd@bbangcal.epibrief.github.io
-DTSTAMP:20261109T012244Z
+DTSTAMP:20261109T202224Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261113
 SUMMARY:[한국보건산업진흥원] 한국보건산업진흥원「제
@@ -53,5 +40,18 @@ DESCRIPTION:주최: 한국보건산업진흥원\n원문: https://www.kh
  idi.or.kr/board/view?linkId=48952346&menuId=MENU00100\n빵캘: https://
  epibrief.github.io/bbang-calender/
 URL:https://www.khidi.or.kr/board/view?linkId=48952346&menuId=MENU00100
+END:VEVENT
+BEGIN:VEVENT
+UID:044fa0079d1dbd6f@bbangcal.epibrief.github.io
+DTSTAMP:20261109T202224Z
+DTSTART;TZID=Asia/Seoul:20261204T090000
+DTEND;TZID=Asia/Seoul:20261204T160000
+SUMMARY:[한국보건산업진흥원] 2026 헬스케어이노베이션
+ 포럼(제14회)
+LOCATION:서울 소공동 웨스틴 조선호텔\, 그랜드볼룸
+DESCRIPTION:주최: 한국보건산업진흥원\n원문: https://www.kh
+ idi.or.kr/board/view?linkId=48952488&menuId=MENU00099\n빵캘: https://
+ epibrief.github.io/bbang-calender/
+URL:https://www.khidi.or.kr/board/view?linkId=48952488&menuId=MENU00099
 END:VEVENT
 END:VCALENDAR

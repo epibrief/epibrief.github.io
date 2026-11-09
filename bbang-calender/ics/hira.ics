@@ -18,12 +18,12 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:b87700131416b9e8@bbangcal.epibrief.github.io
-DTSTAMP:20261109T012244Z
+UID:1e34a7399e22cf2e@bbangcal.epibrief.github.io
+DTSTAMP:20261109T202224Z
 DTSTART;TZID=Asia/Seoul:20261113T140000
 DTEND;TZID=Asia/Seoul:20261113T160000
 SUMMARY:[건강보험심사평가원] 검체검사 위·수탁 제도 
- 개편 관련 온라인 설명회 개최 안내
+ 개편 관련 온라인 설명회 개최 안내 (신청기간 연장)
 DESCRIPTION:주최: 건강보험심사평가원\n원문: https://www.hi
  ra.or.kr/bbsDummy.do?pgmid=HIRAA020002000100&brdScnBltNo=4&brdBltNo=123
  36&pageIndex=1&pageIndex2=1\n빵캘: https://epibrief.github.io/bbang-c

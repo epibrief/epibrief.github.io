@@ -19,7 +19,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:39aebf171b731f77@bbangcal.epibrief.github.io
-DTSTAMP:20261109T012244Z
+DTSTAMP:20261109T202224Z
 DTSTART;VALUE=DATE:20260915
 DTEND;VALUE=DATE:20260916
 SUMMARY:[그 밖의 기관] 서울시 중장년 정책포럼 2026
@@ -31,7 +31,7 @@ URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
 END:VEVENT
 BEGIN:VEVENT
 UID:270e86def34b1060@bbangcal.epibrief.github.io
-DTSTAMP:20261109T012244Z
+DTSTAMP:20261109T202224Z
 DTSTART;VALUE=DATE:20260916
 DTEND;VALUE=DATE:20260917
 SUMMARY:[서울대 보건대학원] 효과 검증에서 실제 시행
@@ -46,7 +46,7 @@ URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
 END:VEVENT
 BEGIN:VEVENT
 UID:2b86b8382de4828c@bbangcal.epibrief.github.io
-DTSTAMP:20261109T012244Z
+DTSTAMP:20261109T202224Z
 DTSTART;TZID=Asia/Seoul:20260923T160000
 DTEND;TZID=Asia/Seoul:20260923T173000
 SUMMARY:[그 밖의 기관] 9월 세미나 <보건정책학의 이해: 
@@ -61,7 +61,7 @@ URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
 END:VEVENT
 BEGIN:VEVENT
 UID:8acdee48e3a12e93@bbangcal.epibrief.github.io
-DTSTAMP:20261109T012244Z
+DTSTAMP:20261109T202224Z
 DTSTART;TZID=Asia/Seoul:20260929T140000
 DTEND;TZID=Asia/Seoul:20260929T150000
 SUMMARY:[그 밖의 기관] 2026 통일과나눔 세미나\, 시드니
@@ -76,7 +76,7 @@ URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
 END:VEVENT
 BEGIN:VEVENT
 UID:77927bb0829c4f6a@bbangcal.epibrief.github.io
-DTSTAMP:20261109T012244Z
+DTSTAMP:20261109T202224Z
 DTSTART;VALUE=DATE:20260930
 DTEND;VALUE=DATE:20261001
 SUMMARY:[서울대 보건대학원] 개방 공간 데이터과학과 
@@ -84,13 +84,13 @@ SUMMARY:[서울대 보건대학원] 개방 공간 데이터과학과
 LOCATION:보건대학원 221동 113호
 DESCRIPTION:주최: 서울대 보건대학원\n원문: https://health.s
  nu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pa
- geid=2&uid=5808\n빵캘: https://epibrief.github.io/bbang-calender/
+ geid=3&uid=5808\n빵캘: https://epibrief.github.io/bbang-calender/
 URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
- %B4/?mod=document&pageid=2&uid=5808
+ %B4/?mod=document&pageid=3&uid=5808
 END:VEVENT
 BEGIN:VEVENT
 UID:fa92b522632f0562@bbangcal.epibrief.github.io
-DTSTAMP:20261109T012244Z
+DTSTAMP:20261109T202224Z
 DTSTART;VALUE=DATE:20261007
 DTEND;VALUE=DATE:20261008
 SUMMARY:[서울대 보건대학원] 평창에서 본 의료취약지 
@@ -104,7 +104,7 @@ URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
 END:VEVENT
 BEGIN:VEVENT
 UID:54e3a2da9a2aa48d@bbangcal.epibrief.github.io
-DTSTAMP:20261109T012244Z
+DTSTAMP:20261109T202224Z
 DTSTART;VALUE=DATE:20261014
 DTEND;VALUE=DATE:20261015
 SUMMARY:[서울대 보건대학원] 글로벌 아젠다에서 국가 
@@ -118,7 +118,7 @@ URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
 END:VEVENT
 BEGIN:VEVENT
 UID:d6b3cf248895b6db@bbangcal.epibrief.github.io
-DTSTAMP:20261109T012244Z
+DTSTAMP:20261109T202224Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:[서울대 보건대학원] 한독 공동 워크숍 'Food as Me
@@ -132,21 +132,21 @@ URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
 END:VEVENT
 BEGIN:VEVENT
 UID:f178e695d15fbc47@bbangcal.epibrief.github.io
-DTSTAMP:20261109T012244Z
+DTSTAMP:20261109T202224Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:[서울대 보건대학원] 기후위기 대응 보건 정책
  의 현황과 과제
 LOCATION:보건대학원 221동 113호
 DESCRIPTION:주최: 서울대 보건대학원\n원문: https://health.s
- nu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&ui
- d=5863\n빵캘: https://epibrief.github.io/bbang-calender/
+ nu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&pa
+ geid=2&uid=5863\n빵캘: https://epibrief.github.io/bbang-calender/
 URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
- %B4/?mod=document&uid=5863
+ %B4/?mod=document&pageid=2&uid=5863
 END:VEVENT
 BEGIN:VEVENT
 UID:e0a8ace74b6627f3@bbangcal.epibrief.github.io
-DTSTAMP:20261109T012244Z
+DTSTAMP:20261109T202224Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:[한국보건산업진흥원] 제약바이오 신흥시장(중
@@ -158,7 +158,7 @@ URL:https://www.khidi.or.kr/board/view?linkId=48951911&menuId=MENU00101
 END:VEVENT
 BEGIN:VEVENT
 UID:2327d80840761d8c@bbangcal.epibrief.github.io
-DTSTAMP:20261109T012244Z
+DTSTAMP:20261109T202224Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:[국가생명윤리정책원] 제77회 콜로키움 개최 안내
@@ -171,7 +171,7 @@ URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
 END:VEVENT
 BEGIN:VEVENT
 UID:9dd628608a1050e2@bbangcal.epibrief.github.io
-DTSTAMP:20261109T012244Z
+DTSTAMP:20261109T202224Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:[한국코크란] 치료 체계적문헌고찰 워크숍
@@ -184,7 +184,7 @@ URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
 END:VEVENT
 BEGIN:VEVENT
 UID:6db09ce6807643a6@bbangcal.epibrief.github.io
-DTSTAMP:20261109T012244Z
+DTSTAMP:20261109T202224Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261105
 SUMMARY:[한국보건사회연구원] 제7차 한·일 사회정책 정
@@ -196,21 +196,8 @@ DESCRIPTION:주최: 한국보건사회연구원\n원문: https://www.ki
 URL:https://www.kihasa.re.kr/news/event/view?seq=77455
 END:VEVENT
 BEGIN:VEVENT
-UID:6a011d6c974448dc@bbangcal.epibrief.github.io
-DTSTAMP:20261109T012244Z
-DTSTART;TZID=Asia/Seoul:20261104T130000
-DTEND;TZID=Asia/Seoul:20261104T181000
-SUMMARY:[한국보건산업진흥원] 2026 강북삼성병원 미래헬
- 스심포지엄
-LOCATION:강북삼성병원 대회의실
-DESCRIPTION:주최: 한국보건산업진흥원\n원문: https://www.kh
- idi.or.kr/board/view?linkId=48952162&menuId=MENU00099\n빵캘: https://
- epibrief.github.io/bbang-calender/
-URL:https://www.khidi.or.kr/board/view?linkId=48952162&menuId=MENU00099
-END:VEVENT
-BEGIN:VEVENT
 UID:567a93f65e79bef5@bbangcal.epibrief.github.io
-DTSTAMP:20261109T012244Z
+DTSTAMP:20261109T202224Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:[서울대 보건대학원] 사진으로 말하는 건강: 포
@@ -224,7 +211,7 @@ URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
 END:VEVENT
 BEGIN:VEVENT
 UID:f0e2841be75be41f@bbangcal.epibrief.github.io
-DTSTAMP:20261109T012244Z
+DTSTAMP:20261109T202224Z
 DTSTART;TZID=Asia/Seoul:20261106T100000
 DTEND;TZID=Asia/Seoul:20261106T163000
 SUMMARY:[그 밖의 기관] 회복력 있는 돌봄\, 통합돌봄 네
@@ -240,7 +227,7 @@ URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
 END:VEVENT
 BEGIN:VEVENT
 UID:2bccaede03982dd4@bbangcal.epibrief.github.io
-DTSTAMP:20261109T012244Z
+DTSTAMP:20261109T202224Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261113
 SUMMARY:[그 밖의 기관] 국제보건센터 전문가 초청 강연
@@ -254,7 +241,7 @@ URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
 END:VEVENT
 BEGIN:VEVENT
 UID:d9bb4fdc1fdfafdd@bbangcal.epibrief.github.io
-DTSTAMP:20261109T012244Z
+DTSTAMP:20261109T202224Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261113
 SUMMARY:[한국보건산업진흥원] 한국보건산업진흥원「제
@@ -266,7 +253,7 @@ URL:https://www.khidi.or.kr/board/view?linkId=48952346&menuId=MENU00100
 END:VEVENT
 BEGIN:VEVENT
 UID:ab351c635770eb4b@bbangcal.epibrief.github.io
-DTSTAMP:20261109T012244Z
+DTSTAMP:20261109T202224Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:[그 밖의 기관] 2026년 대한근거기반의학회 하반
@@ -279,8 +266,21 @@ URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
  %B4/?mod=document&pageid=2&uid=5858
 END:VEVENT
 BEGIN:VEVENT
+UID:b6799ffa29712051@bbangcal.epibrief.github.io
+DTSTAMP:20261109T202224Z
+DTSTART;TZID=Asia/Seoul:20261116T140000
+DTEND;TZID=Asia/Seoul:20261116T170000
+SUMMARY:[서울대 보건대학원] 보건통계학 세미나
+LOCATION:서울대학교 보건대학원 221동 110호
+DESCRIPTION:주최: 서울대 보건대학원\n원문: https://health.s
+ nu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3%B4/?mod=document&ui
+ d=5939\n빵캘: https://epibrief.github.io/bbang-calender/
+URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
+ %B4/?mod=document&uid=5939
+END:VEVENT
+BEGIN:VEVENT
 UID:e0f9e883feda39ab@bbangcal.epibrief.github.io
-DTSTAMP:20261109T012244Z
+DTSTAMP:20261109T202224Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261119
 SUMMARY:[서울대 보건대학원] 같은 응급실은 없었다－국
@@ -295,7 +295,7 @@ URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
 END:VEVENT
 BEGIN:VEVENT
 UID:40aee610967eee00@bbangcal.epibrief.github.io
-DTSTAMP:20261109T012244Z
+DTSTAMP:20261109T202224Z
 DTSTART;TZID=Asia/Seoul:20261120T090000
 DTEND;TZID=Asia/Seoul:20261120T164500
 SUMMARY:[그 밖의 기관] 제1회 국립소방병원 소방의학 국
@@ -307,5 +307,18 @@ DESCRIPTION:주최: 그 밖의 기관\n원문: https://health.snu.ac.kr
  빵캘: https://epibrief.github.io/bbang-calender/
 URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
  %B4/?mod=document&uid=5935
+END:VEVENT
+BEGIN:VEVENT
+UID:044fa0079d1dbd6f@bbangcal.epibrief.github.io
+DTSTAMP:20261109T202224Z
+DTSTART;TZID=Asia/Seoul:20261204T090000
+DTEND;TZID=Asia/Seoul:20261204T160000
+SUMMARY:[한국보건산업진흥원] 2026 헬스케어이노베이션
+ 포럼(제14회)
+LOCATION:서울 소공동 웨스틴 조선호텔\, 그랜드볼룸
+DESCRIPTION:주최: 한국보건산업진흥원\n원문: https://www.kh
+ idi.or.kr/board/view?linkId=48952488&menuId=MENU00099\n빵캘: https://
+ epibrief.github.io/bbang-calender/
+URL:https://www.khidi.or.kr/board/view?linkId=48952488&menuId=MENU00099
 END:VEVENT
 END:VCALENDAR
