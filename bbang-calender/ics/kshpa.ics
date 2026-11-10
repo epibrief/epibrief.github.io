@@ -19,7 +19,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:e719a95bba4d99ff@bbangcal.epibrief.github.io
-DTSTAMP:20261110T035653Z
+DTSTAMP:20261110T172616Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:[한국보건행정학회] 2026년 한국보건행정학회 후
@@ -31,44 +31,29 @@ DESCRIPTION:주최: 한국보건행정학회\n원문: https://www.kshpa
 URL:https://www.kshpa.org/calendar/list/14
 END:VEVENT
 BEGIN:VEVENT
-UID:3c3b54f6048d4e1b@bbangcal.epibrief.github.io
-DTSTAMP:20261110T035653Z
-DTSTART;TZID=Asia/Seoul:20261110T193000
-DTEND;TZID=Asia/Seoul:20261110T210000
-SUMMARY:[한국보건행정학회] 기획세미나 「일본의 지역
- 포괄케어\, 현장에서 본 것과 한국에 가져올 것」 개
+UID:9f0ddd29dc2bb357@bbangcal.epibrief.github.io
+DTSTAMP:20261110T172616Z
+DTSTART;TZID=Asia/Seoul:20261118T160000
+DTEND;TZID=Asia/Seoul:20261118T173000
+SUMMARY:[한국보건행정학회] 11월 세미나 「같은 의료\, 
+ 다른 가격: 국제수가와 미등록 이주민의 건강권」 개
  최 안내
-LOCATION:Zoom 온라인 세미나
+LOCATION:온라인(ZOOM)
 DESCRIPTION:주최: 한국보건행정학회\n원문: https://www.kshpa
- .org/bbs/notice2/1570\n빵캘: https://epibrief.github.io/bbang-calende
+ .org/bbs/notice2/1575\n빵캘: https://epibrief.github.io/bbang-calende
  r/
-URL:https://www.kshpa.org/bbs/notice2/1570
+URL:https://www.kshpa.org/bbs/notice2/1575
 END:VEVENT
 BEGIN:VEVENT
-UID:6c6e2d4da6953867@bbangcal.epibrief.github.io
-DTSTAMP:20261110T035653Z
-DTSTART;TZID=Asia/Seoul:20261211T085000
-DTEND;TZID=Asia/Seoul:20261211T183000
-SUMMARY:[한국보건행정학회] 2026년 추계 학술대회 개최 
- 안내
-LOCATION:고려대학교 하나스퀘어 강당\, 멀티미디어룸\, 
- 전시실
+UID:e830c72f3aa0ba0d@bbangcal.epibrief.github.io
+DTSTAMP:20261110T172616Z
+DTSTART;TZID=Asia/Seoul:20261204T090000
+DTEND;TZID=Asia/Seoul:20261204T180000
+SUMMARY:[한국보건행정학회] 2026 후기학술대회 개최 안내
+LOCATION:서울대학교 치과병원 한화홀(8F)
 DESCRIPTION:주최: 한국보건행정학회\n원문: https://www.kshpa
- .org/bbs/notice2/1572\n빵캘: https://epibrief.github.io/bbang-calende
+ .org/bbs/notice2/1574\n빵캘: https://epibrief.github.io/bbang-calende
  r/
-URL:https://www.kshpa.org/bbs/notice2/1572
-END:VEVENT
-BEGIN:VEVENT
-UID:fbea75c414f3c1d5@bbangcal.epibrief.github.io
-DTSTAMP:20261110T035653Z
-DTSTART;TZID=Asia/Seoul:20261217T090000
-DTEND;TZID=Asia/Seoul:20261217T180000
-SUMMARY:[한국보건행정학회] 2026 동계 학술대회 개최 안내
-LOCATION:서울대학교병원 의학연구혁신센터(CMI) 1층 서
- 성환연구홀
-DESCRIPTION:주최: 한국보건행정학회\n원문: https://www.kshpa
- .org/bbs/notice2/1571\n빵캘: https://epibrief.github.io/bbang-calende
- r/
-URL:https://www.kshpa.org/bbs/notice2/1571
+URL:https://www.kshpa.org/bbs/notice2/1574
 END:VEVENT
 END:VCALENDAR
