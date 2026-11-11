@@ -19,7 +19,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:7959f356b5bb6342@bbangcal.epibrief.github.io
-DTSTAMP:20261111T014115Z
+DTSTAMP:20261111T173906Z
 DTSTART;VALUE=DATE:20260917
 DTEND;VALUE=DATE:20260919
 SUMMARY:[한국역학회] 2026 추계학술대회
@@ -31,7 +31,7 @@ URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
 END:VEVENT
 BEGIN:VEVENT
 UID:bc573858125cf556@bbangcal.epibrief.github.io
-DTSTAMP:20261111T014115Z
+DTSTAMP:20261111T173906Z
 DTSTART;VALUE=DATE:20260917
 DTEND;VALUE=DATE:20260919
 SUMMARY:[한국역학회] 2026 추계학술대회 사전등록 / 초록
@@ -44,7 +44,7 @@ URL:https://ksepi.org/web/lay1/bbs/S1T298C326/A/10/view.do?article_seq=
 END:VEVENT
 BEGIN:VEVENT
 UID:5fd943a301b7ff8c@bbangcal.epibrief.github.io
-DTSTAMP:20261111T014115Z
+DTSTAMP:20261111T173906Z
 DTSTART;TZID=Asia/Seoul:20261023T090000
 DTEND;TZID=Asia/Seoul:20261023T170000
 SUMMARY:[한국의료질향상학회] <안내> 2026 가을학술대회 
@@ -56,25 +56,8 @@ URL:https://www.kosqua.net/index.php?page=view&idx=4343&hCode=BOARD&bo_
  idx=1
 END:VEVENT
 BEGIN:VEVENT
-UID:3eb4b2d2c3bcefb4@bbangcal.epibrief.github.io
-DTSTAMP:20261111T014115Z
-DTSTART;VALUE=DATE:20261027
-DTEND;VALUE=DATE:20261030
-SUMMARY:[대한예방의학회] 환경보건 겨울워크숍 개최 안
- 내
-DESCRIPTION:주최: 대한예방의학회\n원문: https://www.prevmed.
- or.kr/board_community_notice01/view.php?tn=board_community_notice01&lis
- t_count_s=&G_state=&pm=5.1&part_part_s=&subject_s=&content_s=&name_s=&w
- ritedate_s=&keyfield_s=&search_word_s=&uid=946&gid=920&cpage=1&spage=1\
- n빵캘: https://epibrief.github.io/bbang-calender/
-URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
- d_community_notice01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject
- _s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=946&
- gid=920&cpage=1&spage=1
-END:VEVENT
-BEGIN:VEVENT
 UID:127fd9d71830f9eb@bbangcal.epibrief.github.io
-DTSTAMP:20261111T014115Z
+DTSTAMP:20261111T173906Z
 DTSTART;TZID=Asia/Seoul:20261102T090000
 DTEND;TZID=Asia/Seoul:20261102T170000
 SUMMARY:[한국의료질향상학회] <공지>가을학술대회 Senior
@@ -86,8 +69,77 @@ URL:https://www.kosqua.net/index.php?page=view&idx=4348&hCode=BOARD&bo_
  idx=1
 END:VEVENT
 BEGIN:VEVENT
+UID:64a289b22dd3b39c@bbangcal.epibrief.github.io
+DTSTAMP:20261111T173906Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261105
+SUMMARY:[대한예방의학회] 2026년 한국원격의료학회 추계
+ 학술대회 개최 안내
+DESCRIPTION:주최: 대한예방의학회\n원문: https://www.prevmed.
+ or.kr/board_community_notice01/view.php?tn=board_community_notice01&lis
+ t_count_s=&G_state=&pm=5.1&part_part_s=&subject_s=&content_s=&name_s=&w
+ ritedate_s=&keyfield_s=&search_word_s=&uid=951&gid=925&cpage=1&spage=1\
+ n빵캘: https://epibrief.github.io/bbang-calender/
+URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
+ d_community_notice01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject
+ _s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=951&
+ gid=925&cpage=1&spage=1
+END:VEVENT
+BEGIN:VEVENT
+UID:8648b3fa46b060af@bbangcal.epibrief.github.io
+DTSTAMP:20261111T173906Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261106
+SUMMARY:[대한예방의학회] 2026년 후기학술대회 프로그램
+  안내
+DESCRIPTION:주최: 대한예방의학회\n원문: https://www.prevmed.
+ or.kr/board_community_notice01/view.php?tn=board_community_notice01&lis
+ t_count_s=&G_state=&pm=5.1&part_part_s=&subject_s=&content_s=&name_s=&w
+ ritedate_s=&keyfield_s=&search_word_s=&uid=952&gid=926&cpage=1&spage=1\
+ n빵캘: https://epibrief.github.io/bbang-calender/
+URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
+ d_community_notice01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject
+ _s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=952&
+ gid=926&cpage=1&spage=1
+END:VEVENT
+BEGIN:VEVENT
+UID:f9c7df66aa435e46@bbangcal.epibrief.github.io
+DTSTAMP:20261111T173906Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261105
+SUMMARY:[대한예방의학회] 2026년도 추계학술대회 및 추
+ 계연수교육 개최 안내
+DESCRIPTION:주최: 대한예방의학회\n원문: https://www.prevmed.
+ or.kr/board_community_notice01/view.php?tn=board_community_notice01&lis
+ t_count_s=&G_state=&pm=5.1&part_part_s=&subject_s=&content_s=&name_s=&w
+ ritedate_s=&keyfield_s=&search_word_s=&uid=957&gid=931&cpage=1&spage=1\
+ n빵캘: https://epibrief.github.io/bbang-calender/
+URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
+ d_community_notice01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject
+ _s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=957&
+ gid=931&cpage=1&spage=1
+END:VEVENT
+BEGIN:VEVENT
+UID:097b69f061f33742@bbangcal.epibrief.github.io
+DTSTAMP:20261111T173906Z
+DTSTART;TZID=Asia/Seoul:20261102T100000
+DTEND;TZID=Asia/Seoul:20261102T170000
+SUMMARY:[대한예방의학회] 생식의학 분야 법제 정비를 
+ 위한 쟁점 분석 및 정책 대안 연구 심포지엄 개최 안
+ 내
+DESCRIPTION:주최: 대한예방의학회\n원문: https://www.prevmed.
+ or.kr/board_community_notice01/view.php?tn=board_community_notice01&lis
+ t_count_s=&G_state=&pm=5.1&part_part_s=&subject_s=&content_s=&name_s=&w
+ ritedate_s=&keyfield_s=&search_word_s=&uid=949&gid=923&cpage=1&spage=1\
+ n빵캘: https://epibrief.github.io/bbang-calender/
+URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
+ d_community_notice01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject
+ _s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=949&
+ gid=923&cpage=1&spage=1
+END:VEVENT
+BEGIN:VEVENT
 UID:e719a95bba4d99ff@bbangcal.epibrief.github.io
-DTSTAMP:20261111T014115Z
+DTSTAMP:20261111T173906Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:[한국보건행정학회] 2026년 한국보건행정학회 후
@@ -100,7 +152,7 @@ URL:https://www.kshpa.org/calendar/list/14
 END:VEVENT
 BEGIN:VEVENT
 UID:ebcb515e5a9f00f5@bbangcal.epibrief.github.io
-DTSTAMP:20261111T014115Z
+DTSTAMP:20261111T173906Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261115
 SUMMARY:[한국역학회] KAI International Meeting 2026
@@ -111,7 +163,7 @@ URL:http://www.ksimm.or.kr/
 END:VEVENT
 BEGIN:VEVENT
 UID:9f0ddd29dc2bb357@bbangcal.epibrief.github.io
-DTSTAMP:20261111T014115Z
+DTSTAMP:20261111T173906Z
 DTSTART;TZID=Asia/Seoul:20261118T160000
 DTEND;TZID=Asia/Seoul:20261118T173000
 SUMMARY:[한국보건행정학회] 11월 세미나 「같은 의료\, 
@@ -125,7 +177,7 @@ URL:https://www.kshpa.org/bbs/notice2/1575
 END:VEVENT
 BEGIN:VEVENT
 UID:e830c72f3aa0ba0d@bbangcal.epibrief.github.io
-DTSTAMP:20261111T014115Z
+DTSTAMP:20261111T173906Z
 DTSTART;TZID=Asia/Seoul:20261204T090000
 DTEND;TZID=Asia/Seoul:20261204T180000
 SUMMARY:[한국보건행정학회] 2026 후기학술대회 개최 안내
@@ -137,7 +189,7 @@ URL:https://www.kshpa.org/bbs/notice2/1574
 END:VEVENT
 BEGIN:VEVENT
 UID:16d66fa2ea37714c@bbangcal.epibrief.github.io
-DTSTAMP:20261111T014115Z
+DTSTAMP:20261111T173906Z
 DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261212
 SUMMARY:[한국의료질향상학회] 2026 가을학술대회
@@ -148,7 +200,7 @@ URL:http://www.kosqua.net/
 END:VEVENT
 BEGIN:VEVENT
 UID:7139a6b681a7282d@bbangcal.epibrief.github.io
-DTSTAMP:20261111T014115Z
+DTSTAMP:20261111T173906Z
 DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261211
 SUMMARY:[한국의료질향상학회] 2026 가을학술대회 참가 
@@ -162,7 +214,7 @@ URL:https://www.kosqua.net/index.php?page=view&idx=4338&hCode=BOARD&bo_
 END:VEVENT
 BEGIN:VEVENT
 UID:c9b73e63a0fc9fc1@bbangcal.epibrief.github.io
-DTSTAMP:20261111T014115Z
+DTSTAMP:20261111T173906Z
 DTSTART;TZID=Asia/Seoul:20261217T090000
 DTEND;TZID=Asia/Seoul:20261217T180000
 SUMMARY:[한국의료질향상학회] 2026 동계 학술대회 안내
@@ -175,7 +227,7 @@ URL:https://www.kosqua.net/index.php?page=view&idx=4349&hCode=BOARD&bo_
 END:VEVENT
 BEGIN:VEVENT
 UID:25ef47ed4d5c0d83@bbangcal.epibrief.github.io
-DTSTAMP:20261111T014115Z
+DTSTAMP:20261111T173906Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261219
 SUMMARY:[한국역학회] 2026년 하반기 국제학술대회 참가 
