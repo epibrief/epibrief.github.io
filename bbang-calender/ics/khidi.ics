@@ -18,20 +18,8 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:e0a8ace74b6627f3@bbangcal.epibrief.github.io
-DTSTAMP:20261112T024012Z
-DTSTART;VALUE=DATE:20261028
-DTEND;VALUE=DATE:20261029
-SUMMARY:[한국보건산업진흥원] 제약바이오 신흥시장(중
- 남미·중동) 진출 전략 세미나 위탁 운영(1차)
-DESCRIPTION:주최: 한국보건산업진흥원\n원문: https://www.kh
- idi.or.kr/board/view?linkId=48951911&menuId=MENU00101\n빵캘: https://
- epibrief.github.io/bbang-calender/
-URL:https://www.khidi.or.kr/board/view?linkId=48951911&menuId=MENU00101
-END:VEVENT
-BEGIN:VEVENT
 UID:8127d1d9e23f1a03@bbangcal.epibrief.github.io
-DTSTAMP:20261112T024012Z
+DTSTAMP:20261112T175141Z
 DTSTART;VALUE=DATE:20261108
 DTEND;VALUE=DATE:20261109
 SUMMARY:[한국보건산업진흥원] 치과분야 해외진출 전략 
@@ -43,7 +31,7 @@ URL:https://www.khidi.or.kr/board/view?linkId=48952494&menuId=MENU00100
 END:VEVENT
 BEGIN:VEVENT
 UID:044fa0079d1dbd6f@bbangcal.epibrief.github.io
-DTSTAMP:20261112T024012Z
+DTSTAMP:20261112T175141Z
 DTSTART;TZID=Asia/Seoul:20261204T090000
 DTEND;TZID=Asia/Seoul:20261204T160000
 SUMMARY:[한국보건산업진흥원] 2026 헬스케어이노베이션
