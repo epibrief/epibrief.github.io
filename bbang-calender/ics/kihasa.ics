@@ -19,7 +19,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:6db09ce6807643a6@bbangcal.epibrief.github.io
-DTSTAMP:20261112T175141Z
+DTSTAMP:20261113T022102Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261105
 SUMMARY:[한국보건사회연구원] 제7차 한·일 사회정책 정
@@ -29,18 +29,5 @@ DESCRIPTION:주최: 한국보건사회연구원\n원문: https://www.ki
  hasa.re.kr/news/event/view?seq=77455\n빵캘: https://epibrief.github.i
  o/bbang-calender/
 URL:https://www.kihasa.re.kr/news/event/view?seq=77455
-END:VEVENT
-BEGIN:VEVENT
-UID:9463bba25a75b9d4@bbangcal.epibrief.github.io
-DTSTAMP:20261112T175141Z
-DTSTART;TZID=Asia/Seoul:20261119T140000
-DTEND;TZID=Asia/Seoul:20261119T170000
-SUMMARY:[한국보건사회연구원] 「제1차 통합돌봄 기본계
- 획(안) 수립 연구」 최종결과 공청회 개최 안내
-LOCATION:스페이스쉐어 서울중부센터 에메랄드홀
-DESCRIPTION:주최: 한국보건사회연구원\n원문: https://www.ks
- hpa.org/bbs/notice2/1573\n빵캘: https://epibrief.github.io/bbang-cale
- nder/
-URL:https://www.kshpa.org/bbs/notice2/1573
 END:VEVENT
 END:VCALENDAR
