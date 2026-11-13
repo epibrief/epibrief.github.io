@@ -19,7 +19,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:7edfdde6847968e6@bbangcal.epibrief.github.io
-DTSTAMP:20261113T022102Z
+DTSTAMP:20261113T172855Z
 DTSTART;TZID=Asia/Seoul:20261029T133000
 DTEND;TZID=Asia/Seoul:20261029T163000
 SUMMARY:[보건복지부] 2026년도 장애인 건강보건통계 컨
@@ -31,5 +31,19 @@ DESCRIPTION:주최: 보건복지부\n원문: https://health.snu.ac.kr/%
  =5807\n빵캘: https://epibrief.github.io/bbang-calender/
 URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
  %B4/?mod=document&pageid=3&uid=5807
+END:VEVENT
+BEGIN:VEVENT
+UID:9087fb9182415b5c@bbangcal.epibrief.github.io
+DTSTAMP:20261113T172855Z
+DTSTART;TZID=Asia/Seoul:20261124T140000
+DTEND;TZID=Asia/Seoul:20261124T170000
+SUMMARY:[한국건강증진개발원·보건복지부] 제15차 미래 
+ 건강전략 포럼 「모두의 건강\, 공백 없이 도달하다」
+  개최 안내
+LOCATION:피스앤파크 컨벤션 4층 아주르홀
+DESCRIPTION:주최: 한국건강증진개발원·보건복지부\n원
+ 문: https://www.kshpa.org/bbs/notice2/1579\n빵캘: https://epibrief.g
+ ithub.io/bbang-calender/
+URL:https://www.kshpa.org/bbs/notice2/1579
 END:VEVENT
 END:VCALENDAR

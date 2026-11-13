@@ -19,7 +19,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:e719a95bba4d99ff@bbangcal.epibrief.github.io
-DTSTAMP:20261113T022102Z
+DTSTAMP:20261113T172855Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:[한국보건행정학회] 2026년 한국보건행정학회 후
@@ -32,7 +32,7 @@ URL:https://www.kshpa.org/calendar/list/14
 END:VEVENT
 BEGIN:VEVENT
 UID:9f0ddd29dc2bb357@bbangcal.epibrief.github.io
-DTSTAMP:20261113T022102Z
+DTSTAMP:20261113T172855Z
 DTSTART;TZID=Asia/Seoul:20261118T160000
 DTEND;TZID=Asia/Seoul:20261118T173000
 SUMMARY:[한국보건행정학회] 11월 세미나 「같은 의료\, 
@@ -46,7 +46,7 @@ URL:https://www.kshpa.org/bbs/notice2/1575
 END:VEVENT
 BEGIN:VEVENT
 UID:157716518ba01707@bbangcal.epibrief.github.io
-DTSTAMP:20261113T022102Z
+DTSTAMP:20261113T172855Z
 DTSTART;VALUE=DATE:20261130
 DTEND;VALUE=DATE:20261201
 SUMMARY:[한국보건행정학회] 2026년 추계학술대회 개최 
@@ -56,17 +56,5 @@ DESCRIPTION:주최: 한국보건행정학회\n원문: https://www.kshpa
  .org/bbs/notice2/1578\n빵캘: https://epibrief.github.io/bbang-calende
  r/
 URL:https://www.kshpa.org/bbs/notice2/1578
-END:VEVENT
-BEGIN:VEVENT
-UID:e830c72f3aa0ba0d@bbangcal.epibrief.github.io
-DTSTAMP:20261113T022102Z
-DTSTART;TZID=Asia/Seoul:20261204T090000
-DTEND;TZID=Asia/Seoul:20261204T180000
-SUMMARY:[한국보건행정학회] 2026 후기학술대회 개최 안내
-LOCATION:서울대학교 치과병원 한화홀(8F)
-DESCRIPTION:주최: 한국보건행정학회\n원문: https://www.kshpa
- .org/bbs/notice2/1574\n빵캘: https://epibrief.github.io/bbang-calende
- r/
-URL:https://www.kshpa.org/bbs/notice2/1574
 END:VEVENT
 END:VCALENDAR
