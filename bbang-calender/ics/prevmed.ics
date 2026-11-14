@@ -19,7 +19,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:64a289b22dd3b39c@bbangcal.epibrief.github.io
-DTSTAMP:20261113T172855Z
+DTSTAMP:20261114T015723Z
 DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261105
 SUMMARY:[대한예방의학회] 2026년 한국원격의료학회 추계
@@ -36,7 +36,7 @@ URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
 END:VEVENT
 BEGIN:VEVENT
 UID:8648b3fa46b060af@bbangcal.epibrief.github.io
-DTSTAMP:20261113T172855Z
+DTSTAMP:20261114T015723Z
 DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261106
 SUMMARY:[대한예방의학회] 2026년 후기학술대회 프로그램
@@ -53,7 +53,7 @@ URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
 END:VEVENT
 BEGIN:VEVENT
 UID:f9c7df66aa435e46@bbangcal.epibrief.github.io
-DTSTAMP:20261113T172855Z
+DTSTAMP:20261114T015723Z
 DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261105
 SUMMARY:[대한예방의학회] 2026년도 추계학술대회 및 추
@@ -70,7 +70,7 @@ URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
 END:VEVENT
 BEGIN:VEVENT
 UID:097b69f061f33742@bbangcal.epibrief.github.io
-DTSTAMP:20261113T172855Z
+DTSTAMP:20261114T015723Z
 DTSTART;TZID=Asia/Seoul:20261102T100000
 DTEND;TZID=Asia/Seoul:20261102T170000
 SUMMARY:[대한예방의학회] 생식의학 분야 법제 정비를 
