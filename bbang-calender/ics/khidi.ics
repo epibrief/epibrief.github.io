@@ -18,20 +18,8 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:8127d1d9e23f1a03@bbangcal.epibrief.github.io
-DTSTAMP:20261115T164552Z
-DTSTART;VALUE=DATE:20261108
-DTEND;VALUE=DATE:20261109
-SUMMARY:[한국보건산업진흥원] 치과분야 해외진출 전략 
- 세미나 개최…아시아·중동 시장 진출 방안 모색
-DESCRIPTION:주최: 한국보건산업진흥원\n원문: https://www.kh
- idi.or.kr/board/view?linkId=48952494&menuId=MENU00100\n빵캘: https://
- epibrief.github.io/bbang-calender/
-URL:https://www.khidi.or.kr/board/view?linkId=48952494&menuId=MENU00100
-END:VEVENT
-BEGIN:VEVENT
 UID:044fa0079d1dbd6f@bbangcal.epibrief.github.io
-DTSTAMP:20261115T164552Z
+DTSTAMP:20261116T013254Z
 DTSTART;TZID=Asia/Seoul:20261204T090000
 DTEND;TZID=Asia/Seoul:20261204T160000
 SUMMARY:[한국보건산업진흥원] 2026 헬스케어이노베이션
