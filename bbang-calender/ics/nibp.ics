@@ -18,8 +18,20 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
+UID:abc9c902ff050be8@bbangcal.epibrief.github.io
+DTSTAMP:20261117T041838Z
+DTSTART;VALUE=DATE:20260929
+DTEND;VALUE=DATE:20260930
+SUMMARY:[국가생명윤리정책원] 2026년 한국골든에이지포
+ 럼 공동 추계 학술대회 개최(10.30.(금)) *사전등록 마감
+ 일 ~10.27.(화)*
+DESCRIPTION:주최: 국가생명윤리정책원\n원문: https://nibp.k
+ r/board/notice\n빵캘: https://epibrief.github.io/bbang-calender/
+URL:https://nibp.kr/board/notice
+END:VEVENT
+BEGIN:VEVENT
 UID:2327d80840761d8c@bbangcal.epibrief.github.io
-DTSTAMP:20261116T195903Z
+DTSTAMP:20261117T041838Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:[국가생명윤리정책원] 제77회 콜로키움 개최 안내

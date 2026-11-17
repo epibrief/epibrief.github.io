@@ -19,7 +19,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:6db09ce6807643a6@bbangcal.epibrief.github.io
-DTSTAMP:20261116T195903Z
+DTSTAMP:20261117T041838Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261105
 SUMMARY:[한국보건사회연구원] 제7차 한·일 사회정책 정
@@ -29,5 +29,20 @@ DESCRIPTION:주최: 한국보건사회연구원\n원문: https://www.ki
  hasa.re.kr/news/event/view?seq=77455\n빵캘: https://epibrief.github.i
  o/bbang-calender/
 URL:https://www.kihasa.re.kr/news/event/view?seq=77455
+END:VEVENT
+BEGIN:VEVENT
+UID:f822bf8a2765022b@bbangcal.epibrief.github.io
+DTSTAMP:20261117T041838Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:[질병관리청·한국보건사회연구원·대한예방의
+ 학회·한국보건행정학회] 질병관리 AX 중장기전략 정
+ 책토론회
+LOCATION:보코 서울 강남 호텔
+DESCRIPTION:주최: 질병관리청·한국보건사회연구원·대
+ 한예방의학회·한국보건행정학회\n원문: https://www.kihas
+ a.re.kr/news/event/view?seq=77812\n빵캘: https://epibrief.github.io/b
+ bang-calender/
+URL:https://www.kihasa.re.kr/news/event/view?seq=77812
 END:VEVENT
 END:VCALENDAR

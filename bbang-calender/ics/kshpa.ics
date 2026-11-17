@@ -19,7 +19,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:e719a95bba4d99ff@bbangcal.epibrief.github.io
-DTSTAMP:20261116T195903Z
+DTSTAMP:20261117T041838Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:[한국보건행정학회] 2026년 한국보건행정학회 후
@@ -31,8 +31,23 @@ DESCRIPTION:주최: 한국보건행정학회\n원문: https://www.kshpa
 URL:https://www.kshpa.org/calendar/list/14
 END:VEVENT
 BEGIN:VEVENT
+UID:f822bf8a2765022b@bbangcal.epibrief.github.io
+DTSTAMP:20261117T041838Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:[질병관리청·한국보건사회연구원·대한예방의
+ 학회·한국보건행정학회] 질병관리 AX 중장기전략 정
+ 책토론회
+LOCATION:보코 서울 강남 호텔
+DESCRIPTION:주최: 질병관리청·한국보건사회연구원·대
+ 한예방의학회·한국보건행정학회\n원문: https://www.kihas
+ a.re.kr/news/event/view?seq=77812\n빵캘: https://epibrief.github.io/b
+ bang-calender/
+URL:https://www.kihasa.re.kr/news/event/view?seq=77812
+END:VEVENT
+BEGIN:VEVENT
 UID:a7325c538a5513fc@bbangcal.epibrief.github.io
-DTSTAMP:20261116T195903Z
+DTSTAMP:20261117T041838Z
 DTSTART;TZID=Asia/Seoul:20261126T090000
 DTEND;TZID=Asia/Seoul:20261126T174000
 SUMMARY:[한국보건행정학회] 2026년 후기 학술대회 및 연
@@ -45,7 +60,7 @@ URL:https://www.kshpa.org/bbs/notice2/1580
 END:VEVENT
 BEGIN:VEVENT
 UID:157716518ba01707@bbangcal.epibrief.github.io
-DTSTAMP:20261116T195903Z
+DTSTAMP:20261117T041838Z
 DTSTART;VALUE=DATE:20261130
 DTEND;VALUE=DATE:20261201
 SUMMARY:[한국보건행정학회] 2026년 추계학술대회 개최 
