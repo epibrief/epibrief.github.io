@@ -18,16 +18,30 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:044fa0079d1dbd6f@bbangcal.epibrief.github.io
-DTSTAMP:20261117T041838Z
-DTSTART;TZID=Asia/Seoul:20261204T090000
-DTEND;TZID=Asia/Seoul:20261204T160000
-SUMMARY:[한국보건산업진흥원] 2026 헬스케어이노베이션
- 포럼(제14회)
-LOCATION:서울 소공동 웨스틴 조선호텔\, 그랜드볼룸
+UID:e2f59bd1a3af4d70@bbangcal.epibrief.github.io
+DTSTAMP:20261117T185534Z
+DTSTART;TZID=Asia/Seoul:20261203T103000
+DTEND;TZID=Asia/Seoul:20261203T171000
+SUMMARY:[한국보건산업진흥원] 2026 의료 해외진출 성과
+ 공유 및 사업설명회
+LOCATION:코리아나 호텔(크리스탈+에메랄드룸)(서울시 
+ 중구 소재)
 DESCRIPTION:주최: 한국보건산업진흥원\n원문: https://www.kh
- idi.or.kr/board/view?linkId=48952488&menuId=MENU00099\n빵캘: https://
+ idi.or.kr/board/view?linkId=48952914&menuId=MENU00099\n빵캘: https://
  epibrief.github.io/bbang-calender/
-URL:https://www.khidi.or.kr/board/view?linkId=48952488&menuId=MENU00099
+URL:https://www.khidi.or.kr/board/view?linkId=48952914&menuId=MENU00099
+END:VEVENT
+BEGIN:VEVENT
+UID:893d568e60bb982c@bbangcal.epibrief.github.io
+DTSTAMP:20261117T185534Z
+DTSTART;VALUE=DATE:20270319
+DTEND;VALUE=DATE:20270320
+SUMMARY:[한국보건산업진흥원] Medical Korea 2027 연계 지역 
+ 콘퍼런스 및 비즈니스 미팅 참여 지자체 모집 공모(~11
+ .27.(금))
+DESCRIPTION:주최: 한국보건산업진흥원\n원문: https://www.kh
+ idi.or.kr/board/view?linkId=48952917&menuId=MENU01108\n빵캘: https://
+ epibrief.github.io/bbang-calender/
+URL:https://www.khidi.or.kr/board/view?linkId=48952917&menuId=MENU01108
 END:VEVENT
 END:VCALENDAR
