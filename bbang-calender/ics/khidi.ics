@@ -18,8 +18,20 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
+UID:621bbd04d629648c@bbangcal.epibrief.github.io
+DTSTAMP:20261118T183615Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:[한국보건산업진흥원] 한의사 해외진출 전략 세
+ 미나 개최
+DESCRIPTION:주최: 한국보건산업진흥원\n원문: https://www.kh
+ idi.or.kr/board/view?linkId=48952952&menuId=MENU00100\n빵캘: https://
+ epibrief.github.io/bbang-calender/
+URL:https://www.khidi.or.kr/board/view?linkId=48952952&menuId=MENU00100
+END:VEVENT
+BEGIN:VEVENT
 UID:e2f59bd1a3af4d70@bbangcal.epibrief.github.io
-DTSTAMP:20261118T031731Z
+DTSTAMP:20261118T183615Z
 DTSTART;TZID=Asia/Seoul:20261203T103000
 DTEND;TZID=Asia/Seoul:20261203T171000
 SUMMARY:[한국보건산업진흥원] 2026 의료 해외진출 성과
@@ -33,7 +45,7 @@ URL:https://www.khidi.or.kr/board/view?linkId=48952914&menuId=MENU00099
 END:VEVENT
 BEGIN:VEVENT
 UID:893d568e60bb982c@bbangcal.epibrief.github.io
-DTSTAMP:20261118T031731Z
+DTSTAMP:20261118T183615Z
 DTSTART;VALUE=DATE:20270319
 DTEND;VALUE=DATE:20270320
 SUMMARY:[한국보건산업진흥원] Medical Korea 2027 연계 지역 

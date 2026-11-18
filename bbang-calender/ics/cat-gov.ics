@@ -19,7 +19,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:53f2ef954dea2f84@bbangcal.epibrief.github.io
-DTSTAMP:20261118T031731Z
+DTSTAMP:20261118T183615Z
 DTSTART;TZID=Asia/Seoul:20261001T103000
 DTEND;TZID=Asia/Seoul:20261001T170000
 SUMMARY:[한국장애인개발원] 제6회 장애인삶 패널조사 
@@ -34,7 +34,7 @@ URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
 END:VEVENT
 BEGIN:VEVENT
 UID:7edfdde6847968e6@bbangcal.epibrief.github.io
-DTSTAMP:20261118T031731Z
+DTSTAMP:20261118T183615Z
 DTSTART;TZID=Asia/Seoul:20261029T133000
 DTEND;TZID=Asia/Seoul:20261029T163000
 SUMMARY:[보건복지부] 2026년도 장애인 건강보건통계 컨
@@ -49,7 +49,7 @@ URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
 END:VEVENT
 BEGIN:VEVENT
 UID:bb0255abe94d3e10@bbangcal.epibrief.github.io
-DTSTAMP:20261118T031731Z
+DTSTAMP:20261118T183615Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:[식품의약품안전처] 2026년 디지털의료기기 허가
@@ -64,7 +64,7 @@ URL:https://www.mfds.go.kr/brd/m_220/view.do?seq=32931&srchFr=&srchTo=&
 END:VEVENT
 BEGIN:VEVENT
 UID:8f96d0c578e2507a@bbangcal.epibrief.github.io
-DTSTAMP:20261118T031731Z
+DTSTAMP:20261118T183615Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261107
 SUMMARY:[국립암센터] 11월 10일 기획세미나 개최 안내
@@ -80,7 +80,7 @@ URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
 END:VEVENT
 BEGIN:VEVENT
 UID:fd2647d7dc6fdb4d@bbangcal.epibrief.github.io
-DTSTAMP:20261118T031731Z
+DTSTAMP:20261118T183615Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261107
 SUMMARY:[국립암센터] 2026년 제29회 한국장애와건강포럼 
@@ -97,7 +97,7 @@ URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
 END:VEVENT
 BEGIN:VEVENT
 UID:57210819d4b45cdf@bbangcal.epibrief.github.io
-DTSTAMP:20261118T031731Z
+DTSTAMP:20261118T183615Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261107
 SUMMARY:[국립암센터] 동계 학술대회 개최 안내
@@ -112,8 +112,38 @@ URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
  gid=930&cpage=1&spage=1
 END:VEVENT
 BEGIN:VEVENT
+UID:fc5610d776b86b57@bbangcal.epibrief.github.io
+DTSTAMP:20261118T183615Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:[식품의약품안전처] 농·축·수산물의 잔류물질 
+ 부처합동 PLS 설명회(2026.11.13.) 자료 공유
+DESCRIPTION:주최: 식품의약품안전처\n원문: https://www.mfds.
+ go.kr/brd/m_220/view.do?seq=32932&srchFr=&srchTo=&srchWord=&srchTp=&itm
+ _seq_1=0&itm_seq_2=0&multi_itm_seq=0&company_cd=&company_nm=&page=1\n
+ 빵캘: https://epibrief.github.io/bbang-calender/
+URL:https://www.mfds.go.kr/brd/m_220/view.do?seq=32932&srchFr=&srchTo=&
+ srchWord=&srchTp=&itm_seq_1=0&itm_seq_2=0&multi_itm_seq=0&company_cd=&c
+ ompany_nm=&page=1
+END:VEVENT
+BEGIN:VEVENT
+UID:bbdb5ba9bc3afbe1@bbangcal.epibrief.github.io
+DTSTAMP:20261118T183615Z
+DTSTART;TZID=Asia/Seoul:20261124T150000
+DTEND;TZID=Asia/Seoul:20261124T170000
+SUMMARY:[질병관리청·한국보건사회연구원·대한예방의
+ 학회·한국보건행정학회] 「질병관리 AX 중장기전략 
+ 정책토론회」 개최 안내
+LOCATION:보코 서울 강남 호텔 LL층 볼룸홀
+DESCRIPTION:주최: 질병관리청·한국보건사회연구원·대
+ 한예방의학회·한국보건행정학회\n원문: https://www.kshpa
+ .org/bbs/notice2/1589\n빵캘: https://epibrief.github.io/bbang-calende
+ r/
+URL:https://www.kshpa.org/bbs/notice2/1589
+END:VEVENT
+BEGIN:VEVENT
 UID:9087fb9182415b5c@bbangcal.epibrief.github.io
-DTSTAMP:20261118T031731Z
+DTSTAMP:20261118T183615Z
 DTSTART;TZID=Asia/Seoul:20261124T140000
 DTEND;TZID=Asia/Seoul:20261124T170000
 SUMMARY:[한국건강증진개발원·보건복지부] 제15차 미래 
@@ -127,7 +157,7 @@ URL:https://www.kshpa.org/bbs/notice2/1579
 END:VEVENT
 BEGIN:VEVENT
 UID:f822bf8a2765022b@bbangcal.epibrief.github.io
-DTSTAMP:20261118T031731Z
+DTSTAMP:20261118T183615Z
 DTSTART;VALUE=DATE:20261124
 DTEND;VALUE=DATE:20261125
 SUMMARY:[질병관리청·한국보건사회연구원·대한예방의
