@@ -19,7 +19,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:53f2ef954dea2f84@bbangcal.epibrief.github.io
-DTSTAMP:20261120T024855Z
+DTSTAMP:20261120T181415Z
 DTSTART;TZID=Asia/Seoul:20261001T103000
 DTEND;TZID=Asia/Seoul:20261001T170000
 SUMMARY:[한국장애인개발원] 제6회 장애인삶 패널조사 
@@ -34,7 +34,7 @@ URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
 END:VEVENT
 BEGIN:VEVENT
 UID:7edfdde6847968e6@bbangcal.epibrief.github.io
-DTSTAMP:20261120T024855Z
+DTSTAMP:20261120T181415Z
 DTSTART;TZID=Asia/Seoul:20261029T133000
 DTEND;TZID=Asia/Seoul:20261029T163000
 SUMMARY:[보건복지부] 2026년도 장애인 건강보건통계 컨
@@ -49,7 +49,7 @@ URL:https://health.snu.ac.kr/%EC%84%B8%EB%AF%B8%EB%82%98%EC%A0%95%EB%B3
 END:VEVENT
 BEGIN:VEVENT
 UID:bb0255abe94d3e10@bbangcal.epibrief.github.io
-DTSTAMP:20261120T024855Z
+DTSTAMP:20261120T181415Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:[식품의약품안전처] 2026년 디지털의료기기 허가
@@ -64,7 +64,7 @@ URL:https://www.mfds.go.kr/brd/m_220/view.do?seq=32931&srchFr=&srchTo=&
 END:VEVENT
 BEGIN:VEVENT
 UID:fc5610d776b86b57@bbangcal.epibrief.github.io
-DTSTAMP:20261120T024855Z
+DTSTAMP:20261120T181415Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:[식품의약품안전처] 농·축·수산물의 잔류물질 
@@ -79,7 +79,7 @@ URL:https://www.mfds.go.kr/brd/m_220/view.do?seq=32932&srchFr=&srchTo=&
 END:VEVENT
 BEGIN:VEVENT
 UID:2aaf80d35583e081@bbangcal.epibrief.github.io
-DTSTAMP:20261120T024855Z
+DTSTAMP:20261120T181415Z
 DTSTART;TZID=Asia/Seoul:20261123T140000
 DTEND;TZID=Asia/Seoul:20261123T170000
 SUMMARY:[질병관리청] 제2차 기후보건영향평가 공청회 
@@ -92,7 +92,7 @@ URL:https://www.kdca.go.kr/bbs/kdca/50/313514/artclView.do?layout=unknown
 END:VEVENT
 BEGIN:VEVENT
 UID:bbdb5ba9bc3afbe1@bbangcal.epibrief.github.io
-DTSTAMP:20261120T024855Z
+DTSTAMP:20261120T181415Z
 DTSTART;TZID=Asia/Seoul:20261124T150000
 DTEND;TZID=Asia/Seoul:20261124T170000
 SUMMARY:[질병관리청·한국보건사회연구원·대한예방의
@@ -107,7 +107,7 @@ URL:https://www.kshpa.org/bbs/notice2/1589
 END:VEVENT
 BEGIN:VEVENT
 UID:86df39095477133a@bbangcal.epibrief.github.io
-DTSTAMP:20261120T024855Z
+DTSTAMP:20261120T181415Z
 DTSTART;TZID=Asia/Seoul:20261124T140000
 DTEND;TZID=Asia/Seoul:20261124T170000
 SUMMARY:[보건복지부] 보건의료 R&D 혁신포럼(AI 기반 환
@@ -120,22 +120,8 @@ DESCRIPTION:주최: 보건복지부\n원문: https://www.khidi.or.kr/bo
 URL:https://www.khidi.or.kr/board/view?linkId=48953050&menuId=MENU00099
 END:VEVENT
 BEGIN:VEVENT
-UID:9087fb9182415b5c@bbangcal.epibrief.github.io
-DTSTAMP:20261120T024855Z
-DTSTART;TZID=Asia/Seoul:20261124T140000
-DTEND;TZID=Asia/Seoul:20261124T170000
-SUMMARY:[한국건강증진개발원·보건복지부] 제15차 미래 
- 건강전략 포럼 「모두의 건강\, 공백 없이 도달하다」
-  개최 안내
-LOCATION:피스앤파크 컨벤션 4층 아주르홀
-DESCRIPTION:주최: 한국건강증진개발원·보건복지부\n원
- 문: https://www.kshpa.org/bbs/notice2/1579\n빵캘: https://epibrief.g
- ithub.io/bbang-calender/
-URL:https://www.kshpa.org/bbs/notice2/1579
-END:VEVENT
-BEGIN:VEVENT
 UID:f822bf8a2765022b@bbangcal.epibrief.github.io
-DTSTAMP:20261120T024855Z
+DTSTAMP:20261120T181415Z
 DTSTART;VALUE=DATE:20261124
 DTEND;VALUE=DATE:20261125
 SUMMARY:[질병관리청·한국보건사회연구원·대한예방의

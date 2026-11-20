@@ -18,17 +18,18 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:1e34a7399e22cf2e@bbangcal.epibrief.github.io
-DTSTAMP:20261112T024012Z
-DTSTART;TZID=Asia/Seoul:20261113T140000
-DTEND;TZID=Asia/Seoul:20261113T160000
-SUMMARY:[건강보험심사평가원] 검체검사 위·수탁 제도 
- 개편 관련 온라인 설명회 개최 안내 (신청기간 연장)
+UID:17514e8f7f57eb24@bbangcal.epibrief.github.io
+DTSTAMP:20261120T181415Z
+DTSTART;TZID=Asia/Seoul:20261203T140000
+DTEND;TZID=Asia/Seoul:20261203T171000
+SUMMARY:[건강보험심사평가원] 2026년 보건의료 빅데이터
+  미래포럼 개최 안내
+LOCATION:백범김구기념관 컨벤션홀 (서울 용산구)
 DESCRIPTION:주최: 건강보험심사평가원\n원문: https://www.hi
  ra.or.kr/bbsDummy.do?pgmid=HIRAA020002000100&brdScnBltNo=4&brdBltNo=123
- 36&pageIndex=1&pageIndex2=1\n빵캘: https://epibrief.github.io/bbang-c
+ 52&pageIndex=1&pageIndex2=1\n빵캘: https://epibrief.github.io/bbang-c
  alender/
 URL:https://www.hira.or.kr/bbsDummy.do?pgmid=HIRAA020002000100&brdScnBl
- tNo=4&brdBltNo=12336&pageIndex=1&pageIndex2=1
+ tNo=4&brdBltNo=12352&pageIndex=1&pageIndex2=1
 END:VEVENT
 END:VCALENDAR

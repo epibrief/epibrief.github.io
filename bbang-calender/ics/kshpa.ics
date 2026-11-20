@@ -19,7 +19,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:e54749399b119f91@bbangcal.epibrief.github.io
-DTSTAMP:20261120T024855Z
+DTSTAMP:20261120T181415Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:[한국보건행정학회] 2026년 한국보건행정학회 후
@@ -31,7 +31,7 @@ URL:https://www.kshpa.org/bbs/notice/1588
 END:VEVENT
 BEGIN:VEVENT
 UID:e719a95bba4d99ff@bbangcal.epibrief.github.io
-DTSTAMP:20261120T024855Z
+DTSTAMP:20261120T181415Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:[한국보건행정학회] 2026년 한국보건행정학회 후
@@ -44,7 +44,7 @@ URL:https://www.kshpa.org/calendar/list/14
 END:VEVENT
 BEGIN:VEVENT
 UID:bbdb5ba9bc3afbe1@bbangcal.epibrief.github.io
-DTSTAMP:20261120T024855Z
+DTSTAMP:20261120T181415Z
 DTSTART;TZID=Asia/Seoul:20261124T150000
 DTEND;TZID=Asia/Seoul:20261124T170000
 SUMMARY:[질병관리청·한국보건사회연구원·대한예방의
@@ -59,7 +59,7 @@ URL:https://www.kshpa.org/bbs/notice2/1589
 END:VEVENT
 BEGIN:VEVENT
 UID:f822bf8a2765022b@bbangcal.epibrief.github.io
-DTSTAMP:20261120T024855Z
+DTSTAMP:20261120T181415Z
 DTSTART;VALUE=DATE:20261124
 DTEND;VALUE=DATE:20261125
 SUMMARY:[질병관리청·한국보건사회연구원·대한예방의
@@ -74,7 +74,7 @@ URL:https://www.kihasa.re.kr/news/event/view?seq=77812
 END:VEVENT
 BEGIN:VEVENT
 UID:a7325c538a5513fc@bbangcal.epibrief.github.io
-DTSTAMP:20261120T024855Z
+DTSTAMP:20261120T181415Z
 DTSTART;TZID=Asia/Seoul:20261126T090000
 DTEND;TZID=Asia/Seoul:20261126T174000
 SUMMARY:[한국보건행정학회] 2026년 후기 학술대회 및 연
@@ -84,5 +84,18 @@ DESCRIPTION:주최: 한국보건행정학회\n원문: https://www.kshpa
  .org/bbs/notice2/1580\n빵캘: https://epibrief.github.io/bbang-calende
  r/
 URL:https://www.kshpa.org/bbs/notice2/1580
+END:VEVENT
+BEGIN:VEVENT
+UID:bf653ed3da7c710d@bbangcal.epibrief.github.io
+DTSTAMP:20261120T181415Z
+DTSTART;TZID=Asia/Seoul:20261218T130000
+DTEND;TZID=Asia/Seoul:20261218T174000
+SUMMARY:[한국보건행정학회] 2026년 동계 학술대회 「장
+ 애인 건강권\, 마을에서 제도까지」 개최 안내
+LOCATION:이룸센터 B1 이룸홀
+DESCRIPTION:주최: 한국보건행정학회\n원문: https://www.kshpa
+ .org/bbs/notice2/1590\n빵캘: https://epibrief.github.io/bbang-calende
+ r/
+URL:https://www.kshpa.org/bbs/notice2/1590
 END:VEVENT
 END:VCALENDAR
