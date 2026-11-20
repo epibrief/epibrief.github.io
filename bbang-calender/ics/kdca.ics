@@ -18,8 +18,21 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
+UID:2aaf80d35583e081@bbangcal.epibrief.github.io
+DTSTAMP:20261120T024855Z
+DTSTART;TZID=Asia/Seoul:20261123T140000
+DTEND;TZID=Asia/Seoul:20261123T170000
+SUMMARY:[질병관리청] 제2차 기후보건영향평가 공청회 
+ 개최 안내(11.23.)
+LOCATION:연세대학교 세브란스빌딩 대회의실
+DESCRIPTION:주최: 질병관리청\n원문: https://www.kdca.go.kr/bbs
+ /kdca/50/313514/artclView.do?layout=unknown\n빵캘: https://epibrief.g
+ ithub.io/bbang-calender/
+URL:https://www.kdca.go.kr/bbs/kdca/50/313514/artclView.do?layout=unknown
+END:VEVENT
+BEGIN:VEVENT
 UID:bbdb5ba9bc3afbe1@bbangcal.epibrief.github.io
-DTSTAMP:20261119T184756Z
+DTSTAMP:20261120T024855Z
 DTSTART;TZID=Asia/Seoul:20261124T150000
 DTEND;TZID=Asia/Seoul:20261124T170000
 SUMMARY:[질병관리청·한국보건사회연구원·대한예방의
@@ -34,7 +47,7 @@ URL:https://www.kshpa.org/bbs/notice2/1589
 END:VEVENT
 BEGIN:VEVENT
 UID:f822bf8a2765022b@bbangcal.epibrief.github.io
-DTSTAMP:20261119T184756Z
+DTSTAMP:20261120T024855Z
 DTSTART;VALUE=DATE:20261124
 DTEND;VALUE=DATE:20261125
 SUMMARY:[질병관리청·한국보건사회연구원·대한예방의
