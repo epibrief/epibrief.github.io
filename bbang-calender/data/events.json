@@ -1,6 +1,6 @@
 {
  "name": "빵캘",
- "updatedAt": "2026-11-22T01:53:12.489Z",
+ "updatedAt": "2026-11-22T17:34:26.896Z",
  "counts": {
   "total": 105,
   "upcoming": 38
@@ -12,7 +12,7 @@
    "ok": true,
    "found": 52,
    "events": 1,
-   "ms": 5973
+   "ms": 5190
   },
   {
    "id": "org-mohw",
@@ -20,7 +20,7 @@
    "ok": true,
    "found": 18,
    "events": 3,
-   "ms": 10521
+   "ms": 9616
   },
   {
    "id": "org-khealth",
@@ -28,7 +28,7 @@
    "ok": true,
    "found": 11,
    "events": 0,
-   "ms": 4865
+   "ms": 3717
   },
   {
    "id": "org-ncc",
@@ -36,15 +36,7 @@
    "ok": true,
    "found": 4,
    "events": 2,
-   "ms": 6309
-  },
-  {
-   "id": "nkis",
-   "name": "NKIS 정책세미나안내",
-   "ok": true,
-   "found": 20,
-   "events": 2,
-   "ms": 23639
+   "ms": 5659
   },
   {
    "id": "org-nhis",
@@ -52,7 +44,15 @@
    "ok": true,
    "found": 24,
    "events": 0,
-   "ms": 4564
+   "ms": 4241
+  },
+  {
+   "id": "nkis",
+   "name": "NKIS 정책세미나안내",
+   "ok": true,
+   "found": 20,
+   "events": 2,
+   "ms": 23431
   },
   {
    "id": "org-mfds",
@@ -60,14 +60,7 @@
    "ok": true,
    "found": 16,
    "events": 8,
-   "ms": 24413
-  },
-  {
-   "id": "org-neca",
-   "name": "한국보건의료연구원 공지",
-   "ok": false,
-   "error": "HTTP 400",
-   "ms": 7450
+   "ms": 21880
   },
   {
    "id": "org-hira",
@@ -75,15 +68,14 @@
    "ok": true,
    "found": 12,
    "events": 1,
-   "ms": 10135
+   "ms": 6818
   },
   {
-   "id": "org-nmc",
-   "name": "국립중앙의료원 공지",
-   "ok": true,
-   "found": 11,
-   "events": 0,
-   "ms": 2056
+   "id": "org-neca",
+   "name": "한국보건의료연구원 공지",
+   "ok": false,
+   "error": "HTTP 400",
+   "ms": 6916
   },
   {
    "id": "org-kihasa",
@@ -91,7 +83,15 @@
    "ok": true,
    "found": 2,
    "events": 2,
-   "ms": 5540
+   "ms": 4778
+  },
+  {
+   "id": "org-nmc",
+   "name": "국립중앙의료원 공지",
+   "ok": true,
+   "found": 11,
+   "events": 0,
+   "ms": 4071
   },
   {
    "id": "org-nibp",
@@ -99,7 +99,7 @@
    "ok": true,
    "found": 16,
    "events": 1,
-   "ms": 6083
+   "ms": 5456
   },
   {
    "id": "org-khidi",
@@ -107,7 +107,7 @@
    "ok": true,
    "found": 20,
    "events": 3,
-   "ms": 13347
+   "ms": 11251
   },
   {
    "id": "org-ksepi",
@@ -115,7 +115,7 @@
    "ok": true,
    "found": 10,
    "events": 5,
-   "ms": 5561
+   "ms": 5584
   },
   {
    "id": "org-prevmed",
@@ -123,7 +123,7 @@
    "ok": true,
    "found": 15,
    "events": 3,
-   "ms": 19014
+   "ms": 16837
   },
   {
    "id": "org-kshpa",
@@ -131,7 +131,7 @@
    "ok": true,
    "found": 9,
    "events": 6,
-   "ms": 13727
+   "ms": 12176
   },
   {
    "id": "org-kshep",
@@ -139,15 +139,7 @@
    "ok": true,
    "found": 0,
    "events": 0,
-   "ms": 1504
-  },
-  {
-   "id": "org-kams",
-   "name": "대한의학회 학술행사 표",
-   "ok": true,
-   "found": 62,
-   "events": 62,
-   "ms": 17433
+   "ms": 1419
   },
   {
    "id": "org-kspm",
@@ -155,15 +147,15 @@
    "ok": true,
    "found": 16,
    "events": 1,
-   "ms": 12746
+   "ms": 10270
   },
   {
-   "id": "org-kosqua",
-   "name": "한국의료질향상학회 공지",
+   "id": "org-kams",
+   "name": "대한의학회 학술행사 표",
    "ok": true,
-   "found": 7,
-   "events": 4,
-   "ms": 4253
+   "found": 62,
+   "events": 62,
+   "ms": 19269
   },
   {
    "id": "org-koddi",
@@ -171,7 +163,7 @@
    "ok": true,
    "found": 21,
    "events": 0,
-   "ms": 1783
+   "ms": 1999
   },
   {
    "id": "org-cochrane",
@@ -179,15 +171,15 @@
    "ok": true,
    "found": 16,
    "events": 0,
-   "ms": 384
+   "ms": 581
   },
   {
-   "id": "org-kdca-ilje",
-   "name": "질병관리청 일정",
+   "id": "org-kosqua",
+   "name": "한국의료질향상학회 공지",
    "ok": true,
-   "found": 32,
-   "events": 1,
-   "ms": 5416
+   "found": 7,
+   "events": 4,
+   "ms": 3990
   },
   {
    "id": "snu-health",
@@ -195,14 +187,22 @@
    "ok": true,
    "found": 30,
    "events": 23,
-   "ms": 81108
+   "ms": 67861
+  },
+  {
+   "id": "org-kdca-ilje",
+   "name": "질병관리청 일정",
+   "ok": true,
+   "found": 32,
+   "events": 1,
+   "ms": 4758
   },
   {
    "id": "org-kpha",
    "name": "대한보건협회 공지",
    "ok": false,
    "error": "fetch failed",
-   "ms": 25036
+   "ms": 25186
   }
  ],
  "events": [

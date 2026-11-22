@@ -19,7 +19,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:7a411aa90b9f9700@bbangcal.epibrief.github.io
-DTSTAMP:20261122T015312Z
+DTSTAMP:20261122T173427Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261110
 SUMMARY:[대한예방의학회] 11월 세미나 <같은 의료\, 다른
@@ -37,7 +37,7 @@ URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
 END:VEVENT
 BEGIN:VEVENT
 UID:612c46492428196c@bbangcal.epibrief.github.io
-DTSTAMP:20261122T015312Z
+DTSTAMP:20261122T173427Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261110
 SUMMARY:[대한예방의학회] 2026년도 추계학술대회 및 추
@@ -54,7 +54,7 @@ URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
 END:VEVENT
 BEGIN:VEVENT
 UID:bd28bceb99ee4b77@bbangcal.epibrief.github.io
-DTSTAMP:20261122T015312Z
+DTSTAMP:20261122T173427Z
 DTSTART;TZID=Asia/Seoul:20261106T100000
 DTEND;TZID=Asia/Seoul:20261106T170000
 SUMMARY:[대한예방의학회] 동계 학술대회 개최 안내
@@ -70,7 +70,7 @@ URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
 END:VEVENT
 BEGIN:VEVENT
 UID:bbdb5ba9bc3afbe1@bbangcal.epibrief.github.io
-DTSTAMP:20261122T015312Z
+DTSTAMP:20261122T173427Z
 DTSTART;TZID=Asia/Seoul:20261124T150000
 DTEND;TZID=Asia/Seoul:20261124T170000
 SUMMARY:[질병관리청·한국보건사회연구원·대한예방의
@@ -85,7 +85,7 @@ URL:https://www.kshpa.org/bbs/notice2/1589
 END:VEVENT
 BEGIN:VEVENT
 UID:f822bf8a2765022b@bbangcal.epibrief.github.io
-DTSTAMP:20261122T015312Z
+DTSTAMP:20261122T173427Z
 DTSTART;VALUE=DATE:20261124
 DTEND;VALUE=DATE:20261125
 SUMMARY:[질병관리청·한국보건사회연구원·대한예방의
