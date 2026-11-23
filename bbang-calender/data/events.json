@@ -1,9 +1,9 @@
 {
  "name": "빵캘",
- "updatedAt": "2026-11-23T02:08:54.591Z",
+ "updatedAt": "2026-11-23T21:52:39.403Z",
  "counts": {
-  "total": 104,
-  "upcoming": 37
+  "total": 103,
+  "upcoming": 36
  },
  "sources": [
   {
@@ -11,8 +11,8 @@
    "name": "질병관리청 공지",
    "ok": true,
    "found": 52,
-   "events": 1,
-   "ms": 6253
+   "events": 0,
+   "ms": 2668
   },
   {
    "id": "org-mohw",
@@ -20,7 +20,7 @@
    "ok": true,
    "found": 18,
    "events": 3,
-   "ms": 13647
+   "ms": 11251
   },
   {
    "id": "org-khealth",
@@ -28,7 +28,7 @@
    "ok": true,
    "found": 11,
    "events": 0,
-   "ms": 4910
+   "ms": 4387
   },
   {
    "id": "org-ncc",
@@ -36,7 +36,7 @@
    "ok": true,
    "found": 4,
    "events": 2,
-   "ms": 6022
+   "ms": 5505
   },
   {
    "id": "nkis",
@@ -44,7 +44,7 @@
    "ok": true,
    "found": 20,
    "events": 2,
-   "ms": 25894
+   "ms": 22656
   },
   {
    "id": "org-mfds",
@@ -52,7 +52,7 @@
    "ok": true,
    "found": 16,
    "events": 8,
-   "ms": 23699
+   "ms": 21759
   },
   {
    "id": "org-nhis",
@@ -60,15 +60,7 @@
    "ok": true,
    "found": 24,
    "events": 0,
-   "ms": 6071
-  },
-  {
-   "id": "org-hira",
-   "name": "건강보험심사평가원 공지",
-   "ok": true,
-   "found": 12,
-   "events": 1,
-   "ms": 9268
+   "ms": 3607
   },
   {
    "id": "org-kihasa",
@@ -76,14 +68,22 @@
    "ok": true,
    "found": 2,
    "events": 2,
-   "ms": 5647
+   "ms": 5128
   },
   {
    "id": "org-neca",
    "name": "한국보건의료연구원 공지",
    "ok": false,
    "error": "HTTP 400",
-   "ms": 7730
+   "ms": 6373
+  },
+  {
+   "id": "org-hira",
+   "name": "건강보험심사평가원 공지",
+   "ok": true,
+   "found": 12,
+   "events": 1,
+   "ms": 9203
   },
   {
    "id": "org-nmc",
@@ -91,7 +91,7 @@
    "ok": true,
    "found": 11,
    "events": 0,
-   "ms": 2761
+   "ms": 1549
   },
   {
    "id": "org-nibp",
@@ -99,7 +99,7 @@
    "ok": true,
    "found": 16,
    "events": 1,
-   "ms": 6454
+   "ms": 6143
   },
   {
    "id": "org-khidi",
@@ -107,7 +107,7 @@
    "ok": true,
    "found": 20,
    "events": 3,
-   "ms": 11586
+   "ms": 9370
   },
   {
    "id": "org-ksepi",
@@ -115,7 +115,7 @@
    "ok": true,
    "found": 10,
    "events": 5,
-   "ms": 6370
+   "ms": 5350
   },
   {
    "id": "org-prevmed",
@@ -123,7 +123,7 @@
    "ok": true,
    "found": 15,
    "events": 3,
-   "ms": 19550
+   "ms": 17534
   },
   {
    "id": "org-kshpa",
@@ -131,7 +131,7 @@
    "ok": true,
    "found": 9,
    "events": 6,
-   "ms": 14924
+   "ms": 12460
   },
   {
    "id": "org-kshep",
@@ -139,7 +139,7 @@
    "ok": true,
    "found": 0,
    "events": 0,
-   "ms": 1867
+   "ms": 1484
   },
   {
    "id": "org-kams",
@@ -147,47 +147,7 @@
    "ok": true,
    "found": 62,
    "events": 62,
-   "ms": 22180
-  },
-  {
-   "id": "snu-health",
-   "name": "서울대 보건대학원 세미나정보",
-   "ok": true,
-   "found": 30,
-   "events": 23,
-   "ms": 75140
-  },
-  {
-   "id": "org-kosqua",
-   "name": "한국의료질향상학회 공지",
-   "ok": true,
-   "found": 7,
-   "events": 4,
-   "ms": 4370
-  },
-  {
-   "id": "org-cochrane",
-   "name": "한국코크란 공지",
-   "ok": true,
-   "found": 16,
-   "events": 0,
-   "ms": 699
-  },
-  {
-   "id": "org-koddi",
-   "name": "한국장애인개발원 공지",
-   "ok": true,
-   "found": 21,
-   "events": 0,
-   "ms": 4867
-  },
-  {
-   "id": "org-kdca-ilje",
-   "name": "질병관리청 일정",
-   "ok": true,
-   "found": 32,
-   "events": 1,
-   "ms": 5503
+   "ms": 15187
   },
   {
    "id": "org-kspm",
@@ -195,14 +155,54 @@
    "ok": true,
    "found": 16,
    "events": 1,
-   "ms": 28525
+   "ms": 10574
+  },
+  {
+   "id": "org-koddi",
+   "name": "한국장애인개발원 공지",
+   "ok": true,
+   "found": 21,
+   "events": 0,
+   "ms": 1754
+  },
+  {
+   "id": "org-cochrane",
+   "name": "한국코크란 공지",
+   "ok": true,
+   "found": 16,
+   "events": 0,
+   "ms": 632
+  },
+  {
+   "id": "org-kosqua",
+   "name": "한국의료질향상학회 공지",
+   "ok": true,
+   "found": 7,
+   "events": 4,
+   "ms": 4457
+  },
+  {
+   "id": "org-kdca-ilje",
+   "name": "질병관리청 일정",
+   "ok": true,
+   "found": 32,
+   "events": 0,
+   "ms": 1722
   },
   {
    "id": "org-kpha",
    "name": "대한보건협회 공지",
    "ok": false,
    "error": "fetch failed",
-   "ms": 25414
+   "ms": 25278
+  },
+  {
+   "id": "snu-health",
+   "name": "서울대 보건대학원 세미나정보",
+   "ok": true,
+   "found": 30,
+   "events": 23,
+   "ms": 86467
   }
  ],
  "events": [
@@ -1420,25 +1420,6 @@
    "city": "인천"
   },
   {
-   "id": "2aaf80d35583e081",
-   "org": "kdca",
-   "orgLabel": null,
-   "title": "제2차 기후보건영향평가 공청회 개최 안내(11.23.)",
-   "start": "2026-11-23",
-   "end": "2026-11-23",
-   "startTime": "14:00",
-   "endTime": "17:00",
-   "allDay": false,
-   "place": "연세대학교 세브란스빌딩 대회의실",
-   "url": "https://www.kdca.go.kr/bbs/kdca/50/313514/artclView.do?layout=unknown",
-   "source": "org-kdca-ilje",
-   "collectedAt": "2026-11-23",
-   "lat": 37.567836,
-   "lng": 126.939375,
-   "geo": "exact",
-   "city": "서울"
-  },
-  {
    "id": "bbdb5ba9bc3afbe1",
    "org": "kdca",
    "orgs": [
@@ -2099,9 +2080,9 @@
   }
  ],
  "map": {
-  "mapped": 79,
+  "mapped": 78,
   "online": 5,
-  "places": 82,
+  "places": 81,
   "geocodedAt": "2026-11-23"
  }
 }
