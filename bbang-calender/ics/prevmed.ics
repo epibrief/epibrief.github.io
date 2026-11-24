@@ -18,10 +18,10 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:7a411aa90b9f9700@bbangcal.epibrief.github.io
-DTSTAMP:20261124T054349Z
-DTSTART;VALUE=DATE:20261106
-DTEND;VALUE=DATE:20261110
+UID:4f129fea522f076b@bbangcal.epibrief.github.io
+DTSTAMP:20261124T202836Z
+DTSTART;TZID=Asia/Seoul:20261110T100000
+DTEND;TZID=Asia/Seoul:20261110T170000
 SUMMARY:[대한예방의학회] 11월 세미나 <같은 의료\, 다른
   가격: 국제수가와 미등록 이주민의 건강권> 개최 안
  내
@@ -36,41 +36,8 @@ URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
  gid=933&cpage=1&spage=1
 END:VEVENT
 BEGIN:VEVENT
-UID:612c46492428196c@bbangcal.epibrief.github.io
-DTSTAMP:20261124T054349Z
-DTSTART;VALUE=DATE:20261106
-DTEND;VALUE=DATE:20261110
-SUMMARY:[대한예방의학회] 2026년도 추계학술대회 및 추
- 계연수교육 개최 안내
-DESCRIPTION:주최: 대한예방의학회\n원문: https://www.prevmed.
- or.kr/board_community_notice01/view.php?tn=board_community_notice01&lis
- t_count_s=&G_state=&pm=5.1&part_part_s=&subject_s=&content_s=&name_s=&w
- ritedate_s=&keyfield_s=&search_word_s=&uid=957&gid=931&cpage=1&spage=1\
- n빵캘: https://epibrief.github.io/bbang-calender/
-URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
- d_community_notice01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject
- _s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=957&
- gid=931&cpage=1&spage=1
-END:VEVENT
-BEGIN:VEVENT
-UID:bd28bceb99ee4b77@bbangcal.epibrief.github.io
-DTSTAMP:20261124T054349Z
-DTSTART;TZID=Asia/Seoul:20261106T100000
-DTEND;TZID=Asia/Seoul:20261106T170000
-SUMMARY:[대한예방의학회] 동계 학술대회 개최 안내
-DESCRIPTION:주최: 대한예방의학회\n원문: https://www.prevmed.
- or.kr/board_community_notice01/view.php?tn=board_community_notice01&lis
- t_count_s=&G_state=&pm=5.1&part_part_s=&subject_s=&content_s=&name_s=&w
- ritedate_s=&keyfield_s=&search_word_s=&uid=956&gid=930&cpage=1&spage=1\
- n빵캘: https://epibrief.github.io/bbang-calender/
-URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
- d_community_notice01&list_count_s=&G_state=&pm=5.1&part_part_s=&subject
- _s=&content_s=&name_s=&writedate_s=&keyfield_s=&search_word_s=&uid=956&
- gid=930&cpage=1&spage=1
-END:VEVENT
-BEGIN:VEVENT
 UID:bbdb5ba9bc3afbe1@bbangcal.epibrief.github.io
-DTSTAMP:20261124T054349Z
+DTSTAMP:20261124T202836Z
 DTSTART;TZID=Asia/Seoul:20261124T150000
 DTEND;TZID=Asia/Seoul:20261124T170000
 SUMMARY:[질병관리청·한국보건사회연구원·대한예방의
@@ -85,7 +52,7 @@ URL:https://www.kshpa.org/bbs/notice2/1589
 END:VEVENT
 BEGIN:VEVENT
 UID:f822bf8a2765022b@bbangcal.epibrief.github.io
-DTSTAMP:20261124T054349Z
+DTSTAMP:20261124T202836Z
 DTSTART;VALUE=DATE:20261124
 DTEND;VALUE=DATE:20261125
 SUMMARY:[질병관리청·한국보건사회연구원·대한예방의
