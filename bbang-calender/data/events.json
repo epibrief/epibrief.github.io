@@ -1,18 +1,18 @@
 {
  "name": "빵캘",
- "updatedAt": "2026-11-27T03:54:56.753Z",
+ "updatedAt": "2026-11-27T19:18:57.174Z",
  "counts": {
-  "total": 108,
-  "upcoming": 28
+  "total": 107,
+  "upcoming": 27
  },
  "sources": [
   {
    "id": "org-kdca",
    "name": "질병관리청 공지",
    "ok": true,
-   "found": 52,
+   "found": 50,
    "events": 0,
-   "ms": 5138
+   "ms": 3485
   },
   {
    "id": "org-mohw",
@@ -20,7 +20,7 @@
    "ok": true,
    "found": 18,
    "events": 3,
-   "ms": 11089
+   "ms": 12515
   },
   {
    "id": "org-khealth",
@@ -28,15 +28,7 @@
    "ok": true,
    "found": 11,
    "events": 0,
-   "ms": 4169
-  },
-  {
-   "id": "org-ncc",
-   "name": "국립암센터 공지",
-   "ok": true,
-   "found": 4,
-   "events": 2,
-   "ms": 5630
+   "ms": 4449
   },
   {
    "id": "nkis",
@@ -44,15 +36,15 @@
    "ok": true,
    "found": 20,
    "events": 0,
-   "ms": 22464
+   "ms": 22828
   },
   {
-   "id": "org-nhis",
-   "name": "국민건강보험공단 공지",
+   "id": "org-ncc",
+   "name": "국립암센터 공지",
    "ok": true,
-   "found": 24,
-   "events": 0,
-   "ms": 3551
+   "found": 4,
+   "events": 2,
+   "ms": 5911
   },
   {
    "id": "org-mfds",
@@ -60,7 +52,23 @@
    "ok": true,
    "found": 16,
    "events": 8,
-   "ms": 20016
+   "ms": 21643
+  },
+  {
+   "id": "org-nhis",
+   "name": "국민건강보험공단 공지",
+   "ok": true,
+   "found": 24,
+   "events": 0,
+   "ms": 4317
+  },
+  {
+   "id": "org-hira",
+   "name": "건강보험심사평가원 공지",
+   "ok": true,
+   "found": 12,
+   "events": 1,
+   "ms": 6635
   },
   {
    "id": "org-kihasa",
@@ -68,22 +76,14 @@
    "ok": true,
    "found": 2,
    "events": 2,
-   "ms": 5110
-  },
-  {
-   "id": "org-hira",
-   "name": "건강보험심사평가원 공지",
-   "ok": true,
-   "found": 12,
-   "events": 2,
-   "ms": 7822
+   "ms": 4993
   },
   {
    "id": "org-neca",
    "name": "한국보건의료연구원 공지",
    "ok": false,
    "error": "HTTP 400",
-   "ms": 6129
+   "ms": 7383
   },
   {
    "id": "org-nmc",
@@ -91,7 +91,7 @@
    "ok": true,
    "found": 11,
    "events": 0,
-   "ms": 1716
+   "ms": 1862
   },
   {
    "id": "org-nibp",
@@ -99,7 +99,7 @@
    "ok": true,
    "found": 16,
    "events": 1,
-   "ms": 5705
+   "ms": 6577
   },
   {
    "id": "org-khidi",
@@ -107,7 +107,7 @@
    "ok": true,
    "found": 20,
    "events": 3,
-   "ms": 10681
+   "ms": 10938
   },
   {
    "id": "org-ksepi",
@@ -115,15 +115,7 @@
    "ok": true,
    "found": 10,
    "events": 5,
-   "ms": 5088
-  },
-  {
-   "id": "org-prevmed",
-   "name": "대한예방의학회 공지",
-   "ok": true,
-   "found": 15,
-   "events": 5,
-   "ms": 14036
+   "ms": 5412
   },
   {
    "id": "snu-health",
@@ -131,7 +123,15 @@
    "ok": true,
    "found": 30,
    "events": 23,
-   "ms": 47500
+   "ms": 47218
+  },
+  {
+   "id": "org-prevmed",
+   "name": "대한예방의학회 공지",
+   "ok": true,
+   "found": 15,
+   "events": 5,
+   "ms": 14343
   },
   {
    "id": "org-kshep",
@@ -139,7 +139,7 @@
    "ok": true,
    "found": 0,
    "events": 0,
-   "ms": 1587
+   "ms": 1492
   },
   {
    "id": "org-kshpa",
@@ -147,15 +147,7 @@
    "ok": true,
    "found": 9,
    "events": 6,
-   "ms": 11928
-  },
-  {
-   "id": "org-kspm",
-   "name": "대한공공의학회 공지",
-   "ok": true,
-   "found": 16,
-   "events": 1,
-   "ms": 10653
+   "ms": 12927
   },
   {
    "id": "org-kosqua",
@@ -163,23 +155,15 @@
    "ok": true,
    "found": 7,
    "events": 4,
-   "ms": 4017
+   "ms": 4102
   },
   {
-   "id": "org-cochrane",
-   "name": "한국코크란 공지",
+   "id": "org-kspm",
+   "name": "대한공공의학회 공지",
    "ok": true,
    "found": 16,
-   "events": 0,
-   "ms": 595
-  },
-  {
-   "id": "org-koddi",
-   "name": "한국장애인개발원 공지",
-   "ok": true,
-   "found": 21,
-   "events": 0,
-   "ms": 1941
+   "events": 1,
+   "ms": 11545
   },
   {
    "id": "org-kams",
@@ -187,22 +171,38 @@
    "ok": true,
    "found": 62,
    "events": 62,
-   "ms": 17697
+   "ms": 14397
+  },
+  {
+   "id": "org-koddi",
+   "name": "한국장애인개발원 공지",
+   "ok": true,
+   "found": 21,
+   "events": 0,
+   "ms": 1619
+  },
+  {
+   "id": "org-cochrane",
+   "name": "한국코크란 공지",
+   "ok": true,
+   "found": 16,
+   "events": 0,
+   "ms": 524
   },
   {
    "id": "org-kdca-ilje",
    "name": "질병관리청 일정",
    "ok": true,
-   "found": 32,
+   "found": 30,
    "events": 0,
-   "ms": 3949
+   "ms": 1971
   },
   {
    "id": "org-kpha",
    "name": "대한보건협회 공지",
    "ok": false,
    "error": "fetch failed",
-   "ms": 25173
+   "ms": 25125
   }
  ],
  "events": [
@@ -1919,25 +1919,6 @@
    "city": "서울"
   },
   {
-   "id": "17514e8f7f57eb24",
-   "org": "hira",
-   "orgLabel": null,
-   "title": "2026년 보건의료 빅데이터 미래포럼 개최 안내",
-   "start": "2026-12-03",
-   "end": "2026-12-03",
-   "startTime": "14:00",
-   "endTime": "17:10",
-   "allDay": false,
-   "place": "백범김구기념관 컨벤션홀 (서울 용산구)",
-   "url": "https://www.hira.or.kr/bbsDummy.do?pgmid=HIRAA020002000100&brdScnBltNo=4&brdBltNo=12352&pageIndex=1&pageIndex2=1",
-   "source": "org-hira",
-   "collectedAt": "2026-11-27",
-   "lat": 37.544062,
-   "lng": 126.959215,
-   "geo": "exact",
-   "city": "서울"
-  },
-  {
    "id": "5417fa914157b322",
    "org": "clinic",
    "orgLabel": "대한생식의학회",
@@ -2158,9 +2139,9 @@
   }
  ],
  "map": {
-  "mapped": 78,
+  "mapped": 77,
   "online": 4,
-  "places": 79,
+  "places": 78,
   "geocodedAt": "2026-11-27"
  }
 }
