@@ -19,7 +19,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:9b2f868fa0f65e21@bbangcal.epibrief.github.io
-DTSTAMP:20261127T191857Z
+DTSTAMP:20261128T034155Z
 DTSTART;TZID=Asia/Seoul:20261111T100000
 DTEND;TZID=Asia/Seoul:20261111T170000
 SUMMARY:[대한예방의학회] 임상 및 유전체 데이터 활용 
@@ -36,7 +36,7 @@ URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
 END:VEVENT
 BEGIN:VEVENT
 UID:bae839fdf788e96f@bbangcal.epibrief.github.io
-DTSTAMP:20261127T191857Z
+DTSTAMP:20261128T034155Z
 DTSTART;TZID=Asia/Seoul:20261111T100000
 DTEND;TZID=Asia/Seoul:20261111T170000
 SUMMARY:[대한예방의학회] 초고령사회의료연구소 심포
@@ -53,7 +53,7 @@ URL:https://www.prevmed.or.kr/board_community_notice01/view.php?tn=boar
 END:VEVENT
 BEGIN:VEVENT
 UID:bbdb5ba9bc3afbe1@bbangcal.epibrief.github.io
-DTSTAMP:20261127T191857Z
+DTSTAMP:20261128T034155Z
 DTSTART;TZID=Asia/Seoul:20261124T150000
 DTEND;TZID=Asia/Seoul:20261124T170000
 SUMMARY:[질병관리청·한국보건사회연구원·대한예방의
@@ -68,7 +68,7 @@ URL:https://www.kshpa.org/bbs/notice2/1589
 END:VEVENT
 BEGIN:VEVENT
 UID:f822bf8a2765022b@bbangcal.epibrief.github.io
-DTSTAMP:20261127T191857Z
+DTSTAMP:20261128T034155Z
 DTSTART;VALUE=DATE:20261124
 DTEND;VALUE=DATE:20261125
 SUMMARY:[질병관리청·한국보건사회연구원·대한예방의
